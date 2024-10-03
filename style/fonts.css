@@ -22,8 +22,8 @@
 
 @font-face {
     font-family: 'GetVoIP Grotesque Regular';
-    src: local('GetVoIP Grotesque Regular'), url('../fonts/GetVoIP Grotesque.ttf') format('ttf'),
-    url('../fonts/GetVoIP Grotesque.otf') format('otf');
+    src: local('GetVoIP Grotesque Regular'), url('../fonts/GetVoIP-Grotesque.ttf') format('ttf'),
+    url('../fonts/GetVoIP-Grotesque.otf') format('otf');
     font-weight: 400;
     font-style: normal;
     font-display: swap;

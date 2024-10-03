@@ -51,7 +51,7 @@ body {
     font-weight: 400;
     background-color: var(--main-bg);
     height: 100vh;
-    font-family: Golos Text Regular, sans-serif;
+    font-family: 'Golos Text Regular', sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
 }
