@@ -956,3 +956,112 @@
   text-align: center;
   color: var(--title-color-ligth);
 }
+
+/*========================================= work ==============================================*/
+.work {
+  width: 100%;
+  padding: 9rem 0;
+}
+
+.work__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.work__header-title {
+  margin-bottom: 0;
+  max-width: 88.6rem;
+  margin-right: 2rem;
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 1.01562;
+  color: var(--dark-gray);
+  font-family: 'GetVoIP Grotesque Regular', sans-serif;
+}
+
+.work__header-link {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 1.25;
+  color: var(--dark-gray);
+  padding-right: 64px;
+  position: relative;
+}
+
+.work__header-link::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 21px;
+  height: 16px;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  background: url('../images/catalog/arr_right_orange.svg') no-repeat
+    center/cover;
+}
+
+.work__body {
+  width: 100%;
+}
+
+.work__body-list {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.work__body-item {
+  width: calc(100% - 3.2rem);
+  border: 1.5px solid var(--5);
+  border-radius: 1.5rem;
+  padding: 3rem;
+  height: 43rem;
+  box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
+  background: var(--title-color-ligth);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.work__body-cart-title {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 1.25;
+  color: var(--dark-gray);
+  margin-bottom: 3em;
+}
+
+.work__body-cart-list {
+  list-style-type: initial;
+  color: var(--color-opasity);
+  padding-left: 3rem;
+  margin-bottom: 3rem;
+}
+
+.work__body-cart-item {
+  font-size: 2rem;
+  line-height: 1.1;
+  color: var(--ligth-gray);
+}
+
+.work__body-cart-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-orange);
+}
+
+.work__body-item_hover {
+  background: var(--dark-gray);
+}
+
+.work__body-cart-title_hover {
+  text-align: center;
+  color: var(--title-color-ligth);
+  margin-bottom: 3rem;
+}
