@@ -354,6 +354,7 @@
   position: relative;
   display: inline-flex;
   align-items: center;
+  max-width: 34rem;
 
   font-weight: 600;
   font-size: 2.4rem;
@@ -361,8 +362,7 @@
   color: var(--dark-gray);
   cursor: pointer;
 
-  text-align: right;
-  margin-right: 64px;
+  padding-right: 64px;
 }
 
 .products__header-link::after {
@@ -370,7 +370,7 @@
   content: '';
   top: 50%;
   transform: translateY(-50%);
-  right: -35px;
+  right: 26px;
   width: 21px;
   height: 16px;
   background: url('../images/catalog/arr_right_orange.svg') no-repeat
@@ -738,4 +738,141 @@
 
 .about__boby-link-text_dark {
   color: var(--dark-gray);
+}
+
+/*========================================= categories ==============================================*/
+.categories {
+  width: 100%;
+  padding: 9rem 0 6rem;
+  background-color: var(--main-bg);
+}
+
+.categories__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.categories__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6rem;
+}
+
+.categories__title {
+  max-width: 72rem;
+  width: 100%;
+  margin-right: 2rem;
+  margin-bottom: 0;
+}
+
+.categories__btn {
+  position: relative;
+  max-width: 34rem;
+  padding-right: 6.4rem;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 1.25;
+  color: var(--dark-gray);
+  white-space: wrap;
+  text-align: left;
+}
+
+.categories__btn::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 21px;
+  height: 16px;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  background: url('../images/catalog/arr_right_orange.svg') no-repeat
+    center/cover;
+}
+
+.categories__body {
+  width: 100%;
+  text-align: center;
+}
+
+.categories__body-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 36rem);
+  grid-auto-rows: 43rem;
+  gap: 5.8rem 2.4rem;
+  margin-bottom: 6rem;
+}
+
+.categories__body-item {
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  border: 1.5px solid var(--5);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
+  background: var(--title-color-ligth);
+  text-align: left;
+  transition: all 0.3s ease-in;
+}
+
+.categories__body-cart-title {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 1.25;
+  color: var(--dark-gray);
+  transition: all 0.3s ease-in;
+  margin-bottom: 3rem;
+}
+
+.categories__body-item:hover {
+  transition: all 0.3s ease-in;
+  border-color: var(--color-orange);
+  box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
+  background: linear-gradient(
+      360deg,
+      rgba(43, 42, 41, 0.9) 46.04%,
+      rgba(235, 99, 32, 0.9) 100%
+    ),
+    url('../images/hero/bg_slider.jpg') no-repeat center;
+}
+
+.categories__body-item:hover > .categories__body-cart-title {
+  color: var(--title-color-ligth);
+  transition: all 0.3s ease-in;
+}
+
+.categories__body-cart-list {
+  list-style-type: initial;
+  color: var(--color-opasity);
+  padding-left: 3rem;
+  margin-bottom: 3rem;
+}
+
+.categories__body-cart-item {
+  font-size: 2rem;
+  line-height: 1.1;
+  color: var(--ligth-gray);
+}
+
+.categories__body-cart-btn {
+  width: 100%;
+  background-color: var(--color-orange);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border-color: transparent;
+}
+
+.categories__body-showmore-btn {
+  max-width: 35rem;
+  width: 100%;
+  background: var(--dark-gray);
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
 }
