@@ -1037,6 +1037,57 @@
           </button>
         </div>
       </section>
+      <section class="form-representation">
+        <div class="container form-representation__container">
+          <h2 class="form-representation__title">Стать представителем PRIDE</h2>
+          <form class="form-representation__form">
+            <label for="user-name">ФИО*</label>
+            <input
+              class="user-name"
+              type="text"
+              name="user-name"
+              placeholder="Ввидите свое ФИО"
+              required />
+            <label for="user-tel">Телефон*</label>
+            <input type="number" placeholder="Ваш номер телефона" required />
+            <label for="user-email">Почта</label>
+            <input type="mail" placeholder="Актуальная почта" required />
+            <label for="country">Страна*</label>
+            <select name="country" id="country">
+              <option value="Moscow">Россия</option>
+              <option value="USA">США</option>
+              <option value="Brasil">Бразилия</option>
+              <option value="Turkish">Турция</option>
+            </select>
+
+            <label for="sity">Город**</label>
+            <select name="sity" id="country">
+              <option value="Moscow">Москва</option>
+              <option value="Washcington">Вашингтон</option>
+              <option value="San-Paulu">Сан-Паулу</option>
+              <option value="Stanbul">Станбул</option>
+            </select>
+            <label for="canpany"> Компания </label>
+            <input type="text" name="canpany" placeholder="Название компании" />
+            <label for="dopoln">Дополнительно</label>
+            <textarea
+              name="dopoln"
+              id="dopoln"
+              placeholder="Для дополнительного сообщения"
+              required></textarea>
+
+            <a href="#" class=""
+              ><input type="checkbox" />Согласен с политикой конфиденциальности
+            </a>
+            <a href="#" class=""
+              ><input type="checkbox" />Согласен получать уведомления и
+              предложения по электронной почте
+            </a>
+
+            <button class="btn form-representation__form-btn">Отправить</button>
+          </form>
+        </div>
+      </section>
     </main>
     <script src="js/swiper-bundle.js"></script>
     <script src="js/hero-slider.js"></script>
