@@ -1332,3 +1332,114 @@
   background-color: var(--color-orange);
   color: var(--title-color-ligth);
 }
+
+/*========================================= about-company ==============================================*/
+.about-company {
+  width: 100%;
+  padding: 9rem 0;
+}
+
+.about-company__container {
+}
+
+.about-company__header {
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-company__header-title {
+  max-width: 80rem;
+  font-weight: 700;
+  line-height: 1.01562;
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+  font-family: 'GetVoIP Grotesque Regular', sans-serif;
+  color: var(--dark-gray);
+  margin-bottom: 0;
+}
+
+.about-company__header-link {
+  position: relative;
+  display: flex;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 1.25;
+  color: var(--dark-gray);
+  padding-right: 64px;
+}
+.about-company__header-link::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 21px;
+  height: 16px;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  background: url('../images/catalog/arr_right_orange.svg') no-repeat
+    center/cover;
+}
+
+.about-company__body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-company__body-img {
+  width: 100%;
+  height: 45rem;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 6rem;
+}
+
+.about-company__body-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-company__body-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 2.2rem;
+}
+
+.about-company__body-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-company__body-item img {
+  margin: 0 auto;
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: 3rem;
+  display: inline-block;
+  text-align: center;
+}
+
+.about-company__body-item-title {
+  margin-bottom: 3rem;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 0.95;
+  text-align: center;
+  color: var(--color-orange);
+  font-family: 'GetVoIP Grotesque Regular', sans-serif;
+}
+
+.about-company__body-item-ttext {
+  font-size: 2rem;
+  line-height: 1.1;
+  text-align: center;
+  color: var(--ligth-gray);
+}
