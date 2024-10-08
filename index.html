@@ -1049,9 +1049,17 @@
               placeholder="Ввидите свое ФИО"
               required />
             <label for="user-tel">Телефон*</label>
-            <input type="number" placeholder="Ваш номер телефона" required />
+            <input
+              type="number"
+              name="user-tel"
+              placeholder="Ваш номер телефона"
+              required />
             <label for="user-email">Почта</label>
-            <input type="mail" placeholder="Актуальная почта" required />
+            <input
+              type="mail"
+              name="user-email"
+              placeholder="Актуальная почта"
+              required />
             <label for="country">Страна*</label>
             <select name="country" id="country">
               <option value="Moscow">Россия</option>
@@ -1060,29 +1068,34 @@
               <option value="Turkish">Турция</option>
             </select>
 
-            <label for="sity">Город**</label>
-            <select name="sity" id="country">
+            <label for="sity">Город*</label>
+            <select name="sity" id="sity">
               <option value="Moscow">Москва</option>
               <option value="Washcington">Вашингтон</option>
               <option value="San-Paulu">Сан-Паулу</option>
               <option value="Stanbul">Станбул</option>
             </select>
-            <label for="canpany"> Компания </label>
-            <input type="text" name="canpany" placeholder="Название компании" />
+            <label for="campany"> Компания </label>
+            <input type="text" name="campany" placeholder="Название компании" />
             <label for="dopoln">Дополнительно</label>
-            <textarea
+            <input
+              type=""
               name="dopoln"
               id="dopoln"
               placeholder="Для дополнительного сообщения"
-              required></textarea>
+              required />
+            <input type="checkbox" name="soglasie1" />
+            <!-- <label for="soglasie1"> Согласен с  политикой конфиденциальности</label> -->
+            <label for="soglasie1"
+              >Согласен получать уведомления и предложения по электронной
+              почте</label
+            >
 
-            <a href="#" class=""
-              ><input type="checkbox" />Согласен с политикой конфиденциальности
-            </a>
-            <a href="#" class=""
-              ><input type="checkbox" />Согласен получать уведомления и
-              предложения по электронной почте
-            </a>
+            <input type="checkbox" name="soglasie2" />
+            <label for="soglasie2"
+              >Согласен с <a href="#">политикой конфиденциальности</a></label
+            >
+            <!-- <label for="soglasie2">Согласен получать уведомления и предложения по электронной почте<label/> -->
 
             <button class="btn form-representation__form-btn">Отправить</button>
           </form>
