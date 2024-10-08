@@ -1585,3 +1585,135 @@
   outline: none;
   border: none;
 }
+
+/*========================================= form-representation ==============================================*/
+.form-representation {
+  width: 100%;
+  padding: 9rem 0 12rem;
+  background: url('../images/form/lion.png') top right no-repeat,
+    var(--dark-gray);
+  position: relative;
+}
+
+/* .form-representation__container {
+
+} */
+
+.form-representation__title {
+  line-height: 1.01562;
+  color: var(--color-orange);
+  margin-bottom: 6rem;
+  font-family: 'GetVoIP Grotesque Regular', sans-serif;
+}
+
+.form-representation__form {
+  width: 100%;
+  display: flex;
+  gap: 6rem;
+}
+
+.form-left label,
+.form-right > label {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+  line-height: 1.1;
+  color: var(--title-color-ligth);
+}
+
+.form-left input,
+.form-left .form-row3 .column1 select,
+.form-left .form-row3 .column2 select,
+.form-right > input {
+  border: 1px solid rgba(224, 224, 224, 0.2);
+  border-radius: 8px;
+  padding: 12px 16px;
+  max-width: 626px;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 0.03);
+  margin-bottom: 1.5rem;
+  font-size: 20px;
+  color: var(--title-color-ligth);
+}
+
+.form-left .form-row3 .column1 select,
+.form-left .form-row3 .column2 select,
+.form-left input::placeholder,
+.form-right > input::placeholder,
+.form-right > textarea::placeholder {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.1;
+  color: #828282;
+}
+
+input[name='user-tel'],
+input[name='user-email'],
+label[for='user-tel'],
+label[for='user-email'] {
+  width: 100%;
+  font-size: 20px;
+  color: var(--title-color-ligth);
+}
+
+.form-left {
+  max-width: 62.6rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row2,
+.form-row3 {
+  width: 100%;
+  display: flex;
+  column-gap: 2.2rem;
+}
+
+.column1,
+.column2 {
+  display: flex;
+  flex-direction: column;
+  max-width: 30rem;
+  width: 100%;
+}
+
+.form-right {
+  max-width: 44rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-right > textarea {
+  backdrop-filter: blur(4px);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  background: #fff;
+  border: 1px solid rgba(224, 224, 224, 0.2);
+  border-radius: 8px;
+  padding: 19px 16px;
+  height: 160px;
+  font-size: 20px;
+}
+
+.ch {
+  display: inline-block;
+}
+
+.policy {
+  font-size: 2rem;
+  line-height: 1.1;
+  color: var(--5);
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.form-representation__form-btn {
+  width: 100%;
+  background: var(--color-orange);
+  color: var(--title-color-ligth);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

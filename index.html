@@ -1041,63 +1041,90 @@
         <div class="container form-representation__container">
           <h2 class="form-representation__title">Стать представителем PRIDE</h2>
           <form class="form-representation__form">
-            <label for="user-name">ФИО*</label>
-            <input
-              class="user-name"
-              type="text"
-              name="user-name"
-              placeholder="Ввидите свое ФИО"
-              required />
-            <label for="user-tel">Телефон*</label>
-            <input
-              type="number"
-              name="user-tel"
-              placeholder="Ваш номер телефона"
-              required />
-            <label for="user-email">Почта</label>
-            <input
-              type="mail"
-              name="user-email"
-              placeholder="Актуальная почта"
-              required />
-            <label for="country">Страна*</label>
-            <select name="country" id="country">
-              <option value="Moscow">Россия</option>
-              <option value="USA">США</option>
-              <option value="Brasil">Бразилия</option>
-              <option value="Turkish">Турция</option>
-            </select>
+            <div class="form-left">
+              <label for="user-name">ФИО*</label>
+              <input
+                class="user-name"
+                type="text"
+                name="user-name"
+                placeholder="Ввидите свое ФИО"
+                required />
 
-            <label for="sity">Город*</label>
-            <select name="sity" id="sity">
-              <option value="Moscow">Москва</option>
-              <option value="Washcington">Вашингтон</option>
-              <option value="San-Paulu">Сан-Паулу</option>
-              <option value="Stanbul">Станбул</option>
-            </select>
-            <label for="campany"> Компания </label>
-            <input type="text" name="campany" placeholder="Название компании" />
-            <label for="dopoln">Дополнительно</label>
-            <input
-              type=""
-              name="dopoln"
-              id="dopoln"
-              placeholder="Для дополнительного сообщения"
-              required />
-            <input type="checkbox" name="soglasie1" />
-            <!-- <label for="soglasie1"> Согласен с  политикой конфиденциальности</label> -->
-            <label for="soglasie1"
-              >Согласен получать уведомления и предложения по электронной
-              почте</label
-            >
+              <div class="form-row2">
+                <div class="column1">
+                  <label for="user-tel">Телефон*</label>
+                  <input
+                    type="number"
+                    name="user-tel"
+                    placeholder="Ваш номер телефона"
+                    required />
+                </div>
 
-            <input type="checkbox" name="soglasie2" />
-            <label for="soglasie2"
-              >Согласен с <a href="#">политикой конфиденциальности</a></label
-            >
-            <!-- <label for="soglasie2">Согласен получать уведомления и предложения по электронной почте<label/> -->
+                <div class="column2">
+                  <label for="user-email">Почта</label>
+                  <input
+                    type="email"
+                    name="user-email"
+                    placeholder="Актуальная почта"
+                    required />
+                </div>
+              </div>
 
-            <button class="btn form-representation__form-btn">Отправить</button>
+              <div class="form-row3">
+                <div class="column1">
+                  <label for="country">Страна*</label>
+                  <select name="country" id="country">
+                    <option value="Russia">Россия</option>
+                    <option value="USA">США</option>
+                    <option value="Brasil">Бразилия</option>
+                    <option value="Turkish">Турция</option>
+                  </select>
+                </div>
+                <div class="column2">
+                  <label for="sity">Город*</label>
+                  <select name="sity" id="sity">
+                    <option value="Moscow">Москва</option>
+                    <option value="Washcington">Вашингтон</option>
+                    <option value="San-Paulu">Сан-Паулу</option>
+                    <option value="Stanbul">Станбул</option>
+                  </select>
+                </div>
+              </div>
+
+              <label for="campany"> Компания </label>
+              <input
+                type="text"
+                name="campany"
+                placeholder="Название компании" />
+            </div>
+
+            <div class="form-right">
+              <label for="dopoln">Дополнительно</label>
+              <textarea
+                type=""
+                name="dopoln"
+                id="dopoln"
+                placeholder="Для дополнительного сообщения"
+                required></textarea>
+
+              <input class="ch" type="checkbox" name="soglasie1" />
+              <label for="soglasie1"
+                >Согласен с
+                <a class="policy" href="#"
+                  >политикой конфиденциальности</a
+                ></label
+              >
+
+              <input class="ch" type="checkbox" name="soglasie2" />
+              <label for="soglasie2"
+                >Согласен получать уведомления и предложения по электронной
+                почте</label
+              >
+
+              <button class="btn form-representation__form-btn">
+                Отправить
+              </button>
+            </div>
           </form>
         </div>
       </section>
