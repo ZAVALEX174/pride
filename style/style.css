@@ -1914,3 +1914,24 @@ label[for='user-email'] {
   background-color: var(--5);
   font-size: 2rem;
 }
+
+/*========================================= watched-before ==============================================*/
+
+.watched-before {
+  width: 100%;
+  padding: 6rem 0;
+  border-bottom: 1.5px solid var(--5);
+}
+
+.watched-before__container {
+  margin-right: 0;
+}
+
+.watched-before__header-title {
+  font-weight: 700;
+  line-height: 1.01562;
+  color: var(--dark-gray);
+  font-family: 'GetVoIP Grotesque Regular', sans-serif;
+  max-width: 66rem;
+  width: 100%;
+}
