@@ -1,5 +1,6 @@
 /*HEADER*/
 .header {
+  /* position: fixed; */
   width: 100%;
   background-color: var(--color-orange);
 }
@@ -207,7 +208,18 @@
   margin-left: 5px;
 }
 
-.dropdown1 {
+.navigation__link:hover .navigation__link_drd::after {
+  position: absolute;
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  background: url('../images/header/arr_duble_up.svg') no-repeat;
+  margin-left: 5px;
+}
+
+.dropdown1,
+.dropdown2 {
   display: none;
   position: absolute;
   z-index: 500;
@@ -218,7 +230,8 @@
   left: 0;
 }
 
-.navigation__item:hover .dropdown1 {
+.navigation__item:hover .dropdown1,
+.navigation__item:hover .dropdown2 {
   display: block;
 }
 
