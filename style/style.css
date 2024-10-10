@@ -2204,3 +2204,38 @@ label[for='user-email'] {
   line-height: 1.25;
   color: var(--color-orange);
 }
+
+.footer__copyrigth {
+  width: 100%;
+  background-color: var(--dark-gray);
+  padding: 4rem 0;
+}
+
+.footer__copyrigth-company-info {
+  width: 100%;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  line-height: 1.1;
+  text-align: left;
+  color: var(--color-opasity);
+}
+
+.footer__copyrigth-ofer {
+  width: 100%;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  line-height: 1.1;
+  text-align: left;
+  color: var(--color-opasity);
+}
+
+.footer__copyrigth-confidic {
+  width: 100%;
+}
+
+.footer__copyrigth-confidic-link {
+  font-size: 2rem;
+  line-height: 1.1;
+  text-align: left;
+  color: var(--color-orange);
+}
