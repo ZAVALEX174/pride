@@ -2055,9 +2055,12 @@ label[for='user-email'] {
   display: flex;
   flex-direction: column;
   row-gap: 1.5rem;
+  margin-bottom: 4rem;
 }
 
-.footer__conacts-social-title {
+.footer__conacts-social-title,
+.footer__conacts-email-title,
+.footer__conacts-tel-title {
   font-size: 2rem;
   line-height: 1.1;
   color: var(--color-orange);
@@ -2094,4 +2097,32 @@ label[for='user-email'] {
 }
 .footer__conacts-social-link:hover svg path:first-of-type {
   fill: var(--color-orange);
+}
+
+.footer__conacts-email,
+.footer__conacts-tel {
+  max-width: 35rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.footer__conacts-email-list,
+.footer__conacts-tel-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.footer__conacts-tel-item,
+.footer__conacts-email-item {
+  width: 100%;
+}
+
+.footer__conacts-email-link,
+.footer__conacts-tel-link {
+  font-size: 2.4rem;
+  line-height: 1.25;
+  color: var(--dark-gray);
 }
