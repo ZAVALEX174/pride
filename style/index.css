@@ -23,27 +23,36 @@ html {
   box-sizing: border-box;
   font-size: calc(100vw / 1920 * 10);
   min-height: 100vh;
-
-  @media (max-width: 1440px) {
+  scroll-behavior: smooth;
+}
+@media (max-width: 1440px) {
+  html {
     font-size: calc(100vw / 1440 * 10);
   }
+}
 
-  @media (max-width: 1280px) {
+@media (max-width: 1280px) {
+  html {
     font-size: calc(100vw / 1280 * 10);
   }
+}
 
-  @media (max-width: 999px) {
+@media (max-width: 999px) {
+  html {
     font-size: calc(100vw / 999 * 10);
   }
+}
 
-  @media (max-width: 500px) {
+@media (max-width: 500px) {
+  html {
     font-size: calc(100vw / 500 * 10);
   }
+}
 
-  @media (max-width: 375px) {
+@media (max-width: 375px) {
+  html {
     font-size: calc(100vw / 375 * 10);
   }
-  scroll-behavior: smooth;
 }
 
 body {
@@ -131,6 +140,7 @@ h2 {
   display: inline-flex;
   border-radius: 3rem;
   font-size: 2rem;
+
   text-align: center;
   color: var(--title-color-ligth);
   line-height: 6rem;
