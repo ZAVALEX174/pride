@@ -186,6 +186,11 @@
   line-height: 0.91667;
   text-align: center;
   color: var(--title-color-ligth);
+  transition: color 0.3s ease-in;
+}
+
+.navigation__link:hover {
+  color: var(--color-orange);
 }
 
 .navigation__link_drd {
@@ -200,6 +205,78 @@
   display: inline-flex;
   background: url('../images/header/arr_duble_down.svg') no-repeat;
   margin-left: 5px;
+}
+
+.dropdown1 {
+  display: none;
+  position: absolute;
+  z-index: 500;
+  width: 100vw;
+  height: 500px;
+  background-color: var(--main-bg);
+  top: 315px;
+  left: 0;
+}
+
+.navigation__item:hover .dropdown1 {
+  display: block;
+}
+
+.dropdown1__item {
+  width: 100%;
+}
+
+.dropdown1__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 115rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.4rem;
+  padding-bottom: 4.5rem;
+  border-bottom: 1.5px solid var(--5);
+}
+
+.dropdown1__header-close-btn {
+  height: 64px;
+  width: 64px;
+  border: none;
+  outline: none;
+  margin-right: 3rem;
+  background-color: transparent;
+}
+
+.dropdown1__header-title {
+  font-weight: 700;
+  line-height: 1.01562;
+  color: var(--color-orange);
+  font-family: 'GetVoIP Grotesque Regular', sans-serif;
+  margin-right: auto;
+}
+
+.dropdown1__header-link {
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 1.25;
+  color: var(--dark-gray);
+  cursor: pointer;
+  padding-right: 64px;
+  max-width: 34rem;
+  width: 100%;
+  position: relative;
+}
+
+.dropdown1__header-link::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  transform: translateY(-50%);
+  right: 26px;
+  width: 21px;
+  height: 16px;
+  background: url('../images/catalog/arr_right_orange.svg') no-repeat
+    center/cover;
 }
 
 /*========================================= hero ==============================================*/
@@ -2148,6 +2225,7 @@ label[for='user-email'] {
 .footer__nav-top-item {
   width: 100%;
   height: auto;
+  transition: all 0.3s ease-in;
 }
 
 .footer__nav-top-link {
@@ -2164,9 +2242,21 @@ label[for='user-email'] {
 
 .footer__nav-top-item-dropdown-list {
   width: 100%;
-  display: flex;
+  display: none;
   flex-direction: column;
   row-gap: 3rem;
+  transition: all 0.3s ease-in;
+}
+
+.footer__nav-top-item:hover .footer__nav-top-item-dropdown-list {
+  display: flex;
+  transition: all 0.3s ease-in;
+}
+
+.footer__nav-top-item:hover .footer__nav-top-link {
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1.5px solid var(--5);
 }
 
 .footer__nav-top-item-dropdown-item {
@@ -2238,4 +2328,8 @@ label[for='user-email'] {
   line-height: 1.1;
   text-align: left;
   color: var(--color-orange);
+}
+
+.footer__guidance {
+  display: block;
 }
