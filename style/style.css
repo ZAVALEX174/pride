@@ -230,7 +230,7 @@
 .header-menu-madal {
   display: none;
   width: 100%;
-  min-height: 113.8rem;
+  height: 100vh;
   box-shadow: 0 4px 5px 0 rgba(25, 33, 61, 0.05);
   background: var(--main-bg);
   padding: 3rem 0 12rem;

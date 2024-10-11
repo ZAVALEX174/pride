@@ -21,10 +21,30 @@
 
 html {
   box-sizing: border-box;
-  font-size: calc(100vw / 1920 * 10);
+  font-size: calc(100vw / 3840 * 10);
   min-height: 100vh;
   scroll-behavior: smooth;
 }
+
+@media (max-width: 3100px) {
+  html {
+    font-size: calc(100vw / 3100 * 10);
+  }
+}
+
+
+@media (max-width: 2560px) {
+  html {
+    font-size: calc(100vw / 2560 * 10);
+  }
+}
+
+@media (max-width: 1920px) {
+  html {
+    font-size: calc(100vw / 1920 * 10);
+  }
+}
+
 @media (max-width: 1440px) {
   html {
     font-size: calc(100vw / 1440 * 10);
