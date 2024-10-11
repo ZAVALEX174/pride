@@ -1,7 +1,7 @@
 
 var watchedBeforeSwiper = new Swiper(".watched-before-swiper", {
-  slidesPerView: "auto",
-  centeredSlides: true,
+  slidesPerView: 2.7,
+  // centeredSlides: true,
   spaceBetween: 24,
   grabCursor: true,
 });

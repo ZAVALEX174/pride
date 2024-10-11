@@ -1,3 +1,23 @@
+.swiper.watched-before-swiper > .swiper-wrapper.pl200 {
+  margin-left: 9%;
+}
+
+/* .watched-before-swiper > .swiper-slide {
+  width: 20%;
+}
+
+.watched-before-swiper > .swiper-slide:nth-child(2n) {
+  width: 100%;
+}
+
+.watched-before-swiper > .swiper-slide:nth-child(3n) {
+  width: 100%;
+}
+
+.watched-before-swiper > .swiper-slide:nth-child(4n) {
+  width: 10%;
+} */
+
 /*
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
@@ -3160,9 +3180,9 @@ label[for='user-email'] {
   border-bottom: 1.5px solid var(--5);
 }
 
-.watched-before__container {
-  margin-right: 0;
-}
+/* .watched-before__container {
+  
+} */
 
 .watched-before__header-title {
   font-weight: 700;
