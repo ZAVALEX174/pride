@@ -1,6 +1,6 @@
-.swiper.watched-before-swiper > .swiper-wrapper.pl200 {
+/* .swiper.watched-before-swiper > .swiper-wrapper.pl200 {
   margin-left: 9%;
-}
+} */
 
 /* .watched-before-swiper > .swiper-slide {
   width: 20%;
@@ -3178,11 +3178,16 @@ label[for='user-email'] {
   width: 100%;
   padding: 6rem 0;
   border-bottom: 1.5px solid var(--5);
+  overflow: hidden;
 }
 
 /* .watched-before__container {
   
 } */
+
+.watched-before-swiper {
+  margin-right: -40%;
+}
 
 .watched-before__header-title {
   font-weight: 700;
