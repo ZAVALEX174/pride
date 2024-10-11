@@ -233,7 +233,7 @@
   height: 100vh;
   box-shadow: 0 4px 5px 0 rgba(25, 33, 61, 0.05);
   background: var(--main-bg);
-  padding: 3rem 0 12rem;
+  padding: 30px 0 120px;
 }
 .header-menu-madal__header {
   width: 100%;
@@ -243,9 +243,9 @@
   border-bottom: 1.5px solid var(--5);
 }
 .header-menu-madal__close-btn {
-  width: 8.8rem;
-  height: 8.8rem;
-  margin-right: 3rem;
+  width: 88px;
+  height: 88px;
+  margin-right: 30px;
   border: none;
   outline: none;
   background-color: transparent;
@@ -268,12 +268,12 @@
 }
 .header-menu-madal__header-link {
   font-weight: 600;
-  font-size: 2.4rem;
+  font-size: 24px;
   line-height: 1.25;
   color: var(--dark-gray);
   cursor: pointer;
   padding-right: 64px;
-  max-width: 34rem;
+  max-width: 340px;
   width: 100%;
   position: relative;
   transition: all 0.3s ease-in;
@@ -297,15 +297,15 @@
 }
 .header-menu-madal__body-top {
   width: 100%;
-  padding: 3rem 0;
+  padding: 30px 0;
   border-bottom: 1.5px solid var(--5);
-  margin-bottom: 1.5rem;
+  margin-bottom: 15px;
 }
 .header-menu-madal__body-top-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 10.8rem 10.8rem 10.8rem 7.6rem;
-  column-gap: 2.8rem;
+  grid-template-rows: 108px 108px 108px 76px;
+  column-gap: 28px;
   grid-template-areas:
     'col1 col2 col3row1'
     'col1 col2 col3row2'
@@ -317,9 +317,9 @@
   display: inline-flex;
   align-items: center;
   width: 100%;
-  height: 10.8rem;
+  height: 108px;
   font-weight: 600;
-  font-size: 2.4rem;
+  font-size: 24px;
   line-height: 1.25;
   color: var(--dark-gray);
   transition: all 0.3s ease-in;
@@ -348,7 +348,7 @@
 .col1 > a,
 .col2 > a {
   border-bottom: 1.5px solid var(--5);
-  padding-left: 2rem;
+  padding-left: 20px;
 }
 .col1 > ul,
 .col2 > ul {
@@ -362,12 +362,12 @@
 .col1 > ul > li,
 .col2 > ul > li {
   width: 100%;
-  height: 6.6rem;
+  height: 66px;
   transition: all 0.3s ease-in;
   display: flex;
   align-items: center;
   padding-right: 60px;
-  padding-left: 2rem;
+  padding-left: 20px;
 }
 .col1 > ul > li:hover,
 .col2 > ul > li:hover {
@@ -389,7 +389,7 @@
 .col2 > ul > li > a {
   width: 100%;
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 20px;
   line-height: 1.1;
   color: var(--dark-gray);
 }
@@ -434,26 +434,26 @@
   justify-content: space-between;
 }
 .header-menu-madal__body-down-left {
-  max-width: 35rem;
+  max-width: 350px;
   width: 100%;
 }
 .header-menu-madal__body-down-left-list {
   width: 100%;
   display: flex;
   flex-direction: column;
-  row-gap: 1.5rem;
+  row-gap: 15px;
 }
 .header-menu-madal__body-down-left-item {
-  margin-left: 2rem;
+  margin-left: 20px;
 }
 .header-menu-madal__body-down-left-link {
   position: relative;
   display: inline-flex;
   align-items: center;
   width: 100%;
-  height: 10.8rem;
+  height: 1008px;
   font-weight: 600;
-  font-size: 2.4rem;
+  font-size: 24px;
   line-height: 1.25;
   color: var(--dark-gray);
   transition: all 0.3s ease-in;
@@ -473,9 +473,9 @@
   color: var(--color-orange);
 }
 .header-menu-madal__body-down-right {
-  max-width: 70rem;
+  max-width: 700px;
   width: 100%;
-  height: 35.4rem;
+  height: 354px;
   border-radius: 15px;
   box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
 }
@@ -486,8 +486,8 @@
   display: flex;
 }
 .header-menu-madal__body-down-right-baner-img {
-  width: 30rem;
-  height: 35.4rem;
+  width: 300px;
+  height: 354px;
 }
 .header-menu-madal__body-down-right-baner-img > img {
   width: 100%;
@@ -500,18 +500,18 @@
   flex-direction: column;
   background-color: var(--dark-gray);
   justify-content: center;
-  width: calc(100% - 30rem);
-  padding-left: 3rem;
+  width: calc(100% - 300px);
+  padding-left: 30px;
 }
 .header-menu-madal__body-down-right-baner-box > h3 {
   font-weight: 600;
-  font-size: 4rem;
+  font-size: 40px;
   line-height: 1;
   color: var(--title-color-ligth);
-  margin-bottom: 4.5rem;
+  margin-bottom: 45px;
 }
 .baner__btn {
-  max-width: 30.3rem;
+  max-width: 303px;
   width: 100%;
   background-color: var(--color-orange);
   color: var(--title-color-ligth);
