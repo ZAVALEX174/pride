@@ -3186,7 +3186,8 @@ label[for='user-email'] {
 } */
 
 .watched-before-swiper {
-  margin-right: -40%;
+  padding-right: 10%;
+  margin-right: -30%;
 }
 
 .watched-before__header-title {
