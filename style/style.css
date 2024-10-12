@@ -2095,6 +2095,7 @@ background: url('../images/catalog/arr_right_orange.svg') no-repeat
 .our-projects {
   width: 100%;
   padding: 9rem 0;
+  overflow: hidden;
 }
 
 .our-projects__header {
@@ -2145,13 +2146,6 @@ background: url('../images/catalog/arr_right_orange.svg') no-repeat
 }
 
 .our-projects__body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 170rem;
-  width: 100%;
-  margin: 0 0 0 auto;
-  padding-right: 0;
 }
 
 .our-projects__contaiher-swiper {
