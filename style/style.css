@@ -2203,6 +2203,12 @@ background: url('../images/catalog/arr_right_orange.svg') no-repeat
   -o-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
 }
+.our-projects-slide__content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
 /* .swiper-slide.our-projects-slide::before {
 pointer-events: none;
 position: absolute;
