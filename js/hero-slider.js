@@ -1,5 +1,5 @@
 const heroSlider = new Swiper('.hero-swiper', {
-        loop: true,
+        // loop: true,
         speed: 1500,
         pagination: {
             el: '.swiper-pagination',
