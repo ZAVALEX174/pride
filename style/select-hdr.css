@@ -1,0 +1,119 @@
+.header__lang {
+    /*position: relative;*/
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.dropdown {
+    position: relative;
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+}
+
+.header__lang-box {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    background: transparent;
+    outline: none;
+    border-color: transparent;
+    font-family: "Golos Text", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.1;
+    color: var(--dark-gray);
+    cursor: pointer;
+}
+
+.header__lang-box::after {
+    pointer-events: none;
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 20px;
+    height: 14px;
+    background: url("../images/header/arr_white.svg") no-repeat center center/cover;
+}
+
+.header__lang-box > img {
+    margin-right: 6px;
+}
+
+.dropdown__list {
+    display: none;
+    max-width: 415px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 40px;
+    box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
+    background: var(--title-color-ligth);
+    border: 1.50px solid var(--5);
+    border-radius: 0 0 15px 15px;
+    overflow: hidden;
+    z-index: 4;
+}
+
+.dropdown__list_visible {
+    display: block;
+}
+
+.dropdown__item {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    /*padding: 26px 15px;*/
+    cursor: pointer;
+}
+
+.header__lang-box-text {
+    padding-right: 2.9rem;
+    margin: 0 auto;
+    color: var(--title-color-ligth);
+}
+
+label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 26px 15px 26px 15px;
+    transition: 0.3s ease-in;
+    font-family: "Golos Text", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.1;
+    color: var(--dark-gray);
+    cursor: pointer;
+    order: 2;
+}
+label img {
+    margin-right: 10px;
+}
+
+input {
+    display: inline-flex;
+    align-items: center;
+    margin-left: auto;
+}
+.dropdown__item:hover {
+    background-color: var(--dark-gray);
+}
+
+.dropdown__item:hover label {
+    color: var(--color-orange);
+}
+
+.dropdown__item > img {
+    order: 1;
+}
+
+.dropdown__item > input {
+    order: 3;
+}

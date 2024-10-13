@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style/swiper-bundle.css"/>
     <link rel="stylesheet" href="style/index.css"/>
     <link rel="stylesheet" href="style/style.css"/>
+    <link rel="stylesheet" href="style/select-hdr.css"/>
 </head>
 <body>
 <header class="header">
@@ -27,47 +28,39 @@
                 </a>
             </div>
             <div class="header__lang">
-                <div class="header__lang-box">
-                    <ul class="header__lang-list">
-                        <li class="header__lang-item none">
-                            <a href="#">
-                                <img
-                                        src="images/header/flag_brit.png"
-                                        height="23"
-                                        width="32"/>
+                <div class="dropdown">
+                    <button class="header__lang-box">
+                        <img class="th-img" src="images/header/flag_brit.png" style="width: 32px; height: 22px;">
+                        <p class="header__lang-box-text">English</p>
+                    </button>
+                    <ul class="dropdown__list">
+                        <li class="dropdown__item" data-value="engl">
+                            <label for="engl" class="dropdown__label">
+                                <img class="drop-img" src="images/header/flag_brit.png" style="width: 32px; height: 22px;">
                                 English
-                                <input type="checkbox"/>
-                            </a>
+                                <input type="checkbox" name="engl" id="engl"/>
+                            </label>
                         </li>
-                        <li class="header__lang-item">
-                            <a href="#">
-                                <img
-                                        src="images/header/flag_rus.png"
-                                        height="23"
-                                        width="32"/>
+                        <li class="dropdown__item" data-value="rus">
+                            <label for="rus" class="dropdown__label">
+                                <img class="drop-img" src="images/header/flag_rus.png" style="width: 32px; height: 22px;">
                                 Russian
-                                <input type="checkbox"/>
-                            </a>
+                                <input type="checkbox" name="rus" id="rus">
+                            </label>
                         </li>
-                        <li class="header__lang-item none">
-                            <a href="#">
-                                <img
-                                        src="images/header/flag_arab.png"
-                                        height="23"
-                                        width="32"/>
+                        <li class="dropdown__item" data-value="arab">
+                            <label for="arab" class="dropdown__label">
+                                <img class="drop-img" src="images/header/flag_arab.png" style="width: 32px; height: 22px;">
                                 Arabic
-                                <input type="checkbox"/>
-                            </a>
+                                <input type="checkbox" name="arab" id="arab">
+                            </label>
                         </li>
-                        <li class="header__lang-item none">
-                            <a href="#">
-                                <img
-                                        src="images/header/flag_port.png"
-                                        height="23"
-                                        width="32"/>
+                        <li class="dropdown__item" data-value="port">
+                            <label for="port" class="dropdown__label">
+                                <img class="drop-img" src="images/header/flag_port.png" style="width: 32px; height: 22px;">
                                 Portuguese
-                                <input type="checkbox"/>
-                            </a>
+                                <input type="checkbox" name="port" id="port">
+                            </label>
                         </li>
                     </ul>
                 </div>
@@ -1229,7 +1222,7 @@
                     </li>
 
                     <li class="work__body-item work__body-item_hover">
-<!--                        <img src="images/hero/bg_slider.jpg" alt="">-->
+                        <!--                        <img src="images/hero/bg_slider.jpg" alt="">-->
                         <h3 class="work__body-cart-title work__body-cart-title_hover">
                             Подбор установки по характеристикам
                         </h3>
@@ -2243,6 +2236,7 @@
         </div>
     </div>
 </footer>
+<script src="js/dropdown.js"></script>
 <script src="js/swiper-bundle.js"></script>
 <script src="js/header-modal.js"></script>
 <script src="js/hero-slider.js"></script>
