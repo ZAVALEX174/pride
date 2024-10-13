@@ -78,7 +78,7 @@
     color: var(--title-color-ligth);
 }
 
-label {
+.dropdown__label {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -93,15 +93,17 @@ label {
     cursor: pointer;
     order: 2;
 }
-label img {
+
+.dropdown__label img {
     margin-right: 10px;
 }
 
-input {
+.dropdown__label > input {
     display: inline-flex;
     align-items: center;
     margin-left: auto;
 }
+
 .dropdown__item:hover {
     background-color: var(--dark-gray);
 }
