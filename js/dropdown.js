@@ -16,11 +16,14 @@ document.querySelectorAll('.dropdown').forEach(function (DropDownWrapper) {
             listItem.dataset.value == 'rus' ? valueBtn.innerText = 'Русский' : valueBtn.innerText = this.innerText;
             let image = listItem.querySelector('.drop-img').src;
             valueBtnImg.src = image;
+            // listItem.querySelector('.custom-checkbox').classList.toggle('custom-checkbox__selected')
             let inputChecked = listItem.querySelector('input[type="checkbox"]');
             if (inputChecked.checked == true) {
                 inputChecked.checked = false;
+                // listItem.querySelector('.custom-checkbox').classList.add('custom-checkbox__selected')
             } else {
                 inputChecked.checked = true;
+                // listItem.querySelector('.custom-checkbox').classList.remove('custom-checkbox__selected')
             }
         })
     })
