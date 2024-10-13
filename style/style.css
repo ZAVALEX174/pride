@@ -169,6 +169,7 @@
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    pointer-events: none;
 }
 
 .header__search input {

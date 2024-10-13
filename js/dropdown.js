@@ -1,27 +1,44 @@
-const dropDownList = document.querySelector('.dropdown__list');
-const dropdownBtn = document.querySelector('.header__lang-box');
-let dropdownItems = document.querySelectorAll('.dropdown__item');
-let labels = document.querySelectorAll('.dropdown__label');
-let valueBtn = document.querySelector('.header__lang-box-text');
-let valueBtnImg = document.querySelector('.th-img');
-// console.log(labels, valueBtn, valueBtnImg);
+document.querySelectorAll('.dropdown').forEach(function (DropDownWrapper) {
 
-dropdownBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    dropDownList.classList.toggle('dropdown__list_visible');
-});
+    const dropDownList = DropDownWrapper.querySelector('.dropdown__list');
+    const dropdownBtn = DropDownWrapper.querySelector('.header__lang-box');
+    let dropdownItems = dropDownList.querySelectorAll('.dropdown__item');
+    let valueBtn = dropdownBtn.querySelector('.header__lang-box-text');
+    let valueBtnImg = dropdownBtn.querySelector('.header__lang-box-img');
 
-document.querySelectorAll('.dropdown__item').forEach(function (listItem) {
-    listItem.addEventListener('click', function () {
-        valueBtn.innerText = this.innerText;
-        let immg = listItem.querySelector('.drop-img').src;
-        console.log('img:', immg)
-        valueBtnImg.src = immg;
+    dropdownBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        dropDownList.classList.toggle('dropdown__list_visible');
+    });
+    dropdownItems.forEach(function (listItem) {
+        listItem.addEventListener('click', function (e) {
+            listItem.dataset.value == 'rus' ? valueBtn.innerText = 'Русский' : valueBtn.innerText = this.innerText;
+            let image = listItem.querySelector('.drop-img').src;
+            valueBtnImg.src = image;
+            let inputChecked = listItem.querySelector('input[type="checkbox"]');
+            if (inputChecked.checked == true) {
+                inputChecked.checked = false;
+            } else {
+                inputChecked.checked = true;
+            }
+        })
     })
+    dropdownItems.forEach(el => el.addEventListener('click', (e) => {
+        e.preventDefault();
+        dropDownList.classList.remove('dropdown__list_visible');
+    }));
+    document.addEventListener('click', (e) => {
+        if (e.target !== dropdownBtn) {
+            dropDownList.classList.remove('dropdown__list_visible');
+        }
+    })
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Tab' || e.key === 'Escape') {
+            dropDownList.classList.remove('dropdown__list_visible');
+        }
+    })
+
 })
 
-dropdownItems.forEach(el => el.addEventListener('click', (e) => {
-    e.preventDefault();
-    dropDownList.classList.remove('dropdown__list_visible');
 
-}));
