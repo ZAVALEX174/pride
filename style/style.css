@@ -3155,6 +3155,7 @@ label[for='user-email'] {
     padding: 19px 16px;
     height: 160px;
     font-size: 20px;
+    margin-bottom: 30px;
 }
 
 .form-right > textarea:focus {
@@ -3197,6 +3198,10 @@ label[for='user-email'] {
 
 .form-representation__form-btn:hover {
     color: var(--dark-gray);
+}
+
+.label__mar-bot {
+    margin-bottom: 1rem;
 }
 
 /*========================================= news ==============================================*/
