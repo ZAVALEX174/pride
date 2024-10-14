@@ -1,20 +1,20 @@
 @font-face {
     font-family: 'Golos Text Bold';
-    src: local('Golos Text Bold'), url('../fonts/GolosText-Bold.ttf') format('ttf');
+    src: local('Golos Text Bold'), url('../fonts/GolosText-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Golos Text SemiBold';
-    src: local('Golos Text SemiBold'), url('../fonts/GolosText-SemiBold.ttf') format('ttf');
+    src: local('Golos Text SemiBold'), url('../fonts/GolosText-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Golos Text Regular';
-    src: local('Golos Text Regular'), url('../fonts/GolosText-Regular.ttf') format('ttf');
+    src: local('Golos Text Regular'), url('../fonts/GolosText-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -22,7 +22,7 @@
 
 @font-face {
     font-family: 'GetVoIP Grotesque Regular';
-    src: local('GetVoIP Grotesque Regular'), url('../fonts/GetVoIP-Grotesque.ttf') format('ttf'),
+    src: local('GetVoIP Grotesque Regular'), url('../fonts/GetVoIP-Grotesque.ttf') format('truetype'),
     url('../fonts/GetVoIP-Grotesque.otf') format('otf');
     font-weight: 400;
     font-style: normal;
@@ -31,21 +31,21 @@
 
 @font-face {
     font-family: 'Inter Regular';
-    src: local('Inter Regular'), url('../fonts/Inter_18pt-Regular.ttf') format('ttf');
+    src: local('Inter Regular'), url('../fonts/Inter_18pt-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Inter Semi Bold';
-    src: local('Inter Semi Bold'), url('../fonts/Inter_18pt-SemiBold.ttf') format('ttf');
+    src: local('Inter Semi Bold'), url('../fonts/Inter_18pt-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'Inter Extra Bold';
-    src: local('Inter Extra Bold'), url('../fonts/Inter_18pt-ExtraBold.ttf') format('ttf');
+    src: local('Inter Extra Bold'), url('../fonts/Inter_18pt-ExtraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
     font-display: swap;
