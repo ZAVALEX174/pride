@@ -129,12 +129,32 @@
     z-index: -1;
 }
 
+/*.footer__callback-form-policy > .custom-checkbox {*/
+/*    position: absolute;*/
+/*    top: 59%;*/
+/*}*/
 .custom-checkbox {
     margin-left: auto;
     color: var(--ligth-gray);
     transition: color 0.3s ease-in;
+    right: 1rem;
+    /*top: 40%;*/
+    /*transform: translateY(-50%);*/
+    position: absolute;
 }
 
 .real-checkbox:checked + .custom-checkbox {
     color: var(--color-orange);
+}
+
+.form-right .custom-checkbox {
+    left: 0;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+.footer__callback-form-policy .custom-checkbox {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }

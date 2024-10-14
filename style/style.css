@@ -1657,7 +1657,7 @@
 .categories__body-list {
     display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);   /*?*/
+    grid-template-columns: repeat(3, 1fr); /*?*/
     grid-auto-rows: 43rem;
     gap: 5.8rem 2.4rem;
     margin-bottom: 6rem;
@@ -2045,6 +2045,7 @@
     background: var(--ligth-gray);
     color: var(--title-color-ligth);
 }
+
 /*.work__body-item_hover>img {*/
 /*    position: relative;*/
 /*}*/
@@ -2780,6 +2781,11 @@
     color: var(--title-color-ligth);
 }
 
+.form-right > label {
+    position: relative;
+    padding-left: 4rem;
+}
+
 .form-left input,
 .form-left .form-row3 .column1 select,
 .form-left .form-row3 .column2 select,
@@ -2884,9 +2890,11 @@ label[for='user-email'] {
     outline: none;
     border-color: transparent;
 }
+
 .select::-ms-expand {
     display: none;
 }
+
 .form-row2,
 .form-row3 {
     width: 100%;
@@ -2912,6 +2920,7 @@ label[for='user-email'] {
     width: 100%;
 
 }
+
 .column1__wrap::after,
 .column2__wrap::after {
     position: absolute;
@@ -3342,6 +3351,7 @@ label[for='user-email'] {
     position: relative;
     max-width: 64.8rem;
     width: 100%;
+    margin-bottom: 1rem;
 }
 
 .footer__callback-form-input {
@@ -3424,7 +3434,13 @@ label[for='user-email'] {
     line-height: 1.1;
     color: var(--ligth-gray);
     margin-bottom: 3rem;
+    margin-left: 3rem;
+    position: relative;
+    padding-left: 4rem;
+    width: 100%;
 }
+
+
 
 .footer__conacts {
     width: 100%;
@@ -3548,6 +3564,12 @@ label[for='user-email'] {
     font-size: 2.4rem;
     line-height: 1.25;
     color: var(--dark-gray);
+    transition: 0.3s ease-in;
+}
+
+.footer__conacts-email-link:hover,
+.footer__conacts-tel-link:hover {
+    color: var(--color-orange);
 }
 
 .footer__navigation-top {
@@ -3589,10 +3611,15 @@ label[for='user-email'] {
     color: var(--dark-gray);
     margin-bottom: 3rem;
     padding-bottom: 1.5rem;
+    transition: 0.3s ease-in;
 }
 
 .footer__nav-top-link_line {
     border-bottom: 1.5px solid var(--5);
+}
+
+.footer__nav-top-link:hover {
+    color: var(--color-orange);
 }
 
 .footer__nav-top-item-dropdown-list {
@@ -3616,6 +3643,10 @@ label[for='user-email'] {
     font-size: 2rem;
     line-height: 1.1;
     color: var(--ligth-gray);
+    transition: 0.3s ease-in;
+}
+.footer__nav-top-item-dropdown-link:hover {
+    color: var(--color-orange);
 }
 
 .footer__navigation-down {
@@ -3646,6 +3677,10 @@ label[for='user-email'] {
     font-size: 2.4rem;
     line-height: 1.25;
     color: var(--color-orange);
+    transition: 0.3s ease-in;
+}
+.footer__nav-down-link:hover {
+    color: var(--dark-gray);
 }
 
 .footer__copyrigth {
@@ -3686,6 +3721,7 @@ label[for='user-email'] {
 .footer__guidance {
     display: block;
 }
+
 .work__body-item_hover {
     background-image: url("../images/hero/bg_slider.jpg");
     background-repeat: no-repeat;
