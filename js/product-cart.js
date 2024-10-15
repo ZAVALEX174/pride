@@ -24,6 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
     let mySwiper2 = new Swiper('.card-slider__nav', {
         slidesPerView: 6,
         spaceBetween: 10,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
     })
 
     const maxItems = 5;

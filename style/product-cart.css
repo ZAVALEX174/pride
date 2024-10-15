@@ -1,43 +1,3 @@
-/*.product-cart {*/
-/*    width: 100%;*/
-
-/*}*/
-
-/*.product-cart__container {*/
-/*    display: flex;*/
-/*    margin-top: 350px;*/
-/*    position: relative;*/
-/*}*/
-
-/*.product-cart__text-content {*/
-/*    display: inline-flex;*/
-/*    flex-direction: column;*/
-/*    align-items: flex-start;*/
-/*    justify-content: flex-start;*/
-/*    top: 0;*/
-/*    right: 0;*/
-/*    max-width: 553px;*/
-/*    width: 100%;*/
-/*    min-height: 600px;*/
-/*    position: absolute;*/
-/*    z-index: 50;*/
-/*}*/
-
-/*.product-cart__label-btn {*/
-/*    background-color: var(--color-orange);*/
-/*    max-width: 13rem;*/
-/*    width: 100%;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*    margin-left: auto;*/
-/*    font-weight: 400;*/
-/*    font-size: 2rem;*/
-/*    line-height: 4rem;*/
-/*    height: 4rem;*/
-/*    color: var(--title-color-ligth);*/
-/*    margin-bottom: 1rem;*/
-/*}*/
-
 .card-info__title {
     font-family: 'Golos Text Bold', sans-serif;
     font-weight: 700;
@@ -103,16 +63,6 @@
     background: url("../images/product-cart-sec/checkbox.svg") no-repeat center/cover;
 }
 
-/*!*swiper*!*/
-/*.product-cart__container .mySwiper2 {*/
-/*    width: 50%;*/
-/*    margin-left: 0;*/
-/*    min-height: 600px;*/
-/*}*/
-
-/*.product-cart__container .swiper-wrapper {*/
-/*    min-height: 600px;*/
-/*}*/
 .breadcrumbs {
     width: 100%;
     margin-top: 35rem;
@@ -152,7 +102,6 @@
 .product-card {
     width: 100%;
     padding: 6rem 0;
-    border: 1px solid red;
 }
 
 .card {
@@ -163,18 +112,23 @@
 .card__content {
     display: flex;
     column-gap: 1rem;
+    margin-bottom: 3rem;
 }
 
 .card-slider {
     width: 50%;
-    background-color: aquamarine;
 }
 
 .slider-block {
+    height: 100%;
     overflow: hidden;
-    background-color: #000;
-    border: 1px solid #D9D9D9;
+    border: 1px solid transparent;
     border-radius: 5px;
+    transition: 0.3s ease-in;
+}
+
+.slider-block:hover {
+    border-color: #D9D9D9;
 }
 
 .card-slider .swiper-slide {
@@ -196,7 +150,6 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    background-color: bisque;
 }
 
 .slider-nav {
@@ -212,9 +165,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--dark-gray);
+    border: 1px solid transparent;
     border-radius: 5px;
+    overflow: hidden;
     cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.slider-nav__item:hover {
+    border-color: var(--dark-gray);
 }
 
 .slider-nav__item img {
