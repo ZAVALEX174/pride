@@ -181,3 +181,120 @@
     max-height: 100%;
 }
 
+/*tabs*/
+.product-cart-description__text {
+    border-radius: 57px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(50% - 1.2rem);
+    margin-bottom: 3rem;
+    background: var(--dark-gray);
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--title-color-ligth);
+    margin-right: 1.5rem;
+    transition: 0.3s ease-in;
+}
+
+.product-cart-description__text:hover {
+    color: var(--dark-gray);
+    background: var(--ligth-gray);
+}
+
+.product-cart-description__video {
+    border-radius: 57px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(50% - 1.2rem);
+    margin-bottom: 3rem;
+    background: var(--ligth-gray);
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--dark-gray);
+    transition: 0.3s ease-in;
+}
+
+.product-cart-description__video:hover {
+    color: var(--title-color-ligth);
+    background: var(--dark-gray);
+}
+
+/*.accordion*/
+.accordion {
+    margin-bottom: 3rem;
+}
+
+.accordion__title {
+    border-bottom: 1px solid var(--color-orange);
+    padding: 1.1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.accordion__title-span-icon {
+    width: 22px;
+    height: 12px;
+}
+
+.accordion__title-span-icon::after {
+    position: absolute;
+    content: '';
+    width: 22px;
+    height: 12px;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url("../images/product-cart-sec/arr_orang_down.svg") no-repeat center/cover;
+}
+
+.accordion__title-h3 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: var(--dark-gray);
+}
+
+.accordion__list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: max-height 0.5s ease-in;
+}
+
+.accordion__list_active {
+    visibility: visible;
+    opacity: 1;
+    transition: max-height 0.5s ease-in;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s ease-in;
+    padding: 2.1rem 2rem;
+}
+
+.row:hover {
+    background: var(--5);
+}
+
+.left, .right {
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: var(--dark-gray);
+}

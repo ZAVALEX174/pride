@@ -63,3 +63,28 @@ document.addEventListener('DOMContentLoaded', () => {
     // showMore();
 
 });
+
+const titles = document.querySelectorAll('.accordion__title');
+const contents = document.querySelectorAll('.accordion__list');
+
+titles.forEach(item => item.addEventListener('click', (e) => {
+    e.preventDefault();
+    const activeContent = document.querySelector('#' + item.dataset.tab);
+
+    if (activeContent.classList.contains('accordion__list_active')) {
+        activeContent.classList.remove('accordion__list_active');
+        item.classList.remove('accordion__list_active');
+        activeContent.style.maxHeight = 0;
+    } else {
+        contents.forEach(element => {
+            element.classList.remove('accordion__list_active');
+            element.style.maxHeight = 0;
+        })
+
+        titles.forEach(el => el.classList.remove('accordion__list_active'));
+
+        item.classList.add('accordion__list_active');
+        activeContent.classList.add('accordion__list_active');
+        activeContent.style.maxHeight = activeContent.scrollHeight + "px";
+    }
+}))
