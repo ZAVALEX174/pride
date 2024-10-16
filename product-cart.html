@@ -880,203 +880,245 @@
     </section>
     <section class="product-cart-description">
         <div class="container">
-            <a href="#" class="btn product-cart-description__text">
-                Технические характеристики
-            </a>
-            <a href="#" class="btn product-cart-description__video"> Видео </a>
+            <div class="product-cart-description-tabs">
+                <ul class="product-cart-description-tabs__list">
+                    <li class="product-cart-description-tabs__item">
+                        <button class="btn product-cart-description__text product-cart-description-tabs__btn product-cart-description-tabs__btn_active"
+                                data-tabs-path="text">
+                            Технические характеристики
+                        </button>
+                    </li>
+                    <li class="product-cart-description-tabs__item">
+                        <button class="btn product-cart-description__video product-cart-description-tabs__btn"
+                                data-tabs-path="video"> Видео
+                        </button>
+                    </li>
+                </ul>
+            </div>
 
-            <div class="accordion-box">
-                <div class="accordion">
-                    <div class="accordion__title" data-tab="tab-1">
-                        <h3 class="accordion__title-h3">Основные</h3>
-                        <span class="accordion__title-span-icon"></span>
+            <div class="tabs__content tabs__content_active" data-tabs-target="text">
+                <div class="accordion-box">
+                    <div class="accordion">
+                        <div class="accordion__title" data-tab="tab-1">
+                            <h3 class="accordion__title-h3">Основные</h3>
+                            <span class="accordion__title-span-icon"></span>
+                        </div>
+                        <ul id="tab-1" class="accordion__list">
+                            <li>
+                                <div class="row row1">
+                                    <div class="left">Мах. начальный диаметр долота, (мм)</div>
+                                    <div class="right">300</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row row2">
+                                    <div class="left">Категория прочности пород</div>
+                                    <div class="right">12</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row row3">
+                                    <div class="left">Мах. глубина бурения, (м)</div>
+                                    <div class="right">200</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row row4">
+                                    <div class="left"> Габаритные размеры установки, ДхШхВ (мм)</div>
+                                    <div class="right">4400х1600х2200</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row row5">
+                                    <div class="left">Масса установки, (кг)</div>
+                                    <div class="right">2200</div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <ul id="tab-1" class="accordion__list">
-                        <li>
-                            <div class="row row1">
-                                <div class="left">Мах. начальный диаметр долота, (мм)</div>
-                                <div class="right">300</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="row row2">
-                                <div class="left">Категория прочности пород</div>
-                                <div class="right">12</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="row row3">
-                                <div class="left">Мах. глубина бурения, (м)</div>
-                                <div class="right">200</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="row row4">
-                                <div class="left"> Габаритные размеры установки, ДхШхВ (мм)</div>
-                                <div class="right">4400х1600х2200</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="row row5">
-                                <div class="left">Масса установки, (кг)</div>
-                                <div class="right">2200</div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="accordion">
-                    <div class="accordion__title" data-tab="tab-2">
-                        <h3 class="accordion__title-h3">Вращатель</h3>
-                        <span class="accordion__title-span-icon"></span>
+                    <div class="accordion">
+                        <div class="accordion__title" data-tab="tab-2">
+                            <h3 class="accordion__title-h3">Вращатель</h3>
+                            <span class="accordion__title-span-icon"></span>
+                        </div>
+                        <ul id="tab-2" class="accordion__list">
+                            <li>
+                                <div class="row row1">
+                                    <div class="left">Мах. начальный диаметр долота, (мм)</div>
+                                    <div class="right">300</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row row2">
+                                    <div class="left">Категория прочности пород</div>
+                                    <div class="right">12</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row row3">
+                                    <div class="left">Мах. глубина бурения, (м)</div>
+                                    <div class="right">200</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row row4">
+                                    <div class="left"> Габаритные размеры установки, ДхШхВ (мм)</div>
+                                    <div class="right">4400х1600х2200</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row row5">
+                                    <div class="left">Масса установки, (кг)</div>
+                                    <div class="right">2200</div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <ul id="tab-2" class="accordion__list">
-                        <li>
-                            <div class="row row1">
-                                <div class="left">Мах. начальный диаметр долота, (мм)</div>
-                                <div class="right">300</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="row row2">
-                                <div class="left">Категория прочности пород</div>
-                                <div class="right">12</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="row row3">
-                                <div class="left">Мах. глубина бурения, (м)</div>
-                                <div class="right">200</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="row row4">
-                                <div class="left"> Габаритные размеры установки, ДхШхВ (мм)</div>
-                                <div class="right">4400х1600х2200</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="row row5">
-                                <div class="left">Масса установки, (кг)</div>
-                                <div class="right">2200</div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="accordion">
-                    <div class="accordion__title" data-tab="tab-3">
-                        <h3 class="accordion__title-h3">Механизм подачи</h3>
-                        <span class="accordion__title-span-icon"></span>
+                    <div class="accordion">
+                        <div class="accordion__title" data-tab="tab-3">
+                            <h3 class="accordion__title-h3">Механизм подачи</h3>
+                            <span class="accordion__title-span-icon"></span>
+                        </div>
+                        <ul id="tab-3" class="accordion__list">
+                            <li>
+                                <div class="row row1">
+                                    <div class="left">Мах. начальный диаметр долота, (мм)</div>
+                                    <div class="right">300</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row row2">
+                                    <div class="left">Категория прочности пород</div>
+                                    <div class="right">12</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row row3">
+                                    <div class="left">Мах. глубина бурения, (м)</div>
+                                    <div class="right">200</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row row4">
+                                    <div class="left"> Габаритные размеры установки, ДхШхВ (мм)</div>
+                                    <div class="right">4400х1600х2200</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row row5">
+                                    <div class="left">Масса установки, (кг)</div>
+                                    <div class="right">2200</div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <ul id="tab-3" class="accordion__list">
-                        <li>
-                            <div class="row row1">
-                                <div class="left">Мах. начальный диаметр долота, (мм)</div>
-                                <div class="right">300</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="row row2">
-                                <div class="left">Категория прочности пород</div>
-                                <div class="right">12</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="row row3">
-                                <div class="left">Мах. глубина бурения, (м)</div>
-                                <div class="right">200</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="row row4">
-                                <div class="left"> Габаритные размеры установки, ДхШхВ (мм)</div>
-                                <div class="right">4400х1600х2200</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="row row5">
-                                <div class="left">Масса установки, (кг)</div>
-                                <div class="right">2200</div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="accordion">
-                    <div class="accordion__title" data-tab="tab-4">
-                        <h3 class="accordion__title-h3">Агрегат насосный</h3>
-                        <span class="accordion__title-span-icon"></span>
+                    <div class="accordion">
+                        <div class="accordion__title" data-tab="tab-4">
+                            <h3 class="accordion__title-h3">Агрегат насосный</h3>
+                            <span class="accordion__title-span-icon"></span>
+                        </div>
+                        <ul id="tab-4" class="accordion__list">
+                            <li>
+                                <div class="row row1">
+                                    <div class="left">Мах. начальный диаметр долота, (мм)</div>
+                                    <div class="right">300</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row row2">
+                                    <div class="left">Категория прочности пород</div>
+                                    <div class="right">12</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row row3">
+                                    <div class="left">Мах. глубина бурения, (м)</div>
+                                    <div class="right">200</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row row4">
+                                    <div class="left"> Габаритные размеры установки, ДхШхВ (мм)</div>
+                                    <div class="right">4400х1600х2200</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row row5">
+                                    <div class="left">Масса установки, (кг)</div>
+                                    <div class="right">2200</div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <ul id="tab-4" class="accordion__list">
-                        <li>
-                            <div class="row row1">
-                                <div class="left">Мах. начальный диаметр долота, (мм)</div>
-                                <div class="right">300</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="row row2">
-                                <div class="left">Категория прочности пород</div>
-                                <div class="right">12</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="row row3">
-                                <div class="left">Мах. глубина бурения, (м)</div>
-                                <div class="right">200</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="row row4">
-                                <div class="left"> Габаритные размеры установки, ДхШхВ (мм)</div>
-                                <div class="right">4400х1600х2200</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="row row5">
-                                <div class="left">Масса установки, (кг)</div>
-                                <div class="right">2200</div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="accordion">
-                    <div class="accordion__title" data-tab="tab-5">
-                        <h3 class="accordion__title-h3">Шасси</h3>
-                        <span class="accordion__title-span-icon"></span>
+                    <div class="accordion">
+                        <div class="accordion__title" data-tab="tab-5">
+                            <h3 class="accordion__title-h3">Шасси</h3>
+                            <span class="accordion__title-span-icon"></span>
+                        </div>
+                        <ul id="tab-5" class="accordion__list">
+                            <li>
+                                <div class="row row1">
+                                    <div class="left">Мах. начальный диаметр долота, (мм)</div>
+                                    <div class="right">300</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row row2">
+                                    <div class="left">Категория прочности пород</div>
+                                    <div class="right">12</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row row3">
+                                    <div class="left">Мах. глубина бурения, (м)</div>
+                                    <div class="right">200</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row row4">
+                                    <div class="left"> Габаритные размеры установки, ДхШхВ (мм)</div>
+                                    <div class="right">4400х1600х2200</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="row row5">
+                                    <div class="left">Масса установки, (кг)</div>
+                                    <div class="right">2200</div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                    <ul id="tab-5" class="accordion__list">
-                        <li>
-                            <div class="row row1">
-                                <div class="left">Мах. начальный диаметр долота, (мм)</div>
-                                <div class="right">300</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="row row2">
-                                <div class="left">Категория прочности пород</div>
-                                <div class="right">12</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="row row3">
-                                <div class="left">Мах. глубина бурения, (м)</div>
-                                <div class="right">200</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="row row4">
-                                <div class="left"> Габаритные размеры установки, ДхШхВ (мм)</div>
-                                <div class="right">4400х1600х2200</div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="row row5">
-                                <div class="left">Масса установки, (кг)</div>
-                                <div class="right">2200</div>
-                            </div>
-                        </li>
-                    </ul>
                 </div>
             </div>
+            <div class="tabs__content" data-tabs-target="video">
+                <div class="content">
+                    <div class="video-content">
+                        <video controls>
+                            <source src="video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-content">
+                        <video controls>
+                            <source src="video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-content">
+                        <video controls>
+                            <source src="video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="video-content">
+                        <video controls>
+                            <source src="video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 

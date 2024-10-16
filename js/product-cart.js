@@ -62,6 +62,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // showMore();
 
+
+    const tabs = document.querySelector('.product-cart-description-tabs');
+    const tabsBtn = document.querySelectorAll('.product-cart-description-tabs__btn');
+    const tabsContent = document.querySelectorAll('.tabs__content');
+
+    if (tabs) {
+        tabs.addEventListener('click', (e) => {
+            if (e.target.classList.contains('product-cart-description-tabs__btn')) {
+                const tabsPath = e.target.dataset.tabsPath;
+                console.log(tabsPath);
+
+                tabsHandler(tabsPath);
+            }
+        })
+    }
+
+    const tabsHandler = (path) => {
+        tabsBtn.forEach(el => {
+            el.classList.remove('product-cart-description-tabs__btn_active')
+        });
+        document.querySelector(`[data-tabs-path="${path}"]`).classList.add('product-cart-description-tabs__btn_active');
+
+        tabsContent.forEach(el => {
+            el.classList.remove('tabs__content_active')
+        });
+        document.querySelector(`[data-tabs-target="${path}"]`).classList.add('tabs__content_active');
+
+    }
+
 });
 
 const titles = document.querySelectorAll('.accordion__title');
