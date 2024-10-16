@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
         slidesPerView: 6,
         spaceBetween: 10,
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
     })
 
@@ -61,6 +61,23 @@ document.addEventListener('DOMContentLoaded', () => {
     // };
 
     // showMore();
+
+    // количество отображающихся видео карточек
+    let quantityVideo = document.querySelectorAll('.video-content').length;
+    let videoContent = document.querySelectorAll('.video-content');
+    let content = document.querySelector('.content');
+
+    if (quantityVideo == 1) {
+        content.classList.add('content_one');
+        videoContent.forEach(video => {
+            video.classList.add('video-content_one');
+        })
+    } else {
+        content.classList.remove('content_one');
+        videoContent.forEach(video => {
+            video.classList.remove('video-content_one');
+        })
+    }
 
 
     const tabs = document.querySelector('.product-cart-description-tabs');
