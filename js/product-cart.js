@@ -1,20 +1,4 @@
-// var swiper = new Swiper(".mySwiper", {
-//   spaceBetween: 0,
-//   slidesPerView: 4,
-//   freeMode: true,
-//   watchSlidesProgress: true,
-// });
-// var swiper2 = new Swiper(".mySwiper2", {
-//   spaceBetween: 0,
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   thumbs: {
-//     swiper: swiper,
-//   },
-// });
-
+// Двойной слайдер для верней часи страницы
 document.addEventListener('DOMContentLoaded', () => {
 
     let mySwiper = new Swiper('.slider-block', {
@@ -38,8 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
         el.setAttribute('data-index', index);
 
         el.addEventListener('click', (e) => {
-            const index = parseInt(e.currentTarget.dataset.index);
-            console.log(index)
             mySwiper.slideTo(index);
         });
     });
@@ -79,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 
-
+    // переключение табов
     const tabs = document.querySelector('.product-cart-description-tabs');
     const tabsBtn = document.querySelectorAll('.product-cart-description-tabs__btn');
     const tabsContent = document.querySelectorAll('.tabs__content');
@@ -88,13 +70,11 @@ document.addEventListener('DOMContentLoaded', () => {
         tabs.addEventListener('click', (e) => {
             if (e.target.classList.contains('product-cart-description-tabs__btn')) {
                 const tabsPath = e.target.dataset.tabsPath;
-                console.log(tabsPath);
 
                 tabsHandler(tabsPath);
             }
         })
     }
-
     const tabsHandler = (path) => {
         tabsBtn.forEach(el => {
             el.classList.remove('product-cart-description-tabs__btn_active')
@@ -108,8 +88,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 
+
+    // Кнопка полей для плеера
+    const videoElements = document.querySelectorAll('.video-content');
+    videoElements.forEach(el => {
+        const video = el.querySelector('video');
+        const bplay = el.querySelector('.video-control');
+        const videoDesc = el.querySelector('.video-container__desc');
+
+        video.addEventListener('click', evt => {
+            if (video.paused) return;
+            video.pause();
+            videoDesc.classList.remove('video-control__hidden');
+        })
+
+        video.addEventListener('ended', evt => {
+            video.currentTime = 0;
+            videoDesc.classList.remove('video-control__hidden');
+        })
+
+        bplay.addEventListener('click', evt => {
+            if (!video.paused) return;
+            video.play().then(() => {
+                videoDesc.classList.add('video-control__hidden');
+            })
+        })
+
+    })
 });
 
+// Аккардион
 const titles = document.querySelectorAll('.accordion__title');
 const contents = document.querySelectorAll('.accordion__list');
 
