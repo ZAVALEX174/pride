@@ -1,0 +1,113 @@
+.swiper-filter-on {
+    width: 100%;
+    padding: 5rem 0;
+}
+
+.swiper-filter-on__header-title {
+    color: var(--color-orange);
+}
+
+.swiper-filter-on__body-item:hover {
+}
+
+.catalog-page-product-baner {
+    background-color: transparent;
+}
+
+.catalog-page-product-baner__container {
+    border-radius: 15px;
+    padding: 4.75rem 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(31deg, #ec691f 15.3%, rgba(236, 105, 31, 0) 100%),
+    url('../images/catalog/uu.jpg') no-repeat center/cover;
+}
+
+.catalog-page-product-baner__btn {
+    background-color: var(--dark-gray);
+}
+
+.swiper-filter-on__body-item:hover {
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    border-color: var(--color-orange);
+    -webkit-box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
+    box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
+    background: -o-linear-gradient(
+            bottom,
+            rgba(43, 42, 41, 0.9) 46.04%,
+            rgba(235, 99, 32, 0.9) 100%
+    ),
+    url('../images/hero/bg_slider.jpg') no-repeat center;
+    background: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(46.04%, rgba(43, 42, 41, 0.9)),
+            to(rgba(235, 99, 32, 0.9))
+    ),
+    url('../images/hero/bg_slider.jpg') no-repeat center;
+    background: linear-gradient(
+            360deg,
+            rgba(43, 42, 41, 0.9) 46.04%,
+            rgba(235, 99, 32, 0.9) 100%
+    ),
+    url('../images/hero/bg_slider.jpg') no-repeat center;
+}
+
+.swiper-filter-on__body-item:hover > .swiper-filter-on__body-cart-title {
+    color: var(--title-color-ligth);
+    -webkit-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+
+/*filter-navigation*/
+.filter-navigation {
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.filter-nav {
+    width: 100%;
+}
+
+.filter-nav__list {
+    width: 100%;
+    display: flex;
+    row-gap: 1.5rem;
+    flex-direction: column;
+}
+
+.filter-nav__item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-nav__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.filter-nav__link_home {
+    background-color: var(--ligth-gray);
+    color: var(--dark-gray);
+}
+
+.filter-nav__link_filter {
+    background-color: var(--dark-gray);
+    color: var(--title-color-ligth);
+}
+
+.filter-nav__link_filter:hover, .filter-nav__link_home:hover {
+    background-color: var(--color-orange);
+}
