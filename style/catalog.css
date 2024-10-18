@@ -65,6 +65,72 @@
 }
 
 /*//////////////////////*/
+.catalog-categories__header-btn {
+    position: relative;
+    max-width: 271px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1.2;
+    color: var(--dark-gray);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.catalog-categories__header-btn:hover {
+    color: var(--color-orange);
+    transition: color 0.3s ease-in;
+}
+
+.catalog-categories__header-btn::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 21px;
+    height: 16px;
+    top: 50%;
+    left: 75px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: url('../images/catalog/arr_right_orange.svg') no-repeat center/cover;
+}
+
+.catalog-categories__header-filter-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.catalog-categories__header-filter-wrapper-text {
+    display: inline-flex;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1.2;
+    color: var(--dark-gray);
+    margin-right: 1.6rem;
+}
+
+.catalog-categories__header-filter-btn {
+    padding: 0;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1.2;
+    color: var(--ligth-gray);
+    margin-right: 2.5rem;
+    transition: color 0.3s ease-in;
+}
+
+.catalog-categories__header-filter-btn:hover {
+    color: var(--color-orange);
+}
+
+.catalog-categories__header-filter-btn_active {
+    color: var(--color-orange);
+}
+
 .categories__body-list.catalog-categories__body-list {
     display: -ms-grid;
     display: grid;
@@ -120,6 +186,52 @@
     position: static;
     margin-bottom: 0;
     line-height: 1;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: 1px solid transparent;
+    border: none;
+    background-color: transparent;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1;
+    color: var(--ligth-gray);
+    padding: 11px;
+    width: 50px;
+    height: 50px;
+}
+
+.pagination button.active {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1;
+    color: var(--dark-gray);
+    border: 1.50px solid var(--color-orange);
+    border-radius: 54px;
+
+}
+
+.catalog-categories__body-item_hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }
 
 /*////////////////////*/
