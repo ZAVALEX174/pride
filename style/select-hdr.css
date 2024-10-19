@@ -15,41 +15,8 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(white),
-    to(black)
-  );
   background: -o-linear-gradient(top, white, black);
-  background: linear-gradient(to bottom, white, black);
-}
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-.example {
-  display: -ms-grid;
-  display: grid;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background: -o-linear-gradient(top, white, black);
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(white),
-    to(black)
-  );
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
   background: linear-gradient(to bottom, white, black);
 }
 .header__lang {
@@ -101,7 +68,7 @@
   width: 20px;
   height: 14px;
   background: url('../images/header/arr_white.svg') no-repeat center
-    center/cover;
+  center/cover;
 }
 
 .header__lang-box > img {
@@ -136,7 +103,6 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  /*padding: 26px 15px;*/
   cursor: pointer;
 }
 
@@ -215,10 +181,6 @@
   z-index: -1;
 }
 
-/*.footer__callback-form-policy > .custom-checkbox {*/
-/*    position: absolute;*/
-/*    top: 59%;*/
-/*}*/
 .custom-checkbox {
   margin-left: auto;
   color: var(--ligth-gray);
@@ -226,8 +188,6 @@
   -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
   right: 1rem;
-  /*top: 40%;*/
-  /*transform: translateY(-50%);*/
   position: absolute;
 }
 

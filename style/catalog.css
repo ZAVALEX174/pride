@@ -1,3 +1,24 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
+}
 .swiper-filter-on {
     width: 100%;
     padding: 5rem 0;
@@ -17,9 +38,17 @@
 .catalog-page-product-baner__container {
     border-radius: 15px;
     padding: 4.75rem 9rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    background: -o-linear-gradient(59deg, #ec691f 15.3%, rgba(236, 105, 31, 0) 100%),
+    url('../images/catalog/uu.jpg') no-repeat center/cover;
     background: linear-gradient(31deg, #ec691f 15.3%, rgba(236, 105, 31, 0) 100%),
     url('../images/catalog/uu.jpg') no-repeat center/cover;
 }
@@ -43,8 +72,7 @@
     url('../images/hero/bg_slider.jpg') no-repeat center;
     background: -webkit-gradient(
             linear,
-            left bottom,
-            left top,
+            left bottom, left top,
             color-stop(46.04%, rgba(43, 42, 41, 0.9)),
             to(rgba(235, 99, 32, 0.9))
     ),
@@ -74,14 +102,22 @@
     line-height: 1.2;
     color: var(--dark-gray);
     cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 0;
 }
 
 .catalog-categories__header-btn:hover {
     color: var(--color-orange);
+    -webkit-transition: color 0.3s ease-in;
+    -o-transition: color 0.3s ease-in;
     transition: color 0.3s ease-in;
 }
 
@@ -100,11 +136,17 @@
 }
 
 .catalog-categories__header-filter-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .catalog-categories__header-filter-wrapper-text {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     font-weight: 400;
     font-size: 25px;
@@ -120,6 +162,8 @@
     line-height: 1.2;
     color: var(--ligth-gray);
     margin-right: 2.5rem;
+    -webkit-transition: color 0.3s ease-in;
+    -o-transition: color 0.3s ease-in;
     transition: color 0.3s ease-in;
 }
 
@@ -189,8 +233,14 @@
 }
 
 .pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-top: 20px;
 }
@@ -198,8 +248,14 @@
 .pagination button {
     padding: 0;
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     cursor: pointer;
     outline: 1px solid transparent;
@@ -226,6 +282,7 @@
 
 .catalog-categories__body-item_hidden {
     clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
     clip-path: inset(50%);
     height: 1px;
     overflow: hidden;
@@ -247,24 +304,43 @@
 
 .filter-nav__list {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     row-gap: 1.5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
 .filter-nav__item {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
 .filter-nav__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     width: 100%;
     cursor: pointer;
+    -webkit-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
     transition: 0.3s ease-in;
 }
 
