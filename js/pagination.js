@@ -14,9 +14,12 @@ document.addEventListener('DOMContentLoaded', function () {
         const endIndex = startIndex + itemsPerPage;
         items.forEach((item, index) => {
             item.classList.toggle('catalog-categories__body-item_hidden', index < startIndex || index >= endIndex);
+
         });
         updateActiveButtonStates();
         nextBtn.classList.remove('none');
+        console.log(currentPage, page);
+
     }
 
     function createPageButtons() {
@@ -27,12 +30,14 @@ document.addEventListener('DOMContentLoaded', function () {
             const pageButton = document.createElement('li');
             pageButton.classList.add('li-pag-btn')
             pageButton.textContent = i + 1;
-            pageButton.addEventListener('click', () => {
+            pageButton.addEventListener('click', (e) => {
                 currentPage = i;
 
                 showPage(currentPage);
                 updateActiveButtonStates();
+
             });
+
             ulBtn.appendChild(pageButton);
         }
     }
@@ -40,10 +45,16 @@ document.addEventListener('DOMContentLoaded', function () {
     function updateActiveButtonStates() {
         const pageButtons = document.querySelectorAll('.pagination li');
         pageButtons.forEach((button, index) => {
+
             if (index === currentPage) {
                 button.classList.add('active');
             } else {
                 button.classList.remove('active');
+            }
+            if (currentPage == 0) {
+                prevBtn.classList.add('none');
+            } else {
+                prevBtn.classList.remove('none');
             }
         });
     }
@@ -65,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (currentPage == liBtns.length - 1) {
                 nextBtn.classList.add('none');
-                prevBtn.classList.remove('none')
+                prevBtn.classList.remove('none');
             }
 
         } else {
@@ -93,4 +104,16 @@ document.addEventListener('DOMContentLoaded', function () {
     nextBtn.addEventListener('click', hendlerBtn);
     prevBtn.addEventListener('click', hendlerBtn);
 
+    // удаляем кнопку Вперёд, если было нажатие на последнюю кнопку
+    const arrBtns = Array.from(liBtns);
+    const lastEl = Array.from(arrBtns).pop();
+
+    arrBtns.forEach((arr) => {
+        arr.addEventListener('click', (e) => {
+            console.log(e.currentTarget);
+            if (e.currentTarget == lastEl) {
+                nextBtn.classList.add('none')
+            }
+        })
+    })
 })
