@@ -73,7 +73,7 @@
 }
 
 .header__contacts-link {
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1.1;
   text-align: center;
   color: var(--title-color-ligth);
@@ -89,7 +89,7 @@
 .header__lang {
   border-radius: 5rem;
   padding: 1rem 1.5rem;
-  width: 223px;
+  width: 204px;
   height: 5rem;
   background: rgba(255, 255, 255, 0.15);
 }
@@ -164,6 +164,8 @@
 
 .header__search svg {
   position: absolute;
+  width: 32px;
+  height: 32px;
   left: 16px;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -239,7 +241,9 @@
 }
 
 .header__container-menu {
+  max-width: 110.6rem;
   width: 100%;
+  padding: 0;
 }
 
 .header__navigation {
@@ -259,7 +263,8 @@
 }
 
 .navigation__link {
-  font-size: 2.4rem;
+  padding: 0 1.5rem;
+  font-size: 2rem;
   line-height: 0.91667;
   text-align: center;
   color: var(--title-color-ligth);
@@ -274,6 +279,7 @@
 
 .navigation__link_drd {
   position: relative;
+  padding-right: 4.4rem;
 }
 
 .navigation__link_drd::after {
@@ -330,7 +336,7 @@
 
 .sticky {
   position: relative;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 
 .header-menu-madal__header {
