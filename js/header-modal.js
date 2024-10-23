@@ -24,11 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         headerModalOne.style.display = "none";
         headerModalTwo.style.display = "block";
-
+        document.body.style.overflow = "hidden";
     });
     closeModalBtnTwo.addEventListener("click", (e) => {
         e.preventDefault();
         headerModalTwo.style.display = "none";
+        document.body.style.overflow = "";
     });
 
 
