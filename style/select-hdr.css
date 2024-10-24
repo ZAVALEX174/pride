@@ -19,6 +19,7 @@
     background: -o-linear-gradient(top, white, black);
     background: linear-gradient(to bottom, white, black);
 }
+
 .header__lang {
     /*position: relative;*/
     padding-left: 0;
@@ -80,10 +81,10 @@
 
 .dropdown__list {
     display: none;
-    width: 415px;
+    width: 310px;
     position: absolute;
     right: 0;
-    top: 40px;
+    top: 65px;
     -webkit-box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
     box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
     background: var(--title-color-ligth);

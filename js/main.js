@@ -22,3 +22,13 @@ showMore.addEventListener('click', () => {
         showMore.style.display = 'none';
     }
 });
+
+// добавляем класс кнопке и удаляем у других этот класс если он есть
+const productsBtnsBox = document.querySelector('.products__body-btn-box');
+const buttons = productsBtnsBox.querySelectorAll('button');
+buttons.forEach(button => {
+    button.addEventListener('click', function(){
+        buttons.forEach(b => b.classList.remove('selected'));
+        this.classList.add('selected');
+    });
+});
