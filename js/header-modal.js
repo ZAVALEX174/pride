@@ -44,8 +44,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', () => {
         let scrollTop = window.scrollY;// Величина скролла
-        let headerTopHeight = headerTop.offsetHeight; //Высота блока Топ хедера
-        let headerMenuHeight = headerMenu.offsetHeight; //Высота блока Меню хедера
+        let headerTopHeight = headerTop.clientHeight; //Высота блока Топ хедера
+        let headerMenuHeight = headerMenu.clientHeight; //Высота блока Меню хедера
 
 
         console.log(headerMenuHeight, scrollTop);
@@ -55,14 +55,14 @@ document.addEventListener('DOMContentLoaded', () => {
             header.style.marginTop = `-${headerTopHeight}px`;
             headerMenu.classList.add('header__menu_hidden');
             header.classList.add('header_fixed');
-            let headerHeight = header.offsetHeight; //Высота всего хедера
-            hero.style.marginTop = `${headerHeight}px`;
+            let headerHeight = header.clientHeight; //Высота всего хедера
+            document.body.style.marginTop = `${headerHeight}px`;
             headerModal.style.height = `75vh`;
         } else {
             headerMenu.classList.remove('header__menu_hidden');
             header.classList.remove('header_fixed');
             header.style.marginTop = 0;
-            hero.style.marginTop = 0;
+            document.body.style.marginTop = 0;
             headerModal.style.height = `67vh`;
         }
     })
