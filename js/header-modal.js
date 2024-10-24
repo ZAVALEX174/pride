@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let scrollTop = window.scrollY;// Величина скролла
         let headerTopHeight = headerTop.offsetHeight; //Высота блока Топ хедера
         let headerMenuHeight = headerMenu.offsetHeight; //Высота блока Меню хедера
-        let headerHeight = header.offsetHeight; //Высота всего хедера
+
 
         console.log(headerMenuHeight, scrollTop);
 
@@ -55,7 +55,8 @@ document.addEventListener('DOMContentLoaded', () => {
             header.style.marginTop = `-${headerTopHeight}px`;
             headerMenu.classList.add('header__menu_hidden');
             header.classList.add('header_fixed');
-            hero.style.marginTop = `${header.offsetHeight}px`;
+            let headerHeight = header.offsetHeight; //Высота всего хедера
+            hero.style.marginTop = `${headerHeight}px`;
             headerModal.style.height = `75vh`;
         } else {
             headerMenu.classList.remove('header__menu_hidden');
