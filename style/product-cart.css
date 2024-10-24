@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .example {
   display: -ms-grid;
   display: grid;
@@ -16,13 +23,7 @@
   -ms-user-select: none;
   user-select: none;
   background: -o-linear-gradient(top, white, black);
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(white),
-    to(black)
-  );
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
   background: linear-gradient(to bottom, white, black);
 }
 .card-info__title {
@@ -107,12 +108,12 @@
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   background: url('../images/product-cart-sec/checkbox.svg') no-repeat
-    center/cover;
+  center/cover;
 }
 
 .breadcrumbs {
   width: 100%;
-  margin-top: 35rem;
+  margin-top: 3.5rem;
   padding-bottom: 2rem;
   border-bottom: 1.5px solid var(--5);
 }
@@ -339,7 +340,7 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   background: url('../images/product-cart-sec/arr_next.svg') no-repeat
-    center/cover;
+  center/cover;
 }
 
 .swiper-button-prev.product-card__btn_prev:after {
@@ -354,7 +355,7 @@
   -ms-transform: translateX(-50%) rotate(180deg) translateY(50%);
   transform: translateX(-50%) rotate(180deg) translateY(50%);
   background: url('../images/product-cart-sec/arr_next.svg') no-repeat
-    center/cover;
+  center/cover;
 }
 
 .swiper-button-next.product-card__btn_next.swiper-button-disabled,
@@ -563,7 +564,7 @@ video {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   background: url('../images/product-cart-sec/arr_orang_down.svg') no-repeat
-    center/cover;
+  center/cover;
 }
 
 .accordion__title-h3 {
@@ -590,22 +591,22 @@ video {
   opacity: 0;
   visibility: hidden;
   -webkit-transition: max-height 0.5s ease-out, opacity 0.1s ease-out 0.5s,
-    visibility 0.1s ease-out 0.5s;
+  visibility 0.1s ease-out 0.5s;
   -o-transition: max-height 0.5s ease-out, opacity 0.1s ease-out 0.5s,
-    visibility 0.1s ease-out 0.5s;
+  visibility 0.1s ease-out 0.5s;
   transition: max-height 0.5s ease-out, opacity 0.1s ease-out 0.5s,
-    visibility 0.1s ease-out 0.5s;
+  visibility 0.1s ease-out 0.5s;
 }
 
 .accordion__list_active {
   visibility: visible;
   opacity: 1;
   -webkit-transition: max-height 0.5s ease-out, opacity 0.1s ease-out,
-    visibility 0.1s ease-out;
+  visibility 0.1s ease-out;
   -o-transition: max-height 0.5s ease-out, opacity 0.1s ease-out,
-    visibility 0.1s ease-out;
+  visibility 0.1s ease-out;
   transition: max-height 0.5s ease-out, opacity 0.1s ease-out,
-    visibility 0.1s ease-out;
+  visibility 0.1s ease-out;
 }
 
 .row {
@@ -728,4 +729,18 @@ video {
 
 .video-control__hidden {
   display: none;
+}
+.example {
+  display: -ms-grid;
+  display: grid;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+  background: -o-linear-gradient(top, white, black);
+  background: linear-gradient(to bottom, white, black);
 }

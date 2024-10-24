@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="style/style.css"/>
     <link rel="stylesheet" href="style/select-hdr.css"/>
     <link rel="stylesheet" href="style/modals.css"/>
+    <link rel="stylesheet" href="style/search.css"/>
 </head>
 <body>
 <header class="header">
@@ -219,7 +220,10 @@
                 </a>
             </div>
             <div class="search header__search">
-                <input type="text" class="search" placeholder="Поиск..."/>
+                <input
+                        type="text"
+                        class="search search__active-input"
+                        placeholder="Поиск..."/>
                 <svg
                         width="35"
                         height="34"
@@ -233,6 +237,7 @@
                             stroke-linecap="round"
                             stroke-linejoin="round"/>
                 </svg>
+                <button class="btn search__btn">Найти</button>
             </div>
             <div class="user header__user">
                 <a href="#" class="btn header__user-btn">Личный кабинет</a>
@@ -248,7 +253,7 @@
                             viewBox="0 0 60 60"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg">
-                        <rect width="60" height="60" rx="30" fill="#EB6320"/>
+                        <rect width="60" height="60" rx="30" fill="#2B2A29"/>
                         <path
                                 opacity="0.7"
                                 d="M29.069 43.3453L29.0694 43.3455C29.2585 43.4604 29.3846 43.5401 29.4776 43.5989C29.5691 43.6567 29.6285 43.6943 29.6843 43.7251L29.6861 43.7262C29.8671 43.8268 30.1329 43.8268 30.3139 43.7262L30.3157 43.7251C30.3715 43.6943 30.4309 43.6567 30.5224 43.5989C30.6154 43.5401 30.7415 43.4604 30.9306 43.3455L30.931 43.3453C31.4255 43.045 31.984 42.6805 32.5914 42.2715C34.314 41.1067 36.0344 39.8206 37.6242 38.3638C42.3252 34.053 45 29.4941 45 24.8C45 20.4915 41.5079 17 37.2 17C34.7921 17 32.3744 18.3246 30.8415 20.3103L30.0329 21.3576L29.246 20.294C27.7709 18.3001 25.3764 17 22.8 17C18.4921 17 15 20.4915 15 24.8C15 29.494 17.6747 34.0529 22.3756 38.3636L29.069 43.3453ZM29.069 43.3453C28.5747 43.0451 28.0164 42.6808 27.4094 42.272M29.069 43.3453L27.4094 42.272M27.4094 42.272C25.6865 41.107 23.9658 39.8208 22.3758 38.3638L27.4094 42.272Z"
@@ -272,13 +277,11 @@
                                 class="navigation__link navigation__link_drd navigation__link_drd-up"
                         >Каталог</a
                         >
-
                     </li>
                     <li class="navigation__item modal-two">
                         <a href="#" class="navigation__link navigation__link_drd"
                         >Наша компания</a
                         >
-
                     </li>
                     <li class="navigation__item">
                         <a href="#" class="navigation__link">Сервис</a>
@@ -293,7 +296,7 @@
             </nav>
         </div>
     </div>
-    <div class="header-menu-madal ">
+    <div class="header-menu-madal">
         <div class="container header-menu-madal__container">
             <div class="sticky">
                 <div
@@ -329,7 +332,8 @@
                         <ul class="header-menu-madal__body-top-list">
                             <li class="header-menu-madal__body-top-item col1">
                                 <a href="#" class="header-menu-madal__body-top-link">
-                                    Вертикальное <br> бурение
+                                    Вертикальное <br/>
+                                    бурение
                                 </a>
                                 <ul>
                                     <li>
@@ -366,7 +370,8 @@
                             </li>
                             <li class="header-menu-madal__body-top-item col3row1">
                                 <a href="#" class="header-menu-madal__body-top-link">
-                                    Горно-шахтные <br> установки
+                                    Горно-шахтные <br/>
+                                    установки
                                 </a>
                             </li>
                             <li class="header-menu-madal__body-top-item col3row2">
@@ -376,7 +381,9 @@
                             </li>
                             <li class="header-menu-madal__body-top-item col3row3">
                                 <a href="#" class="header-menu-madal__body-top-link">
-                                    Карьерные и <br> буровзрывные <br> установки
+                                    Карьерные и <br/>
+                                    буровзрывные <br/>
+                                    установки
                                 </a>
                             </li>
                             <li class="header-menu-madal__body-top-item col3row4">
@@ -521,6 +528,64 @@
             </div>
         </div>
     </div>
+    <div class="header-menu-madal3">
+        <div class="container header-menu-madal__container">
+            <div class="header-menu-madal__header">
+                <button
+                        class="header-menu-madal__close-btn header-menu-madal__close-btn3">
+                    <svg
+                            width="64"
+                            height="64"
+                            viewBox="0 0 64 64"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                        <path
+                                d="M47.4663 16.3501L16.5397 47.6478"
+                                stroke="#A2A2A2"
+                                stroke-width="3.66667"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"/>
+                        <path
+                                d="M16.3535 16.5361L47.6512 47.4627"
+                                stroke="#A2A2A2"
+                                stroke-width="3.66667"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <h2 class="title header-menu-madal__header-title">Поиск</h2>
+            </div>
+            <div class="header-menu-madal__body">
+                <div class="search-result">
+                    <h3 class="search-result__title">Часто ищут:</h3>
+                    <ul class="search-result__list">
+                        <li class="search-result__item">Буровые машины</li>
+                        <li class="search-result__item">Установки ГНБ</li>
+                        <li class="search-result__item">Бурильно-шнековые машины</li>
+                    </ul>
+                </div>
+                <div class="header-menu-madal__body-top">
+                    <ul class="header-menu-madal__body-top-list3">
+                        <li class="header-menu-madal__body-top-item col1-3">
+                            <a href="catalog.html" class="header-menu-madal__body-top-link">
+                                Каталог
+                            </a>
+                        </li>
+                        <li class="header-menu-madal__body-top-item col2-3">
+                            <a href="#" class="header-menu-madal__body-top-link">
+                                Сотрудничество
+                            </a>
+                        </li>
+                        <li class="header-menu-madal__body-top-item col3-3">
+                            <a href="#" class="header-menu-madal__body-top-link">
+                                Преимущества
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
 
 <main class="main">
@@ -629,7 +694,7 @@
         </div>
         <div class="products__body">
             <div class="products__body-btn-box">
-                <button class="btn products__body-btn selected">Топ товары</button>
+                <button class="btn products__body-btn ">Топ товары</button>
                 <button class="btn products__body-btn accii">Акции</button>
                 <button class="btn products__body-btn">Новинки</button>
             </div>
@@ -1140,7 +1205,7 @@
             <div class="about__body">
                 <ul class="about__body-list">
                     <li class="about__boby-item">
-                        <img src="images/hero/bg_slider.jpg" alt="">
+                        <img src="images/hero/bg_slider.jpg" alt=""/>
                         <a href="#" class="about__boby-link">
                             <h3 class="about__boby-link-title">
                                 Собственное производство
@@ -1151,7 +1216,7 @@
                         </a>
                     </li>
                     <li class="about__boby-item">
-                        <img src="images/hero/bg_slider.jpg" alt="">
+                        <img src="images/hero/bg_slider.jpg" alt=""/>
                         <a href="#" class="about__boby-link">
                             <h3 class="about__boby-link-title">> 12 лет на рынке</h3>
                             <p class="about__boby-link-text">
@@ -1160,7 +1225,7 @@
                         </a>
                     </li>
                     <li class="about__boby-item">
-                        <img src="images/hero/bg_slider.jpg" alt="">
+                        <img src="images/hero/bg_slider.jpg" alt=""/>
                         <a href="#" class="about__boby-link">
                             <h3
                                     class="about__boby-link-title about__boby-link-title_dark">
@@ -1173,7 +1238,7 @@
                         </a>
                     </li>
                     <li class="about__boby-item">
-                        <img src="images/hero/bg_slider.jpg" alt="">
+                        <img src="images/hero/bg_slider.jpg" alt=""/>
                         <a href="#" class="about__boby-link">
                             <h3 class="about__boby-link-title">
                                 Поставки более чем в 25 стран мира
@@ -1433,11 +1498,7 @@
                                 участки геологической разведки.
                             </li>
                         </ul>
-                        <a
-                                href="#"
-                                class="btn work__body-cart-btn"
-                        >Перейти</a
-                        >
+                        <a href="#" class="btn work__body-cart-btn">Перейти</a>
                     </li>
 
                     <li class="work__body-item">
@@ -1450,11 +1511,7 @@
                                 участки геологической разведки.
                             </li>
                         </ul>
-                        <a
-                                href="#"
-                                class="btn work__body-cart-btn"
-                        >Перейти</a
-                        >
+                        <a href="#" class="btn work__body-cart-btn">Перейти</a>
                     </li>
 
                     <li class="work__body-item work__body-item_img">
@@ -1462,7 +1519,9 @@
                         <h3 class="work__body-cart-title work__body-cart-title_img">
                             Подбор установки по характеристикам
                         </h3>
-                        <a href="#" class="btn work__body-cart-btn work__body-cart-btn_hover-block">
+                        <a
+                                href="#"
+                                class="btn work__body-cart-btn work__body-cart-btn_hover-block">
                             Подобрать
                         </a>
                     </li>
@@ -1485,43 +1544,28 @@
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div
-                                    class="swiper-slide our-projects-slide our-projects-slide-active">
-                                <div class="gray">
-                                    <div class="our-projects-slide__content">
-                                        <div class="cart__addess">Киргизия, Бишкек</div>
-                                        <h3 class="cart__title cart__title_light">
-                                            Буровой лафет S4x8
-                                        </h3>
-                                        <div class="cart__btn-box our-projects-cart__btn-box">
-                                            <button class="btn cart__btn">Хочу также</button>
-                                            <a class="btn cart__btn-details">Проект</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+<!--                            <div class="swiper-slide our-projects-slide">-->
+<!--                                <div class="gray">-->
+<!--                                    <div class="our-projects-slide__content">-->
+<!--                                        <div class="cart__address">Киргизия, Бишкек</div>-->
+<!--                                        <h3 class="cart__title cart__title_light">-->
+<!--                                            Буровой лафет S4x8-->
+<!--                                        </h3>-->
+<!--                                        <div class="cart__subtitle cart__subtitle_light">-->
+<!--                                            Компания ОсОО "КАРМИС" занимается строительством и-->
+<!--                                            реконструкцией объектов нефтепродуктообеспечения.-->
+<!--                                        </div>-->
+<!--                                        <div class="cart__btn-box our-projects-cart__btn-box">-->
+<!--                                            <button class="btn cart__btn">Хочу также</button>-->
+<!--                                            <a class="btn cart__btn-details">Проект</a>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
                             <div class="swiper-slide our-projects-slide">
                                 <div class="gray">
                                     <div class="our-projects-slide__content">
-                                        <div class="cart__addess">Киргизия, Бишкек</div>
-                                        <h3 class="cart__title cart__title_light">
-                                            Буровой лафет S4x8
-                                        </h3>
-                                        <div class="cart__subtitle cart__subtitle_light">
-                                            Компания ОсОО "КАРМИС" занимается строительством и
-                                            реконструкцией объектов нефтепродуктообеспечения.
-                                        </div>
-                                        <div class="cart__btn-box our-projects-cart__btn-box">
-                                            <button class="btn cart__btn">Хочу также</button>
-                                            <a class="btn cart__btn-details">Проект</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide our-projects-slide">
-                                <div class="gray">
-                                    <div class="our-projects-slide__content">
-                                        <div class="cart__addess">Киргизия, Бишкек</div>
+                                        <div class="cart__address">Киргизия, Бишкек</div>
                                         <h3 class="cart__title cart__title_light">
                                             Буровой лафет S4x8
                                         </h3>
@@ -1539,7 +1583,43 @@
                             <div class="swiper-slide our-projects-slide">
                                 <div class="gray">
                                     <div class="our-projects-slide__content">
-                                        <div class="cart__addess">Киргизия, Бишкек</div>
+                                        <div class="cart__address">Киргизия, Бишкек</div>
+                                        <h3 class="cart__title cart__title_light">
+                                            Буровой лафет S4x8
+                                        </h3>
+                                        <div class="cart__subtitle cart__subtitle_light">
+                                            Компания ОсОО "КАРМИС" занимается строительством и
+                                            реконструкцией объектов нефтепродуктообеспечения.
+                                        </div>
+                                        <div class="cart__btn-box our-projects-cart__btn-box">
+                                            <button class="btn cart__btn">Хочу также</button>
+                                            <a class="btn cart__btn-details">Проект</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide our-projects-slide">
+                                <div class="gray">
+                                    <div class="our-projects-slide__content">
+                                        <div class="cart__address">Киргизия, Бишкек</div>
+                                        <h3 class="cart__title cart__title_light">
+                                            Буровой лафет S4x8
+                                        </h3>
+                                        <div class="cart__subtitle cart__subtitle_light">
+                                            Компания ОсОО "КАРМИС" занимается строительством и
+                                            реконструкцией объектов нефтепродуктообеспечения.
+                                        </div>
+                                        <div class="cart__btn-box our-projects-cart__btn-box">
+                                            <button class="btn cart__btn">Хочу также</button>
+                                            <a class="btn cart__btn-details">Проект</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide our-projects-slide">
+                                <div class="gray">
+                                    <div class="our-projects-slide__content">
+                                        <div class="cart__address">Киргизия, Бишкек</div>
                                         <h3 class="cart__title cart__title_light">
                                             Буровой лафет S4x8
                                         </h3>
@@ -1589,7 +1669,9 @@
                         </div>
                         <div class="swiper-slide other__body-item">
                             <h3 class="other__body-cart-title">
-                                Карьерные и <br> буровзрывные <br> установки
+                                Карьерные и <br/>
+                                буровзрывные <br/>
+                                установки
                             </h3>
                             <ul class="other__body-cart-list">
                                 <li class="other__body-cart-item">
@@ -1992,7 +2074,9 @@
                 <div class="news__body-top">
                     <div class="news__body-cart_horizontal">
                         <div class="news__body-cart_horizontal-img">
-                            <div class="news__body-cart_horizontal-label">Партнерство</div>
+                            <div class="news__body-cart_horizontal-label">
+                                Партнерство
+                            </div>
                             <img
                                     src="images/news/n01.jpg"
                                     alt="Первая новость"
@@ -2891,7 +2975,8 @@
                         <a
                                 class="footer__nav-top-link footer__nav-top-link_line"
                                 href="#"
-                        >Наша компания </a>
+                        >Наша компания
+                        </a>
                         <ul class="footer__nav-top-item-dropdown-list">
                             <li class="footer__nav-top-item-dropdown-item">
                                 <a href="" class="footer__nav-top-item-dropdown-link"
@@ -2941,8 +3026,7 @@
                         <a
                                 class="footer__nav-top-link footer__nav-top-link_mb0"
                                 href="#"
-                        >Карьерные и
-                            буровзрывные установки</a
+                        >Карьерные и буровзрывные установки</a
                         >
                     </li>
                     <li class="footer__nav-top-item">
