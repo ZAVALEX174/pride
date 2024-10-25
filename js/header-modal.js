@@ -10,7 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeModalBtn = document.querySelector(".header-menu-madal__close-btn");
     const closeModalBtnTwo = document.querySelector(".header-menu-madal__close-btn2");
     const closeModalBtnThree = document.querySelector(".header-menu-madal__close-btn3");
-    const openSearchBtn = document.querySelector('.search .search__active-input');
+    const openSearchBtn = document.querySelector('.search');
+    const inputSaerch = document.querySelector('.search .search-input');
     const headerSearch = document.querySelector('.search.header__search');
     const headerLogo = document.querySelector('.header__logo');
     const headerUser = document.querySelector('.header__user');
@@ -22,6 +23,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     openModalBtnOne.addEventListener("click", (e) => {
         e.preventDefault();
+        inputSaerch.classList.remove('search__active-input');
+        headerSearch.classList.remove('header__search_active');
+        searchBtn.classList.remove('search__btn_active');
+        headerLogo.classList.remove('none');
+        headerUser.classList.remove('none');
+        headerContactUs.classList.remove('none');
+        headerFavorites.classList.remove('none');
+
         navLinkTwo.classList.remove('navigation__link-active');
         openModalBtnTwoLink.classList.remove('navigation__link_drd-active');
         headerModalThree.style.display = "none";
@@ -42,6 +51,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     openModalBtnTwo.addEventListener("click", (e) => {
         e.preventDefault();
+        inputSaerch.classList.remove('search__active-input');
+        headerSearch.classList.remove('header__search_active');
+        searchBtn.classList.remove('search__btn_active');
+        headerLogo.classList.remove('none');
+        headerUser.classList.remove('none');
+        headerContactUs.classList.remove('none');
+        headerFavorites.classList.remove('none');
+
         navLinkOne.classList.remove('navigation__link-active');
         openModalBtnOneLink.classList.remove('navigation__link_drd-active');
         headerModalThree.style.display = "none";
@@ -68,6 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
         headerModalOne.style.display = "none";
         headerModalTwo.style.display = "none";
         headerModalThree.style.display = "block";
+        inputSaerch.classList.add('search__active-input');
         headerSearch.classList.add('header__search_active');
         document.body.style.overflow = "hidden";
         headerLogo.classList.add('none');
@@ -78,6 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     closeModalBtnThree.addEventListener('click', (e) => {
         e.preventDefault();
+        inputSaerch.classList.remove('search__active-input');
         headerSearch.classList.remove('header__search_active');
         searchBtn.classList.remove('search__btn_active');
         headerLogo.classList.remove('none');
