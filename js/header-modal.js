@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeModalBtnTwo = document.querySelector(".header-menu-madal__close-btn2");
     const closeModalBtnThree = document.querySelector(".header-menu-madal__close-btn3");
     const openSearchBtn = document.querySelector('.search .search__active-input');
+    const headerSearch = document.querySelector('.search.header__search');
     const headerLogo = document.querySelector('.header__logo');
     const headerUser = document.querySelector('.header__user');
     const headerContactUs = document.querySelector('.header__contact-us');
@@ -23,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         navLinkTwo.classList.remove('navigation__link-active');
         openModalBtnTwoLink.classList.remove('navigation__link_drd-active');
+        headerModalThree.style.display = "none";
         headerModalTwo.style.display = "none";
         headerModalOne.style.display = "block";
         openModalBtnOneLink.classList.add('navigation__link_drd-active');
@@ -42,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
         e.preventDefault();
         navLinkOne.classList.remove('navigation__link-active');
         openModalBtnOneLink.classList.remove('navigation__link_drd-active');
+        headerModalThree.style.display = "none";
         headerModalOne.style.display = "none";
         headerModalTwo.style.display = "block";
         openModalBtnTwoLink.classList.add('navigation__link_drd-active');
@@ -64,7 +67,8 @@ document.addEventListener('DOMContentLoaded', () => {
         openModalBtnOneLink.classList.remove('navigation__link_drd-active');
         headerModalOne.style.display = "none";
         headerModalTwo.style.display = "none";
-        headerModalThree.classList.add('header__search__active');
+        headerModalThree.style.display = "block";
+        headerSearch.classList.add('header__search_active');
         document.body.style.overflow = "hidden";
         headerLogo.classList.add('none');
         headerUser.classList.add('none');
@@ -74,13 +78,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     closeModalBtnThree.addEventListener('click', (e) => {
         e.preventDefault();
-        headerModalThree.classList.remove('header__search__active');
+        headerSearch.classList.remove('header__search_active');
         searchBtn.classList.remove('search__btn_active');
         headerLogo.classList.remove('none');
         headerUser.classList.remove('none');
         headerContactUs.classList.remove('none');
         headerFavorites.classList.remove('none');
         document.body.style.overflow = "";
+        headerModalThree.style.display = "none";
     })
 
 

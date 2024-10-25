@@ -26,7 +26,7 @@
 .header-menu-madal3 {
     display: none;
 }
-.header__search__active {
+.header__search_active {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -39,7 +39,7 @@
     justify-content: space-between;
 }
 
-.header__search__active .search__active-input {
+.header__search .search__active-input {
     max-width: 83.8rem;
     width: 100%;
     margin-right: 1rem;
