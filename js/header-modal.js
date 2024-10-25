@@ -123,10 +123,10 @@ document.addEventListener('DOMContentLoaded', () => {
         let headerMenuHeight = headerMenu.clientHeight; //Высота блока Меню хедера
 
 
-        console.log(headerMenuHeight, scrollTop);
+        // console.log(headerMenuHeight, scrollTop);
 
         if (scrollTop >= headerTopHeight) {
-            console.log("ghbdtn");
+            // console.log("ghbdtn");
             header.style.marginTop = `-${headerTopHeight}px`;
             headerMenu.classList.add('header__menu_hidden');
             header.classList.add('header_fixed');

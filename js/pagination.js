@@ -8,18 +8,14 @@ document.addEventListener('DOMContentLoaded', function () {
     let currentPage = 0;
     const items = Array.from(content.getElementsByTagName('li'));
 
-
     function showPage(page) {
         const startIndex = page * itemsPerPage;
         const endIndex = startIndex + itemsPerPage;
         items.forEach((item, index) => {
             item.classList.toggle('catalog-categories__body-item_hidden', index < startIndex || index >= endIndex);
-
         });
         updateActiveButtonStates();
         nextBtn.classList.remove('none');
-        console.log(currentPage, page);
-
     }
 
     function createPageButtons() {
@@ -32,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
             pageButton.textContent = i + 1;
             pageButton.addEventListener('click', (e) => {
                 currentPage = i;
-
+                window.scrollTo(0, 800);
                 showPage(currentPage);
                 updateActiveButtonStates();
 
@@ -50,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 button.classList.add('active');
             } else {
                 button.classList.remove('active');
+
             }
             if (currentPage == 0) {
                 prevBtn.classList.add('none');
@@ -61,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     prevBtn.classList.add('none');
     createPageButtons(); // Call this function to create the page buttons initially
+
     showPage(currentPage);
 
     const liBtns = document.querySelectorAll('.li-pag-btn');
@@ -72,6 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (e.target.closest('.next-btn')) {
             newActive = currentActiveLi.nextElementSibling;
             currentPage++;
+            window.scrollTo(0, 800);
             showPage(currentPage);
 
             if (currentPage == liBtns.length - 1) {
@@ -81,8 +80,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         } else {
             newActive = currentActiveLi.previousElementSibling;
-            console.log('newActive:', newActive);
             currentPage--;
+            window.scrollTo(0, 800);
             showPage(currentPage);
             nextBtn.classList.remove('none');
 
@@ -110,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     arrBtns.forEach((arr) => {
         arr.addEventListener('click', (e) => {
-            console.log(e.currentTarget);
+            // console.log(e.currentTarget);
             if (e.currentTarget == lastEl) {
                 nextBtn.classList.add('none')
             }

@@ -15,8 +15,8 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background: -o-linear-gradient(top, white, black);
     background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -o-linear-gradient(top, white, black);
     background: linear-gradient(to bottom, white, black);
 }
 
@@ -376,6 +376,21 @@
     border: none;
     width: 3.6rem;
     height: 3.6rem;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+}
+
+.modals-zakaz__btn svg path {
+    -webkit-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+}
+
+.modals-zakaz__btn:hover svg path {
+    stroke: var(--color-orange);
+
 }
 
 .modals-zakaz__form {
@@ -478,6 +493,16 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    -webkit-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+}
+
+.modal-zakaz__form-btn:hover {
+    background-color: var(--color-orange);
+    -webkit-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
 }
 
 .modals-zakaz__policy-text {
@@ -487,4 +512,23 @@
     line-height: 1.22222;
     text-align: center;
     color: var(--title-color-ligth);
+}
+
+.modals-zakaz__policy-link {
+    color: var(--color-orange);
+    position: relative;
+    -webkit-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+}
+
+.modals-zakaz__policy-link:hover::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: -1.5px;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-orange);
 }
