@@ -806,23 +806,6 @@
   position: relative;
 }
 
-/*.col1 > ul > li:hover::after,*/
-/*.col2 > ul > li:hover::after,*/
-/*.col1-2 > ul > li:hover::after,*/
-/*.col2-2 > ul > li:hover::after,*/
-/*.col3-2 > ul > li:hover::after {*/
-/*    position: absolute;*/
-/*    content: '';*/
-/*    top: 50%;*/
-/*    -webkit-transform: translateY(-50%);*/
-/*    -ms-transform: translateY(-50%);*/
-/*    transform: translateY(-50%);*/
-/*    right: 20px;*/
-/*    width: 46px;*/
-/*    height: 46px;*/
-/*    background: url('../images/menu/arr_topright_grey.svg') no-repeat center/cover;*/
-/*}*/
-
 .col1 > ul > li > a,
 .col2 > ul > li > a,
 .col1-2 > ul > li > a,
@@ -1216,23 +1199,6 @@
   background: url('../images/hero/next_btn.svg') no-repeat center/cover;
 }
 
-/*.btn__slider_next.swiper-button-disabled.btn__slider_next::after {*/
-/*    background: url('../images/hero/prev_btn_d.svg') no-repeat center/cover;*/
-/*    -webkit-transform: rotate(180deg);*/
-/*    -ms-transform: rotate(180deg);*/
-/*    transform: rotate(180deg);*/
-/*    opacity: 1!important;*/
-/*}*/
-
-/*.btn__slider_prev.swiper-button-disabled.btn__slider_prev::after {*/
-/*    background: url('../images/hero/prev_btn_d.svg') no-repeat center/cover;*/
-/*}*/
-
-/*.swiper-button-prev.swiper-button-disabled,*/
-/*.swiper-button-next.swiper-button-disabled {*/
-/*    opacity: 1;*/
-/*}*/
-
 .swiper-pagination.castom-paginstion {
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -1371,11 +1337,6 @@
   -webkit-transition: color 0.3s ease-in, background 0.3s ease-in;
   -o-transition: color 0.3s ease-in, background 0.3s ease-in;
   transition: color 0.3s ease-in, background 0.3s ease-in;
-}
-
-.accii {
-  background: var(--color-orange);
-  color: var(--title-color-ligth);
 }
 
 .products__body-btn:hover {
@@ -1815,34 +1776,9 @@
   transition: all 0.3s ease-in;
 }
 
-/*.about__boby-item::before {*/
-/*    position: absolute;*/
-/*    content: '';*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    bottom: 0;*/
-/*    -webkit-backdrop-filter: blure(10px);*/
-/*    backdrop-filter: blure(10px);*/
-/*    pointer-events: none;*/
-/*}*/
-
-/*.about__boby-item:first-child:before {*/
-/*    position: absolute;*/
-/*    content: '';*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    right: 0;*/
-/*    bottom: 0;*/
-/*    background: rgba(235, 99, 32, 0.6);*/
-/*    z-index: 0;*/
-/*    pointer-events: none;*/
-/*}*/
-
 .about__boby-item:nth-child(1),
 .about__boby-item:nth-child(4) {
   background-color: var(--color-orange);
-  /*z-index: 100;*/
 }
 
 .about__boby-item:nth-child(1):hover,
@@ -1852,7 +1788,6 @@
 
 .about__boby-item:nth-child(2) {
   background-color: var(--dark-gray);
-  /*z-index: 100;*/
 }
 
 .about__boby-item:nth-child(2):hover {
@@ -1863,7 +1798,6 @@
 
 .about__boby-item:nth-child(3) {
   background-color: var(--5);
-  /*z-index: 100;*/
 }
 
 .about__boby-item:nth-child(3):hover {
@@ -1891,9 +1825,6 @@
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: 50;
-  /* width: 100%; */
-  /* height: 100%; */
-  /* margin-top: -101%; */
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -2966,9 +2897,6 @@
   padding: 10.5rem 0;
 }
 
-.about-company__container {
-}
-
 .about-company__header {
   margin-bottom: 4.9rem;
   display: -webkit-box;
@@ -3318,7 +3246,6 @@
   outline: none;
   border: none;
 }
-
 /*========================================= form-representation ==============================================*/
 .form-representation {
   width: 100%;
@@ -3961,7 +3888,6 @@ label[for='user-email'] {
   box-shadow: 0 1px 4px 0 rgba(25, 33, 61, 0.08);
   background: var(--color-orange);
   font-size: 18px;
-  /* line-height: 1.1; */
   text-align: right;
   color: var(--title-color-ligth);
   -webkit-box-align: center;
@@ -4486,14 +4412,6 @@ label[for='user-email'] {
 }
 
 .footer__nav-top-list {
-  /*display: -ms-grid;*/
-  /*display: grid;*/
-  /*-ms-grid-columns: 1fr 3.9rem 1fr 3.9rem 1fr;*/
-  /*grid-template-columns: repeat(3, 1fr);*/
-  /*-webkit-column-gap: 3.9rem;*/
-  /*-moz-column-gap: 3.9rem;*/
-  /*column-gap: 3.9rem;*/
-  /*row-gap: 3rem;*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
