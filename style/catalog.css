@@ -105,7 +105,7 @@
             to(rgba(235, 99, 32, 0.9))
     ),
     url('../images/hero/bg_slider.jpg') no-repeat center;
-    background: linear-gradient( 360deg, rgba(43, 42, 41, 0.9) 46.04%, rgba(235, 99, 32, 0.9) 100%),
+    background: linear-gradient(360deg, rgba(43, 42, 41, 0.9) 46.04%, rgba(235, 99, 32, 0.9) 100%),
     url('../images/hero/bg_slider.jpg') no-repeat center;
 }
 
@@ -127,6 +127,8 @@
 }
 
 .catalog-categories__header-btn {
+    border: none;
+    background: transparent;
     position: relative;
     max-width: 271px;
     width: 100%;
