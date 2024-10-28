@@ -1365,7 +1365,8 @@
 
 .swiper-button-next.btn__slider_next.products-swiper_next {
     top: 3rem;
-    left: calc(100% - 5rem);
+    left: auto;
+    right: 13%;
 }
 
 .swiper-button-prev.btn__slider_prev.products-swiper_prev {
