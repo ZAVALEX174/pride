@@ -4149,6 +4149,26 @@ label[for='user-email'] {
     margin-bottom: 3rem;
 }
 
+.watched-before-prev__btn, .watched-before-next__btn {
+    position: relative;
+}
+
+.btn__slider_prev.watched-before-prev__btn::after {
+    position: absolute;
+    top: -40px;
+    left: auto;
+    right: auto;
+    bottom: auto;
+}
+
+.btn__slider_next.watched-before-next__btn::after {
+    position: absolute;
+    top: -40px;
+    left: auto;
+    right: auto;
+    bottom: auto;
+}
+
 .watched-before .swiper-btn-box {
     height: 6rem;
 }
