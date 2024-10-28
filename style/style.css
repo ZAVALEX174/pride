@@ -2459,6 +2459,7 @@
 }
 
 .our-projects__header {
+    position: relative;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2480,6 +2481,35 @@
     color: var(--dark-gray);
     margin-right: 2rem;
     margin-bottom: 0;
+}
+
+.swiper-btn-box {
+    position: relative;
+    max-width: 18rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.our-projects-prev__btn, .our-projects-next__btn {
+    position: relative;
+}
+
+.btn__slider_prev.our-projects-prev__btn::after {
+    position: absolute;
+    top: 4px;
+    left: auto;
+    right: auto;
+    bottom: auto;
+}
+
+.btn__slider_next.our-projects-next__btn::after {
+    position: absolute;
+    top: 4px;
+    left: auto;
+    right: auto;
+    bottom: auto;
 }
 
 .our-projects__header-link {
@@ -2732,8 +2762,8 @@
 }
 
 .other__header-title {
-    max-width: 80rem;
-    width: 100%;
+    /*max-width: 80rem;*/
+    /*width: 100%;*/
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2744,6 +2774,26 @@
     font-family: 'GetVoIP Grotesque Regular', sans-serif;
     color: var(--dark-gray);
     margin-bottom: 0;
+}
+
+.other-prev__btn, .other-next__btn {
+    position: relative;
+}
+
+.btn__slider_prev.other-prev__btn::after {
+    position: absolute;
+    top: 4px;
+    left: auto;
+    right: auto;
+    bottom: auto;
+}
+
+.btn__slider_next.other-next__btn::after {
+    position: absolute;
+    top: 4px;
+    left: auto;
+    right: auto;
+    bottom: auto;
 }
 
 .other__header-link {
@@ -4081,14 +4131,26 @@ label[for='user-email'] {
     margin-right: -30%;
 }
 
+.watched-before__header {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .watched-before__header-title {
     font-weight: 700;
+    font-size: 5.5rem;
     line-height: 1.01562;
     color: var(--dark-gray);
     font-family: 'GetVoIP Grotesque Regular', sans-serif;
-    max-width: 66rem;
+    max-width: 81rem;
     width: 100%;
     margin-bottom: 3rem;
+}
+
+.watched-before .swiper-btn-box {
+    height: 6rem;
 }
 
 .watched-before .swiper-wrapper {
