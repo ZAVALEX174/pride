@@ -1375,6 +1375,8 @@
 
 .products-slide {
     /*width: 55.4rem;*/
+    max-width: 36rem;
+    width: 100%;
     padding: 2.2rem;
     /*border-radius: 3rem;*/
     border-radius: 2rem;

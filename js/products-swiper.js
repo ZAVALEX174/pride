@@ -1,5 +1,5 @@
 var productsSwiper = new Swiper(".products-swiper", {
-    slidesPerView: 3.35,
+    slidesPerView: "auto",
     // centeredSlides: true,
     spaceBetween: 17,
     grabCursor: true,
