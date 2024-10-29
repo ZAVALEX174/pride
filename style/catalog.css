@@ -134,7 +134,7 @@
   border: none;
   background: transparent;
   position: relative;
-  max-width: 271px;
+  max-width: 226px;
   width: 100%;
   font-weight: 400;
   font-size: 25px;
@@ -160,7 +160,7 @@
   transition: color 0.3s ease-in;
 }
 
-.catalog-categories__header-btn::before {
+/* .catalog-categories__header-btn::before {
   position: absolute;
   content: '';
   display: block;
@@ -173,7 +173,7 @@
   transform: translateY(-50%);
   background: url('../images/catalog/arr_right_orange.svg') no-repeat
     center/cover;
-}
+} */
 
 .catalog-categories__header-filter-wrapper {
   display: -webkit-box;
@@ -331,7 +331,7 @@
 .prev-btn::before {
   position: absolute;
   content: '';
-  top: 40%;
+  top: 37%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
