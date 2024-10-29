@@ -4413,54 +4413,50 @@ label[for='user-email'] {
 .footer__callback-form-input {
     width: 100%;
     border: 1.5px solid var(--5);
-    border-radius: 100px;
-    padding: 26px 10px 26px 30px;
+    border-radius: 75px;
+    padding: 19px 10px 19px 23px;
     -webkit-box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
     box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
     background: var(--title-color-ligth);
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.1;
     color: var(--dark-gray);
 }
 
 .footer__callback-form-input::-webkit-input-placeholder {
-    font-size: 20px;
+    font-size: 15px;
     line-height: 1.1;
     color: var(--ligth-gray);
 }
 
 .footer__callback-form-input::-moz-placeholder {
-    font-size: 20px;
+    font-size: 15px;
     line-height: 1.1;
     color: var(--ligth-gray);
 }
 
 .footer__callback-form-input:-ms-input-placeholder {
-    font-size: 20px;
-    line-height: 1.1;
-    color: var(--ligth-gray);
-}
-
-.footer__callback-form-input::-ms-input-placeholder {
-    font-size: 20px;
+    font-size: 15px;
     line-height: 1.1;
     color: var(--ligth-gray);
 }
 
 .footer__callback-form-input::placeholder {
-    font-size: 20px;
+    font-size: 15px;
     line-height: 1.1;
     color: var(--ligth-gray);
 }
 
 .footer__callback-form-btn {
+    height: 4.5rem;
+    line-height: 4.5rem;
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     right: 10px;
-    max-width: 28.1rem;
+    max-width: 21.1rem;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4473,7 +4469,7 @@ label[for='user-email'] {
     justify-content: center;
     background-color: var(--dark-gray);
     color: var(--title-color-ligth);
-    font-size: 2rem;
+    font-size: 1.6rem;
     -webkit-transition: 0.3s ease-in;
     -o-transition: 0.3s ease-in;
     transition: 0.3s ease-in;
@@ -4505,6 +4501,8 @@ label[for='user-email'] {
     -webkit-column-gap: 3.9rem;
     -moz-column-gap: 3.9rem;
     column-gap: 3.9rem;
+    border-bottom: 1.5px solid var(--5);
+    margin-bottom: 3rem;
 }
 
 .footer__conacts-social {
