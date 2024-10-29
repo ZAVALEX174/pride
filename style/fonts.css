@@ -13,6 +13,13 @@
     font-display: swap;
 }
 @font-face {
+    font-family: 'Golos Text Medium';
+    src: local('Golos Text Medium'), url('../fonts/GolosText-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
     font-family: 'Golos Text Regular';
     src: local('Golos Text Regular'), url('../fonts/GolosText-Regular.ttf') format('truetype');
     font-weight: 400;
