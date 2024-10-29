@@ -4238,6 +4238,7 @@ label[for='user-email'] {
 .watched-before .cart__btn-details {
   height: 4.5rem;
   font-size: 2rem;
+  padding-right: 6rem;
 }
 
 .watched-before .cart__btn-details::after {
