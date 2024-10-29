@@ -9,3 +9,13 @@ var otherSwiper = new Swiper(".other__body-list", {
     prevEl: '.other-prev__btn',
   },
 });
+var otherSwiperCatalog = new Swiper(".swiper-filter-on__body-swiper", {
+  slidesPerView: "auto",
+  // centeredSlides: true,
+  spaceBetween: 24,
+  grabCursor: true,
+  navigation: {
+    nextEl: '.swiper-filter-on-btn_next',
+    prevEl: '.swiper-filter-on-btn_prev',
+  },
+});

@@ -2836,7 +2836,7 @@
 }
 
 .other__header-title {
-    /*max-width: 80rem;*/
+    max-width: 80rem;
     /*width: 100%;*/
     display: -webkit-box;
     display: -ms-flexbox;
