@@ -790,6 +790,11 @@ video {
   border: 2px solid transparent;
 }
 
+.slider-nav2 .slick-slide:hover {
+  outline: none;
+  border: none !important;
+}
+
 .slick-next::before {
   z-index: 50;
   content: '';
