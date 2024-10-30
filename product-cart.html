@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style/normalize.css"/>
     <link rel="stylesheet" href="style/fonts.css"/>
     <link rel="stylesheet" href="style/swiper-bundle.css"/>
+    <link rel="stylesheet" href="slick-master/slick/slick.css"/>
     <link rel="stylesheet" href="style/index.css"/>
     <link rel="stylesheet" href="style/style.css"/>
     <link rel="stylesheet" href="style/select-hdr.css"/>
@@ -637,10 +638,11 @@
                 <div class="card__content">
                     <div class="card-slider">
                         <div class="card-slider__block slider-block">
-                            <div class="swiper-wrapper">
+                            <span class="btn card-info__btn"> new </span>
+                            <div class="swiper-wrapper slider-for">
                                 <div class="swiper-slide">
                                     <img
-                                            src="images/product-cart-sec/01m.jpg"
+                                            src="images/product-cart-sec/01bb.jpg"
                                             alt="Картинка примеров техники"/>
                                 </div>
                                 <div class="swiper-slide">
@@ -682,7 +684,6 @@
                         </div>
                     </div>
                     <div class="card-info">
-                        <span class="btn card-info__btn"> new </span>
                         <span class="card-info__title_orange">
                   Малогабаритная буровая установка
                 </span>
@@ -723,7 +724,7 @@
                     </div>
                 </div>
                 <div class="card-slider__nav slider-nav">
-                    <div class="wrapper swiper-wrapper">
+                    <div class="wrapper swiper-wrapper slider-nav2">
                         <div class="swiper-slide slider-nav__item" tabindex="0">
                             <img
                                     src="images/product-cart-sec/01m.jpg"
@@ -765,8 +766,8 @@
                                     alt="Картинка примеров техники"/>
                         </div>
                     </div>
-                    <div class="swiper-button-prev product-card__btn_prev"></div>
-                    <div class="swiper-button-next product-card__btn_next"></div>
+                    <!--                    <div class="swiper-button-prev product-card__btn_prev"></div>-->
+                    <!--                    <div class="swiper-button-next product-card__btn_next"></div>-->
                 </div>
             </div>
         </div>
@@ -1920,6 +1921,9 @@
 </main>
 
 <script src="js/dropdown.js"></script>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="slick-master/slick/slick.min.js"></script>
+<script src="js/slick-slider-product-cart.js"></script>
 <script src="js/modals.js"></script>
 <script src="js/swiper-bundle.js"></script>
 <script src="js/header-modal.js"></script>

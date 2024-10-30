@@ -178,6 +178,7 @@
 }
 
 .slider-block {
+    position: relative;
     height: 100%;
     overflow: hidden;
     border: 1px solid transparent;
@@ -226,19 +227,24 @@
 }
 
 .card-info__btn {
+    max-width: 13rem;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    pointer-events: none;
+    top: 23px;
+    left: 23px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding: 0 4.2rem;
-    background-color: var(--color-orange);
+    background-color: var(--dark-gray);
     color: var(--title-color-ligth);
     line-height: 4rem;
     height: 4rem;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 2rem;
-    line-height: 1.1;
-    line-height: 1.1;
     margin-left: auto;
     cursor: unset;
 }
@@ -253,8 +259,8 @@
 }
 
 .slider-nav__item {
-    height: 120px;
-    width: 180px;
+    height: 88px;
+    width: 136px;
     -ms-flex-negative: 0;
     flex-shrink: 0;
     display: -webkit-box;
@@ -749,3 +755,82 @@ video {
     display: none;
 }
 
+.slick-next, .slick-prev {
+    font-size: 0;
+
+}
+
+.slider-for .slick-slide {
+    height: 600px;
+}
+
+.slider-for .slick-slide div {
+    height: 100%;
+}
+
+.slider-nav2 {
+    max-width: 113rem;
+    padding: 0 70px;
+    margin: 0 auto;
+}
+
+.slider-nav2 .slick-slide {
+    margin: 0 0.5rem;
+    border-radius: 4px;
+    border: 2px solid transparent;
+}
+
+.slick-next::before {
+    z-index: 50;
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 42px;
+    height: 42px;
+    background: url('../images/hero/next_btn_black_litle.svg') no-repeat center/cover;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+}
+
+.slick-next:hover::before {
+    background: url('../images/hero/next_btn.svg') no-repeat center/cover;
+}
+
+.slick-prev::before {
+    z-index: 50;
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 42px;
+    height: 42px;
+    background: url('../images/hero/prev_btn_d1.svg') no-repeat center/cover;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+}
+
+.slick-prev:hover::before {
+    background: url('../images/hero/prev_btn.svg') no-repeat center/cover;
+}
+
+.slider-for .slick-prev.slick-arrow, .slider-for .slick-next.slick-arrow {
+    display: none !important;
+    pointer-events: none;
+}
+
+.slider-for .slick-prev::before, .slider-for .slick-next::before {
+    content: none !important;
+    pointer-events: none;
+}
+
+.slider-nav2 .slick-slide.slick-current.slick-active {
+    border-color: var(--color-orange);
+    border-radius: 4px;
+}

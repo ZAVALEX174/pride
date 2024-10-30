@@ -1,31 +1,31 @@
 // Двойной слайдер для верней часи страницы
 document.addEventListener('DOMContentLoaded', () => {
 
-    let mySwiper = new Swiper('.slider-block', {
-        slidesPerView: 1,
-    })
-
-    let mySwiper2 = new Swiper('.card-slider__nav', {
-        slidesPerView: 6,
-        spaceBetween: 10,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    })
-
-    const maxItems = 5;
-    const sliderNavItems = document.querySelectorAll('.slider-nav__item');
-    const sliderNav = document.querySelector('.slider-nav');
-
-    sliderNavItems.forEach((el, index) => {
-        el.setAttribute('data-index', index);
-
-        el.addEventListener('click', (e) => {
-            mySwiper.slideTo(index);
-        });
-    });
-
+    // let mySwiper = new Swiper('.slider-block', {
+    //     slidesPerView: 1,
+    // })
+    //
+    // let mySwiper2 = new Swiper('.card-slider__nav', {
+    //     slidesPerView: 6,
+    //     spaceBetween: 10,
+    //     navigation: {
+    //         nextEl: '.swiper-button-next',
+    //         prevEl: '.swiper-button-prev',==
+    //     },
+    // })
+    //
+    // const maxItems = 5;
+    // const sliderNavItems = document.querySelectorAll('.slider-nav__item');
+    // const sliderNav = document.querySelector('.slider-nav');
+    //
+    // sliderNavItems.forEach((el, index) => {
+    //     el.setAttribute('data-index', index);
+    //
+    //     el.addEventListener('click', (e) => {
+    //         mySwiper.slideTo(index);
+    //     });
+    // });
+    //==============================================================================
     // const showMore = () => {
     //   let childenLength = sliderNav.children.length;
     //   console.log(childenLength)
