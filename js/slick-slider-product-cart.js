@@ -3,7 +3,8 @@ $('.slider-for').slick({
     slidesToScroll: 1,
     arrows: true,
     // fade: true,
-    asNavFor: '.slider-nav2'
+    asNavFor: '.slider-nav2',
+    adaptiveHeight: true
 });
 
 $('.slider-nav2').slick({
