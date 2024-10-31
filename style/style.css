@@ -1582,8 +1582,8 @@
     /*right: 0;*/
     right: -1rem;
     /* display: block; */
-    width: 45px;
-    height: 45px;
+    width: 4.5rem;
+    height: 4.5rem;
     content: '';
     background: url('../images/hero/next_btn_black_litle.svg') no-repeat center/cover;
     -webkit-transition: 0.3s ease-in;
