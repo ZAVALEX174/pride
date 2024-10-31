@@ -1202,7 +1202,8 @@
   justify-content: center;
   top: 132px;
   right: 15.5rem;
-  background: url('../images/hero/next_btn_d.svg') no-repeat center/cover;
+  background: url('../images/hero/next_btn_black_slider.svg') no-repeat
+    center/cover;
 }
 
 .btn__slider_next:hover::after {
@@ -2594,7 +2595,8 @@
   top: 0;
   left: auto;
   right: 13%;
-  background: url('../images/hero/next_btn_d.svg') no-repeat center/cover;
+  background: url('../images/hero/next_btn_black_slider.svg') no-repeat
+    center/cover;
 }
 
 .our-projects-next__btn:hover::after {

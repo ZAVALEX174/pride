@@ -2,6 +2,7 @@
 var otherSwiper = new Swiper(".other__body-list", {
   slidesPerView: "auto",
   // centeredSlides: true,
+  loop: true,
   spaceBetween: 24,
   grabCursor: true,
   navigation: {
@@ -12,6 +13,7 @@ var otherSwiper = new Swiper(".other__body-list", {
 var otherSwiperCatalog = new Swiper(".swiper-filter-on__body-swiper", {
   slidesPerView: "auto",
   // centeredSlides: true,
+  loop: true,
   spaceBetween: 24,
   grabCursor: true,
   navigation: {
