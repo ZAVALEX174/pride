@@ -1127,10 +1127,10 @@
 }
 
 .hero-slider__btn {
-    font-size: 22px;
+    font-size: 20px;
     max-width: 35rem;
-    height: 65px;
-    line-height: 65px;
+    height: 60px;
+    line-height: 60px;
     border-radius: 63px;
     width: 100%;
     background-color: var(--ligth-gray);
@@ -1515,7 +1515,7 @@
     /*line-height: 1.25;*/
     /*color: var(--color-orange);*/
     position: absolute;
-    bottom: 0rem;
+    bottom: 0;
     font-family: 'Golos Text SemiBold', sans-serif;
     font-weight: 600;
     font-size: 1.6rem;
@@ -1546,7 +1546,7 @@
     /*color: var(--color-orange);*/
     /*margin-bottom: 1.4rem;*/
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: 2rem;
     /*line-height: 1.2;*/
     line-height: 1;
     color: var(--color-orange);
@@ -2271,7 +2271,7 @@
 
 .benefits__title {
     font-weight: 700;
-    font-size: 6.4rem;
+    font-size: 4rem;
     line-height: 1.01562;
     color: var(--title-color-ligth);
     margin-bottom: 4rem;
@@ -2311,7 +2311,7 @@
 }
 
 .benefits__desc-subtitle > b {
-    font-size: 6.4rem;
+    font-size: 4rem;
     font-family: 'GetVoIP Grotesque Regular', sans-serif;
 }
 
@@ -2328,8 +2328,8 @@
     -ms-flex-pack: center;
     justify-content: center;
     font-size: 22px;
-    height: 6.5rem;
-    line-height: 6.5rem;
+    height: 6rem;
+    line-height: 6rem;
     border-radius: 63px;
     text-align: center;
     color: var(--title-color-ligth);
