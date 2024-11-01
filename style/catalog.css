@@ -252,7 +252,7 @@
     display: grid;
     -ms-grid-columns: 1fr 2.4rem 1fr 2.4rem 1fr;
     grid-template-columns: repeat(3, 1fr); /*?*/
-    grid-auto-rows: 1fr;
+    grid-auto-rows: auto;
     gap: 3rem 2.2rem;
     margin-bottom: 4rem;
 }
@@ -305,7 +305,7 @@
 .catalog-categories__body-item .cart__subtitle,
 .catalog-categories__body-item .cart__desc {
     line-height: 1;
-    margin-bottom: 1.45rem;
+    margin-bottom: 1.4rem;
 }
 
 .catalog-categories__body-item .cart__availability {
