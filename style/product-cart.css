@@ -438,19 +438,19 @@
 }
 
 .watched-before__product-cart .products-slide {
-  max-width: 36rem;
-  width: 100%;
-  padding: 2.2rem;
-  border-radius: 2rem;
-  border: 1px solid #e5e5e5;
-  background-color: var(--main-bg);
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+  /*max-width: 36rem;*/
+  /*width: 100%;*/
+  /*padding: 2.2rem;*/
+  /*border-radius: 2rem;*/
+  /*border: 1px solid #e5e5e5;*/
+  /*background-color: var(--main-bg);*/
+  /*-webkit-box-orient: vertical;*/
+  /*-webkit-box-direction: normal;*/
+  /*-ms-flex-direction: column;*/
+  /*flex-direction: column;*/
+  /*-webkit-box-align: start;*/
+  /*-ms-flex-align: start;*/
+  /*align-items: flex-start;*/
   -webkit-transition: all 0.3s ease-in;
   -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
