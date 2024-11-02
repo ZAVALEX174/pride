@@ -1,48 +1,4 @@
-// Двойной слайдер для верней часи страницы
 document.addEventListener('DOMContentLoaded', () => {
-
-    // let mySwiper = new Swiper('.slider-block', {
-    //     slidesPerView: 1,
-    // })
-    //
-    // let mySwiper2 = new Swiper('.card-slider__nav', {
-    //     slidesPerView: 6,
-    //     spaceBetween: 10,
-    //     navigation: {
-    //         nextEl: '.swiper-button-next',
-    //         prevEl: '.swiper-button-prev',==
-    //     },
-    // })
-    //
-    // const maxItems = 5;
-    // const sliderNavItems = document.querySelectorAll('.slider-nav__item');
-    // const sliderNav = document.querySelector('.slider-nav');
-    //
-    // sliderNavItems.forEach((el, index) => {
-    //     el.setAttribute('data-index', index);
-    //
-    //     el.addEventListener('click', (e) => {
-    //         mySwiper.slideTo(index);
-    //     });
-    // });
-    //==============================================================================
-    // const showMore = () => {
-    //   let childenLength = sliderNav.children.length;
-    //   console.log(childenLength)
-    //   if (childenLength > maxItems) {
-    //     sliderNav.insertAdjacentHTML('beforeend', `
-    // 			<div class="btn-center">
-    // 				<button class="modal-open">Еще ${childenLength - maxItems}</button>
-    // 			</div>
-    // 		`);
-    //     document.querySelectorAll(`.slider-nav__item:nth-child(n+${maxItems + 1})`).forEach(el => {el.style.display = 'none';});
-    //   }
-    //
-    //   const modalOpen = document.querySelector('.modal-open');
-    //   modalOpen.addEventListener('click', () => {new GraphModal().open('one');});
-    // };
-
-    // showMore();
 
     // количество отображающихся видео карточек
     let quantityVideo = document.querySelectorAll('.video-content').length;
@@ -87,7 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector(`[data-tabs-target="${path}"]`).classList.add('tabs__content_active');
 
     }
-
 
     // Кнопка полей для плеера
     const videoElements = document.querySelectorAll('.video-content');

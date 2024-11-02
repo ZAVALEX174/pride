@@ -10,6 +10,7 @@ var otherSwiper = new Swiper(".other__body-list", {
     prevEl: '.other-prev__btn',
   },
 });
+
 var otherSwiperCatalog = new Swiper(".swiper-filter-on__body-swiper", {
   slidesPerView: "auto",
   // centeredSlides: true,

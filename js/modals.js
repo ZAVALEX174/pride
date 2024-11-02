@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const modal = document.querySelector('.modals');
     // console.log(modal);
-    const downloadBtn = document.querySelector('.col3row4 .header-menu-madal__body-top-link');
+    const downloadBtn = document.querySelector('.col3row4 .header-menu-modal__body-top-link');
     // console.log(downloadBtn);
     const modalCatalog = modal.querySelector('.modals-catalog');
     // console.log(modalCatalog);

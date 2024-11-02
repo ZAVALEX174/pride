@@ -1,15 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
     // открытие модальных окон
-    const headerModalOne = document.querySelector(".header-menu-madal");
-    const headerModalTwo = document.querySelector(".header-menu-madal2");
-    const headerModalThree = document.querySelector(".header-menu-madal3");
+    const headerModalOne = document.querySelector(".header-menu-modal");
+    const headerModalTwo = document.querySelector(".header-menu-modal2");
+    const headerModalThree = document.querySelector(".header-menu-modal3");
     const openModalBtnOne = document.querySelector(".modal-one");
     const openModalBtnOneLink = openModalBtnOne.querySelector(".navigation__link_drd");
     const openModalBtnTwo = document.querySelector(".modal-two");
     const openModalBtnTwoLink = openModalBtnTwo.querySelector(".navigation__link_drd");
-    const closeModalBtn = document.querySelector(".header-menu-madal__close-btn");
-    const closeModalBtnTwo = document.querySelector(".header-menu-madal__close-btn2");
-    const closeModalBtnThree = document.querySelector(".header-menu-madal__close-btn3");
+    const closeModalBtn = document.querySelector(".header-menu-modal__close-btn");
+    const closeModalBtnTwo = document.querySelector(".header-menu-modal__close-btn2");
+    const closeModalBtnThree = document.querySelector(".header-menu-modal__close-btn3");
     const openSearchBtn = document.querySelector('.search');
     const inputSaerch = document.querySelector('.search .search-input');
     const headerSearch = document.querySelector('.search.header__search');
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const headerDown = document.querySelector(".header__down");
     const headerMenu = document.querySelector(".header__menu");
     const hero = document.querySelector(".hero");
-    const headerModal = document.querySelector(".header-menu-madal");
+    const headerModal = document.querySelector(".header-menu-modal");
 
 
     window.addEventListener('scroll', () => {
