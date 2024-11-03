@@ -330,7 +330,11 @@
     transition: 0.1s ease-in opacity;
 }
 
-.questions-answers-tabs__item:hover {
+/*.questions-answers-tabs__item:hover {*/
+/*    border-color: var(--color-orange);*/
+/*    transition: 0.3s ease-in;*/
+/*}*/
+.questions-answers-tabs__item_click {
     border-color: var(--color-orange);
     transition: 0.3s ease-in;
 }
@@ -357,6 +361,9 @@
     background: url("../images/cooperation/plus.svg") no-repeat center/cover;
 }
 
-.questions-answers-tabs__item:hover::after {
+/*.questions-answers-tabs__item:hover::after {*/
+/*    transform: rotate(45deg);*/
+/*}*/
+.questions-answers-tabs__item_click::after {
     transform: rotate(45deg);
 }
