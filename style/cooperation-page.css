@@ -367,3 +367,88 @@
 .questions-answers-tabs__item_click::after {
     transform: rotate(45deg);
 }
+
+.big-catalog {
+    width: 100%;
+    background: #fcfcfc;
+}
+
+.big-catalog__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.big-catalog__text {
+    width: 45.6rem;
+    margin-right: 3rem;
+}
+
+.big-catalog__text-title {
+    font-family: 'GetVoIP Grotesque Regular', sans-serif;
+    font-weight: 700;
+    max-width: 45.6rem;
+    width: 100%;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+    line-height: 1;
+}
+
+.big-catalog__text-subtitle {
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.big-catalog__text-btn {
+    max-width: 35rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    /*background-color: var(--ligth-gray);*/
+    background-color: var(--dark-gray);
+    color: var(--main-bg);
+    transition: 0.3s ease-in;
+}
+
+.big-catalog__text-btn:hover {
+    /*background-color: var(--dark-gray);*/
+    background-color: var(--color-orange);
+}
+
+.big-catalog__images {
+    width: 68.2rem;
+    height: 80rem;
+    display: flex;
+    column-gap: 3rem;
+    overflow: hidden;
+}
+
+.big-catalog__images-vertical-line {
+    width: 50%;
+    height: 100%;
+}
+
+.big-catalog__images-vertical-line_left {
+    margin-top: 1.7rem;
+}
+
+.big-catalog__images-vertical-line_right {
+    margin-top: -11rem;
+}
+
+.big-catalog__images-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+}
+
+.big-catalog__images-item {
+    width: 100%;
+    border: 1px solid var(--5);
+    height: 22.1rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
