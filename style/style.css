@@ -4625,7 +4625,7 @@ label[for='user-email'] {
   -webkit-column-gap: 3.9rem;
   -moz-column-gap: 3.9rem;
   column-gap: 3.9rem;
-  border-bottom: 1.5px solid var(--5);
+  border-bottom: 2px solid #dcdcdc;
   margin-bottom: 3rem;
 }
 
@@ -4779,11 +4779,11 @@ label[for='user-email'] {
   position: absolute;
   content: '';
   width: 100%;
-  height: 1.5px;
+  height: 2px;
   left: 0;
   right: 0;
   top: 75%;
-  background-color: var(--5);
+  background-color: #dcdcdc;
 }
 
 .footer__nav-top-item {
@@ -4859,7 +4859,7 @@ label[for='user-email'] {
 }
 
 .footer__nav-top-link_line {
-  border-bottom: 1.5px solid var(--5);
+  border-bottom: 2px solid #dcdcdc;
 }
 
 .footer__nav-top-link:hover {
