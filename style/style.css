@@ -4862,8 +4862,18 @@ label[for='user-email'] {
   padding-bottom: 0;
 }
 
-.footer__nav-top-link_line {
+/* .footer__nav-top-link_line {
   border-bottom: 2px solid #dcdcdc;
+} */
+
+.footer__nav-top-item:nth-child(-1n + 3)::after {
+  position: absolute;
+  content: '';
+  width: 31%;
+  height: 2px;
+  background-color: #dcdcdc;
+  top: 6rem;
+  /* border-bottom: 2px solid #dcdcdc; */
 }
 
 .footer__nav-top-link:hover {
