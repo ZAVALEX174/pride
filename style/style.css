@@ -4622,6 +4622,7 @@ label[for='user-email'] {
 }
 
 .footer__conacts {
+  padding-top: 3rem;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4630,6 +4631,7 @@ label[for='user-email'] {
   -moz-column-gap: 3.9rem;
   column-gap: 3.9rem;
   border-bottom: 2px solid #dcdcdc;
+  border-top: 2px solid #dcdcdc;
   margin-bottom: 3rem;
 }
 
