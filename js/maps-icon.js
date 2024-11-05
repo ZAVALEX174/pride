@@ -11,22 +11,22 @@ openModalMapBtns.forEach((item) => {
         console.log(e.target);
         if (item.classList.contains('msk-i')) {
             modalMap.classList.add('msk-mod');
-            modalMap.style.display = 'block';
+            modalMap.style.display = 'flex';
             return;
         }
         if (item.classList.contains('sev-am-i')) {
             modalMap.classList.add('sev-am-mod');
-            modalMap.style.display = 'block';
+            modalMap.style.display = 'flex';
             return;
         }
         if (item.classList.contains('souts-am-i')) {
             modalMap.classList.add('souts-am-mod');
-            modalMap.style.display = 'block';
+            modalMap.style.display = 'flex';
             return;
         }
         if (item.classList.contains('afr-i')) {
             modalMap.classList.add('afr-mod');
-            modalMap.style.display = 'block';
+            modalMap.style.display = 'flex';
             return;
         }
     })
