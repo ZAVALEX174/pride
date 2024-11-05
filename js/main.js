@@ -27,8 +27,12 @@ showMore.addEventListener('click', () => {
 const productsBtnsBox = document.querySelector('.products__body-btn-box');
 const buttons = productsBtnsBox.querySelectorAll('button');
 buttons.forEach(button => {
-    button.addEventListener('click', function(){
+    button.addEventListener('click', function () {
         buttons.forEach(b => b.classList.remove('selected'));
         this.classList.add('selected');
     });
 });
+
+
+
+
