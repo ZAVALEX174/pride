@@ -306,6 +306,7 @@
 .catalog-categories__body-item .cart__desc {
     line-height: 1;
     margin-bottom: 1.4rem;
+    width: 100%;
 }
 
 .catalog-categories__body-item .cart__availability {
