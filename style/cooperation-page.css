@@ -252,9 +252,9 @@
     margin-right: 2rem;
     margin-bottom: 0;
     line-height: 1.02;
+    font-family: 'GetVoIP Grotesque Regular', sans-serif;
     font-weight: 700;
     font-size: 4rem;
-    font-family: 'GetVoIP Grotesque Regular', sans-serif;
 }
 
 .questions-answers__btn {
