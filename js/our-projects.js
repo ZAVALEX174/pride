@@ -2,6 +2,7 @@
 var ourProductsSwiper = new Swiper(".our-projects-swiper", {
   slidesPerView: "auto",
   // centeredSlides: true,
+  speed: 500,
   loop: true,
   spaceBetween: 24,
   grabCursor: true,

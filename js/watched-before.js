@@ -1,6 +1,7 @@
 var watchedBeforeSwiper = new Swiper(".watched-before-swiper", {
     // slidesPerView: 2.8,
     slidesPerView: "auto",
+    speed: 500,
     loop: true,
     spaceBetween: 24,
     freeMode: true,
@@ -14,6 +15,7 @@ var watchedBeforeSwiper = new Swiper(".watched-before-swiper", {
 var watchedBeforeSwiperCatalog = new Swiper(".watched-before__catalog-swiper", {
     // slidesPerView: 2.8,
     slidesPerView: "auto",
+    speed: 500,
     loop: true,
     spaceBetween: 17,
     freeMode: true,
