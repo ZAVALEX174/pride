@@ -4378,7 +4378,7 @@ label[for='user-email'] {
     position: absolute;
     content: '';
     width: 100%;
-    height: 2px;
+    height: 1px;
     left: 0;
     right: 0;
     top: 75%;
@@ -4459,7 +4459,7 @@ label[for='user-email'] {
     position: absolute;
     content: '';
     width: 31%;
-    height: 2px;
+    height: 1px;
     background-color: #dcdcdc;
     top: 6rem;
 }
