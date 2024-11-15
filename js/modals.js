@@ -26,7 +26,8 @@ document.addEventListener('DOMContentLoaded', function () {
         modalCatalog.classList.add('none');
     })
 
-    const openFormBtn = document.querySelectorAll('.cart__btn');
+    // const openFormBtn = document.querySelectorAll('.cart__btn');
+    const openFormBtn = document.querySelectorAll('.benefits__desc-btn');
     // console.log(openFormBtn);
     openFormBtn.forEach(el => {
         el.addEventListener('click', (e) => {

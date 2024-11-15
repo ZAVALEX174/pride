@@ -5,6 +5,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Golos Text SemiBold';
     src: local('Golos Text SemiBold'), url('../fonts/GolosText-SemiBold.ttf') format('truetype');
@@ -12,6 +13,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Golos Text Medium';
     src: local('Golos Text Medium'), url('../fonts/GolosText-Medium.ttf') format('truetype');
@@ -19,6 +21,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Golos Text Regular';
     src: local('Golos Text Regular'), url('../fonts/GolosText-Regular.ttf') format('truetype');
@@ -43,6 +46,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Inter Semi Bold';
     src: local('Inter Semi Bold'), url('../fonts/Inter_18pt-SemiBold.ttf') format('truetype');
@@ -50,12 +54,21 @@
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Inter Extra Bold';
     src: local('Inter Extra Bold'), url('../fonts/Inter_18pt-ExtraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
     font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr-Light';
+    src: url('../fonts/HelveticaNeueCyr-Light.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
+    font-weight: 300;
 }
 
 /*@font-face {*/
