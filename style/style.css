@@ -499,7 +499,9 @@
 }
 
 .header-menu-modal__header-link {
-  font-family: 'Golos Text SemiBold', sans-serif;
+  /*font-family: 'Golos Text SemiBold', sans-serif;*/
+  /*font-weight: 600;*/
+  font-family: 'TT Norms Pro Bold', sans-serif;
   font-weight: 600;
   font-size: 20px;
   line-height: 1.25;
@@ -618,7 +620,9 @@
   align-items: center;
   width: 100%;
   height: 60px;
-  font-family: 'Golos Text SemiBold', sans-serif;
+  /*font-family: 'Golos Text SemiBold', sans-serif;*/
+  /*font-weight: 600;*/
+  font-family: 'TT Norms Pro Bold', sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.25;
@@ -826,7 +830,8 @@
 .col2-2 > ul > li > a,
 .col3-2 > ul > li > a {
   width: 100%;
-  font-weight: 400;
+  /*font-weight: 400;*/
+  font-weight: 300;
   font-size: 14px;
   line-height: 1.1;
   color: var(--dark-gray);
@@ -946,7 +951,9 @@
   align-items: center;
   width: 100%;
   height: 60px;
-  font-family: 'Golos Text SemiBold', sans-serif;
+  /*font-family: 'Golos Text SemiBold', sans-serif;*/
+  /*font-weight: 600;*/
+  font-family: 'TT Norms Pro Bold', sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.25;
@@ -1064,7 +1071,9 @@
 }
 
 .header-menu-modal__body-down-right-baner-box > h3 {
-  font-family: 'Golos Text SemiBold', sans-serif;
+  /*font-family: 'Golos Text SemiBold', sans-serif;*/
+  /*font-weight: 600;*/
+  font-family: 'TT Norms Pro Bold', sans-serif;
   font-weight: 600;
   font-size: 32px;
   line-height: 1;
@@ -1326,7 +1335,9 @@
   -ms-flex-align: center;
   align-items: center;
   max-width: 33rem;
-  font-family: 'Golos Text SemiBold', sans-serif;
+  /*font-family: 'Golos Text SemiBold', sans-serif;*/
+  /*font-weight: 600;*/
+  font-family: 'TT Norms Pro Bold', sans-serif;
   font-weight: 600;
   font-size: 2.4rem;
   line-height: 1.25;
@@ -1600,7 +1611,9 @@
 .cart__availability {
   position: absolute;
   bottom: 0;
-  font-family: 'Golos Text SemiBold', sans-serif;
+  /*font-family: 'Golos Text SemiBold', sans-serif;*/
+  /*font-weight: 600;*/
+  font-family: 'TT Norms Pro Bold', sans-serif;
   font-weight: 600;
   font-size: 1.6rem;
   line-height: 1;
@@ -1608,7 +1621,7 @@
 }
 
 .cart__title {
-  font-family: 'Golos Text Bold', sans-serif;
+  font-family: 'TT Norms Pro Bold', sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 1;
@@ -1617,7 +1630,8 @@
 }
 
 .cart__subtitle {
-  font-weight: 400;
+  /*font-weight: 400;*/
+  font-weight: 300;
   font-size: 1.6rem;
   line-height: 1;
   /*color: var(--color-orange);*/
@@ -1829,8 +1843,10 @@
 }
 
 .about__header-title > span {
-  font-family: 'Golos Text Regular', sans-serif;
-  font-weight: 400;
+  /*font-family: 'Golos Text Regular', sans-serif;*/
+  /*font-weight: 400;*/
+  font-family: 'TT Norms Pro Light', sans-serif;
+  font-weight: 300;
   font-size: 2.5rem;
   line-height: 1.2;
   color: var(--color-orange);
@@ -1858,7 +1874,9 @@
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  font-family: 'Golos Text SemiBold', sans-serif;
+  /*font-family: 'Golos Text SemiBold', sans-serif;*/
+  /*font-weight: 600;*/
+  font-family: 'TT Norms Pro Bold', sans-serif;
   font-weight: 600;
   font-size: 2.4rem;
   line-height: 1.25;
@@ -2007,7 +2025,8 @@
 }
 
 .about__boby-link-title {
-  font-family: 'Golos Text Bold', sans-serif;
+  /* font-family: 'Golos Text Bold', sans-serif; */
+  font-family: 'TT Norms Pro Bold', sans-serif;
   font-size: 4rem;
   line-height: 1;
   color: var(--title-color-ligth);
@@ -2072,7 +2091,9 @@
   max-width: 34rem;
   padding-right: 6.4rem;
   padding-left: 0;
-  font-family: 'Golos Text SemiBold', sans-serif;
+  /*font-family: 'Golos Text SemiBold', sans-serif;*/
+  /*font-weight: 600;*/
+  font-family: 'TT Norms Pro Bold', sans-serif;
   font-weight: 600;
   font-size: 2.4rem;
   line-height: 1.25;
@@ -2156,7 +2177,8 @@
 }
 
 .categories__body-cart-title {
-  font-family: 'Golos Text Bold', sans-serif;
+  /* font-family: 'Golos Text Bold', sans-serif; */
+  font-family: 'TT Norms Pro Bold', sans-serif;
   font-size: 2.4rem;
   line-height: 1.25;
   color: var(--dark-gray);
@@ -2306,7 +2328,9 @@
 }
 
 .benefits__span {
-  font-family: 'Golos Text SemiBold', sans-serif;
+  /*font-family: 'Golos Text SemiBold', sans-serif;*/
+  /*font-weight: 600;*/
+  font-family: 'TT Norms Pro Bold', sans-serif;
   font-weight: 600;
   font-size: 2.4rem;
   line-height: 1.25;
@@ -2336,7 +2360,9 @@
 }
 
 .benefits__desc-title {
-  font-family: 'Golos Text Bold', sans-serif;
+  /*font-family: 'Golos Text Bold', sans-serif;*/
+  /*font-weight: 600;*/
+  font-family: 'TT Norms Pro Bold', sans-serif;
   font-weight: 600;
   font-size: 2.4rem;
   line-height: 1.25;
@@ -2423,7 +2449,9 @@
 }
 
 .work__header-link {
-  font-family: 'Golos Text SemiBold', sans-serif;
+  /*font-family: 'Golos Text SemiBold', sans-serif;*/
+  /*font-weight: 600;*/
+  font-family: 'TT Norms Pro Bold', sans-serif;
   font-weight: 600;
   font-size: 2.4rem;
   line-height: 1.25;
@@ -2549,7 +2577,9 @@
 .work__body-cart-title {
   position: relative;
   z-index: 20;
-  font-family: 'Golos Text SemiBold', sans-serif;
+  /*font-family: 'Golos Text SemiBold', sans-serif;*/
+  /*font-weight: 600;*/
+  font-family: 'TT Norms Pro Bold', sans-serif;
   font-weight: 600;
   font-size: 2.4rem;
   line-height: 1.25;
@@ -2726,7 +2756,9 @@
 
 .our-projects__header-link {
   position: relative;
-  font-family: 'Golos Text SemiBold', sans-serif;
+  /*font-family: 'Golos Text SemiBold', sans-serif;*/
+  /*font-weight: 600;*/
+  font-family: 'TT Norms Pro Bold', sans-serif;
   font-weight: 600;
   font-size: 2.4rem;
   line-height: 1.25;
@@ -2858,7 +2890,8 @@
 }
 
 .cart__address {
-  font-weight: 400;
+  /*font-weight: 400;*/
+  font-weight: 300;
   font-size: 2rem;
   line-height: 1.1;
   color: var(--color-orange);
@@ -3033,7 +3066,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: 'Golos Text SemiBold', sans-serif;
+  /*font-family: 'Golos Text SemiBold', sans-serif;*/
+  /*font-weight: 600;*/
+  font-family: 'TT Norms Pro Bold', sans-serif;
   font-weight: 600;
   font-size: 2.4rem;
   line-height: 1.25;
@@ -3126,7 +3161,9 @@
 }
 
 .other__body-cart-title {
-  font-family: 'Golos Text SemiBold', sans-serif;
+  /*font-family: 'Golos Text SemiBold', sans-serif;*/
+  /*font-weight: 600;*/
+  font-family: 'TT Norms Pro Bold', sans-serif;
   font-weight: 600;
   font-size: 2.4rem;
   line-height: 1.25;
@@ -3230,7 +3267,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: 'Golos Text SemiBold', sans-serif;
+  /*font-family: 'Golos Text SemiBold', sans-serif;*/
+  /*font-weight: 600;*/
+  font-family: 'TT Norms Pro Bold', sans-serif;
   font-weight: 600;
   font-size: 2.4rem;
   line-height: 1.25;
@@ -3420,7 +3459,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: 'Golos Text SemiBold', sans-serif;
+  /*font-family: 'Golos Text SemiBold', sans-serif;*/
+  /*font-weight: 600;*/
+  font-family: 'TT Norms Pro Bold', sans-serif;
   font-weight: 600;
   font-size: 2.4rem;
   line-height: 1.25;
@@ -3618,7 +3659,8 @@
 .form-left input::-webkit-input-placeholder,
 .form-right > input::-webkit-input-placeholder,
 .form-right > textarea::-webkit-input-placeholder {
-  font-weight: 400;
+  /*font-weight: 400;*/
+  font-weight: 300;
   font-size: 20px;
   line-height: 1.1;
   color: #828282;
@@ -3627,7 +3669,8 @@
 .form-left input::-moz-placeholder,
 .form-right > input::-moz-placeholder,
 .form-right > textarea::-moz-placeholder {
-  font-weight: 400;
+  /*font-weight: 400;*/
+  font-weight: 300;
   font-size: 20px;
   line-height: 1.1;
   color: #828282;
@@ -3636,7 +3679,8 @@
 .form-left input:-ms-input-placeholder,
 .form-right > input:-ms-input-placeholder,
 .form-right > textarea:-ms-input-placeholder {
-  font-weight: 400;
+  /*font-weight: 400;*/
+  font-weight: 300;
   font-size: 20px;
   line-height: 1.1;
   color: #828282;
@@ -3645,7 +3689,8 @@
 .form-left input::-ms-input-placeholder,
 .form-right > input::-ms-input-placeholder,
 .form-right > textarea::-ms-input-placeholder {
-  font-weight: 400;
+  /*font-weight: 400;*/
+  font-weight: 300;
   font-size: 20px;
   line-height: 1.1;
   color: #828282;
@@ -3656,7 +3701,8 @@
 .form-left input::placeholder,
 .form-right > input::placeholder,
 .form-right > textarea::placeholder {
-  font-weight: 400;
+  /*font-weight: 400;*/
+  font-weight: 300;
   font-size: 20px;
   line-height: 1.1;
   color: #828282;
@@ -3859,7 +3905,9 @@ label[for='user-email'] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: 'Golos Text SemiBold', sans-serif;
+  /*font-family: 'Golos Text SemiBold', sans-serif;*/
+  /*font-weight: 600;*/
+  font-family: 'TT Norms Pro Bold', sans-serif;
   font-weight: 600;
   font-size: 2.4rem;
   line-height: 1.25;
@@ -3981,7 +4029,9 @@ label[for='user-email'] {
 }
 
 .news__body-cart_horizontal-title {
-  font-family: 'Golos Text SemiBold', sans-serif;
+  /*font-family: 'Golos Text SemiBold', sans-serif;*/
+  /*font-weight: 600;*/
+  font-family: 'TT Norms Pro Bold', sans-serif;
   font-weight: 600;
   font-size: 3.2rem;
   line-height: 0.9375;
@@ -3989,7 +4039,8 @@ label[for='user-email'] {
 }
 
 .news__body-cart_horizontal-subtitle {
-  font-weight: 400;
+  /*font-weight: 400;*/
+  font-weight: 300;
   font-size: 2rem;
   line-height: 1.1;
   color: var(--ligth-gray);
@@ -4090,7 +4141,9 @@ label[for='user-email'] {
   -webkit-box-ordinal-group: 2;
   -ms-flex-order: 1;
   order: 1;
-  font-family: 'Golos Text SemiBold', sans-serif;
+  /*font-family: 'Golos Text SemiBold', sans-serif;*/
+  /*font-weight: 600;*/
+  font-family: 'TT Norms Pro Bold', sans-serif;
   font-weight: 600;
   font-size: 2.5rem;
   line-height: 1.2;
@@ -4253,7 +4306,9 @@ label[for='user-email'] {
 }
 
 .footer__callback-form-title {
-  font-family: 'Golos Text SemiBold', sans-serif;
+  /*font-family: 'Golos Text SemiBold', sans-serif;*/
+  /*font-weight: 600;*/
+  font-family: 'TT Norms Pro Bold', sans-serif;
   font-weight: 600;
   font-size: 2rem;
   line-height: 1.25;
@@ -4543,7 +4598,9 @@ label[for='user-email'] {
   align-items: center;
   min-height: 6rem;
   width: 100%;
-  font-family: 'Golos Text SemiBold', sans-serif;
+  /*font-family: 'Golos Text SemiBold', sans-serif;*/
+  /*font-weight: 600;*/
+  font-family: 'TT Norms Pro Bold', sans-serif;
   font-weight: 600;
   font-size: 2rem;
   line-height: 1.25;
@@ -4667,7 +4724,9 @@ label[for='user-email'] {
 }
 
 .footer__nav-down-link {
-  font-family: 'Golos Text SemiBold', sans-serif;
+  /*font-family: 'Golos Text SemiBold', sans-serif;*/
+  /*font-weight: 600;*/
+  font-family: 'TT Norms Pro Bold', sans-serif;
   font-weight: 600;
   font-size: 2rem;
   line-height: 1.25;

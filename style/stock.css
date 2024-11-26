@@ -29,7 +29,8 @@
 }
 
 .stock-banner__subtitle {
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 2.2rem;
     line-height: 1.22727;
     color: var(--ligth-gray);

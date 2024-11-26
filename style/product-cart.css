@@ -27,7 +27,8 @@
 }
 
 .card-info__title {
-    font-family: 'Golos Text Bold', sans-serif;
+    /*font-family: 'Golos Text Bold', sans-serif;*/
+    font-family: 'TT Norms Pro Bold', sans-serif;
     font-weight: 700;
     font-size: 4rem;
     line-height: 1;
@@ -42,14 +43,16 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 2rem;
     line-height: 1.1;
     color: var(--color-orange);
 }
 
 .card-info__subtitle {
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 2rem;
     line-height: 1.1;
     color: var(--dark-gray);
@@ -62,7 +65,9 @@
 }
 
 .card-info__peculiarities-title {
-    font-family: 'Golos Text Bold', sans-serif;
+    /*font-family: 'Golos Text Bold', sans-serif;*/
+    /*font-weight: 600;*/
+    font-family: 'TT Norms Pro Bold', sans-serif;
     font-weight: 600;
     font-size: 2.4rem;
     line-height: 1.25;
@@ -89,7 +94,8 @@
 
 .card-info__peculiarities-item {
     padding-left: 35px;
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 2rem;
     line-height: 1.1;
     color: var(--dark-gray);
@@ -123,7 +129,8 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 2rem;
     line-height: 1.1;
     color: var(--ligth-gray);
@@ -142,7 +149,8 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 2rem;
     line-height: 1.1;
     color: var(--ligth-gray);
@@ -264,7 +272,8 @@
     line-height: 4rem;
     height: 4rem;
     text-transform: uppercase;
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 2rem;
     margin-left: auto;
     cursor: unset;
@@ -435,7 +444,8 @@
     width: 100%;
     margin-bottom: 3.5rem;
     background: var(--5);
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 2.2rem;
     line-height: 1.2;
     text-align: center;
@@ -489,7 +499,8 @@
     width: 100%;
     margin-bottom: 3.5rem;
     background: var(--5);
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 2.2rem;
     line-height: 1.2;
     text-align: center;
@@ -532,6 +543,7 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    justify-content: center;
 }
 
 .tabs__content > .content_one {
@@ -680,7 +692,8 @@ video {
 
 .left,
 .right {
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 2.2rem;
     line-height: 1.2;
     color: var(--dark-gray);
@@ -711,7 +724,8 @@ video {
 .video-container__desc-text {
     max-width: 35.2rem;
     width: 100%;
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 2.5rem;
     line-height: 1.2;
     color: var(--title-color-ligth);
@@ -737,7 +751,8 @@ video {
 }
 
 .video-container__desc-play-time {
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 2rem;
     line-height: 1.1;
     color: var(--title-color-ligth);

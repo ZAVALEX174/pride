@@ -1,74 +1,123 @@
 @font-face {
-    font-family: 'Golos Text Bold';
-    src: local('Golos Text Bold'), url('../fonts/GolosText-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Golos Text Bold';
+  src: local('Golos Text Bold'),
+    url('../fonts/GolosText-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TT Norms Pro Bold';
+  src: local('TT Norms Pro Bold'),
+    url('../fonts/TT Norms Pro Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
+  font-family: 'Golos Text SemiBold';
+  src: local('Golos Text SemiBold'),
+    url('../fonts/GolosText-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+/* @font-face {
     font-family: 'Golos Text SemiBold';
-    src: local('Golos Text SemiBold'), url('../fonts/GolosText-SemiBold.ttf') format('truetype');
+    src: local('Golos Text SemiBold'),
+      url('../fonts/GolosText-SemiBold.ttf') format('opentype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
+  } */
+
+@font-face {
+  font-family: 'TT Norms Pro Medium';
+  src: local('TT Norms Pro Medium'),
+    url('../fonts/TT Norms Pro Medium.otf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
     font-family: 'Golos Text Medium';
-    src: local('Golos Text Medium'), url('../fonts/GolosText-Medium.ttf') format('truetype');
+    src: local('Golos Text Medium'),
+      url('../fonts/GolosText-Medium.ttf') format('opentype');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
+  }
+
+@font-face {
+  font-family: 'Golos Text Regular';
+  src: local('Golos Text Regular'),
+    url('../fonts/GolosText-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Golos Text Regular';
-    src: local('Golos Text Regular'), url('../fonts/GolosText-Regular.ttf') format('truetype');
+    font-family: 'TT Norms Pro Regular';
+    src: local('TT Norms Pro Regular'),
+      url('../fonts/TT Norms Pro Regular.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-}
+  }
 
 @font-face {
-    font-family: 'GetVoIP Grotesque Regular';
-    src: local('GetVoIP Grotesque Regular'), url('../fonts/GetVoIP-Grotesque.ttf') format('truetype'),
+  font-family: 'GetVoIP Grotesque Regular';
+  src: local('GetVoIP Grotesque Regular'),
+    url('../fonts/GetVoIP-Grotesque.ttf') format('truetype'),
     url('../fonts/GetVoIP-Grotesque.otf') format('otf');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Inter Regular';
-    src: local('Inter Regular'), url('../fonts/Inter_18pt-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Inter Regular';
+  src: local('Inter Regular'),
+    url('../fonts/Inter_18pt-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Inter Semi Bold';
-    src: local('Inter Semi Bold'), url('../fonts/Inter_18pt-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Inter Semi Bold';
+  src: local('Inter Semi Bold'),
+    url('../fonts/Inter_18pt-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Inter Extra Bold';
-    src: local('Inter Extra Bold'), url('../fonts/Inter_18pt-ExtraBold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'Inter Extra Bold';
+  src: local('Inter Extra Bold'),
+    url('../fonts/Inter_18pt-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'HelveticaNeueCyr-Light';
-    src: url('../fonts/HelveticaNeueCyr-Light.woff') format('woff');
-    font-style: normal;
-    font-display: swap;
-    font-weight: 300;
+  font-family: 'HelveticaNeueCyr-Light';
+  src: url('../fonts/HelveticaNeueCyr-Light.woff') format('woff');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'TT Norms Pro Light';
+  src: url('../fonts/TT Norms Pro Light.otf') format('opentype');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
 }
 
 /*@font-face {*/

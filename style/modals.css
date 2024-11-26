@@ -108,14 +108,16 @@
 .modal-cookies__text {
     max-width: 63rem;
     width: 100%;
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 20px;
     line-height: 1.1;
     color: var(--main-bg);
 }
 
 .modal-cookies__link {
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 20px;
     line-height: 1.1;
     color: var(--main-bg);
@@ -157,7 +159,8 @@
 }
 
 .modals__desc {
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 2.5rem;
     line-height: 1.2;
     color: var(--main-bg);
@@ -267,7 +270,8 @@
     border: 1.5px solid var(--5);
     border-radius: 100px;
     padding: 8px 10px 8px 30px;
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 20px;
     line-height: 1.1;
     height: 60px;
@@ -276,35 +280,40 @@
 
 .modal-form > input::-webkit-input-placeholder {
     color: var(--ligth-gray);
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 20px;
     line-height: 1.1;
 }
 
 .modal-form > input::-moz-placeholder {
     color: var(--ligth-gray);
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 20px;
     line-height: 1.1;
 }
 
 .modal-form > input:-ms-input-placeholder {
     color: var(--ligth-gray);
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 20px;
     line-height: 1.1;
 }
 
 .modal-form > input::-ms-input-placeholder {
     color: var(--ligth-gray);
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 20px;
     line-height: 1.1;
 }
 
 .modal-form > input::placeholder {
     color: var(--ligth-gray);
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 20px;
     line-height: 1.1;
 }
@@ -424,7 +433,8 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 2rem;
     line-height: 1.1;
     color: var(--title-color-ligth);
@@ -448,35 +458,40 @@
 }
 
 .modal-zakaz__form-input::-webkit-input-placeholder {
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 2rem;
     line-height: 1.1;
     color: #828282;
 }
 
 .modal-zakaz__form-input::-moz-placeholder {
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 2rem;
     line-height: 1.1;
     color: #828282;
 }
 
 .modal-zakaz__form-input:-ms-input-placeholder {
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 2rem;
     line-height: 1.1;
     color: #828282;
 }
 
 .modal-zakaz__form-input::-ms-input-placeholder {
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 2rem;
     line-height: 1.1;
     color: #828282;
 }
 
 .modal-zakaz__form-input::placeholder {
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 2rem;
     line-height: 1.1;
     color: #828282;
@@ -507,7 +522,8 @@
 
 .modals-zakaz__policy-text {
     max-width: 55rem;
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 1.8rem;
     line-height: 1.22222;
     text-align: center;

@@ -120,11 +120,13 @@ html {
 
 body {
   min-width: 320px;
-  font-weight: 400;
+  /* font-weight: 400; */
+  font-weight: 300;
   background-color: var(--main-bg);
   height: 100vh;
   /*font-family: 'Golos Text Regular', sans-serif;*/
-  font-family: 'HelveticaNeueCyr-Light', sans-serif;
+  /* font-family: 'HelveticaNeueCyr-Light', sans-serif; */
+  font-family: 'TT Norms Pro Light', sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }

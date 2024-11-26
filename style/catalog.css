@@ -160,7 +160,8 @@
     position: relative;
     max-width: 178px;
     width: 100%;
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 20px;
     line-height: 1.2;
     color: var(--dark-gray);
@@ -217,7 +218,8 @@
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 20px;
     line-height: 1.2;
     color: var(--dark-gray);
@@ -226,7 +228,8 @@
 
 .catalog-categories__header-filter-btn {
     padding: 0;
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 20px;
     line-height: 1.2;
     color: var(--ligth-gray);
@@ -335,7 +338,8 @@
     background-color: transparent;
     padding: 0;
     margin: 0;
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 2.5rem;
     line-height: 1.2;
     color: var(--dark-gray);
@@ -406,7 +410,8 @@
     outline: 1px solid transparent;
     border: none;
     background-color: transparent;
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 25px;
     line-height: 1;
     color: var(--ligth-gray);
@@ -416,7 +421,8 @@
 }
 
 .pagination li.active {
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 25px;
     line-height: 1;
     color: var(--dark-gray);

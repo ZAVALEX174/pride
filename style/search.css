@@ -141,7 +141,8 @@
 .search-result__item {
     padding: 1rem 1.5rem;
     opacity: 0.6;
-    font-weight: 400;
+    /*font-weight: 400;*/
+    font-weight: 300;
     font-size: 2rem;
     line-height: 1.1;
     color: var(--dark-gray);
