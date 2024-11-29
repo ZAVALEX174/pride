@@ -272,7 +272,7 @@
 }
 
 .contact-us__btn {
-  border: 1px solid transparent;
+  border: none;
   outline: none;
   width: 21.5rem;
   padding-left: 0;
