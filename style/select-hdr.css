@@ -38,6 +38,7 @@
   padding-left: 2.9rem;
   padding-right: 2.9rem;
   z-index: 10;
+  background: var(--dark-gray);
 }
 
 .header__lang-box {
