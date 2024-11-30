@@ -132,13 +132,13 @@ document.addEventListener('DOMContentLoaded', () => {
             header.classList.add('header_fixed');
             let headerHeight = header.clientHeight; //Высота всего хедера
             document.body.style.marginTop = `${headerHeight}px`;
-            headerModal.style.height = `75vh`;
+            headerModal.style.height = `100%`;
         } else {
             headerMenu.classList.remove('header__menu_hidden');
             header.classList.remove('header_fixed');
             header.style.marginTop = 0;
             document.body.style.marginTop = 0;
-            headerModal.style.height = `67vh`;
+            headerModal.style.height = `100%`;
         }
     })
 })
