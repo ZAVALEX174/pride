@@ -169,7 +169,7 @@ li {
 
 .container {
   margin: 0 auto;
-   max-width: 115.2rem;
+  max-width: 1152px;
   /*max-width: 142.2rem;*/
   width: 100%;
   padding: 0 1.1rem;
