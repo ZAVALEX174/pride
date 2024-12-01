@@ -1079,7 +1079,7 @@
   -ms-flex-pack: center;
   justify-content: center;
   top: 132px;
-  left: 15.5rem;
+  left: 14rem;
   background: url('../images/hero/prev_btn_d1.svg') no-repeat center/cover;
   -webkit-transition: 0.3s ease-in;
   -o-transition: 0.3s ease-in;
@@ -1105,7 +1105,8 @@
   -ms-flex-pack: center;
   justify-content: center;
   top: 132px;
-  right: 15.5rem;
+  /* right: 15.5rem; */
+  right: -13.5rem;
   background: url('../images/hero/next_btn_black_slider.svg') no-repeat
     center/cover;
 }
@@ -4079,6 +4080,10 @@ label[for='user-email'] {
 
 .watched-before .swiper-wrapper {
   padding: 2rem 0;
+}
+
+.watched-before .swiper-wrapper .swiper-slide:first-child {
+  /* margin-left: calc((100% - 1150px) / 2); */
 }
 
 /*========================================= footer ==============================================*/
