@@ -7,10 +7,11 @@ $('.slider-for').slick({
 });
 
 $('.slider-nav2').slick({
-    slidesToShow: 7,
+    slidesToShow: 4.5,
     slidesToScroll: 1,
     asNavFor: '.slider-for',
-    focusOnSelect: true
+    focusOnSelect: true,
+    vertical: true,
 });
 
 Fancybox.bind('[data-fancybox="gallery"]', {

@@ -183,12 +183,13 @@
     -webkit-column-gap: 1rem;
     -moz-column-gap: 1rem;
     column-gap: 2.4rem;
-    margin-bottom: 2.5rem;
+    /*margin-bottom: 2.5rem;*/
 }
 
 .card-slider {
-    width: 49%;
-    margin-bottom: auto;
+    width: 86.9%;
+    height: 57rem;
+    /*margin-bottom: auto;*/
 }
 
 .slider-block {
@@ -802,7 +803,8 @@ video {
 
 .slider-for .slick-slide {
     /*height: 600px;*/
-    height: 300px;
+    /*height: 300px;*/
+    height: 57rem;
 }
 
 .slider-for .slick-slide div {
@@ -810,9 +812,9 @@ video {
 }
 
 .slider-nav2 {
-    max-width: 113rem;
-    padding: 0 70px;
-    margin: 0 auto;
+    max-width: 13.2rem;
+    padding: 70px 0;
+    /*margin: 0 auto;*/
 }
 
 .slider-nav2 .slick-slide {
@@ -830,12 +832,13 @@ video {
     z-index: 50;
     content: '';
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    /* top: 50%; */
+    bottom: -13px;
+    transform: translate(-50%, -50%) rotate(90deg);
     right: 0;
-    width: 42px;
-    height: 42px;
-    background: url('../images/hero/next_btn_black_litle.svg') no-repeat center/cover;
+    width: 60px;
+    height: 60px;
+    background: url(../images/hero/next_btn_black_litle.svg) no-repeat center / cover;
     cursor: pointer;
     -webkit-transition: 0.3s ease-in;
     -o-transition: 0.3s ease-in;
@@ -850,12 +853,12 @@ video {
     z-index: 50;
     content: '';
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 0;
-    width: 42px;
-    height: 42px;
-    background: url('../images/hero/prev_btn_d1.svg') no-repeat center/cover;
+    top: 31px;
+    transform: translate(-50%, -50%) rotate(90deg);
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    background: url(../images/hero/prev_btn_d1.svg) no-repeat center / cover;
     cursor: pointer;
     -webkit-transition: 0.3s ease-in;
     -o-transition: 0.3s ease-in;
