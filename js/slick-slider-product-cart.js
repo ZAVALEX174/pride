@@ -3,7 +3,7 @@ $('.slider-for').slick({
     slidesToScroll: 1,
     arrows: true,
     asNavFor: '.slider-nav2',
-    adaptiveHeight: true
+    adaptiveHeight: false
 });
 
 $('.slider-nav2').slick({
