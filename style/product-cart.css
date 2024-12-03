@@ -183,7 +183,7 @@
   height: 100%;
   overflow: hidden;
   border: 1px solid transparent;
-  border-radius: 5px;
+  border-radius: 15px;
   -webkit-transition: 0.3s ease-in;
   -o-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
