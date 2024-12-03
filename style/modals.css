@@ -1,25 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-.example {
-    display: -ms-grid;
-    display: grid;
-    -webkit-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
-    background: -o-linear-gradient(top, white, black);
-    background: linear-gradient(to bottom, white, black);
-}
-
 .modals {
     position: fixed;
     width: 100%;
@@ -34,8 +12,6 @@
     background-color: rgba(0, 0, 0, 0.7);
     visibility: hidden;
     opacity: 0;
-    -webkit-transition: all 0.5s ease 0s;
-    -o-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
 }
 
@@ -50,65 +26,42 @@
 .modals__wrapper {
     width: 100%;
     height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
 }
 
 .modals__container {
-    max-width: 115rem;
+    max-width: 1150px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 1.1rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    padding: 0 11px;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .modals__form {
-    max-width: 37.6rem;
+    max-width: 376px;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
 }
 
 .modal-cookies {
-    max-width: 100rem;
+    max-width: 1000px;
     width: 100%;
-    /* display: flex; */
     display: none;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 3rem 6rem;
+    padding: 30px 60px;
     background-color: var(--dark-gray);
     border-radius: 30px;
 }
 
 .modal-cookies__text {
-    max-width: 63rem;
+    max-width: 630px;
     width: 100%;
-    /*font-weight: 400;*/
     font-weight: 300;
     font-size: 20px;
     line-height: 1.1;
@@ -116,13 +69,11 @@
 }
 
 .modal-cookies__link {
-    /*font-weight: 400;*/
     font-weight: 300;
     font-size: 20px;
     line-height: 1.1;
     color: var(--main-bg);
     text-decoration: underline;
-    -webkit-text-decoration-skip-ink: none;
     text-decoration-skip-ink: none;
 }
 
@@ -132,58 +83,44 @@
     max-width: 220px;
     width: 100%;
     background: transparent;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
 }
 
 .modals__text-box {
-    max-width: 65rem;
+    max-width: 650px;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
 }
 
 .modals__title {
     font-family: 'GetVoIP Grotesque Regular', sans-serif;
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 40px;
     line-height: 0.95;
     color: var(--main-bg);
-    margin-bottom: 3rem;
+    margin-bottom: 30px;
 }
 
 .modals__desc {
-    /*font-weight: 400;*/
     font-weight: 300;
-    font-size: 2.5rem;
+    font-size: 25px;
     line-height: 1.2;
     color: var(--main-bg);
 }
 
 .modals-availability {
-    padding: 5rem 0;
+    padding: 50px 0;
     width: 100%;
     background-color: var(--dark-gray);
 }
 
 .modals-availability__btn-link {
-    max-width: 27rem;
+    max-width: 270px;
     width: 100%;
     background-color: var(--color-orange);
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-transition: 0.3s ease-in;
-    -o-transition: 0.3s ease-in;
     transition: 0.3s ease-in;
 }
 
@@ -193,7 +130,7 @@
 
 .modals-catalog {
     width: 100%;
-    padding: 3rem 0;
+    padding: 30px 0;
     background-color: var(--dark-gray);
 }
 
@@ -202,20 +139,13 @@
 }
 
 .modals-catalog__btn-download {
-    max-width: 27rem;
+    max-width: 270px;
     width: 100%;
-    margin-right: 1.6rem;
+    margin-right: 16px;
     border: 1.5px solid var(--color-orange);
     border-radius: 30px;
     background-color: transparent;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-transition: 0.3s ease-in;
-    -o-transition: 0.3s ease-in;
     transition: 0.3s ease-in;
 }
 
@@ -226,18 +156,12 @@
 }
 
 .modals-catalog__btn-link {
-    max-width: 27rem;
+    max-width: 270px;
     width: 100%;
     border-radius: 30px;
     background-color: var(--color-orange);
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-transition: 0.3s ease-in;
-    -o-transition: 0.3s ease-in;
     transition: 0.3s ease-in;
 }
 
@@ -247,30 +171,23 @@
 
 .modals-connection {
     width: 100%;
-    padding: 5rem 0;
+    padding: 50px 0;
     background-color: var(--dark-gray);
 }
 
 .modal-form {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    row-gap: 1.5rem;
+    row-gap: 15px;
 }
 
 .modal-form > input {
-    -webkit-box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
     box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
     background: var(--title-color-ligth);
     border: 1.5px solid var(--5);
     border-radius: 100px;
     padding: 8px 10px 8px 30px;
-    /*font-weight: 400;*/
     font-weight: 300;
     font-size: 20px;
     line-height: 1.1;
@@ -278,41 +195,8 @@
     color: var(--dark-gray);
 }
 
-.modal-form > input::-webkit-input-placeholder {
-    color: var(--ligth-gray);
-    /*font-weight: 400;*/
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 1.1;
-}
-
-.modal-form > input::-moz-placeholder {
-    color: var(--ligth-gray);
-    /*font-weight: 400;*/
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 1.1;
-}
-
-.modal-form > input:-ms-input-placeholder {
-    color: var(--ligth-gray);
-    /*font-weight: 400;*/
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 1.1;
-}
-
-.modal-form > input::-ms-input-placeholder {
-    color: var(--ligth-gray);
-    /*font-weight: 400;*/
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 1.1;
-}
-
 .modal-form > input::placeholder {
     color: var(--ligth-gray);
-    /*font-weight: 400;*/
     font-weight: 300;
     font-size: 20px;
     line-height: 1.1;
@@ -326,8 +210,6 @@
     -ms-flex-pack: center;
     justify-content: center;
     background-color: var(--color-orange);
-    -webkit-transition: 0.3s ease-in;
-    -o-transition: 0.3s ease-in;
     transition: 0.3s ease-in;
 }
 
@@ -341,41 +223,30 @@
 
 
 .modals-zakaz {
-    max-width: 71rem;
-    min-height: 70rem;
+    max-width: 710px;
+    min-height: 700px;
     width: 100%;
     background-color: var(--dark-gray);
-    padding: 6rem 8rem 4.6rem;
+    padding: 60px 80px 46px;
     border-radius: 30px;
 }
 
 .modals-zakaz__text-box {
     padding: 0;
     margin: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    margin-bottom: 3rem;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
+    margin-bottom: 30px;
     flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
 
 }
 
 .modals-zakaz__title {
     color: var(--color-orange);
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     font-weight: 700;
-    font-size: 6.4rem;
+    font-size: 64px;
     line-height: 1.01562;
     margin-bottom: 0;
 }
@@ -383,17 +254,13 @@
 .modals-zakaz__btn {
     background-color: transparent;
     border: none;
-    width: 3.6rem;
-    height: 3.6rem;
+    width: 36px;
+    height: 36px;
     cursor: pointer;
-    -webkit-transition: 0.3s ease-in;
-    -o-transition: 0.3s ease-in;
     transition: 0.3s ease-in;
 }
 
 .modals-zakaz__btn svg path {
-    -webkit-transition: 0.3s ease-in;
-    -o-transition: 0.3s ease-in;
     transition: 0.3s ease-in;
 }
 
@@ -404,127 +271,67 @@
 
 .modals-zakaz__form {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    margin-bottom: 3rem;
+    margin-bottom: 30px;
 }
 
 .modal-zakaz__form {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
 }
 
 .modal-zakaz__form-label {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
-    /*font-weight: 400;*/
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 20px;
     line-height: 1.1;
     color: var(--title-color-ligth);
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
 }
 
 .modal-zakaz__form-label-mail {
-    margin-bottom: 3rem;
+    margin-bottom: 30px;
 }
 
 .modal-zakaz__form-input {
-    margin-top: 2rem;
+    margin-top: 20px;
     border: 1px solid rgba(224, 224, 224, 0.2);
     border-radius: 8px;
-    padding: 1.2rem 1.6rem;
-    width: 55rem;
-    height: 6rem;
-    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    padding: 12px 16px;
+    width: 550px;
+    height: 60px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     background: rgba(255, 255, 255, 0.03);
 }
 
-.modal-zakaz__form-input::-webkit-input-placeholder {
-    /*font-weight: 400;*/
-    font-weight: 300;
-    font-size: 2rem;
-    line-height: 1.1;
-    color: #828282;
-}
-
-.modal-zakaz__form-input::-moz-placeholder {
-    /*font-weight: 400;*/
-    font-weight: 300;
-    font-size: 2rem;
-    line-height: 1.1;
-    color: #828282;
-}
-
-.modal-zakaz__form-input:-ms-input-placeholder {
-    /*font-weight: 400;*/
-    font-weight: 300;
-    font-size: 2rem;
-    line-height: 1.1;
-    color: #828282;
-}
-
-.modal-zakaz__form-input::-ms-input-placeholder {
-    /*font-weight: 400;*/
-    font-weight: 300;
-    font-size: 2rem;
-    line-height: 1.1;
-    color: #828282;
-}
-
 .modal-zakaz__form-input::placeholder {
-    /*font-weight: 400;*/
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 20px;
     line-height: 1.1;
     color: #828282;
 }
 
 .modal-zakaz__form-btn {
-    width: 55rem;
-    -webkit-box-sizing: border-box;
+    width: 550px;
     box-sizing: border-box;
     background-color: var(--ligth-gray);
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-transition: 0.3s ease-in;
-    -o-transition: 0.3s ease-in;
     transition: 0.3s ease-in;
 }
 
 .modal-zakaz__form-btn:hover {
     background-color: var(--color-orange);
-    -webkit-transition: 0.3s ease-in;
-    -o-transition: 0.3s ease-in;
     transition: 0.3s ease-in;
 }
 
 .modals-zakaz__policy-text {
-    max-width: 55rem;
-    /*font-weight: 400;*/
+    max-width: 550px;
     font-weight: 300;
-    font-size: 1.8rem;
+    font-size: 18px;
     line-height: 1.22222;
     text-align: center;
     color: var(--title-color-ligth);
@@ -533,8 +340,6 @@
 .modals-zakaz__policy-link {
     color: var(--color-orange);
     position: relative;
-    -webkit-transition: 0.3s ease-in;
-    -o-transition: 0.3s ease-in;
     transition: 0.3s ease-in;
 }
 

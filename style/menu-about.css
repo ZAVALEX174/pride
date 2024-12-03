@@ -1,15 +1,14 @@
 .breadcrumbs__menu-about-page {
-    margin-bottom: 6rem;
+    margin-bottom: 60px;
 }
 
 .menu-about-page__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /*grid-template-rows: 45rem 62rem 45rem;*/
-    grid-auto-rows: minmax(45rem, auto);
+    grid-auto-rows: minmax(450px, auto);
     grid-column-gap: 24px;
     grid-row-gap: 30px;
-    padding-bottom: 20rem;
+    padding-bottom: 200px;
 }
 
 .horizontal {
@@ -23,34 +22,33 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 5.3rem 3rem 5rem;
+    padding: 53px 30px 50px;
 }
 
 .vertical__rev {
     flex-direction: column-reverse;
-    padding: 3rem;
+    padding: 30px;
     justify-content: flex-end;
 }
 
 .text {
-    padding: 3rem 3.2rem 5.6rem;
+    padding: 30px 32px 56px;
 }
 
 .title {
     font-family: 'GetVoIP Grotesque Regular', sans-serif;
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 40px;
     line-height: 0.675;
     color: var(--dark-gray);
 }
 
 .subtitle {
-    /*font-weight: 400;*/
     font-weight: 300;
-    font-size: 2.2rem;
+    font-size: 22px;
     line-height: 0.955;
     color: var(--ligth-gray);
-    margin-bottom: 3rem;
+    margin-bottom: 30px;
 }
 
 .link {
@@ -58,13 +56,12 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-right: 6rem;
-    width: 21.2rem;
-    height: 6rem;
-    line-height: 6rem;
-    /*font-weight: 400;*/
+    padding-right: 60px;
+    width: 212px;
+    height: 60px;
+    line-height: 60px;
     font-weight: 300;
-    font-size: 2rem;
+    font-size: 20px;
     color: var(--dark-gray);
     cursor: pointer;
     transition: 0.3s ease-in;
@@ -73,8 +70,8 @@
 .link::before {
     position: absolute;
     content: '';
-    width: 6rem;
-    height: 6rem;
+    width: 60px;
+    height: 60px;
     right: 0;
     background-color: var(--dark-gray);
     border-radius: 50%;
@@ -84,9 +81,9 @@
 .link::after {
     position: absolute;
     content: '';
-    width: 1.9rem;
-    height: 1.6rem;
-    left: calc(100% - 4rem);
+    width: 19px;
+    height: 16px;
+    left: calc(100% - 40px);
     background: url("../images/about-menu/arr_right.svg") no-repeat center center/cover;
 }
 
@@ -123,11 +120,11 @@
 
 .about-menu-about__text {
     margin-top: auto;
-    width: 51.7rem;
+    width: 517px;
 }
 
 .about-menu-about__image-box {
-    width: calc(100% - 51.7rem);
+    width: calc(100% - 517px);
     height: 100%;
 }
 
@@ -139,7 +136,7 @@
 }
 
 .about-menu-cooperation {
-    margin-top: 3.6rem;
+    margin-top: 36px;
 }
 
 .about-menu-our-projects {
@@ -149,11 +146,11 @@
 
 .about-menu-our-projects__text {
     margin-top: auto;
-    width: 51.7rem;
+    width: 517px;
 }
 
 .about-menu-our-projects__image-box {
-    width: calc(100% - 51.7rem);
+    width: calc(100% - 517px);
     height: 100%;
 }
 
@@ -170,11 +167,11 @@
 }
 
 .about-menu-advantages__title {
-    margin-bottom: 2.7rem;
+    margin-bottom: 27px;
 }
 
 .about-menu-advantages__text {
-    margin-bottom: 3rem;
+    margin-bottom: 30px;
 }
 
 .about-menu-advantages__image-box,
@@ -186,13 +183,13 @@
 
 .about-menu-advantages__image-box {
     width: 100%;
-    height: 30rem;
+    height: 300px;
 }
 
 .about-menu-cooperation__image-box {
     width: 100%;
-    height: 30.5rem;
-    margin-bottom: 3rem;
+    height: 305px;
+    margin-bottom: 30px;
 }
 
 .about-menu-advantages__img, .about-menu-cooperation__img {

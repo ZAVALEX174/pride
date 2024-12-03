@@ -1,0 +1,148 @@
+.other {
+    width: 100%;
+    padding: 95px 90px 95px 90px;
+    overflow: hidden;
+}
+
+.other__header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+.other__header-title {
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    font-family: 'GetVoIP Grotesque Regular', sans-serif;
+    color: var(--dark-gray);
+    margin-bottom: 0;
+}
+
+.other-prev__btn,
+.other-next__btn {
+    position: relative;
+}
+
+.btn__slider_prev.other-prev__btn::after {
+    position: absolute;
+    top: 4px;
+    left: auto;
+    right: auto;
+    bottom: auto;
+}
+
+.btn__slider_next.other-next__btn::after {
+    position: absolute;
+    top: 4px;
+    left: auto;
+    right: auto;
+    bottom: auto;
+}
+
+.other__header-link {
+    position: relative;
+    display: flex;
+    font-family: 'TT Norms Pro Bold', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.25;
+    color: var(--dark-gray);
+    padding-right: 64px;
+    transition: 0.3s ease-in;
+}
+
+.other__header-link:hover {
+    color: var(--color-orange);
+}
+
+.other__header-link::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 21px;
+    height: 16px;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    background: url('../images/catalog/arr_right_orange.svg') no-repeat
+    center/cover;
+}
+
+.other__body-item {
+    padding: 30px;
+    width: 360px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    border: 1.5px solid var(--5);
+    border-radius: 15px;
+    box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
+    background: var(--title-color-ligth);
+    transition: 0.3s ease-in;
+}
+
+.other__body-item:hover {
+    transition: all 0.3s ease-in;
+    border-color: var(--ligth-gray);
+    box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
+    background: linear-gradient(
+            360deg,
+            rgba(43, 42, 41, 0.9) 46.04%,
+            rgba(235, 99, 32, 0.9) 100%
+    ),
+    url(../images/hero/bg_slider.jpg) no-repeat center;
+}
+
+.other__body-cart-title {
+    font-family: 'TT Norms Pro Bold', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.25;
+    color: var(--dark-gray);
+    margin-bottom: 20px;
+    transition: color 0.3s ease-in;
+}
+
+.other__body-item:hover .other__body-cart-title {
+    color: var(--title-color-ligth);
+}
+
+.other__body-cart-list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    list-style-type: initial;
+    padding-left: 30px;
+    margin-bottom: 24px;
+}
+
+.other__body-cart-item {
+    font-size: 20px;
+    line-height: 1.1;
+    color: var(--ligth-gray);
+    transition: color 0.3s ease-in;
+}
+
+.other__body-item:hover .other__body-cart-item {
+    color: var(--title-color-ligth);
+}
+
+.other__body-cart-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--ligth-gray);
+    color: var(--title-color-ligth);
+    transition: 0.3s ease-in;
+}
+
+.other__body-cart-btn:hover {
+    background-color: var(--color-orange);
+}

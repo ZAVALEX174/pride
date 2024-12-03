@@ -1,33 +1,4 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-.example {
-  display: -ms-grid;
-  display: grid;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background: -o-linear-gradient(top, white, black);
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(white),
-    to(black)
-  );
-  background: linear-gradient(to bottom, white, black);
-}
-
 .header__lang {
-  /*position: relative;*/
   padding-left: 0;
   padding-right: 0;
 }
@@ -35,35 +6,27 @@
 .dropdown {
   position: relative;
   width: 100%;
-  padding-left: 2.9rem;
-  padding-right: 2.9rem;
+  padding-left: 29px;
+  padding-right: 29px;
   z-index: 10;
   background: var(--dark-gray);
 }
 
 .header__lang-box {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
   background: transparent;
   outline: none;
   border-color: transparent;
-  /*font-family: 'Golos Text', sans-serif;*/
-  /*font-weight: 400;*/
   font-family: 'TT Norms Pro Light', sans-serif;
   font-weight: 300;
   margin: 0;
   padding: 0;
   padding-right: 24px;
-  font-size: 1.8rem;
+  font-size: 18px;
   line-height: 50px;
   height: 50px;
   color: var(--dark-gray);
@@ -75,8 +38,6 @@
   position: absolute;
   content: '';
   top: 54%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   right: -5px;
   width: 20px;
@@ -95,7 +56,6 @@
   position: absolute;
   right: 0;
   top: 65px;
-  -webkit-box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
   box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
   background: var(--title-color-ligth);
   border: 1.5px solid var(--5);
@@ -109,12 +69,8 @@
 }
 
 .dropdown__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
 }
@@ -125,30 +81,18 @@
 }
 
 .dropdown__label {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
   justify-content: flex-start;
   width: 100%;
   padding: 26px 15px 26px 15px;
-  -webkit-transition: 0.3s ease-in;
-  -o-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
-  /*font-family: 'Golos Text', sans-serif;*/
-  /*font-weight: 400;*/
   font-family: 'TT Norms Pro Light', sans-serif;
   font-weight: 300;
   font-size: 20px;
   line-height: 1.1;
   color: var(--dark-gray);
   cursor: pointer;
-  -webkit-box-ordinal-group: 3;
-  -ms-flex-order: 2;
   order: 2;
 }
 
@@ -157,11 +101,7 @@
 }
 
 .dropdown__label > input {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   margin-left: auto;
 }
@@ -175,14 +115,10 @@
 }
 
 .dropdown__item > img {
-  -webkit-box-ordinal-group: 2;
-  -ms-flex-order: 1;
   order: 1;
 }
 
 .dropdown__item > input {
-  -webkit-box-ordinal-group: 4;
-  -ms-flex-order: 3;
   order: 3;
 }
 
@@ -199,10 +135,8 @@
 .custom-checkbox {
   margin-left: auto;
   color: var(--ligth-gray);
-  -webkit-transition: color 0.3s ease-in;
-  -o-transition: color 0.3s ease-in;
   transition: color 0.3s ease-in;
-  right: 1rem;
+  right: 10px;
   position: absolute;
 }
 
@@ -213,16 +147,12 @@
 .form-right .custom-checkbox {
   left: 0;
   top: 40%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
 .footer__callback-form-policy .custom-checkbox {
   left: 0;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
