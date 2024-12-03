@@ -477,7 +477,7 @@
     font-family: 'TT Norms Pro Medium', sans-serif;
     padding: 0;
     margin: 0;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
     line-height: 1.22222;
     color: var(--dark-gray);
@@ -515,7 +515,7 @@
     align-items: center;
     padding: 0;
     margin: 0;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
     line-height: 1.22222;
     color: var(--dark-gray);
