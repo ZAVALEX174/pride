@@ -608,7 +608,7 @@ video {
 }
 
 .slider-nav2 .slick-slide {
-  margin: 0 5px;
+  margin: 0;
   border-radius: 4px;
   border: 2px solid transparent;
 }
