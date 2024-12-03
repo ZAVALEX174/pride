@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
         headerModalOne.style.display = "block";
         openModalBtnOneLink.classList.add('navigation__link_drd-active');
         document.body.style.overflow = "hidden";
+        document.body.style.paddingRight = "17px";
         navLinkOne.classList.add('navigation__link-active');
 
     });
@@ -49,6 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
         openModalBtnOneLink.classList.remove('navigation__link_drd-active');
         headerModalOne.style.display = "none";
         document.body.style.overflow = "";
+        document.body.style.paddingRight = "0";
     });
 
     openModalBtnTwo.addEventListener("click", (e) => {
@@ -70,6 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
         headerModalTwo.style.display = "block";
         openModalBtnTwoLink.classList.add('navigation__link_drd-active');
         document.body.style.overflow = "hidden";
+        document.body.style.paddingRight = "17px";
         navLinkTwo.classList.add('navigation__link-active');
     });
     closeModalBtnTwo.addEventListener("click", (e) => {
@@ -79,6 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
         openModalBtnTwoLink.classList.remove('navigation__link_drd-active');
         headerModalTwo.style.display = "none";
         document.body.style.overflow = "";
+        document.body.style.paddingRight = "0";
     });
     openSearchBtn.addEventListener('click', (e) => {
         e.preventDefault();
@@ -92,6 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
         inputSaerch.classList.add('search__active-input');
         headerSearch.classList.add('header__search_active');
         document.body.style.overflow = "hidden";
+        document.body.style.paddingRight = "17px";
         headerLogo.classList.add('none');
         headerUser.classList.add('none');
         headerContactUs.classList.add('none');
@@ -110,6 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
         headerContactUs.classList.remove('none');
         headerFavorites.classList.remove('none');
         document.body.style.overflow = "";
+        document.body.style.paddingRight = "0";
         headerModalThree.style.display = "none";
         document.querySelector('.btn-search-reset').style.display = 'none';
         document.querySelector('.header__search-form-icon').style.left = '0';
