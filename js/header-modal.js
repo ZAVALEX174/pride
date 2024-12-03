@@ -26,6 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
         inputSaerch.classList.remove('search__active-input');
         headerSearch.classList.remove('header__search_active');
         searchBtn.classList.remove('search__btn_active');
+        document.querySelector('.btn-search-reset').style.display = 'none';
+        document.querySelector('.header__search-form-icon').style.left = '0';
         headerLogo.classList.remove('none');
         headerUser.classList.remove('none');
         headerContactUs.classList.remove('none');
@@ -54,6 +56,8 @@ document.addEventListener('DOMContentLoaded', () => {
         inputSaerch.classList.remove('search__active-input');
         headerSearch.classList.remove('header__search_active');
         searchBtn.classList.remove('search__btn_active');
+        document.querySelector('.btn-search-reset').style.display = 'none';
+        document.querySelector('.header__search-form-icon').style.left = '0';
         headerLogo.classList.remove('none');
         headerUser.classList.remove('none');
         headerContactUs.classList.remove('none');
@@ -93,6 +97,8 @@ document.addEventListener('DOMContentLoaded', () => {
         headerContactUs.classList.add('none');
         headerFavorites.classList.add('none');
         searchBtn.classList.add('search__btn_active');
+        document.querySelector('.btn-search-reset').style.display = 'flex';
+        document.querySelector('.header__search-form-icon').style.left = '133px';
     });
     closeModalBtnThree.addEventListener('click', (e) => {
         e.preventDefault();
@@ -105,6 +111,8 @@ document.addEventListener('DOMContentLoaded', () => {
         headerFavorites.classList.remove('none');
         document.body.style.overflow = "";
         headerModalThree.style.display = "none";
+        document.querySelector('.btn-search-reset').style.display = 'none';
+        document.querySelector('.header__search-form-icon').style.left = '0';
     })
 
 
