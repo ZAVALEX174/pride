@@ -60,3 +60,6 @@
 .watched-before .swiper-wrapper .swiper-slide:first-child {
   /* margin-left: calc((100% - 1150px) / 2); */
 }
+.watched-before-swiper {
+  padding-left: calc((100% - 1152px) / 2);
+}
