@@ -21,6 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinkOne = document.querySelector('.modal-one .navigation__link');
     const navLinkTwo = document.querySelector('.modal-two .navigation__link');
 
+    let scrollBarClient = document.documentElement.clientWidth;
+    let scrollBarAll = window.innerWidth;
+
     openModalBtnOne.addEventListener("click", (e) => {
         e.preventDefault();
         inputSaerch.classList.remove('search__active-input');
@@ -40,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
         headerModalOne.style.display = "block";
         openModalBtnOneLink.classList.add('navigation__link_drd-active');
         document.body.style.overflow = "hidden";
-        document.body.style.paddingRight = "17px";
+        document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
         navLinkOne.classList.add('navigation__link-active');
 
     });
@@ -50,7 +53,10 @@ document.addEventListener('DOMContentLoaded', () => {
         openModalBtnOneLink.classList.remove('navigation__link_drd-active');
         headerModalOne.style.display = "none";
         document.body.style.overflow = "";
-        document.body.style.paddingRight = "0";
+        document.body.style.paddingRight = "";
+        // let scrollBarCl = document.documentElement.clientWidth;
+        // let scrollBarAll = window.innerWidth;
+        // console.log('all:', scrollBarCl, 'cl:', scrollBarAll);
     });
 
     openModalBtnTwo.addEventListener("click", (e) => {
@@ -72,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
         headerModalTwo.style.display = "block";
         openModalBtnTwoLink.classList.add('navigation__link_drd-active');
         document.body.style.overflow = "hidden";
-        document.body.style.paddingRight = "17px";
+        document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
         navLinkTwo.classList.add('navigation__link-active');
     });
     closeModalBtnTwo.addEventListener("click", (e) => {
@@ -82,7 +88,7 @@ document.addEventListener('DOMContentLoaded', () => {
         openModalBtnTwoLink.classList.remove('navigation__link_drd-active');
         headerModalTwo.style.display = "none";
         document.body.style.overflow = "";
-        document.body.style.paddingRight = "0";
+        document.body.style.paddingRight = "";
     });
     openSearchBtn.addEventListener('click', (e) => {
         e.preventDefault();
@@ -96,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
         inputSaerch.classList.add('search__active-input');
         headerSearch.classList.add('header__search_active');
         document.body.style.overflow = "hidden";
-        document.body.style.paddingRight = "17px";
+        document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
         headerLogo.classList.add('none');
         headerUser.classList.add('none');
         headerContactUs.classList.add('none');
@@ -115,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
         headerContactUs.classList.remove('none');
         headerFavorites.classList.remove('none');
         document.body.style.overflow = "";
-        document.body.style.paddingRight = "0";
+        document.body.style.paddingRight = "";
         headerModalThree.style.display = "none";
         document.querySelector('.btn-search-reset').style.display = 'none';
         document.querySelector('.header__search-form-icon').style.left = '0';
