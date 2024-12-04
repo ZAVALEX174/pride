@@ -52,27 +52,34 @@
     center/cover;
 }
 .products__body-btn-box {
-  max-width: 1152px;
+  max-width: 744px;
+  background: rgba(244, 244, 244, 1);
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 0 11px;
+  padding: 0;
   margin-bottom: 22px;
+  border: 1px solid var(--dark-gray);
+  border-radius: 57px;
 }
 
 .products__body-btn {
   border-radius: 57px;
-  background: var(--5);
+  /* background: var(--5); */
   color: var(--dark-gray);
   font-size: 20px;
-  line-height: 1.2;
+  line-height: 50;
+  height: 50px;
   max-width: 350px;
   width: 100%;
   text-align: center;
   justify-content: center;
   transition: color 0.3s ease-in, background 0.3s ease-in;
+}
+.products__body-btn svg {
+  margin-left: 10px;
 }
 .products__body-btn:hover {
   background: var(--ligth-gray);
