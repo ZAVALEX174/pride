@@ -1,173 +1,174 @@
 .geografhy {
-    width: 100%;
-    padding: 90px 0 97px;
-    background-color: var(--main-bg);
+  width: 100%;
+  padding: 97px 0 90px;
+  background-color: var(--main-bg);
 }
 
 .geografhy__container {
-    position: relative;
+  position: relative;
 }
 
 .geografhy__header {
-    width: 100%;
-    margin-bottom: 60px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
+  width: 100%;
+  margin-bottom: 91px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 
 .geografhy__wrapper {
-    max-width: 790px;
-    width: 100%;
+  max-width: 790px;
+  width: 100%;
 }
 
 .geografhy__header-title {
-    font-family: 'GetVoIP Grotesque Regular', sans-serif;
-    font-weight: 700;
-    font-size: 64px;
-    display: flex;
-    order: 1;
-    align-items: center;
-    margin-right: 20px;
-    line-height: 1.01562;
-    color: var(--dark-gray);
-    margin-bottom: 45px;
+  font-family: 'GetVoIP Grotesque Regular', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  display: flex;
+  order: 1;
+  align-items: center;
+  margin-right: 20px;
+  line-height: 1.01562;
+  color: var(--dark-gray);
+  margin-bottom: 61px;
 }
 
 .geografhy__header-subtitle {
-    font-size: 25px;
-    line-height: 1.2;
-    color: var(--dark-gray);
-    order: 3;
+  font-size: 25px;
+  line-height: 1.2;
+  color: var(--dark-gray);
+  order: 3;
 }
 
 .geografhy__header-subtitle a {
-    font-size: 25px;
-    line-height: 1.2;
-    color: var(--dark-gray);
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
+  font-size: 25px;
+  line-height: 1.2;
+  color: var(--dark-gray);
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
 }
 
 .geografhy__header-link {
-    order: 2;
-    margin-top: 20px;
-    position: relative;
-    display: flex;
-    font-family: 'TT Norms Pro Bold', sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 1.25;
-    color: var(--dark-gray);
-    padding-right: 64px;
-    transition: 0.3s ease-in;
+  order: 2;
+  margin-top: 13px;
+  position: relative;
+  display: flex;
+  font-family: 'TT Norms Pro Bold', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  color: var(--dark-gray);
+  padding-right: 64px;
+  transition: 0.3s ease-in;
 }
 
 .geografhy__header-link:hover {
-    color: var(--color-orange);
+  color: var(--color-orange);
 }
 
 .geografhy__header-link::after {
-    position: absolute;
-    content: '';
-    display: block;
-    width: 21px;
-    height: 16px;
-    top: 50%;
-    right: 30px;
-    transform: translateY(-50%);
-    background: url('../images/catalog/arr_right_orange.svg') no-repeat
+  position: absolute;
+  content: '';
+  display: block;
+  width: 21px;
+  height: 16px;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  background: url('../images/catalog/arr_right_orange.svg') no-repeat
     center/cover;
 }
 
 .geografhy__body {
-    width: 100%;
-    position: relative;
+  width: 100%;
+  position: relative;
 }
 
 .msk {
-    position: absolute;
-    top: 27.5%;
-    left: 45.5%;
+  position: absolute;
+  top: 27.5%;
+  left: 45.5%;
 }
 
 .sev-am {
-    position: absolute;
-    top: 27%;
-    left: 11%;
+  position: absolute;
+  top: 27%;
+  left: 11%;
 }
 
 .souts-am {
-    position: absolute;
-    top: 59%;
-    left: 20%;
+  position: absolute;
+  top: 59%;
+  left: 20%;
 }
 
 .afr {
-    position: absolute;
-    top: 57%;
-    left: 46%;
+  position: absolute;
+  top: 57%;
+  left: 46%;
 }
 
 .geografhy__modal {
-    display: none;
-    position: absolute;
-    border-radius: 15px;
-    padding: 30px;
-    max-width: 368px;
-    width: 100%;
-    box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
-    background: var(--dark-gray);
-    row-gap: 41px;
-    flex-direction: column;
+  display: none;
+  position: absolute;
+  border-radius: 15px;
+  padding: 26px 30px;
+  max-width: 368px;
+  width: 100%;
+  box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
+  background: var(--dark-gray);
+  row-gap: 30px;
+  flex-direction: column;
 }
 
 .geografhy__modal.msk-mod {
-    top: 33%;
-    left: 50%;
+  top: 29%;
+  left: 50%;
 }
 
 .geografhy__modal.sev-am-mod {
-    top: 25%;
-    left: 15%;
+  top: 25%;
+  left: 15%;
 }
 
 .geografhy__modal.souts-am-mod {
-    top: 40%;
-    left: 23%;
+  top: 40%;
+  left: 23%;
 }
 
 .geografhy__modal.afr-mod {
-    top: 40%;
-    left: 50%;
+  top: 40%;
+  left: 50%;
 }
 
 .geografhy__modal-title {
-    font-size: 20px;
-    line-height: 1.1;
-    color: var(--color-orange);
-    margin-bottom: 15px;
+  font-size: 20px;
+  line-height: 1.1;
+  color: var(--color-orange);
+  margin-bottom: 8px;
 }
 
 .geografhy__modal-subtitle,
 .geografhy__modal-company-addrress a {
-    font-size: 20px;
-    line-height: 1.1;
-    color: var(--title-color-ligth);
+  font-size: 20px;
+  line-height: 1.1;
+  color: var(--title-color-ligth);
 }
 
-.geografhy__modal-company-addrress a:first-of-type {
-    margin-bottom: 15px;
+.geografhy__modal-title-num {
+  display: block;
+  margin-bottom: 8px;
 }
 
 .geografhy__modal > .close {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    background: var(--dark-gray);
-    outline: none;
-    border: none;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background: var(--dark-gray);
+  outline: none;
+  border: none;
 }

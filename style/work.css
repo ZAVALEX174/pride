@@ -1,172 +1,172 @@
 .work {
-    width: 100%;
-    padding: 110px 0 110px;
+  width: 100%;
+  padding: 115px 0 110px;
 }
 
 .work__header {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 47px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
 }
 
 .work__header-title {
-    margin-bottom: 0;
-    max-width: 886px;
-    margin-right: 20px;
-    color: var(--dark-gray);
-    font-family: 'GetVoIP Grotesque Regular', sans-serif;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 1.01562;
+  margin-bottom: 0;
+  max-width: 886px;
+  margin-right: 20px;
+  color: var(--dark-gray);
+  font-family: 'GetVoIP Grotesque Regular', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.01562;
 }
 
 .work__header-link {
-    font-family: 'TT Norms Pro Bold', sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 1.25;
-    color: var(--dark-gray);
-    padding-right: 64px;
-    position: relative;
-    transition: 0.3s ease-in;
+  font-family: 'TT Norms Pro Bold', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  color: var(--dark-gray);
+  padding-right: 64px;
+  position: relative;
+  transition: 0.3s ease-in;
 }
 
 .work__header-link:hover {
-    color: var(--color-orange);
+  color: var(--color-orange);
 }
 
 .work__header-link::after {
-    position: absolute;
-    content: '';
-    display: block;
-    width: 21px;
-    height: 16px;
-    top: 50%;
-    right: 30px;
-    transform: translateY(-50%);
-    background: url('../images/catalog/arr_right_orange.svg') no-repeat
+  position: absolute;
+  content: '';
+  display: block;
+  width: 21px;
+  height: 16px;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  background: url('../images/catalog/arr_right_orange.svg') no-repeat
     center/cover;
 }
 
 .work__body {
-    width: 100%;
+  width: 100%;
 }
 
 .work__body-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
 }
 
 .work__body-item {
-    position: relative;
-    width: calc(100% - 32px);
-    border: 1.5px solid var(--5);
-    border-radius: 15px;
-    padding: 30px;
-    height: 430px;
-    box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-    flex-direction: column;
-    overflow: hidden;
-    transition: 0.3s ease-in;
+  position: relative;
+  width: calc(100% - 32px);
+  border: 1.5px solid var(--5);
+  border-radius: 15px;
+  padding: 30px;
+  height: 430px;
+  box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+  overflow: hidden;
+  transition: 0.3s ease-in;
 }
 
 .work__body-item_img {
-    background-color: var(--dark-gray);
+  background-color: var(--dark-gray);
 }
 
 .work__body-item:not(:last-child):hover {
-    transition: all 0.3s ease-in;
-    border-color: var(--ligth-gray);
-    box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
-    background: linear-gradient(
-            360deg,
-            rgba(43, 42, 41, 0.9) 46.04%,
-            rgba(235, 99, 32, 0.9) 100%
+  transition: all 0.3s ease-in;
+  border-color: var(--ligth-gray);
+  box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
+  background: linear-gradient(
+      360deg,
+      rgba(43, 42, 41, 0.9) 46.04%,
+      rgba(235, 99, 32, 0.9) 100%
     ),
-    url("../images/hero/bg_slider.jpg") no-repeat center;
+    url('../images/hero/bg_slider.jpg') no-repeat center;
 }
 
 .work__body-item_img::after {
-    position: absolute;
-    content: '';
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 60%;
-    width: 100%;
-    height: 100%;
-    background: url('../images/catalog/ss.png') no-repeat top center/contain;
-    z-index: 0;
-    pointer-events: none;
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 60%;
+  width: 100%;
+  height: 100%;
+  background: url('../images/catalog/ss.png') no-repeat top center/contain;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .work__body-cart-title {
-    position: relative;
-    z-index: 20;
-    font-family: 'TT Norms Pro Bold', sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 1.25;
-    color: var(--dark-gray);
-    margin-bottom: 20px;
+  position: relative;
+  z-index: 20;
+  font-family: 'TT Norms Pro Bold', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  color: var(--dark-gray);
+  margin-bottom: 20px;
 }
 
 .work__body-item:hover .work__body-cart-title {
-    color: var(--title-color-ligth);
+  color: var(--title-color-ligth);
 }
 
 .work__body-cart-list {
-    list-style-type: initial;
-    color: var(--color-opasity);
-    padding-left: 30px;
-    margin-bottom: 25px;
-    position: relative;
-    z-index: 50;
+  list-style-type: initial;
+  color: var(--color-opasity);
+  padding-left: 30px;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 50;
 }
 
 .work__body-cart-item {
-    font-size: 20px;
-    line-height: 1.1;
-    color: var(--ligth-gray);
+  font-size: 20px;
+  line-height: 1.1;
+  color: var(--ligth-gray);
 }
 
 .work__body-item:hover .work__body-cart-item {
-    color: var(--title-color-ligth);
+  color: var(--title-color-ligth);
 }
 
 .work__body-cart-btn {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--ligth-gray);
-    transition: 0.3s ease-in;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ligth-gray);
+  transition: 0.3s ease-in;
 }
 
 .work__body-cart-btn:hover {
-    background: var(--color-orange);
-    color: var(--title-color-ligth);
+  background: var(--color-orange);
+  color: var(--title-color-ligth);
 }
 
 .work__body-cart-btn_hover-block {
-    background: var(--dark-gray);
-    color: var(--title-color-ligth);
-    border: 1px solid var(--color-orange);
+  background: var(--dark-gray);
+  color: var(--title-color-ligth);
+  border: 1px solid var(--color-orange);
 }
 
 .work__body-cart-btn_hover-block:hover {
-    background: var(--color-orange);
+  background: var(--color-orange);
 }
 
 .work__body-cart-title_img {
-    text-align: center;
-    color: var(--title-color-ligth);
-    margin-bottom: 30px;
+  text-align: center;
+  color: var(--title-color-ligth);
+  margin-bottom: 30px;
 }
