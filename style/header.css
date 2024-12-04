@@ -626,7 +626,7 @@
   padding: 0;
   transition: 0.3s ease-in;
   height: 50px;
-  line-height: 50;
+  line-height: 50px;
 }
 
 .btn.header-menu-modal__body-top-link.header-menu-modal__body-top-link_down
