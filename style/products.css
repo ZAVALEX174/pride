@@ -19,6 +19,7 @@
   line-height: 1.01562;
   color: var(--color-orange);
   font-family: 'GetVoIP Grotesque Regular', sans-serif;
+  color: var(--dark-gray);
 }
 .products__header-link {
   position: relative;

@@ -52,9 +52,9 @@
 
 .hero-slider__desc {
   width: 100%;
-  font-size: 25px;
+  font-size: 22px;
   line-height: 1.2;
-  color: var(--color-opasity);
+  color: var(--main-bg);
   margin-bottom: 50px;
 }
 
