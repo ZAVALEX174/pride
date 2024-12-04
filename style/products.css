@@ -175,12 +175,14 @@
   flex-direction: column;
   align-items: flex-start;
   transition: all 0.3s ease-in;
+  opacity: 0.9;
 }
 .products-slide:hover {
   -webkit-box-shadow: 0 0 22px 0 rgba(112, 112, 112, 0.15);
   box-shadow: 0 0 22px 0 rgba(112, 112, 112, 0.15);
   background: #fff;
   border-color: var(--5);
+  opacity: 1;
 }
 
 .cart__wrapper {
