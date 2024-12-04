@@ -1,458 +1,459 @@
 .footer {
-    border-top: 60px solid var(--color-orange);
-    width: 100%;
-    padding: 40px 0 0 0;
+  border-top: 60px solid var(--color-orange);
+  width: 100%;
+  padding: 34px 0 0 0;
 }
 
 .footer-white {
-    width: 100%;
-    background: var(--main-bg);
+  width: 100%;
+  background: var(--main-bg);
 }
 
 .footer__container {
-    display: flex;
-    column-gap: 30px;
+  display: flex;
+  column-gap: 30px;
 }
 
 .footer__left {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 28px;
 }
 
 .footer__logo-box {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
 }
 
 .footer__logo-box-img {
-    display: inline-flex;
-    width: 270px;
-    height: 82px;
+  display: inline-flex;
+  width: 270px;
+  height: 81px;
+  margin-top: 6px;
 }
 
 .footer__logo-box-description {
-    max-width: 455px;
-    font-family: 'TT Norms Pro Regular', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.22222;
-    color: var(--dark-gray);
+  max-width: 455px;
+  font-family: 'TT Norms Pro Regular', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22222;
+  color: var(--dark-gray);
 }
 
 .footer__social-box {
-    width: 100%;
+  width: 100%;
 }
 
 .footer__social-box-list {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    column-gap: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 10px;
 }
 
 .footer__social-box-item {
-    width: 60px;
-    height: 60px;
+  width: 60px;
+  height: 60px;
 }
 
 .footer__social-box-item svg {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    transition: 0.3s ease-in;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: 0.3s ease-in;
 }
 
 .footer__social-box-item:hover svg path:first-of-type {
-    fill: var(--color-orange);
+  fill: var(--color-orange);
 }
 
 .footer__contacts-box {
-    width: 100%;
-    background: #f6f6f6;
-    border-radius: 30px;
-    padding: 40px;
+  width: 100%;
+  background: #f6f6f6;
+  border-radius: 30px;
+  padding: 33px 40px 37px 40px;
 }
 
 .footer__contacts-box-list {
-    display: flex;
-    flex-direction: column;
-    row-gap: 35px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 26px;
 }
 
 .footer__contacts-box-item {
-    display: flex;
-    align-items: center;
-    row-gap: 10px;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  row-gap: 5px;
+  flex-direction: column;
+  width: 100%;
 }
 
 .footer__contacts-box-link {
-    display: block;
-    width: 100%;
-    font-family: 'TT Norms Pro Medium', sans-serif;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 1.25;
-    color: var(--dark-gray);
+  display: block;
+  width: 100%;
+  font-family: 'TT Norms Pro Medium', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.25;
+  color: var(--dark-gray);
 }
 
 .footer__contacts-box-item span {
-    display: block;
-    width: 100%;
-    font-family: 'TT Norms Pro Regular', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.1;
-    color: var(--ligth-gray);
+  display: block;
+  width: 100%;
+  font-family: 'TT Norms Pro Regular', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.1;
+  color: var(--ligth-gray);
 }
 
 .footer__callback-box {
-    width: 100%;
-    background: #f6f6f6;
-    border-radius: 30px;
-    padding: 30px 40px;
-    margin-bottom: auto;
+  width: 100%;
+  background: #f6f6f6;
+  border-radius: 30px;
+  padding: 26px 40px 30px 40px;
+  margin-bottom: auto;
 }
 
 .footer__callback-form {
-    width: 100%;
-    display: inline-flex;
-    align-items: center;
-    flex-direction: column;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .footer__callback-form-title {
-    font-family: 'TT Norms Pro Bold', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.25;
-    color: var(--dark-gray);
-    margin-bottom: 18px;
-    align-self: flex-start;
+  font-family: 'TT Norms Pro Bold', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.25;
+  color: var(--dark-gray);
+  margin-bottom: 13px;
+  align-self: flex-start;
 }
 
 .footer__callback-form-input-btn {
-    position: relative;
-    max-width: 638px;
-    width: 100%;
-    margin-bottom: 22px;
+  position: relative;
+  max-width: 638px;
+  width: 100%;
+  margin-bottom: 17px;
 }
 
 .footer__callback-form-input {
-    width: 100%;
-    border: 1.5px solid var(--5);
-    border-radius: 40px;
-    padding: 19px 10px 19px 23px;
-    -webkit-box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
-    box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
-    background: #dbdbdb;
-    font-family: 'TT Norms Pro Regular', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.1;
-    color: var(--dark-gray);
+  width: 100%;
+  border: 1.5px solid var(--5);
+  border-radius: 40px;
+  padding: 19px 10px 19px 23px;
+  -webkit-box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
+  box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
+  background: #dbdbdb;
+  font-family: 'TT Norms Pro Regular', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.1;
+  color: var(--dark-gray);
 }
 
 .footer__callback-form-input::placeholder {
-    font-size: 18px;
-    font-family: 'TT Norms Pro Regular', sans-serif;
-    font-weight: 400;
-    line-height: 1.1;
-    color: var(--dark-gray);
+  font-size: 18px;
+  font-family: 'TT Norms Pro Regular', sans-serif;
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--dark-gray);
 }
 
 .footer__callback-form-btn {
-    height: 45px;
-    line-height: 45px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 10px;
-    max-width: 211px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--dark-gray);
-    color: var(--title-color-ligth);
-    font-size: 16px;
-    transition: 0.3s ease-in;
+  height: 45px;
+  line-height: 45px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  max-width: 211px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-gray);
+  color: var(--title-color-ligth);
+  font-size: 16px;
+  transition: 0.3s ease-in;
 }
 
 .footer__callback-form-btn:hover {
-    color: var(--title-color-ligth);
-    background-color: var(--color-orange);
+  color: var(--title-color-ligth);
+  background-color: var(--color-orange);
 }
 
 .footer__callback-form-policy {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    font-family: 'TT Norms Pro Regular', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.1;
-    color: var(--ligth-gray);
-    margin-left: 30px;
-    position: relative;
-    padding-left: 40px;
-    width: 100%;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-family: 'TT Norms Pro Regular', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.1;
+  color: var(--ligth-gray);
+  margin-left: -2px;
+  position: relative;
+  padding-left: 40px;
+  width: 100%;
 }
 
 .footer__callback-form-policy a {
-    font-family: 'TT Norms Pro Regular', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.1;
-    color: var(--ligth-gray);
-    text-decoration: underline;
+  font-family: 'TT Norms Pro Regular', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.1;
+  color: var(--ligth-gray);
+  text-decoration: underline;
 }
 
 .footer__right {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 40px;
-    padding-bottom: 60px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 34px;
+  padding-bottom: 77px;
 }
 
 .footer__nav-box {
-    width: 100%;
-    display: flex;
-    column-gap: 25px;
-    padding-bottom: 40px;
-    border-bottom: 1.5px solid #dcdcdc;
+  width: 100%;
+  display: flex;
+  column-gap: 25px;
+  padding-bottom: 34px;
+  border-bottom: 1.5px solid #dcdcdc;
 }
 
 .nav-box__left {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 40px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
 }
 
 .nav-box__left-title {
-    margin-bottom: 0;
-    font-family: 'TT Norms Pro Medium', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.25;
-    color: var(--dark-gray);
+  margin-bottom: 0;
+  font-family: 'TT Norms Pro Medium', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.25;
+  color: var(--dark-gray);
 }
 
 .nav-box__left-menu-list {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
 
 .nav-box__left-menu-link {
-    font-family: 'TT Norms Pro Regular', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.22222;
-    color: #696969;
-    transition: 0.3s ease-in;
+  font-family: 'TT Norms Pro Regular', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22222;
+  color: #696969;
+  transition: 0.3s ease-in;
 }
 
 .nav-box__left-menu-link:hover {
-    color: var(--color-orange);
+  color: var(--color-orange);
 }
 
 .nav-box__right {
-    width: 50%;
+  width: 50%;
 }
 
 .nav-box__right-menu-list {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 29px;
 }
 
 .nav-box__right-menu-link {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    font-family: 'TT Norms Pro Medium', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.25;
-    color: var(--dark-gray);
-    transition: 0.3s ease-in;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'TT Norms Pro Medium', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.25;
+  color: var(--dark-gray);
+  transition: 0.3s ease-in;
 }
 
 .nav-box__right-menu-link:hover {
-    color: var(--color-orange);
+  color: var(--color-orange);
 }
 
 .footer__products-variant-box {
-    width: 100%;
-    display: flex;
-    column-gap: 25px;
-    padding-bottom: 40px;
-    border-bottom: 1.5px solid #dcdcdc;
+  width: 100%;
+  display: flex;
+  column-gap: 25px;
+  padding-bottom: 34px;
+  border-bottom: 1.5px solid #dcdcdc;
 }
 
 .products-variant-box__left,
 .products-variant-box__right {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 40px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 31px;
 }
 
 .products-variant-box__left-title,
 .products-variant-box__right-title {
-    font-family: 'TT Norms Pro Medium', sans-serif;
-    margin-bottom: 0;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.25;
-    color: var(--dark-gray);
+  font-family: 'TT Norms Pro Medium', sans-serif;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.25;
+  color: var(--dark-gray);
 }
 
 .products-variant-box__left-list,
 .products-variant-box__right-list {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 21px;
 }
 
 .products-variant-box__right-link,
 .products-variant-box__left-link {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    font-family: 'TT Norms Pro Regular', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.22222;
-    color: #696969;
-    transition: 0.3s ease-in;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'TT Norms Pro Regular', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22222;
+  color: #696969;
+  transition: 0.3s ease-in;
 }
 
 .products-variant-box__right-link:hover,
 .products-variant-box__left-link:hover {
-    color: var(--color-orange);
+  color: var(--color-orange);
 }
 
 .footer__nav-down-box {
-    width: 100%;
-    display: flex;
-    column-gap: 25px;
+  width: 100%;
+  display: flex;
+  column-gap: 25px;
 }
 
 .nav-down-box__left,
 .nav-down-box__right {
-    width: 50%;
+  width: 50%;
 }
 
 .nav-down-box__left-list,
 .nav-down-box__right-list {
-    width: 100%;
-    display: flex;
-    row-gap: 40px;
-    flex-direction: column;
+  width: 100%;
+  display: flex;
+  row-gap: 28px;
+  flex-direction: column;
 }
 
 .nav-down-box__right-link,
 .nav-down-box__left-link {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    font-family: 'TT Norms Pro Medium', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.25;
-    color: var(--dark-gray);
-    transition: 0.3s ease-in;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'TT Norms Pro Medium', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.25;
+  color: var(--dark-gray);
+  transition: 0.3s ease-in;
 }
 
 .nav-down-box__right-link:hover,
 .nav-down-box__left-link:hover {
-    color: var(--color-orange);
+  color: var(--color-orange);
 }
 
 /*================*/
 .footer__copyrigth {
-    width: 100%;
-    background-color: var(--dark-gray);
-    padding: 35px 0 38px;
+  width: 100%;
+  background-color: var(--dark-gray);
+  padding: 35px 0 38px;
 }
 
 .footer__copyrigth-company-info {
-    width: 100%;
-    text-align: right;
-    font-family: 'TT Norms Pro Regular', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.22222;
-    color: var(--title-color-ligth);
-    margin-bottom: 20px;
+  width: 100%;
+  text-align: right;
+  font-family: 'TT Norms Pro Regular', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22222;
+  color: var(--title-color-ligth);
+  margin-bottom: 11px;
 }
 
 .footer__copyrigth-ofer {
-    width: 100%;
-    padding-bottom: 35px;
-    font-family: 'TT Norms Pro Regular', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.22222;
-    color: var(--title-color-ligth);
-    text-align: right;
-    opacity: 0.3;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.26);
+  width: 100%;
+  padding-bottom: 30px;
+  font-family: 'TT Norms Pro Regular', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22222;
+  color: var(--title-color-ligth);
+  text-align: right;
+  opacity: 0.3;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.26);
 }
 
 .footer__copyrigth-down {
-    width: 100%;
-    padding: 35px 0 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 100%;
+  padding: 30px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .footer__copyrigth-confidic {
-    margin-right: auto;
+  margin-right: auto;
 }
 
 .footer__copyrigth-confidic-link {
-    font-family: 'TT Norms Pro Regular', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.22222;
-    text-align: center;
-    color: var(--title-color-ligth);
-    margin-right: 30px;
+  font-family: 'TT Norms Pro Regular', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22222;
+  text-align: center;
+  color: var(--title-color-ligth);
+  margin-right: 30px;
 }
 
 .developer {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .developer-link {
-    display: inline-flex;
-    align-items: center;
-    font-family: 'TT Norms Pro Regular', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.22222;
-    text-align: center;
-    color: var(--title-color-ligth);
+  display: inline-flex;
+  align-items: center;
+  font-family: 'TT Norms Pro Regular', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22222;
+  text-align: center;
+  color: var(--title-color-ligth);
 }
 
 .footer__guidance {
-    display: block;
+  display: block;
 }
