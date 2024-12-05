@@ -410,3 +410,9 @@
   .swiper-button-next.btn__slider_next.products-swiper_next.watched-before__catalog-cart-btn_next::after {
   right: 0;
 }
+.wiper-button-prev.btn__slider_prev.products-swiper_prev.watched-before__catalog-cart-btn_prev:hover::after {
+  background: url(../images/hero/prev_btn.svg) no-repeat center / cover;
+}
+.wiper-button-next.btn__slider_next.products-swiper_next.watched-before__catalog-cart-btn_next:hover::after {
+  background: url(../images/hero/next_btn.svg) no-repeat center / cover;
+}
