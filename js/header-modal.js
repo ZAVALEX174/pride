@@ -34,11 +34,15 @@ document.addEventListener('DOMContentLoaded', () => {
             headerModalOne.classList.remove('header-menu-modal-active');
             navLinkOne.classList.remove('navigation__link-active');
             headerModalThree.classList.remove('header-menu-modal3-active');
+
+            document.body.style.overflow = "";
         } else {
             headerModalOne.classList.add('header-menu-modal-active');
             navLinkOne.classList.add('navigation__link-active');
             headerModalTwo.classList.remove('header-menu-modal2-active');
             headerModalThree.classList.remove('header-menu-modal3-active');
+
+            document.body.style.overflow = "hidden";
         }
 
         inputSaerch.classList.remove('search__active-input');
@@ -54,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
         navLinkTwo.classList.remove('navigation__link-active');
         openModalBtnTwoLink.classList.remove('navigation__link_drd-active');
         // headerModalThree.classList.remove('header-menu-modal3-active');
-        document.body.style.overflow = "hidden";
+        // document.body.style.overflow = "hidden";
         document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
 
     });
@@ -81,11 +85,13 @@ document.addEventListener('DOMContentLoaded', () => {
             navLinkTwo.classList.remove('navigation__link-active');
             openModalBtnTwoLink.classList.remove('navigation__link_drd-active');
             headerModalThree.classList.remove('header-menu-modal3-active');
+
+            document.body.style.overflow = "";
         } else {
             headerModalTwo.classList.add('header-menu-modal2-active');
             navLinkTwo.classList.add('navigation__link-active');
             openModalBtnTwoLink.classList.add('navigation__link_drd-active');
-
+            document.body.style.overflow = "hidden";
         }
 
         inputSaerch.classList.remove('search__active-input');
@@ -100,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         headerModalThree.classList.remove('header-menu-modal3-active');
 
-        document.body.style.overflow = "hidden";
+        // document.body.style.overflow = "hidden";
         document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
     });
     closeModalBtnTwo.addEventListener("click", (e) => {
@@ -137,6 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.header__search-form-icon').style.left = '0';
 
         if (!headerModalThree.classList.contains('header-menu-modal3-active')) {
+            document.body.style.overflow = "hidden";
             headerModalThree.classList.add('header-menu-modal3-active');
             inputSaerch.classList.add('search__active-input');
             headerSearch.classList.add('header__search_active');
@@ -150,6 +157,8 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelector('.btn-search-reset').style.display = 'flex';
             document.querySelector('.header__search-form-icon').style.left = '133px';
         } else {
+            document.body.style.overflow = "";
+
             headerModalThree.classList.remove('header-menu-modal3-active');
             navLinkTwo.classList.remove('navigation__link-active');
             navLinkOne.classList.remove('navigation__link-active');
@@ -159,7 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
             headerModalTwo.classList.remove('header-menu-modal2-active');
         }
 
-        document.body.style.overflow = "hidden";
+        // document.body.style.overflow = "hidden";
         document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
         // navLinkTwo.classList.remove('navigation__link-active');
         // navLinkOne.classList.remove('navigation__link-active');
