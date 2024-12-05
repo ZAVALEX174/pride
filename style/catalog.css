@@ -1,7 +1,7 @@
-
 .swiper-filter-on {
+  background-color: var(--dark-gray);
   width: 100%;
-  padding: 45px 0;
+  padding: 80px 0;
   border-bottom: 1px solid var(--ligth-gray);
 }
 
@@ -10,9 +10,23 @@
 }
 
 .swiper-filter-on__header-title {
-  color: var(--color-orange);
+  color: var(--main-bg);
   line-height: 1.1;
   margin-bottom: 0;
+}
+
+.go-back {
+  display: inline-flex;
+  align-items: center;
+  color: var(--main-bg);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 2.2px;
+  margin-bottom: 30px;
+}
+
+.go-back svg {
+  margin-right: 15px;
 }
 
 .swiper-filter-on__container-btn-box {
@@ -349,7 +363,6 @@
   background-color: var(--dark-gray);
   color: var(--title-color-ligth);
 }
-
 
 .watched-before__catalog .swiper-slide {
   transition: all 0.3s ease-in;
