@@ -21,6 +21,9 @@
   grid-template-rows: 430px 237px 430px;
   gap: 40px 25px;
 }
+.catalog-menu-categories__body-list .other__body-cart-item {
+  color: var(--main-bg);
+}
 .catalog-menu-categories__body-item {
   background: var(--dark-gray);
   width: 100%;
@@ -39,7 +42,8 @@
   padding: 0;
   height: 100%;
   padding: 45.5px 90px;
-  background: url("../images/catalog/catalog_menu_banner.jpg") no-repeat center center/cover;
+  background: url('../images/catalog/catalog_menu_banner.jpg') no-repeat center
+    center/cover;
 }
 .catalog-menu-categories__body-item_banner .catalog-page-product-baner__text {
   text-align: left;
