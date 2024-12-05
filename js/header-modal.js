@@ -36,12 +36,13 @@ document.addEventListener('DOMContentLoaded', () => {
             headerModalThree.classList.remove('header-menu-modal3-active');
 
             document.body.style.overflow = "";
+            document.body.style.paddingRight = "";
         } else {
             headerModalOne.classList.add('header-menu-modal-active');
             navLinkOne.classList.add('navigation__link-active');
             headerModalTwo.classList.remove('header-menu-modal2-active');
             headerModalThree.classList.remove('header-menu-modal3-active');
-
+            document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
             document.body.style.overflow = "hidden";
         }
 
@@ -59,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
         openModalBtnTwoLink.classList.remove('navigation__link_drd-active');
         // headerModalThree.classList.remove('header-menu-modal3-active');
         // document.body.style.overflow = "hidden";
-        document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+        // document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
 
     });
     closeModalBtn.addEventListener("click", (e) => {
@@ -87,11 +88,14 @@ document.addEventListener('DOMContentLoaded', () => {
             headerModalThree.classList.remove('header-menu-modal3-active');
 
             document.body.style.overflow = "";
+            document.body.style.paddingRight = "";
         } else {
+
             headerModalTwo.classList.add('header-menu-modal2-active');
             navLinkTwo.classList.add('navigation__link-active');
             openModalBtnTwoLink.classList.add('navigation__link_drd-active');
             document.body.style.overflow = "hidden";
+            document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
         }
 
         inputSaerch.classList.remove('search__active-input');
@@ -107,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
         headerModalThree.classList.remove('header-menu-modal3-active');
 
         // document.body.style.overflow = "hidden";
-        document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+        // document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
     });
     closeModalBtnTwo.addEventListener("click", (e) => {
         e.preventDefault();
