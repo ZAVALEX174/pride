@@ -15,6 +15,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const closesModalFormZakaz = modalFormZakaz.querySelector('.modals-zakaz__btn');
     // console.log(modalForm);
 
+    const comPredl = document.querySelector('.other__header-btn');
+    console.log(comPredl);
+
 
     downloadBtn.addEventListener('click', () => {
         modal.classList.add('modals_opened');
@@ -42,6 +45,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
         modal.classList.remove('modals_opened');
         modalFormZakaz.classList.add('none');
+    })
+
+
+    comPredl.addEventListener('click', (e) => {
+        e.preventDefault();
+        modal.classList.add('modals_opened');
+        modalFormZakaz.classList.remove('none');
     })
 });
 
