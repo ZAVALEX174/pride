@@ -1,18 +1,28 @@
 .swiper-filter-on {
-  background-color: var(--dark-gray);
+  /*background-color: var(--dark-gray);*/
+  background: url("../images/catalog/catalog_menu_bg.jpg") no-repeat center center/cover;
   width: 100%;
-  padding: 80px 0;
+  /*height: 300px;*/
+  padding: 136px 0;
   border-bottom: 1px solid var(--ligth-gray);
 }
 
 .swiper-filter-on__header {
   margin-bottom: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .swiper-filter-on__header-title {
   color: var(--main-bg);
   line-height: 1.1;
   margin-bottom: 0;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+
 }
 
 .go-back {
@@ -398,7 +408,7 @@
 .watched-before.watched-before__catalog
   .swiper-btn-box
   .swiper-button-next.btn__slider_next.products-swiper_next.watched-before__catalog-cart-btn_next {
-  top: 23px;
+  top: 50%;
 }
 .watched-before.watched-before__catalog
   .swiper-btn-box

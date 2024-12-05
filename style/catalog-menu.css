@@ -18,10 +18,11 @@
 .catalog-menu-categories__body-list {
   display: grid;
   grid-template-columns: repeat(3, calc((100% - 50px) / 3));
-  grid-template-rows: 430px 200px 430px;
+  grid-template-rows: 430px 237px 430px;
   gap: 40px 25px;
 }
 .catalog-menu-categories__body-item {
+  background: var(--dark-gray);
   width: 100%;
   height: 100%;
   display: flex;
@@ -36,13 +37,17 @@
   .catalog-page-product-baner__container {
   width: 100%;
   padding: 0;
+  height: 100%;
   padding: 45.5px 90px;
+  background: url("../images/catalog/catalog_menu_banner.jpg") no-repeat center center/cover;
 }
 .catalog-menu-categories__body-item_banner .catalog-page-product-baner__text {
   text-align: left;
 }
 .catalog-menu-categories__body-item_banner
   .catalog-page-product-baner__subtitle {
+  max-width: 400px;
+  width: 100%;
   font-weight: 400;
   font-size: 22px;
   line-height: 1.22727;
@@ -52,16 +57,21 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  max-width: 388px;
+  max-width: 343px;
   width: 100%;
-  border: 1px solid var(--color-orange);
-  height: 71px;
+  background: var(--dark-gray);
+  border: 1px solid transparent;
+  height: 50px;
   line-height: 22px;
-  border-radius: 46px;
+  border-radius: 57px;
   font-weight: 400;
   font-size: 18px;
-  white-space: wrap;
+  white-space: nowrap;
+  transition: background 0.3s ease-in;
 }
 .other__header-btn svg {
   margin-left: 20px;
+}
+.other__header-btn:hover {
+  background: var(--color-orange);
 }

@@ -33,7 +33,7 @@
 
 .product-baner__btn {
   background: var(--dark-gray);
-  border: 1px solid var(--color-orange);
+  border: 1px solid transparent;
   max-width: 270px;
   width: 100%;
   display: inline-flex;
