@@ -13,7 +13,7 @@
   margin-bottom: 30px;
   display: flex;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.1;
   color: var(--color-orange);
 }
@@ -102,7 +102,11 @@
 
 .product-card {
   width: 100%;
-  padding: 60px 0;
+  padding: 30px 0 60px;
+}
+
+.product-card .card-info__title {
+  font-size: 32px;
 }
 
 .card {
@@ -172,6 +176,16 @@
 
 .card-info__name {
   max-width: 457px;
+}
+.card-info__name-title {
+  padding: 0;
+  margin: 0;
+  color: var(--color-orange);
+  font-size: 20px;
+  font-family: 'TT Norms Pro Medium', sans-serif;
+  font-weight: 500;
+  line-height: 22px;
+  margin-bottom: 20px;
 }
 
 .card-info__btn {
@@ -591,7 +605,7 @@ video {
 .slick-next {
   position: relative;
   left: 50%;
-  bottom: -25px;
+  bottom: -40px;
 }
 
 .slider-for .slick-slide {
@@ -604,7 +618,7 @@ video {
 
 .slider-nav2 {
   max-width: 132px;
-  padding: 65px 0;
+  padding: 70px 0;
 }
 
 .slider-nav2 .slick-slide {
@@ -622,7 +636,7 @@ video {
   z-index: 50;
   content: '';
   position: absolute;
-  top: -10px;
+  top: -13px;
   width: 60px;
   height: 60px;
   transform: translate(-50%, -32%) rotate(90deg);
