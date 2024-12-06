@@ -1,15 +1,10 @@
 .form-representation {
   width: 100%;
   padding: 110px 0 117px;
-  background: url('../images/form/lion.png') no-repeat right 40px top 105px,
+  background: url('../images/form/lion.png') no-repeat right 5px top 55px /
+      655px 639px,
     var(--dark-gray);
   position: relative;
-}
-
-.form-representation__container {
-  /* background-image: url('../images/form/lion.png'); */
-  /* background-repeat: no-repeat;
-  background-position: -100px -100px; */
 }
 
 .form-representation__title {
