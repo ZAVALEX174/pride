@@ -53,7 +53,7 @@
 } */
 .catalog-menu-categories__body-list
   .catalog-menu-categories__body-item
-  > .swiper-filter-on__body-cart-title {
+  .other__body-cart-title.swiper-filter-on__body-cart-title {
   color: var(--title-color-ligth);
   transition: all 0.3s ease-in;
 }
