@@ -230,9 +230,9 @@ label[for='user-email'] {
 
 .form-representation__form-btn {
   width: 100%;
-  background: var(--dark-gray);
+  background: var(--color-orange);
   color: var(--title-color-ligth);
-  border: 1px solid var(--color-orange);
+  /* border: 1px solid ; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -241,7 +241,7 @@ label[for='user-email'] {
 }
 
 .form-representation__form-btn:hover {
-  background: var(--color-orange);
+  background: var(--ligth-gray);
   box-shadow: 6px 6px 15px 0 rgba(0, 0, 0, 0.4);
 }
 
