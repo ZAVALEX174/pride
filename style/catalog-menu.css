@@ -31,6 +31,8 @@
   display: flex;
   flex-direction: column;
   text-align: left;
+  border-radius: 30px;
+  box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
   border: none;
 }
 
@@ -50,7 +52,7 @@
   background: red;
 } */
 .catalog-menu-categories__body-list
-  .catalog-menu-categories__body-item:hover
+  .catalog-menu-categories__body-item
   > .swiper-filter-on__body-cart-title {
   color: var(--title-color-ligth);
   transition: all 0.3s ease-in;
