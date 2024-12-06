@@ -15,8 +15,16 @@ document.addEventListener('DOMContentLoaded', function () {
     const closesModalFormZakaz = modalFormZakaz.querySelector('.modals-zakaz__btn');
     // console.log(modalForm);
 
+    const modalFormRepresentation = modal.querySelector('.modals-form-representation');
+    const closesFormRepresentation = modalFormZakaz.querySelector('.modals-zakaz__btn');
+    const openModalFormPepresentationBtn = document.querySelector('.swiper-filter-on__header-link');
+    console.log(modalFormRepresentation, openModalFormPepresentationBtn);
+
+
+    // console.log(modalForm);
+
     const comPredl = document.querySelector('.other__header-btn');
-    console.log(comPredl);
+    // console.log(comPredl);
 
 
     downloadBtn.addEventListener('click', () => {
@@ -52,6 +60,12 @@ document.addEventListener('DOMContentLoaded', function () {
         e.preventDefault();
         modal.classList.add('modals_opened');
         modalFormZakaz.classList.remove('none');
+    })
+
+
+    openModalFormPepresentationBtn.addEventListener('click', () => {
+        modal.classList.add('modals_opened');
+        modalFormRepresentation.classList.remove('none');
     })
 });
 
