@@ -128,7 +128,8 @@ li {
 
 .container {
   margin: 0 auto;
-  max-width: 1152px;
+  /*max-width: 1152px;*/
+  max-width: 1390px;
   width: 100%;
   padding: 0 11px;
 }
@@ -151,8 +152,6 @@ h2 {
 }
 
 .btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   border-radius: 30px;
   font-size: 20px;
@@ -164,8 +163,6 @@ h2 {
   padding: 0 30px;
   white-space: nowrap;
   border: 1px solid transparent;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   cursor: pointer;
 }
