@@ -1245,14 +1245,21 @@
         <!--        </div>-->
       </section>
       <section class="product-cart-description">
-        <div class="container">
+        <div class="container product-cart-description__container">
           <div class="product-cart-description-tabs">
             <ul class="product-cart-description-tabs__list">
               <li class="product-cart-description-tabs__item">
                 <button
                   class="btn product-cart-description__text product-cart-description-tabs__btn product-cart-description-tabs__btn_active"
+                  data-tabs-path="info">
+                  Информация
+                </button>
+              </li>
+              <li class="product-cart-description-tabs__item">
+                <button
+                  class="btn product-cart-description__text product-cart-description-tabs__btn"
                   data-tabs-path="text">
-                  Технические характеристики
+                  Технические <br />характеристики
                 </button>
               </li>
               <li class="product-cart-description-tabs__item">
@@ -1264,10 +1271,42 @@
               </li>
             </ul>
           </div>
-
           <div
             class="tabs__content tabs__content_active"
-            data-tabs-target="text">
+            data-tabs-target="info">
+            <div class="info-content-box">
+              <div class="info-content-box__left">
+                <p class="info-content-box__left-pg">
+                  Гидравлическая буровая установка применяются для бурения
+                  скважин на воду глубиной до 200 м, в том числе наклонных,
+                  геологических изысканий, бурения ям для установки заборов,
+                  фундаментов, инженерные изысканий, завинчивания свай,
+                  проведения строительных работ.
+                </p>
+                <p class="info-content-box__left-pg">
+                  Гусеничная платформа TITAN 60 оборудована независимыми
+                  приводами, обеспечивающими более гибкое управление. Установка
+                  способны развивать значительный крутящий момент от 1000 до
+                  2000 Н/м без необходимости вертлюг. И для тех, кто работает с
+                  длинными трубами, есть возможность увеличения мачты до 3
+                  метров
+                </p>
+              </div>
+              <div class="info-content-box__right">
+                <p class="info-content-box__right-pg">
+                  Также установка TTIAN 60 оснащена узлом подачи бурового
+                  раствора для работы с промывкой или подачи сжатого воздуха для
+                  работы с продувкой и с пневмоударником.
+                </p>
+                <p class="info-content-box__right-pg">
+                  Управление установкой легко осуществляется с помощью 2-х
+                  поточной гидравлической системы, что позволяет независимо
+                  регулировать усилие на забой и вращение инструмента.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tabs__content" data-tabs-target="text">
             <div class="accordion-box">
               <div class="accordion">
                 <div class="accordion__title" data-tab="tab-1">
@@ -1643,19 +1682,22 @@
           </div>
         </div>
       </section>
-      <section class="watched-before watched-before__catalog">
+      <section
+        class="watched-before watched-before__catalog watched-before__product-cart">
         <div class="container watched-before__container">
           <div class="watched-before__header">
             <h2 class="title watched-before__header-title">
-              Вы смотрели это раньше
+              Вы смотрели раньше...
             </h2>
-            <div class="swiper-btn-box">
-              <div
-                class="swiper-button-prev btn__slider_prev products-swiper_prev watched-before__catalog-cart-btn_prev"></div>
-              <div
-                class="swiper-button-next btn__slider_next products-swiper_next watched-before__catalog-cart-btn_next"></div>
-            </div>
+            <a href="catalog-menu.html" class="btn product-cart__header-link"
+              >Каталог</a
+            >
+            <div
+              class="swiper-button-prev btn__slider_prev products-swiper_prev watched-before__catalog-cart-btn_prev"></div>
+            <div
+              class="swiper-button-next btn__slider_next products-swiper_next watched-before__catalog-cart-btn_next"></div>
           </div>
+          <div class="swiper-btn-box"></div>
         </div>
         <div class="watched-before__body-content">
           <!-- <div class="container"> -->
@@ -1772,23 +1814,17 @@
                   </div>
                   <div class="cart__availability">В наличии</div>
                 </div>
-                <h3 class="cart__title">
-                  Установка <br />
-                  ГНБ PRIDE M12x30
-                </h3>
-                <div class="cart__subtitle">
-                  Малогабаритные буровые установки
-                </div>
-                <div class="cart__desc">
-                  Установка ГНБ PRIDE M12x30 с 30ти-тонным тяговым усилием
-                  позволяет протягивать металлические трубы и трубы ПНД до 1 200
-                  мм в диаметре.
-                </div>
-                <div class="cart__btn-box">
-                  <button class="btn cart__btn">Прайс</button>
-                  <a href="product-cart.html" class="btn cart__btn-details"
-                    >Подробнее</a
-                  >
+                <div class="cart__wrapper-text">
+                  <h3 class="cart__title">Установка ГНБ PRIDE M12x30</h3>
+                  <div class="cart__subtitle">
+                    Малогабаритные буровые установки
+                  </div>
+                  <div class="cart__btn-box">
+                    <button class="btn cart__btn">Оставить заявку</button>
+                    <a href="product-cart.html" class="btn cart__btn-details"
+                      >Подробнее</a
+                    >
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide products-slide">
@@ -1896,23 +1932,17 @@
                   </div>
                   <div class="cart__availability">В наличии</div>
                 </div>
-                <h3 class="cart__title">
-                  Установка <br />
-                  ГНБ PRIDE M12x30
-                </h3>
-                <div class="cart__subtitle">
-                  Малогабаритные буровые установки
-                </div>
-                <div class="cart__desc">
-                  Установка ГНБ PRIDE M12x30 с 30ти-тонным тяговым усилием
-                  позволяет протягивать металлические трубы и трубы ПНД до 1 200
-                  мм в диаметре.
-                </div>
-                <div class="cart__btn-box">
-                  <button class="btn cart__btn">Прайс</button>
-                  <a href="product-cart.html" class="btn cart__btn-details"
-                    >Подробнее</a
-                  >
+                <div class="cart__wrapper-text">
+                  <h3 class="cart__title">Установка ГНБ PRIDE M12x30</h3>
+                  <div class="cart__subtitle">
+                    Малогабаритные буровые установки
+                  </div>
+                  <div class="cart__btn-box">
+                    <button class="btn cart__btn">Оставить заявку</button>
+                    <a href="product-cart.html" class="btn cart__btn-details"
+                      >Подробнее</a
+                    >
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide products-slide">
@@ -2020,23 +2050,17 @@
                   </div>
                   <div class="cart__availability">В наличии</div>
                 </div>
-                <h3 class="cart__title">
-                  Установка <br />
-                  ГНБ PRIDE M12x30
-                </h3>
-                <div class="cart__subtitle">
-                  Малогабаритные буровые установки
-                </div>
-                <div class="cart__desc">
-                  Установка ГНБ PRIDE M12x30 с 30ти-тонным тяговым усилием
-                  позволяет протягивать металлические трубы и трубы ПНД до 1 200
-                  мм в диаметре.
-                </div>
-                <div class="cart__btn-box">
-                  <button class="btn cart__btn">Прайс</button>
-                  <a href="product-cart.html" class="btn cart__btn-details"
-                    >Подробнее</a
-                  >
+                <div class="cart__wrapper-text">
+                  <h3 class="cart__title">Установка ГНБ PRIDE M12x30</h3>
+                  <div class="cart__subtitle">
+                    Малогабаритные буровые установки
+                  </div>
+                  <div class="cart__btn-box">
+                    <button class="btn cart__btn">Оставить заявку</button>
+                    <a href="product-cart.html" class="btn cart__btn-details"
+                      >Подробнее</a
+                    >
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide products-slide">
@@ -2144,23 +2168,17 @@
                   </div>
                   <div class="cart__availability">В наличии</div>
                 </div>
-                <h3 class="cart__title">
-                  Установка <br />
-                  ГНБ PRIDE M12x30
-                </h3>
-                <div class="cart__subtitle">
-                  Малогабаритные буровые установки
-                </div>
-                <div class="cart__desc">
-                  Установка ГНБ PRIDE M12x30 с 30ти-тонным тяговым усилием
-                  позволяет протягивать металлические трубы и трубы ПНД до 1 200
-                  мм в диаметре.
-                </div>
-                <div class="cart__btn-box">
-                  <button class="btn cart__btn">Прайс</button>
-                  <a href="product-cart.html" class="btn cart__btn-details"
-                    >Подробнее</a
-                  >
+                <div class="cart__wrapper-text">
+                  <h3 class="cart__title">Установка ГНБ PRIDE M12x30</h3>
+                  <div class="cart__subtitle">
+                    Малогабаритные буровые установки
+                  </div>
+                  <div class="cart__btn-box">
+                    <button class="btn cart__btn">Оставить заявку</button>
+                    <a href="product-cart.html" class="btn cart__btn-details"
+                      >Подробнее</a
+                    >
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide products-slide">
@@ -2268,23 +2286,17 @@
                   </div>
                   <div class="cart__availability">В наличии</div>
                 </div>
-                <h3 class="cart__title">
-                  Установка <br />
-                  ГНБ PRIDE M12x30
-                </h3>
-                <div class="cart__subtitle">
-                  Малогабаритные буровые установки
-                </div>
-                <div class="cart__desc">
-                  Установка ГНБ PRIDE M12x30 с 30ти-тонным тяговым усилием
-                  позволяет протягивать металлические трубы и трубы ПНД до 1 200
-                  мм в диаметре.
-                </div>
-                <div class="cart__btn-box">
-                  <button class="btn cart__btn">Прайс</button>
-                  <a href="product-cart.html" class="btn cart__btn-details"
-                    >Подробнее</a
-                  >
+                <div class="cart__wrapper-text">
+                  <h3 class="cart__title">Установка ГНБ PRIDE M12x30</h3>
+                  <div class="cart__subtitle">
+                    Малогабаритные буровые установки
+                  </div>
+                  <div class="cart__btn-box">
+                    <button class="btn cart__btn">Оставить заявку</button>
+                    <a href="product-cart.html" class="btn cart__btn-details"
+                      >Подробнее</a
+                    >
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide products-slide">
@@ -2392,23 +2404,17 @@
                   </div>
                   <div class="cart__availability">В наличии</div>
                 </div>
-                <h3 class="cart__title">
-                  Установка <br />
-                  ГНБ PRIDE M12x30
-                </h3>
-                <div class="cart__subtitle">
-                  Малогабаритные буровые установки
-                </div>
-                <div class="cart__desc">
-                  Установка ГНБ PRIDE M12x30 с 30ти-тонным тяговым усилием
-                  позволяет протягивать металлические трубы и трубы ПНД до 1 200
-                  мм в диаметре.
-                </div>
-                <div class="cart__btn-box">
-                  <button class="btn cart__btn">Прайс</button>
-                  <a href="product-cart.html" class="btn cart__btn-details"
-                    >Подробнее</a
-                  >
+                <div class="cart__wrapper-text">
+                  <h3 class="cart__title">Установка ГНБ PRIDE M12x30</h3>
+                  <div class="cart__subtitle">
+                    Малогабаритные буровые установки
+                  </div>
+                  <div class="cart__btn-box">
+                    <button class="btn cart__btn">Оставить заявку</button>
+                    <a href="product-cart.html" class="btn cart__btn-details"
+                      >Подробнее</a
+                    >
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide products-slide">
@@ -2516,23 +2522,17 @@
                   </div>
                   <div class="cart__availability">В наличии</div>
                 </div>
-                <h3 class="cart__title">
-                  Установка <br />
-                  ГНБ PRIDE M12x30
-                </h3>
-                <div class="cart__subtitle">
-                  Малогабаритные буровые установки
-                </div>
-                <div class="cart__desc">
-                  Установка ГНБ PRIDE M12x30 с 30ти-тонным тяговым усилием
-                  позволяет протягивать металлические трубы и трубы ПНД до 1 200
-                  мм в диаметре.
-                </div>
-                <div class="cart__btn-box">
-                  <button class="btn cart__btn">Прайс</button>
-                  <a href="product-cart.html" class="btn cart__btn-details"
-                    >Подробнее</a
-                  >
+                <div class="cart__wrapper-text">
+                  <h3 class="cart__title">Установка ГНБ PRIDE M12x30</h3>
+                  <div class="cart__subtitle">
+                    Малогабаритные буровые установки
+                  </div>
+                  <div class="cart__btn-box">
+                    <button class="btn cart__btn">Оставить заявку</button>
+                    <a href="product-cart.html" class="btn cart__btn-details"
+                      >Подробнее</a
+                    >
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide products-slide">
@@ -2640,23 +2640,17 @@
                   </div>
                   <div class="cart__availability">В наличии</div>
                 </div>
-                <h3 class="cart__title">
-                  Установка <br />
-                  ГНБ PRIDE M12x30
-                </h3>
-                <div class="cart__subtitle">
-                  Малогабаритные буровые установки
-                </div>
-                <div class="cart__desc">
-                  Установка ГНБ PRIDE M12x30 с 30ти-тонным тяговым усилием
-                  позволяет протягивать металлические трубы и трубы ПНД до 1 200
-                  мм в диаметре.
-                </div>
-                <div class="cart__btn-box">
-                  <button class="btn cart__btn">Прайс</button>
-                  <a href="product-cart.html" class="btn cart__btn-details"
-                    >Подробнее</a
-                  >
+                <div class="cart__wrapper-text">
+                  <h3 class="cart__title">Установка ГНБ PRIDE M12x30</h3>
+                  <div class="cart__subtitle">
+                    Малогабаритные буровые установки
+                  </div>
+                  <div class="cart__btn-box">
+                    <button class="btn cart__btn">Оставить заявку</button>
+                    <a href="product-cart.html" class="btn cart__btn-details"
+                      >Подробнее</a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
