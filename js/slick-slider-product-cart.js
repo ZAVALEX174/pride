@@ -1,18 +1,20 @@
-$('.slider-for').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    asNavFor: '.slider-nav2',
-    adaptiveHeight: false
-});
+// $('.slider-for').slick({
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     arrows: true,
+//     asNavFor: '.slider-nav2',
+//     adaptiveHeight: false
+// });
 
-$('.slider-nav2').slick({
-    slidesToShow: 4.5,
-    slidesToScroll: 1,
-    asNavFor: '.slider-for',
-    focusOnSelect: true,
-    // vertical: true,
-});
+// $('.slider-nav2').slick({
+//     slidesToShow: 4.5,
+//     slidesToScroll: 1,
+//     asNavFor: '.slider-for',
+//     focusOnSelect: true,
+//     // vertical: true,
+// });
+
+
 
 Fancybox.bind('[data-fancybox="gallery"]', {
     compact: false,
