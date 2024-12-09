@@ -75,11 +75,11 @@
           <div class="header__lang">
             <div class="dropdown">
               <button class="header__lang-box">
-                <img
+                <!-- <img
                   alt="Картинка флага"
                   class="header__lang-box-img"
                   src="images/header/flag_rus.png"
-                  style="width: 24px; height: 17px" />
+                  style="width: 24px; height: 17px" /> -->
                 <span class="header__lang-box-text">Русский</span>
               </button>
               <ul class="dropdown__list">
@@ -255,34 +255,6 @@
       </div>
       <div class="header__down">
         <div class="container header__container-down">
-          <div class="contact-us header__contact-us">
-            <button class="btn contact-us__btn">Связаться с нами</button>
-          </div>
-          <div class="search header__search">
-            <form class="header__search-form" action="">
-              <button class="btn btn-search-reset" type="reset">
-                Сбросить
-              </button>
-              <input
-                type="text"
-                class="search search-input"
-                placeholder="Поиск" />
-              <svg
-                class="header__search-form-icon"
-                width="19"
-                height="18"
-                viewBox="0 0 19 18"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M18 17.5L13.6034 13.1034M1 7.82759C1 3.78067 4.28067 0.5 8.32759 0.5C12.3745 0.5 15.6552 3.78067 15.6552 7.82759C15.6552 11.8745 12.3745 15.1552 8.32759 15.1552C4.28067 15.1552 1 11.8745 1 7.82759Z"
-                  stroke="#FEFEFE"
-                  stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-              <button class="btn search__btn">Найти</button>
-            </form>
-          </div>
           <div class="logo header__logo">
             <a href="#" class="header__logo-link">
               <img
@@ -292,23 +264,84 @@
             </a>
           </div>
 
+          <div class="search header__search">
+            <form class="header__search-form" action="">
+              <button class="btn btn-search-reset" type="reset">
+                Сбросить
+              </button>
+              <input
+                type="text"
+                class="search search-input"
+                placeholder="Поиск" />
+
+              <svg
+                class="header__search-form-icon"
+                width="37"
+                height="38"
+                viewBox="0 0 37 38"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d_1015_85)">
+                  <path
+                    d="M26.8251 26.3998L22.7583 22.333M11.1001 17.4528C11.1001 13.7094 14.1347 10.6748 17.8781 10.6748C21.6215 10.6748 24.6561 13.7094 24.6561 17.4528C24.6561 21.1962 21.6215 24.2308 17.8781 24.2308C14.1347 24.2308 11.1001 21.1962 11.1001 17.4528Z"
+                    stroke="#EB6320"
+                    stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_d_1015_85"
+                    x="-3.15087"
+                    y="-2.65087"
+                    width="43.3017"
+                    height="43.3017"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha" />
+                    <feOffset />
+                    <feGaussianBlur stdDeviation="1.57544" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow_1015_85" />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect1_dropShadow_1015_85"
+                      result="shape" />
+                  </filter>
+                </defs>
+              </svg>
+
+              <button class="btn search__btn">Найти</button>
+            </form>
+          </div>
+
           <div class="user header__user">
             <a href="#" class="btn header__user-btn">
               <svg
                 class="header__user-btn-icon"
-                width="19"
-                height="20"
-                viewBox="0 0 19 20"
+                width="37"
+                height="38"
+                viewBox="0 0 37 38"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
-                  d="M9.74631 10.3574C12.2317 10.3574 14.2465 8.34255 14.2465 5.85715C14.2465 3.37175 12.2317 1.35693 9.74631 1.35693C7.26091 1.35693 5.24609 3.37175 5.24609 5.85715C5.24609 8.34255 7.26091 10.3574 9.74631 10.3574Z"
-                  stroke="white"
+                  d="M18.0787 18.8684C20.3777 18.8684 22.2414 17.0047 22.2414 14.7057C22.2414 12.4067 20.3777 10.543 18.0787 10.543C15.7797 10.543 13.916 12.4067 13.916 14.7057C13.916 17.0047 15.7797 18.8684 18.0787 18.8684Z"
+                  stroke="#EB6320"
                   stroke-linecap="round"
                   stroke-linejoin="round" />
                 <path
-                  d="M18.3158 19.3571C17.7345 17.5444 16.5926 15.9631 15.0546 14.8412C13.5167 13.7193 11.6622 13.1147 9.75851 13.1147C7.85484 13.1147 6.00035 13.7193 4.4624 14.8412C2.92445 15.9631 1.78249 17.5444 1.20117 19.3571H18.3158Z"
-                  stroke="white"
+                  d="M26.0054 27.1931C25.4677 25.5164 24.4114 24.0536 22.9888 23.0159C21.5662 21.9781 19.8507 21.4189 18.0899 21.4189C16.329 21.4189 14.6136 21.9781 13.191 23.0159C11.7683 24.0536 10.712 25.5164 10.1743 27.1931H26.0054Z"
+                  stroke="#EB6320"
                   stroke-linecap="round"
                   stroke-linejoin="round" />
               </svg>
@@ -332,6 +365,10 @@
               </svg>
               Избранное
             </a>
+          </div>
+
+          <div class="contact-us header__contact-us">
+            <button class="btn contact-us__btn">Связаться с нами</button>
           </div>
         </div>
       </div>
@@ -1150,9 +1187,7 @@
 
           <div class="card-info">
             <div class="card-info__name">
-              <div class="card-info__name-title">
-                Об установке
-              </div>
+              <div class="card-info__name-title">Об установке</div>
               <p class="card-info__subtitle">
                 Гидравлическая буровая установка применяются для бурения скважин
                 на воду глубиной до 200 м, в том числе наклонных, геологических
@@ -3115,55 +3150,55 @@
                 </li>
               </ul>
             </div>
-            <div class="footer__callback-box">
-              <form class="footer__callback-form">
-                <label for="footer-title" class="footer__callback-form-title">
-                  Заказать обратный звонок
-                </label>
-                <div class="footer__callback-form-input-btn">
-                  <input
-                    id="footer-title"
-                    class="footer__callback-form-input"
-                    type="tel"
-                    name="title"
-                    placeholder="Введите ваш телефон"
-                    required />
+            <!--                <div class="footer__callback-box">-->
+            <!--                    <form class="footer__callback-form">-->
+            <!--                        <label for="footer-title" class="footer__callback-form-title">-->
+            <!--                            Заказать обратный звонок-->
+            <!--                        </label>-->
+            <!--                        <div class="footer__callback-form-input-btn">-->
+            <!--                            <input-->
+            <!--                                    id="footer-title"-->
+            <!--                                    class="footer__callback-form-input"-->
+            <!--                                    type="tel"-->
+            <!--                                    name="title"-->
+            <!--                                    placeholder="Введите ваш телефон"-->
+            <!--                                    required/>-->
 
-                  <button type="submit" class="btn footer__callback-form-btn">
-                    Заказать звонок
-                  </button>
-                </div>
-                <label class="footer__callback-form-policy" for="footer-policy">
-                  <input
-                    type="checkbox"
-                    checked
-                    class="footer__callback-form-checkbox real-checkbox"
-                    id="footer-policy" />
-                  <span class="custom-checkbox">
-                    <svg
-                      width="26"
-                      height="26"
-                      viewBox="0 0 26 26"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                      <rect
-                        x="0.5"
-                        y="0.0585938"
-                        width="25"
-                        height="25"
-                        rx="5"
-                        fill="#8E8E8E" />
-                      <path
-                        d="M17.6402 7.82411C17.8603 7.61456 18.1532 7.49871 18.4571 7.50101C18.761 7.50331 19.0521 7.62358 19.269 7.83643C19.4859 8.04929 19.6116 8.33808 19.6197 8.64188C19.6277 8.94567 19.5174 9.24071 19.312 9.46473L13.0777 17.2616C12.9705 17.3771 12.8411 17.4697 12.6973 17.5341C12.5534 17.5984 12.3981 17.633 12.2406 17.6359C12.083 17.6389 11.9265 17.61 11.7804 17.551C11.6343 17.4921 11.5016 17.4043 11.3902 17.2929L7.25579 13.1585C7.14066 13.0512 7.04831 12.9218 6.98426 12.7781C6.92021 12.6343 6.88577 12.4791 6.88299 12.3218C6.88022 12.1644 6.90916 12.0082 6.9681 11.8622C7.02704 11.7163 7.11477 11.5838 7.22605 11.4725C7.33733 11.3612 7.46988 11.2735 7.6158 11.2145C7.76172 11.1556 7.91801 11.1267 8.07536 11.1294C8.23271 11.1322 8.38789 11.1666 8.53164 11.2307C8.67538 11.2947 8.80476 11.3871 8.91204 11.5022L12.1839 14.7725L17.6105 7.85848C17.6203 7.84645 17.6307 7.83498 17.6417 7.82411H17.6402Z"
-                        fill="#F9F9F9" />
-                    </svg>
-                  </span>
-                  Ознакомлен с
-                  <a href="#">Мерами по обеспечению безопасности</a>
-                  персональных данных
-                </label>
-              </form>
-            </div>
+            <!--                            <button type="submit" class="btn footer__callback-form-btn">-->
+            <!--                                Заказать звонок-->
+            <!--                            </button>-->
+            <!--                        </div>-->
+            <!--                        <label class="footer__callback-form-policy" for="footer-policy">-->
+            <!--                            <input-->
+            <!--                                    type="checkbox"-->
+            <!--                                    checked-->
+            <!--                                    class="footer__callback-form-checkbox real-checkbox"-->
+            <!--                                    id="footer-policy"/>-->
+            <!--                            <span class="custom-checkbox">-->
+            <!--                    <svg-->
+            <!--                            width="26"-->
+            <!--                            height="26"-->
+            <!--                            viewBox="0 0 26 26"-->
+            <!--                            fill="none"-->
+            <!--                            xmlns="http://www.w3.org/2000/svg">-->
+            <!--                      <rect-->
+            <!--                              x="0.5"-->
+            <!--                              y="0.0585938"-->
+            <!--                              width="25"-->
+            <!--                              height="25"-->
+            <!--                              rx="5"-->
+            <!--                              fill="#8E8E8E"/>-->
+            <!--                      <path-->
+            <!--                              d="M17.6402 7.82411C17.8603 7.61456 18.1532 7.49871 18.4571 7.50101C18.761 7.50331 19.0521 7.62358 19.269 7.83643C19.4859 8.04929 19.6116 8.33808 19.6197 8.64188C19.6277 8.94567 19.5174 9.24071 19.312 9.46473L13.0777 17.2616C12.9705 17.3771 12.8411 17.4697 12.6973 17.5341C12.5534 17.5984 12.3981 17.633 12.2406 17.6359C12.083 17.6389 11.9265 17.61 11.7804 17.551C11.6343 17.4921 11.5016 17.4043 11.3902 17.2929L7.25579 13.1585C7.14066 13.0512 7.04831 12.9218 6.98426 12.7781C6.92021 12.6343 6.88577 12.4791 6.88299 12.3218C6.88022 12.1644 6.90916 12.0082 6.9681 11.8622C7.02704 11.7163 7.11477 11.5838 7.22605 11.4725C7.33733 11.3612 7.46988 11.2735 7.6158 11.2145C7.76172 11.1556 7.91801 11.1267 8.07536 11.1294C8.23271 11.1322 8.38789 11.1666 8.53164 11.2307C8.67538 11.2947 8.80476 11.3871 8.91204 11.5022L12.1839 14.7725L17.6105 7.85848C17.6203 7.84645 17.6307 7.83498 17.6417 7.82411H17.6402Z"-->
+            <!--                              fill="#F9F9F9"/>-->
+            <!--                    </svg>-->
+            <!--                  </span>-->
+            <!--                            Ознакомлен с-->
+            <!--                            <a href="#">Мерами по обеспечению безопасности</a>-->
+            <!--                            персональных данных-->
+            <!--                        </label>-->
+            <!--                    </form>-->
+            <!--                </div>-->
           </div>
           <div class="footer__right">
             <div class="footer__nav-box">
@@ -3181,31 +3216,6 @@
                   </li>
                 </ul>
               </div>
-              <div class="nav-box__right">
-                <ul class="nav-box__right-menu-list">
-                  <li class="nav-box__right-menu-item">
-                    <a href="#" class="nav-box__right-menu-link">Проекты</a>
-                  </li>
-                  <li class="nav-box__right-menu-item">
-                    <a href="#" class="nav-box__right-menu-link"> Сервис </a>
-                  </li>
-                  <li class="nav-box__right-menu-item">
-                    <a href="#" class="nav-box__right-menu-link">
-                      Сеть дилеров
-                    </a>
-                  </li>
-                  <li class="nav-box__right-menu-item">
-                    <a href="#" class="nav-box__right-menu-link">Контакты</a>
-                  </li>
-                  <li class="nav-box__right-menu-item">
-                    <a href="#" class="nav-box__right-menu-link"
-                      >Новости и блог</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="footer__products-variant-box">
               <div class="products-variant-box__left">
                 <h3 class="title products-variant-box__left-title">
                   Сотрудничество
@@ -3245,7 +3255,71 @@
                   </li>
                 </ul>
               </div>
+              <div class="nav-box__right">
+                <ul class="nav-box__right-menu-list">
+                  <li class="nav-box__right-menu-item">
+                    <a href="#" class="nav-box__right-menu-link">Проекты</a>
+                  </li>
+                  <li class="nav-box__right-menu-item">
+                    <a href="#" class="nav-box__right-menu-link"> Сервис </a>
+                  </li>
+                  <li class="nav-box__right-menu-item">
+                    <a href="#" class="nav-box__right-menu-link">
+                      Сеть дилеров
+                    </a>
+                  </li>
+                  <li class="nav-box__right-menu-item">
+                    <a href="#" class="nav-box__right-menu-link">Контакты</a>
+                  </li>
+                  <li class="nav-box__right-menu-item">
+                    <a href="#" class="nav-box__right-menu-link"
+                      >Новости и блог</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
+            <!--            <div class="footer__products-variant-box">-->
+            <!--              <div class="products-variant-box__left">-->
+            <!--                <h3 class="title products-variant-box__left-title">-->
+            <!--                  Сотрудничество-->
+            <!--                </h3>-->
+            <!--                <ul class="products-variant-box__left-list">-->
+            <!--                  <li class="products-variant-box__left-item">-->
+            <!--                    <a href="#" class="products-variant-box__left-link">-->
+            <!--                      Условия-->
+            <!--                    </a>-->
+            <!--                  </li>-->
+            <!--                  <li class="products-variant-box__left-item">-->
+            <!--                    <a href="#" class="products-variant-box__left-link">-->
+            <!--                      Заполнить анкету-->
+            <!--                    </a>-->
+            <!--                  </li>-->
+            <!--                </ul>-->
+            <!--              </div>-->
+            <!--              <div class="products-variant-box__right">-->
+            <!--                <h3 class="title products-variant-box__right-title">-->
+            <!--                  Дополнительные услуги-->
+            <!--                </h3>-->
+            <!--                <ul class="products-variant-box__right-list">-->
+            <!--                  <li class="products-variant-box__right-item">-->
+            <!--                    <a href="#" class="products-variant-box__right-link">-->
+            <!--                      Доставка-->
+            <!--                    </a>-->
+            <!--                  </li>-->
+            <!--                  <li class="products-variant-box__right-item">-->
+            <!--                    <a href="#" class="products-variant-box__right-link">-->
+            <!--                      Инжиниринг-->
+            <!--                    </a>-->
+            <!--                  </li>-->
+            <!--                  <li class="products-variant-box__right-item">-->
+            <!--                    <a href="#" class="products-variant-box__right-link">-->
+            <!--                      Финанансирование-->
+            <!--                    </a>-->
+            <!--                  </li>-->
+            <!--                </ul>-->
+            <!--              </div>-->
+            <!--            </div>-->
             <div class="footer__products-variant-box">
               <div class="products-variant-box__left">
                 <h3 class="title products-variant-box__left-title">
@@ -3307,8 +3381,6 @@
                   </li>
                 </ul>
               </div>
-            </div>
-            <div class="footer__nav-down-box">
               <div class="nav-down-box__left">
                 <ul class="nav-down-box__left-list">
                   <li class="nav-down-box__left-item">
@@ -3349,32 +3421,125 @@
                 </ul>
               </div>
             </div>
+            <!--                <div class="footer__nav-down-box">-->
+            <!--                    <div class="nav-down-box__left">-->
+            <!--                        <ul class="nav-down-box__left-list">-->
+            <!--                            <li class="nav-down-box__left-item">-->
+            <!--                                <a href="#" class="nav-down-box__left-link"-->
+            <!--                                >Горно-шахтные <br/>-->
+            <!--                                    установки</a-->
+            <!--                                >-->
+            <!--                            </li>-->
+            <!--                            <li class="nav-down-box__left-item">-->
+            <!--                                <a href="#" class="nav-down-box__left-link"-->
+            <!--                                >Бурильно-шнековые машины</a-->
+            <!--                                >-->
+            <!--                            </li>-->
+            <!--                            <li class="nav-down-box__left-item">-->
+            <!--                                <a href="#" class="nav-down-box__left-link"-->
+            <!--                                >Буровой инструмент</a-->
+            <!--                                >-->
+            <!--                            </li>-->
+            <!--                        </ul>-->
+            <!--                    </div>-->
+            <!--                    <div class="nav-down-box__right">-->
+            <!--                        <ul class="nav-down-box__right-list">-->
+            <!--                            <li class="nav-down-box__right-item">-->
+            <!--                                <a href="#" class="nav-down-box__right-link"-->
+            <!--                                >Карьерные и буровзрывные установки</a-->
+            <!--                                >-->
+            <!--                            </li>-->
+            <!--                            <li class="nav-down-box__right-item">-->
+            <!--                                <a href="#" class="nav-down-box__right-link"-->
+            <!--                                >Гусеничные базы</a-->
+            <!--                                >-->
+            <!--                            </li>-->
+            <!--                            <li class="nav-down-box__right-item">-->
+            <!--                                <a href="#" class="nav-down-box__right-link"-->
+            <!--                                >Комплектующие для буровых установок</a-->
+            <!--                                >-->
+            <!--                            </li>-->
+            <!--                        </ul>-->
+            <!--                    </div>-->
+            <!--                </div>-->
           </div>
         </div>
       </div>
-      <div class="footer__copyrigth">
-        <div class="container">
-          <div class="footer__copyrigth-company-info">
-            © 2012-2024 Производственная компания Прайд
-          </div>
-          <div class="footer__copyrigth-ofer">
-            Сайт не является публичной офертой. Цены и наличие необходимо
-            уточнять у менеджеров.
-          </div>
-          <div class="footer__copyrigth-down">
-            <div class="footer__copyrigth-confidic">
-              <a href="#" class="footer__copyrigth-confidic-link">
-                Политика конфиденциальности
-              </a>
-              <a href="#" class="footer__copyrigth-confidic-link">
-                Условия пользования
-              </a>
+      <div class="footer__down">
+        <div class="container footer__down-container">
+          <div class="footer__copyrigth">
+            <div class="footer__copyrigth-company-info">
+              © 2012-2024 Производственная компания Прайд
             </div>
-            <div class="developer">
-              <a href="#" class="developer-link">
-                Made by Брендинговое агентство «ЫТЬ!»
-              </a>
+            <div class="footer__copyrigth-ofer">
+              Сайт не является публичной офертой. Цены и наличие необходимо
+              уточнять у менеджеров.
             </div>
+            <div class="footer__copyrigth-down">
+              <div class="footer__copyrigth-confidic">
+                <a href="#" class="footer__copyrigth-confidic-link">
+                  Политика конфиденциальности
+                </a>
+                <a href="#" class="footer__copyrigth-confidic-link">
+                  Условия пользования
+                </a>
+              </div>
+              <div class="developer">
+                <a href="#" class="developer-link">
+                  Made by Брендинговое агентство «ЫТЬ!»
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__callback-box">
+            <form class="footer__callback-form">
+              <label for="footer-title" class="footer__callback-form-title">
+                Заказать обратный звонок
+              </label>
+              <div class="footer__callback-form-input-btn">
+                <input
+                  id="footer-title"
+                  class="footer__callback-form-input"
+                  type="tel"
+                  name="title"
+                  placeholder="Введите ваш телефон"
+                  required />
+
+                <button type="submit" class="btn footer__callback-form-btn">
+                  Отправить
+                </button>
+              </div>
+              <label class="footer__callback-form-policy" for="footer-policy">
+                <input
+                  type="checkbox"
+                  checked
+                  class="footer__callback-form-checkbox real-checkbox"
+                  id="footer-policy" />
+                <span class="custom-checkbox">
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <rect
+                      x="0.5"
+                      y="0.0585938"
+                      width="25"
+                      height="25"
+                      rx="5"
+                      fill="#8E8E8E" />
+                    <path
+                      d="M17.6402 7.82411C17.8603 7.61456 18.1532 7.49871 18.4571 7.50101C18.761 7.50331 19.0521 7.62358 19.269 7.83643C19.4859 8.04929 19.6116 8.33808 19.6197 8.64188C19.6277 8.94567 19.5174 9.24071 19.312 9.46473L13.0777 17.2616C12.9705 17.3771 12.8411 17.4697 12.6973 17.5341C12.5534 17.5984 12.3981 17.633 12.2406 17.6359C12.083 17.6389 11.9265 17.61 11.7804 17.551C11.6343 17.4921 11.5016 17.4043 11.3902 17.2929L7.25579 13.1585C7.14066 13.0512 7.04831 12.9218 6.98426 12.7781C6.92021 12.6343 6.88577 12.4791 6.88299 12.3218C6.88022 12.1644 6.90916 12.0082 6.9681 11.8622C7.02704 11.7163 7.11477 11.5838 7.22605 11.4725C7.33733 11.3612 7.46988 11.2735 7.6158 11.2145C7.76172 11.1556 7.91801 11.1267 8.07536 11.1294C8.23271 11.1322 8.38789 11.1666 8.53164 11.2307C8.67538 11.2947 8.80476 11.3871 8.91204 11.5022L12.1839 14.7725L17.6105 7.85848C17.6203 7.84645 17.6307 7.83498 17.6417 7.82411H17.6402Z"
+                      fill="#F9F9F9" />
+                  </svg>
+                </span>
+                Ознакомлен с
+                <a href="#">Мерами по обеспечению безопасности</a>
+                персональных данных
+              </label>
+            </form>
           </div>
         </div>
       </div>
