@@ -11,7 +11,7 @@ $('.slider-nav2').slick({
     slidesToScroll: 1,
     asNavFor: '.slider-for',
     focusOnSelect: true,
-    vertical: true,
+    // vertical: true,
 });
 
 Fancybox.bind('[data-fancybox="gallery"]', {

@@ -15,12 +15,12 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 1.1;
-  color: var(--color-orange);
+  color: var(--dark-gray);
 }
 
 .card-info__subtitle {
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.1;
   color: var(--dark-gray);
   margin-bottom: 22.5px;
@@ -28,9 +28,9 @@
 
 .card-info__peculiarities {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 0;
   height: 340px;
-  background-color: #f5f5f5;
+  /* background-color: #f5f5f5; */
   overflow: hidden;
 }
 
@@ -46,9 +46,10 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22222;
-  color: #fff;
+  color: var(--dark-gray);
   padding: 13px 30px;
-  background: var(--dark-gray);
+  /* background: var(--dark-gray); */
+  background-color: rgba(239, 239, 239, 1);
 }
 
 .table td {
@@ -106,21 +107,31 @@
 }
 
 .product-card .card-info__title {
-  font-size: 32px;
+  font-size: 30px;
+  font-family: 'GetVoIP Grotesque Regular', sans-serif;
+  font-weight: 700;
+}
+
+.product-card-box {
+  display: flex;
+  column-gap: 46px;
 }
 
 .card {
+  max-width: 750px;
   display: flex;
   flex-direction: column;
 }
 
 .card__content {
   display: flex;
-  column-gap: 24px;
+  flex-direction: column;
+  /* column-gap: 24px; */
+  position: relative;
 }
 
 .card-slider {
-  width: 86.9%;
+  width: 100%;
   height: 570px;
   margin-bottom: 40px;
 }
@@ -172,17 +183,20 @@
   width: 100%;
   display: flex;
   gap: 24px;
+  flex-direction: column;
 }
 
 .card-info__name {
-  max-width: 457px;
+  /* max-width: 457px; */
+  width: 100%;
 }
 .card-info__name-title {
   padding: 0;
   margin: 0;
-  color: var(--color-orange);
-  font-size: 20px;
-  font-family: 'TT Norms Pro Medium', sans-serif;
+  color: var(--dark-gray);
+  font-size: 22px;
+  font-family: 'GetVoIP Grotesque Regular', sans-serif;
+  font-weight: 700;
   font-weight: 500;
   line-height: 22px;
   margin-bottom: 20px;
@@ -617,8 +631,10 @@ video {
 }
 
 .slider-nav2 {
-  max-width: 132px;
-  padding: 70px 0;
+  /* max-width: 132px; */
+  width: 100%;
+  /* padding: 70px 0; */
+  padding: 0;
 }
 
 .slider-nav2 .slick-slide {
