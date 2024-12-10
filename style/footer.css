@@ -214,7 +214,7 @@
 .footer__callback-form-policy a {
   font-family: 'TT Norms Pro Regular', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.1;
   color: var(--ligth-gray);
   text-decoration: underline;
@@ -428,7 +428,7 @@
 
 .footer__copyrigth-ofer {
   width: 100%;
-  padding-bottom: 35px;
+  margin-bottom: 20px;
   font-family: 'TT Norms Pro Regular', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -436,7 +436,6 @@
   color: var(--title-color-ligth);
   /*text-align: right;*/
   opacity: 0.3;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.26);
 }
 
 .footer__copyrigth-down {
@@ -451,6 +450,8 @@
 
 .footer__copyrigth-confidic {
   margin-right: auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.26);
+  padding-bottom: 35px;
 }
 
 .footer__copyrigth-confidic-link {
