@@ -895,6 +895,11 @@ video {
   color: var(--dark-gray);
   font-size: 18px;
   font-weight: 400;
+  transition: 0.3s ease-in;
+}
+.product-cart__header-link:hover {
+  border: 1px solid var(--color-orange);
+  /* color: var(--dark-gray); */
 }
 
 .watched-before__product-cart .products-slide {
@@ -990,6 +995,14 @@ video {
 .watched-before__product-cart
   .products-slide
   .cart__wrapper-text
+  .cart__btn:hover {
+  background-color: var(--color-orange);
+  color: var(--title-color-ligth);
+}
+
+.watched-before__product-cart
+  .products-slide
+  .cart__wrapper-text
   .cart__btn-details {
   position: relative;
   font-size: 15px;
@@ -1000,6 +1013,14 @@ video {
   background-color: transparent;
   color: var(--dark-gray);
   justify-content: center;
+  transition: 0.3s ease-in;
+}
+
+.watched-before__product-cart
+  .products-slide
+  .cart__wrapper-text
+  .cart__btn-details:hover {
+  color: var(--color-orange);
 }
 
 .watched-before__product-cart
@@ -1015,12 +1036,47 @@ video {
 .watched-before__product-cart
   .watched-before__header
   .swiper-button-prev.btn__slider_prev.products-swiper_prev {
-  top: 323px;
+  top: 280px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #d2d2d2;
 }
 .watched-before__product-cart
   .watched-before__header
   .swiper-button-next.btn__slider_next.products-swiper_next {
-  top: 323px;
+  top: 280px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-color: #d2d2d2;
+}
+
+.watched-before__product-cart
+  .watched-before__header
+  .swiper-button-next.btn__slider_next.products-swiper_next::after {
+  position: absolute;
+  content: '';
+  width: 17px;
+  height: 16px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: url(../images/product-cart-sec/arr_right-black.svg) no-repeat
+    center / cover;
+}
+.watched-before__product-cart
+  .watched-before__header
+  .swiper-button-prev.btn__slider_prev.products-swiper_prev::after {
+  position: absolute;
+  content: '';
+  width: 17px;
+  height: 16px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(180deg);
+  background: url(../images/product-cart-sec/arr_right-black.svg) no-repeat
+    center / cover;
 }
 
 .form-representation.form-representation-product-cart {
