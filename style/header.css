@@ -32,8 +32,9 @@
   align-items: center;
 }
 .header__address {
-  font-size: 20px;
-  line-height: 1.1;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.375;
   text-align: center;
   color: var(--title-color-ligth);
   margin-right: auto;
@@ -45,8 +46,9 @@
   margin-right: 10px;
 }
 .header__contacts-link {
+  font-weight: 400;
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.375;
   text-align: center;
   color: var(--dark-gray);
   display: inline-flex;
@@ -105,7 +107,7 @@
 .header__down {
   width: 100%;
   background-color: var(--title-color-ligth);
-  padding: 17px 0 18px;
+  padding: 22px 0 18px;
 }
 .header__container-down {
   display: flex;

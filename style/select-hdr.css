@@ -27,7 +27,8 @@
   font-weight: 300;
   margin: 0;
   padding: 0;
-  padding-right: 24px;
+  /* padding-right: 24px; */
+  padding-right: 0;
   font-size: 18px;
   line-height: 40px;
   height: 40px;
@@ -78,6 +79,9 @@
 }
 
 .header__lang-box-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.375;
   width: 100%;
   color: var(--dark-gray);
 }

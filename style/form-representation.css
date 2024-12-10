@@ -1,10 +1,11 @@
 .form-representation {
   width: 100%;
-  padding: 110px 0 117px;
-  background: url('../images/form/lion.png') no-repeat right 5px top 55px /
-      655px 639px,
+
+  background: url('../images/form/lion.png') no-repeat left 0px bottom 0px /
+      466px 472px,
     var(--dark-gray);
   position: relative;
+  padding: 110px 0 117px;
 }
 
 .form-representation__title {
@@ -27,14 +28,14 @@
   /* font-size: 20px; */
   font-size: 18px;
   /* padding-bottom: 17px; */
-  padding-bottom: 5px;
+  padding-bottom: 11px;
   line-height: 1.1;
   color: var(--title-color-ligth);
 }
 
 .form-right > label {
   position: relative;
-  padding-left: 40px;
+  padding-left: 46px;
 }
 
 .form-right > label:first-of-type {
@@ -56,7 +57,7 @@
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   background: rgba(255, 255, 255, 0.03);
   /* margin-bottom: 10px; */
-  margin-bottom: 23px;
+  margin-bottom: 27px;
   font-size: 20px;
   color: var(--title-color-ligth);
 }
@@ -199,7 +200,7 @@ label[for='user-email'] {
   height: 170px;
   font-size: 20px;
   /* margin-bottom: 25px; */
-  margin-bottom: 38px;
+  margin-bottom: 44px;
 }
 
 .form-right > textarea:focus {
@@ -213,7 +214,7 @@ label[for='user-email'] {
 }
 
 .form-right label:nth-of-type(3) {
-  margin-bottom: 23px;
+  margin-bottom: 27px;
 }
 
 .ch {

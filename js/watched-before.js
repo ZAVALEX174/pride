@@ -24,7 +24,7 @@ var watchedBeforeSwiperCatalog = new Swiper(".watched-before__catalog-swiper", {
     speed: 1500,
     // loop: true,
     // grabCursor: true,
-    spaceBetween: 17,
+    spaceBetween: 40,
     // freeMode: true,
     navigation: {
         nextEl: '.watched-before__catalog-cart-btn_next',
