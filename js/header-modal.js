@@ -208,6 +208,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const headerModal = document.querySelector(".header-menu-modal");
 
 
+    const menuBtn = document.querySelector('.menu');
+    const searchInputStyle = document.querySelector('.header__search');
+
     window.addEventListener('scroll', () => {
         let scrollTop = window.scrollY;// Величина скролла
         let headerTopHeight = headerTop.clientHeight; //Высота блока Топ хедера
@@ -224,6 +227,9 @@ document.addEventListener('DOMContentLoaded', () => {
             let headerHeight = header.clientHeight; //Высота всего хедера
             document.body.style.marginTop = `${headerHeight}px`;
             headerModal.style.height = `100%`;
+            /////////
+            searchInputStyle.classList.add('header__search_menu');
+            menuBtn.classList.add('menu_menu');
         } else {
             headerMenu.classList.remove('header__menu_hidden');
             header.classList.remove('header_fixed');

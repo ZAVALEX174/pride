@@ -843,7 +843,7 @@ video {
   right: 15px;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(216, 216, 216, 1);
+  background-color: #fefefe;
   border-radius: 100%;
   transition: 0.3s ease-in;
 }
@@ -854,13 +854,13 @@ video {
   left: 15px;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(216, 216, 216, 1);
+  background-color: #fefefe;
   border-radius: 100%;
   transition: 0.3s ease-in;
 }
 .swiper-button-prev.mySwiperProd2-btn-prev:hover,
 .swiper-button-next.mySwiperProd2-btn-next:hover {
-  background-color: var(--color-orange);
+  background-color: #d8d8d8;
 }
 .swiper-button-next.mySwiperProd2-btn-next::after {
   position: absolute;
@@ -1041,6 +1041,7 @@ video {
   height: 50px;
   border-radius: 100%;
   background-color: #d2d2d2;
+  /* FEFEFE */
 }
 .watched-before__product-cart
   .watched-before__header
@@ -1050,6 +1051,7 @@ video {
   height: 50px;
   border-radius: 100%;
   background-color: #d2d2d2;
+  /* FEFEFE */
 }
 
 .watched-before__product-cart
