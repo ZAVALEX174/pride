@@ -232,7 +232,7 @@ document.addEventListener('DOMContentLoaded', () => {
             menuBtn.classList.add('menu_menu');
 
             menuBtn.addEventListener('click', () => {
-                headerMenu.classList.add('header__menu-active');
+                headerMenu.classList.toggle('header__menu-active');
             })
         } else {
             headerMenu.classList.remove('header__menu_hidden');
