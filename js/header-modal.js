@@ -208,14 +208,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const headerModal = document.querySelector(".header-menu-modal");
 
 
-    const menuBtn = document.querySelector('.menu');
-    const searchInputStyle = document.querySelector('.header__search');
+    // const menuBtn3 = document.querySelector('.menu');
+    // const searchInputStyle = document.querySelector('.header__search');
 
     window.addEventListener('scroll', () => {
         let scrollTop = window.scrollY;// Величина скролла
         let headerTopHeight = headerTop.clientHeight; //Высота блока Топ хедера
         let headerMenuHeight = headerMenu.clientHeight; //Высота блока Меню хедера
 
+        const menuBtn3 = document.querySelector('.menu');
+        console.log(menuBtn3);
+
+        const searchInputStyle = document.querySelector('.header__search');
 
         // console.log(headerMenuHeight, scrollTop);
 
@@ -229,18 +233,35 @@ document.addEventListener('DOMContentLoaded', () => {
             headerModal.style.height = `100%`;
             /////////
             searchInputStyle.classList.add('header__search_menu');
-            menuBtn.classList.add('menu_menu');
+            menuBtn3.classList.add('menu_menu');
 
-            menuBtn.addEventListener('click', () => {
-                headerMenu.classList.add('header__menu-active');
-            })
+
         } else {
             headerMenu.classList.remove('header__menu_hidden');
+            // headerMenu.classList.remove('header__menu-active');
+
+            searchInputStyle.classList.remove('header__search_menu');
+            menuBtn3.classList.remove('menu_menu');
+
+
             header.classList.remove('header_fixed');
             header.style.marginTop = 0;
             document.body.style.marginTop = 0;
             headerModal.style.height = `100%`;
         }
+
+
+    })
+
+    const menuBtn3 = document.querySelector('.menu');
+    console.log(menuBtn3);
+
+    const searchInputStyle = document.querySelector('.header__search');
+
+    menuBtn3.addEventListener('click', () => {
+        console.log('click: ');
+
+        headerMenu.classList.toggle('header__menu_hidden');
     })
 })
 

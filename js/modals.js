@@ -55,18 +55,18 @@ document.addEventListener('DOMContentLoaded', function () {
         modalFormZakaz.classList.add('none');
     })
 
+// пока закомитил
+    // comPredl.addEventListener('click', (e) => {
+    //     e.preventDefault();
+    //     modal.classList.add('modals_opened');
+    //     modalFormZakaz.classList.remove('none');
+    // })
 
-    comPredl.addEventListener('click', (e) => {
-        e.preventDefault();
-        modal.classList.add('modals_opened');
-        modalFormZakaz.classList.remove('none');
-    })
 
-
-    openModalFormPepresentationBtn.addEventListener('click', () => {
-        modal.classList.add('modals_opened');
-        modalFormRepresentation.classList.remove('none');
-    })
+    // openModalFormPepresentationBtn.addEventListener('click', () => {
+    //     modal.classList.add('modals_opened');
+    //     modalFormRepresentation.classList.remove('none');
+    // })
 });
 
 
