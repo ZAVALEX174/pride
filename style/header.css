@@ -320,13 +320,13 @@
   /* margin: 0 auto; */
 }
 
-/* .header__menu_hidden {
+.header__menu_hidden {
   margin-top: -80px;
 }
-.header:hover .header__menu {
+ .header__menu-active {
   margin-top: 0;
   transition: 0.5s linear;
-} */
+}
 
 .header__container-menu {
   /* max-width: 1106px; */

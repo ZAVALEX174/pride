@@ -230,6 +230,10 @@ document.addEventListener('DOMContentLoaded', () => {
             /////////
             searchInputStyle.classList.add('header__search_menu');
             menuBtn.classList.add('menu_menu');
+
+            menuBtn.addEventListener('click', () => {
+                headerMenu.classList.add('header__menu-active');
+            })
         } else {
             headerMenu.classList.remove('header__menu_hidden');
             header.classList.remove('header_fixed');
