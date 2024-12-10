@@ -1004,3 +1004,104 @@ video {
   .swiper-button-next.btn__slider_next.products-swiper_next {
   top: 323px;
 }
+
+.form-representation-product-cart .form-representation__container {
+  max-width: 1152px;
+}
+.form-representation-product-cart .form-representation__container .form-left,
+.form-representation-product-cart .form-representation__container .form-right {
+  max-width: 535px;
+}
+.form-representation-product-cart
+  .form-representation__container
+  .form-representation__form-btn {
+  line-height: 50;
+  height: 50px;
+  font-size: 20px;
+}
+.form-representation-product-cart
+  .form-representation__container
+  .form-right
+  > textarea {
+  height: 166px;
+  font-size: 18px;
+}
+.form-representation-product-cart
+  .form-representation__container
+  .form-right
+  > textarea::placeholder,
+.form-representation-product-cart
+  .form-representation__container
+  .form-right
+  > input::placeholder,
+.form-representation-product-cart
+  .form-representation__container
+  .form-left
+  > input::placeholder,
+.form-representation-product-cart
+  .form-representation__container
+  .user-name::placeholder,
+.form-representation-product-cart
+  .form-representation__container
+  .column1
+  .select,
+.form-representation-product-cart
+  .form-representation__container
+  .column2
+  .select {
+  font-size: 18px;
+  height: 50px;
+}
+
+.form-representation-product-cart
+  .form-representation__container
+  .column1__wrap::after,
+.form-representation-product-cart
+  .form-representation__container
+  .column2__wrap::after {
+  top: 46%;
+}
+
+.form-representation-product-cart
+  .form-representation__container
+  .form-right
+  > label:not(:first-of-type) {
+  line-height: 18px;
+  font-size: 16px;
+}
+.form-representation-product-cart .form-representation__container input {
+  height: 50px;
+}
+.form-representation-product-cart
+  .form-representation__container
+  .form-row2
+  .column1
+  input::placeholder,
+.form-representation-product-cart
+  .form-representation__container
+  .form-row2
+  .column1
+  input,
+.form-representation-product-cart
+  .form-representation__container
+  .form-row2
+  .column2
+  input::placeholder,
+.form-representation-product-cart
+  .form-representation__container
+  .form-row2
+  .column2
+  input,
+.form-representation-product-cart .form-representation__container .user-name,
+.form-representation-product-cart
+  .form-representation__container
+  .form-left
+  input:last-of-type {
+  font-size: 18px;
+}
+.form-representation-product-cart
+  .form-representation__container
+  .form-representation__title {
+  font-size: 33px;
+  line-height: 40px;
+}
