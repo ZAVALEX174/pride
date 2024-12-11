@@ -1173,10 +1173,7 @@
 }
 
 .products-swiper {
-  padding: 2rem 0;
-}
-.products-swiper {
-  padding-left: calc((100% - 1152px) / 2);
+  padding-left: calc(((100% - 1362px) / 2) + 60px);
 }
 .products-swiper_next::after {
   width: 42px;
