@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="style/select-hdr.css" />
     <link rel="stylesheet" href="style/modals.css" />
     <link rel="stylesheet" href="style/search.css" />
+    <link rel="stylesheet" href="style/product-cart.css" />
   </head>
   <body>
     <header class="header">
@@ -1061,7 +1062,7 @@
               style="
                 background: url(images/hero/bg_slider2.jpg) no-repeat
                   center/cover;
-                min-height: 600px;
+                min-height: 550px;
               ">
               <div class="container hero__container">
                 <div class="hero-slider__container">
@@ -1082,7 +1083,7 @@
               style="
                 background: url(images/hero/bg_slider2.jpg) no-repeat
                   center/cover;
-                min-height: 600px;
+                min-height: 550px;
               ">
               <div class="container hero__container">
                 <div class="hero-slider__container">
@@ -1103,7 +1104,7 @@
               style="
                 background: url(images/hero/bg_slider2.jpg) no-repeat
                   center/cover;
-                min-height: 600px;
+                min-height: 550px;
               ">
               <div class="container hero__container">
                 <div class="hero-slider__container">
@@ -1124,7 +1125,7 @@
               style="
                 background: url(images/hero/bg_slider2.jpg) no-repeat
                   center/cover;
-                min-height: 600px;
+                min-height: 550px;
               ">
               <div class="container hero__container">
                 <div class="hero-slider__container">
@@ -1141,8 +1142,10 @@
               </div>
             </div>
           </div>
-          <div class="swiper-button-prev btn__slider_prev"></div>
-          <div class="swiper-button-next btn__slider_next"></div>
+          <div class="container hero-slider-container">
+            <div class="swiper-button-prev btn__slider_prev"></div>
+            <div class="swiper-button-next btn__slider_next"></div>
+          </div>
           <!-- If we need pagination -->
           <div class="swiper-pagination castom-paginstion"></div>
         </div>
@@ -3508,78 +3511,85 @@
             </div>
         </div>
     </section> -->
-      <section class="watched-before watched-before__catalog">
+      <section class="watched-before watched-before__catalog watched-before__product-cart">
         <div class="container watched-before__container">
           <div class="watched-before__header">
             <h2 class="title watched-before__header-title">
-              Вы смотрели это раньше
+              Вы смотрели раньше...
             </h2>
-            <div class="swiper-btn-box">
-              <div
-                class="swiper-button-prev btn__slider_prev watched-before-prev__btn"></div>
-              <div
-                class="swiper-button-next btn__slider_next watched-before-next__btn"></div>
-            </div>
+            <a href="catalog-menu.html" class="btn product-cart__header-link"
+            >Каталог</a
+            >
+            <div
+                    class="swiper-button-prev btn__slider_prev products-swiper_prev watched-before__catalog-cart-btn_prev"></div>
+            <div
+                    class="swiper-button-next btn__slider_next products-swiper_next watched-before__catalog-cart-btn_next"></div>
           </div>
+          <!-- <div class="swiper-btn-box"></div> -->
         </div>
         <div class="watched-before__body-content">
-          <div
-            class="swiper watched-before-swiper watched-before__catalog-swiper">
+          <!-- <div class="container"> -->
+          <div class="swiper watched-before-swiper watched-before__catalog-swiper">
+            <!-- Additional required wrapper -->
+            <!-- <div class="swiper-button-prev btn__slider_prev products-swiper_prev watched-before__catalog-cart-btn_prev"></div> -->
+
             <div class="swiper-wrapper">
+              <!-- Slides -->
+
               <div class="swiper-slide products-slide products-slide-active">
                 <div class="cart__wrapper">
                   <div class="cart-switch">
                     <div class="cart-switch__item">
                       <div class="cart__image">
                         <img
-                          src="./images/catalog/01.jpg"
-                          alt="Фотография продукта"
-                          loading="lazy" />
+                                src="./images/catalog/01.jpg"
+                                alt="Фотография продукта"
+                                loading="lazy" />
                       </div>
                     </div>
                     <div class="cart-switch__item">
                       <div class="cart__image">
                         <img
-                          src="./images/product-cart-sec/04.jpg"
-                          alt="Фотография продукта"
-                          loading="lazy" />
+                                src="./images/product-cart-sec/04.jpg"
+                                alt="Фотография продукта"
+                                loading="lazy" />
                       </div>
                     </div>
                     <div class="cart-switch__item">
                       <div class="cart__image">
                         <img
-                          src="./images/product-cart-sec/03.jpg"
-                          alt="Фотография продукта"
-                          loading="lazy" />
+                                src="./images/product-cart-sec/03.jpg"
+                                alt="Фотография продукта"
+                                loading="lazy" />
                       </div>
                     </div>
                     <div class="cart-switch__item">
                       <div class="cart__image">
                         <img
-                          src="./images/product-cart-sec/03bb.jpg"
-                          alt="Фотография продукта"
-                          loading="lazy" />
+                                src="./images/product-cart-sec/03bb.jpg"
+                                alt="Фотография продукта"
+                                loading="lazy" />
                       </div>
                     </div>
                   </div>
                   <ul class="image-pagination" aria-hidden="true"></ul>
                   <div class="favorites-icon">
                     <svg
-                      width="70"
-                      height="70"
-                      viewBox="0 0 70 70"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
+                            width="70"
+                            height="70"
+                            viewBox="0 0 70 70"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                       <g filter="url(#filter0_d_54_1610)">
                         <rect
-                          x="5"
-                          y="5"
-                          width="60"
-                          height="60"
-                          rx="30"
-                          fill="currentColor" />
+                                x="5"
+                                y="5"
+                                width="60"
+                                height="60"
+                                rx="30"
+                                fill="currentColor" />
                         <path
-                          d="M34.069 48.3453L34.0694 48.3455C34.2585 48.4604 34.3846 48.5401 34.4776
+                                d="M34.069 48.3453L34.0694 48.3455C34.2585 48.4604 34.3846 48.5401 34.4776
                                                     48.5989C34.5691 48.6567 34.6285 48.6943 34.6843 48.7251L34.6861 48.7262C34.8671
                                                     48.8268 35.1329 48.8268 35.3139 48.7262L35.3157 48.7251C35.3715 48.6943 35.4309
                                                     48.6567 35.5224 48.5989C35.6154 48.5401 35.7415 48.4604 35.9306 48.3455L35.931
@@ -3590,64 +3600,61 @@
                                                     27.3756 43.3636L34.069 48.3453ZM34.069 48.3453C33.5747 48.0451 33.0164 47.6808 32.4094
                                                     47.272M34.069 48.3453L32.4094 47.272M32.4094 47.272C30.6865 46.107 28.9658 44.8208
                                                     27.3758 43.3638L32.4094 47.272Z"
-                          fill="currentColor"
-                          stroke="#FEFEFE"
-                          stroke-width="2" />
+                                fill="currentColor"
+                                stroke="#FEFEFE"
+                                stroke-width="2" />
                       </g>
                       <defs>
                         <filter
-                          id="filter0_d_54_16101"
-                          x="0"
-                          y="0"
-                          width="70"
-                          height="70"
-                          filterUnits="userSpaceOnUse"
-                          color-interpolation-filters="sRGB">
+                                id="filter0_d_54_16101"
+                                x="0"
+                                y="0"
+                                width="70"
+                                height="70"
+                                filterUnits="userSpaceOnUse"
+                                color-interpolation-filters="sRGB">
                           <feFlood
-                            flood-opacity="0"
-                            result="BackgroundImageFix" />
+                                  flood-opacity="0"
+                                  result="BackgroundImageFix" />
                           <feColorMatrix
-                            in="SourceAlpha"
-                            type="matrix"
-                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                            result="hardAlpha" />
+                                  in="SourceAlpha"
+                                  type="matrix"
+                                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                  result="hardAlpha" />
                           <feOffset />
                           <feGaussianBlur stdDeviation="2.5" />
                           <feColorMatrix
-                            type="matrix"
-                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
+                                  type="matrix"
+                                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
                           <feBlend
-                            mode="normal"
-                            in2="BackgroundImageFix"
-                            result="effect1_dropShadow_54_1610" />
+                                  mode="normal"
+                                  in2="BackgroundImageFix"
+                                  result="effect1_dropShadow_54_1610" />
                           <feBlend
-                            mode="normal"
-                            in="SourceGraphic"
-                            in2="effect1_dropShadow_54_1610"
-                            result="shape" />
+                                  mode="normal"
+                                  in="SourceGraphic"
+                                  in2="effect1_dropShadow_54_1610"
+                                  result="shape" />
                         </filter>
                       </defs>
                     </svg>
                   </div>
                   <div class="cart__availability">В наличии</div>
                 </div>
-                <h3 class="cart__title">
-                  Установка <br />
-                  ГНБ PRIDE M12x30
-                </h3>
-                <div class="cart__subtitle">
-                  Малогабаритные буровые установки
-                </div>
-                <div class="cart__desc">
-                  Установка ГНБ PRIDE M12x30 с 30ти-тонным тяговым усилием
-                  позволяет протягивать металлические трубы и трубы ПНД до 1 200
-                  мм в диаметре.
-                </div>
-                <div class="cart__btn-box">
-                  <button class="btn cart__btn">Прайс</button>
-                  <a href="product-cart.html" class="btn cart__btn-details"
+                <div class="cart__wrapper-text">
+                  <h3 class="cart__title">Установка ГНБ PRIDE M12x30</h3>
+                  <div class="cart__subtitle">
+                    Малогабаритные буровые установки
+                  </div>
+                  <div class="cart__text">
+                    Установка ГНБ PRIDE M12x30 с 30ти-тонным тяговым усилием позволяет протягивать металлические трубы и трубы
+                  </div>
+                  <div class="cart__btn-box">
+                    <button class="btn cart__btn">Оставить заявку</button>
+                    <a href="product-cart.html" class="btn cart__btn-details"
                     >Подробнее</a
-                  >
+                    >
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide products-slide">
@@ -3656,54 +3663,54 @@
                     <div class="cart-switch__item">
                       <div class="cart__image">
                         <img
-                          src="./images/catalog/01.jpg"
-                          alt="Фотография продукта"
-                          loading="lazy" />
+                                src="./images/catalog/01.jpg"
+                                alt="Фотография продукта"
+                                loading="lazy" />
                       </div>
                     </div>
                     <div class="cart-switch__item">
                       <div class="cart__image">
                         <img
-                          src="./images/product-cart-sec/04.jpg"
-                          alt="Фотография продукта"
-                          loading="lazy" />
+                                src="./images/product-cart-sec/04.jpg"
+                                alt="Фотография продукта"
+                                loading="lazy" />
                       </div>
                     </div>
                     <div class="cart-switch__item">
                       <div class="cart__image">
                         <img
-                          src="./images/product-cart-sec/03.jpg"
-                          alt="Фотография продукта"
-                          loading="lazy" />
+                                src="./images/product-cart-sec/03.jpg"
+                                alt="Фотография продукта"
+                                loading="lazy" />
                       </div>
                     </div>
                     <div class="cart-switch__item">
                       <div class="cart__image">
                         <img
-                          src="./images/product-cart-sec/03bb.jpg"
-                          alt="Фотография продукта"
-                          loading="lazy" />
+                                src="./images/product-cart-sec/03bb.jpg"
+                                alt="Фотография продукта"
+                                loading="lazy" />
                       </div>
                     </div>
                   </div>
                   <ul class="image-pagination" aria-hidden="true"></ul>
                   <div class="favorites-icon">
                     <svg
-                      width="70"
-                      height="70"
-                      viewBox="0 0 70 70"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
+                            width="70"
+                            height="70"
+                            viewBox="0 0 70 70"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                       <g filter="url(#filter0_d_54_1610)">
                         <rect
-                          x="5"
-                          y="5"
-                          width="60"
-                          height="60"
-                          rx="30"
-                          fill="currentColor" />
+                                x="5"
+                                y="5"
+                                width="60"
+                                height="60"
+                                rx="30"
+                                fill="currentColor" />
                         <path
-                          d="M34.069 48.3453L34.0694 48.3455C34.2585 48.4604 34.3846 48.5401 34.4776
+                                d="M34.069 48.3453L34.0694 48.3455C34.2585 48.4604 34.3846 48.5401 34.4776
                                                     48.5989C34.5691 48.6567 34.6285 48.6943 34.6843 48.7251L34.6861 48.7262C34.8671
                                                     48.8268 35.1329 48.8268 35.3139 48.7262L35.3157 48.7251C35.3715 48.6943 35.4309
                                                     48.6567 35.5224 48.5989C35.6154 48.5401 35.7415 48.4604 35.9306 48.3455L35.931
@@ -3714,64 +3721,61 @@
                                                     27.3756 43.3636L34.069 48.3453ZM34.069 48.3453C33.5747 48.0451 33.0164 47.6808 32.4094
                                                     47.272M34.069 48.3453L32.4094 47.272M32.4094 47.272C30.6865 46.107 28.9658 44.8208
                                                     27.3758 43.3638L32.4094 47.272Z"
-                          fill="currentColor"
-                          stroke="#FEFEFE"
-                          stroke-width="2" />
+                                fill="currentColor"
+                                stroke="#FEFEFE"
+                                stroke-width="2" />
                       </g>
                       <defs>
                         <filter
-                          id="filter0_d_54_16101"
-                          x="0"
-                          y="0"
-                          width="70"
-                          height="70"
-                          filterUnits="userSpaceOnUse"
-                          color-interpolation-filters="sRGB">
+                                id="filter0_d_54_16101"
+                                x="0"
+                                y="0"
+                                width="70"
+                                height="70"
+                                filterUnits="userSpaceOnUse"
+                                color-interpolation-filters="sRGB">
                           <feFlood
-                            flood-opacity="0"
-                            result="BackgroundImageFix" />
+                                  flood-opacity="0"
+                                  result="BackgroundImageFix" />
                           <feColorMatrix
-                            in="SourceAlpha"
-                            type="matrix"
-                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                            result="hardAlpha" />
+                                  in="SourceAlpha"
+                                  type="matrix"
+                                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                  result="hardAlpha" />
                           <feOffset />
                           <feGaussianBlur stdDeviation="2.5" />
                           <feColorMatrix
-                            type="matrix"
-                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
+                                  type="matrix"
+                                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
                           <feBlend
-                            mode="normal"
-                            in2="BackgroundImageFix"
-                            result="effect1_dropShadow_54_1610" />
+                                  mode="normal"
+                                  in2="BackgroundImageFix"
+                                  result="effect1_dropShadow_54_1610" />
                           <feBlend
-                            mode="normal"
-                            in="SourceGraphic"
-                            in2="effect1_dropShadow_54_1610"
-                            result="shape" />
+                                  mode="normal"
+                                  in="SourceGraphic"
+                                  in2="effect1_dropShadow_54_1610"
+                                  result="shape" />
                         </filter>
                       </defs>
                     </svg>
                   </div>
                   <div class="cart__availability">В наличии</div>
                 </div>
-                <h3 class="cart__title">
-                  Установка <br />
-                  ГНБ PRIDE M12x30
-                </h3>
-                <div class="cart__subtitle">
-                  Малогабаритные буровые установки
-                </div>
-                <div class="cart__desc">
-                  Установка ГНБ PRIDE M12x30 с 30ти-тонным тяговым усилием
-                  позволяет протягивать металлические трубы и трубы ПНД до 1 200
-                  мм в диаметре.
-                </div>
-                <div class="cart__btn-box">
-                  <button class="btn cart__btn">Прайс</button>
-                  <a href="product-cart.html" class="btn cart__btn-details"
+                <div class="cart__wrapper-text">
+                  <h3 class="cart__title">Установка ГНБ PRIDE M12x30</h3>
+                  <div class="cart__subtitle">
+                    Малогабаритные буровые установки
+                  </div>
+                  <div class="cart__text">
+                    Установка ГНБ PRIDE M12x30 с 30ти-тонным тяговым усилием позволяет протягивать металлические трубы и трубы
+                  </div>
+                  <div class="cart__btn-box">
+                    <button class="btn cart__btn">Оставить заявку</button>
+                    <a href="product-cart.html" class="btn cart__btn-details"
                     >Подробнее</a
-                  >
+                    >
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide products-slide">
@@ -3780,54 +3784,54 @@
                     <div class="cart-switch__item">
                       <div class="cart__image">
                         <img
-                          src="./images/catalog/01.jpg"
-                          alt="Фотография продукта"
-                          loading="lazy" />
+                                src="./images/catalog/01.jpg"
+                                alt="Фотография продукта"
+                                loading="lazy" />
                       </div>
                     </div>
                     <div class="cart-switch__item">
                       <div class="cart__image">
                         <img
-                          src="./images/product-cart-sec/04.jpg"
-                          alt="Фотография продукта"
-                          loading="lazy" />
+                                src="./images/product-cart-sec/04.jpg"
+                                alt="Фотография продукта"
+                                loading="lazy" />
                       </div>
                     </div>
                     <div class="cart-switch__item">
                       <div class="cart__image">
                         <img
-                          src="./images/product-cart-sec/03.jpg"
-                          alt="Фотография продукта"
-                          loading="lazy" />
+                                src="./images/product-cart-sec/03.jpg"
+                                alt="Фотография продукта"
+                                loading="lazy" />
                       </div>
                     </div>
                     <div class="cart-switch__item">
                       <div class="cart__image">
                         <img
-                          src="./images/product-cart-sec/03bb.jpg"
-                          alt="Фотография продукта"
-                          loading="lazy" />
+                                src="./images/product-cart-sec/03bb.jpg"
+                                alt="Фотография продукта"
+                                loading="lazy" />
                       </div>
                     </div>
                   </div>
                   <ul class="image-pagination" aria-hidden="true"></ul>
                   <div class="favorites-icon">
                     <svg
-                      width="70"
-                      height="70"
-                      viewBox="0 0 70 70"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
+                            width="70"
+                            height="70"
+                            viewBox="0 0 70 70"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                       <g filter="url(#filter0_d_54_1610)">
                         <rect
-                          x="5"
-                          y="5"
-                          width="60"
-                          height="60"
-                          rx="30"
-                          fill="currentColor" />
+                                x="5"
+                                y="5"
+                                width="60"
+                                height="60"
+                                rx="30"
+                                fill="currentColor" />
                         <path
-                          d="M34.069 48.3453L34.0694 48.3455C34.2585 48.4604 34.3846 48.5401 34.4776
+                                d="M34.069 48.3453L34.0694 48.3455C34.2585 48.4604 34.3846 48.5401 34.4776
                                                     48.5989C34.5691 48.6567 34.6285 48.6943 34.6843 48.7251L34.6861 48.7262C34.8671
                                                     48.8268 35.1329 48.8268 35.3139 48.7262L35.3157 48.7251C35.3715 48.6943 35.4309
                                                     48.6567 35.5224 48.5989C35.6154 48.5401 35.7415 48.4604 35.9306 48.3455L35.931
@@ -3838,64 +3842,61 @@
                                                     27.3756 43.3636L34.069 48.3453ZM34.069 48.3453C33.5747 48.0451 33.0164 47.6808 32.4094
                                                     47.272M34.069 48.3453L32.4094 47.272M32.4094 47.272C30.6865 46.107 28.9658 44.8208
                                                     27.3758 43.3638L32.4094 47.272Z"
-                          fill="currentColor"
-                          stroke="#FEFEFE"
-                          stroke-width="2" />
+                                fill="currentColor"
+                                stroke="#FEFEFE"
+                                stroke-width="2" />
                       </g>
                       <defs>
                         <filter
-                          id="filter0_d_54_16101"
-                          x="0"
-                          y="0"
-                          width="70"
-                          height="70"
-                          filterUnits="userSpaceOnUse"
-                          color-interpolation-filters="sRGB">
+                                id="filter0_d_54_16101"
+                                x="0"
+                                y="0"
+                                width="70"
+                                height="70"
+                                filterUnits="userSpaceOnUse"
+                                color-interpolation-filters="sRGB">
                           <feFlood
-                            flood-opacity="0"
-                            result="BackgroundImageFix" />
+                                  flood-opacity="0"
+                                  result="BackgroundImageFix" />
                           <feColorMatrix
-                            in="SourceAlpha"
-                            type="matrix"
-                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                            result="hardAlpha" />
+                                  in="SourceAlpha"
+                                  type="matrix"
+                                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                  result="hardAlpha" />
                           <feOffset />
                           <feGaussianBlur stdDeviation="2.5" />
                           <feColorMatrix
-                            type="matrix"
-                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
+                                  type="matrix"
+                                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
                           <feBlend
-                            mode="normal"
-                            in2="BackgroundImageFix"
-                            result="effect1_dropShadow_54_1610" />
+                                  mode="normal"
+                                  in2="BackgroundImageFix"
+                                  result="effect1_dropShadow_54_1610" />
                           <feBlend
-                            mode="normal"
-                            in="SourceGraphic"
-                            in2="effect1_dropShadow_54_1610"
-                            result="shape" />
+                                  mode="normal"
+                                  in="SourceGraphic"
+                                  in2="effect1_dropShadow_54_1610"
+                                  result="shape" />
                         </filter>
                       </defs>
                     </svg>
                   </div>
                   <div class="cart__availability">В наличии</div>
                 </div>
-                <h3 class="cart__title">
-                  Установка <br />
-                  ГНБ PRIDE M12x30
-                </h3>
-                <div class="cart__subtitle">
-                  Малогабаритные буровые установки
-                </div>
-                <div class="cart__desc">
-                  Установка ГНБ PRIDE M12x30 с 30ти-тонным тяговым усилием
-                  позволяет протягивать металлические трубы и трубы ПНД до 1 200
-                  мм в диаметре.
-                </div>
-                <div class="cart__btn-box">
-                  <button class="btn cart__btn">Прайс</button>
-                  <a href="product-cart.html" class="btn cart__btn-details"
+                <div class="cart__wrapper-text">
+                  <h3 class="cart__title">Установка ГНБ PRIDE M12x30</h3>
+                  <div class="cart__subtitle">
+                    Малогабаритные буровые установки
+                  </div>
+                  <div class="cart__text">
+                    Установка ГНБ PRIDE M12x30 с 30ти-тонным тяговым усилием позволяет протягивать металлические трубы и трубы
+                  </div>
+                  <div class="cart__btn-box">
+                    <button class="btn cart__btn">Оставить заявку</button>
+                    <a href="product-cart.html" class="btn cart__btn-details"
                     >Подробнее</a
-                  >
+                    >
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide products-slide">
@@ -3904,54 +3905,54 @@
                     <div class="cart-switch__item">
                       <div class="cart__image">
                         <img
-                          src="./images/catalog/01.jpg"
-                          alt="Фотография продукта"
-                          loading="lazy" />
+                                src="./images/catalog/01.jpg"
+                                alt="Фотография продукта"
+                                loading="lazy" />
                       </div>
                     </div>
                     <div class="cart-switch__item">
                       <div class="cart__image">
                         <img
-                          src="./images/product-cart-sec/04.jpg"
-                          alt="Фотография продукта"
-                          loading="lazy" />
+                                src="./images/product-cart-sec/04.jpg"
+                                alt="Фотография продукта"
+                                loading="lazy" />
                       </div>
                     </div>
                     <div class="cart-switch__item">
                       <div class="cart__image">
                         <img
-                          src="./images/product-cart-sec/03.jpg"
-                          alt="Фотография продукта"
-                          loading="lazy" />
+                                src="./images/product-cart-sec/03.jpg"
+                                alt="Фотография продукта"
+                                loading="lazy" />
                       </div>
                     </div>
                     <div class="cart-switch__item">
                       <div class="cart__image">
                         <img
-                          src="./images/product-cart-sec/03bb.jpg"
-                          alt="Фотография продукта"
-                          loading="lazy" />
+                                src="./images/product-cart-sec/03bb.jpg"
+                                alt="Фотография продукта"
+                                loading="lazy" />
                       </div>
                     </div>
                   </div>
                   <ul class="image-pagination" aria-hidden="true"></ul>
                   <div class="favorites-icon">
                     <svg
-                      width="70"
-                      height="70"
-                      viewBox="0 0 70 70"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
+                            width="70"
+                            height="70"
+                            viewBox="0 0 70 70"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                       <g filter="url(#filter0_d_54_1610)">
                         <rect
-                          x="5"
-                          y="5"
-                          width="60"
-                          height="60"
-                          rx="30"
-                          fill="currentColor" />
+                                x="5"
+                                y="5"
+                                width="60"
+                                height="60"
+                                rx="30"
+                                fill="currentColor" />
                         <path
-                          d="M34.069 48.3453L34.0694 48.3455C34.2585 48.4604 34.3846 48.5401 34.4776
+                                d="M34.069 48.3453L34.0694 48.3455C34.2585 48.4604 34.3846 48.5401 34.4776
                                                     48.5989C34.5691 48.6567 34.6285 48.6943 34.6843 48.7251L34.6861 48.7262C34.8671
                                                     48.8268 35.1329 48.8268 35.3139 48.7262L35.3157 48.7251C35.3715 48.6943 35.4309
                                                     48.6567 35.5224 48.5989C35.6154 48.5401 35.7415 48.4604 35.9306 48.3455L35.931
@@ -3962,64 +3963,61 @@
                                                     27.3756 43.3636L34.069 48.3453ZM34.069 48.3453C33.5747 48.0451 33.0164 47.6808 32.4094
                                                     47.272M34.069 48.3453L32.4094 47.272M32.4094 47.272C30.6865 46.107 28.9658 44.8208
                                                     27.3758 43.3638L32.4094 47.272Z"
-                          fill="currentColor"
-                          stroke="#FEFEFE"
-                          stroke-width="2" />
+                                fill="currentColor"
+                                stroke="#FEFEFE"
+                                stroke-width="2" />
                       </g>
                       <defs>
                         <filter
-                          id="filter0_d_54_16101"
-                          x="0"
-                          y="0"
-                          width="70"
-                          height="70"
-                          filterUnits="userSpaceOnUse"
-                          color-interpolation-filters="sRGB">
+                                id="filter0_d_54_16101"
+                                x="0"
+                                y="0"
+                                width="70"
+                                height="70"
+                                filterUnits="userSpaceOnUse"
+                                color-interpolation-filters="sRGB">
                           <feFlood
-                            flood-opacity="0"
-                            result="BackgroundImageFix" />
+                                  flood-opacity="0"
+                                  result="BackgroundImageFix" />
                           <feColorMatrix
-                            in="SourceAlpha"
-                            type="matrix"
-                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                            result="hardAlpha" />
+                                  in="SourceAlpha"
+                                  type="matrix"
+                                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                  result="hardAlpha" />
                           <feOffset />
                           <feGaussianBlur stdDeviation="2.5" />
                           <feColorMatrix
-                            type="matrix"
-                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
+                                  type="matrix"
+                                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
                           <feBlend
-                            mode="normal"
-                            in2="BackgroundImageFix"
-                            result="effect1_dropShadow_54_1610" />
+                                  mode="normal"
+                                  in2="BackgroundImageFix"
+                                  result="effect1_dropShadow_54_1610" />
                           <feBlend
-                            mode="normal"
-                            in="SourceGraphic"
-                            in2="effect1_dropShadow_54_1610"
-                            result="shape" />
+                                  mode="normal"
+                                  in="SourceGraphic"
+                                  in2="effect1_dropShadow_54_1610"
+                                  result="shape" />
                         </filter>
                       </defs>
                     </svg>
                   </div>
                   <div class="cart__availability">В наличии</div>
                 </div>
-                <h3 class="cart__title">
-                  Установка <br />
-                  ГНБ PRIDE M12x30
-                </h3>
-                <div class="cart__subtitle">
-                  Малогабаритные буровые установки
-                </div>
-                <div class="cart__desc">
-                  Установка ГНБ PRIDE M12x30 с 30ти-тонным тяговым усилием
-                  позволяет протягивать металлические трубы и трубы ПНД до 1 200
-                  мм в диаметре.
-                </div>
-                <div class="cart__btn-box">
-                  <button class="btn cart__btn">Прайс</button>
-                  <a href="product-cart.html" class="btn cart__btn-details"
+                <div class="cart__wrapper-text">
+                  <h3 class="cart__title">Установка ГНБ PRIDE M12x30</h3>
+                  <div class="cart__subtitle">
+                    Малогабаритные буровые установки
+                  </div>
+                  <div class="cart__text">
+                    Установка ГНБ PRIDE M12x30 с 30ти-тонным тяговым усилием позволяет протягивать металлические трубы и трубы
+                  </div>
+                  <div class="cart__btn-box">
+                    <button class="btn cart__btn">Оставить заявку</button>
+                    <a href="product-cart.html" class="btn cart__btn-details"
                     >Подробнее</a
-                  >
+                    >
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide products-slide">
@@ -4028,54 +4026,54 @@
                     <div class="cart-switch__item">
                       <div class="cart__image">
                         <img
-                          src="./images/catalog/01.jpg"
-                          alt="Фотография продукта"
-                          loading="lazy" />
+                                src="./images/catalog/01.jpg"
+                                alt="Фотография продукта"
+                                loading="lazy" />
                       </div>
                     </div>
                     <div class="cart-switch__item">
                       <div class="cart__image">
                         <img
-                          src="./images/product-cart-sec/04.jpg"
-                          alt="Фотография продукта"
-                          loading="lazy" />
+                                src="./images/product-cart-sec/04.jpg"
+                                alt="Фотография продукта"
+                                loading="lazy" />
                       </div>
                     </div>
                     <div class="cart-switch__item">
                       <div class="cart__image">
                         <img
-                          src="./images/product-cart-sec/03.jpg"
-                          alt="Фотография продукта"
-                          loading="lazy" />
+                                src="./images/product-cart-sec/03.jpg"
+                                alt="Фотография продукта"
+                                loading="lazy" />
                       </div>
                     </div>
                     <div class="cart-switch__item">
                       <div class="cart__image">
                         <img
-                          src="./images/product-cart-sec/03bb.jpg"
-                          alt="Фотография продукта"
-                          loading="lazy" />
+                                src="./images/product-cart-sec/03bb.jpg"
+                                alt="Фотография продукта"
+                                loading="lazy" />
                       </div>
                     </div>
                   </div>
                   <ul class="image-pagination" aria-hidden="true"></ul>
                   <div class="favorites-icon">
                     <svg
-                      width="70"
-                      height="70"
-                      viewBox="0 0 70 70"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
+                            width="70"
+                            height="70"
+                            viewBox="0 0 70 70"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                       <g filter="url(#filter0_d_54_1610)">
                         <rect
-                          x="5"
-                          y="5"
-                          width="60"
-                          height="60"
-                          rx="30"
-                          fill="currentColor" />
+                                x="5"
+                                y="5"
+                                width="60"
+                                height="60"
+                                rx="30"
+                                fill="currentColor" />
                         <path
-                          d="M34.069 48.3453L34.0694 48.3455C34.2585 48.4604 34.3846 48.5401 34.4776
+                                d="M34.069 48.3453L34.0694 48.3455C34.2585 48.4604 34.3846 48.5401 34.4776
                                                     48.5989C34.5691 48.6567 34.6285 48.6943 34.6843 48.7251L34.6861 48.7262C34.8671
                                                     48.8268 35.1329 48.8268 35.3139 48.7262L35.3157 48.7251C35.3715 48.6943 35.4309
                                                     48.6567 35.5224 48.5989C35.6154 48.5401 35.7415 48.4604 35.9306 48.3455L35.931
@@ -4086,64 +4084,61 @@
                                                     27.3756 43.3636L34.069 48.3453ZM34.069 48.3453C33.5747 48.0451 33.0164 47.6808 32.4094
                                                     47.272M34.069 48.3453L32.4094 47.272M32.4094 47.272C30.6865 46.107 28.9658 44.8208
                                                     27.3758 43.3638L32.4094 47.272Z"
-                          fill="currentColor"
-                          stroke="#FEFEFE"
-                          stroke-width="2" />
+                                fill="currentColor"
+                                stroke="#FEFEFE"
+                                stroke-width="2" />
                       </g>
                       <defs>
                         <filter
-                          id="filter0_d_54_16101"
-                          x="0"
-                          y="0"
-                          width="70"
-                          height="70"
-                          filterUnits="userSpaceOnUse"
-                          color-interpolation-filters="sRGB">
+                                id="filter0_d_54_16101"
+                                x="0"
+                                y="0"
+                                width="70"
+                                height="70"
+                                filterUnits="userSpaceOnUse"
+                                color-interpolation-filters="sRGB">
                           <feFlood
-                            flood-opacity="0"
-                            result="BackgroundImageFix" />
+                                  flood-opacity="0"
+                                  result="BackgroundImageFix" />
                           <feColorMatrix
-                            in="SourceAlpha"
-                            type="matrix"
-                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                            result="hardAlpha" />
+                                  in="SourceAlpha"
+                                  type="matrix"
+                                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                  result="hardAlpha" />
                           <feOffset />
                           <feGaussianBlur stdDeviation="2.5" />
                           <feColorMatrix
-                            type="matrix"
-                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
+                                  type="matrix"
+                                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
                           <feBlend
-                            mode="normal"
-                            in2="BackgroundImageFix"
-                            result="effect1_dropShadow_54_1610" />
+                                  mode="normal"
+                                  in2="BackgroundImageFix"
+                                  result="effect1_dropShadow_54_1610" />
                           <feBlend
-                            mode="normal"
-                            in="SourceGraphic"
-                            in2="effect1_dropShadow_54_1610"
-                            result="shape" />
+                                  mode="normal"
+                                  in="SourceGraphic"
+                                  in2="effect1_dropShadow_54_1610"
+                                  result="shape" />
                         </filter>
                       </defs>
                     </svg>
                   </div>
                   <div class="cart__availability">В наличии</div>
                 </div>
-                <h3 class="cart__title">
-                  Установка <br />
-                  ГНБ PRIDE M12x30
-                </h3>
-                <div class="cart__subtitle">
-                  Малогабаритные буровые установки
-                </div>
-                <div class="cart__desc">
-                  Установка ГНБ PRIDE M12x30 с 30ти-тонным тяговым усилием
-                  позволяет протягивать металлические трубы и трубы ПНД до 1 200
-                  мм в диаметре.
-                </div>
-                <div class="cart__btn-box">
-                  <button class="btn cart__btn">Прайс</button>
-                  <a href="product-cart.html" class="btn cart__btn-details"
+                <div class="cart__wrapper-text">
+                  <h3 class="cart__title">Установка ГНБ PRIDE M12x30</h3>
+                  <div class="cart__subtitle">
+                    Малогабаритные буровые установки
+                  </div>
+                  <div class="cart__text">
+                    Установка ГНБ PRIDE M12x30 с 30ти-тонным тяговым усилием позволяет протягивать металлические трубы и трубы
+                  </div>
+                  <div class="cart__btn-box">
+                    <button class="btn cart__btn">Оставить заявку</button>
+                    <a href="product-cart.html" class="btn cart__btn-details"
                     >Подробнее</a
-                  >
+                    >
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide products-slide">
@@ -4152,54 +4147,54 @@
                     <div class="cart-switch__item">
                       <div class="cart__image">
                         <img
-                          src="./images/catalog/01.jpg"
-                          alt="Фотография продукта"
-                          loading="lazy" />
+                                src="./images/catalog/01.jpg"
+                                alt="Фотография продукта"
+                                loading="lazy" />
                       </div>
                     </div>
                     <div class="cart-switch__item">
                       <div class="cart__image">
                         <img
-                          src="./images/product-cart-sec/04.jpg"
-                          alt="Фотография продукта"
-                          loading="lazy" />
+                                src="./images/product-cart-sec/04.jpg"
+                                alt="Фотография продукта"
+                                loading="lazy" />
                       </div>
                     </div>
                     <div class="cart-switch__item">
                       <div class="cart__image">
                         <img
-                          src="./images/product-cart-sec/03.jpg"
-                          alt="Фотография продукта"
-                          loading="lazy" />
+                                src="./images/product-cart-sec/03.jpg"
+                                alt="Фотография продукта"
+                                loading="lazy" />
                       </div>
                     </div>
                     <div class="cart-switch__item">
                       <div class="cart__image">
                         <img
-                          src="./images/product-cart-sec/03bb.jpg"
-                          alt="Фотография продукта"
-                          loading="lazy" />
+                                src="./images/product-cart-sec/03bb.jpg"
+                                alt="Фотография продукта"
+                                loading="lazy" />
                       </div>
                     </div>
                   </div>
                   <ul class="image-pagination" aria-hidden="true"></ul>
                   <div class="favorites-icon">
                     <svg
-                      width="70"
-                      height="70"
-                      viewBox="0 0 70 70"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
+                            width="70"
+                            height="70"
+                            viewBox="0 0 70 70"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                       <g filter="url(#filter0_d_54_1610)">
                         <rect
-                          x="5"
-                          y="5"
-                          width="60"
-                          height="60"
-                          rx="30"
-                          fill="currentColor" />
+                                x="5"
+                                y="5"
+                                width="60"
+                                height="60"
+                                rx="30"
+                                fill="currentColor" />
                         <path
-                          d="M34.069 48.3453L34.0694 48.3455C34.2585 48.4604 34.3846 48.5401 34.4776
+                                d="M34.069 48.3453L34.0694 48.3455C34.2585 48.4604 34.3846 48.5401 34.4776
                                                     48.5989C34.5691 48.6567 34.6285 48.6943 34.6843 48.7251L34.6861 48.7262C34.8671
                                                     48.8268 35.1329 48.8268 35.3139 48.7262L35.3157 48.7251C35.3715 48.6943 35.4309
                                                     48.6567 35.5224 48.5989C35.6154 48.5401 35.7415 48.4604 35.9306 48.3455L35.931
@@ -4210,64 +4205,61 @@
                                                     27.3756 43.3636L34.069 48.3453ZM34.069 48.3453C33.5747 48.0451 33.0164 47.6808 32.4094
                                                     47.272M34.069 48.3453L32.4094 47.272M32.4094 47.272C30.6865 46.107 28.9658 44.8208
                                                     27.3758 43.3638L32.4094 47.272Z"
-                          fill="currentColor"
-                          stroke="#FEFEFE"
-                          stroke-width="2" />
+                                fill="currentColor"
+                                stroke="#FEFEFE"
+                                stroke-width="2" />
                       </g>
                       <defs>
                         <filter
-                          id="filter0_d_54_16101"
-                          x="0"
-                          y="0"
-                          width="70"
-                          height="70"
-                          filterUnits="userSpaceOnUse"
-                          color-interpolation-filters="sRGB">
+                                id="filter0_d_54_16101"
+                                x="0"
+                                y="0"
+                                width="70"
+                                height="70"
+                                filterUnits="userSpaceOnUse"
+                                color-interpolation-filters="sRGB">
                           <feFlood
-                            flood-opacity="0"
-                            result="BackgroundImageFix" />
+                                  flood-opacity="0"
+                                  result="BackgroundImageFix" />
                           <feColorMatrix
-                            in="SourceAlpha"
-                            type="matrix"
-                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                            result="hardAlpha" />
+                                  in="SourceAlpha"
+                                  type="matrix"
+                                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                  result="hardAlpha" />
                           <feOffset />
                           <feGaussianBlur stdDeviation="2.5" />
                           <feColorMatrix
-                            type="matrix"
-                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
+                                  type="matrix"
+                                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
                           <feBlend
-                            mode="normal"
-                            in2="BackgroundImageFix"
-                            result="effect1_dropShadow_54_1610" />
+                                  mode="normal"
+                                  in2="BackgroundImageFix"
+                                  result="effect1_dropShadow_54_1610" />
                           <feBlend
-                            mode="normal"
-                            in="SourceGraphic"
-                            in2="effect1_dropShadow_54_1610"
-                            result="shape" />
+                                  mode="normal"
+                                  in="SourceGraphic"
+                                  in2="effect1_dropShadow_54_1610"
+                                  result="shape" />
                         </filter>
                       </defs>
                     </svg>
                   </div>
                   <div class="cart__availability">В наличии</div>
                 </div>
-                <h3 class="cart__title">
-                  Установка <br />
-                  ГНБ PRIDE M12x30
-                </h3>
-                <div class="cart__subtitle">
-                  Малогабаритные буровые установки
-                </div>
-                <div class="cart__desc">
-                  Установка ГНБ PRIDE M12x30 с 30ти-тонным тяговым усилием
-                  позволяет протягивать металлические трубы и трубы ПНД до 1 200
-                  мм в диаметре.
-                </div>
-                <div class="cart__btn-box">
-                  <button class="btn cart__btn">Прайс</button>
-                  <a href="product-cart.html" class="btn cart__btn-details"
+                <div class="cart__wrapper-text">
+                  <h3 class="cart__title">Установка ГНБ PRIDE M12x30</h3>
+                  <div class="cart__subtitle">
+                    Малогабаритные буровые установки
+                  </div>
+                  <div class="cart__text">
+                    Установка ГНБ PRIDE M12x30 с 30ти-тонным тяговым усилием позволяет протягивать металлические трубы и трубы
+                  </div>
+                  <div class="cart__btn-box">
+                    <button class="btn cart__btn">Оставить заявку</button>
+                    <a href="product-cart.html" class="btn cart__btn-details"
                     >Подробнее</a
-                  >
+                    >
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide products-slide">
@@ -4276,54 +4268,54 @@
                     <div class="cart-switch__item">
                       <div class="cart__image">
                         <img
-                          src="./images/catalog/01.jpg"
-                          alt="Фотография продукта"
-                          loading="lazy" />
+                                src="./images/catalog/01.jpg"
+                                alt="Фотография продукта"
+                                loading="lazy" />
                       </div>
                     </div>
                     <div class="cart-switch__item">
                       <div class="cart__image">
                         <img
-                          src="./images/product-cart-sec/04.jpg"
-                          alt="Фотография продукта"
-                          loading="lazy" />
+                                src="./images/product-cart-sec/04.jpg"
+                                alt="Фотография продукта"
+                                loading="lazy" />
                       </div>
                     </div>
                     <div class="cart-switch__item">
                       <div class="cart__image">
                         <img
-                          src="./images/product-cart-sec/03.jpg"
-                          alt="Фотография продукта"
-                          loading="lazy" />
+                                src="./images/product-cart-sec/03.jpg"
+                                alt="Фотография продукта"
+                                loading="lazy" />
                       </div>
                     </div>
                     <div class="cart-switch__item">
                       <div class="cart__image">
                         <img
-                          src="./images/product-cart-sec/03bb.jpg"
-                          alt="Фотография продукта"
-                          loading="lazy" />
+                                src="./images/product-cart-sec/03bb.jpg"
+                                alt="Фотография продукта"
+                                loading="lazy" />
                       </div>
                     </div>
                   </div>
                   <ul class="image-pagination" aria-hidden="true"></ul>
                   <div class="favorites-icon">
                     <svg
-                      width="70"
-                      height="70"
-                      viewBox="0 0 70 70"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
+                            width="70"
+                            height="70"
+                            viewBox="0 0 70 70"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                       <g filter="url(#filter0_d_54_1610)">
                         <rect
-                          x="5"
-                          y="5"
-                          width="60"
-                          height="60"
-                          rx="30"
-                          fill="currentColor" />
+                                x="5"
+                                y="5"
+                                width="60"
+                                height="60"
+                                rx="30"
+                                fill="currentColor" />
                         <path
-                          d="M34.069 48.3453L34.0694 48.3455C34.2585 48.4604 34.3846 48.5401 34.4776
+                                d="M34.069 48.3453L34.0694 48.3455C34.2585 48.4604 34.3846 48.5401 34.4776
                                                     48.5989C34.5691 48.6567 34.6285 48.6943 34.6843 48.7251L34.6861 48.7262C34.8671
                                                     48.8268 35.1329 48.8268 35.3139 48.7262L35.3157 48.7251C35.3715 48.6943 35.4309
                                                     48.6567 35.5224 48.5989C35.6154 48.5401 35.7415 48.4604 35.9306 48.3455L35.931
@@ -4334,64 +4326,61 @@
                                                     27.3756 43.3636L34.069 48.3453ZM34.069 48.3453C33.5747 48.0451 33.0164 47.6808 32.4094
                                                     47.272M34.069 48.3453L32.4094 47.272M32.4094 47.272C30.6865 46.107 28.9658 44.8208
                                                     27.3758 43.3638L32.4094 47.272Z"
-                          fill="currentColor"
-                          stroke="#FEFEFE"
-                          stroke-width="2" />
+                                fill="currentColor"
+                                stroke="#FEFEFE"
+                                stroke-width="2" />
                       </g>
                       <defs>
                         <filter
-                          id="filter0_d_54_16101"
-                          x="0"
-                          y="0"
-                          width="70"
-                          height="70"
-                          filterUnits="userSpaceOnUse"
-                          color-interpolation-filters="sRGB">
+                                id="filter0_d_54_16101"
+                                x="0"
+                                y="0"
+                                width="70"
+                                height="70"
+                                filterUnits="userSpaceOnUse"
+                                color-interpolation-filters="sRGB">
                           <feFlood
-                            flood-opacity="0"
-                            result="BackgroundImageFix" />
+                                  flood-opacity="0"
+                                  result="BackgroundImageFix" />
                           <feColorMatrix
-                            in="SourceAlpha"
-                            type="matrix"
-                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                            result="hardAlpha" />
+                                  in="SourceAlpha"
+                                  type="matrix"
+                                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                  result="hardAlpha" />
                           <feOffset />
                           <feGaussianBlur stdDeviation="2.5" />
                           <feColorMatrix
-                            type="matrix"
-                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
+                                  type="matrix"
+                                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
                           <feBlend
-                            mode="normal"
-                            in2="BackgroundImageFix"
-                            result="effect1_dropShadow_54_1610" />
+                                  mode="normal"
+                                  in2="BackgroundImageFix"
+                                  result="effect1_dropShadow_54_1610" />
                           <feBlend
-                            mode="normal"
-                            in="SourceGraphic"
-                            in2="effect1_dropShadow_54_1610"
-                            result="shape" />
+                                  mode="normal"
+                                  in="SourceGraphic"
+                                  in2="effect1_dropShadow_54_1610"
+                                  result="shape" />
                         </filter>
                       </defs>
                     </svg>
                   </div>
                   <div class="cart__availability">В наличии</div>
                 </div>
-                <h3 class="cart__title">
-                  Установка <br />
-                  ГНБ PRIDE M12x30
-                </h3>
-                <div class="cart__subtitle">
-                  Малогабаритные буровые установки
-                </div>
-                <div class="cart__desc">
-                  Установка ГНБ PRIDE M12x30 с 30ти-тонным тяговым усилием
-                  позволяет протягивать металлические трубы и трубы ПНД до 1 200
-                  мм в диаметре.
-                </div>
-                <div class="cart__btn-box">
-                  <button class="btn cart__btn">Прайс</button>
-                  <a href="product-cart.html" class="btn cart__btn-details"
+                <div class="cart__wrapper-text">
+                  <h3 class="cart__title">Установка ГНБ PRIDE M12x30</h3>
+                  <div class="cart__subtitle">
+                    Малогабаритные буровые установки
+                  </div>
+                  <div class="cart__text">
+                    Установка ГНБ PRIDE M12x30 с 30ти-тонным тяговым усилием позволяет протягивать металлические трубы и трубы
+                  </div>
+                  <div class="cart__btn-box">
+                    <button class="btn cart__btn">Оставить заявку</button>
+                    <a href="product-cart.html" class="btn cart__btn-details"
                     >Подробнее</a
-                  >
+                    >
+                  </div>
                 </div>
               </div>
               <div class="swiper-slide products-slide">
@@ -4400,54 +4389,54 @@
                     <div class="cart-switch__item">
                       <div class="cart__image">
                         <img
-                          src="./images/catalog/01.jpg"
-                          alt="Фотография продукта"
-                          loading="lazy" />
+                                src="./images/catalog/01.jpg"
+                                alt="Фотография продукта"
+                                loading="lazy" />
                       </div>
                     </div>
                     <div class="cart-switch__item">
                       <div class="cart__image">
                         <img
-                          src="./images/product-cart-sec/04.jpg"
-                          alt="Фотография продукта"
-                          loading="lazy" />
+                                src="./images/product-cart-sec/04.jpg"
+                                alt="Фотография продукта"
+                                loading="lazy" />
                       </div>
                     </div>
                     <div class="cart-switch__item">
                       <div class="cart__image">
                         <img
-                          src="./images/product-cart-sec/03.jpg"
-                          alt="Фотография продукта"
-                          loading="lazy" />
+                                src="./images/product-cart-sec/03.jpg"
+                                alt="Фотография продукта"
+                                loading="lazy" />
                       </div>
                     </div>
                     <div class="cart-switch__item">
                       <div class="cart__image">
                         <img
-                          src="./images/product-cart-sec/03bb.jpg"
-                          alt="Фотография продукта"
-                          loading="lazy" />
+                                src="./images/product-cart-sec/03bb.jpg"
+                                alt="Фотография продукта"
+                                loading="lazy" />
                       </div>
                     </div>
                   </div>
                   <ul class="image-pagination" aria-hidden="true"></ul>
                   <div class="favorites-icon">
                     <svg
-                      width="70"
-                      height="70"
-                      viewBox="0 0 70 70"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
+                            width="70"
+                            height="70"
+                            viewBox="0 0 70 70"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
                       <g filter="url(#filter0_d_54_1610)">
                         <rect
-                          x="5"
-                          y="5"
-                          width="60"
-                          height="60"
-                          rx="30"
-                          fill="currentColor" />
+                                x="5"
+                                y="5"
+                                width="60"
+                                height="60"
+                                rx="30"
+                                fill="currentColor" />
                         <path
-                          d="M34.069 48.3453L34.0694 48.3455C34.2585 48.4604 34.3846 48.5401 34.4776
+                                d="M34.069 48.3453L34.0694 48.3455C34.2585 48.4604 34.3846 48.5401 34.4776
                                                     48.5989C34.5691 48.6567 34.6285 48.6943 34.6843 48.7251L34.6861 48.7262C34.8671
                                                     48.8268 35.1329 48.8268 35.3139 48.7262L35.3157 48.7251C35.3715 48.6943 35.4309
                                                     48.6567 35.5224 48.5989C35.6154 48.5401 35.7415 48.4604 35.9306 48.3455L35.931
@@ -4458,68 +4447,67 @@
                                                     27.3756 43.3636L34.069 48.3453ZM34.069 48.3453C33.5747 48.0451 33.0164 47.6808 32.4094
                                                     47.272M34.069 48.3453L32.4094 47.272M32.4094 47.272C30.6865 46.107 28.9658 44.8208
                                                     27.3758 43.3638L32.4094 47.272Z"
-                          fill="currentColor"
-                          stroke="#FEFEFE"
-                          stroke-width="2" />
+                                fill="currentColor"
+                                stroke="#FEFEFE"
+                                stroke-width="2" />
                       </g>
                       <defs>
                         <filter
-                          id="filter0_d_54_16101"
-                          x="0"
-                          y="0"
-                          width="70"
-                          height="70"
-                          filterUnits="userSpaceOnUse"
-                          color-interpolation-filters="sRGB">
+                                id="filter0_d_54_16101"
+                                x="0"
+                                y="0"
+                                width="70"
+                                height="70"
+                                filterUnits="userSpaceOnUse"
+                                color-interpolation-filters="sRGB">
                           <feFlood
-                            flood-opacity="0"
-                            result="BackgroundImageFix" />
+                                  flood-opacity="0"
+                                  result="BackgroundImageFix" />
                           <feColorMatrix
-                            in="SourceAlpha"
-                            type="matrix"
-                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                            result="hardAlpha" />
+                                  in="SourceAlpha"
+                                  type="matrix"
+                                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                  result="hardAlpha" />
                           <feOffset />
                           <feGaussianBlur stdDeviation="2.5" />
                           <feColorMatrix
-                            type="matrix"
-                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
+                                  type="matrix"
+                                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0" />
                           <feBlend
-                            mode="normal"
-                            in2="BackgroundImageFix"
-                            result="effect1_dropShadow_54_1610" />
+                                  mode="normal"
+                                  in2="BackgroundImageFix"
+                                  result="effect1_dropShadow_54_1610" />
                           <feBlend
-                            mode="normal"
-                            in="SourceGraphic"
-                            in2="effect1_dropShadow_54_1610"
-                            result="shape" />
+                                  mode="normal"
+                                  in="SourceGraphic"
+                                  in2="effect1_dropShadow_54_1610"
+                                  result="shape" />
                         </filter>
                       </defs>
                     </svg>
                   </div>
                   <div class="cart__availability">В наличии</div>
                 </div>
-                <h3 class="cart__title">
-                  Установка <br />
-                  ГНБ PRIDE M12x30
-                </h3>
-                <div class="cart__subtitle">
-                  Малогабаритные буровые установки
-                </div>
-                <div class="cart__desc">
-                  Установка ГНБ PRIDE M12x30 с 30ти-тонным тяговым усилием
-                  позволяет протягивать металлические трубы и трубы ПНД до 1 200
-                  мм в диаметре.
-                </div>
-                <div class="cart__btn-box">
-                  <button class="btn cart__btn">Прайс</button>
-                  <a href="product-cart.html" class="btn cart__btn-details"
+                <div class="cart__wrapper-text">
+                  <h3 class="cart__title">Установка ГНБ PRIDE M12x30</h3>
+                  <div class="cart__subtitle">
+                    Малогабаритные буровые установки
+                  </div>
+                  <div class="cart__text">
+                    Установка ГНБ PRIDE M12x30 с 30ти-тонным тяговым усилием позволяет протягивать металлические трубы и трубы
+                  </div>
+                  <div class="cart__btn-box">
+                    <button class="btn cart__btn">Оставить заявку</button>
+                    <a href="product-cart.html" class="btn cart__btn-details"
                     >Подробнее</a
-                  >
+                    >
+                  </div>
                 </div>
               </div>
             </div>
+            <!-- <div class="swiper-button-next btn__slider_next products-swiper_next watched-before__catalog-cart-btn_next"></div> -->
           </div>
+          <!-- </div> -->
         </div>
       </section>
       <section class="modals">
@@ -4854,55 +4842,7 @@
                 </li>
               </ul>
             </div>
-            <!--                <div class="footer__callback-box">-->
-            <!--                    <form class="footer__callback-form">-->
-            <!--                        <label for="footer-title" class="footer__callback-form-title">-->
-            <!--                            Заказать обратный звонок-->
-            <!--                        </label>-->
-            <!--                        <div class="footer__callback-form-input-btn">-->
-            <!--                            <input-->
-            <!--                                    id="footer-title"-->
-            <!--                                    class="footer__callback-form-input"-->
-            <!--                                    type="tel"-->
-            <!--                                    name="title"-->
-            <!--                                    placeholder="Введите ваш телефон"-->
-            <!--                                    required/>-->
 
-            <!--                            <button type="submit" class="btn footer__callback-form-btn">-->
-            <!--                                Заказать звонок-->
-            <!--                            </button>-->
-            <!--                        </div>-->
-            <!--                        <label class="footer__callback-form-policy" for="footer-policy">-->
-            <!--                            <input-->
-            <!--                                    type="checkbox"-->
-            <!--                                    checked-->
-            <!--                                    class="footer__callback-form-checkbox real-checkbox"-->
-            <!--                                    id="footer-policy"/>-->
-            <!--                            <span class="custom-checkbox">-->
-            <!--                    <svg-->
-            <!--                            width="26"-->
-            <!--                            height="26"-->
-            <!--                            viewBox="0 0 26 26"-->
-            <!--                            fill="none"-->
-            <!--                            xmlns="http://www.w3.org/2000/svg">-->
-            <!--                      <rect-->
-            <!--                              x="0.5"-->
-            <!--                              y="0.0585938"-->
-            <!--                              width="25"-->
-            <!--                              height="25"-->
-            <!--                              rx="5"-->
-            <!--                              fill="#8E8E8E"/>-->
-            <!--                      <path-->
-            <!--                              d="M17.6402 7.82411C17.8603 7.61456 18.1532 7.49871 18.4571 7.50101C18.761 7.50331 19.0521 7.62358 19.269 7.83643C19.4859 8.04929 19.6116 8.33808 19.6197 8.64188C19.6277 8.94567 19.5174 9.24071 19.312 9.46473L13.0777 17.2616C12.9705 17.3771 12.8411 17.4697 12.6973 17.5341C12.5534 17.5984 12.3981 17.633 12.2406 17.6359C12.083 17.6389 11.9265 17.61 11.7804 17.551C11.6343 17.4921 11.5016 17.4043 11.3902 17.2929L7.25579 13.1585C7.14066 13.0512 7.04831 12.9218 6.98426 12.7781C6.92021 12.6343 6.88577 12.4791 6.88299 12.3218C6.88022 12.1644 6.90916 12.0082 6.9681 11.8622C7.02704 11.7163 7.11477 11.5838 7.22605 11.4725C7.33733 11.3612 7.46988 11.2735 7.6158 11.2145C7.76172 11.1556 7.91801 11.1267 8.07536 11.1294C8.23271 11.1322 8.38789 11.1666 8.53164 11.2307C8.67538 11.2947 8.80476 11.3871 8.91204 11.5022L12.1839 14.7725L17.6105 7.85848C17.6203 7.84645 17.6307 7.83498 17.6417 7.82411H17.6402Z"-->
-            <!--                              fill="#F9F9F9"/>-->
-            <!--                    </svg>-->
-            <!--                  </span>-->
-            <!--                            Ознакомлен с-->
-            <!--                            <a href="#">Мерами по обеспечению безопасности</a>-->
-            <!--                            персональных данных-->
-            <!--                        </label>-->
-            <!--                    </form>-->
-            <!--                </div>-->
           </div>
           <div class="footer__right">
             <div class="footer__nav-box">
@@ -4983,47 +4923,7 @@
                 </ul>
               </div>
             </div>
-            <!--            <div class="footer__products-variant-box">-->
-            <!--              <div class="products-variant-box__left">-->
-            <!--                <h3 class="title products-variant-box__left-title">-->
-            <!--                  Сотрудничество-->
-            <!--                </h3>-->
-            <!--                <ul class="products-variant-box__left-list">-->
-            <!--                  <li class="products-variant-box__left-item">-->
-            <!--                    <a href="#" class="products-variant-box__left-link">-->
-            <!--                      Условия-->
-            <!--                    </a>-->
-            <!--                  </li>-->
-            <!--                  <li class="products-variant-box__left-item">-->
-            <!--                    <a href="#" class="products-variant-box__left-link">-->
-            <!--                      Заполнить анкету-->
-            <!--                    </a>-->
-            <!--                  </li>-->
-            <!--                </ul>-->
-            <!--              </div>-->
-            <!--              <div class="products-variant-box__right">-->
-            <!--                <h3 class="title products-variant-box__right-title">-->
-            <!--                  Дополнительные услуги-->
-            <!--                </h3>-->
-            <!--                <ul class="products-variant-box__right-list">-->
-            <!--                  <li class="products-variant-box__right-item">-->
-            <!--                    <a href="#" class="products-variant-box__right-link">-->
-            <!--                      Доставка-->
-            <!--                    </a>-->
-            <!--                  </li>-->
-            <!--                  <li class="products-variant-box__right-item">-->
-            <!--                    <a href="#" class="products-variant-box__right-link">-->
-            <!--                      Инжиниринг-->
-            <!--                    </a>-->
-            <!--                  </li>-->
-            <!--                  <li class="products-variant-box__right-item">-->
-            <!--                    <a href="#" class="products-variant-box__right-link">-->
-            <!--                      Финанансирование-->
-            <!--                    </a>-->
-            <!--                  </li>-->
-            <!--                </ul>-->
-            <!--              </div>-->
-            <!--            </div>-->
+
             <div class="footer__products-variant-box">
               <div class="products-variant-box__left">
                 <h3 class="title products-variant-box__left-title">
@@ -5127,47 +5027,7 @@
                 </ul>
               </div>
             </div>
-            <!--                <div class="footer__nav-down-box">-->
-            <!--                    <div class="nav-down-box__left">-->
-            <!--                        <ul class="nav-down-box__left-list">-->
-            <!--                            <li class="nav-down-box__left-item">-->
-            <!--                                <a href="#" class="nav-down-box__left-link"-->
-            <!--                                >Горно-шахтные <br/>-->
-            <!--                                    установки</a-->
-            <!--                                >-->
-            <!--                            </li>-->
-            <!--                            <li class="nav-down-box__left-item">-->
-            <!--                                <a href="#" class="nav-down-box__left-link"-->
-            <!--                                >Бурильно-шнековые машины</a-->
-            <!--                                >-->
-            <!--                            </li>-->
-            <!--                            <li class="nav-down-box__left-item">-->
-            <!--                                <a href="#" class="nav-down-box__left-link"-->
-            <!--                                >Буровой инструмент</a-->
-            <!--                                >-->
-            <!--                            </li>-->
-            <!--                        </ul>-->
-            <!--                    </div>-->
-            <!--                    <div class="nav-down-box__right">-->
-            <!--                        <ul class="nav-down-box__right-list">-->
-            <!--                            <li class="nav-down-box__right-item">-->
-            <!--                                <a href="#" class="nav-down-box__right-link"-->
-            <!--                                >Карьерные и буровзрывные установки</a-->
-            <!--                                >-->
-            <!--                            </li>-->
-            <!--                            <li class="nav-down-box__right-item">-->
-            <!--                                <a href="#" class="nav-down-box__right-link"-->
-            <!--                                >Гусеничные базы</a-->
-            <!--                                >-->
-            <!--                            </li>-->
-            <!--                            <li class="nav-down-box__right-item">-->
-            <!--                                <a href="#" class="nav-down-box__right-link"-->
-            <!--                                >Комплектующие для буровых установок</a-->
-            <!--                                >-->
-            <!--                            </li>-->
-            <!--                        </ul>-->
-            <!--                    </div>-->
-            <!--                </div>-->
+
           </div>
         </div>
       </div>
