@@ -206,6 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const headerMenu = document.querySelector(".header__menu");
     const hero = document.querySelector(".hero");
     const headerModal = document.querySelector(".header-menu-modal");
+    const headerModalClosesBtn = document.querySelector(".menu-close-btn");
 
 
     // const menuBtn3 = document.querySelector('.menu');
@@ -217,7 +218,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let headerMenuHeight = headerMenu.clientHeight; //Высота блока Меню хедера
 
         const menuBtn3 = document.querySelector('.menu');
-        console.log(menuBtn3);
+        console.log(headerTopHeight);
 
         const searchInputStyle = document.querySelector('.header__search');
 
@@ -262,6 +263,10 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('click: ');
 
         headerMenu.classList.toggle('header__menu_hidden');
+    })
+
+    headerModalClosesBtn.addEventListener('click', () => {
+        headerMenu.classList.add('header__menu_hidden');
     })
 })
 
