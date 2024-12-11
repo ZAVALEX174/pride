@@ -206,7 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const headerMenu = document.querySelector(".header__menu");
     const hero = document.querySelector(".hero");
     const headerModal = document.querySelector(".header-menu-modal");
-    const headerModalClosesBtn = document.querySelector(".menu-close-btn");
+    // const headerModalClosesBtn = document.querySelector(".menu-close-btn");
 
 
     // const menuBtn3 = document.querySelector('.menu');
@@ -265,9 +265,9 @@ document.addEventListener('DOMContentLoaded', () => {
         headerMenu.classList.toggle('header__menu_hidden');
     })
 
-    headerModalClosesBtn.addEventListener('click', () => {
-        headerMenu.classList.add('header__menu_hidden');
-    })
+    // headerModalClosesBtn.addEventListener('click', () => {
+    //     headerMenu.classList.add('header__menu_hidden');
+    // })
 })
 
 

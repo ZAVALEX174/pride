@@ -1028,7 +1028,7 @@
 }
 .products {
   width: 100%;
-  padding: 100px 0 145px;
+  padding: 100px 0 100px !important;
   overflow: hidden;
 }
 .products__header {
@@ -1091,7 +1091,17 @@
   max-width: 1152px;
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 22px;
+  /* padding-bottom: 30px; */
+  margin-bottom: 28px;
+  /* border-bottom: 1px solid #d8d8d8; */
+}
+
+.line {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #d8d8d8;
+  margin-bottom: 30px;
 }
 .products__body-btn-box {
   max-width: 804px;
@@ -1170,19 +1180,41 @@
 
 .products__body-content {
   position: relative;
+  padding-bottom: 29px;
+  border-bottom: 1px solid #d8d8d8;
+  margin-bottom: 29px;
+}
+
+.product-btn-link {
+  max-width: 350px;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  border: 1px solid var(--dark-gray);
+  margin-top: 30px;
+  text-align: center;
+  margin: 30px auto 0;
+  display: block;
+  color: var(--dark-gray);
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.product-btn-link:hover {
+  border: 1px solid var(--color-orange);
 }
 
 .products-swiper {
   padding-left: calc(((100% - 1362px) / 2) + 60px);
 }
 .products-swiper_next::after {
-  width: 42px;
-  height: 42px;
+  width: 50px;
+  height: 50px;
 }
 
 .products-swiper_prev::after {
-  width: 42px;
-  height: 42px;
+  width: 50px;
+  height: 50px;
 }
 
 .swiper-button-prev.btn__slider_prev.products-swiper_prev {
@@ -1211,7 +1243,8 @@
   left: 0;
 }
 .container__btn-box {
-  max-width: 1130px;
+  /* max-width: 1130px; */
+  max-width: 1346px;
   width: 100%;
   margin: 0 auto;
   position: relative;
@@ -1451,8 +1484,8 @@
 }
 .product-baner {
   width: 100%;
-  background-color: var(--dark-gray);
-  padding: 46px 0 45px;
+  /* background-color: var(--dark-gray); */
+  padding: 68px 0 60px;
 }
 
 .product-baner__container {
@@ -1461,9 +1494,32 @@
   justify-content: space-between;
 }
 
-.product-baner__text {
-  max-width: 820px;
+.product-baner .catalog-page-product-baner__container {
+  border-radius: 40px;
+  max-width: 1340px;
+  /* height: 237px; */
+  width: 100%;
+  padding: 0;
+  /* height: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 65.5px 90px;
+  background: url(../images/catalog/catalog_menu_banner.jpg) no-repeat center
+    center / cover;
+}
+
+.product-baner .product-baner__text.catalog-page-product-baner__text {
+  max-width: 430px;
   margin-right: 10px;
+}
+
+.product-baner
+  .catalog-page-product-baner__container
+  .btn.product-baner__btn.catalog-page-product-baner__btn {
+  line-height: 60;
+  height: 60px;
 }
 
 .product-baner__title {
