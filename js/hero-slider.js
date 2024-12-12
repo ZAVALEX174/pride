@@ -15,7 +15,7 @@ const heroSlider = new Swiper('.hero-swiper', {
 );
 
 const categoriesSlider = new Swiper('.categories__body-swiper-content-slider', {
-    loop: true,
+    loop: false,
     spaceBetween: 30,
     slidesPerView: "auto",
     // slidesPerView: 3.5,
