@@ -2187,7 +2187,7 @@
   padding-left: calc(((100% - 1346px) / 2) + 60px);
 }
 
-.categories__body-swiper-container {
+.work__body-swiper-container {
   position: relative;
   background-color: blueviolet;
   max-width: 1346px;
