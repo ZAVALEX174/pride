@@ -1573,6 +1573,8 @@
 }
 
 .about__header {
+  max-width: 671px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 29.5px 0;
@@ -2767,20 +2769,33 @@
 .about-company__header {
   margin-bottom: 51px;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
+  max-width: 671px;
+  width: 100%;
   justify-content: space-between;
 }
 
 .about-company__header-title {
-  max-width: 800px;
+  max-width: 671px;
+  width: 100%;
   font-family: 'GetVoIP Grotesque Regular', sans-serif;
   font-weight: 700;
-  line-height: 1.01562;
-  display: flex;
+  font-size: 40px;
+  line-height: 1;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 0;
   color: var(--dark-gray);
-  margin-bottom: 0;
+  margin-bottom: 40px;
+
+  span {
+    font-family: 'GetVoIP Grotesque Regular', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+    color: var(--color-orange);
+  }
 }
 
 .about-company__header-link {
@@ -2812,7 +2827,7 @@
     center/cover;
 }
 
-.about-company__body {
+/* .about-company__body {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -2838,12 +2853,17 @@
   align-items: center;
   justify-content: space-between;
   column-gap: 22px;
-}
+} */
 
-.about-company__body-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.about-company__body-item:nth-child(2) {
+  border-radius: 30px;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
 }
 
 .about-company__body-item img {
