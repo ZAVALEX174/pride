@@ -25,3 +25,15 @@ const categoriesSlider = new Swiper('.categories__body-swiper-content-slider', {
     },
 }
 );
+
+const workSlider = new Swiper('.work__body-swiper-content-slider', {
+    loop: false,
+    spaceBetween: 40,
+    slidesPerView: "auto",
+    // slidesPerView: 3.5,
+    navigation: {
+        nextEl: '.work__body-swiper-btn-next',
+        prevEl: '.work__body-swiper-btn-prev',
+    },
+}
+);
