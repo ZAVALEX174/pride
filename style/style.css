@@ -1934,7 +1934,7 @@
       rgba(43, 42, 41, 0.9) 46.04%,
       rgba(235, 99, 32, 0.9) 100%
     ),
-    url('../images/hero/bg_slider.jpg') no-repeat center;
+    url('../images/hero/bg_slider.jpg') no-repeat top center/cover;
 }
 
 .swiper-slide.categories__body-swiper-content-slider-slide:hover
