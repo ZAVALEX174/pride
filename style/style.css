@@ -1751,7 +1751,7 @@
 
 .categories {
   width: 100%;
-  padding: 127px 0 60px;
+  padding: 127px 0 128px;
   background-color: var(--main-bg);
 }
 
@@ -2035,7 +2035,7 @@
 .benefits {
   width: 100%;
   background: url('../images/benefits/bg_big.png') no-repeat center center/cover;
-  padding: 100px 0 110px;
+  padding: 100px 0 109px;
 }
 
 .benefits__container {
@@ -2051,6 +2051,7 @@
   flex-direction: column;
   padding-top: 70px;
   margin-bottom: 67px;
+  margin-right: 119px;
 }
 
 .benefits__span {
