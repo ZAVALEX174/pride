@@ -2763,19 +2763,23 @@
 }
 .about-company {
   width: 100%;
-  padding: 110px 0 105px;
+  padding: 154px 0 151px;
+}
+
+.about-company__content-box {
+  row-gap: 40px;
 }
 
 .about-company__header {
-  margin-bottom: 51px;
+  padding: 0;
   display: flex;
-  /* align-items: center; */
   max-width: 671px;
   width: 100%;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .about-company__header-title {
+  margin-top: -10px;
   max-width: 671px;
   width: 100%;
   font-family: 'GetVoIP Grotesque Regular', sans-serif;
@@ -2785,7 +2789,7 @@
   align-items: center;
   margin-right: 0;
   color: var(--dark-gray);
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 
   span {
     font-family: 'GetVoIP Grotesque Regular', sans-serif;
@@ -2855,9 +2859,19 @@
   column-gap: 22px;
 } */
 
-.about-company__body-item:nth-child(2) {
+.about__boby-item.about-company__boby-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background: #fff;
+}
+
+.big-img {
   border-radius: 30px;
   overflow: hidden;
+  padding: 0 !important;
   img {
     width: 100%;
     height: 100%;
@@ -2866,11 +2880,11 @@
   }
 }
 
-.about-company__body-item img {
+.kvadrat {
   margin: 0 auto;
-  width: 80px;
-  height: 80px;
-  margin-bottom: 26px;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
   display: inline-block;
   text-align: center;
 }
@@ -2879,10 +2893,10 @@
   font-family: 'GetVoIP Grotesque Regular', sans-serif;
   margin-bottom: 19px;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 0.95;
+  font-size: 30px;
+  line-height: 0.93333;
   text-align: center;
-  color: var(--color-orange);
+  color: var(--dark-gray);
 }
 
 .about-company__body-item-text {
