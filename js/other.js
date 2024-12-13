@@ -3,8 +3,8 @@ var otherSwiper = new Swiper(".other__body-list", {
   slidesPerView: "auto",
   // centeredSlides: true,
   speed: 500,
-  loop: true,
-  spaceBetween: 24,
+  // loop: true,
+  spaceBetween: 30,
   grabCursor: true,
   navigation: {
     nextEl: '.other-next__btn',
