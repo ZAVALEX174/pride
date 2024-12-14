@@ -1,6 +1,7 @@
 .swiper-filter-on {
   /*background-color: var(--dark-gray);*/
-  background: url("../images/catalog/catalog_menu_bg.jpg") no-repeat center center/cover;
+  background: url('../images/catalog/catalog_menu_bg.jpg') no-repeat center
+    center/cover;
   width: 100%;
   /*height: 300px;*/
   padding: 136px 0;
@@ -22,7 +23,6 @@
   padding: 0;
   margin: 0;
   text-align: center;
-
 }
 
 .go-back {
@@ -426,3 +426,4 @@
 .wiper-button-next.btn__slider_next.products-swiper_next.watched-before__catalog-cart-btn_next:hover::after {
   background: url(../images/hero/next_btn.svg) no-repeat center / cover;
 }
+

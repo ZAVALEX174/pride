@@ -1,6 +1,5 @@
 .form-representation {
   width: 100%;
-
   background: url('../images/form/lion.png') no-repeat left 0px bottom 0px /
       466px 472px,
     var(--dark-gray);
@@ -209,7 +208,6 @@ label[for='user-email'] {
 }
 
 .form-right label:nth-of-type(2) {
-  /* padding-bottom: 7px; */
   padding-bottom: 20px;
 }
 
