@@ -3167,12 +3167,28 @@
 }
 .form-representation {
   width: 100%;
-
   background: url('../images/form/lion.png') no-repeat left 0px bottom 0px /
       466px 472px,
     var(--dark-gray);
   position: relative;
   padding: 110px 0 117px;
+}
+
+.form-representation-light {
+  background: url('../images/form/lion-light.png') no-repeat right 0px top 0px /
+      466px 472px,
+    var(--5);
+}
+
+.form-representation-light .form-left label,
+.form-representation-light .form-right label {
+  color: var(--dark-gray);
+}
+
+
+.form-representation-light .form-right > textarea {
+  background: rgba(0, 0, 0, 0.05) !important;
+  border: 1px solid rgba(217, 217, 217, 1);
 }
 
 .form-representation__title {

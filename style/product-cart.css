@@ -26,6 +26,21 @@
   margin-bottom: 22.5px;
 }
 
+.kom-pred__btn {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  justify-content: center;
+  background-color: var(--color-orange);
+  transition: 0.3s ease-in;
+  outline: none;
+  border: none;
+}
+
+.kom-pred__btn:hover {
+  background-color: var(--ligth-gray);
+}
+
 .card-info__peculiarities {
   width: 100%;
   border-radius: 0;
@@ -1115,6 +1130,7 @@ video {
   > textarea {
   height: 166px;
   font-size: 18px;
+  color: var(--main-bg);
 }
 .form-representation-product-cart
   .form-representation__container

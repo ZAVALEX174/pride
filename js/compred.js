@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // console.log(modalForm);
 
-  const comPredl = document.querySelector('.other__header-link.swiper-filter-on__header-link');
+  const comPredl = document.querySelector('.kom-pred__btn');
   // console.log(comPredl);
 
 
