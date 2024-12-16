@@ -486,7 +486,7 @@
 }
 .header-menu-modal__header-title {
   margin-bottom: 0;
-  font-size: 40px;
+  font-size: 24px;
   line-height: 1.01562;
   color: var(--dark-gray);
   font-family: 'GetVoIP Grotesque Regular', sans-serif;
@@ -644,7 +644,7 @@
 .header-menu-modal__body-top-box2-link {
   font-family: 'TT Norms Pro Regular', sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.22222;
   color: var(--dark-gray);
 }
@@ -662,7 +662,7 @@
   padding: 0;
   margin: 0;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.22222;
   color: var(--dark-gray);
   padding: 8px 42px 8px 8px;
