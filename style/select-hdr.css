@@ -163,7 +163,38 @@
 }
 
 /*checkbox*/
+.form-representation__form.form-representation__form--anketa {
+  justify-content: center;
+  position: relative;
+}
 
+.anketa-flex-column {
+  max-width: 615px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(200px, 433px) 1fr;
+  gap: 0 15px;
+  grid-template-rows: 25px 160px;
+  grid-template-areas:
+    'label .'
+    'text button';
+  margin-bottom: 20px;
+}
+.form-right--anketa .anketa-flex-column .apteka-text {
+  width: 100%;
+  grid-area: label;
+}
+
+.form-right--anketa .anketa-flex-column textarea {
+  width: 100%;
+  height: 160px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  background: #323130;
+  grid-area: text;
+  border-radius: 8px;
+  border: 1px solid rgba(224, 224, 224, 0.2);
+}
 .input-file {
   width: 0;
   height: 0;
@@ -172,11 +203,13 @@
   z-index: -1;
 }
 
-.form-right--anketa .label-input-file {
+.form-right--anketa .anketa-flex-column .label-input-file {
+  grid-area: button;
   margin: 0;
   padding: 0;
   padding-left: 16px;
   padding-right: 16px;
+  padding-bottom: 0;
   text-align: center;
   max-width: 167px;
   height: 160px;
@@ -196,4 +229,32 @@
     height: 24px;
     margin-bottom: 15px;
   }
+}
+.form-representation__title.form-representation__title--anketa {
+  max-width: 615px;
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 1.21212;
+  text-align: left;
+  margin: 0 auto 50px;
+}
+.modals-form-representation .form-left {
+  max-width: 615px;
+}
+
+.modals-form-representation .form-left.form-left--apteka {
+  position: relative;
+}
+.modals-form-representation .form-right--anketa {
+  max-width: 615px;
+  width: 100%;
+}
+.form-right.form-right--anketa .custom-labal-apteka {
+  padding-left: 46px;
+}
+.anketa-close {
+  padding: 0;
+  position: absolute;
+  top: -130px;
+  right: 0;
 }
