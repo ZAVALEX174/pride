@@ -3134,7 +3134,7 @@
   font-size: 64px;
   line-height: 1.01562;
   color: var(--color-orange);
-  margin-bottom: 43px;
+  margin-bottom: 25px;
   font-family: 'GetVoIP Grotesque Regular', sans-serif;
 }
 
@@ -3349,7 +3349,6 @@ label[for='user-email'] {
   text-decoration: underline;
   text-decoration-skip-ink: none;
 }
-
 
 .form-representation__form-btn {
   width: 100%;
