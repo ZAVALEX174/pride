@@ -1227,3 +1227,103 @@ video {
   font-weight: 400;
   font-family: 'TT Norms Pro Regular', sans-serif;
 }
+
+/* ///////*/
+.form-representation-light
+  .form-representation__container
+  .form-right
+  > textarea::placeholder,
+.form-representation-light
+  .form-representation__container
+  .form-right
+  > textarea,
+.form-representation-light
+  .form-representation__container
+  .form-right
+  > input::placeholder,
+.form-representation-light
+  .form-representation__container
+  .form-left
+  > input::placeholder,
+.form-representation-light
+  .form-representation__container
+  .user-name::placeholder,
+.form-representation-light .form-representation__container .column1 .select,
+.form-representation-light .form-representation__container .column2 .select,
+.form-representation-light
+  .form-representation__container
+  .form-representation__form
+  .form-right
+  .form-row2
+  textarea {
+  backdrop-filter: blur(2px);
+  /* background: rgba(0, 0, 0, 0.05); */
+  background: rgba(217, 217, 217, 1);
+  box-shadow: none !important;
+}
+
+.form-representation-light .form-representation__container .form-left input,
+.form-representation-light
+  .form-representation__container
+  .form-left
+  .form-row2
+  .column1
+  input,
+.form-representation-light
+  .form-representation__container
+  .form-left
+  .form-row2
+  .column2
+  input,
+.form-representation-light
+  .form-representation__container
+  .form-left
+  #campany2 {
+  background: rgba(217, 217, 217, 1);
+  color: var(--dark-gray);
+}
+.form-representation-light
+  .form-representation__container
+  .form-right
+  > textarea {
+  outline: none !important;
+  /* border: none !important; */
+  background: rgba(217, 217, 217, 1) !important;
+  box-shadow: none !important;
+  color: var(--dark-gray);
+}
+
+.form-representation-light
+  .form-representation__container
+  .form-representation__form
+  .form-left
+  .form-row2
+  .column1
+  input::placeholder,
+.form-representation-light
+  .form-representation__container
+  .form-representation__form
+  .form-left
+  .form-row2
+  .column2
+  input::placeholder {
+  background: rgba(217, 217, 217, 1) !important;
+  box-shadow: none !important;
+}
+
+.form-representation-light
+  .form-representation__container
+  .form-representation__form
+  .form-left
+  .form-row2
+  .column1
+  input,
+.form-representation-light
+  .form-representation__container
+  .form-representation__form
+  .form-left
+  .form-row2
+  .column2
+  input {
+  color: var(--dark-gray);
+}
