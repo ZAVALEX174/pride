@@ -1281,6 +1281,7 @@ video {
   #campany2 {
   background: rgba(217, 217, 217, 1);
   color: var(--dark-gray);
+  border: 1px solid rgba(174, 174, 174, 1);
 }
 .form-representation-light
   .form-representation__container
@@ -1291,6 +1292,7 @@ video {
   background: rgba(217, 217, 217, 1) !important;
   box-shadow: none !important;
   color: var(--dark-gray);
+  border: 1px solid rgba(174, 174, 174, 1);
 }
 
 .form-representation-light
@@ -1326,4 +1328,22 @@ video {
   .column2
   input {
   color: var(--dark-gray);
+}
+.form-representation-light .form-representation__container .column1 .select,
+.form-representation-light .form-representation__container .column2 .select {
+  border: 1px solid rgba(174, 174, 174, 1);
+}
+.form-representation-light .form-representation__container .policy {
+  color: var(--dark-gray);
+  font-size: 16px;
+}
+.form-representation-light
+  .form-representation__container
+  .column1
+  .select:focus,
+.form-representation-light
+  .form-representation__container
+  .column2
+  .select:focus {
+  border: 1px solid rgba(174, 174, 174, 1);
 }

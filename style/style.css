@@ -3175,8 +3175,8 @@
 }
 
 .form-representation-light {
-  background: url('../images/form/lion-light.png') no-repeat right 0px top 0px /
-      466px 472px,
+  background: url('../images/form/lion-light-r.png') no-repeat right 0px bottom
+      0px / 430px 350px,
     var(--5);
 }
 
@@ -3184,7 +3184,6 @@
 .form-representation-light .form-right label {
   color: var(--dark-gray);
 }
-
 
 .form-representation-light .form-right > textarea {
   background: rgba(0, 0, 0, 0.05) !important;
