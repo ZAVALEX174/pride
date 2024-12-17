@@ -1587,13 +1587,11 @@
   box-shadow: 6px 6px 15px 0 rgba(0, 0, 0, 0.4);
 }
 .about {
-  border-radius: 8px;
+  /* border-radius: 8px; */
   width: 100%;
   padding: 159px 0 160px;
-  /* background: var(--5); */
-  background-image: linear-gradient(360deg, #efefef 81.39%, #898989 100%),
-    url('../images/about-company/leon.png');
-  background-repeat: no-repeat;
+  background: var(--5);
+
   /* height: 1000px; */
 }
 
@@ -2836,8 +2834,28 @@
 .about-company {
   width: 100%;
   padding: 154px 0 69px;
+  position: relative;
+  /* background-image: url('../images/about-company/leon.png'); */
+  /* background-repeat: no-repeat; */
+  /* background-position: top 40px left 0; */
+  background-image: linear-gradient(360deg, #efefef 81.39%, #898989 100%);
+  /* background-image: linear-gradient(360deg, #efefef 81.39%, #898989 100%); */
+  /* -webkit-box-shadow: 0px 5px 35px 11px rgba(137, 137, 137, 0.8) inset;
+  -moz-box-shadow: 0px 5px 35px 11px rgba(137, 137, 137, 0.8) inset;
+  box-shadow: 0px 5px 35px 11px rgba(137, 137, 137, 0.8) inset; */
+}
 
-  background-position: top 40px left 0;
+.about-company::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 40px;
+  width: 625px;
+  height: 720px;
+  display: block;
+  background: url('../images/about-company/leon.png') no-repeat top center/cover;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .about-company__content-box {
@@ -2934,12 +2952,14 @@
 } */
 
 .about__boby-item.about-company__boby-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 40px 50px 36px;
   background: #fff;
+  z-index: 10;
 }
 
 .big-img {
