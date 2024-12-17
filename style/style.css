@@ -1221,18 +1221,20 @@
   width: 100%;
   height: 45px;
   line-height: 45px;
-  border: 1px solid var(--dark-gray);
+  border: 1px solid transparent;
   margin-top: 30px;
   text-align: center;
   margin: 30px auto 0;
   display: block;
-  color: var(--dark-gray);
+  color: var(--main-bg);
+  background-color: var(--color-orange);
   font-weight: 400;
   font-size: 18px;
+  transition: 0.3s ease-in;
 }
 
 .product-btn-link:hover {
-  border: 1px solid var(--color-orange);
+  background-color: var(--dark-gray);
 }
 
 .products-swiper {
