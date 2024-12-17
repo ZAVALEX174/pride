@@ -235,7 +235,8 @@ document.addEventListener('DOMContentLoaded', () => {
             /////////
             searchInputStyle.classList.add('header__search_menu');
             menuBtn3.classList.add('menu_menu');
-
+            /////
+            headerDown.classList.add('header__down_gray');
 
         } else {
             headerMenu.classList.remove('header__menu_hidden');
@@ -249,6 +250,8 @@ document.addEventListener('DOMContentLoaded', () => {
             header.style.marginTop = 0;
             document.body.style.marginTop = 0;
             headerModal.style.height = `100%`;
+            ////
+            headerDown.classList.remove('header__down_gray');
         }
 
 
