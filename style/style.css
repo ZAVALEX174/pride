@@ -203,6 +203,9 @@
   color: var(--dark-gray);
   text-align: left;
   padding-left: 57px;
+}
+
+.search-input_gray {
   background-color: rgba(245, 245, 245, 1);
 }
 .header__user {

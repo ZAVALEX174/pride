@@ -216,6 +216,9 @@ document.addEventListener('DOMContentLoaded', () => {
         let scrollTop = window.scrollY;// Величина скролла
         let headerTopHeight = headerTop.clientHeight; //Высота блока Топ хедера
         let headerMenuHeight = headerMenu.clientHeight; //Высота блока Меню хедера
+        let headerInputSearch = document.querySelector('.search-input');
+        // console.log(headerInputSearch);
+
 
         const menuBtn3 = document.querySelector('.menu');
         console.log(headerTopHeight);
@@ -237,6 +240,7 @@ document.addEventListener('DOMContentLoaded', () => {
             menuBtn3.classList.add('menu_menu');
             /////
             headerDown.classList.add('header__down_gray');
+            headerInputSearch.classList.add('search-input_gray');
 
         } else {
             headerMenu.classList.remove('header__menu_hidden');
@@ -252,6 +256,7 @@ document.addEventListener('DOMContentLoaded', () => {
             headerModal.style.height = `100%`;
             ////
             headerDown.classList.remove('header__down_gray');
+            headerInputSearch.classList.remove('search-input_gray');
         }
 
 
