@@ -29,6 +29,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const comPredl = document.querySelector('.kom-pred__btn');
   // console.log(comPredl);
 
+  const overlayClose = document.querySelector('.modals__wrapper');
+
 
   // downloadBtn.addEventListener('click', () => {
   //     modal.classList.add('modals_opened');
@@ -70,4 +72,12 @@ document.addEventListener('DOMContentLoaded', function () {
     modal.classList.remove('modals_opened');
     modalFormRepresentation.classList.add('none');
   })
+
+
+  $(document).click(function (e) {
+    if ($(e.target).is('.modals__wrapper')) {
+      modal.classList.remove('modals_opened');
+      modalFormRepresentation.classList.add('none');
+    }
+  });
 });

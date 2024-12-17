@@ -351,3 +351,12 @@
   height: 1px;
   background-color: var(--color-orange);
 }
+
+.modals-form-representation {
+  max-width: 670px;
+  width: 100%;
+  padding: 60px;
+  height: auto;
+  background: var(--5);
+  border-radius: 30px;
+}

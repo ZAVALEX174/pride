@@ -187,13 +187,20 @@
 
 .form-right--anketa .anketa-flex-column textarea {
   width: 100%;
-  height: 160px;
+  height: 98px;
+  margin-bottom: 15px;
   backdrop-filter: blur(4px);
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  background: #323130;
+  background: rgba(217, 217, 217, 1);
   grid-area: text;
   border-radius: 8px;
-  border: 1px solid rgba(224, 224, 224, 0.2);
+  /* border: none; */
+  border: 1px solid rgba(174, 174, 174, 1);
+  outline: none;
+  color: rgba(79, 79, 79, 1);
+  font-size: 16px;
+  line-height: 22px;
+  padding: 19px 16px;
 }
 .input-file {
   width: 0;
@@ -203,40 +210,16 @@
   z-index: -1;
 }
 
-.form-right--anketa .anketa-flex-column .label-input-file {
-  grid-area: button;
-  margin: 0;
-  padding: 0;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 0;
-  text-align: center;
-  max-width: 167px;
-  height: 160px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
-  flex-direction: column;
-  border: 1px solid rgba(224, 224, 224, 0.2);
-  backdrop-filter: blur(4px);
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  background: #323130;
-  opacity: 0.67;
-
-  svg {
-    width: 24px;
-    height: 24px;
-    margin-bottom: 15px;
-  }
-}
 .form-representation__title.form-representation__title--anketa {
-  max-width: 615px;
+  /* max-width: 615px; */
+  width: 100%;
   font-weight: 700;
-  font-size: 33px;
-  line-height: 1.21212;
+  font-size: 24px;
+  /* line-height: 1.21212; */
+  line-height: 40px;
   text-align: left;
-  margin: 0 auto 50px;
+  margin: 0 auto 20px;
+  color: var(--dark-gray);
 }
 .modals-form-representation .form-left {
   max-width: 615px;
@@ -255,6 +238,120 @@
 .anketa-close {
   padding: 0;
   position: absolute;
-  top: -130px;
+  top: -50px;
   right: 0;
+  width: 24px;
+  height: 24px;
+  color: rgba(162, 162, 162, 1);
+}
+.form-representation__form.form-representation__form--anketa label,
+.form-representation__form.form-representation__form--anketa .policy {
+  color: var(--dark-gray);
+}
+.form-representation__form.form-representation__form--anketa
+  .anketa-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.form-representation__form--anketa-desc {
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.form-representation__form.form-representation__form--anketa label,
+.form-representation__form.form-representation__form--anketa .user-name,
+.form-representation__form.form-representation__form--anketa
+  .column1.column1__wrap {
+  width: 100%;
+  margin: 0;
+}
+.form-right--anketa .anketa-flex-column .label-input-file {
+  grid-area: button;
+  margin: 0;
+  padding: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 0;
+  text-align: center;
+  max-width: 100%;
+  width: 100%;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  /* flex-direction: column; */
+  border: 1px solid rgba(174, 174, 174, 1);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  background: rgba(217, 217, 217, 1);
+  /* opacity: 0.67; */
+  color: rgba(79, 79, 79, 1);
+  font-size: 16px;
+  line-height: 22px;
+  transition: 0.3s ease-in;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+  }
+}
+.form-right--anketa .anketa-flex-column .label-input-file:hover {
+  background-color: var(--dark-gray);
+  color: var(--main-bg);
+}
+.anketa-grid-input {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 83px);
+  grid-template-areas:
+    'left-one right-one'
+    'left-two right-two';
+  gap: 25px 30px;
+  margin-bottom: 25px;
+}
+.left-one {
+  display: flex;
+  flex-direction: column;
+  grid-area: left-one;
+}
+.left-two {
+  display: flex;
+  flex-direction: column;
+  grid-area: left-two;
+}
+.right-one {
+  display: flex;
+  flex-direction: column;
+  grid-area: right-one;
+}
+.right-two {
+  display: flex;
+  flex-direction: column;
+  grid-area: right-two;
+}
+.left-one input,
+.left-two input,
+.right-two input,
+.form-left .form-row3 .column1 select {
+  margin: 0;
+  background: rgba(217, 217, 217, 1);
+  color: var(--dark-gray);
+  /* border: 1px solid rgba(224, 224, 224, 0.2); */
+  border: 1px solid rgba(174, 174, 174, 1);
+  height: 50px;
+}
+.left-one input:focus,
+.left-two input:focus,
+.right-two input:focus,
+.form-left .form-row3 .column1 select:focus {
+  border: 1px solid var(--dark-gray);
+}
+
+.form-right--anketa .anketa-flex-column textarea:focus {
+  border: 1px solid var(--dark-gray);
 }
