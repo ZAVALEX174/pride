@@ -1590,7 +1590,10 @@
   border-radius: 8px;
   width: 100%;
   padding: 159px 0 160px;
-  background: var(--5);
+  /* background: var(--5); */
+  background-image: linear-gradient(360deg, #efefef 81.39%, #898989 100%),
+    url('../images/about-company/leon.png');
+  background-repeat: no-repeat;
   /* height: 1000px; */
 }
 
@@ -2833,8 +2836,7 @@
 .about-company {
   width: 100%;
   padding: 154px 0 69px;
-  background-image: url('../images/about-company/leon.png');
-  background-repeat: no-repeat;
+
   background-position: top 40px left 0;
 }
 
