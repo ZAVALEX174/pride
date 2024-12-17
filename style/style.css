@@ -1247,7 +1247,7 @@
 }
 
 .products-swiper {
-  padding-left: calc(((100% - 1362px) / 2) + 60px);
+  padding-left: calc(((100% - 1362px) / 2) + 70px);
 }
 .products-swiper_next::after {
   width: 50px;
