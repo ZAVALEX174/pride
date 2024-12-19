@@ -229,7 +229,7 @@
 .header__user-btn {
   background: transparent;
   padding: 0;
-  width: 137px;
+  width: 170px;
   height: 40px;
   /* margin-right: 10px; */
   /* margin-left: 30px; */
@@ -238,7 +238,8 @@
   justify-content: space-between;
   transition: 0.3s ease-in;
   color: var(--dark-gray);
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 16px;
 }
 .header__user-btn-icon {
   width: 37px;
@@ -317,13 +318,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-weight: 400;
+  font-size: 16px;
   transition: 0.3s ease-in;
 }
 .favorites__btn > svg {
   width: 40px;
   height: 40px;
   background-color: transparent;
-  padding: 10px 0;
+  padding: 0;
   border-radius: 100%;
   transition: 0.3s ease-in;
   path {
