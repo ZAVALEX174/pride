@@ -31,10 +31,13 @@
 }
 .header-menu-modal__container {
   max-width: 1220px;
-  padding: 0 45px 50px 45px;
+  padding: 0;
   border-bottom: 1.5px solid #dcdcdc;
   border-radius: 0 0 30px 30px;
   background: #fff;
+  box-shadow: 0px 28px 20px 0px rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  overflow: hidden;
 }
 /*header__top*/
 .header__top {
@@ -546,7 +549,7 @@
 .header-menu-modal__body {
   width: 100%;
   position: relative;
-  padding-top: 15px;
+  padding-top: 30px;
 }
 
 .header-menu-modal__body-top {
@@ -557,13 +560,15 @@
   justify-content: space-between;
   width: 100%;
   border-bottom: 1.5px solid rgba(220, 220, 220, 1);
+  padding: 0 30px 26px;
 }
 .header-menu-modal__body-down {
   width: 100%;
   display: flex;
   align-self: center;
   justify-content: space-between;
-  padding-top: 15px;
+  padding: 15px 42px;
+  background: rgba(228, 228, 228, 0.34);
 }
 .header-menu-modal__body-down-btn {
   background: transparent;
@@ -586,8 +591,13 @@
 .header-menu-modal__body-down-btn svg {
   padding: 0;
   margin: 0;
-  margin-left: 15px;
-  margin-top: -5px;
+  margin-right: 10px;
+}
+
+.header-menu-modal__body-down-btn--right svg {
+  padding: 0;
+  margin: 0;
+  margin-left: 10px;
 }
 .header-menu-modal__body-top-box1,
 .header-menu-modal__body-top-box2,
@@ -606,7 +616,11 @@
 .header-menu-modal__body-top-box2-list {
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
+  row-gap: 3px;
+  margin-bottom: 20px;
+}
+.header-menu-modal__body-top-box2-list--last {
+  margin-bottom: 0;
 }
 
 .header-menu-modal__body-top-box3-list {
@@ -640,15 +654,16 @@
   padding: 0;
   margin: 0;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22222;
+  font-size: 14px;
+  line-height: 17px;
   color: var(--dark-gray);
-  padding: 8px 42px 8px 8px;
-  margin-bottom: 10px;
+  padding: 5px 0;
+  margin-bottom: 6px;
+  border-bottom: 1px solid var(--color-orange);
 }
 .header-menu-modal__body-top-box1-item,
 .header-menu-modal__body-top-box2-item {
-  padding: 12px 42px 12px 8px;
+  padding: 5px 0;
   transition: all 0.3s ease-in;
 }
 
@@ -662,7 +677,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.22222;
-  color: var(--dark-gray);
+  color: rgba(43, 42, 41, 1);
 }
 
 .header-menu-modal__body-top-box1-title:hover,
