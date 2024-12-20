@@ -336,8 +336,7 @@
 }
 .left-one input,
 .left-two input,
-.right-two input,
-.form-left .form-row3 .column1 select {
+.right-two input {
   margin: 0;
   background: rgba(217, 217, 217, 1);
   color: var(--dark-gray);
@@ -354,4 +353,16 @@
 
 .form-right--anketa .anketa-flex-column textarea:focus {
   border: 1px solid var(--dark-gray);
+}
+.form-representation__form.form-representation__form--anketa
+  .form-left
+  .form-row3
+  .column1
+  select {
+  margin: 0;
+  background: rgba(217, 217, 217, 1);
+  color: var(--dark-gray);
+  /* border: 1px solid rgba(224, 224, 224, 0.2); */
+  /* border: 1px solid rgba(174, 174, 174, 1); */
+  height: 50px;
 }

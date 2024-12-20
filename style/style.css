@@ -1944,7 +1944,11 @@
   border-radius: 30px;
   padding: 30px;
   overflow: hidden;
-  background: rgba(239, 239, 239, 0.96);
+  background: linear-gradient(
+      rgba(239, 239, 239, 0.97) 0%,
+      rgba(239, 239, 239, 0.97) 100%
+    ),
+    url('../images/hero/bg_slider.jpg') no-repeat top center/cover;
   transition: all 0.3s ease-in;
 }
 .swiper-slide.categories__body-swiper-content-slider-slide
