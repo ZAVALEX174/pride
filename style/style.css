@@ -3213,16 +3213,16 @@
 }
 .form-representation {
   width: 100%;
-  background: url('../images/form/lion.png') no-repeat left 0px bottom 0px /
-      466px 472px,
+  background: url('../images/form/lion.svg') no-repeat left 0px top 33px / 812px
+      720px,
     var(--dark-gray);
   position: relative;
   padding: 110px 0 117px;
 }
 
 .form-representation-light {
-  background: url('../images/form/lion-light-r.png') no-repeat right 0px bottom
-      0px / 430px 350px,
+  background: url('../images/form/lion-white.svg') no-repeat left 0px top 0px /
+      857px 665px,
     var(--5);
 }
 
