@@ -37,6 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             document.body.style.overflow = "";
             document.body.style.paddingRight = "";
+
+            document.querySelector('.main').classList.remove('main-overlay');
         } else {
             headerModalOne.classList.add('header-menu-modal-active');
             navLinkOne.classList.add('navigation__link-active');
@@ -44,6 +46,9 @@ document.addEventListener('DOMContentLoaded', () => {
             headerModalThree.classList.remove('header-menu-modal3-active');
             document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
             document.body.style.overflow = "hidden";
+
+
+            document.querySelector('.main').classList.add('main-overlay');
         }
 
         inputSaerch.classList.remove('search__active-input');
@@ -72,6 +77,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.body.style.overflow = "";
         document.body.style.paddingRight = "";
+
+
+        document.querySelector('.main').classList.remove('main-overlay');
     });
 
     openModalBtnTwo.addEventListener("click", (e) => {
@@ -89,6 +97,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             document.body.style.overflow = "";
             document.body.style.paddingRight = "";
+
+
+            document.querySelector('.main').classList.remove('main-overlay');
         } else {
 
             headerModalTwo.classList.add('header-menu-modal2-active');
@@ -96,6 +107,9 @@ document.addEventListener('DOMContentLoaded', () => {
             openModalBtnTwoLink.classList.add('navigation__link_drd-active');
             document.body.style.overflow = "hidden";
             document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+
+
+            document.querySelector('.main').classList.add('main-overlay');
         }
 
         inputSaerch.classList.remove('search__active-input');
@@ -122,6 +136,9 @@ document.addEventListener('DOMContentLoaded', () => {
         headerModalThree.classList.remove('header-menu-modal3-active');
         document.body.style.overflow = "";
         document.body.style.paddingRight = "";
+
+
+        document.querySelector('.main').classList.remove('main-overlay');
     });
 
     openSearchBtn.addEventListener('click', (e) => {
@@ -196,6 +213,9 @@ document.addEventListener('DOMContentLoaded', () => {
         headerModalThree.classList.remove('header-menu-modal3-active');
         document.querySelector('.btn-search-reset').style.display = 'none';
         document.querySelector('.header__search-form-icon').style.left = '0';
+
+
+        document.querySelector('.main').classList.remove('main-overlay');
     })
 
 
