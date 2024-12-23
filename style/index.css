@@ -170,3 +170,7 @@ h2 {
 .none {
   display: none;
 }
+
+.swiper-wrapper {
+  padding-bottom: 15px;
+}

@@ -1101,7 +1101,7 @@ video {
   height: 16px;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%) rotate(180deg);
+  transform: translate(-50%, -50%) rotate(180deg) !important;
   background: url(../images/product-cart-sec/arr_right-black.svg) no-repeat
     center / cover;
 }
