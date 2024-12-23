@@ -1,14 +1,14 @@
 const modalMap = document.querySelector('.geografhy__modal');
-console.log(modalMap)
+// console.log(modalMap)
 const openModalMapBtns = document.querySelectorAll('.geografhy__body-icon-map svg');
-console.log(openModalMapBtns)
+// console.log(openModalMapBtns)
 const closeModalMap = document.querySelector('.close');
 
 openModalMapBtns.forEach((item) => {
     item.addEventListener('click', (e) => {
         e.preventDefault();
         // e.stopPropagation();
-        console.log(e.target);
+        // console.log(e.target);
         if (item.classList.contains('msk-i')) {
             modalMap.classList.add('msk-mod');
             modalMap.style.display = 'flex';

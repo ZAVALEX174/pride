@@ -127,19 +127,19 @@ document.addEventListener('DOMContentLoaded', () => {
         // document.body.style.overflow = "hidden";
         // document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
     });
-    closeModalBtnTwo.addEventListener("click", (e) => {
-        e.preventDefault();
-        navLinkTwo.classList.remove('navigation__link-active');
-        navLinkOne.classList.remove('navigation__link-active');
-        openModalBtnTwoLink.classList.remove('navigation__link_drd-active');
-        headerModalTwo.classList.remove('header-menu-modal2-active');
-        headerModalThree.classList.remove('header-menu-modal3-active');
-        document.body.style.overflow = "";
-        document.body.style.paddingRight = "";
+    // closeModalBtnTwo.addEventListener("click", (e) => {
+    //     e.preventDefault();
+    //     navLinkTwo.classList.remove('navigation__link-active');
+    //     navLinkOne.classList.remove('navigation__link-active');
+    //     openModalBtnTwoLink.classList.remove('navigation__link_drd-active');
+    //     headerModalTwo.classList.remove('header-menu-modal2-active');
+    //     headerModalThree.classList.remove('header-menu-modal3-active');
+    //     document.body.style.overflow = "";
+    //     document.body.style.paddingRight = "";
 
 
-        document.querySelector('.main').classList.remove('main-overlay');
-    });
+    //     document.querySelector('.main').classList.remove('main-overlay');
+    // });
 
     openSearchBtn.addEventListener('click', (e) => {
         e.preventDefault();
@@ -241,7 +241,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         const menuBtn3 = document.querySelector('.menu');
-        console.log(headerTopHeight);
+        // console.log(headerTopHeight);
 
         const searchInputStyle = document.querySelector('.header__search');
 
@@ -283,7 +283,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     const menuBtn3 = document.querySelector('.menu');
-    console.log(menuBtn3);
+    // console.log(menuBtn3);
 
     const searchInputStyle = document.querySelector('.header__search');
 

@@ -27,10 +27,10 @@ document.addEventListener('DOMContentLoaded', function () {
     // console.log(comPredl);
 
 
-    downloadBtn.addEventListener('click', () => {
-        modal.classList.add('modals_opened');
-        modalCatalog.classList.remove('none');
-    })
+    // downloadBtn.addEventListener('click', () => {
+    //     modal.classList.add('modals_opened');
+    //     modalCatalog.classList.remove('none');
+    // })
 
     closeDownloadBtn.addEventListener('click', () => {
         modal.classList.remove('modals_opened');

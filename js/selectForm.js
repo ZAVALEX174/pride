@@ -7,7 +7,7 @@ const optionsOne = selectWrapperOne.querySelectorAll('option');
 const selectInputOne = selectWrapperOne.querySelector('.select');
 
 optionsOne.forEach(option => {
-    console.log(option.value);
+    // console.log(option.value);
     option.style.background = 'gray';
     option.style.color = '#FFFFFF';
 })
@@ -21,12 +21,12 @@ selectInputOne.addEventListener('change', (e) => {
 })
 
 optionsTwo.forEach(option => {
-    console.log(option.value);
+    // console.log(option.value);
     option.style.background = 'gray';
     option.style.color = '#FFFFFF';
 })
 selectInputTwo.addEventListener('change', (e) => {
-    console.log(e.target.value);
+    // console.log(e.target.value);
     if (e.target.value != 'twoSelect') {
         selectInputTwo.style.color = '#FFFFFF';
     } else {
