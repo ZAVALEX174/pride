@@ -2564,8 +2564,6 @@
   transition: 0.3s ease-in;
 }
 
-.swiper-btn-box-big__container .our-projects-prev__btn:hover,
-.swiper-btn-box-big__container .our-projects-next__btn:hover,
 .other-prev__btn:hover,
 .other-next__btn:hover {
   position: relative;
@@ -2573,6 +2571,15 @@
   height: 50px;
   border-radius: 100%;
   background-color: #2b2a29;
+}
+
+.swiper-btn-box-big__container .our-projects-prev__btn:hover::after {
+  background: url(../images/slider-btn/arr-orange-left.svg) no-repeat
+    center/cover;
+}
+.swiper-btn-box-big__container .our-projects-next__btn:hover::after {
+  background: url(../images/slider-btn/arr-orange-right.svg) no-repeat
+    center/cover;
 }
 
 .swiper-btn-box-big__container .our-projects-next__btn,
@@ -2586,7 +2593,6 @@
   left: 0;
 }
 
-.swiper-btn-box-big__container .our-projects-prev__btn::after,
 .other-prev__btn::after {
   position: absolute;
   content: '';
@@ -2605,7 +2611,6 @@
     cover;
 }
 
-.swiper-btn-box-big__container .our-projects-next__btn::after,
 .other-next__btn::after {
   position: absolute;
   content: '';
@@ -2659,18 +2664,67 @@
 .swiper-slide.our-projects-slide {
   position: relative;
   border-radius: 30px;
-  max-width: 443px;
+  max-width: 435px;
   width: 100%;
-  min-height: 504px;
+  min-height: 500px;
   overflow: hidden;
-  background: linear-gradient(
-      90deg,
-      rgba(0, 0, 0, 0.56) 0%,
-      rgba(0, 0, 0, 0.56) 100%
-    ),
-    url('../images/hero/bg_slider.jpg') no-repeat center/cover;
+  /* background: url('../images/works/c01.jpg') no-repeat center/cover; */
   margin-right: 22px;
   transition: 0.3s ease-in;
+}
+
+.swiper-slide.our-projects-slide.our-projects-slide-otziv {
+  position: relative;
+  border-radius: 30px;
+  width: 100%;
+  min-height: 500px;
+  overflow: hidden;
+  background: radial-gradient(
+      147.9% 95.7% at 49.89% 2%,
+      #ececeb 66.03%,
+      #dbdbdb 100%
+    ),
+    url('../images/works/001.png') no-repeat center/cover;
+  margin-right: 22px;
+  transition: 0.3s ease-in;
+  padding: 40px 30px;
+
+  .our-projects-slide__content {
+    text-align: center;
+
+    img {
+      margin: 0 auto;
+      margin-bottom: 30px;
+      margin-top: 12px;
+    }
+
+    .cart__title_otziv {
+      font-family: 'GetVoIP Grotesque Regular', sans-serif;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 1.1875;
+      text-align: center;
+      color: var(--dark-gray);
+      margin-bottom: 25px;
+    }
+    .cart__subtitle_otziv {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.35;
+      text-align: center;
+      color: var(--dark-gray);
+      margin-bottom: 62px;
+    }
+
+    .our-projects-cart__btn-box {
+      justify-content: center;
+    }
+
+    .our-projects-cart__btn {
+      max-width: 300px;
+      width: 100%;
+    }
+  }
 }
 
 .gray {
@@ -2683,7 +2737,7 @@
   justify-content: flex-end;
   align-items: flex-start;
 }
-
+/*
 .gray::after {
   position: absolute;
   top: 0;
@@ -2698,7 +2752,7 @@
 .gray:hover::after {
   -webkit-backdrop-filter: grayscale(0);
   backdrop-filter: grayscale(0);
-}
+} */
 
 .our-projects-slide__content {
   width: 100%;
@@ -2707,7 +2761,7 @@
   z-index: 10;
 }
 
-.gray:hover::before {
+/* .gray:hover::before {
   pointer-events: none;
   position: absolute;
   content: '';
@@ -2719,7 +2773,7 @@
   backdrop-filter: blur(3px);
   background-color: rgba(0, 0, 0, 0.5);
   transition: 0.3s ease-in;
-}
+} */
 
 .cart__address {
   font-weight: 400;
@@ -2757,7 +2811,7 @@
 .our-projects-cart__btn-box.cart__btn-box {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   row-gap: 3px;
@@ -2765,7 +2819,8 @@
 
 .our-projects-cart__btn-box > .cart__btn {
   margin: 0;
-  max-width: 386px;
+  max-width: 188px;
+  width: 100%;
   font-weight: 400;
   font-size: 18px;
   text-align: center;
@@ -2788,6 +2843,8 @@
 }
 
 .our-projects-cart__btn-box > .our-projects-cart__btn-details {
+  max-width: 188px;
+  width: 100%;
   font-weight: 500;
   font-size: 15px;
   line-height: 1.32353;
@@ -2997,11 +3054,6 @@
   width: 100%;
   padding: 154px 0 69px;
   position: relative;
-  /* background-image: url('../images/about-company/leon.png'); */
-  /* background-repeat: no-repeat; */
-  /* background-position: top 40px left 0; */
-  /* background-image: linear-gradient(360deg, #efefef 81.39%, #898989 100%); */
-  /* background-image: linear-gradient(360deg, #efefef 81.39%, #898989 100%); */
   -webkit-box-shadow: 0px 5px 35px 11px rgba(137, 137, 137, 0.8) inset;
   -moz-box-shadow: 0px 5px 35px 11px rgba(137, 137, 137, 0.8) inset;
   box-shadow: 0px 5px 35px 11px rgba(137, 137, 137, 0.8) inset;

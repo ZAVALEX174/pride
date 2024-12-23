@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const modal = document.querySelector('.modals');
   const modalFormOtzivi = modal.querySelector('.modals-form-representation-otzivi');
 
-  const openModalOtzivi = document.querySelector('.otzivi-btn');
+  const openModalOtzivi = document.querySelector('.our-projects-cart__btn-open-modal-form');
   // console.log(openModalOtzivi);
   const closeModalOtziviBtn = document.querySelector('.otzivi-close');
 
