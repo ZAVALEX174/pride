@@ -42,7 +42,7 @@
   content: '';
   top: 54%;
   transform: translateY(-50%);
-  right: -5px;
+  right: 0;
   width: 16.5px;
   height: 11px;
   background: url('../images/header/arr_orange.svg') no-repeat center
@@ -83,7 +83,9 @@
   font-size: 16px;
   line-height: 1.375;
   width: 100%;
+  padding-right: 20px;
   color: var(--dark-gray);
+  text-align: right;
 }
 
 .dropdown__label {
