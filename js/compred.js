@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const closesFormRepresentation = modalFormZakaz.querySelector('.modals-zakaz__btn');
   const openModalFormPepresentationBtn = document.querySelector('.swiper-filter-on__header-link');
   const closeModalFormPepresentationBtn = document.querySelector('.anketa-close');
-  console.log(closeModalFormPepresentationBtn);
+  // console.log(closeModalFormPepresentationBtn);
 
   // console.log(modalFormRepresentation, openModalFormPepresentationBtn);
 
@@ -30,6 +30,8 @@ document.addEventListener('DOMContentLoaded', function () {
   // console.log(comPredl);
 
   const overlayClose = document.querySelector('.modals__wrapper');
+
+  const modalFormOtzivi = modal.querySelector('.modals-form-representation-otzivi');
 
 
   // downloadBtn.addEventListener('click', () => {
@@ -78,6 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if ($(e.target).is('.modals__wrapper')) {
       modal.classList.remove('modals_opened');
       modalFormRepresentation.classList.add('none');
+      // modalFormOtzivi.classList.add('none');
     }
   });
 });

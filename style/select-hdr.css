@@ -368,3 +368,57 @@
   border: 1px solid rgba(174, 174, 174, 1);
   height: 50px;
 }
+
+.form-representation.modals-form-representation.modals-form-representation-otzivi {
+  .anketa-grid-input {
+    gap: 20px 8px;
+  }
+
+  .otzivi-form-file-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+  }
+
+  .foto-video {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
+
+  .foto-video-desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+
+  .form-right--anketa .anketa-flex-column .label-input-file {
+    width: calc(100% / 2);
+    display: inline-flex;
+
+    svg {
+      margin-left: 10px;
+      margin-right: 0;
+    }
+  }
+
+  .label-input-link {
+    background: rgba(217, 217, 217, 1);
+    border: 1px solid rgba(174, 174, 174, 1);
+    /* line-height: 47; */
+    height: 47px;
+    width: calc(100% / 2);
+    margin-bottom: 0;
+    color: var(--dark-gray);
+  }
+
+  .label-input-link::placeholder {
+    background: rgba(217, 217, 217, 1);
+    font-size: 16px;
+    color: rgba(79, 79, 79, 1);
+    margin-bottom: 0;
+  }
+}

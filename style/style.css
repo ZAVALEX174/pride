@@ -402,7 +402,7 @@
   width: 100%;
   height: 40px;
   line-height: 40px;
-  max-width: 1000px;
+  /* max-width: 1000px; */
 }
 
 .navigation__list {
@@ -487,6 +487,10 @@
   position: absolute;
   width: 100%;
   height: 100%;
+}
+
+.header-menu-modal2 .header-menu-modal__container {
+  max-width: 810px;
 }
 .header-menu-modal2-active {
   display: block;
@@ -694,7 +698,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.22222;
-  color: rgba(43, 42, 41, 1);
+  color: rgba(43, 42, 41, 0.7);
 }
 
 .header-menu-modal__body-top-box1-title:hover,
@@ -1320,6 +1324,13 @@
   transform: translate(-50%, -50%) rotate(180deg) !important;
   background: url(../images/product-cart-sec/arr_right-black.svg);
 }
+
+.products__body-content
+  .swiper-button-prev.btn__slider_prev.products-swiper_prev:hover::after {
+  transform: translate(-50%, -50%) rotate(180deg) !important;
+  background: url(../images/hero/arrow-right.svg);
+}
+
 .swiper-button-next.btn__slider_next.products-swiper_next {
   top: 186px;
   right: 0;
@@ -1330,23 +1341,18 @@
   .swiper-button-next.btn__slider_next.products-swiper_next::after {
   background: url(../images/product-cart-sec/arr_right-black.svg);
 }
+.products__body-content
+  .swiper-button-next.btn__slider_next.products-swiper_next:hover::after {
+  background: url(../images/hero/arrow-right.svg);
+}
 
 .products__body-content
   .swiper-button-next.btn__slider_next.products-swiper_next:hover,
 .products__body-content
   .swiper-button-prev.btn__slider_prev.products-swiper_prev:hover {
-  background-color: #EBEBEB ;
+  background-color: #2b2a29;
 }
 
-/* .products__body-content
-  .swiper-button-prev.btn__slider_prev.products-swiper_prev:hover::after {
-  background: url(../images/hero/black-arr-right.svg);
-}
-
-.products__body-content
-  .swiper-button-next.btn__slider_next.products-swiper_next:hover::after {
-  background: url(../images/hero/black-arr-right.svg);
-} */
 .container__btn-box {
   max-width: 1346px;
   width: 100%;
@@ -3066,7 +3072,7 @@
 }
 
 .kvadrat {
-  margin: 0 auto;
+  margin: 0;
   width: 50px;
   height: 50px;
   /* margin-bottom: 20px; */
