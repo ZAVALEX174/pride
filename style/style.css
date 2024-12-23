@@ -722,9 +722,9 @@
 }
 .header-menu-modal__body-top.menu-modal2 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 206px 30px;
-  row-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: 206px 30px; */
+  /* row-gap: 10px; */
   column-gap: 39px;
   grid-template-areas:
     'box1 box2 box3'

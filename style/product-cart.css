@@ -962,7 +962,7 @@ video {
   display: none;
 }
 .watched-before__product-cart .products-slide .cart__wrapper-text {
-  padding: 24px 30px 33px 30px;
+  padding: 24px 30px 15px 30px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
