@@ -3413,6 +3413,7 @@
 }
 
 .form-representation-light {
+  box-shadow: 0px 10px 13px -3px rgba(194, 194, 194, 1) inset;
   background: url('../images/form/lion-white.svg') no-repeat left 0px top 0px /
       857px 665px,
     var(--5);
@@ -3663,7 +3664,6 @@ label[for='user-email'] {
 
 .form-representation__form-btn:hover {
   background: var(--ligth-gray);
-  box-shadow: 6px 6px 15px 0 rgba(0, 0, 0, 0.4);
 }
 
 .label__mar-bot {
