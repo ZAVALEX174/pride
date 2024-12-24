@@ -4359,7 +4359,7 @@ label[for='user-email'] {
   font-family: 'TT Norms Pro Regular', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.22222;
+  line-height: 20px;
   color: #696969;
   transition: 0.3s ease-in;
 }
@@ -4386,7 +4386,7 @@ label[for='user-email'] {
   font-family: 'TT Norms Pro Medium', sans-serif;
   font-weight: 500;
   font-size: 18px;
-  line-height: 1.25;
+  line-height: 22px;
   color: var(--dark-gray);
   transition: 0.3s ease-in;
 }
@@ -4444,7 +4444,7 @@ label[for='user-email'] {
   font-family: 'TT Norms Pro Regular', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 20px;
   color: #696969;
   transition: 0.3s ease-in;
 }
@@ -4481,7 +4481,7 @@ label[for='user-email'] {
   font-family: 'TT Norms Pro Medium', sans-serif;
   font-weight: 500;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 22px;
   color: var(--dark-gray);
   transition: 0.3s ease-in;
 }
