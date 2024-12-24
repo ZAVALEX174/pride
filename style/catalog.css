@@ -82,6 +82,8 @@
 
 .catalog-page-product-baner__btn {
   background-color: var(--dark-gray);
+  height: 60px;
+  line-height: 60px;
 }
 /*hfcrjvbnbnm*/
 .swiper-filter-on__body-item:hover {
@@ -426,4 +428,3 @@
 .wiper-button-next.btn__slider_next.products-swiper_next.watched-before__catalog-cart-btn_next:hover::after {
   background: url(../images/hero/next_btn.svg) no-repeat center / cover;
 }
-

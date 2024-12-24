@@ -3,11 +3,19 @@
 }
 
 .breadcrumbs__links span {
-  color: var(--color-orange);
+  margin-left: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.375;
+  color: var(--dark-gray);
 }
 
 .catalog-menu__header {
   margin-bottom: 60px;
+}
+
+.catalog-categories__container {
+  max-width: 1362px;
 }
 
 .catalog-menu__header-title {
@@ -162,6 +170,7 @@
   padding: 45.5px 90px;
   background: url('../images/catalog/catalog_menu_banner.jpg') no-repeat center
     center/cover;
+  border-radius: 40px;
 }
 
 .catalog-menu-categories__body-item_banner .catalog-page-product-baner__text {

@@ -64,7 +64,8 @@
   color: var(--dark-gray);
   padding: 13px 30px;
   /* background: var(--dark-gray); */
-  background-color: rgba(239, 239, 239, 1);
+  /* background-color: rgba(239, 239, 239, 1); */
+  background: rgba(218, 218, 218, 1);
 }
 
 .table td {
@@ -78,7 +79,8 @@
 }
 
 .table tbody tr:hover {
-  background: #cecece;
+  /* background: #cecece; */
+  background: rgba(231, 231, 231, 1);
 }
 
 .breadcrumbs {
@@ -116,13 +118,14 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.375;
-  color: var(--3);
+  color: var(--dark-gray);
 }
 
 .product-card {
   width: 100%;
-  padding: 26px 0 49px;
-  border-bottom: 1px solid rgba(221, 221, 221, 1);
+  padding: 40px 0 50px;
+  /* border-bottom: 1px solid rgba(221, 221, 221, 1); */
+  background: rgba(244, 244, 244, 1);
 }
 
 .product-card .card-info__title {
