@@ -83,9 +83,8 @@
 
 .breadcrumbs {
   width: 100%;
-  margin-top: 25px;
-  padding-bottom: 22px;
-  border-bottom: 1.5px solid var(--5);
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .breadcrumbs__link {
