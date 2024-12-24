@@ -1055,7 +1055,7 @@ video {
 }
 
 .watched-before-swiper.watched-before__catalog-swiper {
-  padding-left: calc(((100% - 1362px) / 2) + 60px);
+  padding-left: calc(((100% - 1280px) / 2) + 70px);
 }
 .watched-before__product-cart
   .watched-before__header
@@ -1066,6 +1066,7 @@ video {
   border-radius: 100%;
   background-color: #d2d2d2;
   transition: 0.3s ease-in;
+  left: 20px;
   /* FEFEFE */
 }
 

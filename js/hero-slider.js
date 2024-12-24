@@ -16,7 +16,7 @@ const heroSlider = new Swiper('.hero-swiper', {
 
 const categoriesSlider = new Swiper('.categories__body-swiper-content-slider', {
     loop: false,
-    spaceBetween: 30,
+    spaceBetween: 20,
     slidesPerView: "auto",
     // slidesPerView: 3.5,
     navigation: {
@@ -28,7 +28,7 @@ const categoriesSlider = new Swiper('.categories__body-swiper-content-slider', {
 
 const workSlider = new Swiper('.work__body-swiper-content-slider', {
     loop: false,
-    spaceBetween: 40,
+    spaceBetween: 20,
     slidesPerView: "auto",
     // slidesPerView: 3.5,
     navigation: {

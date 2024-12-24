@@ -6,7 +6,7 @@ var watchedBeforeSwiper = new Swiper(".watched-before-swiper", {
     // centeredSlides: true,
     speed: 1500,
     // loop: true,
-    spaceBetween: 24,
+    spaceBetween: 20,
     // freeMode: true,
     // grabCursor: true,
     navigation: {
@@ -24,7 +24,7 @@ var watchedBeforeSwiperCatalog = new Swiper(".watched-before__catalog-swiper", {
     speed: 1500,
     // loop: true,
     // grabCursor: true,
-    spaceBetween: 40,
+    spaceBetween: 20,
     // freeMode: true,
     navigation: {
         nextEl: '.watched-before__catalog-cart-btn_next',

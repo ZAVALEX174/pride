@@ -4,7 +4,7 @@ var ourProductsSwiper = new Swiper(".our-projects-swiper", {
   // centeredSlides: true,
   speed: 500,
   // loop: true,
-  spaceBetween: 25,
+  spaceBetween: 20,
   // grabCursor: true,
   navigation: {
     nextEl: '.our-projects-next__btn',

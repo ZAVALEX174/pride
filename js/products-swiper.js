@@ -3,7 +3,7 @@ var productsSwiper = new Swiper(".products-swiper", {
     speed: 500,
     // centeredSlides: true,
     // loop: true,
-    spaceBetween: 40,
+    spaceBetween: 20,
     grabCursor: true,
     navigation: {
         nextEl: '.products-swiper_next',
@@ -14,7 +14,7 @@ var productsSwiper = new Swiper(".products-swiper", {
 
 var productsSwiperBefore = new Swiper(".watched-before__product-cart-swiper", {
     slidesPerView: "auto",
-    spaceBetween: 17,
+    spaceBetween: 20,
     speed: 500,
     loop: true,
     grabCursor: true,

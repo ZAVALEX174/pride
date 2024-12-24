@@ -1289,7 +1289,7 @@
 }
 
 .products-swiper {
-  padding-left: calc(((100% - 1362px) / 2) + 70px);
+  padding-left: calc(((100% - 1280px) / 2) + 70px);
 }
 .products-swiper_next {
   width: 50px;
@@ -2022,7 +2022,7 @@
   margin-bottom: 40px;
 }
 .categories__body-swiper-content-slider {
-  padding-left: calc(((100% - 1346px) / 2) + 70px);
+  padding-left: calc(((100% - 1280px) / 2) + 70px);
 }
 .swiper-slide.categories__body-swiper-content-slider-slide {
   display: flex;
@@ -2326,7 +2326,7 @@
 }
 
 .work__body-swiper-content-slider {
-  padding-left: calc(((100% - 1346px) / 2) + 70px);
+  padding-left: calc(((100% - 1280px) / 2) + 70px);
 }
 
 .work__body-swiper-container {
@@ -2528,13 +2528,13 @@
 }
 
 .our-projects-swiper {
-  padding-left: calc(((100% - 1368px) / 2));
+  padding-left: calc(((100% - 1280px) / 2) + 70px);
 }
 
 .swiper-btn-box-big__container {
   padding: 0;
   position: relative;
-  max-width: 1390px;
+  max-width: 1324px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -2581,7 +2581,7 @@
 .swiper-btn-box-big__container .our-projects-prev__btn,
 .other-prev__btn {
   right: auto;
-  left: 0;
+  left: 20px;
 }
 
 .other-prev__btn::after {
@@ -2685,8 +2685,8 @@
 
     img {
       margin: 0 auto;
-      margin-bottom: 30px;
-      margin-top: 12px;
+      margin-bottom: 23px;
+      margin-top: 40px;
     }
 
     .cart__title_otziv {
@@ -2696,7 +2696,7 @@
       line-height: 1.1875;
       text-align: center;
       color: var(--dark-gray);
-      margin-bottom: 25px;
+      margin-bottom: 6px;
     }
     .cart__subtitle_otziv {
       font-weight: 400;
@@ -2704,14 +2704,14 @@
       line-height: 1.35;
       text-align: center;
       color: var(--dark-gray);
-      margin-bottom: 62px;
+      margin-bottom: 58px;
     }
 
     .our-projects-cart__btn-box {
       justify-content: center;
     }
 
-    .our-projects-cart__btn {
+    .our-projects-cart__btn-open-modal-form {
       max-width: 300px;
       width: 100%;
     }
@@ -2720,7 +2720,7 @@
 
 .gray {
   position: relative;
-  padding: 46px 30px;
+  padding: 40px 30px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -2957,7 +2957,7 @@
 } */
 
 .other__body-list {
-  padding-left: calc(((100% - 1346px) / 2) + 55px);
+  padding-left: calc(((100% - 1280px) / 2) + 70px);
 }
 
 .other__body-item {

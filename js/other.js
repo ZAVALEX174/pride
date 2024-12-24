@@ -4,7 +4,7 @@ var otherSwiper = new Swiper(".other__body-list", {
   // centeredSlides: true,
   speed: 500,
   // loop: true,
-  spaceBetween: 30,
+  spaceBetween: 20,
   grabCursor: true,
   navigation: {
     nextEl: '.other-next__btn',
@@ -17,7 +17,7 @@ var otherSwiperCatalog = new Swiper(".swiper-filter-on__body-swiper", {
   // centeredSlides: true,
   speed: 500,
   loop: true,
-  spaceBetween: 24,
+  spaceBetween: 20,
   grabCursor: true,
   navigation: {
     nextEl: '.swiper-filter-on-btn_next',
