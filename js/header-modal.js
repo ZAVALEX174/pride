@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinkTwo = document.querySelector('.modal-two .navigation__link');
 
 
-
+    let breadcrumbsElement = document.querySelector('.breadcrumbs');
     let scrollBarClient = document.documentElement.clientWidth;
     let scrollBarAll = window.innerWidth;
 
@@ -39,7 +39,17 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.style.paddingRight = "";
 
             document.querySelector('.main').classList.remove('main-overlay');
-            document.querySelector('.breadcrumbs').classList.remove('main-overlay');
+
+
+            if (breadcrumbsElement != null) {
+                document.querySelector('.breadcrumbs').classList.remove('main-overlay');
+                console.log('я существую');
+
+            }
+
+            // document.querySelector('.breadcrumbs').classList.remove('main-overlay');
+
+
         } else {
             headerModalOne.classList.add('header-menu-modal-active');
             navLinkOne.classList.add('navigation__link-active');
@@ -50,7 +60,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
             document.querySelector('.main').classList.add('main-overlay');
-            document.querySelector('.breadcrumbs').classList.add('main-overlay');
+            if (breadcrumbsElement != null) {
+                document.querySelector('.breadcrumbs').classList.add('main-overlay');
+            }
         }
 
         inputSaerch.classList.remove('search__active-input');
@@ -82,7 +94,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         document.querySelector('.main').classList.remove('main-overlay');
-        document.querySelector('.breadcrumbs').classList.remove('main-overlay');
+        if (breadcrumbsElement != null) {
+            document.querySelector('.breadcrumbs').classList.remove('main-overlay');
+        }
     });
 
     openModalBtnTwo.addEventListener("click", (e) => {
@@ -103,7 +117,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
             document.querySelector('.main').classList.remove('main-overlay');
-            document.querySelector('.breadcrumbs').classList.remove('main-overlay');
+            if (breadcrumbsElement != null) {
+                document.querySelector('.breadcrumbs').classList.remove('main-overlay');
+            }
         } else {
 
             headerModalTwo.classList.add('header-menu-modal2-active');
@@ -114,7 +130,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
             document.querySelector('.main').classList.add('main-overlay');
-            document.querySelector('.breadcrumbs').classList.add('main-overlay');
+            if (breadcrumbsElement != null) {
+                document.querySelector('.breadcrumbs').classList.add('main-overlay');
+            }
         }
 
         inputSaerch.classList.remove('search__active-input');
@@ -221,7 +239,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         document.querySelector('.main').classList.remove('main-overlay');
-        document.querySelector('.breadcrumbs').classList.remove('main-overlay');
+        if (breadcrumbsElement != null) {
+            document.querySelector('.breadcrumbs').classList.remove('main-overlay');
+        }
     })
 
 
