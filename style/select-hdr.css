@@ -6,12 +6,9 @@
 .dropdown {
   position: relative;
   width: 100%;
-  /* padding-left: 29px; */
-  /* padding-right: 29px; */
   padding-left: 0;
   padding-right: 0;
   z-index: 10;
-  /* background: var(--dark-gray); */
 }
 
 .header__lang-box {
@@ -27,7 +24,6 @@
   font-weight: 300;
   margin: 0;
   padding: 0;
-  /* padding-right: 24px; */
   padding-right: 0;
   font-size: 18px;
   line-height: 40px;

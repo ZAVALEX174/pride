@@ -26,60 +26,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* @media (max-width: 3100px) {
-  html {
-    font-size: calc(100vw / 3100 * 10);
-  }
-}
-
-@media (max-width: 2560px) {
-  html {
-    font-size: calc(100vw / 2560 * 10);
-  }
-}
-
-@media (max-width: 1920px) {
-  html {
-    font-size: calc(100vw / 1920 * 10);
-  }
-}
-
-@media (max-width: 1440px) {
-  html {
-    font-size: calc(100vw / 1440 * 10);
-  }
-}
-
-@media (max-width: 1280px) {
-  html {
-    font-size: calc(100vw / 1280 * 10);
-  }
-}
-
-@media (max-width: 1220px) {
-  html {
-    font-size: calc(100vw / 1220 * 10);
-  }
-}
-
-@media (max-width: 999px) {
-  html {
-    font-size: calc(100vw / 999 * 10);
-  }
-}
-
-@media (max-width: 500px) {
-  html {
-    font-size: calc(100vw / 500 * 10);
-  }
-}
-
-@media (max-width: 375px) {
-  html {
-    font-size: calc(100vw / 375 * 10);
-  }
-} */
-
 body {
   min-width: 320px;
   font-weight: 300;
@@ -128,7 +74,6 @@ li {
 
 .container {
   margin: 0 auto;
-  /*max-width: 1152px;*/
   max-width: 1390px;
   width: 100%;
   padding: 0 11px;
