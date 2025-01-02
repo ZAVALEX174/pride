@@ -4,9 +4,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const content = document.querySelector('.catalog-categories__body-list');
     const nextBtn = wrapperCatalogCategories.querySelector('.next-btn');
     const prevBtn = wrapperCatalogCategories.querySelector('.prev-btn');
-    const itemsPerPage = 6;
+    const itemsPerPage = 12;
     let currentPage = 0;
     const items = Array.from(content.getElementsByTagName('li'));
+
 
     function showPage(page) {
         const startIndex = page * itemsPerPage;
@@ -116,32 +117,34 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     })
 
-    const productsList = document.querySelectorAll(".catalog-categories__body-item");
+    // const productsList = document.querySelectorAll(".catalog-categories__body-item");
+    // console.log(productsList);
 
-    if (productsList) {
-        productsList.forEach(el => {
-            let currentCart = el;
-            const cartSwitchItem = currentCart.querySelectorAll(".cart-switch__item");
-            const imagePagination = currentCart.querySelector(".image-pagination");
 
-            if(cartSwitchItem.length > 1) {
-                cartSwitchItem.forEach((el, index) => {
-                    // добавляем дата-атрибут каждому item
-                    el.setAttribute("data-index", index);
-                    imagePagination.innerHTML += `<li class="image-pagination__item ${index == 0 ? 'image-pagination__item_active' : ''}" data-index="${index}"></li>`;
-                    el.addEventListener("mouseenter", (e) => {
-                        currentCart.querySelectorAll(".image-pagination__item").forEach((el) => {el.classList.remove('image-pagination__item_active');});
-                        currentCart.querySelector(`.image-pagination__item[data-index="${e.currentTarget.dataset.index}"]`).classList.add('image-pagination__item_active');
-                    })
+    // if (productsList) {
+    //     productsList.forEach(el => {
+    //         let currentCart = el;
+    //         const cartSwitchItem = currentCart.querySelectorAll(".cart-switch__item");
+    //         const imagePagination = currentCart.querySelector(".image-pagination");
 
-                    el.addEventListener("mouseleave", (e) => {
-                        currentCart.querySelectorAll(".image-pagination__item").forEach((el) => {el.classList.remove('image-pagination__item_active');});
-                        currentCart.querySelector(`.image-pagination__item[data-index="0"]`).classList.add('image-pagination__item_active');
-                    })
+    //         if (cartSwitchItem.length > 1) {
+    //             cartSwitchItem.forEach((el, index) => {
+    //                 // добавляем дата-атрибут каждому item
+    //                 el.setAttribute("data-index", index);
+    //                 imagePagination.innerHTML += `<li class="image-pagination__item ${index == 0 ? 'image-pagination__item_active' : ''}" data-index="${index}"></li>`;
+    //                 el.addEventListener("mouseenter", (e) => {
+    //                     currentCart.querySelectorAll(".image-pagination__item").forEach((el) => { el.classList.remove('image-pagination__item_active'); });
+    //                     currentCart.querySelector(`.image-pagination__item[data-index="${e.currentTarget.dataset.index}"]`).classList.add('image-pagination__item_active');
+    //                 })
 
-                })
-            }
+    //                 el.addEventListener("mouseleave", (e) => {
+    //                     currentCart.querySelectorAll(".image-pagination__item").forEach((el) => { el.classList.remove('image-pagination__item_active'); });
+    //                     currentCart.querySelector(`.image-pagination__item[data-index="0"]`).classList.add('image-pagination__item_active');
+    //                 })
 
-        });
-    }
+    //             })
+    //         }
+
+    //     });
+    // }
 })
