@@ -15,7 +15,7 @@ document.querySelectorAll('.dropdown').forEach(function (DropDownWrapper) {
         listItem.addEventListener('click', function (e) {
             listItem.dataset.value == 'rus' ? valueBtn.innerText = 'Русский' : valueBtn.innerText = this.innerText;
             let image = listItem.querySelector('.drop-img').src;
-            valueBtnImg.src = image;
+            // valueBtnImg.src = image; // убрали флаги со страницы
             // listItem.querySelector('.custom-checkbox').classList.toggle('custom-checkbox__selected')
             let inputChecked = listItem.querySelector('input[type="checkbox"]');
             if (inputChecked.checked == true) {
