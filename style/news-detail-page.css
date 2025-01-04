@@ -207,3 +207,50 @@
     }
   }
 }
+
+.about-in-cards {
+  width: 100%;
+  padding: 60px 0;
+
+  .about-in-cards__content {
+    display: flex;
+    column-gap: 58px;
+
+    .about-in-cards__content-left,
+    .about-in-cards__content-right {
+      display: flex;
+      flex-direction: column;
+      row-gap: 48px;
+    }
+
+    .low-img {
+      height: 297px;
+      overflow: hidden;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+
+    .high-img {
+      height: 406px;
+      overflow: hidden;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+
+    .low-text,
+    .high-text {
+      padding: 0;
+      margin: 0;
+
+      p {
+        padding: 0;
+        margin: 0;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.22222;
+        color: var(--dark-gray);
+        opacity: 0.8;
+      }
+    }
+  }
+}
