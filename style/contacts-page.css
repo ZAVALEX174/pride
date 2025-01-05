@@ -1,0 +1,167 @@
+.contacts-page-contact {
+  width: 100%;
+  padding: 60px 0 90px;
+  border-bottom: 1px solid rgba(229, 229, 229, 1);
+
+  .contacts-page-contact__title {
+    font-family: 'GetVoIP Grotesque Regular', sans-serif;
+    margin-bottom: 60px;
+  }
+
+  .contacts-page-contact-content {
+    width: 100%;
+    display: flex;
+    column-gap: 79px;
+
+    .contacts-page-contact-content-box {
+      width: calc((100% - 79px) / 2);
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 101px);
+      gap: 30px 15px;
+      /* border: 1px solid red; */
+
+      .contact-link-box {
+        border: 1px solid rgba(229, 229, 229, 1);
+        transition: 0.3s ease-in;
+      }
+
+      .contact-link {
+        padding-left: 50px;
+        position: relative;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        text-align: left;
+        color: var(--dark-gray);
+
+        span {
+          font-size: 17px;
+          font-weight: 400;
+          line-height: 22px;
+          text-align: left;
+          color: var(--ligth-gray);
+        }
+      }
+
+      .contact-link-box:hover {
+        border: 1px solid var(--color-orange);
+      }
+
+      .contact-sales {
+        grid-area: 1/1/1/2;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+
+        .contact-sales__link {
+          position: relative;
+        }
+
+        .contact-sales__link::before {
+          position: absolute;
+          content: '';
+          width: 26px;
+          height: 26px;
+          display: block;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          background: url('../images/contacts-page/tel2.svg') center
+            center/cover no-repeat;
+        }
+      }
+
+      .contact-other {
+        grid-area: 1/2/1/3;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+
+        .contact-other__link {
+          position: relative;
+        }
+
+        .contact-other__link::before {
+          position: absolute;
+          content: '';
+          width: 26px;
+          height: 26px;
+          display: block;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          background: url('../images/contacts-page/tel2.svg') center
+            center/cover no-repeat;
+        }
+      }
+
+      .contact-email {
+        grid-area: 2/1/2/3;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+
+        .contact-email__link {
+          position: relative;
+        }
+
+        .contact-email__link::before {
+          position: absolute;
+          content: '';
+          width: 31px;
+          height: 24px;
+          display: block;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          background: url('../images/contacts-page/email.svg') center
+            center/cover no-repeat;
+        }
+      }
+
+      .contact-address {
+        grid-area: 3/1/3/3;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+
+        .contact-address__link {
+          position: relative;
+        }
+
+        .contact-address__link::before {
+          position: absolute;
+          content: '';
+          width: 27px;
+          height: 27px;
+          display: block;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          background: url('../images/contacts-page/address.svg') center
+            center/cover no-repeat;
+        }
+      }
+    }
+
+    .contacts-page-contact-content-map {
+      width: calc((100% - 79px) / 2);
+
+      .content-map {
+        height: 363px;
+
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
