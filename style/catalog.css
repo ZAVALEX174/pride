@@ -231,6 +231,7 @@
 
   .categories__btn {
     background: transparent;
+    font-size: 18px;
     order: 1;
   }
 }
@@ -270,7 +271,7 @@
 .catalog-categories__header-filter-wrapper-text {
   display: inline-flex;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.2;
   color: var(--dark-gray);
   margin-right: 16px;
@@ -279,7 +280,7 @@
 .catalog-categories__header-filter-btn {
   padding: 0;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.2;
   color: var(--ligth-gray);
   margin-right: 25px;
@@ -342,7 +343,7 @@
     width: 100%;
     padding-left: 64px;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.1;
     color: var(--dark-gray);
     transition: 0.3s ease-in;
@@ -379,7 +380,7 @@
   padding: 0;
   margin: 0;
   font-weight: 300;
-  font-size: 25px;
+  font-size: 18px;
   line-height: 1.2;
   color: var(--dark-gray);
 }
@@ -434,7 +435,7 @@
   border: none;
   background-color: transparent;
   font-weight: 300;
-  font-size: 25px;
+  font-size: 18px;
   line-height: 1;
   color: var(--ligth-gray);
   padding: 11px;
@@ -444,7 +445,7 @@
 
 .pagination li.active {
   font-weight: 300;
-  font-size: 25px;
+  font-size: 18px;
   line-height: 1;
   color: var(--dark-gray);
   border: 1.5px solid var(--color-orange);
