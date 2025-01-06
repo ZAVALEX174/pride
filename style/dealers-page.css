@@ -69,3 +69,120 @@
     transform: translateX(-50%);
   }
 }
+
+.partnership {
+  width: 100%;
+  padding: 125px 0;
+
+  .partnership-content {
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+
+    .partnership-content-text {
+      max-width: 732px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      .partnership-content-text__subtitle {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1;
+        text-align: left;
+        color: var(--color-orange);
+        margin-bottom: 20px;
+      }
+
+      .partnership-content-text__title {
+        font-family: 'GetVoIP Grotesque Regular', sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1;
+        text-align: left;
+        color: var(--dark-gray);
+        margin-bottom: 40px;
+      }
+
+      .partnership-content-text__list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 26px;
+        margin-bottom: 40px;
+
+        .partnership-content-text__item {
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 0.9;
+          text-align: left;
+          padding-left: 35px;
+          position: relative;
+        }
+
+        .partnership-content-text__item::before {
+          position: absolute;
+          content: '';
+          display: block;
+          width: 20px;
+          height: 20px;
+          top: 0;
+          left: 0;
+          background: url('../images/dealers-page/ch.svg') center center/cover
+            no-repeat;
+        }
+      }
+
+      .partnership-content-text__desc {
+        width: 100%;
+        padding: 21px 34px;
+        background-color: var(--5);
+        border-radius: 30px;
+
+        p {
+          font-family: 'TT Norms Pro Medium', sans-serif;
+          padding: 0;
+          margin: 0;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 22px;
+          text-align: left;
+        }
+
+        span {
+          font-family: 'TT Norms Pro Medium', sans-serif;
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 22px;
+          text-align: left;
+          color: var(--color-orange);
+        }
+      }
+    }
+
+    .partnership-content-img {
+      max-width: 542px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 36px;
+
+      .partnership-content-img-box {
+        max-width: 542px;
+        width: 100%;
+        height: 399px;
+        border-radius: 20px;
+        overflow: hidden;
+      }
+
+      .compred__btn {
+        max-width: 542px;
+        width: 100%;
+        background-color: var(--color-orange);
+        height: 50px;
+        line-height: 50px;
+        justify-content: center;
+      }
+    }
+  }
+}

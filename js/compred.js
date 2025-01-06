@@ -61,14 +61,52 @@ document.addEventListener('DOMContentLoaded', function () {
   // })
 
   // пока закомитил
-  comPredl.addEventListener('click', (e) => {
-    e.preventDefault();
-    modal.classList.add('modals_opened');
-    // modalFormZakaz.classList.remove('none');
-    modalFormRepresentation.classList.remove('none');
 
+  if (comPredl) {
+    comPredl.addEventListener('click', (e) => {
+      e.preventDefault();
+      modal.classList.add('modals_opened');
+      // modalFormZakaz.classList.remove('none');
+      modalFormRepresentation.classList.remove('none');
+
+    })
+
+
+    closeModalFormPepresentationBtn.addEventListener('click', () => {
+      modal.classList.remove('modals_opened');
+      modalFormRepresentation.classList.add('none');
+    })
+
+
+    $(document).click(function (e) {
+      if ($(e.target).is('.modals__wrapper')) {
+        modal.classList.remove('modals_opened');
+        modalFormRepresentation.classList.add('none');
+        // modalFormOtzivi.classList.add('none');
+      }
+    });
+  }
+});
+
+// dealers-page
+let comPredlDealersPage = document.querySelectorAll('.compred__btn');
+
+if (comPredlDealersPage) {
+  console.log(comPredlDealersPage);
+  const modal = document.querySelector('.modals');
+  const modalFormRepresentation = modal.querySelector('.modals-form-representation');
+  const closeModalFormPepresentationBtn = document.querySelector('.anketa-close');
+
+  comPredlDealersPage.forEach((item) => {
+
+    item.addEventListener('click', (e) => {
+      e.preventDefault();
+      modal.classList.add('modals_opened');
+      // modalFormZakaz.classList.remove('none');
+      modalFormRepresentation.classList.remove('none');
+
+    })
   })
-
 
   closeModalFormPepresentationBtn.addEventListener('click', () => {
     modal.classList.remove('modals_opened');
@@ -83,4 +121,4 @@ document.addEventListener('DOMContentLoaded', function () {
       // modalFormOtzivi.classList.add('none');
     }
   });
-});
+}
