@@ -33,7 +33,7 @@
     .running-line-content__wrapper {
       display: flex;
       width: 200%;
-      animation: cicles 5s linear infinite;
+      animation: cicles 15s linear infinite;
 
       .running-line-content__img-box {
         width: 100%;
