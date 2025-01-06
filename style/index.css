@@ -120,4 +120,30 @@ h2 {
   padding-bottom: 15px;
 }
 
+.card-like-box  {
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  border-radius: 100%;
+  background-color: rgba(254, 254, 254, 1);
+  z-index: 40;
+  right: 30px;
+  top: 17px;
+  transition: 0.3s ease-in;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+  svg {
+    width: 18px;
+    height: 16px;
+    color: #2B2A29;
+  }
+}
+.card-like-box:hover, .card-like-box__active {
+  background-color: var(--color-orange);
+
+  svg {
+    color: var(--main-bg);
+  }
+}
