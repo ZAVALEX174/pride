@@ -186,3 +186,7 @@
     }
   }
 }
+
+.orange-bottom-border {
+  border-bottom: 60px solid var(--color-orange);
+}
