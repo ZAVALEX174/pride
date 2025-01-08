@@ -1,0 +1,3 @@
+.categories__body-list.catalog-categories__body-list.project-page__body-list{
+    grid-template-columns: repeat(3, 1fr);
+}
