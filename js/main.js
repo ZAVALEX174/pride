@@ -1,18 +1,18 @@
 // 1. Определить кнопку "Показать всё"
-const showMore = document.querySelector('.categories__body-showmore-btn');
+const showMore = document.querySelector('.btn__showmore');
 // console.log(showMore);
 //2. Максимальное количество элементов на странице
 const productsLength = document.querySelectorAll(".categories__body-item").length;
 // console.log(productsLength);
 // 3. Текущее видимое количество элементов на странице
-let items = 6;
+let items = 12;
 // console.log(items);
 
 showMore.addEventListener('click', () => {
     items += productsLength;
     // console.log(items);
     // находим массив дочерних элементов списка
-    const array = Array.from(document.querySelector('.categories__body-list').children);
+    const array = Array.from(document.querySelector('.project-page__body-list').children);
     // console.log(array)
     const visibleItems = array.slice(0, items);
 
@@ -25,13 +25,17 @@ showMore.addEventListener('click', () => {
 
 // добавляем класс кнопке и удаляем у других этот класс если он есть
 const productsBtnsBox = document.querySelector('.products__body-btn-box');
-const buttons = productsBtnsBox.querySelectorAll('button');
-buttons.forEach(button => {
-    button.addEventListener('click', function () {
-        buttons.forEach(b => b.classList.remove('selected'));
-        this.classList.add('selected');
+if (productsBtnsBox) {
+    const buttons = productsBtnsBox.querySelectorAll('button');
+    buttons.forEach(button => {
+        button.addEventListener('click', function () {
+            buttons.forEach(b => b.classList.remove('selected'));
+            this.classList.add('selected');
+        });
     });
-});
+}
+
+
 
 
 

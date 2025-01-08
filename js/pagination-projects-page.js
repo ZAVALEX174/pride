@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const ulBtn = document.querySelector('.ul-btn');
   const nextBtn = wrapperCatalogCategories.querySelector('.next-btn');
   const prevBtn = wrapperCatalogCategories.querySelector('.prev-btn');
-  const newsCardsList = document.querySelector('.list-newq-cards');
+  const newsCardsList = document.querySelector('.project-page__body-list');
 
   const itemsPerPage = 9;
   let currentPage = 0;
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
       pageButton.textContent = i + 1;
       pageButton.addEventListener('click', (e) => {
         currentPage = i;
-        window.scrollTo(0, 800);
+        window.scrollTo(0, 100);
         showPage(currentPage);
         updateActiveButtonStates();
 
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (e.target.closest('.next-btn')) {
       newActive = currentActiveLi.nextElementSibling;
       currentPage++;
-      window.scrollTo(0, 500);
+      window.scrollTo(0, 100);
       showPage(currentPage);
 
       if (currentPage == liBtns.length - 1) {
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
       newActive = currentActiveLi.previousElementSibling;
       currentPage--;
-      window.scrollTo(0, 500);
+      window.scrollTo(0, 800);
       showPage(currentPage);
       nextBtn.classList.remove('none');
 
