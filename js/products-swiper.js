@@ -24,6 +24,9 @@ var productsSwiperBefore = new Swiper(".watched-before__product-cart-swiper", {
     },
 });
 
+
+
+
 const productsSlide = document.querySelectorAll(".products-slide");
 
 
