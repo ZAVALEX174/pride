@@ -1,3 +1,59 @@
-.categories__body-list.catalog-categories__body-list.project-page__body-list{
-    grid-template-columns: repeat(3, 1fr);
+.categories__body-list.catalog-categories__body-list.project-page__body-list {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.catalog-categories__body-item {
+  max-width: 100%;
+  
+  .swiper-slide.our-projects-slide.gray {
+    margin-right: 0;
+    max-width: 100%;
+  }
+}
+
+.projects-page__title {
+  font-family: 'GetVoIP Grotesque Regular', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.25;
+  color: var(--dark-gray);
+  margin-bottom: 0;
+}
+
+.catalog-categories__header-filter-wrapper.projects-page__header-filter-wrapper {
+  max-width: 600px;
+  width: 100%;
+  justify-content: flex-end;
+}
+.buttons-box.project-page__buttons-box {
+  border-top-color: transparent;
+}
+
+.filter-btn-reset {
+  max-width: 110px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.38889;
+  color: var(--ligth-gray);
+
+  svg {
+    margin-left: 10px;
+  }
+}
+.btn__showmore {
+  max-width: 929px;
+  width: 100%;
+  margin-right: 15px;
+  justify-content: center;
+  background: var(--5);
+  border-radius: 30px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.1;
+  text-align: center;
+  color: var(--dark-gray);
 }
