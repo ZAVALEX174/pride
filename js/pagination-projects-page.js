@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const prevBtn = wrapperCatalogCategories.querySelector('.prev-btn');
     const newsCardsList = document.querySelector('.project-page__body-list');
     let showMoreBtn = document.querySelector('.btn__showmore');
-    console.log(showMoreBtn);
 
 
     const itemsPerPage = 9;
@@ -17,21 +16,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     showMoreBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        console.log(items.length)
+        console.log(items.length, 'длина картинок')
 
+        curInd += 9;
+        console.log(curInd, 'номер картинки');
 
-        console.log('showMoreBtn');
-        curInd += 3;
-        console.log(curInd);
-
-        // const array = Array.from(document.querySelector('.project-page__body-list').children);
-        //
-        // const visibleItems = array.slice(0, items);
-        // console.log(visibleItems);
-        //
-        // if (visibleItems.length === items.length) {
-        //     showMoreBtn.style.display = 'none';
-        // }
 
         function showPage(page) {
             const startIndex = page * curInd;
@@ -43,10 +32,41 @@ document.addEventListener('DOMContentLoaded', function () {
             nextBtn.classList.remove('none');
         }
 
+        if (curInd >= items.length) {
+            showMoreBtn.style.opacity = '0';
+            showMoreBtn.style.display = 'none';
+        } else {
+
+            showMoreBtn.style.opacity = '1';
+            showMoreBtn.style.display = 'flex';
+        }
+
+        // const pageButtons = document.querySelectorAll('.pagination li');
+        // console.log(pageButtons, "pageButtons");
+        const pageButtonItems = Array.from(document.querySelectorAll('.pagination li'));
+        // console.log(pageButtonItems, "pageButtonItems");
+
+        pageButtonItems.forEach((itemsPage) => {
+            // console.log('kjngjkldf');
+            // console.log(itemsPage);
+            itemsPage.classList.remove('active');
+            if (curInd >= (itemsPerPage * 2)) {
+                pageButtonItems[0].classList.remove('active');
+                pageButtonItems[1].classList.add('active');
+            } else {
+                pageButtonItems[1].classList.remove('active');
+            }
+            if (curInd >= (itemsPerPage * 3)) {
+                pageButtonItems[1].classList.remove('active');
+                pageButtonItems[2].classList.add('active');
+            } else {
+                pageButtonItems[2].classList.remove('active');
+            }
+        })
+
         showPage(currentPage);
 
     })
-
 
     function showPage(page) {
         const startIndex = page * itemsPerPage;
@@ -83,6 +103,8 @@ document.addEventListener('DOMContentLoaded', function () {
         pageButtons.forEach((button, index) => {
 
             if (index === currentPage) {
+                console.log(index, "index");
+
                 button.classList.add('active');
             } else {
                 button.classList.remove('active');
@@ -117,6 +139,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 nextBtn.classList.add('none');
                 prevBtn.classList.remove('none');
                 showMoreBtn.style.opacity = '0';
+                showMoreBtn.style.display = 'none';
             }
 
         } else {
@@ -126,6 +149,7 @@ document.addEventListener('DOMContentLoaded', function () {
             showPage(currentPage);
             nextBtn.classList.remove('none');
             showMoreBtn.style.opacity = '1';
+            showMoreBtn.style.display = 'flex';
 
             if (currentPage == liBtns[1].value) {
                 prevBtn.classList.add('none')
@@ -157,7 +181,12 @@ document.addEventListener('DOMContentLoaded', function () {
         arr.addEventListener('click', (e) => {
             // console.log(e.currentTarget);
             if (e.currentTarget == lastEl) {
-                nextBtn.classList.add('none')
+                nextBtn.classList.add('none');
+                showMoreBtn.style.opacity = '0';
+                showMoreBtn.style.display = 'none';
+            } else {
+                showMoreBtn.style.opacity = '1';
+                showMoreBtn.style.display = 'flex';
             }
         })
     })
