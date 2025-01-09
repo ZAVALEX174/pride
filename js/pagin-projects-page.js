@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     //
     let curInd = itemsPerPage;
+    console.log(curInd, 'в самом начале');
 
     // Отработка функциональности showPage()
 
@@ -107,13 +108,21 @@ document.addEventListener('DOMContentLoaded', function () {
         let newActive;
 
         if (e.target.closest('.btn__showmore')) {
-            curInd += 9;
+
+
+            curInd = curInd + itemsPerPage;
+
+            console.log(curInd, "-если еще нажать кнопку добавить");
 
             function showPage(page) {
+
                 const startIndex = page * curInd;
                 const endIndex = startIndex + curInd;
+                console.log(startIndex, 'startIndex');
+                console.log(endIndex, 'endIndex');
+
                 items.forEach((item, index) => {
-                    item.classList.toggle('li-hidden', index < startIndex || index >= endIndex);
+
                     newActive = currentActiveLi.nextElementSibling;
 
                     if (curInd >= endIndex) {
@@ -128,12 +137,11 @@ document.addEventListener('DOMContentLoaded', function () {
                         prevBtn.style.display = 'none';
                         currentActiveLi.classList.remove('active');
                         newActive.classList.add('active');
-                        console.log("end");
+                        // console.log("end");
 
                         const pageButtons = Array.from(document.querySelectorAll('.pagination li'));
                         pageButtons.forEach((button, index) => {
 
-                            console.log(curInd, '- это кол curInd');
                             if (itemsPerPage != curInd) {
                                 pageButtons[0].classList.remove('active');
                             }
@@ -146,14 +154,17 @@ document.addEventListener('DOMContentLoaded', function () {
                         currentActiveLi.classList.remove('active');
                         newActive.classList.add('active');
                     }
+                    item.classList.toggle('li-hidden', index < startIndex || index >= endIndex);
+
                 });
             }
 
             updateActiveButtonStates();
+            // changingNumberCards();
             showPage(currentPage);
         }
-    }
 
+    }
 
     // функция для переключения по кнопкам
     const hendlerBtn = (e) => {
@@ -181,10 +192,8 @@ document.addEventListener('DOMContentLoaded', function () {
         newActive.classList.add('active');
     }
 
-
     nextBtn.addEventListener('click', hendlerBtn);
     prevBtn.addEventListener('click', hendlerBtn);
-    showMoreBtn.addEventListener('click', showMore);
 
     // Подсветка активных кнопок
     function updateActiveButtonStates() {
@@ -196,7 +205,6 @@ document.addEventListener('DOMContentLoaded', function () {
             // если индекс кнопки совпадает с текущей страницей.
             if (index === currentPage) {
                 button.classList.add('active');
-                console.log(curInd, '- общеее кол curInd');
             } else {
                 button.classList.remove('active');
             }
@@ -210,16 +218,19 @@ document.addEventListener('DOMContentLoaded', function () {
     showPage(currentPage);
 
     function changingNumberCards() {
-        currentTargetLi = Array.from(document.querySelectorAll('.ul-btn li'));
+        let currentTargetLi = Array.from(document.querySelectorAll('.ul-btn li'));
         currentTargetLi.forEach(btn => {
             btn.addEventListener('click', (e) => {
-                curInd = 9;
-                console.log((currentTargetLi.indexOf(e.target) + 1), 'это индекс');
-                curInd = curInd * (currentTargetLi.indexOf(e.target) + 1);
-                console.log(curInd, 'После нажатия на кнопку');
+                // curInd = curInd + curInd;
+
+                console.log(curInd, 'строка 222');
+                // console.log((currentTargetLi.indexOf(e.target)), 'это индекс');
+                // curInd = itemsPerPage + curInd;
+                // console.log(curInd, 'После нажатия на кнопку');
             });
         })
     }
 
     changingNumberCards();
+    showMoreBtn.addEventListener('click', showMore);
 })
