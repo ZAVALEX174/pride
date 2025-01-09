@@ -1,0 +1,225 @@
+document.addEventListener('DOMContentLoaded', function () {
+    // выбираем обёртку и инициализируем её как переменную
+    const content = document.querySelector('.project-page__body-list');
+    // задаём количество карточек для отображения на каждой странице
+    const itemsPerPage = 9;
+    // создаём переменную, которая отслеживает номер текущей страницы. Она начинается с 0,
+    // что означает первую страницу
+    let currentPage = 0;
+    // для выбора всех элементов с тегом <li>.
+    // создаём массив (items) из всех дочерних элементов
+    const items = Array.from(content.getElementsByTagName('li'));
+
+    // находим кнопку "Показать больше"
+    let showMoreBtn = document.querySelector('.btn__showmore');
+
+    // находим кнопки вперед, назад
+    const nextBtn = document.querySelector('.next-btn');
+    const prevBtn = document.querySelector('.prev-btn');
+
+    //
+    let curInd = itemsPerPage;
+
+    // Отработка функциональности showPage()
+
+    // Начнём с создания функции showPage(), принимающей параметр page.
+    // Эта функция отвечает за отображение элементов, связанных с данной страницей, при её вызове.
+    function showPage(page) {
+
+        // Далее мы вычисляем startIndex, являющийся первым элементом,
+        // который должен быть отображён на текущей странице, путём умножения параметра page на itemsPerPage.
+        const startIndex = page * itemsPerPage;
+
+        // Также вычисляется endIndex, находящийся сразу после последнего элемента,
+        // который должен быть отображён на текущей странице.
+        const endIndex = startIndex + itemsPerPage;
+
+        // С помощью функции items.forEach() мы создаём цикл, перебирающий каждую карточку и проверяющий,
+        // попадает ли её индекс в диапазон элементов, которые будут отображаться на текущей странице,
+        // т.е. находится ли он до startIndex или после/равно endIndex. Если индекс находится в этом диапазоне,
+        // то ключевое слово toggle применяет к элементу класс li-hidden (который мы определим в нашем CSS-коде),
+        // эффективно скрывая его. Если индекс не удовлетворяет ни одному из условий, класс li-hidden удаляется,
+        // делая элемент видимым.
+        items.forEach((item, index) => {
+            item.classList.toggle('li-hidden', index < startIndex || index >= endIndex);
+
+            // Проверяем, если индекс текущей карточки меньше последнего индекса карточки
+            // которая должна последней отображаться на странице, то кнопка Назад - скрывается,
+            // а если больше, значит отображается не первая страница и кнопка Назад - отображается
+            if (itemsPerPage >= endIndex) {
+                prevBtn.style.display = 'none';
+            } else {
+                prevBtn.style.display = 'block';
+            }
+
+            // Проверяем, если индекс последней карточки больше последнего индекса карточки
+            // которая должна последней отображаться на странице, то кнопка Вперед - скрывается,
+            // а если меньше, значит отображается не последняя страница и кнопка Вперед - отображается,
+            // так же с кнопкой 'Показать больше'
+            if (endIndex >= items.length) {
+                nextBtn.style.display = 'none';
+                showMoreBtn.style.display = 'none';
+            } else {
+                nextBtn.style.display = 'block';
+                showMoreBtn.style.display = 'flex';
+            }
+        });
+        updateActiveButtonStates();
+    }
+
+    // Добавление кнопок
+    function createPageButtons() {
+        //вычисляем общее количество страниц, необходимых для отображения нашей таблицы.
+        const totalPages = Math.ceil(items.length / itemsPerPage);
+        const paginationContainer = document.querySelector('.ul-btn');
+        paginationContainer.classList.add('pagination');
+
+        // Следующим шагом будет создание кнопок для каждой страницы с
+        // использованием цикла для перебора всех возможных индексов страниц:
+        for (let i = 0; i < totalPages; i++) {
+            // В каждой итерации страницы с помощью метода document.createElement()
+            // создаётся новая отдельная кнопка страницы, увеличивающая номер страницы на 1 при каждом цикле.
+            const pageButton = document.createElement('li');
+            pageButton.classList.add('li-pag-btn')
+            pageButton.textContent = i + 1;
+
+            // Далее мы создаём слушатель события click и прикрепляем его к кнопкам страницы.
+            // При нажатии на кнопку будет выполняться функция обратного вызова слушателя события.
+            // Вот объяснение функции обратного вызова:
+            // Переменная currentPage обновляется до текущего значения i,
+            // которое соответствует индексу кликнутой страницы.
+            // Функция showPage() вызывается с обновлённым значением currentPage,
+            // что приводит к отображению содержимого кликнутой страницы.
+            pageButton.addEventListener('click', () => {
+                currentPage = i;
+                window.scrollTo(0, 100);
+                showPage(currentPage);
+                updateActiveButtonStates();
+            });
+
+            // Завершая наш код создания кнопки, мы заканчиваем его следующим образом:
+            paginationContainer.appendChild(pageButton);
+        }
+    }
+
+    const showMore = (e) => {
+        const currentActiveLi = document.querySelector('.pagination li.active');
+        let newActive;
+
+        if (e.target.closest('.btn__showmore')) {
+            curInd += 9;
+
+            function showPage(page) {
+                const startIndex = page * curInd;
+                const endIndex = startIndex + curInd;
+                items.forEach((item, index) => {
+                    item.classList.toggle('li-hidden', index < startIndex || index >= endIndex);
+                    newActive = currentActiveLi.nextElementSibling;
+
+                    if (curInd >= endIndex) {
+                        prevBtn.style.display = 'none';
+                    } else {
+                        prevBtn.style.display = 'block';
+                    }
+
+                    if (endIndex >= items.length) {
+                        nextBtn.style.display = 'none';
+                        showMoreBtn.style.display = 'none';
+                        prevBtn.style.display = 'none';
+                        currentActiveLi.classList.remove('active');
+                        newActive.classList.add('active');
+                        console.log("end");
+
+                        const pageButtons = Array.from(document.querySelectorAll('.pagination li'));
+                        pageButtons.forEach((button, index) => {
+
+                            console.log(curInd, '- это кол curInd');
+                            if (itemsPerPage != curInd) {
+                                pageButtons[0].classList.remove('active');
+                            }
+                        });
+
+                    } else {
+                        nextBtn.style.display = 'block';
+                        showMoreBtn.style.display = 'flex';
+                        prevBtn.style.display = 'block';
+                        currentActiveLi.classList.remove('active');
+                        newActive.classList.add('active');
+                    }
+                });
+            }
+
+            updateActiveButtonStates();
+            showPage(currentPage);
+        }
+    }
+
+
+    // функция для переключения по кнопкам
+    const hendlerBtn = (e) => {
+        const currentActiveLi = document.querySelector('.pagination li.active');
+        let newActive;
+
+        if (e.target.closest('.next-btn')) {
+            newActive = currentActiveLi.nextElementSibling;
+            currentPage++;
+            window.scrollTo(0, 100);
+            showPage(currentPage);
+
+        } else {
+            newActive = currentActiveLi.previousElementSibling;
+            currentPage--;
+            window.scrollTo(0, 800);
+            showPage(currentPage);
+        }
+
+        if (e.target.closest('.prev-btn')) {
+            window.scrollTo(0, 100);
+        }
+
+        currentActiveLi.classList.remove('active');
+        newActive.classList.add('active');
+    }
+
+
+    nextBtn.addEventListener('click', hendlerBtn);
+    prevBtn.addEventListener('click', hendlerBtn);
+    showMoreBtn.addEventListener('click', showMore);
+
+    // Подсветка активных кнопок
+    function updateActiveButtonStates() {
+        // Сначала мы извлекаем все кнопки пагинации с помощью document.querySelectorAll
+        // и присваиваем их переменной pageButtons.
+        const pageButtons = document.querySelectorAll('.pagination li');
+        pageButtons.forEach((button, index) => {
+            // Далее мы используем условный оператор if для назначения стилей класса active,
+            // если индекс кнопки совпадает с текущей страницей.
+            if (index === currentPage) {
+                button.classList.add('active');
+                console.log(curInd, '- общеее кол curInd');
+            } else {
+                button.classList.remove('active');
+            }
+        });
+    }
+
+    // Вызов скрипта
+    // Мы вызываем функцию createPageButtons() перед функцией showPage().
+    // Это гарантирует, что кнопки будут созданы сразу после загрузки страницы.
+    createPageButtons(); // Call this function to create the page buttons initially
+    showPage(currentPage);
+
+    function changingNumberCards() {
+        currentTargetLi = Array.from(document.querySelectorAll('.ul-btn li'));
+        currentTargetLi.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                curInd = 9;
+                console.log((currentTargetLi.indexOf(e.target) + 1), 'это индекс');
+                curInd = curInd * (currentTargetLi.indexOf(e.target) + 1);
+                console.log(curInd, 'После нажатия на кнопку');
+            });
+        })
+    }
+
+    changingNumberCards();
+})
