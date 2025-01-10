@@ -17,9 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const nextBtn = document.querySelector('.next-btn');
     const prevBtn = document.querySelector('.prev-btn');
 
-    //
+
     let curInd = itemsPerPage;
-    console.log(curInd, 'в самом начале');
 
     // Отработка функциональности showPage()
 
@@ -103,68 +102,123 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    let pageCounter;
+
+
     const showMore = (e) => {
         const currentActiveLi = document.querySelector('.pagination li.active');
         let newActive;
+        console.log(pageCounter, "pageCounter");
 
-        if (e.target.closest('.btn__showmore')) {
+        if (pageCounter >= itemsPerPage) {
+            console.log("пиши тут");
+            if (e.target.closest('.btn__showmore')) {
+                pageCounter = pageCounter;
+                let pageCounter2 = pageCounter + itemsPerPage;
 
+                function showPage(page) {
+                    const startIndex = pageCounter;
+                    const endIndex = startIndex + pageCounter2;
+                    console.log(startIndex, 'startIndex');
+                    console.log(endIndex, 'endIndex');
 
-            curInd = curInd + itemsPerPage;
+                    items.forEach((item, index) => {
 
-            console.log(curInd, "-если еще нажать кнопку добавить");
+                        newActive = currentActiveLi.nextElementSibling;
 
-            function showPage(page) {
+                        if (pageCounter2 >= endIndex) {
+                            prevBtn.style.display = 'none';
+                        } else {
+                            prevBtn.style.display = 'block';
+                        }
 
-                const startIndex = page * curInd;
-                const endIndex = startIndex + curInd;
-                console.log(startIndex, 'startIndex');
-                console.log(endIndex, 'endIndex');
+                        if (endIndex >= items.length) {
+                            nextBtn.style.display = 'none';
+                            showMoreBtn.style.display = 'none';
+                            prevBtn.style.display = 'none';
+                            currentActiveLi.classList.remove('active');
+                            newActive.classList.add('active');
 
-                items.forEach((item, index) => {
+                            const pageButtons = Array.from(document.querySelectorAll('.pagination li'));
+                            pageButtons.forEach((button, index) => {
 
-                    newActive = currentActiveLi.nextElementSibling;
+                                if (itemsPerPage != pageCounter) {
+                                    pageButtons[0].classList.remove('active');
+                                }
+                            });
 
-                    if (curInd >= endIndex) {
-                        prevBtn.style.display = 'none';
-                    } else {
-                        prevBtn.style.display = 'block';
-                    }
+                        } else {
+                            nextBtn.style.display = 'block';
+                            showMoreBtn.style.display = 'flex';
+                            prevBtn.style.display = 'block';
+                            currentActiveLi.classList.remove('active');
+                            newActive.classList.add('active');
+                        }
+                        item.classList.toggle('li-hidden', index < startIndex || index >= endIndex);
 
-                    if (endIndex >= items.length) {
-                        nextBtn.style.display = 'none';
-                        showMoreBtn.style.display = 'none';
-                        prevBtn.style.display = 'none';
-                        currentActiveLi.classList.remove('active');
-                        newActive.classList.add('active');
-                        // console.log("end");
+                    });
+                }
 
-                        const pageButtons = Array.from(document.querySelectorAll('.pagination li'));
-                        pageButtons.forEach((button, index) => {
-
-                            if (itemsPerPage != curInd) {
-                                pageButtons[0].classList.remove('active');
-                            }
-                        });
-
-                    } else {
-                        nextBtn.style.display = 'block';
-                        showMoreBtn.style.display = 'flex';
-                        prevBtn.style.display = 'block';
-                        currentActiveLi.classList.remove('active');
-                        newActive.classList.add('active');
-                    }
-                    item.classList.toggle('li-hidden', index < startIndex || index >= endIndex);
-
-                });
+                updateActiveButtonStates();
+                showPage(currentPage);
             }
+        }
+        else {
+            if (e.target.closest('.btn__showmore')) {
+                curInd = curInd + itemsPerPage;
 
-            updateActiveButtonStates();
-            // changingNumberCards();
-            showPage(currentPage);
+                function showPage(page) {
+                    const startIndex = page * curInd;
+                    const endIndex = startIndex + curInd;
+                    console.log(startIndex, 'startIndex');
+                    console.log(endIndex, 'endIndex');
+
+                    items.forEach((item, index) => {
+
+                        newActive = currentActiveLi.nextElementSibling;
+
+                        if (curInd >= endIndex) {
+                            prevBtn.style.display = 'none';
+                        } else {
+                            prevBtn.style.display = 'block';
+                        }
+
+                        if (endIndex >= items.length) {
+                            nextBtn.style.display = 'none';
+                            showMoreBtn.style.display = 'none';
+                            prevBtn.style.display = 'none';
+                            currentActiveLi.classList.remove('active');
+                            newActive.classList.add('active');
+
+                            const pageButtons = Array.from(document.querySelectorAll('.pagination li'));
+                            pageButtons.forEach((button, index) => {
+
+                                if (itemsPerPage != curInd) {
+                                    pageButtons[0].classList.remove('active');
+                                }
+                            });
+
+                        } else {
+                            nextBtn.style.display = 'block';
+                            showMoreBtn.style.display = 'flex';
+                            prevBtn.style.display = 'block';
+                            currentActiveLi.classList.remove('active');
+                            newActive.classList.add('active');
+                        }
+                        item.classList.toggle('li-hidden', index < startIndex || index >= endIndex);
+
+                    });
+                }
+
+                updateActiveButtonStates();
+                showPage(currentPage);
+            }
         }
 
+
+
     }
+
 
     // функция для переключения по кнопкам
     const hendlerBtn = (e) => {
@@ -211,26 +265,31 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+
     // Вызов скрипта
     // Мы вызываем функцию createPageButtons() перед функцией showPage().
     // Это гарантирует, что кнопки будут созданы сразу после загрузки страницы.
     createPageButtons(); // Call this function to create the page buttons initially
     showPage(currentPage);
-
-    function changingNumberCards() {
-        let currentTargetLi = Array.from(document.querySelectorAll('.ul-btn li'));
-        currentTargetLi.forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                // curInd = curInd + curInd;
-
-                console.log(curInd, 'строка 222');
-                // console.log((currentTargetLi.indexOf(e.target)), 'это индекс');
-                // curInd = itemsPerPage + curInd;
-                // console.log(curInd, 'После нажатия на кнопку');
-            });
-        })
-    }
-
-    changingNumberCards();
     showMoreBtn.addEventListener('click', showMore);
+
+    const pageButtons = Array.from(document.querySelectorAll('.ul-btn li'));
+    console.log(pageButtons);
+    pageButtons.forEach((button, index) => {
+
+        button.addEventListener('click', (e) => {
+            {
+                e.preventDefault();
+                console.log('Меня нажали');
+
+                if (index >= 1) {
+                    console.log('Привет');
+
+                    pageCounter = itemsPerPage * index;
+                    console.log(pageCounter);
+                }
+            }
+        })
+    });
+
 })
