@@ -8,6 +8,7 @@
 }
 
 .conditions__container {
+    max-width: 1150px;
     width: 100%;
     display: flex;
 }
@@ -15,19 +16,19 @@
 .conditions-general {
     width: calc(100% - 542px);
     display: flex;
-    align-items: center;
+    /*align-items: center;*/
     justify-content: center;
     flex-direction: column;
     padding-right: 70px;
 }
 
-.title {
-    font-family: 'GetVoIP Grotesque Regular', sans-serif;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 1.35417;
-    color: var(--dark-gray);
-}
+/*.title {*/
+/*    font-family: 'GetVoIP Grotesque Regular', sans-serif;*/
+/*    font-weight: 700;*/
+/*    font-size: 48px;*/
+/*    line-height: 1.35417;*/
+/*    color: var(--dark-gray);*/
+/*}*/
 
 .subtitle {
     font-weight: 300;
@@ -37,7 +38,12 @@
 }
 
 .conditions-general__title {
-    margin-bottom: 40px;
+    font-family: 'GetVoIP Grotesque Regular', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.25;
+    color: var(--dark-gray);
+    margin-bottom: 26px;
 }
 
 .conditions-peculiarities {
@@ -54,11 +60,11 @@
 }
 
 .conditions-peculiarities__item {
-    border: 1px solid #e1e4ed;
-    border-radius: 10px;
+    border: 1px solid var(--5);
+    border-radius: 20px;
     padding: 32px 24px;
-    box-shadow: 0 1px 4px 0 rgba(25, 33, 61, 0.08);
-    background: #fff;
+    /*box-shadow: 0 1px 4px 0 rgba(25, 33, 61, 0.08);*/
+    background: #fefefe;;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -68,15 +74,15 @@
 }
 
 .conditions-peculiarities__item:hover {
-    box-shadow: 0 1px 4px 0 rgba(25, 33, 61, 0.08);
-    background: var(--dark-gray);
-    border-color: var(--dark-gray);
+    /*box-shadow: 0 1px 4px 0 rgba(25, 33, 61, 0.08);*/
+    background: var(--5);
+    border-color: var(--5);
 }
 
 .title-cart {
     font-family: 'TT Norms Pro Bold', sans-serif;
     font-weight: 600;
-    font-size: 36px;
+    font-size: 32px;
     line-height: 1;
     color: var(--dark-gray);
 }
@@ -84,25 +90,25 @@
 .subtitle-cart {
     font-family: 'TT Norms Pro Bold', sans-serif;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 1.375;
+    font-size: 18px;
+    line-height: 1.22222;
     color: var(--dark-gray);
 }
 
 .text-cart {
     font-family: 'TT Norms Pro Light', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 16px;
-    line-height: 1.2;
+    line-height: 1.06;
     text-align: center;
     color: var(--dark-gray);
 }
 
-.conditions-peculiarities__item:hover .title-cart,
-.conditions-peculiarities__item:hover .subtitle-cart,
-.conditions-peculiarities__item:hover .text-cart {
-    color: var(--main-bg);
-}
+/*.conditions-peculiarities__item:hover .title-cart,*/
+/*.conditions-peculiarities__item:hover .subtitle-cart,*/
+/*.conditions-peculiarities__item:hover .text-cart {*/
+/*    color: var(--main-bg);*/
+/*}*/
 
 .cooperation-section {
     width: 100%;
@@ -113,21 +119,30 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    column-gap: 10px;
+    column-gap: 26px;
 }
 
 .cooperation-section__text {
+    order: 2;
     width: calc(100% - 460px);
     padding-right: 50px;
 }
 
-.cooperation-section__text-title,
+.cooperation-section__text-title {
+    margin-bottom: 30px;
+    font-family: 'GetVoIP Grotesque Regular', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.25;
+    color: var(--dark-gray);
+}
+
 .cooperation-section__text-subtitle {
-    margin-bottom: 45px;
+    margin-bottom: 60px;
 }
 
 .cooperation-section__text-title {
-    font-size: 40px;
+    font-size: 32px;
     line-height: 1;
 }
 
@@ -149,7 +164,7 @@
     position: relative;
     padding-left: 35px;
     font-weight: 300;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 1;
     color: var(--dark-gray);
     display: flex;
@@ -167,16 +182,17 @@
 }
 
 .cooperation-section__image-box {
+    max-width: 772px;
+    order: 1;
     border-radius: 15px;
     overflow: hidden;
-    max-width: 450px;
     width: 100%;
     height: 500px;
 }
 
 .about-program {
     width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 90px;
 }
 
 .about-program__container {
@@ -190,34 +206,38 @@
 }
 
 .about-program__image-box {
+   width: 820px;
+    margin-right: 60px;
     height: 600px;
 }
 
 .about-program__content {
-    max-width: 750px;
+    max-width: 604px;
     width: 100%;
     height: 100%;
-    padding-left: 60px;
 }
 
 .about-program__title {
     color: var(--main-bg);
-    margin-bottom: 20px;
-    font-size: 40px;
-    line-height: 0.9;
+    margin-bottom: 30px;
+    font-size: 32px;
+    line-height: 1.25;
 }
 
 .about-program__subtitle {
     color: var(--title-color-ligth);
     margin-bottom: 60px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.1;
 }
 
 .about-program__link {
     max-width: 270px;
     width: 100%;
-    line-height: 60px;
-    height: 60px;
-    background: var(--ligth-gray);
+    line-height: 50px;
+    height: 50px;
+    background: #fefefe;
     color: var(--dark-gray);
     align-items: center;
     justify-content: center;
@@ -226,7 +246,7 @@
 
 .about-program__link:hover {
     background: var(--dark-gray);
-    color: var(--title-color-ligth);
+    color: #fefefe;
 }
 
 .questions-answers {
@@ -246,10 +266,10 @@
     width: 100%;
     margin-right: 20px;
     margin-bottom: 0;
-    line-height: 1.02;
     font-family: 'GetVoIP Grotesque Regular', sans-serif;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 32px;
+    line-height: 1.25;
 }
 
 .questions-answers__btn {
@@ -319,18 +339,18 @@
 .item__title {
     font-family: 'Golos Text Medium', sans-serif;
     font-weight: 500;
-    font-size: 22px;
-    line-height: 1.22727;
+    font-size: 20px;
+    line-height: 1.1;
     color: var(--dark-gray);
 }
 
 .item__desc {
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 1.1;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22222;
     color: var(--ligth-gray);
     padding-top: 20px;
-    opacity: 0;
+    opacity: 0.8;
     margin-top: -100%;
     transition: 0.1s ease-in opacity;
 }
