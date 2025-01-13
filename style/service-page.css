@@ -1,0 +1,44 @@
+.production-stages-service-page {
+    width: 100%;
+
+    .production-stages-cards {
+        flex-wrap: wrap;
+
+        .production-stages-card {
+            min-height: 370px;
+
+            .production-stages-card__title {
+                font-family: 'Golos Text Bold', sans-serif;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 0.93333;
+                color: var(--dark-gray);
+            }
+
+            .production-stages-card__subtitle {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 1.1;
+                color: var(--dark-gray);
+                opacity: 0.8;
+            }
+        }
+
+    }
+
+    .production-stages-card:hover {
+        border: 1px solid var(--color-orange);
+
+        .production-stages-card__title {
+            color: var(--color-orange);
+        }
+    }
+
+    .production-stages-card-active {
+        border: 1px solid var(--color-orange);
+
+        .production-stages-card__title-active {
+            color: var(--color-orange);
+        }
+    }
+}
