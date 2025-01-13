@@ -192,7 +192,7 @@
 
 .about-program {
     width: 100%;
-    margin-bottom: 90px;
+    /*margin-bottom: 90px;*/
 }
 
 .about-program__container {
@@ -218,6 +218,8 @@
 }
 
 .about-program__title {
+    font-family: 'GetVoIP Grotesque Regular', sans-serif;
+    font-weight: 700;
     color: var(--main-bg);
     margin-bottom: 30px;
     font-size: 32px;
@@ -251,7 +253,7 @@
 
 .questions-answers {
     width: 100%;
-    margin-bottom: 90px;
+    padding: 90px 0;
 }
 
 .questions-answers__header {
