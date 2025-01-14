@@ -3301,6 +3301,11 @@
   font-size: 30px;
   line-height: 0.93333;
   text-align: left;
+  color: var(--dark-gray);
+}
+
+.about__boby-item.about-company__boby-item:hover
+  ..about-company__body-item-title {
   color: var(--color-orange);
 }
 
