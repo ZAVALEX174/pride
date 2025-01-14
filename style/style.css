@@ -3192,6 +3192,16 @@
   padding: 52px 40px 52px;
   background: #fff;
   z-index: 10;
+  transition: 0.3s ease-in;
+  border: 1px solid transparent;
+}
+
+.about__boby-item.about-company__boby-item:hover {
+  border: 1px solid var(--color-orange);
+}
+
+.about__boby-item.about-company__boby-item.big-img {
+  border: none;
 }
 
 .about-company__boby-item-header {
@@ -3214,7 +3224,18 @@
   }
 }
 
-.kvadrat:nth-child(1) {
+.kvadrat:nth-child(1),
+.kvadrat01 {
+  margin: 0;
+  width: 78px;
+  height: 78px;
+  /* margin-bottom: 20px; */
+  display: inline-block;
+  text-align: center;
+}
+
+.kvadrat:nth-child(2),
+.kvadrat02 {
   margin: 0;
   width: 78px;
   height: 75px;
@@ -3223,22 +3244,44 @@
   text-align: center;
 }
 
-.kvadrat:nth-child(2) {
+.kvadrat:nth-child(3),
+.kvadrat03 {
   margin: 0;
-  width: 73px;
-  height: 75px;
+  width: 78px;
+  height: 78px;
   /* margin-bottom: 20px; */
   display: inline-block;
   text-align: center;
 }
 
-.kvadrat:nth-child(3) {
-  margin: 0;
-  width: 75px;
-  height: 75px;
-  /* margin-bottom: 20px; */
-  display: inline-block;
-  text-align: center;
+.kvadrat01,
+.kvadrat02,
+.kvadrat03 {
+  display: none;
+}
+
+.about__boby-item.about-company__boby-item:hover .kvadrat02 {
+  display: block;
+}
+
+.about__boby-item.about-company__boby-item:hover .kvadrat:nth-child(2) {
+  display: none;
+}
+
+.about__boby-item.about-company__boby-item:hover .kvadrat01 {
+  display: block;
+}
+
+.about__boby-item.about-company__boby-item:hover .kvadrat:nth-child(1) {
+  display: none;
+}
+
+.about__boby-item.about-company__boby-item:hover .kvadrat03 {
+  display: block;
+}
+
+.about__boby-item.about-company__boby-item:hover .kvadrat:nth-child(3) {
+  display: none;
 }
 
 .about-company__body-item-title {
