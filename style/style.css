@@ -1196,7 +1196,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 0;
   padding: 0;
 }
@@ -1206,16 +1206,22 @@
   background: transparent;
   color: var(--dark-gray);
   font-family: 'GetVoIP Grotesque Regular', sans-serif;
+  margin-right: 20px;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 24px;
   line-height: 45px;
   height: 45px;
-  max-width: 250px;
+  /*max-width: 250px;*/
+  max-width: 170px;
   width: 100%;
   text-align: center;
   justify-content: center;
   opacity: 0.5;
   transition: color 0.3s ease-in, background 0.3s ease-in, opacity 0.3s ease-in;
+}
+
+.products__body-btn:last-child {
+  margin-right: 0;
 }
 .products__body-btn svg {
   width: 23px;
@@ -3227,8 +3233,9 @@
 .kvadrat:nth-child(1),
 .kvadrat01 {
   margin: 0;
-  width: 78px;
-  height: 78px;
+  max-width: 78px;
+  width: 100%;
+  height: 100%;
   /* margin-bottom: 20px; */
   display: inline-block;
   text-align: center;
@@ -3237,8 +3244,9 @@
 .kvadrat:nth-child(2),
 .kvadrat02 {
   margin: 0;
-  width: 78px;
-  height: 75px;
+  max-width: 78px;
+  width: 100%;
+  height: 100%;
   /* margin-bottom: 20px; */
   display: inline-block;
   text-align: center;
@@ -3247,8 +3255,9 @@
 .kvadrat:nth-child(3),
 .kvadrat03 {
   margin: 0;
-  width: 78px;
-  height: 78px;
+  max-width: 78px;
+  width: 100%;
+  height: 100%;
   /* margin-bottom: 20px; */
   display: inline-block;
   text-align: center;
