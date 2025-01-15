@@ -3305,7 +3305,7 @@
 }
 
 .about__boby-item.about-company__boby-item:hover
-  ..about-company__body-item-title {
+  .about-company__body-item-title {
   color: var(--color-orange);
 }
 
