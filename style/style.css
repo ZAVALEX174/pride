@@ -1893,6 +1893,11 @@
     /* grid-template-rows: repeat(2, 370px); */
     grid-template-rows: 250px 1fr;
     gap: 25px;
+
+    @media (max-width: 899px) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .about__header {
@@ -1901,7 +1906,7 @@
     display: flex;
     flex-direction: column;
     padding: 29.5px 0;
-    grid-area: 1 / 1/ 1 / 7;
+    grid-area: 1 / 1/ 1 / 4;
 }
 
 .about__header-wrapper-text {
@@ -1940,6 +1945,10 @@
     line-height: 1.22222;
     color: var(--dark-gray);
     margin-bottom: 50px;
+
+    @media (max-width: 1280px) {
+        font-size: clamp(1rem, 0.9482rem + 0.221vw, 1.125rem);
+    }
 }
 
 .about__header-link {
@@ -1957,6 +1966,10 @@
     padding-right: 34px;
     transition: 0.3s ease-in;
     z-index: 10;
+
+    @media (max-width: 1280px) {
+        font-size: clamp(1.25rem, 1.1982rem + 0.221vw, 1.375rem);
+    }
 }
 
 .about__header-link:hover {
@@ -1973,6 +1986,11 @@
     right: 0;
     transform: translateY(-50%);
     background: url('../images/catalog/arr_right_black.svg') no-repeat center/cover;
+    transition: 0.3s ease-in;
+}
+
+.about__header-link:hover::after {
+    background: url('../images/catalog/arr_right_orange.svg') no-repeat center/cover;
 }
 
 .about__boby-item {
@@ -1982,6 +2000,11 @@
     overflow: hidden;
     box-shadow: 0 1px 4px 0 rgba(25, 33, 61, 0.08);
     background: var(--main-bg);
+
+    @media (max-width: 899px) {
+        max-width: 600px;
+        margin: 0 auto;
+    }
 }
 
 .about__boby-item:hover {
@@ -3314,6 +3337,17 @@
     background: url('../images/about-company/leon.png') no-repeat top center/cover;
     pointer-events: none;
     z-index: 0;
+    
+    @media (max-width: 699px) {
+        width: 500px;
+        height: 406px;
+        left: -80px;
+        background: url('../images/about-company/leon_mob.png') no-repeat top center/contain;
+    }
+
+    @media (max-width: 510px) {
+        left: -90px;
+    }
 }
 
 .about-company__content-box {
@@ -3352,6 +3386,14 @@
         padding: 0;
         margin: 0;
         color: var(--color-orange);
+
+        @media (max-width: 1280px) {
+            font-size: clamp(1.5rem, 1.0856rem + 1.768vw, 2.5rem);
+        }
+    }
+
+    @media (max-width: 1280px) {
+        font-size: clamp(1.5rem, 1.0856rem + 1.768vw, 2.5rem);
     }
 }
 
@@ -3422,6 +3464,10 @@
     z-index: 10;
     transition: 0.3s ease-in;
     border: 1px solid transparent;
+
+    @media (max-width: 1024px) {
+        padding: 40px 30px;
+    }
 }
 
 .about__boby-item.about-company__boby-item:hover {
@@ -3430,6 +3476,10 @@
 
 .about__boby-item.about-company__boby-item.big-img {
     border: none;
+
+    @media (max-width: 600px) {
+        min-height: 190px;
+    }
 }
 
 .about-company__boby-item-header {
@@ -3438,6 +3488,10 @@
     justify-content: space-between;
     margin-bottom: 30px;
     width: 100%;
+
+    @media (max-width: 1024px) {
+        margin-bottom: 24px;
+    }
 }
 
 .big-img {
@@ -3462,6 +3516,12 @@
     /* margin-bottom: 20px; */
     display: inline-block;
     text-align: center;
+    
+    @media (max-width: 1100px) {
+        max-width: 60px;
+        width: 100%;
+        height: 58px;
+    }
 }
 
 .kvadrat:nth-child(2),
@@ -3473,6 +3533,12 @@
     /* margin-bottom: 20px; */
     display: inline-block;
     text-align: center;
+
+    @media (max-width: 1100px) {
+        max-width: 60px;
+        width: 100%;
+        height: 58px;
+    }
 }
 
 .kvadrat:nth-child(3),
@@ -3484,6 +3550,12 @@
     /* margin-bottom: 20px; */
     display: inline-block;
     text-align: center;
+
+    @media (max-width: 1100px) {
+        max-width: 60px;
+        width: 100%;
+        height: 58px;
+    }
 }
 
 .kvadrat01,
@@ -3525,6 +3597,10 @@
     line-height: 0.93333;
     text-align: left;
     color: var(--dark-gray);
+
+    @media (max-width: 1280px) {
+        font-size: clamp(1.5rem, 1.3446rem + 0.663vw, 1.875rem);
+    }
 }
 
 .about__boby-item.about-company__boby-item:hover
@@ -3540,6 +3616,14 @@
     color: var(--dark-gray);
     font-weight: 500;
     margin-bottom: 25px;
+
+    @media (max-width: 1280px) {
+        font-size: clamp(1rem, 0.8964rem + 0.442vw, 1.25rem);
+    }
+
+    @media (max-width: 1280px) {
+        margin-bottom: 15px;
+    }
 }
 
 .about-company__body-item-text2 {
@@ -3549,6 +3633,10 @@
     font-size: 16px;
     font-weight: 400;
     color: var(--dark-gray);
+
+    @media (max-width: 1280px) {
+        font-size: clamp(0.8125rem, 0.7348rem + 0.3315vw, 1rem);
+    }
 }
 
 .geografhy {
