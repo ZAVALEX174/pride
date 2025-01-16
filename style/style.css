@@ -2430,6 +2430,10 @@
     width: 100%;
     background: url('../images/benefits/bg_big.png') no-repeat center center/cover;
     padding: 100px 0 109px;
+
+    @media (max-width: 600px) {
+        padding: 77px 0 77px;
+    }
 }
 
 .benefits__container {
@@ -2446,6 +2450,15 @@
     padding-top: 70px;
     margin-bottom: 67px;
     margin-right: 119px;
+
+    @media (max-width: 899px) {
+        margin-right: 0;
+    }
+
+    @media (max-width: 600px) {
+        margin-bottom: 0;
+        padding-top: 0;
+    }
 }
 
 .benefits__span {
@@ -2457,6 +2470,14 @@
     margin-bottom: 18px;
     text-align: left;
     padding-left: 3px;
+
+    @media (max-width: 1280px) {
+        font-size: clamp(1.125rem, 0.9696rem + 0.663vw, 1.5rem);
+    }
+
+    @media (max-width: 600px) {
+        margin-bottom: 15px;
+    }
 }
 
 .benefits__title {
@@ -2468,6 +2489,14 @@
     margin-bottom: 44px;
     max-width: 940px;
     padding-left: 3px;
+
+    @media (max-width: 1280px) {
+        font-size: clamp(1.5rem, 1.0856rem + 1.768vw, 2.5rem);
+    }
+
+    @media (max-width: 600px) {
+        margin-bottom: 45px;
+    }
 }
 
 .benefits__desc {
@@ -2476,6 +2505,11 @@
     width: 100%;
     margin-left: auto;
     padding-left: 0;
+
+    @media (max-width: 899px) {
+        margin-left: 110px;
+        width: auto;
+    }
 }
 
 .benefits__desc-title {
@@ -2485,6 +2519,10 @@
     line-height: 1.25;
     color: #f8faff;
     margin-bottom: 19px;
+
+    @media (max-width: 1280px) {
+        font-size: clamp(1rem, 0.7928rem + 0.884vw, 1.5rem);
+    }
 }
 
 .benefits__desc-subtitle {
@@ -2494,15 +2532,31 @@
     line-height: 1.01562;
     color: #f8faff;
     margin-bottom: 16px;
+
+    @media (max-width: 1280px) {
+        font-size: clamp(1.5rem, 1.1892rem + 1.326vw, 2.25rem);
+    }
+
+    @media (max-width: 600px) {
+        margin-bottom: 22px;
+    }
 }
 
 .benefits__desc-subtitle:nth-last-of-type(1) {
     margin-bottom: 30px;
+
+    @media (max-width: 1280px) {
+        font-size: clamp(1.5rem, 1.1892rem + 1.326vw, 2.25rem);
+    }
 }
 
 .benefits__desc-subtitle > b {
     font-size: 40px;
     font-family: 'GetVoIP Grotesque Regular', sans-serif;
+
+    @media (max-width: 1280px) {
+        font-size: clamp(1.5rem, 1.0856rem + 1.768vw, 2.5rem);
+    }
 }
 
 .benefits__desc-btn {
@@ -2520,6 +2574,11 @@
     text-align: center;
     color: var(--title-color-ligth);
     transition: 0.3s ease-in;
+    
+    @media (max-width: 1280px) {
+        font-size: clamp(1rem, 0.8964rem + 0.442vw, 1.25rem);
+        padding: 0;
+    }
 }
 
 .benefits__desc-btn:hover {
@@ -3337,7 +3396,7 @@
     background: url('../images/about-company/leon.png') no-repeat top center/cover;
     pointer-events: none;
     z-index: 0;
-    
+
     @media (max-width: 699px) {
         width: 500px;
         height: 406px;
@@ -3516,7 +3575,7 @@
     /* margin-bottom: 20px; */
     display: inline-block;
     text-align: center;
-    
+
     @media (max-width: 1100px) {
         max-width: 60px;
         width: 100%;
