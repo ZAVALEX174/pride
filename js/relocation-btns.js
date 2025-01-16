@@ -28,3 +28,29 @@ workBodySwiperContentBox.innerHTML += `<div id="workBodyItemImg" class="swiper-s
                 </div>
 <a href="catalog.html" class="work__header-link" id="workHeaderLink">Каталог</a>
 `;
+
+// Секция our-projects
+const ourProjectsSlideOtziv = document.querySelector('.our-projects-swiper-image-box');
+console.log(ourProjectsSlideOtziv);
+ourProjectsSlideOtziv.innerHTML += `<div id="ourProjectsSlideOtziv" class="swiper-slide our-projects-slide our-projects-slide-otziv">
+                  <div class="our-projects-slide__content">
+                    <img
+                      src="images/works/01.svg"
+                      alt="..."
+                      style="width: 133px; height: 130px" />
+                    <h3 class="cart__title cart__title_otziv">
+                      Оставить отзыв
+                    </h3>
+                    <div class="cart__subtitle cart__subtitle_otziv">
+                      Ваше мнение важно для нас! <br />Оставить отзыв о нашей
+                      работе <br />
+                      можно прямо на сайте.
+                    </div>
+                    <div class="cart__btn-box our-projects-cart__btn-box">
+                      <button
+                        class="btn cart__btn our-projects-cart__btn-open-modal-form">
+                        Написать
+                      </button>
+                    </div>
+                  </div>
+                </div>`;

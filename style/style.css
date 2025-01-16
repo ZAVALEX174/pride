@@ -2652,6 +2652,7 @@
 
     @media (max-width: 768px) {
         padding: 0 20px;
+        margin-bottom: 15px;
     }
 }
 
@@ -2783,6 +2784,7 @@
 
     @media (max-width: 768px) {
         display: flex;
+        margin: 0 auto;
         margin-bottom: 40px;
     }
 }
@@ -2880,6 +2882,12 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 43px;
+
+    @media (max-width: 899px) {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 25px;
+    }
 }
 
 .our-projects__header-title {
@@ -2890,10 +2898,18 @@
     color: var(--dark-gray);
     margin-right: 20px;
     margin-bottom: 0;
+
+    @media (max-width: 899px) {
+        margin-right: 0;
+    }
 }
 
 .our-projects-swiper {
     padding-left: calc(((100% - 1280px) / 2) + 70px);
+
+    @media (max-width: 1150px) {
+        padding: 0 20px;
+    }
 }
 
 .swiper-btn-box-big__container {
@@ -2906,6 +2922,10 @@
     justify-content: space-between;
     top: 263px;
     height: 0;
+
+    @media (max-width: 1024px) {
+        display: none;
+    }
 }
 
 .swiper-btn-box-big__container .our-projects-prev__btn,
@@ -3060,6 +3080,10 @@
     margin-right: 22px;
     transition: 0.3s ease-in;
     padding: 40px 30px;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 
     .our-projects-slide__content {
         text-align: center;
@@ -3244,6 +3268,20 @@
 
 .our-projects-cart__btn-box > .our-projects-cart__btn-details:hover {
     color: var(--color-orange);
+}
+
+.our-projects-swiper-image-box {
+    width: 100%;
+    display: flex;
+    margin-top: 25px;
+
+    #ourProjectsSlideOtziv {
+        display: none;
+
+        @media (max-width: 768px) {
+            display: flex;
+        }
+    }
 }
 
 .other {
