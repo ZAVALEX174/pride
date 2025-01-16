@@ -21,7 +21,7 @@
 
 html {
   box-sizing: border-box;
-  font-size: calc(100vw / 3840 * 10);
+  /*font-size: calc(100vw / 3840 * 10);*/
   min-height: 100vh;
   scroll-behavior: smooth;
 }
@@ -77,6 +77,10 @@ li {
   max-width: 1390px;
   width: 100%;
   padding: 0 11px;
+
+  @media (max-width: 768px) {
+    padding: 0 20px;
+  }
 }
 
 img {
