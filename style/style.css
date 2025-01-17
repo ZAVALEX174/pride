@@ -2221,10 +2221,14 @@
     padding-left: 20px;
     padding-right: 20px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    row-gap: 25px;
+    column-gap: 15px;
+
+    @media (max-width: 700px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 25px;
+    }
 }
 
 .param-count {
@@ -2526,7 +2530,9 @@
 
     @media (max-width: 1024px) {
         display: inline-flex;
-        max-width: 100%;
+        max-width: 315px;
+        line-height: 45px;
+        height: 45px;
     }
 }
 
@@ -2575,7 +2581,10 @@
 
     @media (max-width: 1024px) {
         display: inline-flex;
-        max-width: 100%;
+        max-width: 315px;
+        margin-right: 0;
+        line-height: 45px;
+        height: 45px;
     }
 }
 
@@ -2912,8 +2921,9 @@
 
     @media (max-width: 768px) {
         display: flex;
-        max-width: 100%;
+        max-width: 315px;
         justify-content: center;
+        margin: 0 auto;
     }
 }
 
@@ -3509,7 +3519,7 @@
 
         @media (max-width: 1024px) {
             display: inline-flex;
-            max-width: 100%;
+            max-width: 315px;
             align-items: center;
             justify-content: center;
         }
@@ -3627,6 +3637,7 @@
 }
 
 .about-company {
+    overflow: hidden;
     width: 100%;
     padding: 154px 0 69px;
     position: relative;
@@ -4870,6 +4881,10 @@ label[for='user-email'] {
 .footer__container {
     display: flex;
     column-gap: 52px;
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+    }
 }
 
 .footer__left {
@@ -4877,6 +4892,23 @@ label[for='user-email'] {
     display: flex;
     flex-direction: column;
     row-gap: 28px;
+
+    @media (max-width: 1024px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 100px;
+        grid-template-areas: "logo-f prod-f"
+    "social-f prod-f";
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+        row-gap: 30px;
+    }
 }
 
 .footer__logo-box {
@@ -4884,6 +4916,10 @@ label[for='user-email'] {
     display: flex;
     flex-direction: column;
     row-gap: 30px;
+
+    @media (max-width: 1024px) {
+        grid-area: logo-f;
+    }
 }
 
 .footer__logo-box-img {
@@ -4903,6 +4939,10 @@ label[for='user-email'] {
 
 .footer__social-box {
     width: 100%;
+
+    @media (max-width: 1024px) {
+        grid-area: social-f;
+    }
 }
 
 .footer__social-box-list {
@@ -4936,6 +4976,10 @@ label[for='user-email'] {
     border-radius: 30px;
     /*padding: 33px 40px 37px 40px;*/
     padding: 33px 22px 40px 22px;
+
+    @media (max-width: 1024px) {
+        grid-area: prod-f;
+    }
 }
 
 .footer__contacts-box-list {
@@ -5005,6 +5049,11 @@ label[for='user-email'] {
     width: 100%;
     margin-bottom: 17px;
     justify-content: space-between;
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+        row-gap: 10px;
+    }
 }
 
 .footer__callback-form-input {
@@ -5047,6 +5096,10 @@ label[for='user-email'] {
     color: var(--title-color-ligth);
     font-size: 16px;
     transition: 0.3s ease-in;
+
+    @media (max-width: 600px) {
+        max-width: 100%;
+    }
 }
 
 .footer__callback-form-btn:hover {
@@ -5092,6 +5145,15 @@ label[for='user-email'] {
     column-gap: 25px;
     padding-bottom: 34px;
     border-bottom: 1.5px solid #dcdcdc;
+
+    @media (max-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        /*grid-template-areas: ''*/
+        /*'';*/
+        gap: 20px;
+    }
 }
 
 .nav-box__left {
@@ -5163,6 +5225,15 @@ label[for='user-email'] {
     column-gap: 25px;
     /*padding-bottom: 34px;*/
     /*border-bottom: 1.5px solid #dcdcdc;*/
+
+    @media (max-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        /*grid-template-areas: ''*/
+        /*'';*/
+        gap: 20px;
+    }
 }
 
 .products-variant-box__left,
@@ -5171,6 +5242,10 @@ label[for='user-email'] {
     display: flex;
     flex-direction: column;
     row-gap: 19px;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 }
 
 .products-variant-box__left {
@@ -5226,6 +5301,10 @@ label[for='user-email'] {
 .nav-down-box__left,
 .nav-down-box__right {
     width: 50%;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 }
 
 .nav-down-box__left-list,
@@ -5265,6 +5344,12 @@ label[for='user-email'] {
 .footer__down-container {
     display: flex;
     gap: 20px;
+
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
 }
 
 .footer__copyrigth {
@@ -5311,6 +5396,15 @@ label[for='user-email'] {
     margin-right: auto;
     border-bottom: 1px solid rgba(255, 255, 255, 0.26);
     padding-bottom: 35px;
+
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 25px;
+        text-decoration: underline;
+
+    }
 }
 
 .footer__copyrigth-confidic-link {
