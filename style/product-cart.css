@@ -1150,6 +1150,10 @@ video {
 .form-representation-product-cart .form-representation__container .form-left,
 .form-representation-product-cart .form-representation__container .form-right {
   max-width: 535px;
+
+  @media (max-width: 899px) {
+    max-width: 100%;
+  }
 }
 .form-representation-product-cart
   .form-representation__container
@@ -1243,6 +1247,10 @@ video {
   /* backdrop-filter: blur(4px); */
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   background: #323130;
+
+  @media (max-width: 899px) {
+    max-width: 100%;
+  }
 }
 .form-representation-product-cart
   .form-representation__container
@@ -1251,6 +1259,10 @@ video {
   font-size: 33px;
   line-height: 1.21212;
   margin-bottom: 20px;
+  
+  @media (max-width: 1280px) {
+    font-size: clamp(1.5rem, 1.2669rem + 0.9945vw, 2.0625rem);
+  }
 }
 .form-representation__subtitle {
   /* font-size: 46px; */
@@ -1260,6 +1272,10 @@ video {
   margin-bottom: 43px;
   font-weight: 400;
   font-family: 'TT Norms Pro Regular', sans-serif;
+
+  @media (max-width: 1280px) {
+    font-size: clamp(1rem, 0.9482rem + 0.221vw, 1.125rem);
+  }
 }
 
 /* ///////*/

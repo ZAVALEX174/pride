@@ -376,7 +376,6 @@
 
     @media (max-width: 1280px) {
         width: 180px;
-
     }
 }
 
@@ -1479,8 +1478,12 @@
     color: var(--main-bg);
     background-color: var(--color-orange);
     font-weight: 400;
-    font-size: clamp(1rem, 0.9482rem + 0.221vw, 1.125rem);
+    font-size: 16px;
     transition: 0.3s ease-in;
+
+    @media (max-width: 1280px) {
+        font-size: clamp(1rem, 0.9482rem + 0.221vw, 1.125rem);
+    }
 
     @media (max-width: 1024px) {
         display: none;
@@ -1494,15 +1497,15 @@
     justify-content: center;
     width: 100%;
 }
+
 #productBtnLink {
     display: none;
-     @media (max-width: 1024px) {
-         display: inline-flex;
-         align-items: center;
-         justify-content: center;
-         max-width: 100%;
-
-     }
+    @media (max-width: 1024px) {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+    }
 }
 
 .product-btn-link:hover {
@@ -1514,6 +1517,11 @@
 
     @media (max-width: 1024px) {
         margin-bottom: 20px;
+    }
+
+    @media (max-width: 899px) {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -2150,7 +2158,7 @@
     background-color: var(--main-bg);
 
     @media (max-width: 899px) {
-        padding: 50px 0                    ;
+        padding: 50px 0;
     }
 }
 
@@ -2172,9 +2180,13 @@
     margin-right: 20px;
     margin-bottom: 0;
     font-weight: 700;
-    font-size: clamp(1.5rem, 1.2928rem + 0.884vw, 2rem);
+    font-size: 24px;
     line-height: 1.25;
     font-family: 'GetVoIP Grotesque Regular', sans-serif;
+
+    @media (max-width: 1280px) {
+        font-size: clamp(1.5rem, 1.2928rem + 0.884vw, 2rem);
+    }
 
     @media (max-width: 1024px) {
         margin-right: 0;
@@ -2350,6 +2362,11 @@
 
 .categories__body-swiper-content-slider {
     padding-left: calc(((100% - 1280px) / 2) + 70px);
+
+    @media (max-width: 899px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 .swiper-slide.categories__body-swiper-content-slider-slide {
@@ -2513,8 +2530,6 @@
     }
 }
 
-
-
 .categories__link:hover {
     border: 1px solid var(--color-orange);
     color: var(--color-orange);
@@ -2554,6 +2569,7 @@
         padding-top: 0;
     }
 }
+
 #categoriesBtnParams {
     display: none;
 
@@ -2562,6 +2578,7 @@
         max-width: 100%;
     }
 }
+
 .benefits__span {
     font-family: 'TT Norms Pro Bold', sans-serif;
     font-weight: 600;
@@ -2675,7 +2692,7 @@
     text-align: center;
     color: var(--title-color-ligth);
     transition: 0.3s ease-in;
-    
+
     @media (max-width: 1280px) {
         font-size: clamp(1rem, 0.8964rem + 0.442vw, 1.25rem);
         padding: 0;
@@ -2970,6 +2987,10 @@
     width: 100%;
     padding: 155px 0 90px;
     overflow: hidden;
+
+    @media (max-width: 899px) {
+        padding: 50px 0;
+    }
 
     .swiper-btn-box-big__containe {
         max-width: 1363px;
@@ -3390,6 +3411,10 @@
     width: 100%;
     padding: 91px 0 95px;
     overflow: hidden;
+
+    @media (max-width: 899px) {
+        padding: 50px 0;
+    }
 }
 
 .other__header {
@@ -3411,6 +3436,10 @@
     line-height: 1.25;
     color: var(--dark-gray);
     margin-bottom: 0;
+
+    @media (max-width: 1280px) {
+        font-size: clamp(1.5rem, 1.2928rem + 0.884vw, 2rem);
+    }
 }
 
 .other__container .swiper-btn-box {
@@ -3420,6 +3449,10 @@
     justify-content: space-between;
     height: 0;
     top: 195px;
+
+    @media (max-width: 1024px) {
+        display: none;
+    }
 }
 
 /* .other-prev__btn,
@@ -3452,7 +3485,6 @@
     font-family: 'TT Norms Pro Regular', sans-serif;
     font-weight: 400;
     font-size: 18px;
-    line-height: 1.2222;
     color: var(--dark-gray);
     text-align: center;
     height: 45px;
@@ -3460,6 +3492,28 @@
     align-items: center;
     justify-content: center;
     transition: 0.3s ease-in;
+
+    @media (max-width: 1024px) {
+        display: none;
+    }
+}
+
+.other__header-link-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    #otherHeaderLink {
+        display: none;
+
+        @media (max-width: 1024px) {
+            display: inline-flex;
+            max-width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 }
 
 .other__header-link:hover {
@@ -3482,6 +3536,11 @@
 
 .other__body-list {
     padding-left: calc(((100% - 1280px) / 2) + 70px);
+
+    @media (max-width: 899px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 .other__body-item {
@@ -3891,6 +3950,10 @@
     width: 100%;
     padding: 103px 0 62px;
     background-color: var(--main-bg);
+
+    @media (max-width: 899px) {
+        padding: 70px 0;
+    }
 }
 
 .geografhy__container {
@@ -3922,6 +3985,15 @@
     font-size: 32px;
     line-height: 1.25;
     margin-bottom: 17px;
+
+    @media (max-width: 1280px) {
+        font-size: clamp(1.5rem, 1.2928rem + 0.884vw, 2rem);
+    }
+
+    @media (max-width: 899px) {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
 }
 
 .geografhy__header-subtitle {
@@ -3931,6 +4003,14 @@
     line-height: 1.1;
     color: var(--dark-gray);
     order: 3;
+
+    @media (max-width: 1280px) {
+        font-size: clamp(1.125rem, 1.0732rem + 0.221vw, 1.25rem);
+    }
+
+    @media (max-width: 899px) {
+        margin-bottom: 25px;
+    }
 }
 
 .geografhy__header-subtitle a {
@@ -3980,6 +4060,21 @@
 .geografhy__body {
     width: 100%;
     position: relative;
+
+    @media (max-width: 899px) {
+        overflow-x: auto;
+        height: auto;
+    }
+
+    @media (max-width: 480px) {
+        overflow-x: auto;
+        height: 328px;
+
+        img {
+            width: 1005px;
+            height: 328px;
+        }
+    }
 }
 
 .msk {
@@ -4075,6 +4170,11 @@
     var(--dark-gray);
     position: relative;
     padding: 110px 0 117px;
+
+    @media (max-width: 768px) {
+        background: url('../images/form/lion_mob.svg') no-repeat left 50% bottom 0px / 317px 293px,
+        var(--dark-gray);
+    }
 }
 
 .form-representation-light {
@@ -4107,6 +4207,15 @@
     width: 100%;
     display: flex;
     gap: 60px;
+
+    @media (max-width: 1024px) {
+        gap: 30px;
+    }
+
+    @media (max-width: 899px) {
+        flex-direction: column;
+        gap: 25px;
+    }
 }
 
 .form-left label,
@@ -4146,6 +4255,10 @@
     margin-bottom: 27px;
     font-size: 20px;
     color: var(--title-color-ligth);
+
+    @media (max-width: 600px) {
+        margin-bottom: 15px;
+    }
 }
 
 .form-left input:focus,
@@ -4221,6 +4334,8 @@ label[for='user-email'] {
     width: 100%;
     display: flex;
     flex-direction: column;
+
+
 }
 
 .margin-bottom0 {
@@ -4245,6 +4360,14 @@ label[for='user-email'] {
     width: 100%;
     display: flex;
     column-gap: 22px;
+
+    @media (max-width: 899px) {
+        max-width: 100%;
+    }
+
+    @media (max-width: 899px) {
+        flex-direction: column;
+    }
 }
 
 .column1,
@@ -4254,6 +4377,14 @@ label[for='user-email'] {
     flex-direction: column;
     max-width: 300px;
     width: 100%;
+
+    @media (max-width: 899px) {
+        max-width: 100%;
+    }
+
+    @media (max-width: 600px) {
+        margin-bottom: 25px;
+    }
 }
 
 .column1__wrap::after,
@@ -4265,6 +4396,7 @@ label[for='user-email'] {
     width: 19px;
     height: 13px;
     background: url('../images/form/arr.svg') no-repeat center/contain;
+    pointer-events: none;
 }
 
 .form-right {
@@ -4287,6 +4419,10 @@ label[for='user-email'] {
     font-size: 20px;
     /* margin-bottom: 25px; */
     margin-bottom: 44px;
+
+    @media (max-width: 600px) {
+        margin-bottom: 30px;
+    }
 }
 
 .form-right > textarea:focus {
@@ -4713,6 +4849,11 @@ label[for='user-email'] {
 
 .watched-before-swiper {
     padding-left: calc((100% - 1152px) / 2);
+
+    @media (max-width: 899px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 .footer {

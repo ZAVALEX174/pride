@@ -112,3 +112,11 @@ categoriesBtnsBox.insertAdjacentHTML("afterBegin", `
               </svg><span class="param-count">+3</span></a>
  <a href="catalog.html" id="categoriesBtnCatalog" class="btn categories__link">Каталог</a>
 `);
+
+// Секция other
+const otherHeaderLinkBox = document.querySelector('.other__header-link-box');
+// product-btn-link
+
+otherHeaderLinkBox.insertAdjacentHTML("afterBegin", `
+ <a href="catalog.html" id="otherHeaderLink" class="btn other__header-link">Каталог</a>
+`);
