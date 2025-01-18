@@ -16,7 +16,6 @@ for (let item of heroSlidersLiveCollections) {
 
 // Секция work
 const workBodySwiperContentBox = document.querySelector('.work__body-swiper-content-box');
-// console.log(workBodySwiperContentBox);
 workBodySwiperContentBox.insertAdjacentHTML("afterBegin", `<div id="workBodyItemImg" class="swiper-slide work__body-swiper-content-slider-slide work__body-item_img">
                   <div class="work__body-item">
                     <h3 class="work__body-cart-title work__body-cart-title_img">
@@ -34,7 +33,6 @@ workBodySwiperContentBox.insertAdjacentHTML("afterBegin", `<div id="workBodyItem
 
 // Секция our-projects
 const ourProjectsSlideOtziv = document.querySelector('.our-projects-swiper-image-box');
-// console.log(ourProjectsSlideOtziv);
 ourProjectsSlideOtziv.insertAdjacentHTML("afterBegin", `<div id="ourProjectsSlideOtziv" class="swiper-slide our-projects-slide our-projects-slide-otziv">
                   <div class="our-projects-slide__content">
                     <img
@@ -61,17 +59,12 @@ ourProjectsSlideOtziv.insertAdjacentHTML("afterBegin", `<div id="ourProjectsSlid
 
 // Секция products
 const productBtnLinkBox = document.querySelector('.product-btn-link-box');
-// product-btn-link
-
 productBtnLinkBox.insertAdjacentHTML("afterBegin", `
  <a href="catalog-menu.html" class="btn product-btn-link" id="productBtnLink" >Каталог</a>
 `);
 
 // Секция categories
 const categoriesBtnsBox = document.querySelector('.categories__btns-box');
-console.log(categoriesBtnsBox);
-// product-btn-link
-
 categoriesBtnsBox.insertAdjacentHTML("afterBegin", `
  <a href="#" id="categoriesBtnParams" class="btn categories__btn categories__btn_selected">Подбор по параметрам<svg
                 width="25"
@@ -115,8 +108,6 @@ categoriesBtnsBox.insertAdjacentHTML("afterBegin", `
 
 // Секция other
 const otherHeaderLinkBox = document.querySelector('.other__header-link-box');
-// product-btn-link
-
 otherHeaderLinkBox.insertAdjacentHTML("afterBegin", `
  <a href="catalog.html" id="otherHeaderLink" class="btn other__header-link">Каталог</a>
 `);
