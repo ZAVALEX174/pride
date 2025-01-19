@@ -245,87 +245,109 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
 
-    // закрепленте Header при скроле
-    const header = document.querySelector(".header");
-    const headerTop = document.querySelector(".header__top");
-    const headerDown = document.querySelector(".header__down");
-    const headerMenu = document.querySelector(".header__menu");
-    const hero = document.querySelector(".hero");
-    const headerModal = document.querySelector(".header-menu-modal");
-    // const headerModalClosesBtn = document.querySelector(".menu-close-btn");
-
-
-    // const menuBtn3 = document.querySelector('.menu');
-    // const searchInputStyle = document.querySelector('.header__search');
-
-    window.addEventListener('scroll', () => {
-        let scrollTop = window.scrollY;// Величина скролла
-        let headerTopHeight = headerTop.clientHeight; //Высота блока Топ хедера
-        let headerMenuHeight = headerMenu.clientHeight; //Высота блока Меню хедера
-        let headerInputSearch = document.querySelector('.search-input');
-        // console.log(headerInputSearch);
-
-
-        const menuBtn3 = document.querySelector('.menu');
-        // console.log(headerTopHeight);
-
-        const searchInputStyle = document.querySelector('.header__search');
-
-        // console.log(headerMenuHeight, scrollTop);
-
-        if (scrollTop >= headerTopHeight) {
-            // console.log("ghbdtn");
-            header.style.marginTop = `-${headerTopHeight}px`;
-            headerMenu.classList.add('header__menu_hidden');
-            header.classList.add('header_fixed');
-            let headerHeight = header.clientHeight; //Высота всего хедера
-            document.body.style.marginTop = `${headerHeight}px`;
-            headerModal.style.height = `100%`;
-            /////////
-            searchInputStyle.classList.add('header__search_menu');
-            menuBtn3.classList.add('menu_menu');
-            /////
-            headerDown.classList.add('header__down_gray');
-            headerInputSearch.classList.add('search-input_gray');
-
-        } else {
-            headerMenu.classList.remove('header__menu_hidden');
-            // headerMenu.classList.remove('header__menu-active');
-
-            searchInputStyle.classList.remove('header__search_menu');
-            menuBtn3.classList.remove('menu_menu');
-
-
-            header.classList.remove('header_fixed');
-            header.style.marginTop = 0;
-            document.body.style.marginTop = 0;
-            headerModal.style.height = `100%`;
-            ////
-            headerDown.classList.remove('header__down_gray');
-            headerInputSearch.classList.remove('search-input_gray');
-        }
-
-
-    })
-
-    const menuBtn3 = document.querySelector('.menu');
-    // console.log(menuBtn3);
-
-    const searchInputStyle = document.querySelector('.header__search');
-
-    menuBtn3.addEventListener('click', () => {
-        console.log('click: ');
-
-        headerMenu.classList.toggle('header__menu_hidden');
-    })
-
-    // headerModalClosesBtn.addEventListener('click', () => {
-    //     headerMenu.classList.add('header__menu_hidden');
-    // })
 })
 
 
+function updateStyles() {
+    let widthBrauser = window.innerWidth;
+    console.log(widthBrauser);
+    if (widthBrauser > 900) {
 
+        // закрепленте Header при скроле
+        const header = document.querySelector(".header");
+        const headerTop = document.querySelector(".header__top");
+        const headerDown = document.querySelector(".header__down");
+        const headerMenu = document.querySelector(".header__menu");
+        const hero = document.querySelector(".hero");
+        const headerModal = document.querySelector(".header-menu-modal");
+        // const headerModalClosesBtn = document.querySelector(".menu-close-btn");
+
+
+        // const menuBtn3 = document.querySelector('.menu');
+        // const searchInputStyle = document.querySelector('.header__search');
+
+
+        window.addEventListener('scroll', () => {
+            let scrollTop = window.scrollY;// Величина скролла
+            let headerTopHeight = headerTop.clientHeight; //Высота блока Топ хедера
+            let headerMenuHeight = headerMenu.clientHeight; //Высота блока Меню хедера
+            let headerInputSearch = document.querySelector('.search-input');
+            // console.log(headerInputSearch);
+
+
+            const menuBtn3 = document.querySelector('.menu');
+            // console.log(headerTopHeight);
+
+            const searchInputStyle = document.querySelector('.header__search');
+
+            // console.log(headerMenuHeight, scrollTop);
+
+            if (scrollTop >= headerTopHeight) {
+                // console.log("ghbdtn");
+                header.style.marginTop = `-${headerTopHeight}px`;
+                headerMenu.classList.add('header__menu_hidden');
+                header.classList.add('header_fixed');
+                let headerHeight = header.clientHeight; //Высота всего хедера
+                document.body.style.marginTop = `${headerHeight}px`;
+                headerModal.style.height = `100%`;
+                /////////
+                searchInputStyle.classList.add('header__search_menu');
+                menuBtn3.classList.add('menu_menu');
+                /////
+                headerDown.classList.add('header__down_gray');
+                headerInputSearch.classList.add('search-input_gray');
+
+            } else {
+                headerMenu.classList.remove('header__menu_hidden');
+                // headerMenu.classList.remove('header__menu-active');
+
+                searchInputStyle.classList.remove('header__search_menu');
+                menuBtn3.classList.remove('menu_menu');
+
+                header.classList.remove('header_fixed');
+                header.style.marginTop = 0;
+                document.body.style.marginTop = 0;
+                headerModal.style.height = `100%`;
+                ////
+                headerDown.classList.remove('header__down_gray');
+                headerInputSearch.classList.remove('search-input_gray');
+            }
+        })
+
+        const menuBtn3 = document.querySelector('.menu');
+        // console.log(menuBtn3);
+
+        const searchInputStyle = document.querySelector('.header__search');
+
+        menuBtn3.addEventListener('click', () => {
+            console.log('click: ');
+
+            headerMenu.classList.toggle('header__menu_hidden');
+        })
+
+        // headerModalClosesBtn.addEventListener('click', () => {
+        //     headerMenu.classList.add('header__menu_hidden');
+        // })
+    } else {
+        console.log('Работает');
+        const menu1 = document.getElementById('menu');
+        const headerAddress = document.getElementById('header-address');
+        const headerContacts = document.getElementById('header-contacts');
+        const headerMenuDrop = document.getElementById('header-menu');
+
+        menu1.classList.add('menu_menu');
+        const containerTopHeader = document.querySelector('.header__container-top');
+
+        containerTopHeader.prepend(menu1);
+        // console.log(containerTopHeader);
+        headerMenuDrop.appendChild(headerContacts);
+        headerMenuDrop.appendChild(headerAddress);
+    }
+
+}
+
+window.addEventListener('load', updateStyles);
+window.addEventListener('resize', updateStyles);
 
 
 
