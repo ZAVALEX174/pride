@@ -106,6 +106,12 @@ categoriesBtnsBox.insertAdjacentHTML("afterBegin", `
  <a href="catalog.html" id="categoriesBtnCatalog" class="btn categories__link">Каталог</a>
 `);
 
+// Секция watched-before
+const watchedBeforeProductCartLinkBox = document.querySelector('.watched-before__product-cart-link-box');
+watchedBeforeProductCartLinkBox.insertAdjacentHTML("afterBegin", `
+ <a href="catalog-menu.html" id="watchedBeforeLink" class="btn product-cart__header-link">Каталог</a>
+`);
+
 // Секция other
 const otherHeaderLinkBox = document.querySelector('.other__header-link-box');
 otherHeaderLinkBox.insertAdjacentHTML("afterBegin", `
