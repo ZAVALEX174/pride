@@ -26,6 +26,7 @@ main {
     transition: 0.3s ease-in;
 }
 
+
 .main-overlay::after {
     position: absolute;
     content: '';
@@ -1715,6 +1716,8 @@ main {
     @media (max-width: 600px) {
         padding-left: 0;
         padding-right: 0;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 }
 
@@ -1741,7 +1744,7 @@ main {
     padding: 0;
 
     @media (max-width: 600px) {
-        overflow-x: auto;
+        /*overflow-x: auto;*/
     }
 }
 
@@ -1762,6 +1765,10 @@ main {
     justify-content: center;
     opacity: 0.5;
     transition: color 0.3s ease-in, background 0.3s ease-in, opacity 0.3s ease-in;
+    
+    @media (max-width: 1280px) {
+        font-size: clamp(1.125rem, 0.9696rem + 0.663vw, 1.5rem);
+    }
 }
 
 .products__body-btn:last-child {
@@ -6135,3 +6142,15 @@ label[for='user-email'] {
 .s-b-prev:hover::after {
   background: url(../images/slider-btn/arr-white-left.svg) no-repeat;
 } */
+.tabs__panel {
+    display: none;
+}
+
+.tabs__panel--active {
+    display: block;
+}
+
+.tabs__nav-btn--active {
+    color: var(--color-orange);
+    opacity: 1;
+}
