@@ -266,7 +266,8 @@ main {
 
   .options {
     position: absolute;
-    width: 318px;
+    min-width: 318px;
+    /* width: 100%; */
     top: 114%;
     right: 0;
     border: 1.13px solid var(--5);
@@ -278,6 +279,12 @@ main {
     display: none; /* Скрываем список по умолчанию */
     z-index: 50;
     padding: 20px 57px 30px 20px;
+
+    @media (max-width: 900px) {
+      width: 375px;
+      right: -20px;
+      top: 301%;
+    }
   }
 
   .closes-select {
