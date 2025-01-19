@@ -36,6 +36,10 @@ body {
   font-style: normal;
 }
 
+.body-overflow-hidden {
+  overflow: hidden;
+}
+
 a {
   margin: 0;
   padding: 0;

@@ -237,16 +237,12 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.btn-search-reset').style.display = 'none';
         document.querySelector('.header__search-form-icon').style.left = '0';
 
-
         document.querySelector('.main').classList.remove('main-overlay');
         if (breadcrumbsElement != null) {
             document.querySelector('.breadcrumbs').classList.remove('main-overlay');
         }
     })
-
-
 })
-
 
 function updateStyles() {
     let widthBrauser = window.innerWidth;
@@ -329,21 +325,29 @@ function updateStyles() {
         //     headerMenu.classList.add('header__menu_hidden');
         // })
     } else {
-        console.log('Работает');
+        const header = document.querySelector(".header");
         const menu1 = document.getElementById('menu');
         const headerAddress = document.getElementById('header-address');
         const headerContacts = document.getElementById('header-contacts');
         const headerMenuDrop = document.getElementById('header-menu');
+        const btnOpenAndCloseMenu = document.getElementById('menu');
 
         menu1.classList.add('menu_menu');
         const containerTopHeader = document.querySelector('.header__container-top');
 
         containerTopHeader.prepend(menu1);
-        // console.log(containerTopHeader);
         headerMenuDrop.appendChild(headerContacts);
-        headerMenuDrop.appendChild(headerAddress);
-    }
+        headerContacts.appendChild(headerAddress);
 
+        btnOpenAndCloseMenu.addEventListener('click', (e) => {
+            headerMenuDrop.classList.toggle('header__menu-mobile--open');
+            btnOpenAndCloseMenu.classList.toggle('menu-open');
+            document.querySelector('.menu__svg-desctop').classList.toggle('none');
+            document.querySelector('.menu__svg-mobile').classList.toggle('none');
+            document.body.classList.toggle('body-overflow-hidden');
+            header.classList.toggle('header-mobile-height');
+        })
+    }
 }
 
 window.addEventListener('load', updateStyles);
