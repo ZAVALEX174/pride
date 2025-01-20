@@ -13,6 +13,7 @@
     align-items: center;
     justify-content: space-between;
 }
+
 .header__search_active {
     width: 100%;
     display: flex;
@@ -30,12 +31,15 @@
     height: 42px;
     line-height: 42px;
 }
+
 .search-input::placeholder {
     padding-left: 10px;
 }
+
 .search__btn {
     display: none;
 }
+
 .search__btn_active {
     display: flex;
     align-items: center;
@@ -114,4 +118,296 @@
 
 .search-result__item:hover {
     background-color: var(--5);
+}
+/*Включить видимость для верстки*/
+/*.header-menu-modal3 {*/
+/*    display: block;*/
+/*}*/
+
+.header-search-box {
+    width: 100%;
+    padding: 42px 47px 20px 47px;
+    display: flex;
+    position: relative;
+
+
+    .header-search-box__categories-container {
+        max-width: 383px;
+        width: 100%;
+        border-right: 1.13px solid var(--5);
+
+        .header-search-box__categories-list {
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+
+            .header-search-box__categories-item {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 1.21429;
+                color: var(--color-orange);
+                transition: color 0.3s ease-in;
+
+                .subcategory-list {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 10px;
+
+                    .subcategory-item {
+                        width: 100%;
+                        height: 40px;
+                        display: flex;
+                        column-gap: 10px;
+                        align-items: center;
+                        border-bottom: 1px solid var(--5);
+                        transition: 0.3s ease-in;
+                        cursor: pointer;
+
+                        svg {
+                            width: 14px;
+                            height: 14px;
+                            object-fit: cover;
+                            display: block;
+                        }
+
+                        .subcategory-item__title {
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 1.33333;
+                            color: var(--dark-gray);
+                            transition: color 0.3s ease-in;
+                        }
+                    }
+
+                    .subcategory-item:hover {
+                        border-bottom: 1px solid var(--color-orange);
+
+                        svg g path {
+                            stroke: var(--color-orange);
+                            stroke-opacity: 1;
+                        }
+
+                        .subcategory-item__title {
+                            color: var(--color-orange);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .header-search-box__result-container {
+        width: 100%;
+
+        .result-header {
+            padding-left: 47px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            margin-bottom: 25px;
+
+            .result-header__title {
+                font-family: 'Golos Text SemiBold', sans-serif;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 1.25;
+                color: var(--dark-gray);
+            }
+
+            .result-header__subtitle {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 1.21429;
+                color: var(--ligth-gray);
+
+                span {
+                    color: var(--color-orange);
+                }
+            }
+        }
+
+        .result-body {
+            padding-left: 47px;
+
+            .result-list {
+                display: flex;
+                flex-direction: column;
+                row-gap: 30px;
+
+                .result-item {
+                    display: flex;
+                    /*align-items: center;*/
+                    width: 100%;
+
+                    .result-item-card {
+                        display: flex;
+                        align-items: center;
+
+                        .item-card {
+                            display: flex;
+                            column-gap: 20px;
+                            margin-right: 20px;
+
+                            .item-card-img {
+                                width: 90px;
+                                height: 57px;
+                                flex-shrink: 0;
+                            }
+
+                            .item-card-description {
+                                width: 100%;
+                                display: flex;
+                                flex-direction: column;
+                                row-gap: 10px;
+                                max-width: 362px;
+
+                                .item-card-description__stock {
+                                    font-family: 'Golos Text SemiBold', sans-serif;
+                                    font-weight: 600;
+                                    font-size: 10px;
+                                    line-height: 1;
+                                    color: var(--color-orange);
+                                }
+
+                                .item-card-description__title {
+                                    font-family: 'Golos Text Bold', sans-serif;
+                                    font-weight: 700;
+                                    font-size: 13px;
+                                    line-height: 1.38889;
+                                    color: var(--dark-gray);
+                                }
+
+                                .item-card-description__subtitle {
+                                    font-weight: 400;
+                                    font-size: 12px;
+                                    line-height: 1.27738;
+                                    color: #6e6e6e;
+                                }
+
+                                .item-card-description__text-desc {
+                                    font-weight: 400;
+                                    font-size: 10px;
+                                    line-height: 1.07057;
+                                    color: var(--ligth-gray);
+                                }
+                            }
+                        }
+
+                        .item-favorites {
+                            width: 38px;
+                            height: 38px;
+                            margin-right: 15px;
+
+                            .item-favorites__btn {
+                                width: 100%;
+                                height: 100%;
+                                padding: 0;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                background-color: #EFEFEF;
+                                transition: background-color 0.3s ease-in;
+
+                                svg {
+                                    transition: 0.3s ease-in;
+                                }
+                            }
+
+                            .item-favorites__btn:hover {
+                                background-color: var(--color-orange);
+
+                                svg path {
+                                    stroke: var(--main-bg);
+                                }
+                            }
+                        }
+
+                        .item-get-offer {
+                            margin-right: 15px;
+                            height: 38px;
+
+                            .item-get-offer__btn {
+                                padding: 0;
+                                font-weight: 500;
+                                font-size: 12px;
+                                justify-content: center;
+                                width: 172px;
+                                height: 38px;
+                                line-height: 38px;
+                                background-color: #dfdfdf;
+                                color: var(--dark-gray);
+                                border-radius: 75px;
+                                transition: background-color 0.3s ease-in, color 0.3s ease-in;
+                            }
+
+                            .item-get-offer__btn:hover {
+                                background: var(--color-orange);
+                                color: var(--main-bg);
+                            }
+                        }
+
+                        .item-description {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            a {
+                                font-family: 'Golos Text Medium', sans-serif;
+                                font-weight: 500;
+                                font-size: 12px;
+                                line-height: 1.27738;
+                                text-align: center;
+                                color: var(--dark-gray);
+                                transition: color 0.3s ease-in;
+                            }
+                        }
+
+                        .item-description:hover {
+                            a {
+                                color: var(--color-orange);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.close-modal-search-button {
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 43px;
+    right: 80px;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+
+    svg {
+        width: 100%;
+        height: 100%;
+        transition: o .3s ease-in;
+    }
+}
+
+.close-modal-search-button:hover {
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 43px;
+    right: 80px;
+    border: none;
+    outline: none;
+    background: none;
+
+    svg path {
+        stroke: var(--color-orange);
+    }
+}
+
+.header-menu-modal__container {
+    max-width: 1440px
 }
