@@ -141,7 +141,9 @@ main {
         content: '';
         position: absolute;
         bottom: 0;
-        width: 90%;
+        /*width: 90%;*/
+        left: 20px;
+        right: 20px;
         height: 1px;
         background: rgba(221, 221, 221, 1);
         z-index: 200;

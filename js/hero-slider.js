@@ -15,25 +15,47 @@ const heroSlider = new Swiper('.hero-swiper', {
 );
 
 const categoriesSlider = new Swiper('.categories__body-swiper-content-slider', {
-    loop: false,
-    spaceBetween: 20,
-    slidesPerView: "auto",
-    // slidesPerView: 3.5,
+        slidesPerView: 1.1,
+        speed: 500,
+        centeredSlides: true,
+        // loop: true,
+        spaceBetween: 14,
+        grabCursor: true,
     navigation: {
         nextEl: '.categories__body-swiper-btn-next',
         prevEl: '.categories__body-swiper-btn-prev',
     },
+        breakpoints: {
+
+            640: {
+                slidesPerView: "auto",
+                spaceBetween: 20,
+                centeredSlides: false,
+            }
+
+        },
 }
 );
 
 const workSlider = new Swiper('.work__body-swiper-content-slider', {
-    loop: false,
-    spaceBetween: 20,
-    slidesPerView: "auto",
-    // slidesPerView: 3.5,
+        slidesPerView: 1.1,
+        speed: 500,
+        centeredSlides: true,
+        // loop: true,
+        spaceBetween: 14,
+        grabCursor: true,
     navigation: {
         nextEl: '.work__body-swiper-btn-next',
         prevEl: '.work__body-swiper-btn-prev',
     },
+        breakpoints: {
+
+            640: {
+                slidesPerView: "auto",
+                spaceBetween: 20,
+                centeredSlides: false,
+            }
+
+        },
 }
 );

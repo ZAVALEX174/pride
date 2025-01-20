@@ -1,26 +1,45 @@
 var productsSwiper = new Swiper(".products-swiper", {
-    slidesPerView: "auto",
+    slidesPerView: 1.1,
     speed: 500,
-    // centeredSlides: true,
+    centeredSlides: true,
     // loop: true,
-    spaceBetween: 20,
+    spaceBetween: 14,
     grabCursor: true,
     navigation: {
         nextEl: '.products-swiper_next',
         prevEl: '.products-swiper_prev',
     },
+    breakpoints: {
+
+        640: {
+            slidesPerView: "auto",
+            spaceBetween: 20,
+            centeredSlides: false,
+        }
+
+    },
 
 });
 
 var productsSwiperBefore = new Swiper(".watched-before__product-cart-swiper", {
-    slidesPerView: "auto",
-    spaceBetween: 20,
+    slidesPerView: 1.1,
     speed: 500,
+    centeredSlides: true,
+    spaceBetween: 14,
     loop: true,
     grabCursor: true,
     navigation: {
         nextEl: '.watched-before__product-cart-btn_next',
         prevEl: '.watched-before__product-cart-btn_prev',
+    },
+    breakpoints: {
+
+        640: {
+            slidesPerView: "auto",
+            spaceBetween: 20,
+            centeredSlides: false,
+        }
+
     },
 });
 
