@@ -2208,7 +2208,7 @@ main {
     justify-content: space-between;
     margin: 0 auto;
     padding: 65.5px 90px;
-    background: url(../images/catalog/catalog_menu_banner.jpg) no-repeat center center / cover;
+    background: url(../images/catalog/catalog-menu-banner.webp) no-repeat center center / cover;
 
     @media (max-width: 1280px) {
         padding: 60px 32px;
@@ -2747,7 +2747,7 @@ main {
             rgba(239, 239, 239, 0.97) 0%,
             rgba(239, 239, 239, 0.97) 100%
     ),
-    url('../images/hero/bg_slider.jpg') no-repeat top center/cover;
+    url('../images/hero/bg-slider.webp') no-repeat top center/cover;
     transition: all 0.3s ease-in;
 }
 
@@ -2791,7 +2791,7 @@ main {
             rgba(43, 42, 41, 0.9) 46.04%,
             rgba(235, 99, 32, 0.9) 100%
     ),
-    url('../images/hero/bg_slider.jpg') no-repeat top center/cover;
+    url('../images/hero/bg-slider.webp') no-repeat top center/cover;
 }
 
 .swiper-slide.categories__body-swiper-content-slider-slide:hover
@@ -3232,7 +3232,7 @@ main {
             rgba(239, 239, 239, 0.97) 0%,
             rgba(239, 239, 239, 0.97) 100%
     ),
-    url('../images/hero/bg_slider.jpg');
+    url('../images/hero/bg-slider.webp');
 }
 
 .work__body-swiper-content-slider-slide:hover {
@@ -3240,7 +3240,7 @@ main {
             rgba(239, 239, 239, 0.8) 0%,
             rgba(239, 239, 239, 0.8) 100%
     ),
-    url('../images/hero/bg_slider.jpg');
+    url('../images/hero/bg-slider.webp');
 }
 
 .work__body-swiper-content-slider-slide:first-of-type {
@@ -3739,7 +3739,6 @@ main {
     width: 100%;
     font-weight: 500;
     font-size: 15px;
-    line-height: 1.32353;
     text-align: center;
     color: var(--title-color-ligth);
     transition: 0.1s ease-in;
@@ -3930,7 +3929,7 @@ main {
             rgba(239, 239, 239, 0.97) 0%,
             rgba(239, 239, 239, 0.97) 100%
     ),
-    url(../images/hero/bg_slider.jpg) no-repeat center;
+    url(../images/hero/bg-slider.webp) no-repeat center;
     transition: 0.3s ease-in;
 }
 
@@ -3944,7 +3943,7 @@ main {
             rgba(43, 42, 41, 0.9) 46.04%,
             rgba(235, 99, 32, 0.9) 100%
     ),
-    url(../images/hero/bg_slider.jpg) no-repeat center;
+    url(../images/hero/bg-slider.webp) no-repeat center;
 }
 
 .other__body-cart-title {

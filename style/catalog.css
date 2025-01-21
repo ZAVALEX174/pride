@@ -194,7 +194,7 @@
   align-items: center;
   justify-content: space-between;
   background: linear-gradient(31deg, #ec691f 15.3%, rgba(236, 105, 31, 0) 100%),
-    url('../images/catalog/uu.jpg') no-repeat center/cover;
+    url('../images/catalog/uu.webp') no-repeat center/cover;
 }
 
 .catalog-page-product-baner__btn {
@@ -212,7 +212,7 @@
       rgba(43, 42, 41, 0.9) 46.04%,
       rgba(235, 99, 32, 0.9) 100%
     ),
-    url('../images/hero/bg_slider.jpg') no-repeat center;
+    url('../images/hero/bg-slider.webp') no-repeat center;
 }
 
 .swiper-filter-on__body-item:hover > .swiper-filter-on__body-cart-title {

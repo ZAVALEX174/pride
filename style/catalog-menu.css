@@ -58,7 +58,7 @@
       rgba(239, 239, 239, 0.97) 0%,
       rgba(239, 239, 239, 0.97) 100%
     ),
-    url('../images/hero/bg_slider.jpg') no-repeat top center/cover;
+    url('../images/hero/bg-slider.webp') no-repeat top center/cover;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -88,7 +88,7 @@
       rgba(43, 42, 41, 0.9) 46.04%,
       rgba(235, 99, 32, 0.9) 100%
     ),
-    url(../images/hero/bg_slider.jpg);
+    url(../images/hero/bg-slider.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -145,7 +145,7 @@
       rgba(43, 42, 41, 0.9) 46.04%,
       rgba(235, 99, 32, 0.9) 100%
     ),
-    url(../images/hero/bg_slider.jpg) no-repeat center;
+    url(../images/hero/bg-slider.webp) no-repeat center;
 }
 
 .catalog-menu-categories__body-item-hover
@@ -168,7 +168,7 @@
   padding: 0;
   height: 100%;
   padding: 45.5px 90px;
-  background: url('../images/catalog/catalog_menu_banner.jpg') no-repeat center
+  background: url('../images/catalog/catalog-menu-banner.webp') no-repeat center
     center/cover;
   border-radius: 40px;
 }
