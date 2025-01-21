@@ -27,224 +27,215 @@
 <header class="header">
     <div class="header__top">
         <div class="container header__container-top">
-            <div class="header__address">
+            <div class="header__address" id="header-address">
                 <a href="#" class="header__contacts-link">
-                    <span>Челябинск, ул. Самохина, 188</span>
+                    <div
+                            class="header__contacts-link-span-box header__contacts-link-span-box--address">
+                        <span>Челябинск, ул. Самохина, 188</span>
+                        <span class="span-mobile">Адрес</span>
+                    </div>
                 </a>
             </div>
-            <div class="header__contacts">
+            <div class="header__contacts" id="header-contacts">
                 <a href="tel:88001014405" class="header__contacts-link">
-                    <svg
-                            class="header__contacts-link-icon"
-                            width="20"
-                            height="19"
-                            viewBox="0 0 20 19"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                        <path
-                                d="M12.0306 17.3342C12.8354 17.8534 13.7945 18.0797 14.7466 17.975C15.6987 17.8703 16.5857 17.4409 17.2584 16.7591L17.8466 16.1841C18.1044 15.9203 18.2488 15.5661 18.2488 15.1973C18.2488 14.8285 18.1044 14.4743 17.8466 14.2105L15.3503 11.7404C15.0887 11.4833 14.7367 11.3393 14.37 11.3393C14.0034 11.3393 13.6513 11.4833 13.3898 11.7404V11.7404C13.1261 11.9982 12.7719 12.1426 12.403 12.1426C12.0342 12.1426 11.68 11.9982 11.4163 11.7404L7.49537 7.81944C7.36457 7.69055 7.2607 7.53693 7.18981 7.36753C7.11891 7.19813 7.0824 7.01632 7.0824 6.83268C7.0824 6.64904 7.11891 6.46724 7.18981 6.29783C7.2607 6.12843 7.36457 5.97482 7.49537 5.84592V5.84592C7.75239 5.58439 7.89641 5.23237 7.89641 4.86569C7.89641 4.499 7.75239 4.14699 7.49537 3.88546L5.01212 1.40222C4.74839 1.14437 4.3942 1 4.02536 1C3.65652 1 3.30234 1.14437 3.0386 1.40222L2.46353 1.99035C1.78174 2.66311 1.35239 3.5501 1.24766 4.50218C1.14293 5.45426 1.36922 6.41337 1.88846 7.21824C4.59395 11.2055 8.03637 14.639 12.0306 17.3342V17.3342Z"
-                                stroke="white"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"/>
-                    </svg>
+                    <div class="header__contacts-link-span-box">
+                        <svg
+                                class="header__contacts-link-icon"
+                                width="20"
+                                height="19"
+                                viewBox="0 0 20 19"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                    d="M12.0306 17.3342C12.8354 17.8534 13.7945 18.0797 14.7466 17.975C15.6987 17.8703 16.5857 17.4409 17.2584 16.7591L17.8466 16.1841C18.1044 15.9203 18.2488 15.5661 18.2488 15.1973C18.2488 14.8285 18.1044 14.4743 17.8466 14.2105L15.3503 11.7404C15.0887 11.4833 14.7367 11.3393 14.37 11.3393C14.0034 11.3393 13.6513 11.4833 13.3898 11.7404V11.7404C13.1261 11.9982 12.7719 12.1426 12.403 12.1426C12.0342 12.1426 11.68 11.9982 11.4163 11.7404L7.49537 7.81944C7.36457 7.69055 7.2607 7.53693 7.18981 7.36753C7.11891 7.19813 7.0824 7.01632 7.0824 6.83268C7.0824 6.64904 7.11891 6.46724 7.18981 6.29783C7.2607 6.12843 7.36457 5.97482 7.49537 5.84592V5.84592C7.75239 5.58439 7.89641 5.23237 7.89641 4.86569C7.89641 4.499 7.75239 4.14699 7.49537 3.88546L5.01212 1.40222C4.74839 1.14437 4.3942 1 4.02536 1C3.65652 1 3.30234 1.14437 3.0386 1.40222L2.46353 1.99035C1.78174 2.66311 1.35239 3.5501 1.24766 4.50218C1.14293 5.45426 1.36922 6.41337 1.88846 7.21824C4.59395 11.2055 8.03637 14.639 12.0306 17.3342V17.3342Z"
+                                    stroke="white"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"/>
+                        </svg>
 
-                    <span>8-800-101-44-05</span>
+                        <span>8-800-101-44-05</span>
+                    </div>
+                    <span class="span-mobile">Телефон</span>
                 </a>
                 <a href="mailto:@dsc-pride.ru" class="header__contacts-link">
-                    <svg
-                            class="header__contacts-link-icon"
-                            width="20"
-                            height="19"
-                            viewBox="0 0 20 19"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                        <path
-                                d="M13.7163 9.4998C13.7162 10.2729 13.4877 11.0287 13.0594 11.6724C12.6311 12.3161 12.0223 12.8188 11.3092 13.1176C10.5962 13.4163 9.81074 13.4978 9.05158 13.3516C8.29241 13.2055 7.59335 12.8383 7.04218 12.2961C6.49102 11.754 6.11232 11.0611 5.95364 10.3045C5.79496 9.54781 5.86338 8.76114 6.15031 8.04326C6.43724 7.32537 6.92988 6.70826 7.56637 6.26942C8.20286 5.83059 8.95482 5.5896 9.72782 5.57672C10.2485 5.56804 10.7657 5.6631 11.2492 5.85637C11.7328 6.04963 12.173 6.33723 12.5442 6.70239C12.9155 7.06755 13.2103 7.50296 13.4115 7.98325C13.6128 8.46353 13.7164 8.97907 13.7163 9.4998V9.4998Z"
-                                stroke="white"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"/>
-                        <path
-                                d="M13.7113 9.50002V11.2C13.7113 15.7639 20.8644 11.4616 17.1113 5.26309C16.3555 3.97245 15.2769 2.90072 13.9815 2.15326C12.6861 1.4058 11.2184 1.00836 9.72279 1C8.46631 1.00388 7.22632 1.28627 6.09207 1.82685C4.95782 2.36743 3.95752 3.15275 3.16317 4.12628C2.36882 5.09981 1.80019 6.23734 1.49819 7.457C1.19619 8.67665 1.16835 9.94808 1.41666 11.1798C1.66497 12.4115 2.18326 13.5728 2.93423 14.5802C3.68519 15.5876 4.65015 16.4159 5.75965 17.0057C6.86915 17.5954 8.09559 17.9318 9.35069 17.9907C10.6058 18.0495 11.8583 17.8294 13.0182 17.3462"
-                                stroke="white"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"/>
-                    </svg>
-                    <span>dsc-pride.ru</span>
+                    <div class="header__contacts-link-span-box">
+                        <svg
+                                class="header__contacts-link-icon"
+                                width="20"
+                                height="19"
+                                viewBox="0 0 20 19"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                    d="M13.7163 9.4998C13.7162 10.2729 13.4877 11.0287 13.0594 11.6724C12.6311 12.3161 12.0223 12.8188 11.3092 13.1176C10.5962 13.4163 9.81074 13.4978 9.05158 13.3516C8.29241 13.2055 7.59335 12.8383 7.04218 12.2961C6.49102 11.754 6.11232 11.0611 5.95364 10.3045C5.79496 9.54781 5.86338 8.76114 6.15031 8.04326C6.43724 7.32537 6.92988 6.70826 7.56637 6.26942C8.20286 5.83059 8.95482 5.5896 9.72782 5.57672C10.2485 5.56804 10.7657 5.6631 11.2492 5.85637C11.7328 6.04963 12.173 6.33723 12.5442 6.70239C12.9155 7.06755 13.2103 7.50296 13.4115 7.98325C13.6128 8.46353 13.7164 8.97907 13.7163 9.4998V9.4998Z"
+                                    stroke="white"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"/>
+                            <path
+                                    d="M13.7113 9.50002V11.2C13.7113 15.7639 20.8644 11.4616 17.1113 5.26309C16.3555 3.97245 15.2769 2.90072 13.9815 2.15326C12.6861 1.4058 11.2184 1.00836 9.72279 1C8.46631 1.00388 7.22632 1.28627 6.09207 1.82685C4.95782 2.36743 3.95752 3.15275 3.16317 4.12628C2.36882 5.09981 1.80019 6.23734 1.49819 7.457C1.19619 8.67665 1.16835 9.94808 1.41666 11.1798C1.66497 12.4115 2.18326 13.5728 2.93423 14.5802C3.68519 15.5876 4.65015 16.4159 5.75965 17.0057C6.86915 17.5954 8.09559 17.9318 9.35069 17.9907C10.6058 18.0495 11.8583 17.8294 13.0182 17.3462"
+                                    stroke="white"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"/>
+                        </svg>
+
+                        <span>dsc-pride.ru</span>
+                    </div>
+                    <span class="span-mobile">Почта</span>
                 </a>
             </div>
             <div class="header__lang">
-                <div class="dropdown">
-                    <button class="header__lang-box">
-                        <span class="header__lang-box-text">Русский</span>
-                    </button>
-                    <ul class="dropdown__list">
-                        <li class="dropdown__item" data-value="engl">
-                            <label for="engl" class="dropdown__label">
-                                <img
-                                        alt="Картинка флага"
-                                        class="drop-img"
-                                        src="images/header/flag_brit.png"
-                                        style="width: 24px; height: 17px"/>
-                                English
-                                <input
-                                        type="checkbox"
-                                        name="engl"
-                                        id="engl"
-                                        class="real-checkbox"/>
-                                <span class="custom-checkbox">
-                      <svg
-                              width="30"
-                              height="29"
-                              viewBox="0 0 30 29"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                        <path
-                                d="M15 28.9165C22.9617 28.9165 29.416 22.4622 29.416 14.5005C29.416 6.53874 22.9617 0.0844727 15
-                                          0.0844727C7.03825 0.0844727 0.583984 6.53874 0.583984 14.5005C0.583984 22.4622 7.03825 28.9165 15 28.9165Z"
-                                fill="white"/>
-                        <path
-                                d="M14.984 0.0844727C12.1359 0.0844727 9.35185 0.929018 6.98378 2.51131C4.61571 4.0936 2.77003
-                                           6.34258 1.68013 8.97383C0.590224 11.6051 0.305056 14.5004 0.860683 17.2938C1.41631 20.0871 2.78778
-                                           22.6529 4.80165 24.6668C6.81553 26.6807 9.38136 28.0522 12.1747 28.6078C14.968 29.1634 17.8634
-                                           28.8782 20.4946 27.7883C23.1259 26.6984 25.3749 24.8528 26.9572 22.4847C28.5394 20.1166 29.384
-                                           17.3325 29.384 14.4845C29.384 10.6654 27.8669 7.00266 25.1663 4.30213C22.4658 1.60161 18.8031
-                                           0.0844727 14.984 0.0844727ZM21.752 10.4205L14.648 20.2765C14.4364 20.5621 14.1276 20.7605 13.7798
-                                           20.8342C13.432 20.9079 13.0693 20.8518 12.76 20.6765L8.67999 18.2925C8.349 18.093 8.1108 17.7703
-                                           8.01778 17.3952C7.92476 17.0201 7.98455 16.6235 8.18399 16.2925C8.38343 15.9615 8.70619 15.7233 9.08127
-                                           15.6303C9.45634 15.5372 9.853 15.597 10.184 15.7965L13.08 17.5245L19.48 8.74047C19.7175 8.50251 20.0308
-                                           8.35517 20.3656 8.32399C20.7004 8.2928 21.0355 8.37974 21.3129 8.56974C21.5903 8.75973 21.7924 9.0408
-                                           21.8843 9.36422C21.9762 9.68763 21.952 10.033 21.816 10.3405L21.752 10.4205Z"
-                                fill="currentColor"/>
-                      </svg>
-                    </span>
-                            </label>
+                <div class="custom-select">
+                    <div class="selected-option">
+                        <span>Русский</span>
+                        <span class="arrow">
+                  <svg
+                          width="18"
+                          height="11"
+                          viewBox="0 0 18 11"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg">
+                    <path
+                            d="M9 10.6665L17.6603 0.666508H0.339746L9 10.6665Z"
+                            fill="#eb6320"/>
+                  </svg>
+                </span>
+                    </div>
+                    <ul class="options">
+                        <button class="closes-select">
+                            <svg
+                                    width="19"
+                                    height="19"
+                                    viewBox="0 0 19 19"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                        d="M17.8994 1L1.10101 18"
+                                        stroke="#8E8E8E"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"/>
+                                <path
+                                        d="M1 1.10059L18 17.899"
+                                        stroke="#8E8E8E"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <li data-value="English">
+                            English
+                            <svg
+                                    width="14"
+                                    height="14"
+                                    viewBox="0 0 14 14"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1485_60687)">
+                                    <path
+                                            d="M3.84961 13.5L9.99961 7.35C10.0474 7.30511 10.0856 7.25089 10.1116 7.19069C10.1377 7.1305 10.1511 7.0656 10.1511 7C10.1511 6.9344 10.1377 6.8695 10.1116 6.80931C10.0856 6.74911 10.0474 6.69489 9.99961 6.65L3.84961 0.5"
+                                            stroke="#2B2A29"
+                                            stroke-opacity="0.4"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1485_60687">
+                                        <rect
+                                                width="14"
+                                                height="14"
+                                                fill="white"
+                                                transform="matrix(0 -1 1 0 0 14)"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
                         </li>
-                        <li class="dropdown__item" data-value="rus">
-                            <label for="rus" class="dropdown__label">
-                                <img
-                                        alt="Картинка флага"
-                                        class="drop-img"
-                                        src="images/header/flag_rus.png"
-                                        style="width: 24px; height: 17px"/>
-                                Russian
-                                <input
-                                        type="checkbox"
-                                        name="rus"
-                                        id="rus"
-                                        class="real-checkbox"
-                                        checked/>
-                                <span class="custom-checkbox">
-                      <svg
-                              width="30"
-                              height="29"
-                              viewBox="0 0 30 29"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                        <path
-                                d="M15 28.9165C22.9617 28.9165 29.416 22.4622 29.416 14.5005C29.416 6.53874 22.9617 0.0844727 15
-                                          0.0844727C7.03825 0.0844727 0.583984 6.53874 0.583984 14.5005C0.583984 22.4622 7.03825 28.9165 15 28.9165Z"
-                                fill="white"/>
-                        <path
-                                d="M14.984 0.0844727C12.1359 0.0844727 9.35185 0.929018 6.98378 2.51131C4.61571 4.0936 2.77003
-                                           6.34258 1.68013 8.97383C0.590224 11.6051 0.305056 14.5004 0.860683 17.2938C1.41631 20.0871 2.78778
-                                           22.6529 4.80165 24.6668C6.81553 26.6807 9.38136 28.0522 12.1747 28.6078C14.968 29.1634 17.8634
-                                           28.8782 20.4946 27.7883C23.1259 26.6984 25.3749 24.8528 26.9572 22.4847C28.5394 20.1166 29.384
-                                           17.3325 29.384 14.4845C29.384 10.6654 27.8669 7.00266 25.1663 4.30213C22.4658 1.60161 18.8031
-                                           0.0844727 14.984 0.0844727ZM21.752 10.4205L14.648 20.2765C14.4364 20.5621 14.1276 20.7605 13.7798
-                                           20.8342C13.432 20.9079 13.0693 20.8518 12.76 20.6765L8.67999 18.2925C8.349 18.093 8.1108 17.7703
-                                           8.01778 17.3952C7.92476 17.0201 7.98455 16.6235 8.18399 16.2925C8.38343 15.9615 8.70619 15.7233 9.08127
-                                           15.6303C9.45634 15.5372 9.853 15.597 10.184 15.7965L13.08 17.5245L19.48 8.74047C19.7175 8.50251 20.0308
-                                           8.35517 20.3656 8.32399C20.7004 8.2928 21.0355 8.37974 21.3129 8.56974C21.5903 8.75973 21.7924 9.0408
-                                           21.8843 9.36422C21.9762 9.68763 21.952 10.033 21.816 10.3405L21.752 10.4205Z"
-                                fill="currentColor"/>
-                      </svg>
-                    </span>
-                            </label>
+                        <li data-value="Russian">
+                            Russian
+                            <svg
+                                    width="14"
+                                    height="14"
+                                    viewBox="0 0 14 14"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1485_60687)">
+                                    <path
+                                            d="M3.84961 13.5L9.99961 7.35C10.0474 7.30511 10.0856 7.25089 10.1116 7.19069C10.1377 7.1305 10.1511 7.0656 10.1511 7C10.1511 6.9344 10.1377 6.8695 10.1116 6.80931C10.0856 6.74911 10.0474 6.69489 9.99961 6.65L3.84961 0.5"
+                                            stroke="#2B2A29"
+                                            stroke-opacity="0.4"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1485_60687">
+                                        <rect
+                                                width="14"
+                                                height="14"
+                                                fill="white"
+                                                transform="matrix(0 -1 1 0 0 14)"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
                         </li>
-                        <li class="dropdown__item" data-value="arab">
-                            <label for="arab" class="dropdown__label">
-                                <img
-                                        alt="Картинка флага"
-                                        class="drop-img"
-                                        src="images/header/flag_arab.png"
-                                        style="width: 24px; height: 17px"/>
-                                Arabic
-                                <input
-                                        type="checkbox"
-                                        name="arab"
-                                        id="arab"
-                                        class="real-checkbox"/>
-                                <span class="custom-checkbox">
-                      <svg
-                              width="30"
-                              height="29"
-                              viewBox="0 0 30 29"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                        <path
-                                d="M15 28.9165C22.9617 28.9165 29.416 22.4622 29.416 14.5005C29.416 6.53874 22.9617 0.0844727 15
-                                          0.0844727C7.03825 0.0844727 0.583984 6.53874 0.583984 14.5005C0.583984 22.4622 7.03825 28.9165 15 28.9165Z"
-                                fill="white"/>
-                        <path
-                                d="M14.984 0.0844727C12.1359 0.0844727 9.35185 0.929018 6.98378 2.51131C4.61571 4.0936 2.77003
-                                           6.34258 1.68013 8.97383C0.590224 11.6051 0.305056 14.5004 0.860683 17.2938C1.41631 20.0871 2.78778
-                                           22.6529 4.80165 24.6668C6.81553 26.6807 9.38136 28.0522 12.1747 28.6078C14.968 29.1634 17.8634
-                                           28.8782 20.4946 27.7883C23.1259 26.6984 25.3749 24.8528 26.9572 22.4847C28.5394 20.1166 29.384
-                                           17.3325 29.384 14.4845C29.384 10.6654 27.8669 7.00266 25.1663 4.30213C22.4658 1.60161 18.8031
-                                           0.0844727 14.984 0.0844727ZM21.752 10.4205L14.648 20.2765C14.4364 20.5621 14.1276 20.7605 13.7798
-                                           20.8342C13.432 20.9079 13.0693 20.8518 12.76 20.6765L8.67999 18.2925C8.349 18.093 8.1108 17.7703
-                                           8.01778 17.3952C7.92476 17.0201 7.98455 16.6235 8.18399 16.2925C8.38343 15.9615 8.70619 15.7233 9.08127
-                                           15.6303C9.45634 15.5372 9.853 15.597 10.184 15.7965L13.08 17.5245L19.48 8.74047C19.7175 8.50251 20.0308
-                                           8.35517 20.3656 8.32399C20.7004 8.2928 21.0355 8.37974 21.3129 8.56974C21.5903 8.75973 21.7924 9.0408
-                                           21.8843 9.36422C21.9762 9.68763 21.952 10.033 21.816 10.3405L21.752 10.4205Z"
-                                fill="currentColor"/>
-                      </svg>
-                    </span>
-                            </label>
+                        <li data-value="Arabic">
+                            Arabic
+                            <svg
+                                    width="14"
+                                    height="14"
+                                    viewBox="0 0 14 14"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1485_60687)">
+                                    <path
+                                            d="M3.84961 13.5L9.99961 7.35C10.0474 7.30511 10.0856 7.25089 10.1116 7.19069C10.1377 7.1305 10.1511 7.0656 10.1511 7C10.1511 6.9344 10.1377 6.8695 10.1116 6.80931C10.0856 6.74911 10.0474 6.69489 9.99961 6.65L3.84961 0.5"
+                                            stroke="#2B2A29"
+                                            stroke-opacity="0.4"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1485_60687">
+                                        <rect
+                                                width="14"
+                                                height="14"
+                                                fill="white"
+                                                transform="matrix(0 -1 1 0 0 14)"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
                         </li>
-                        <li class="dropdown__item" data-value="port">
-                            <label for="port" class="dropdown__label">
-                                <img
-                                        alt="Картинка флага"
-                                        class="drop-img"
-                                        src="images/header/flag_port.png"
-                                        style="width: 24px; height: 17px"/>
-                                Portuguese
-                                <input
-                                        type="checkbox"
-                                        name="port"
-                                        id="port"
-                                        class="real-checkbox"/>
-                                <span class="custom-checkbox">
-                      <svg
-                              width="30"
-                              height="29"
-                              viewBox="0 0 30 29"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg">
-                        <path
-                                d="M15 28.9165C22.9617 28.9165 29.416 22.4622 29.416 14.5005C29.416 6.53874 22.9617 0.0844727 15
-                                          0.0844727C7.03825 0.0844727 0.583984 6.53874 0.583984 14.5005C0.583984 22.4622 7.03825 28.9165 15 28.9165Z"
-                                fill="white"/>
-                        <path
-                                d="M14.984 0.0844727C12.1359 0.0844727 9.35185 0.929018 6.98378 2.51131C4.61571 4.0936 2.77003
-                                           6.34258 1.68013 8.97383C0.590224 11.6051 0.305056 14.5004 0.860683 17.2938C1.41631 20.0871 2.78778
-                                           22.6529 4.80165 24.6668C6.81553 26.6807 9.38136 28.0522 12.1747 28.6078C14.968 29.1634 17.8634
-                                           28.8782 20.4946 27.7883C23.1259 26.6984 25.3749 24.8528 26.9572 22.4847C28.5394 20.1166 29.384
-                                           17.3325 29.384 14.4845C29.384 10.6654 27.8669 7.00266 25.1663 4.30213C22.4658 1.60161 18.8031
-                                           0.0844727 14.984 0.0844727ZM21.752 10.4205L14.648 20.2765C14.4364 20.5621 14.1276 20.7605 13.7798
-                                           20.8342C13.432 20.9079 13.0693 20.8518 12.76 20.6765L8.67999 18.2925C8.349 18.093 8.1108 17.7703
-                                           8.01778 17.3952C7.92476 17.0201 7.98455 16.6235 8.18399 16.2925C8.38343 15.9615 8.70619 15.7233 9.08127
-                                           15.6303C9.45634 15.5372 9.853 15.597 10.184 15.7965L13.08 17.5245L19.48 8.74047C19.7175 8.50251 20.0308
-                                           8.35517 20.3656 8.32399C20.7004 8.2928 21.0355 8.37974 21.3129 8.56974C21.5903 8.75973 21.7924 9.0408
-                                           21.8843 9.36422C21.9762 9.68763 21.952 10.033 21.816 10.3405L21.752 10.4205Z"
-                                fill="currentColor"/>
-                      </svg>
-                    </span>
-                            </label>
+                        <li data-value="Portuguese">
+                            Portuguese
+                            <svg
+                                    width="14"
+                                    height="14"
+                                    viewBox="0 0 14 14"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1485_60687)">
+                                    <path
+                                            d="M3.84961 13.5L9.99961 7.35C10.0474 7.30511 10.0856 7.25089 10.1116 7.19069C10.1377 7.1305 10.1511 7.0656 10.1511 7C10.1511 6.9344 10.1377 6.8695 10.1116 6.80931C10.0856 6.74911 10.0474 6.69489 9.99961 6.65L3.84961 0.5"
+                                            stroke="#2B2A29"
+                                            stroke-opacity="0.4"
+                                            stroke-width="1.5"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1485_60687">
+                                        <rect
+                                                width="14"
+                                                height="14"
+                                                fill="white"
+                                                transform="matrix(0 -1 1 0 0 14)"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
                         </li>
                     </ul>
                 </div>
@@ -310,8 +301,7 @@
                                 stroke-linecap="round"
                                 stroke-linejoin="round"/>
                     </svg>
-
-                    Личный кабинет
+                    <span>Личный кабинет</span>
                 </a>
             </div>
 
@@ -327,7 +317,7 @@
                                 d="M18.378 26.4366L18.3778 26.4364C18.1069 26.272 17.8013 26.0725 17.4695 25.8491C16.5278 25.2123 15.5865 24.5087 14.7163 23.7113C12.1451 21.3536 10.6743 18.8531 10.6743 16.2719C10.6743 13.8942 12.6015 11.9673 14.9789 11.9673C16.401 11.9673 17.7217 12.6847 18.5352 13.7843L18.9287 14.3162L19.333 13.7925C20.1774 12.6988 21.5101 11.9673 22.8409 11.9673C25.2184 11.9673 27.1455 13.8942 27.1455 16.2719C27.1455 18.8531 25.6747 21.3536 23.1036 23.7113C22.2334 24.5086 21.2922 25.2122 20.3504 25.849C20.0186 26.0725 19.713 26.272 19.4421 26.4364L19.4419 26.4366C19.3411 26.4978 19.2724 26.5412 19.2211 26.5736C19.1696 26.6061 19.1357 26.6275 19.1046 26.6448L19.1036 26.6453C18.991 26.708 18.8289 26.708 18.7162 26.6453L18.7153 26.6448C18.6841 26.6275 18.6502 26.6061 18.5988 26.5736C18.5475 26.5412 18.4788 26.4978 18.378 26.4366Z"
                                 stroke="#EB6320"/>
                     </svg>
-                    Избранное
+                    <span> Избранное </span>
                 </a>
             </div>
 
@@ -335,14 +325,11 @@
                 <button class="btn contact-us__btn">Связаться с нами</button>
             </div>
 
-            <div class="menu">
+            <div class="menu" id="menu">
                 Меню
-                <svg
-                        width="20"
-                        height="20"
-                        viewBox="0 0 20 20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
+                <svg class="menu__svg-desctop">
+                    width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_1050_21917)">
                         <path
                                 d="M19.2858 2.85693H0.714355"
@@ -369,15 +356,36 @@
                         </clipPath>
                     </defs>
                 </svg>
+
+                <svg
+                        class="menu__svg-mobile none"
+                        width="19"
+                        height="19"
+                        viewBox="0 0 19 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                    <path
+                            d="M17.8994 1L1.10101 18"
+                            stroke="#EB6320"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"/>
+                    <path
+                            d="M1 1.10059L18 17.899"
+                            stroke="#EB6320"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"/>
+                </svg>
             </div>
         </div>
     </div>
-    <div class="header__menu">
+    <div class="header__menu" id="header-menu">
         <div class="container header__container-menu">
             <nav class="navigation header__navigation">
                 <ul class="navigation__list">
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">Новости и блог</a>
+                        <a href="news-page.html" class="navigation__link">Новости и блог</a>
                     </li>
                     <li class="navigation__item modal-one">
                         <a
@@ -392,18 +400,20 @@
                         >
                     </li>
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link">Сервис</a>
+                        <a href="service-page.html" class="navigation__link">Сервис</a>
                     </li>
                     <li class="navigation__item">
                         <a href="dealers.html" class="navigation__link">Сеть дилеров</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="#" class="navigation__link otzivi-btn"
+                        <a href="projects-page.html" class="navigation__link otzivi-btn"
                         >Проекты и отзывы</a
                         >
                     </li>
                     <li class="navigation__item">
-                        <a href="contacts-page.html" class="navigation__link">Контакты</a>
+                        <a href="contacts-page.html" class="navigation__link"
+                        >Контакты</a
+                        >
                     </li>
                 </ul>
             </nav>
@@ -657,13 +667,15 @@
                             </h3>
                             <ul class="header-menu-modal__body-top-box1-list">
                                 <li class="header-menu-modal__body-top-box1-item">
-                                    <a class="header-menu-modal__body-top-box1-link" href="about-us-page.html"
-                                       target="_blank">
+                                    <a
+                                            class="header-menu-modal__body-top-box1-link"
+                                            href="about-us-page.html"
+                                            target="_blank">
                                         О нас
                                     </a>
                                 </li>
                                 <li class="header-menu-modal__body-top-box1-item">
-                                    <a class="header-menu-modal__body-top-box1-link" href="#">
+                                    <a class="header-menu-modal__body-top-box1-link" href="dealers.html">
                                         Представительства
                                     </a>
                                 </li>
@@ -687,17 +699,17 @@
                             </h3>
                             <ul class="header-menu-modal__body-top-box2-list">
                                 <li class="header-menu-modal__body-top-box2-item">
-                                    <a class="header-menu-modal__body-top-box2-link" href="#">
+                                    <a class="header-menu-modal__body-top-box2-link" href="advantages-page.html">
                                         Доставка
                                     </a>
                                 </li>
                                 <li class="header-menu-modal__body-top-box2-item">
-                                    <a class="header-menu-modal__body-top-box2-link" href="#">
+                                    <a class="header-menu-modal__body-top-box2-link" href="advantages-page.html">
                                         Инжиниринг
                                     </a>
                                 </li>
                                 <li class="header-menu-modal__body-top-box2-item">
-                                    <a class="header-menu-modal__body-top-box2-link" href="#">
+                                    <a class="header-menu-modal__body-top-box2-link" href="advantages-page.html">
                                         Финансирование
                                     </a>
                                 </li>
@@ -770,6 +782,256 @@
             </div>
         </div>
     </div>
+    <!--    <div class="header-menu-modal3">-->
+    <!--        <div class="container header-menu-modal__container">-->
+    <!--            <div class="header-search-box">-->
+    <!--                <div class="header-search-box__categories-container">-->
+    <!--                    <ul class="header-search-box__categories-list">-->
+    <!--                        <li class="none"></li>-->
+    <!--                        <li class="none"></li>-->
+    <!--                        <li class="header-search-box__categories-item">Популярные категории-->
+    <!--                            <ul class="subcategory-list">-->
+    <!--                                <li class="subcategory-item">-->
+    <!--                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"-->
+    <!--                                         xmlns="http://www.w3.org/2000/svg">-->
+    <!--                                        <g clip-path="url(#clip0_5708_39570)">-->
+    <!--                                            <path d="M3.84961 13.5L9.99961 7.35C10.0474 7.30511 10.0856 7.25089 10.1116 7.19069C10.1377 7.1305 10.1511 7.0656 10.1511 7C10.1511 6.9344 10.1377 6.8695 10.1116 6.80931C10.0856 6.74911 10.0474 6.69489 9.99961 6.65L3.84961 0.5"-->
+    <!--                                                  stroke="#2B2A29" stroke-opacity="0.4" stroke-width="1.5"-->
+    <!--                                                  stroke-linecap="round" stroke-linejoin="round"/>-->
+    <!--                                        </g>-->
+    <!--                                        <defs>-->
+    <!--                                            <clipPath id="clip0_5708_39570">-->
+    <!--                                                <rect width="14" height="14" fill="white"-->
+    <!--                                                      transform="matrix(0 -1 1 0 0 14)"/>-->
+    <!--                                            </clipPath>-->
+    <!--                                        </defs>-->
+    <!--                                    </svg>-->
+    <!--                                    <div class="subcategory-item__title">Горизонтально-направленное бурение</div>-->
+    <!--                                </li>-->
+    <!--                                <li class="subcategory-item">-->
+    <!--                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"-->
+    <!--                                         xmlns="http://www.w3.org/2000/svg">-->
+    <!--                                        <g clip-path="url(#clip0_5708_39570)">-->
+    <!--                                            <path d="M3.84961 13.5L9.99961 7.35C10.0474 7.30511 10.0856 7.25089 10.1116 7.19069C10.1377 7.1305 10.1511 7.0656 10.1511 7C10.1511 6.9344 10.1377 6.8695 10.1116 6.80931C10.0856 6.74911 10.0474 6.69489 9.99961 6.65L3.84961 0.5"-->
+    <!--                                                  stroke="#2B2A29" stroke-opacity="0.4" stroke-width="1.5"-->
+    <!--                                                  stroke-linecap="round" stroke-linejoin="round"/>-->
+    <!--                                        </g>-->
+    <!--                                        <defs>-->
+    <!--                                            <clipPath id="clip0_5708_39570">-->
+    <!--                                                <rect width="14" height="14" fill="white"-->
+    <!--                                                      transform="matrix(0 -1 1 0 0 14)"/>-->
+    <!--                                            </clipPath>-->
+    <!--                                        </defs>-->
+    <!--                                    </svg>-->
+    <!--                                    <div class="subcategory-item__title">Вертикальное бурение</div>-->
+    <!--                                </li>-->
+    <!--                                <li class="subcategory-item">-->
+    <!--                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"-->
+    <!--                                         xmlns="http://www.w3.org/2000/svg">-->
+    <!--                                        <g clip-path="url(#clip0_5708_39570)">-->
+    <!--                                            <path d="M3.84961 13.5L9.99961 7.35C10.0474 7.30511 10.0856 7.25089 10.1116 7.19069C10.1377 7.1305 10.1511 7.0656 10.1511 7C10.1511 6.9344 10.1377 6.8695 10.1116 6.80931C10.0856 6.74911 10.0474 6.69489 9.99961 6.65L3.84961 0.5"-->
+    <!--                                                  stroke="#2B2A29" stroke-opacity="0.4" stroke-width="1.5"-->
+    <!--                                                  stroke-linecap="round" stroke-linejoin="round"/>-->
+    <!--                                        </g>-->
+    <!--                                        <defs>-->
+    <!--                                            <clipPath id="clip0_5708_39570">-->
+    <!--                                                <rect width="14" height="14" fill="white"-->
+    <!--                                                      transform="matrix(0 -1 1 0 0 14)"/>-->
+    <!--                                            </clipPath>-->
+    <!--                                        </defs>-->
+    <!--                                    </svg>-->
+    <!--                                    <div class="subcategory-item__title">Партетнерская программа</div>-->
+    <!--                                </li>-->
+    <!--                                <li class="subcategory-item">-->
+    <!--                                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"-->
+    <!--                                         xmlns="http://www.w3.org/2000/svg">-->
+    <!--                                        <g clip-path="url(#clip0_5708_39570)">-->
+    <!--                                            <path d="M3.84961 13.5L9.99961 7.35C10.0474 7.30511 10.0856 7.25089 10.1116 7.19069C10.1377 7.1305 10.1511 7.0656 10.1511 7C10.1511 6.9344 10.1377 6.8695 10.1116 6.80931C10.0856 6.74911 10.0474 6.69489 9.99961 6.65L3.84961 0.5"-->
+    <!--                                                  stroke="#2B2A29" stroke-opacity="0.4" stroke-width="1.5"-->
+    <!--                                                  stroke-linecap="round" stroke-linejoin="round"/>-->
+    <!--                                        </g>-->
+    <!--                                        <defs>-->
+    <!--                                            <clipPath id="clip0_5708_39570">-->
+    <!--                                                <rect width="14" height="14" fill="white"-->
+    <!--                                                      transform="matrix(0 -1 1 0 0 14)"/>-->
+    <!--                                            </clipPath>-->
+    <!--                                        </defs>-->
+    <!--                                    </svg>-->
+    <!--                                    <div class="subcategory-item__title">Дилерская сеть</div>-->
+    <!--                                </li>-->
+    <!--                            </ul>-->
+    <!--                        </li>-->
+    <!--                    </ul>-->
+    <!--                </div>-->
+    <!--                <div class="header-search-box__result-container">-->
+    <!--                    <div class="result-header">-->
+    <!--                        <div class="result-header__title" id="result-header__title">Результаты поиска</div>-->
+    <!--                        <div class="result-header__subtitle">по запросу «Буровые машины» <span>найдено: 235 953</span>-->
+    <!--                        </div>-->
+    <!--                    </div>-->
+    <!--                    <div class="result-body">-->
+    <!--                        <ul class="result-list">-->
+    <!--                            <li class="result-item">-->
+    <!--                                <div class="result-item-card">-->
+    <!--                                    <div class="item-card">-->
+    <!--                                        <div class="item-card-img">-->
+    <!--                                            <img src="images/header/searc-img.webp" alt="..." loading="lazy">-->
+    <!--                                        </div>-->
+    <!--                                        <div class="item-card-description">-->
+    <!--                                            <span class="item-card-description__stock">В НАЛИЧИИ</span>-->
+    <!--                                            <div class="item-card-description__title">Установка ГНБ PRIDE M12x30</div>-->
+    <!--                                            <div class="item-card-description__subtitle">Малогабаритные буровые-->
+    <!--                                                установки-->
+    <!--                                            </div>-->
+    <!--                                            <div class="item-card-description__text-desc">Установка ГНБ PRIDE M12x30 с-->
+    <!--                                                30ти-тонным тяговым усилием позволяет протягивать металлические трубы и-->
+    <!--                                                трубы-->
+    <!--                                            </div>-->
+    <!--                                        </div>-->
+    <!--                                    </div>-->
+    <!--                                    <div class="item-favorites">-->
+    <!--                                        <button class="btn item-favorites__btn">-->
+    <!--                                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"-->
+    <!--                                                 xmlns="http://www.w3.org/2000/svg">-->
+    <!--                                                <path d="M8.3775 15.4366L8.37729 15.4364C8.10642 15.272 7.80085 15.0725 7.46906 14.8491C6.52728 14.2123 5.58597 13.5087 4.71576 12.7113C2.14462 10.3536 0.673828 7.85315 0.673828 5.27188C0.673828 2.89416 2.601 0.967285 4.97841 0.967285C6.40048 0.967285 7.7212 1.68472 8.53474 2.78435L8.9282 3.31618L9.33247 2.79252C10.1769 1.69875 11.5096 0.967285 12.8405 0.967285C15.2179 0.967285 17.145 2.89416 17.145 5.27188C17.145 7.85315 15.6743 10.3536 13.1031 12.7113C12.2329 13.5086 11.2917 14.2122 10.3499 14.849C10.0181 15.0725 9.71248 15.272 9.44158 15.4364L9.44137 15.4366C9.34059 15.4978 9.27188 15.5412 9.2206 15.5736C9.16913 15.6061 9.13522 15.6275 9.10408 15.6448L9.10315 15.6453C8.99047 15.708 8.8284 15.708 8.71572 15.6453L8.71479 15.6448C8.68365 15.6275 8.64974 15.6061 8.59827 15.5736C8.54699 15.5412 8.47828 15.4978 8.3775 15.4366Z"-->
+    <!--                                                      stroke="#2B2A29"/>-->
+    <!--                                            </svg>-->
+    <!--                                        </button>-->
+    <!--                                    </div>-->
+    <!--                                    <div class="item-get-offer">-->
+    <!--                                        <button class="btn item-get-offer__btn">-->
+    <!--                                            Получить предложение-->
+    <!--                                        </button>-->
+    <!--                                    </div>-->
+    <!--                                    <div class="item-description">-->
+    <!--                                        <a href="#">Подробнее</a>-->
+    <!--                                    </div>-->
+    <!--                                </div>-->
+    <!--                            </li>-->
+    <!--                            <li class="result-item">-->
+    <!--                                <div class="result-item-card">-->
+    <!--                                    <div class="item-card">-->
+    <!--                                        <div class="item-card-img">-->
+    <!--                                            <img src="images/header/searc-img.webp" alt="..." loading="lazy">-->
+    <!--                                        </div>-->
+    <!--                                        <div class="item-card-description">-->
+    <!--                                            <span class="item-card-description__stock">В НАЛИЧИИ</span>-->
+    <!--                                            <div class="item-card-description__title">Установка ГНБ PRIDE M12x30</div>-->
+    <!--                                            <div class="item-card-description__subtitle">Малогабаритные буровые-->
+    <!--                                                установки-->
+    <!--                                            </div>-->
+    <!--                                            <div class="item-card-description__text-desc">Установка ГНБ PRIDE M12x30 с-->
+    <!--                                                30ти-тонным тяговым усилием позволяет протягивать металлические трубы и-->
+    <!--                                                трубы-->
+    <!--                                            </div>-->
+    <!--                                        </div>-->
+    <!--                                    </div>-->
+    <!--                                    <div class="item-favorites">-->
+    <!--                                        <button class="btn item-favorites__btn">-->
+    <!--                                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"-->
+    <!--                                                 xmlns="http://www.w3.org/2000/svg">-->
+    <!--                                                <path d="M8.3775 15.4366L8.37729 15.4364C8.10642 15.272 7.80085 15.0725 7.46906 14.8491C6.52728 14.2123 5.58597 13.5087 4.71576 12.7113C2.14462 10.3536 0.673828 7.85315 0.673828 5.27188C0.673828 2.89416 2.601 0.967285 4.97841 0.967285C6.40048 0.967285 7.7212 1.68472 8.53474 2.78435L8.9282 3.31618L9.33247 2.79252C10.1769 1.69875 11.5096 0.967285 12.8405 0.967285C15.2179 0.967285 17.145 2.89416 17.145 5.27188C17.145 7.85315 15.6743 10.3536 13.1031 12.7113C12.2329 13.5086 11.2917 14.2122 10.3499 14.849C10.0181 15.0725 9.71248 15.272 9.44158 15.4364L9.44137 15.4366C9.34059 15.4978 9.27188 15.5412 9.2206 15.5736C9.16913 15.6061 9.13522 15.6275 9.10408 15.6448L9.10315 15.6453C8.99047 15.708 8.8284 15.708 8.71572 15.6453L8.71479 15.6448C8.68365 15.6275 8.64974 15.6061 8.59827 15.5736C8.54699 15.5412 8.47828 15.4978 8.3775 15.4366Z"-->
+    <!--                                                      stroke="#2B2A29"/>-->
+    <!--                                            </svg>-->
+    <!--                                        </button>-->
+    <!--                                    </div>-->
+    <!--                                    <div class="item-get-offer">-->
+    <!--                                        <button class="btn item-get-offer__btn">-->
+    <!--                                            Получить предложение-->
+    <!--                                        </button>-->
+    <!--                                    </div>-->
+    <!--                                    <div class="item-description">-->
+    <!--                                        <a href="#">Подробнее</a>-->
+    <!--                                    </div>-->
+    <!--                                </div>-->
+    <!--                            </li>-->
+    <!--                            <li class="result-item">-->
+    <!--                                <div class="result-item-card">-->
+    <!--                                    <div class="item-card">-->
+    <!--                                        <div class="item-card-img">-->
+    <!--                                            <img src="images/header/searc-img.webp" alt="..." loading="lazy">-->
+    <!--                                        </div>-->
+    <!--                                        <div class="item-card-description">-->
+    <!--                                            <span class="item-card-description__stock">В НАЛИЧИИ</span>-->
+    <!--                                            <div class="item-card-description__title">Установка ГНБ PRIDE M12x30</div>-->
+    <!--                                            <div class="item-card-description__subtitle">Малогабаритные буровые-->
+    <!--                                                установки-->
+    <!--                                            </div>-->
+    <!--                                            <div class="item-card-description__text-desc">Установка ГНБ PRIDE M12x30 с-->
+    <!--                                                30ти-тонным тяговым усилием позволяет протягивать металлические трубы и-->
+    <!--                                                трубы-->
+    <!--                                            </div>-->
+    <!--                                        </div>-->
+    <!--                                    </div>-->
+    <!--                                    <div class="item-favorites">-->
+    <!--                                        <button class="btn item-favorites__btn">-->
+    <!--                                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"-->
+    <!--                                                 xmlns="http://www.w3.org/2000/svg">-->
+    <!--                                                <path d="M8.3775 15.4366L8.37729 15.4364C8.10642 15.272 7.80085 15.0725 7.46906 14.8491C6.52728 14.2123 5.58597 13.5087 4.71576 12.7113C2.14462 10.3536 0.673828 7.85315 0.673828 5.27188C0.673828 2.89416 2.601 0.967285 4.97841 0.967285C6.40048 0.967285 7.7212 1.68472 8.53474 2.78435L8.9282 3.31618L9.33247 2.79252C10.1769 1.69875 11.5096 0.967285 12.8405 0.967285C15.2179 0.967285 17.145 2.89416 17.145 5.27188C17.145 7.85315 15.6743 10.3536 13.1031 12.7113C12.2329 13.5086 11.2917 14.2122 10.3499 14.849C10.0181 15.0725 9.71248 15.272 9.44158 15.4364L9.44137 15.4366C9.34059 15.4978 9.27188 15.5412 9.2206 15.5736C9.16913 15.6061 9.13522 15.6275 9.10408 15.6448L9.10315 15.6453C8.99047 15.708 8.8284 15.708 8.71572 15.6453L8.71479 15.6448C8.68365 15.6275 8.64974 15.6061 8.59827 15.5736C8.54699 15.5412 8.47828 15.4978 8.3775 15.4366Z"-->
+    <!--                                                      stroke="#2B2A29"/>-->
+    <!--                                            </svg>-->
+    <!--                                        </button>-->
+    <!--                                    </div>-->
+    <!--                                    <div class="item-get-offer">-->
+    <!--                                        <button class="btn item-get-offer__btn">-->
+    <!--                                            Получить предложение-->
+    <!--                                        </button>-->
+    <!--                                    </div>-->
+    <!--                                    <div class="item-description">-->
+    <!--                                        <a href="#">Подробнее</a>-->
+    <!--                                    </div>-->
+    <!--                                </div>-->
+    <!--                            </li>-->
+    <!--                            <li class="result-item">-->
+    <!--                                <div class="result-item-card">-->
+    <!--                                    <div class="item-card">-->
+    <!--                                        <div class="item-card-img">-->
+    <!--                                            <img src="images/header/searc-img.webp" alt="..." loading="lazy">-->
+    <!--                                        </div>-->
+    <!--                                        <div class="item-card-description">-->
+    <!--                                            <span class="item-card-description__stock">В НАЛИЧИИ</span>-->
+    <!--                                            <div class="item-card-description__title">Установка ГНБ PRIDE M12x30</div>-->
+    <!--                                            <div class="item-card-description__subtitle">Малогабаритные буровые-->
+    <!--                                                установки-->
+    <!--                                            </div>-->
+    <!--                                            <div class="item-card-description__text-desc">Установка ГНБ PRIDE M12x30 с-->
+    <!--                                                30ти-тонным тяговым усилием позволяет протягивать металлические трубы и-->
+    <!--                                                трубы-->
+    <!--                                            </div>-->
+    <!--                                        </div>-->
+    <!--                                    </div>-->
+    <!--                                    <div class="item-favorites">-->
+    <!--                                        <button class="btn item-favorites__btn">-->
+    <!--                                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none"-->
+    <!--                                                 xmlns="http://www.w3.org/2000/svg">-->
+    <!--                                                <path d="M8.3775 15.4366L8.37729 15.4364C8.10642 15.272 7.80085 15.0725 7.46906 14.8491C6.52728 14.2123 5.58597 13.5087 4.71576 12.7113C2.14462 10.3536 0.673828 7.85315 0.673828 5.27188C0.673828 2.89416 2.601 0.967285 4.97841 0.967285C6.40048 0.967285 7.7212 1.68472 8.53474 2.78435L8.9282 3.31618L9.33247 2.79252C10.1769 1.69875 11.5096 0.967285 12.8405 0.967285C15.2179 0.967285 17.145 2.89416 17.145 5.27188C17.145 7.85315 15.6743 10.3536 13.1031 12.7113C12.2329 13.5086 11.2917 14.2122 10.3499 14.849C10.0181 15.0725 9.71248 15.272 9.44158 15.4364L9.44137 15.4366C9.34059 15.4978 9.27188 15.5412 9.2206 15.5736C9.16913 15.6061 9.13522 15.6275 9.10408 15.6448L9.10315 15.6453C8.99047 15.708 8.8284 15.708 8.71572 15.6453L8.71479 15.6448C8.68365 15.6275 8.64974 15.6061 8.59827 15.5736C8.54699 15.5412 8.47828 15.4978 8.3775 15.4366Z"-->
+    <!--                                                      stroke="#2B2A29"/>-->
+    <!--                                            </svg>-->
+    <!--                                        </button>-->
+    <!--                                    </div>-->
+    <!--                                    <div class="item-get-offer">-->
+    <!--                                        <button class="btn item-get-offer__btn">-->
+    <!--                                            Получить предложение-->
+    <!--                                        </button>-->
+    <!--                                    </div>-->
+    <!--                                    <div class="item-description">-->
+    <!--                                        <a href="#">Подробнее</a>-->
+    <!--                                    </div>-->
+    <!--                                </div>-->
+    <!--                            </li>-->
+    <!--                        </ul>-->
+    <!--                    </div>-->
+    <!--                </div>-->
+    <!--                <button type="button" class="close-modal-search-button">-->
+    <!--                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+    <!--                        <path d="M17.8994 1L1.10101 18" stroke="#8E8E8E" stroke-linecap="round"-->
+    <!--                              stroke-linejoin="round"/>-->
+    <!--                        <path d="M1 1.10059L18 17.899" stroke="#8E8E8E" stroke-linecap="round" stroke-linejoin="round"/>-->
+    <!--                    </svg>-->
+    <!--                </button>-->
+    <!--            </div>-->
+    <!--        </div>-->
+    <!--    </div>-->
 </header>
 <div class="breadcrumbs">
     <div class="container">
