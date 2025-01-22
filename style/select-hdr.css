@@ -252,7 +252,7 @@
   flex-direction: column;
 }
 .form-representation__form--anketa-desc {
-  text-align: left;
+  text-align: center;
   margin-bottom: 25px;
   font-weight: 400;
   font-size: 14px;
