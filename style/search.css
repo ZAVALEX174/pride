@@ -119,6 +119,7 @@
 .search-result__item:hover {
     background-color: var(--5);
 }
+
 /*Включить видимость для верстки*/
 /*.header-menu-modal3 {*/
 /*    display: block;*/
@@ -154,8 +155,9 @@
                     margin-top: 10px;
 
                     .subcategory-item {
+                        padding: 10px 0;
                         width: 100%;
-                        height: 40px;
+                        min-height: 40px;
                         display: flex;
                         column-gap: 10px;
                         align-items: center;
@@ -168,6 +170,14 @@
                             height: 14px;
                             object-fit: cover;
                             display: block;
+                        }
+
+                        .clock{
+                            width: 16px;
+                            height: 16px;
+                            object-fit: cover;
+                            display: block;
+                            flex-shrink: 0;
                         }
 
                         .subcategory-item__title {
@@ -370,6 +380,25 @@
                         }
                     }
                 }
+            }
+        }
+
+        .result-footer {
+            padding: 40px 0 40px 47px;
+
+
+            .result-footer__btn {
+                max-width: 270px;
+                width: 100%;
+                background-color: var(--color-orange);
+                height: 45px;
+                line-height: 45px;
+                justify-content: center;
+                transition: 0.3s ease-in;
+            }
+
+            .result-footer__btn:hover {
+                background-color: var(--ligth-gray);
             }
         }
     }

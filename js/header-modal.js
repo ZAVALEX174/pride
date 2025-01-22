@@ -21,14 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinkOne = document.querySelector('.modal-one .navigation__link');
     const navLinkTwo = document.querySelector('.modal-two .navigation__link');
 
-
     let breadcrumbsElement = document.querySelector('.breadcrumbs');
     let scrollBarClient = document.documentElement.clientWidth;
     let scrollBarAll = window.innerWidth;
 
     openModalBtnOne.addEventListener("click", (e) => {
         e.preventDefault();
-
 
         if (headerModalOne.classList.contains('header-menu-modal-active')) {
             headerModalOne.classList.remove('header-menu-modal-active');
@@ -40,11 +38,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             document.querySelector('.main').classList.remove('main-overlay');
 
-
             if (breadcrumbsElement != null) {
                 document.querySelector('.breadcrumbs').classList.remove('main-overlay');
                 console.log('я существую');
-
             }
 
             // document.querySelector('.breadcrumbs').classList.remove('main-overlay');
@@ -58,7 +54,6 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
             document.body.style.overflow = "hidden";
 
-
             document.querySelector('.main').classList.add('main-overlay');
             if (breadcrumbsElement != null) {
                 document.querySelector('.breadcrumbs').classList.add('main-overlay');
@@ -69,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
         headerSearch.classList.remove('header__search_active');
         searchBtn.classList.remove('search__btn_active');
         document.querySelector('.btn-search-reset').style.display = 'none';
-        document.querySelector('.header__search-form-icon').style.left = '0';
+        document.querySelector('.header__search-form-icon').style.display = 'flex';
         headerLogo.classList.remove('none');
         headerUser.classList.remove('none');
         headerContactUs.classList.remove('none');
@@ -91,7 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.body.style.overflow = "";
         document.body.style.paddingRight = "";
-
 
         document.querySelector('.main').classList.remove('main-overlay');
         if (breadcrumbsElement != null) {
@@ -115,19 +109,17 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.style.overflow = "";
             document.body.style.paddingRight = "";
 
-
             document.querySelector('.main').classList.remove('main-overlay');
             if (breadcrumbsElement != null) {
                 document.querySelector('.breadcrumbs').classList.remove('main-overlay');
             }
-        } else {
 
+        } else {
             headerModalTwo.classList.add('header-menu-modal2-active');
             navLinkTwo.classList.add('navigation__link-active');
             openModalBtnTwoLink.classList.add('navigation__link_drd-active');
             document.body.style.overflow = "hidden";
             document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
-
 
             document.querySelector('.main').classList.add('main-overlay');
             if (breadcrumbsElement != null) {
@@ -139,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
         headerSearch.classList.remove('header__search_active');
         searchBtn.classList.remove('search__btn_active');
         document.querySelector('.btn-search-reset').style.display = 'none';
-        document.querySelector('.header__search-form-icon').style.left = '0';
+        document.querySelector('.header__search-form-icon').style.display = 'flex';
         headerLogo.classList.remove('none');
         headerUser.classList.remove('none');
         headerContactUs.classList.remove('none');
@@ -165,7 +157,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // });
 
     openSearchBtn.addEventListener('click', (e) => {
-        e.preventDefault();
+        // e.preventDefault();
 
         headerModalOne.classList.remove('header-menu-modal-active');
         headerModalTwo.classList.remove('header-menu-modal2-active');
@@ -183,8 +175,8 @@ document.addEventListener('DOMContentLoaded', () => {
         headerContactUs.classList.remove('none');
         headerFavorites.classList.remove('none');
         searchBtn.classList.remove('search__btn_active');
-        document.querySelector('.btn-search-reset').style.display = 'none';
-        document.querySelector('.header__search-form-icon').style.left = '0';
+        document.querySelector('.btn-search-reset').style.display = 'flex';
+        document.querySelector('.header__search-form-icon').style.display = 'none';
 
         if (!headerModalThree.classList.contains('header-menu-modal3-active')) {
             document.body.style.overflow = "hidden";
@@ -193,13 +185,13 @@ document.addEventListener('DOMContentLoaded', () => {
             headerSearch.classList.add('header__search_active');
 
             headerLogo.classList.add('none');
-            headerUser.classList.add('none');
-            headerContactUs.classList.add('none');
-            headerFavorites.classList.add('none');
+            // headerUser.classList.add('none');
+            // headerContactUs.classList.add('none');
+            // headerFavorites.classList.add('none');
             searchBtn.classList.add('search__btn_active');
 
             document.querySelector('.btn-search-reset').style.display = 'flex';
-            document.querySelector('.header__search-form-icon').style.left = '133px';
+            document.querySelector('.header__search-form-icon').style.display = 'none';
         } else {
             document.body.style.overflow = "";
 
@@ -210,6 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
             openModalBtnOneLink.classList.remove('navigation__link_drd-active');
             headerModalOne.classList.remove('header-menu-modal-active');
             headerModalTwo.classList.remove('header-menu-modal2-active');
+
         }
 
         // document.body.style.overflow = "hidden";
@@ -228,14 +221,14 @@ document.addEventListener('DOMContentLoaded', () => {
         headerSearch.classList.remove('header__search_active');
         searchBtn.classList.remove('search__btn_active');
         headerLogo.classList.remove('none');
-        headerUser.classList.remove('none');
-        headerContactUs.classList.remove('none');
-        headerFavorites.classList.remove('none');
+        // headerUser.classList.remove('none');
+        // headerContactUs.classList.remove('none');
+        // headerFavorites.classList.remove('none');
         document.body.style.overflow = "";
         document.body.style.paddingRight = "";
         headerModalThree.classList.remove('header-menu-modal3-active');
         document.querySelector('.btn-search-reset').style.display = 'none';
-        document.querySelector('.header__search-form-icon').style.left = '0';
+        document.querySelector('.header__search-form-icon').style.display = 'flex';
 
         document.querySelector('.main').classList.remove('main-overlay');
         if (breadcrumbsElement != null) {
@@ -353,9 +346,14 @@ function updateStyles() {
 window.addEventListener('load', updateStyles);
 window.addEventListener('resize', updateStyles);
 
-
-
-
+// const resetBtn = document.querySelector('.btn-search-reset');
+//
+// resetBtn.addEventListener('click', () => {
+//     console.log('reset');
+//     const gg = document.querySelector('.search-input');
+//     console.log(gg);
+// gg.value = '';
+// })
 
 
 

@@ -15,7 +15,7 @@ const heroSlider = new Swiper('.hero-swiper', {
 );
 
 const categoriesSlider = new Swiper('.categories__body-swiper-content-slider', {
-        slidesPerView: 1.1,
+        slidesPerView: 1.05,
         speed: 500,
         centeredSlides: true,
         // loop: true,
@@ -38,7 +38,7 @@ const categoriesSlider = new Swiper('.categories__body-swiper-content-slider', {
 );
 
 const workSlider = new Swiper('.work__body-swiper-content-slider', {
-        slidesPerView: 1.1,
+        slidesPerView: 1.05,
         speed: 500,
         centeredSlides: true,
         // loop: true,

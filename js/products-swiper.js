@@ -1,5 +1,5 @@
 var productsSwiper = new Swiper(".products-swiper", {
-    slidesPerView: 1.1,
+    slidesPerView: 1.2,
     speed: 500,
     centeredSlides: true,
     // loop: true,
@@ -22,7 +22,7 @@ var productsSwiper = new Swiper(".products-swiper", {
 });
 
 var productsSwiperBefore = new Swiper(".watched-before__product-cart-swiper", {
-    slidesPerView: 1.1,
+    slidesPerView: 1.2,
     speed: 500,
     centeredSlides: true,
     spaceBetween: 14,

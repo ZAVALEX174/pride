@@ -1,5 +1,5 @@
 var otherSwiper = new Swiper(".other__body-list", {
-    slidesPerView: 1.1,
+    slidesPerView: 1.05,
     speed: 500,
     centeredSlides: true,
     // loop: true,
@@ -54,7 +54,7 @@ var watchedBeforeSwiperCatalog = new Swiper(".watched-before__catalog-swiper", {
 });
 
 var swiperNews = new Swiper(".swiper-news", {
-    slidesPerView: 1.1,
+    slidesPerView: 1.05,
     spaceBetween: 14,
     centeredSlides: true,
     speed: 500,
