@@ -34,7 +34,7 @@ var otherSwiperCatalog = new Swiper(".swiper-filter-on__body-swiper", {
 });
 
 var watchedBeforeSwiperCatalog = new Swiper(".watched-before__catalog-swiper", {
-    slidesPerView: 1.1,
+    slidesPerView: 1.05,
     spaceBetween: 14,
     centeredSlides: true,
     speed: 500,

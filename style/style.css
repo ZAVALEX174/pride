@@ -5167,7 +5167,7 @@ label[for='user-email'] {
   background-color: var(--main-bg);
 
   @media (max-width: 950px) {
-    padding: 63px 0 72px;
+    padding: 63px 0 30px;
   }
 }
 
@@ -5711,6 +5711,10 @@ label[for='user-email'] {
   padding: 86px 0 83px;
   border-bottom: 1.5px solid var(--5);
   overflow: hidden;
+
+  @media (max-width: 768px) {
+    border-bottom: none;
+  }
 }
 
 /* .right-slider {
@@ -5782,6 +5786,11 @@ label[for='user-email'] {
   border-top: 60px solid var(--color-orange);
   width: 100%;
   padding: 36px 0 0 0;
+
+  @media (max-width: 768px) {
+    border-top: none;
+    padding-top: 60px;
+  }
 }
 
 .footer-white {
@@ -5818,8 +5827,8 @@ label[for='user-email'] {
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
-    row-gap: 30px;
+    margin-bottom: 66px;
+    row-gap: 25px;
   }
 }
 
@@ -5935,6 +5944,10 @@ label[for='user-email'] {
   border-radius: 30px;
   padding: 42px 22px 42px 22px;
   /*margin-bottom: auto;*/
+
+  @media (max-width: 768px) {
+    padding: 40px 22px 40px 22px;
+  }
 }
 
 .footer__callback-form {
@@ -6070,6 +6083,10 @@ label[for='user-email'] {
   flex-direction: column;
   row-gap: 36px;
   padding-bottom: 100px;
+
+  @media (max-width: 768px) {
+    padding-bottom: 87px;
+  }
 }
 
 .footer__nav-box {
@@ -6085,9 +6102,10 @@ label[for='user-email'] {
     grid-template-rows: repeat(2, auto);
     /*grid-template-areas: ''*/
     /*'';*/
-    gap: 80px 20px;
+    gap: 71px 28px;
     position: relative;
     border-bottom: none;
+    padding-bottom: 39px;
   }
 }
 
@@ -6114,6 +6132,8 @@ label[for='user-email'] {
   @media (max-width: 768px) {
     width: 100%;
     position: relative;
+    row-gap: 32px;
+
   }
 }
 
@@ -6121,9 +6141,9 @@ label[for='user-email'] {
   @media (max-width: 768px) {
     position: absolute;
     content: '';
-    bottom: -40px;
+    bottom: -35px;
     left: 0;
-    right: -10px;
+    right: -14px;
     height: 1.5px;
     background-color: #dcdcdc;
   }
@@ -6142,7 +6162,7 @@ label[for='user-email'] {
   width: 100%;
   display: flex;
   flex-direction: column;
-  row-gap: 12px;
+  row-gap: 16px;
 }
 
 .nav-box__left-menu-link {
@@ -6252,6 +6272,7 @@ label[for='user-email'] {
   @media (max-width: 768px) {
     position: relative;
     max-width: 100%;
+    row-gap: 32px;
   }
 }
 
@@ -6280,8 +6301,8 @@ label[for='user-email'] {
   @media (max-width: 768px) {
     position: absolute;
     content: '';
-    bottom: -40px;
-    left: -10px;
+    bottom: -35px;
+    left: -14px;
     right: 0;
     height: 1.5px;
     background-color: #dcdcdc;
@@ -6308,6 +6329,10 @@ label[for='user-email'] {
   display: flex;
   flex-direction: column;
   row-gap: 12px;
+
+  @media (max-width: 768px) {
+    row-gap: 16px;
+  }
 }
 
 .products-variant-box__right-link,
@@ -6384,7 +6409,7 @@ label[for='user-email'] {
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column-reverse;
-    gap: 40px;
+    gap: 38px;
   }
 }
 
@@ -6406,8 +6431,8 @@ label[for='user-email'] {
   margin-bottom: 11px;
 
   @media (max-width: 768px) {
-    margin-bottom: 30px;
     font-size: clamp(1rem, 0.9482rem + 0.221vw, 1.125rem);
+    margin-bottom: 24px;
   }
 
   span {
@@ -6437,7 +6462,7 @@ label[for='user-email'] {
   opacity: 0.3;
 
   @media (max-width: 768px) {
-    margin-bottom: 40px;
+    margin-bottom: 31px;
     font-size: clamp(1rem, 0.9482rem + 0.221vw, 1.125rem);
   }
 }
@@ -6465,11 +6490,12 @@ label[for='user-email'] {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    row-gap: 25px;
+    row-gap: 16px;
     border-bottom: none;
     border-top: 1px solid rgba(255, 255, 255, 0.26);
     margin-bottom: 0;
-    padding-top: 40px;
+    padding-top: 35px;
+    padding-bottom: 31px;
   }
 }
 

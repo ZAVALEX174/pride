@@ -398,10 +398,18 @@
 
 .watched-before__product-cart {
     padding: 85px 0 67px;
+
+    @media (max-width: 1024px) {
+        padding: 66px 0 67px;
+    }
 }
 
 .watched-before__product-cart .watched-before__container {
     margin-bottom: 39px;
+
+    @media (max-width: 1024px) {
+        margin-bottom: 5px;
+    }
 }
 
 .watched-before__product-cart .watched-before__header-title {
@@ -944,7 +952,7 @@ video {
 
         @media (max-width: 1024px) {
             display: inline-flex;
-            max-width: 315px;
+            max-width: 335px;
             align-items: center;
             justify-content: center;
         }
