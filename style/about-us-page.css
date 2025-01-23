@@ -6,7 +6,7 @@
 
 .about-us-page-desc {
     width: 100%;
-    padding: 100px 0;
+    padding: 93px 0 97px;
 
     .bout-us-page-desc-content {
         width: 100%;
@@ -38,7 +38,7 @@
                 font-size: 20px;
                 line-height: 1.1;
                 color: var(--color-orange);
-                margin-bottom: 20px;
+                margin-bottom: 5px;
             }
 
             .about-us-page-desc-content-text__title {
@@ -48,14 +48,14 @@
                 font-size: 32px;
                 line-height: 1.25;
                 color: var(--dark-gray);
-                margin-bottom: 40px;
+                margin-bottom: 25px;
             }
 
             .about-us-page-desc-content-text__content {
                 width: 100%;
                 padding: 0;
                 margin: 0;
-                margin-bottom: 40px;
+                margin-bottom: 32px;
 
                 p {
                     width: 100%;
@@ -76,9 +76,17 @@
     }
 }
 
+.about-us-page-running-line {
+    padding: 100px 0  53px;
+
+    .running-line__title {
+        margin-bottom: 13px;
+    }
+}
+
 .production-stages {
     width: 100%;
-    padding: 93px 0;
+    padding: 93px 0 90px;
     box-shadow: 0 10px 13px -3px rgba(194, 194, 194, 1) inset;
     background-color: #efefef;
 
@@ -95,10 +103,11 @@
             border: 1px solid #efefef;
             border-radius: 30px;
             background-color: var(--main-bg);
-            padding: 80px 40px;
-            row-gap: 15px;
+            padding: 92px 40px 40px;
+            row-gap: 27px;
             transition: 0.3s ease-in;
             position: relative;
+            min-height: 370px;
 
             .production-stages-card__title {
                 font-family: 'Golos Text SemiBold', sans-serif;
@@ -164,7 +173,7 @@
 
 .specialists {
     width: 100%;
-    padding: 90px 0;
+    padding: 90px 0 90px;
 
     .mySwiperSpecialists {
         height: 450px;
@@ -287,7 +296,7 @@
                 font-size: 32px;
                 line-height: 1.25;
                 color: var(--dark-gray);
-                margin-bottom: 30px;
+                margin-bottom: 17px;
             }
 
             .specialists-header-text__subtitle {
@@ -314,14 +323,14 @@
 
 .questions-answers {
     width: 100%;
-    margin-bottom: 90px;
+    padding: 79px 0 90px;
 }
 
 .questions-answers__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
 }
 
 .questions-answers__title {
@@ -332,7 +341,7 @@
     line-height: 1.02;
     font-family: 'GetVoIP Grotesque Regular', sans-serif;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 32px;
 }
 
 .questions-answers__btn {
@@ -458,4 +467,26 @@
 .about-us-page-video {
     border-bottom: 1px solid #e3e3e3;
     border-top: 1px solid #e3e3e3;
+    padding-bottom: 58px;
+}
+.about-us-page__about-company {
+    padding: 176px 0 69px;
+}
+.specialists-body {
+    .container.swiper-btn-box-big__container {
+        top: 233px;
+    }
+}
+
+.about-us-page__our-projects {
+    padding: 133px 0 84px;
+}
+
+.form-representation.form-representation-product-cart.about-us-page__form {
+    .form-representation__title {
+        margin-bottom: 10px;
+    }
+    .form-representation__subtitle {
+        margin-bottom: 34px;
+    }
 }

@@ -1,138 +1,170 @@
 .stages-advantages-page__list {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .stages-item {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  column-gap: 24px;
-  padding: 90px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    column-gap: 24px;
+    padding: 50px 0 129px;
+}
+
+.stages-item:last-child {
+    padding: 50px 0 92px;
 }
 
 .advantages-page-hero {
-  width: 100%;
-  padding: 100px 0 30px;
-
-  .advantages-page-hero__header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 100px;
-
-    .advantages-page-hero__header-logo {
-      max-width: 367px;
-      width: 100%;
-      height: 110px;
-    }
-
-    .advantages-page-hero__header-desc {
-      max-width: 894px;
-      width: 100%;
-
-      .advantages-page-hero__header-desc-subtitle {
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 1.1;
-        color: var(--color-orange);
-        margin-bottom: 10px;
-      }
-
-      .advantages-page-hero__header-desc-title {
-        font-family: 'GetVoIP Grotesque Regular', sans-serif;
-        font-weight: 700;
-        font-size: 32px;
-        line-height: 1.25;
-        color: var(--dark-gray);
-        margin-bottom: 30px;
-      }
-
-      .advantages-page-hero__header-desc-text {
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 1.1;
-        color: var(--dark-gray);
-        opacity: 0.8;
-      }
-    }
-  }
-
-  .advantages-page-hero__body {
     width: 100%;
-    padding: 30px 0;
+    padding: 90px 0 50px;
 
-    .advantages-page-hero__body-list {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      .advantages-page-hero__body-item {
+    .advantages-page-hero__header {
         display: flex;
-        flex-direction: column;
-        border: 1px solid var(--5);
-        border-radius: 20px;
-        padding: 30px;
-        box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
-        min-height: 300px;
-        width: calc((100% - 90px) / 4);
-        transition: all 0.3s;
+        justify-content: space-between;
+        margin-bottom: 100px;
 
-        .advantages-page-hero__body-item-title {
-          font-family: 'Golos Text SemiBold', sans-serif;
-          font-weight: 600;
-          font-size: 24px;
-          line-height: 1.25;
-          color: var(--dark-gray);
-          margin-bottom: 20px;
+        .advantages-page-hero__header-logo {
+            max-width: 367px;
+            width: 100%;
+            height: 110px;
         }
 
-        .advantages-page-hero__body-item-text {
-          font-weight: 400;
-          font-size: 18px;
-          line-height: 1.22222;
-          color: var(--dark-gray);
-          margin-bottom: auto;
-        }
+        .advantages-page-hero__header-desc {
+            max-width: 894px;
+            width: 100%;
 
-        .advantages-page-hero__body-item-link {
-          width: 40px;
-          height: 40px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border-radius: 100%;
-          background-color: var(--dark-gray);
-          margin: 0;
-          padding: 0;
-          margin-left: auto;
-          position: relative;
-          transition: all 0.3s;
-        }
+            .advantages-page-hero__header-desc-subtitle {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 1.1;
+                color: var(--color-orange);
+                margin-bottom: 10px;
+            }
 
-        .advantages-page-hero__body-item-link:after {
-          position: absolute;
-          width: 11px;
-          height: 13px;
-          content: '';
-          display: block;
-          background: url('../images/advantages/arrow_down.svg') center
-            center/cover no-repeat;
-        }
-      }
+            .advantages-page-hero__header-desc-title {
+                font-family: 'GetVoIP Grotesque Regular', sans-serif;
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 1.25;
+                color: var(--dark-gray);
+                margin-bottom: 23px;
+            }
 
-      .advantages-page-hero__body-item:hover {
-        border: 1px solid var(--color-orange);
-
-        .advantages-page-hero__body-item-title {
-          color: var(--color-orange);
+            .advantages-page-hero__header-desc-text {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 1.1;
+                color: var(--dark-gray);
+                opacity: 0.8;
+            }
         }
-
-        .advantages-page-hero__body-item-link {
-          background-color: var(--color-orange);
-          transform: translateY(-20px);
-        }
-      }
     }
-  }
+
+    .advantages-page-hero__body {
+        width: 100%;
+        padding: 30px 0;
+
+        .advantages-page-hero__body-list {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .advantages-page-hero__body-item {
+                display: flex;
+                flex-direction: column;
+                border: 1px solid var(--5);
+                border-radius: 20px;
+                padding: 30px;
+                box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
+                min-height: 300px;
+                width: calc((100% - 90px) / 4);
+                transition: all 0.3s;
+
+                .advantages-page-hero__body-item-title {
+                    font-family: 'Golos Text SemiBold', sans-serif;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 1.25;
+                    color: var(--dark-gray);
+                    margin-bottom: 20px;
+                }
+
+                .advantages-page-hero__body-item-text {
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 1.22222;
+                    color: var(--dark-gray);
+                    margin-bottom: auto;
+                }
+
+                .advantages-page-hero__body-item-link {
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 100%;
+                    background-color: var(--dark-gray);
+                    margin: 0;
+                    padding: 0;
+                    margin-left: auto;
+                    position: relative;
+                    transition: all 0.3s;
+                }
+
+                .advantages-page-hero__body-item-link:after {
+                    position: absolute;
+                    width: 11px;
+                    height: 13px;
+                    content: '';
+                    display: block;
+                    background: url('../images/advantages/arrow_down.svg') center center/cover no-repeat;
+                }
+            }
+
+            .advantages-page-hero__body-item:hover {
+                border: 1px solid var(--color-orange);
+
+                .advantages-page-hero__body-item-title {
+                    color: var(--color-orange);
+                }
+
+                .advantages-page-hero__body-item-link {
+                    background-color: var(--color-orange);
+                    transform: translateY(-20px);
+                }
+            }
+        }
+    }
+}
+
+.advantages-page-banner {
+    margin-bottom: 0;
+
+    .stock-banner__container {
+        margin-bottom: 0;
+    }
+
+}
+.advantages-page__cooperation-section {
+    padding: 36px 0 50px;
+
+    .cooperation-section__text-title {
+        line-height: 0.7;
+    }
+}
+
+.advantages-page__about-program {
+    padding: 40px 0 40px;
+}
+
+.form-representation.form-representation-product-cart.advantages-page__form {
+.form-representation__title {
+    margin-bottom: 10px;
+}
+    .form-representation__subtitle {
+        margin-bottom: 35px;
+    }
 }
