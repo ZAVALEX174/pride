@@ -6,13 +6,13 @@
   width: 100%;
   object-fit: cover;
   height: 500px;
-  margin-bottom: 60px;
+  margin-bottom: 53px;
 }
 
 .news-detail-page {
   width: 100%;
   border-bottom: 1px solid rgba(227, 227, 227, 1);
-  padding-bottom: 60px;
+  padding-bottom: 55px;
 
   .news-detail-page__title {
     font-family: 'GetVoIP Grotesque Regular', sans-serif;
@@ -20,6 +20,7 @@
     font-size: 32px;
     line-height: 1.25;
     color: var(--dark-gray);
+    margin-bottom: 14px;
   }
 
   .news-detail-page__subtitle {
@@ -42,7 +43,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    max-width: 200px;
+    max-width: 250px;
     width: 100%;
     color: var(--dark-gray);
     text-decoration: none;
@@ -52,7 +53,7 @@
     line-height: 44px;
     text-align: left;
     height: 44px;
-    margin-bottom: 45px;
+    margin-bottom: 23px;
     transition: 0.3s ease-in;
   }
 
@@ -87,7 +88,7 @@
 .news-detail-page-about {
   border-bottom: 1px solid rgba(227, 227, 227, 1);
   width: 100%;
-  padding: 60px 0;
+  padding: 46px 0 60px;
 
   .news-detail-page-about__title {
     font-family: 'GetVoIP Grotesque Regular', sans-serif;
@@ -95,6 +96,7 @@
     font-size: 24px;
     line-height: 1.66667;
     color: var(--dark-gray);
+    margin-bottom: 14px;
   }
 
   .news-detail-page-about-content {
@@ -107,7 +109,8 @@
   .news-detail-page-about-content__right {
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
+    row-gap: 21px;
+    width: 50%;
   }
 }
 
@@ -320,7 +323,7 @@
 
 .other-news {
   width: 100%;
-  padding: 102px 0 90px 0;
+  padding: 84px 0 90px 0;
 
   .swiper-slide {
     max-width: 430px;
