@@ -13,13 +13,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let curInd = itemsPerPage;
 
-
     showMoreBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        console.log(items.length, 'длина картинок')
+        // console.log(items.length, 'длина картинок')
 
         curInd += 9;
-        console.log(curInd, 'номер картинки');
+        // console.log(curInd, 'номер картинки');
 
 
         function showPage(page) {
@@ -103,7 +102,7 @@ document.addEventListener('DOMContentLoaded', function () {
         pageButtons.forEach((button, index) => {
 
             if (index === currentPage) {
-                console.log(index, "index");
+                // console.log(index, "index");
 
                 button.classList.add('active');
             } else {

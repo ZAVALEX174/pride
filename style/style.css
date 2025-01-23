@@ -470,9 +470,11 @@ main {
   outline: none;
   background-color: transparent;
   color: var(--ligth-gray);
-  margin-right: 43px;
+  /*margin-right: 43px;*/
   height: 42px;
   line-height: 42px;
+  position: absolute;
+  right: 74px;
 }
 
 .btn-search-reset-active {
@@ -4488,7 +4490,7 @@ main {
 .about-company__body-item-title {
   /* font-family: 'GetVoIP Grotesque Regular', sans-serif; */
   /* margin-bottom: 19px; */
-  font-family: 'Golos Text Bold';
+  font-family: 'Golos Text Bold', sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 0.93333;

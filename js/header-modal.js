@@ -43,9 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.log('я существую');
             }
 
-            // document.querySelector('.breadcrumbs').classList.remove('main-overlay');
-
-
         } else {
             headerModalOne.classList.add('header-menu-modal-active');
             navLinkOne.classList.add('navigation__link-active');
@@ -72,9 +69,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         navLinkTwo.classList.remove('navigation__link-active');
         openModalBtnTwoLink.classList.remove('navigation__link_drd-active');
-        // headerModalThree.classList.remove('header-menu-modal3-active');
-        // document.body.style.overflow = "hidden";
-        // document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
 
     });
     closeModalBtn.addEventListener("click", (e) => {
@@ -138,23 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
         headerFavorites.classList.remove('none');
 
         headerModalThree.classList.remove('header-menu-modal3-active');
-
-        // document.body.style.overflow = "hidden";
-        // document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
     });
-    // closeModalBtnTwo.addEventListener("click", (e) => {
-    //     e.preventDefault();
-    //     navLinkTwo.classList.remove('navigation__link-active');
-    //     navLinkOne.classList.remove('navigation__link-active');
-    //     openModalBtnTwoLink.classList.remove('navigation__link_drd-active');
-    //     headerModalTwo.classList.remove('header-menu-modal2-active');
-    //     headerModalThree.classList.remove('header-menu-modal3-active');
-    //     document.body.style.overflow = "";
-    //     document.body.style.paddingRight = "";
-
-
-    //     document.querySelector('.main').classList.remove('main-overlay');
-    // });
 
     openSearchBtn.addEventListener('click', (e) => {
         // e.preventDefault();
@@ -185,9 +163,6 @@ document.addEventListener('DOMContentLoaded', () => {
             headerSearch.classList.add('header__search_active');
 
             headerLogo.classList.add('none');
-            // headerUser.classList.add('none');
-            // headerContactUs.classList.add('none');
-            // headerFavorites.classList.add('none');
             searchBtn.classList.add('search__btn_active');
 
             document.querySelector('.btn-search-reset').style.display = 'flex';
@@ -205,25 +180,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         }
 
-        // document.body.style.overflow = "hidden";
         document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
-        // navLinkTwo.classList.remove('navigation__link-active');
-        // navLinkOne.classList.remove('navigation__link-active');
-        // openModalBtnTwoLink.classList.remove('navigation__link_drd-active');
-        // openModalBtnOneLink.classList.remove('navigation__link_drd-active');
-        // headerModalOne.classList.remove('header-menu-modal-active');
-        // headerModalTwo.classList.remove('header-menu-modal2-active');
     });
 
     closeModalBtnThree.addEventListener('click', (e) => {
         e.preventDefault();
         inputSaerch.classList.remove('search__active-input');
+        inputSaerch.value = '';
         headerSearch.classList.remove('header__search_active');
         searchBtn.classList.remove('search__btn_active');
         headerLogo.classList.remove('none');
-        // headerUser.classList.remove('none');
-        // headerContactUs.classList.remove('none');
-        // headerFavorites.classList.remove('none');
         document.body.style.overflow = "";
         document.body.style.paddingRight = "";
         headerModalThree.classList.remove('header-menu-modal3-active');
@@ -249,12 +215,6 @@ function updateStyles() {
         const headerMenu = document.querySelector(".header__menu");
         const hero = document.querySelector(".hero");
         const headerModal = document.querySelector(".header-menu-modal");
-        // const headerModalClosesBtn = document.querySelector(".menu-close-btn");
-
-
-        // const menuBtn3 = document.querySelector('.menu');
-        // const searchInputStyle = document.querySelector('.header__search');
-
 
         window.addEventListener('scroll', () => {
             let scrollTop = window.scrollY;// Величина скролла
@@ -304,7 +264,6 @@ function updateStyles() {
         })
 
         const menuBtn3 = document.querySelector('.menu');
-        // console.log(menuBtn3);
 
         const searchInputStyle = document.querySelector('.header__search');
 
@@ -314,9 +273,6 @@ function updateStyles() {
             headerMenu.classList.toggle('header__menu_hidden');
         })
 
-        // headerModalClosesBtn.addEventListener('click', () => {
-        //     headerMenu.classList.add('header__menu_hidden');
-        // })
     } else {
         const header = document.querySelector(".header");
         const menu1 = document.getElementById('menu');
@@ -345,20 +301,6 @@ function updateStyles() {
 
 window.addEventListener('load', updateStyles);
 window.addEventListener('resize', updateStyles);
-
-// const resetBtn = document.querySelector('.btn-search-reset');
-//
-// resetBtn.addEventListener('click', () => {
-//     console.log('reset');
-//     const gg = document.querySelector('.search-input');
-//     console.log(gg);
-// gg.value = '';
-// })
-
-
-
-
-
 
 
 
