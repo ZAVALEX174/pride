@@ -108,10 +108,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const showMore = (e) => {
         const currentActiveLi = document.querySelector('.pagination li.active');
         let newActive;
-        console.log(pageCounter, "pageCounter");
+        // console.log(pageCounter, "pageCounter");
 
         if (pageCounter >= itemsPerPage) {
-            console.log("пиши тут");
+            // console.log("пиши тут");
             if (e.target.closest('.btn__showmore')) {
                 pageCounter = pageCounter;
                 let pageCounter2 = pageCounter + itemsPerPage;
@@ -119,8 +119,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 function showPage(page) {
                     const startIndex = pageCounter;
                     const endIndex = startIndex + pageCounter2;
-                    console.log(startIndex, 'startIndex');
-                    console.log(endIndex, 'endIndex');
+                    // console.log(startIndex, 'startIndex');
+                    // console.log(endIndex, 'endIndex');
 
                     items.forEach((item, index) => {
 

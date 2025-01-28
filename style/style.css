@@ -17,10 +17,16 @@
 /*//////////////////*/
 main {
     flex: 1;
-    @media (max-width: 900px) {
-        margin-top: 96px;
-    }
+    /*@media (max-width: 900px) {*/
+    /*    margin-top: 96px;*/
+    /*}*/
 }
+
+/*.main-index {*/
+/*    @media (max-width: 899px) {*/
+/*        margin-top: 96px;*/
+/*    }*/
+/*}*/
 
 .main-overlay {
     position: relative;

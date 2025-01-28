@@ -4,7 +4,17 @@ document.addEventListener('DOMContentLoaded', function () {
     const content = document.querySelector('.catalog-categories__body-list');
     const nextBtn = wrapperCatalogCategories.querySelector('.next-btn');
     const prevBtn = wrapperCatalogCategories.querySelector('.prev-btn');
-    const itemsPerPage = 12;
+    let itemsPerPage = null;
+    const mediaQuery = window.matchMedia("(max-width: 637px)"); // Проверка разрешения
+
+    if (mediaQuery.matches) {
+        // Если разрешение меньше 637px
+        itemsPerPage = 6;
+    } else {
+        // Если разрешение больше или равно 637px, возвращаем элемент на место
+        itemsPerPage = 9;
+    }
+
     let currentPage = 0;
     const items = Array.from(content.getElementsByTagName('li'));
 

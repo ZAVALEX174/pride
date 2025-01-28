@@ -87,6 +87,10 @@
     width: 100%;
     padding-top: 25px;
     padding-bottom: 25px;
+
+    @media (max-width: 899px) {
+        margin-top: 160px;
+    }
 }
 
 .breadcrumbs__link {
@@ -1000,14 +1004,17 @@ video {
     height: 24px;
     left: 0;
     right: 0;
-    bottom: 2px;
+    /*bottom: 2px;*/
     background: var(--color-orange);
     font-family: 'TT Norms Pro Regular', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 1;
     color: var(--title-color-ligth);
-    padding-top: 5px;
+    /*padding-top: 5px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .watched-before__product-cart .products-slide .image-pagination {
