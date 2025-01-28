@@ -1093,7 +1093,7 @@ video {
     @media (max-width: 1280px) {
         font-size: clamp(0.75rem, 0.6609rem + 0.3801vw, 0.965rem);
     }
-    
+
     @media (max-width: 1024px) {
         height: 34px;
         line-height: 34px;
@@ -1252,7 +1252,7 @@ video {
     }
 
     @media (max-width: 600px) {
-        padding: 84px 0 120px;
+        padding: 64px 0 64px;
     }
 }
 
@@ -1322,7 +1322,7 @@ video {
 .form-representation__container
 .column2__wrap::after {
     top: 46%;
-    
+
     @media (max-width: 600px) {
         top: 50px
     }
@@ -1441,7 +1441,7 @@ input:last-of-type {
 .form-right
 .form-row2
 textarea {
-    backdrop-filter: blur(2px);
+    /*backdrop-filter: blur(2px);*/
     /* background: rgba(0, 0, 0, 0.05); */
     background: rgba(217, 217, 217, 1);
     box-shadow: none !important;
@@ -1535,4 +1535,9 @@ input {
 .column2
 .select:focus {
     border: 1px solid rgba(174, 174, 174, 1);
+}
+
+.form-representation-light .container.form-representation__container .form-representation__form .form-left .form-row3 .column1.column1__wrap .select:focus {
+    border: 1px solid rgba(174, 174, 174, 1);
+    outline: none;
 }
