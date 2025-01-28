@@ -12,6 +12,65 @@ document.addEventListener('DOMContentLoaded', function () {
     })
     el.classList.add('catalog-menu-categories__body-item');
   }))
+
+
+
+  function adjustElementForMobile() {
+    const element = document.getElementById("myElement-banner"); // Элемент, который нужно переместить
+    const newParent = document.getElementById("banner__mobile-box"); // Новый родительский элемент
+    const mediaQuery = window.matchMedia("(max-width: 636px)"); // Проверка разрешения
+
+    if (mediaQuery.matches) {
+      // Если разрешение меньше 637px, перемещаем элемент
+      newParent.appendChild(element);
+    } else {
+      // Если разрешение больше или равно 637px, возвращаем элемент на место
+      const originalParent = document.getElementById("originalParent");
+      originalParent.appendChild(element);
+    }
+  }
+
+// Вызов функции при загрузке страницы
+  adjustElementForMobile();
+
+// Отслеживание изменения размера экрана
+//   function debounce(func, wait) {
+//     let timeout;
+//     return function (...args) {
+//       clearTimeout(timeout);
+//       timeout = setTimeout(() => func.apply(this, args), wait);
+//     };
+//   }
+
+  window.addEventListener("resize", adjustElementForMobile);
+
+  const itemsContainer = document.getElementById("items-container"); // Контейнер с элементами
+  const showMoreButton = document.getElementById("catalog-menu-categories__body-list-showmore-btn"); // Кнопка "Показать ещё"
+  const items = itemsContainer.querySelectorAll(".swiper-filter-on__body-item"); // Все элементы
+  const itemsPerLoad = 4; // Сколько элементов показывать за раз
+  let visibleItems = 0; // Счётчик видимых элементов
+
+  // Функция для показа следующих элементов
+  function showMoreItems() {
+    // Показываем следующие элементы
+    for (let i = visibleItems; i < visibleItems + itemsPerLoad; i++) {
+      if (items[i]) {
+        items[i].style.display = 'flex'; // Добавляем класс visible
+      }
+    }
+    visibleItems += itemsPerLoad; // Увеличиваем счётчик
+
+    // Скрываем кнопку, если все элементы показаны
+    if (visibleItems >= items.length) {
+      showMoreButton.style.display = "none";
+    }
+  }
+
+  // Показываем первые элементы при загрузке страницы
+  showMoreItems();
+
+  // Обработчик клика на кнопку "Показать ещё"
+  showMoreButton.addEventListener("click", showMoreItems);
 });
 
 
