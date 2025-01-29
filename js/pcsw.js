@@ -7,10 +7,17 @@ var swiper = new Swiper(".mySwiperProd", {
     479: {
       loop: true,
       spaceBetween: 11,
+      slidesPerView: 5.5,
+      freeMode: true,
+      watchSlidesProgress: true,
+    },
+    767: {
+      loop: true,
+      spaceBetween: 11,
       slidesPerView: 8.5,
       freeMode: true,
       watchSlidesProgress: true,
-    }
+    },
 
   },
 });
