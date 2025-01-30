@@ -6,7 +6,7 @@ var watchedBeforeSwiper = new Swiper(".watched-before-swiper", {
     // centeredSlides: true,
     speed: 1500,
     // loop: true,
-    spaceBetween: 20,
+    spaceBetween: 2000,
     // freeMode: true,
     // grabCursor: true,
     navigation: {

@@ -33,10 +33,12 @@ var otherSwiperCatalog = new Swiper(".swiper-filter-on__body-swiper", {
     },
 });
 
+
+// для всех "вы смотрели раньше"
 var watchedBeforeSwiperCatalog = new Swiper(".watched-before__catalog-swiper", {
-    slidesPerView: 1.05,
+    slidesPerView: 1.2,
     spaceBetween: 14,
-    centeredSlides: true,
+    // centeredSlides: true,
     speed: 500,
     navigation: {
         nextEl: '.watched-before__catalog-cart-btn_next',

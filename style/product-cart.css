@@ -387,7 +387,14 @@
 
     @media (max-width: 478px) {
         max-width: 500px;
-        overflow-x: scroll;
+        overflow-x: auto; /* Включает горизонтальную прокрутку */
+        scrollbar-width: none; /* Для Firefox */
+    }
+}
+
+.product-cart-description-tabs::-webkit-scrollbar {
+    @media (max-width: 478px) {
+        display: none; /* Скрыть скроллбар в WebKit-браузерах */
     }
 }
 
@@ -1272,7 +1279,7 @@ video {
 .form-representation__form-btn {
     line-height: 50;
     height: 50px;
-    font-size: 20px;
+    font-size: clamp(1rem, 0.912rem + 0.3756vw, 1.25rem);
 }
 
 .form-representation-product-cart
@@ -1534,4 +1541,8 @@ input {
 .form-representation-light .container.form-representation__container .form-representation__form .form-left .form-row3 .column1.column1__wrap .select:focus {
     border: 1px solid rgba(174, 174, 174, 1);
     outline: none;
+}
+
+.form-representation-light .form-representation__container .form-representation__title {
+    margin-bottom: 40px;
 }
