@@ -96,4 +96,53 @@ titles.forEach(item => item.addEventListener('click', (e) => {
         activeContent.classList.add('accordion__list_active');
         activeContent.style.maxHeight = activeContent.scrollHeight + "px";
     }
-}))
+}));
+
+// кнопка показать все
+document.addEventListener('DOMContentLoaded', function () {
+    const cards = document.querySelectorAll('.video-content'); // Все карточки
+    const showMoreBtn = document.getElementById('all-video'); // Кнопка "Показать еще"
+    let visibleCards = 2; // Количество изначально видимых карточек
+
+    // Функция для обновления видимости карточек
+    function updateVisibility() {
+        if (window.innerWidth < 768) {
+            cards.forEach((card, index) => {
+                if (index < visibleCards) {
+                    card.style.display = 'block'; // Показываем карточку
+                } else {
+                    card.style.display = 'none'; // Скрываем карточку
+                }
+            });
+
+            // Скрываем кнопку, если все карточки показаны
+            if (visibleCards >= cards.length) {
+                showMoreBtn.style.display = 'none';
+            } else {
+                showMoreBtn.style.display = 'block';
+            }
+        } else {
+            // На экранах больше 768px показываем все карточки
+            cards.forEach(card => {
+                card.style.display = 'block';
+            });
+            showMoreBtn.style.display = 'none'; // Скрываем кнопку
+        }
+    }
+
+    // Обработчик клика на кнопку "Показать еще"
+    showMoreBtn.addEventListener('click', function () {
+        if (window.innerWidth < 768) {
+            visibleCards += 2; // Увеличиваем количество видимых карточек на 2
+            updateVisibility(); // Обновляем видимость карточек
+        }
+    });
+
+    // Обработчик изменения размера окна
+    window.addEventListener('resize', function () {
+        updateVisibility(); // Обновляем видимость при изменении размера окна
+    });
+
+    // Инициализация при загрузке страницы
+    updateVisibility();
+});

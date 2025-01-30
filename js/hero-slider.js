@@ -26,7 +26,11 @@ const categoriesSlider = new Swiper('.categories__body-swiper-content-slider', {
         prevEl: '.categories__body-swiper-btn-prev',
     },
         breakpoints: {
-
+            478: {
+                slidesPerView: 1.5,
+                spaceBetween: 20,
+                centeredSlides: false,
+            },
             640: {
                 slidesPerView: "auto",
                 spaceBetween: 20,
