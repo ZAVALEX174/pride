@@ -18,11 +18,10 @@ var swiper = new Swiper(".mySwiperProd", {
       freeMode: true,
       watchSlidesProgress: true,
     },
-
   },
 });
 var swiper2 = new Swiper(".mySwiperProd2", {
-  slidesPerView: 1.2,
+  slidesPerView: 1.12,
   spaceBetween: 10,
   centeredSlides: true,
   navigation: {
