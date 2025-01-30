@@ -62,20 +62,4 @@ document.addEventListener('DOMContentLoaded', () => {
     // Инициализация первой страницы
     showPage(currentPage);
     createPaginationButtons();
-
-    // // Обработчик для кнопки "Вперед"
-    // document.getElementById('next-page').addEventListener('click', () => {
-    //     if (currentPage < totalPages) {
-    //         currentPage++;
-    //         showPage(currentPage);
-    //     }
-    // });
-    //
-    // // Обработчик для кнопки "Назад"
-    // document.getElementById('prev-page').addEventListener('click', () => {
-    //     if (currentPage > 1) {
-    //         currentPage--;
-    //         showPage(currentPage);
-    //     }
-    // });
 });

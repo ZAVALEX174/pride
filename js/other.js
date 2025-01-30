@@ -87,32 +87,3 @@ var swiperNews = new Swiper(".swiper-news", {
 
     },
 });
-
-// let screenWidth = window.innerWidth;
-// console.log(screenWidth);
-// window.addEventListener('resize', function () {
-//     if (screenWidth < 950) {
-//         console.log('делай');
-//         var swiperNews = new Swiper(".swiper-news", {
-//             slidesPerView: 1.1,
-//             spaceBetween: 14,
-//             centeredSlides: true,
-//             speed: 500,
-//             // navigation: {
-//             //   nextEl: '.watched-before__catalog-cart-btn_next',
-//             //   prevEl: '.watched-before__catalog-cart-btn_prev',
-//             // },
-//             breakpoints: {
-//
-//                 640: {
-//                     slidesPerView: "auto",
-//                     spaceBetween: 20,
-//                     centeredSlides: false,
-//                 }
-//
-//             },
-//         });
-//     } else {
-//         console.log('ничего')
-//     }
-// })

@@ -40,7 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (breadcrumbsElement != null) {
                 document.querySelector('.breadcrumbs').classList.remove('main-overlay');
-                console.log('я существую');
             }
 
         } else {
@@ -177,7 +176,6 @@ document.addEventListener('DOMContentLoaded', () => {
             openModalBtnOneLink.classList.remove('navigation__link_drd-active');
             headerModalOne.classList.remove('header-menu-modal-active');
             headerModalTwo.classList.remove('header-menu-modal2-active');
-
         }
 
         document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
@@ -203,117 +201,120 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 })
 
-function updateStyles() {
-    let widthBrauser = window.innerWidth;
-    console.log(widthBrauser);
-    if (widthBrauser > 900) {
 
-        // закрепленте Header при скроле
-        const header = document.querySelector(".header");
-        const headerTop = document.querySelector(".header__top");
-        const headerDown = document.querySelector(".header__down");
-        const headerMenu = document.querySelector(".header__menu");
-        const hero = document.querySelector(".hero");
-        const headerModal = document.querySelector(".header-menu-modal");
+// изменение header
+class HeaderManager {
+    constructor() {
+        this.header = document.querySelector(".header");
+        this.headerTop = document.querySelector(".header__top");
+        this.headerMenu = document.querySelector(".header__menu");
+        this.searchInputStyle = document.querySelector('.header__search');
+        this.menuBtn3 = document.querySelector('.menu');
+        this.headerDown = document.querySelector('.header__down');
+        this.headerInputSearch = document.querySelector('.search-input');
+        this.headerModal = document.querySelector('.header-menu-modal');
+        this.desktopMediaQuery = window.matchMedia('(min-width: 901px)');
+        this.mobileMediaQuery = window.matchMedia('(max-width: 900px)');
+        this.init();
+    }
 
-        window.addEventListener('scroll', () => {
-            let scrollTop = window.scrollY;// Величина скролла
-            let headerTopHeight = headerTop.clientHeight; //Высота блока Топ хедера
-            let headerMenuHeight = headerMenu.clientHeight; //Высота блока Меню хедера
-            let headerInputSearch = document.querySelector('.search-input');
-            // console.log(headerInputSearch);
+    init() {
+        this.setupMediaQueryListeners();
+        this.updateStyles();
+    }
 
+    setupMediaQueryListeners() {
+        this.desktopMediaQuery.addListener(() => this.updateStyles());
+        this.mobileMediaQuery.addListener(() => this.updateStyles());
+    }
 
-            const menuBtn3 = document.querySelector('.menu');
-            // console.log(headerTopHeight);
+    updateStyles() {
+        if (this.desktopMediaQuery.matches) {
+            this.cleanupMobileHeader();
+            this.setupDesktopHeader();
+        } else if (this.mobileMediaQuery.matches) {
+            this.cleanupDesktopHeader();
+            this.setupMobileHeader();
+        }
+    }
 
-            const searchInputStyle = document.querySelector('.header__search');
+    setupDesktopHeader() {
+        window.addEventListener('scroll', this.handleScroll);
+        this.menuBtn3.addEventListener('click', this.toggleMenu);
+    }
 
-            // console.log(headerMenuHeight, scrollTop);
+    cleanupDesktopHeader() {
+        window.removeEventListener('scroll', this.handleScroll);
+        this.menuBtn3.removeEventListener('click', this.toggleMenu);
+    }
 
-            if (scrollTop >= headerTopHeight) {
-                // console.log("ghbdtn");
-                header.style.marginTop = `-${headerTopHeight}px`;
-                headerMenu.classList.add('header__menu_hidden');
-                header.classList.add('header_fixed');
-                let headerHeight = header.clientHeight; //Высота всего хедера
-                document.body.style.marginTop = `${headerHeight}px`;
-                headerModal.style.height = `100%`;
-                /////////
-                searchInputStyle.classList.add('header__search_menu');
-                menuBtn3.classList.add('menu_menu');
-                /////
-                headerDown.classList.add('header__down_gray');
-                headerInputSearch.classList.add('search-input_gray');
+    handleScroll = () => {
+        const scrollTop = window.scrollY;
+        const headerTopHeight = this.headerTop.clientHeight;
 
-            } else {
-                headerMenu.classList.remove('header__menu_hidden');
-                // headerMenu.classList.remove('header__menu-active');
+        if (scrollTop >= headerTopHeight) {
+            this.header.style.marginTop = `-${headerTopHeight}px`;
+            this.headerMenu.classList.add('header__menu_hidden');
+            this.header.classList.add('header_fixed');
+            document.body.style.marginTop = `${this.header.clientHeight}px`;
+            this.headerModal.style.height = `100%`;
+            this.searchInputStyle.classList.add('header__search_menu');
+            this.menuBtn3.classList.add('menu_menu');
+            this.headerDown.classList.add('header__down_gray');
+            this.headerInputSearch.classList.add('search-input_gray');
+        } else {
+            this.headerMenu.classList.remove('header__menu_hidden');
+            this.searchInputStyle.classList.remove('header__search_menu');
+            this.menuBtn3.classList.remove('menu_menu');
+            this.header.classList.remove('header_fixed');
+            this.header.style.marginTop = 0;
+            document.body.style.marginTop = 0;
+            this.headerModal.style.height = `100%`;
+            this.headerDown.classList.remove('header__down_gray');
+            this.headerInputSearch.classList.remove('search-input_gray');
+        }
+    };
 
-                searchInputStyle.classList.remove('header__search_menu');
-                menuBtn3.classList.remove('menu_menu');
+    toggleMenu = () => {
+        this.headerMenu.classList.toggle('header__menu_hidden');
+    };
 
-                header.classList.remove('header_fixed');
-                header.style.marginTop = 0;
-                document.body.style.marginTop = 0;
-                headerModal.style.height = `100%`;
-                ////
-                headerDown.classList.remove('header__down_gray');
-                headerInputSearch.classList.remove('search-input_gray');
-            }
-        })
-
-        const menuBtn3 = document.querySelector('.menu');
-
-        const searchInputStyle = document.querySelector('.header__search');
-
-        menuBtn3.addEventListener('click', () => {
-            console.log('click: ');
-
-            headerMenu.classList.toggle('header__menu_hidden');
-        })
-
-    } else {
-        const header = document.querySelector(".header");
+    setupMobileHeader() {
         const menu1 = document.getElementById('menu');
         const headerAddress = document.getElementById('header-address');
         const headerContacts = document.getElementById('header-contacts');
         const headerMenuDrop = document.getElementById('header-menu');
         const btnOpenAndCloseMenu = document.getElementById('menu');
-
-        menu1.classList.add('menu_menu');
         const containerTopHeader = document.querySelector('.header__container-top');
 
+        menu1.classList.add('menu_menu');
         containerTopHeader.prepend(menu1);
         headerMenuDrop.appendChild(headerContacts);
         headerContacts.appendChild(headerAddress);
 
-        btnOpenAndCloseMenu.addEventListener('click', (e) => {
-            headerMenuDrop.classList.toggle('header__menu-mobile--open');
-            btnOpenAndCloseMenu.classList.toggle('menu-open');
-            document.querySelector('.menu__svg-desctop').classList.toggle('none');
-            document.querySelector('.menu__svg-mobile').classList.toggle('none');
-            document.body.classList.toggle('body-overflow-hidden');
-            header.classList.toggle('header-mobile-height');
-        })
+        btnOpenAndCloseMenu.addEventListener('click', this.toggleMobileMenu);
     }
+
+    cleanupMobileHeader() {
+        const btnOpenAndCloseMenu = document.getElementById('menu');
+        btnOpenAndCloseMenu.removeEventListener('click', this.toggleMobileMenu);
+    }
+
+    toggleMobileMenu = () => {
+        const headerMenuDrop = document.getElementById('header-menu');
+        const btnOpenAndCloseMenu = document.getElementById('menu');
+
+        headerMenuDrop.classList.toggle('header__menu-mobile--open');
+        btnOpenAndCloseMenu.classList.toggle('menu-open');
+        document.querySelector('.menu__svg-desctop').classList.toggle('none');
+        document.querySelector('.menu__svg-mobile').classList.toggle('none');
+        document.body.classList.toggle('body-overflow-hidden');
+        this.header.classList.toggle('header-mobile-height');
+    };
 }
 
-window.addEventListener('load', updateStyles);
-window.addEventListener('resize', updateStyles);
-
-
-
-
-
-
-
-
-
-
-
-
-
+// Инициализация
+const headerManager = new HeaderManager();
 
 
 

@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalFormOtzivi = modal.querySelector('.modals-form-representation-otzivi');
 
   const openModalOtzivi = document.querySelector('.our-projects-cart__btn-open-modal-form');
-  // console.log(openModalOtzivi);
   const closeModalOtziviBtn = document.querySelector('.otzivi-close');
 
   openModalOtzivi.addEventListener('click', () => {
