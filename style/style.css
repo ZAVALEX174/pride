@@ -2350,6 +2350,10 @@ main {
   @media (max-width: 1280px) {
     font-size: clamp(1.25rem, 1.1982rem + 0.221vw, 1.375rem);
   }
+
+  @media (max-width: 1024px) {
+    color: var(--color-orange);
+  }
 }
 
 .about__header-link--dealers {
@@ -2372,6 +2376,11 @@ main {
   background: url('../images/catalog/arr_right_black.svg') no-repeat
     center/cover;
   transition: 0.3s ease-in;
+
+  @media (max-width: 1024px) {
+    background: url('../images/catalog/arr_right_orange.svg') no-repeat
+    center/cover;
+  }
 }
 
 .about__header-link:hover::after {
@@ -4237,6 +4246,7 @@ main {
 }
 
 .about-company__body-item-text2 {
+  width: 100%;
   font-family: 'TT Norms Pro Regular', sans-serif;
   text-align: left;
   line-height: 1.0625;
