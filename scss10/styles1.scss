@@ -1,11 +1,13 @@
 @use "style01";
 @use "select-ht";
-@use "product-cart";
 @use "catalog";
+@use "product-cart";
 @use "modals";
 @use "search";
-@use "catalog-menu";
-@use "favorites";
+@use "new-det";
+
+//@use "catalog-menu";
+//@use "favorites";
 
 
 //@use "dealer";
@@ -15,7 +17,7 @@
 //@use "filter-block";
 //@use "stock";
 //@use "cooperation-page";
-//@use "new-det";
+
 
 //@use "about";
 //@use "advan";
