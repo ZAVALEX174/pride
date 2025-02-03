@@ -1,0 +1,539 @@
+.cooperation-banner {
+  margin-bottom: 64px;
+}
+
+.conditions {
+  width: 100%;
+  margin-bottom: 64px;
+}
+
+.conditions__container {
+  max-width: 1150px;
+  width: 100%;
+  display: flex;
+}
+
+.conditions-general {
+  width: calc(100% - 542px);
+  display: flex;
+  /*align-items: center;*/
+  justify-content: center;
+  flex-direction: column;
+  padding-right: 70px;
+  position: relative;
+}
+
+.conditions-general::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -120px;
+  display: block;
+  width: 451px;
+  height: 412px;
+  background: url('../images/cooperation/lion_bg.svg') center center no-repeat;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/*.title {*/
+/*    font-family: 'GetVoIP Grotesque Regular', sans-serif;*/
+/*    font-weight: 700;*/
+/*    font-size: 48px;*/
+/*    line-height: 1.35417;*/
+/*    color: var(--dark-gray);*/
+/*}*/
+
+.subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22727;
+  color: var(--dark-gray);
+}
+
+.conditions-general__title {
+  font-family: 'GetVoIP Grotesque Regular', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  color: var(--dark-gray);
+  margin-bottom: 34px;
+
+  span {
+    display: block;
+    color: var(--color-orange);
+  }
+}
+
+.conditions-peculiarities {
+  width: 542px;
+}
+
+.conditions-peculiarities__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 170px;
+  column-gap: 22px;
+  row-gap: 24px;
+}
+
+.conditions-peculiarities__item {
+  border: 1px solid var(--5);
+  border-radius: 20px;
+  padding: 32px 24px;
+  /*box-shadow: 0 1px 4px 0 rgba(25, 33, 61, 0.08);*/
+  background: #fefefe;
+  display: flex;
+  align-items: flex-start;
+
+  /*justify-content: space-between;*/
+  flex-direction: column;
+  text-align: left;
+  transition: 0.3s ease-in;
+}
+
+.conditions-peculiarities__item:hover {
+  border-color: var(--color-orange);
+}
+
+.title-cart {
+  font-family: 'TT Norms Pro Bold', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--dark-gray);
+  margin-bottom: 20px;
+}
+
+.subtitle-cart {
+  font-family: 'TT Norms Pro Bold', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.22222;
+  color: var(--dark-gray);
+}
+
+.text-cart {
+  font-family: 'TT Norms Pro Light', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.06;
+  text-align: left;
+  color: var(--dark-gray);
+}
+
+/*.conditions-peculiarities__item:hover .title-cart,*/
+/*.conditions-peculiarities__item:hover .subtitle-cart,*/
+/*.conditions-peculiarities__item:hover .text-cart {*/
+/*    color: var(--main-bg);*/
+/*}*/
+
+.cooperation-section {
+  width: 100%;
+  padding: 90px 0;
+}
+
+.cooperation-section__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  column-gap: 26px;
+}
+
+.cooperation-section__text {
+  order: 2;
+  width: calc(100% - 460px);
+  padding-right: 50px;
+}
+
+.cooperation-section__text-title {
+  margin-bottom: 25px;
+  font-family: 'GetVoIP Grotesque Regular', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: var(--dark-gray);
+}
+
+.cooperation-section__text-subtitle {
+  margin-bottom: 60px;
+}
+
+.cooperation-section__text-subtitle {
+  font-size: 20px;
+  line-height: 1.1;
+}
+
+.list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.item {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  padding-left: 35px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1;
+  color: var(--dark-gray);
+  display: flex;
+  align-items: center;
+}
+
+.item::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: url('../images/cooperation/checkbox.svg') no-repeat center/cover;
+}
+
+.cooperation-section__image-box {
+  max-width: 772px;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 100%;
+  height: 500px;
+}
+
+.about-program {
+  width: 100%;
+  /*margin-bottom: 90px;*/
+}
+
+.about-program__container {
+  padding: 0;
+  max-width: 1340px;
+  width: 100%;
+  display: flex;
+  /*align-items: center;*/
+  /*justify-content: space-between;*/
+  border-radius: 23px;
+  overflow: hidden;
+}
+
+.about-program__image-box {
+  width: 50%;
+  height: 600px;
+}
+
+.about-program__content {
+  width: 50%;
+  /*height: 600px;*/
+  background-color: var(--color-orange);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 41px 90px;
+  position: relative;
+}
+
+.about-program__content::before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 610px;
+  height: 598px;
+  display: block;
+  pointer-events: none;
+  background: url('../images/cooperation/lion_bg_orange.svg') center center no-repeat;
+}
+
+.about-program__title {
+  font-family: 'GetVoIP Grotesque Regular', sans-serif;
+  font-weight: 700;
+  color: var(--main-bg);
+  margin-bottom: 30px;
+  font-size: 32px;
+  line-height: 1.25;
+}
+
+.about-program__subtitle {
+  color: var(--title-color-ligth);
+  margin-bottom: 60px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.1;
+}
+
+.about-program__link {
+  max-width: 270px;
+  width: 100%;
+  line-height: 50px;
+  height: 50px;
+  background: #fefefe;
+  color: var(--dark-gray);
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in;
+}
+
+.about-program__link:hover {
+  background: var(--dark-gray);
+  color: #fefefe;
+}
+
+.questions-answers {
+  width: 100%;
+  padding: 90px 0;
+}
+
+.cooperation-page__questions-answers {
+  padding: 90px 0 107px;
+}
+
+.questions-answers__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.questions-answers__title {
+  max-width: 720px;
+  width: 100%;
+  margin-right: 20px;
+  margin-bottom: 0;
+  font-family: 'GetVoIP Grotesque Regular', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+}
+
+.questions-answers__btn {
+  position: relative;
+  max-width: 340px;
+  padding-right: 64px;
+  height: 47px;
+  line-height: 47px;
+  padding-left: 0;
+  font-family: 'TT Norms Pro Bold', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--dark-gray);
+  white-space: wrap;
+  text-align: left;
+  transition: 0.3s ease-in;
+}
+
+.questions-answers__btn:hover {
+  color: var(--color-orange);
+}
+
+.questions-answers__btn::after {
+  position: absolute;
+  content: '';
+  display: block;
+  width: 21px;
+  height: 16px;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  transition: 0.3s ease-in;
+  background: url('../images/catalog/arr_right_black.svg') no-repeat center/cover;
+}
+
+.questions-answers__btn:hover::after {
+  background: url('../images/catalog/arr_right_orange.svg') no-repeat center/cover;
+}
+
+.questions-answers-tabs {
+  width: 100%;
+  display: flex;
+  column-gap: 24px;
+}
+
+.questions-answers-tabs__list {
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  width: calc((100% - 24px) / 2);
+}
+
+.questions-answers-tabs__item {
+  width: 100%;
+  /*width: calc((100% - 24px) / 2);*/
+  min-height: 110px;
+  display: flex;
+  position: relative;
+  padding: 40px 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+  flex-direction: column;
+  border: 1.5px solid var(--5);
+  border-radius: 15px;
+  box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
+  background: #fff;
+  overflow: hidden;
+  /*margin-bottom: auto;*/
+  font-size: 22px;
+}
+
+.questions-answers-tabs__item:hover {
+  border: 1.5px solid var(--color-orange);
+}
+
+.item__title {
+  font-family: 'Golos Text Medium', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.1;
+  color: var(--dark-gray);
+}
+
+.item__desc {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22222;
+  color: var(--ligth-gray);
+  padding-top: 20px;
+  opacity: 0.8;
+  margin-top: -100%;
+  transition: 0.1s ease-in opacity;
+}
+
+.questions-answers-tabs__item_click {
+  border-color: var(--color-orange);
+  padding: 30px 20px;
+  transition: 0.3s ease-in;
+}
+
+.item__desc_click {
+  opacity: 1;
+  margin-top: 0;
+  transition: 0.5s ease-in opacity;
+}
+
+.questions-answers-tabs__item::after {
+  position: absolute;
+  content: '';
+  width: 23px;
+  height: 23px;
+  right: 20px;
+  display: block;
+  background: url('../images/cooperation/plus.svg') no-repeat center/cover;
+  transition: 0.2s linear;
+}
+
+.questions-answers-tabs__item:hover::after {
+  background: url('../images/cooperation/plus_orange.svg') no-repeat center/cover;
+}
+
+.questions-answers-tabs__item_click:hover::after,
+.questions-answers-tabs__item_click::after {
+  background: url('../images/cooperation/plus-deg.svg') no-repeat center/cover;
+}
+
+.cooperation-banner-form-representation .form-representation__title {
+  font-size: 40px;
+}
+
+.cooperation-banner-form-representation.form-representation {
+  padding-top: 110px;
+}
+
+.big-catalog {
+  width: 100%;
+  background: #fcfcfc;
+}
+
+.big-catalog__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.big-catalog__text {
+  width: 456px;
+  margin-right: 30px;
+}
+
+.big-catalog__text-title {
+  font-family: 'GetVoIP Grotesque Regular', sans-serif;
+  font-weight: 700;
+  max-width: 456px;
+  width: 100%;
+  font-size: 40px;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.big-catalog__text-subtitle {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.big-catalog__text-btn {
+  max-width: 350px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: var(--dark-gray);
+  color: var(--main-bg);
+  transition: 0.3s ease-in;
+}
+
+.big-catalog__text-btn:hover {
+  background-color: var(--color-orange);
+}
+
+.big-catalog__images {
+  width: 682px;
+  height: 800px;
+  display: flex;
+  column-gap: 30px;
+  overflow: hidden;
+  margin-right: -40px;
+}
+
+.big-catalog__images-vertical-line {
+  width: 50%;
+  height: 100%;
+}
+
+.big-catalog__images-vertical-line_left {
+  margin-top: 21px;
+}
+
+.big-catalog__images-vertical-line_right {
+  margin-top: -100px;
+}
+
+.big-catalog__images-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.big-catalog__images-item {
+  width: 100%;
+  border: 1px solid var(--5);
+  height: 221px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.form-representation.form-representation-product-cart.cooperation-page__page {
+  .form-representation__title {
+    margin-bottom: 10px;
+  }
+
+  .form-representation__subtitle {
+
+    margin-bottom: 34px;
+  }
+
+}
