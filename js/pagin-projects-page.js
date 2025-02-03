@@ -2,7 +2,16 @@ document.addEventListener('DOMContentLoaded', function () {
     // выбираем обёртку и инициализируем её как переменную
     const content = document.querySelector('.project-page__body-list');
     // задаём количество карточек для отображения на каждой странице
-    const itemsPerPage = 9;
+    let itemsPerPage = null;
+    const mediaQuery = window.matchMedia("(max-width: 637px)"); // Проверка разрешения
+
+    if (mediaQuery.matches) {
+        // Если разрешение меньше 637px
+        itemsPerPage = 3;
+    } else {
+        // Если разрешение больше или равно 637px, возвращаем элемент на место
+        itemsPerPage = 9;
+    }
     // создаём переменную, которая отслеживает номер текущей страницы. Она начинается с 0,
     // что означает первую страницу
     let currentPage = 0;
@@ -108,7 +117,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const showMore = (e) => {
         const currentActiveLi = document.querySelector('.pagination li.active');
         let newActive;
-        // console.log(pageCounter, "pageCounter");
 
         if (pageCounter >= itemsPerPage) {
             // console.log("пиши тут");
@@ -119,9 +127,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 function showPage(page) {
                     const startIndex = pageCounter;
                     const endIndex = startIndex + pageCounter2;
-                    // console.log(startIndex, 'startIndex');
-                    // console.log(endIndex, 'endIndex');
-
                     items.forEach((item, index) => {
 
                         newActive = currentActiveLi.nextElementSibling;
@@ -214,11 +219,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 showPage(currentPage);
             }
         }
-
-
-
     }
-
 
     // функция для переключения по кнопкам
     const hendlerBtn = (e) => {
