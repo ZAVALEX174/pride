@@ -10,12 +10,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const toggleOptions = () => {
         arrowOrange.classList.toggle('arrow-selected');
         optionsList.style.display = optionsList.style.display === 'block' ? 'none' : 'block';
+        closeSelectBtn.style.display = 'flex';
+        document.body.style.overflow= 'hidden';
     };
 
     // Функция для закрытия списка
     const closeOptions = () => {
         optionsList.style.display = 'none';
         arrowOrange.classList.remove('arrow-selected');
+        closeSelectBtn.style.display = 'none';
+        document.body.style.overflow= '';
     };
 
     // Функция для выбора варианта
