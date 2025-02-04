@@ -55,6 +55,7 @@
     'text button';
   margin-bottom: 20px;
 }
+
 .form-right--anketa .anketa-flex-column .apteka-text {
   width: 100%;
   grid-area: label;
@@ -77,6 +78,7 @@
   line-height: 22px;
   padding: 19px 16px;
 }
+
 .input-file {
   width: 0;
   height: 0;
@@ -96,6 +98,7 @@
   margin: 0 auto 20px;
   color: var(--dark-gray);
 }
+
 .modals-form-representation .form-left {
   max-width: 615px;
 }
@@ -103,13 +106,16 @@
 .modals-form-representation .form-left.form-left--apteka {
   position: relative;
 }
+
 .modals-form-representation .form-right--anketa {
   max-width: 615px;
   width: 100%;
 }
+
 .form-right.form-right--anketa .custom-labal-apteka {
   padding-left: 46px;
 }
+
 .anketa-close {
   padding: 0;
   position: absolute;
@@ -118,16 +124,23 @@
   width: 24px;
   height: 24px;
   color: rgba(162, 162, 162, 1);
+
+  @media (max-width: 640px) {
+    top: -75px;
+  }
 }
+
 .form-representation__form.form-representation__form--anketa label,
 .form-representation__form.form-representation__form--anketa .policy {
   color: var(--dark-gray);
 }
+
 .form-representation__form.form-representation__form--anketa
 .anketa-flex-column {
   display: flex;
   flex-direction: column;
 }
+
 .form-representation__form--anketa-desc {
   text-align: center;
   margin-bottom: 25px;
@@ -143,6 +156,7 @@
   width: 100%;
   margin: 0;
 }
+
 .form-right--anketa .anketa-flex-column .label-input-file {
   grid-area: button;
   margin: 0;
@@ -175,10 +189,12 @@
     margin-right: 15px;
   }
 }
+
 .form-right--anketa .anketa-flex-column .label-input-file:hover {
   background-color: var(--dark-gray);
   color: var(--main-bg);
 }
+
 .anketa-grid-input {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -188,27 +204,60 @@
     'left-two right-two';
   gap: 25px 30px;
   margin-bottom: 25px;
+
+  @media (max-width: 640px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 83px 1fr 83px 83px;
+    grid-template-areas:
+    'left-one'
+    'right-one'
+    'left-two'
+    'right-two';
+    row-gap: 8px;
+    margin-bottom: 20px;
+  }
 }
+
 .left-one {
   display: flex;
   flex-direction: column;
   grid-area: left-one;
+
+  @media (max-width: 640px) {
+    margin-bottom: 8px;
+  }
 }
+
 .left-two {
   display: flex;
   flex-direction: column;
   grid-area: left-two;
+
+  @media (max-width: 640px) {
+    margin-bottom: 8px;
+  }
 }
+
 .right-one {
   display: flex;
   flex-direction: column;
   grid-area: right-one;
+
+  @media (max-width: 640px) {
+    margin-bottom: 20px;
+  }
 }
+
 .right-two {
   display: flex;
   flex-direction: column;
   grid-area: right-two;
+
+  @media (max-width: 640px) {
+    margin-bottom: 20px;
+  }
 }
+
 .left-one input,
 .left-two input,
 .right-two input {
@@ -219,6 +268,7 @@
   border: 1px solid rgba(174, 174, 174, 1);
   height: 50px;
 }
+
 .left-one input:focus,
 .left-two input:focus,
 .right-two input:focus,
@@ -229,6 +279,7 @@
 .form-right--anketa .anketa-flex-column textarea:focus {
   border: 1px solid var(--dark-gray);
 }
+
 .form-representation__form.form-representation__form--anketa
 .form-left
 .form-row3

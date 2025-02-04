@@ -359,4 +359,23 @@
   height: auto;
   background: var(--5);
   border-radius: 30px;
+
+  @media (max-width: 768px) {
+    padding: 60px 22px;
+  }
+
+  @media (max-width: 467px) {
+    border-radius: 0;
+  }
+
+  .form-representation__container {
+
+    @media (max-width: 768px) {
+      padding: 0;
+    }
+
+    .anketa-grid-input {
+
+    }
+  }
 }

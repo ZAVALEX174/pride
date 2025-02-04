@@ -6593,6 +6593,11 @@ label[for=user-email] {
   height: 24px;
   color: rgb(162, 162, 162);
 }
+@media (max-width: 640px) {
+  .anketa-close {
+    top: -75px;
+  }
+}
 
 .form-representation__form.form-representation__form--anketa label,
 .form-representation__form.form-representation__form--anketa .policy {
@@ -6664,11 +6669,25 @@ label[for=user-email] {
   gap: 25px 30px;
   margin-bottom: 25px;
 }
+@media (max-width: 640px) {
+  .anketa-grid-input {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 83px 1fr 83px 83px;
+    grid-template-areas: "left-one" "right-one" "left-two" "right-two";
+    row-gap: 8px;
+    margin-bottom: 20px;
+  }
+}
 
 .left-one {
   display: flex;
   flex-direction: column;
   grid-area: left-one;
+}
+@media (max-width: 640px) {
+  .left-one {
+    margin-bottom: 8px;
+  }
 }
 
 .left-two {
@@ -6676,17 +6695,32 @@ label[for=user-email] {
   flex-direction: column;
   grid-area: left-two;
 }
+@media (max-width: 640px) {
+  .left-two {
+    margin-bottom: 8px;
+  }
+}
 
 .right-one {
   display: flex;
   flex-direction: column;
   grid-area: right-one;
 }
+@media (max-width: 640px) {
+  .right-one {
+    margin-bottom: 20px;
+  }
+}
 
 .right-two {
   display: flex;
   flex-direction: column;
   grid-area: right-two;
+}
+@media (max-width: 640px) {
+  .right-two {
+    margin-bottom: 20px;
+  }
 }
 
 .left-one input,
@@ -9515,7 +9549,21 @@ video {
   background: var(--5);
   border-radius: 30px;
 }
-
+@media (max-width: 768px) {
+  .modals-form-representation {
+    padding: 60px 22px;
+  }
+}
+@media (max-width: 467px) {
+  .modals-form-representation {
+    border-radius: 0;
+  }
+}
+@media (max-width: 768px) {
+  .modals-form-representation .form-representation__container {
+    padding: 0;
+  }
+}
 .header-menu-modal3 {
   display: none;
 }
