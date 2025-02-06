@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-
+  const body = document.body;
   const modal = document.querySelector('.modals');
   const modalFormOtzivi = modal.querySelector('.modals-form-representation-otzivi');
 
@@ -7,12 +7,20 @@ document.addEventListener('DOMContentLoaded', () => {
   const closeModalOtziviBtn = document.querySelector('.otzivi-close');
 
   openModalOtzivi.addEventListener('click', () => {
+
+    // Фиксируем ширину страницы
+    const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+    body.style.overflow = 'hidden'; // Отключаем скролл страницы
+    body.style.paddingRight = `${scrollbarWidth}px`; // Компенсируем ширину скролла
     modal.classList.add('modals_opened');
     // modalFormZakaz.classList.remove('none');
     modalFormOtzivi.classList.remove('none');
   })
 
   closeModalOtziviBtn.addEventListener('click', () => {
+    // Восстанавливаем ширину страницы
+    body.style.overflow = ''; // Включаем скролл страницы
+    body.style.paddingRight = ''; // Убираем компенсацию ширины скролла
     modal.classList.remove('modals_opened');
     modalFormOtzivi.classList.add('none');
   })
