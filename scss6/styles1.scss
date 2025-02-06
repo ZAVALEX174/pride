@@ -1,12 +1,12 @@
-@use "style01";
-@use "select-ht";
-@use "product-cart";
-@use "catalog";
+@use "../allscss/style01";
+@use "../allscss/select-ht";
+@use "../allscss/product-cart";
+@use "../allscss/catalog";
 
-@use "modals";
-@use "search";
-@use "catalog-menu";
-@use "filter-block";
+@use "../allscss/modals";
+@use "../allscss/search";
+@use "../allscss/catalog-menu";
+@use "../allscss/filter-block";
 
 //@use "stock";
 //@use "cooperation-page";
