@@ -4091,7 +4091,9 @@ main {
   border: none;
 
   @media (max-width: 600px) {
-    min-height: 190px;
+    min-height: auto;
+    height: 190px;
+    margin: 0;
   }
 }
 

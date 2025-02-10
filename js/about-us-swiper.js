@@ -1,5 +1,5 @@
 var mySwiperSpecialists = new Swiper(".mySwiperSpecialists", {
-    slidesPerView: 1.2,
+    slidesPerView: 1.01,
     spaceBetween: 14,
     speed: 500,
     // loop: true,

@@ -104,45 +104,51 @@ document.addEventListener('DOMContentLoaded', function () {
     const showMoreBtn = document.getElementById('all-video'); // Кнопка "Показать еще"
     let visibleCards = 2; // Количество изначально видимых карточек
 
-    // Функция для обновления видимости карточек
-    function updateVisibility() {
-        if (window.innerWidth < 768) {
-            cards.forEach((card, index) => {
-                if (index < visibleCards) {
-                    card.style.display = 'block'; // Показываем карточку
-                } else {
-                    card.style.display = 'none'; // Скрываем карточку
-                }
-            });
+    if (showMoreBtn) {
+        // Функция для обновления видимости карточек
+        function updateVisibility() {
+            if (window.innerWidth < 768) {
+                cards.forEach((card, index) => {
+                    if (index < visibleCards) {
+                        card.style.display = 'block'; // Показываем карточку
+                    } else {
+                        card.style.display = 'none'; // Скрываем карточку
+                    }
+                });
 
-            // Скрываем кнопку, если все карточки показаны
-            if (visibleCards >= cards.length) {
-                showMoreBtn.style.display = 'none';
+                // Скрываем кнопку, если все карточки показаны
+                if (visibleCards >= cards.length) {
+                    showMoreBtn.style.display = 'none';
+                } else {
+                    showMoreBtn.style.display = 'block';
+                }
             } else {
-                showMoreBtn.style.display = 'block';
+                // На экранах больше 768px показываем все карточки
+                cards.forEach(card => {
+                    card.style.display = 'block';
+                });
+                showMoreBtn.style.display = 'none'; // Скрываем кнопку
             }
-        } else {
-            // На экранах больше 768px показываем все карточки
-            cards.forEach(card => {
-                card.style.display = 'block';
-            });
-            showMoreBtn.style.display = 'none'; // Скрываем кнопку
         }
     }
+    if (showMoreBtn) {
+        // Обработчик клика на кнопку "Показать еще"
+        showMoreBtn.addEventListener('click', function () {
+            if (window.innerWidth < 768) {
+                visibleCards += 2; // Увеличиваем количество видимых карточек на 2
+                updateVisibility(); // Обновляем видимость карточек
+            }
+        });
+    }
 
-    // Обработчик клика на кнопку "Показать еще"
-    showMoreBtn.addEventListener('click', function () {
-        if (window.innerWidth < 768) {
-            visibleCards += 2; // Увеличиваем количество видимых карточек на 2
-            updateVisibility(); // Обновляем видимость карточек
-        }
-    });
+    if (showMoreBtn) {
+        // Обработчик изменения размера окна
+        window.addEventListener('resize', function () {
+            updateVisibility(); // Обновляем видимость при изменении размера окна
+        });
 
-    // Обработчик изменения размера окна
-    window.addEventListener('resize', function () {
-        updateVisibility(); // Обновляем видимость при изменении размера окна
-    });
 
-    // Инициализация при загрузке страницы
-    updateVisibility();
+        // Инициализация при загрузке страницы
+        updateVisibility();
+    }
 });

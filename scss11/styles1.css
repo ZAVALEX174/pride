@@ -4154,7 +4154,9 @@ main {
 }
 @media (max-width: 600px) {
   .about__boby-item.about-company__boby-item.big-img {
-    min-height: 190px;
+    min-height: auto;
+    height: 190px;
+    margin: 0;
   }
 }
 
