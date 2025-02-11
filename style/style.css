@@ -5737,6 +5737,7 @@ label[for='user-email'] {
 
     @media (max-width: 600px) {
         padding: 15px 20px;
+        max-width: 100%;
         font-size: clamp(1rem, 0.9482rem + 0.221vw, 1.125rem);
     }
 }
@@ -6733,12 +6734,30 @@ label[for='user-email'] {
 .choice-slider {
     width: 100%;
 
+    @media (max-width: 768px) {
+        padding: 77px 0 26px 0;
+    }
+
     .choice-slider__header {
         max-width: 456px;
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        @media (max-width: 1160px) {
+            max-width: 380px;
+        }
+
+        @media (max-width: 1024px) {
+            max-width: 400px;
+        }
+
+        @media (max-width: 768px) {
+            max-width: 100%;
+            padding-left: 20px;
+            margin-bottom: 60px;
+        }
 
         .choice-slider__header-title {
             font-family: 'GetVoIP Grotesque Regular', sans-serif;
@@ -6795,6 +6814,13 @@ label[for='user-email'] {
 
     .choice-slider__container {
         display: flex;
+
+        @media (max-width: 768px) {
+            max-width: 100%;
+            padding: 0;
+            margin: 0;
+            flex-direction: column;
+        }
     }
 
     .choice-slider__body {
@@ -6803,6 +6829,12 @@ label[for='user-email'] {
         height: 800px;
         margin-left: auto;
 
+        @media (max-width: 768px) {
+            margin-left: 0;
+            height: 392px;
+            max-width: 100%;
+        }
+
         .slider-container {
             display: flex;
             width: 100%;
@@ -6810,29 +6842,18 @@ label[for='user-email'] {
             overflow: hidden;
             position: relative;
             /*margin: 0 auto;*/
+
+
         }
 
         .choice-slider-slide {
-            max-width: 360px;
-            background: #fff;
-            border: 1px solid #e5e5e5;
-            border-radius: 30px;
-            padding: 0px 0px 15px 0px;
-            opacity: 0.9;
-            overflow: hidden;
-
-            .cart__wrapper {
-                border-radius: 0;
-                overflow: hidden;
-
-                .card-like-box {
-                    width: 37px;
-                    height: 37px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                }
-            }
+            /*max-width: 360px;*/
+            /*background: #fff;*/
+            /*border: 1px solid #e5e5e5;*/
+            /*border-radius: 30px;*/
+            /*padding: 0px 0px 15px 0px;*/
+            /*opacity: 0.9;*/
+            /*overflow: hidden;*/
 
 
         }
@@ -6841,6 +6862,14 @@ label[for='user-email'] {
     .mySwiper {
         width: calc((100% - 50px) / 2);
         margin-right: 50px;
+
+        @media (max-width: 1220px) {
+            margin-right: 8px;
+        }
+
+        @media (max-width: 1024px) {
+            display: none;
+        }
 
         .swiper-slide {
             margin-bottom: 40px;
@@ -6853,10 +6882,28 @@ label[for='user-email'] {
         width: calc((100% - 50px) / 2);
         margin-left: 50px;
 
+        @media (max-width: 1220px) {
+            margin-left: 8px;
+        }
+
+        @media (max-width: 1024px) {
+            max-width: 360px;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            max-width: 100%;
+            margin-left: 0;
+        }
 
         .swiper-slide {
             padding: 0;
             margin-bottom: 40px;
+
+            @media (max-width: 768px) {
+                /*max-width: 275px;*/
+                margin-bottom: 0;
+            }
         }
     }
 }
