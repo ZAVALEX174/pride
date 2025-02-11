@@ -9128,7 +9128,8 @@ video {
 }
 @media (max-width: 467px) {
   .watched-before__product-cart-link-box #watchedBeforeLink {
-    max-width: 315px;
+    /*max-width: 315px;*/
+    max-width: 270px;
   }
 }
 
