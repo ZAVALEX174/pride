@@ -1,21 +1,5 @@
 @charset "UTF-8";
-/*@import "header.css";*/
-/*@import "hero.css";*/
-/*@import "products.css";*/
-/*@import "products-baner.css";*/
-/*@import "about.css";*/
-/*@import "categories.css";*/
-/*@import "benefits.css";*/
-/*@import "work.css";*/
-/*@import "our-projects.css";*/
-/*@import "other.css";*/
-/*@import "about-company.css";*/
-/*@import "geografhy.css";*/
-/*@import "form-representation.css";*/
-/*@import "news.css";*/
-/*@import "watched-before.css";*/
-/*@import "footer.css";*/
-/*//////////////////*/
+
 main {
   flex: 1;
 }
@@ -225,14 +209,6 @@ main {
   stroke: var(--color-orange);
 }
 
-/*.header__lang {*/
-/*    border-radius: 50px;*/
-/*    padding: 0 15px;*/
-/*    max-width: 120px;*/
-/*    width: 100%;*/
-/*    height: 40px;*/
-/*    background: rgba(255, 255, 255, 0.15);*/
-/*}*/
 /*новый вариант select*/
 .custom-select {
   position: relative;
