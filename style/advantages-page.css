@@ -9,6 +9,13 @@
     justify-content: space-between;
     column-gap: 24px;
     padding: 50px 0 129px;
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        align-items: center;
+        column-gap: 0;
+        row-gap: 24px;
+    }
 }
 
 .stages-item:last-child {
@@ -19,15 +26,31 @@
     width: 100%;
     padding: 90px 0 50px;
 
+    @media (max-width: 1024px) {
+        padding: 70px 0 50px;
+    }
+
     .advantages-page-hero__header {
         display: flex;
         justify-content: space-between;
         margin-bottom: 100px;
+        column-gap: 20px;
+
+        @media (max-width: 899px) {
+            flex-direction: column-reverse;
+            row-gap: 55px;
+            margin-bottom: 80px;
+        }
 
         .advantages-page-hero__header-logo {
             max-width: 367px;
             width: 100%;
             height: 110px;
+
+            @media (max-width: 500px) {
+                width: 280px;
+                height: 84px;
+            }
         }
 
         .advantages-page-hero__header-desc {
@@ -49,6 +72,10 @@
                 line-height: 1.25;
                 color: var(--dark-gray);
                 margin-bottom: 23px;
+
+                @media (max-width: 1280px) {
+                    font-size: clamp(1.5rem, 1.3239rem + 0.7512vw, 2rem);
+                }
             }
 
             .advantages-page-hero__header-desc-text {
@@ -57,6 +84,10 @@
                 line-height: 1.1;
                 color: var(--dark-gray);
                 opacity: 0.8;
+
+                @media (max-width: 1280px) {
+                    font-size: clamp(1.125rem, 1.037rem + 0.3756vw, 1.375rem);
+                }
             }
         }
     }
@@ -71,6 +102,12 @@
             align-items: center;
             justify-content: space-between;
 
+            @media (max-width: 1280px) {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 30px;
+            }
+
             .advantages-page-hero__body-item {
                 display: flex;
                 flex-direction: column;
@@ -81,6 +118,11 @@
                 min-height: 300px;
                 width: calc((100% - 90px) / 4);
                 transition: all 0.3s;
+
+
+                @media (max-width: 1280px) {
+                    width: 100%;
+                }
 
                 .advantages-page-hero__body-item-title {
                     font-family: 'Golos Text SemiBold', sans-serif;
@@ -145,9 +187,18 @@
 
     .stock-banner__container {
         margin-bottom: 0;
+
+        @media (max-width: 1024px) {
+            height: 360px;
+        }
+
+        @media (max-width: 425px) {
+            height: 205px;
+        }
     }
 
 }
+
 .advantages-page__cooperation-section {
     padding: 36px 0 50px;
 
@@ -158,12 +209,18 @@
 
 .advantages-page__about-program {
     padding: 40px 0 40px;
+
+    @media (max-width: 1350px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 .form-representation.form-representation-product-cart.advantages-page__form {
-.form-representation__title {
-    margin-bottom: 10px;
-}
+    .form-representation__title {
+        margin-bottom: 10px;
+    }
+
     .form-representation__subtitle {
         margin-bottom: 35px;
     }

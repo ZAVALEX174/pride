@@ -10822,20 +10822,44 @@ video {
   justify-content: space-between;
   column-gap: 26px;
 }
+@media (max-width: 1024px) {
+  .cooperation-section__container {
+    flex-direction: column;
+    column-gap: 0;
+    row-gap: 26px;
+    align-items: center;
+  }
+}
 
 .cooperation-section__text {
   order: 2;
   width: calc(100% - 460px);
   padding-right: 50px;
 }
+@media (max-width: 1110px) {
+  .cooperation-section__text {
+    padding-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .cooperation-section__text {
+    max-width: 600px;
+    width: 100%;
+  }
+}
 
 .cooperation-section__text-title {
   margin-bottom: 25px;
   font-family: "GetVoIP Grotesque Regular", sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 32px;
   line-height: 1;
   color: var(--dark-gray);
+}
+@media (max-width: 1280px) {
+  .cooperation-section__text-title {
+    font-size: clamp(1.5rem, 1.3239rem + 0.7512vw, 2rem);
+  }
 }
 
 .cooperation-section__text-subtitle {
@@ -10845,6 +10869,11 @@ video {
 .cooperation-section__text-subtitle {
   font-size: 20px;
   line-height: 1.1;
+}
+@media (max-width: 1280px) {
+  .cooperation-section__text-subtitle {
+    font-size: clamp(1.125rem, 1.081rem + 0.1878vw, 1.25rem);
+  }
 }
 
 .list {
@@ -10884,10 +10913,31 @@ video {
   width: 100%;
   height: 500px;
 }
+@media (max-width: 1110px) {
+  .cooperation-section__image-box {
+    max-width: 600px;
+  }
+}
+@media (max-width: 768px) {
+  .cooperation-section__image-box {
+    height: 350px;
+  }
+}
+@media (max-width: 425px) {
+  .cooperation-section__image-box {
+    height: 235px;
+  }
+}
 
 .about-program {
   width: 100%;
   /*margin-bottom: 90px;*/
+}
+@media (max-width: 1200px) {
+  .about-program {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .about-program__container {
@@ -10900,10 +10950,30 @@ video {
   border-radius: 23px;
   overflow: hidden;
 }
+@media (max-width: 1024px) {
+  .about-program__container {
+    flex-direction: column-reverse;
+  }
+}
 
 .about-program__image-box {
   width: 50%;
   height: 600px;
+}
+@media (max-width: 1024px) {
+  .about-program__image-box {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .about-program__image-box {
+    height: 425px;
+  }
+}
+@media (max-width: 425px) {
+  .about-program__image-box {
+    height: 235px;
+  }
 }
 
 .about-program__content {
@@ -10915,6 +10985,16 @@ video {
   justify-content: center;
   padding: 41px 90px;
   position: relative;
+}
+@media (max-width: 1024px) {
+  .about-program__content {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .about-program__content {
+    padding: 41px 22px;
+  }
 }
 
 .about-program__content::before {
@@ -10929,6 +11009,16 @@ video {
   pointer-events: none;
   background: url("../images/cooperation/lion_bg_orange.svg") center center no-repeat;
 }
+@media (max-width: 1280px) {
+  .about-program__content::before {
+    width: 305px;
+    height: 299px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url("../images/cooperation/lion_bg_orange.svg") center center/cover no-repeat;
+  }
+}
 
 .about-program__title {
   font-family: "GetVoIP Grotesque Regular", sans-serif;
@@ -10938,6 +11028,11 @@ video {
   font-size: 32px;
   line-height: 1.25;
 }
+@media (max-width: 1280px) {
+  .about-program__title {
+    font-size: clamp(1.5rem, 1.3239rem + 0.7512vw, 2rem);
+  }
+}
 
 .about-program__subtitle {
   color: var(--title-color-ligth);
@@ -10945,6 +11040,11 @@ video {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.1;
+}
+@media (max-width: 1280px) {
+  .about-program__subtitle {
+    font-size: clamp(1.125rem, 1.081rem + 0.1878vw, 1.25rem);
+  }
 }
 
 .about-program__link {
