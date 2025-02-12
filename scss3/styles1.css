@@ -11671,6 +11671,7 @@ video {
 @media (max-width: 1024px) {
   .questions-answers-tabs {
     flex-direction: column;
+    row-gap: 30px;
   }
 }
 
@@ -11767,13 +11768,14 @@ video {
   border-top: 1px solid #e3e3e3;
   padding-bottom: 58px;
 }
+
 @media (max-width: 700px) {
-  .about-us-page-video .about-us-page-video-item {
+  .video.about-us-page-video .content.content_one .video-content.video-container.about-us-page-video-item.video-content_one {
     height: 400px;
   }
 }
 @media (max-width: 520px) {
-  .about-us-page-video .about-us-page-video-item {
+  .video.about-us-page-video .content.content_one .video-content.video-container.about-us-page-video-item.video-content_one {
     height: 220px;
   }
 }
@@ -11788,6 +11790,11 @@ video {
 
 .about-us-page__our-projects {
   padding: 133px 0 84px;
+}
+@media (max-width: 1024px) {
+  .about-us-page__our-projects {
+    padding: 45px 0 45px;
+  }
 }
 
 .form-representation.form-representation-product-cart.about-us-page__form .form-representation__title {

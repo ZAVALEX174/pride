@@ -108,7 +108,12 @@
 .buttons-box.project-page__buttons-box {
     border-top-color: transparent;
     justify-content: flex-end;
-    flex-direction: column;
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        row-gap: 30px;
+        padding-top: 40px;
+    }
 }
 
 .filter-btn-reset {

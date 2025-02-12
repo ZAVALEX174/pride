@@ -10856,6 +10856,9 @@ video {
   padding: 30px 0 0;
   justify-content: center;
 }
+.news-page__search .news-page__search-body .pagination-wrap .ul-btn.pagination {
+  margin-top: 0;
+}
 .news-page__search .news-page__search-body .pagination-wrap .prev-btn,
 .news-page__search .news-page__search-body .pagination-wrap .next-btn {
   position: relative;
