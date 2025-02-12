@@ -6955,7 +6955,6 @@ label[for=user-email] {
 }
 .choice-slider .choice-slider__container {
   display: flex;
-  column-gap: 40px;
 }
 @media (max-width: 768px) {
   .choice-slider .choice-slider__container {
@@ -6997,7 +6996,7 @@ label[for=user-email] {
 }
 .choice-slider .mySwiper {
   width: calc((100% - 50px) / 2);
-  margin-right: 40px;
+  margin-right: 50px;
 }
 @media (max-width: 1220px) {
   .choice-slider .mySwiper {
@@ -7015,7 +7014,7 @@ label[for=user-email] {
 }
 .choice-slider .mySwiper2 {
   width: calc((100% - 50px) / 2);
-  margin-left: 40px;
+  margin-left: 50px;
 }
 @media (max-width: 1220px) {
   .choice-slider .mySwiper2 {
@@ -11925,12 +11924,6 @@ video {
   font-size: 22px;
   line-height: 1.22727;
   color: var(--dark-gray);
-}
-@media (max-width: 1280px) {
-  .item__title {
-    font-size: clamp(1.25rem, 1.206rem + 0.1878vw, 1.375rem);
-    padding-right: 50px;
-  }
 }
 
 .item__desc {

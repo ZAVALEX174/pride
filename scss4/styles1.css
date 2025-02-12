@@ -11216,154 +11216,537 @@ video {
   margin-bottom: 34px;
 }
 
-.stages-advantages-page__list {
-  display: flex;
-  flex-direction: column;
+.news-detail-page__container {
+  max-width: 1162px;
 }
 
-.stages-item {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  column-gap: 24px;
-  padding: 50px 0 129px;
+.news-detail-page__image {
+  width: 100%;
+  object-fit: cover;
+  height: 500px;
+  margin-bottom: 53px;
 }
 
-.stages-item:last-child {
-  padding: 50px 0 92px;
-}
-
-.advantages-page-hero {
+.news-detail-page {
   width: 100%;
-  padding: 90px 0 50px;
+  border-bottom: 1px solid rgb(227, 227, 227);
+  padding-bottom: 55px;
 }
-.advantages-page-hero .advantages-page-hero__header {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 100px;
-}
-.advantages-page-hero .advantages-page-hero__header .advantages-page-hero__header-logo {
-  max-width: 367px;
-  width: 100%;
-  height: 110px;
-}
-.advantages-page-hero .advantages-page-hero__header .advantages-page-hero__header-desc {
-  max-width: 894px;
-  width: 100%;
-}
-.advantages-page-hero .advantages-page-hero__header .advantages-page-hero__header-desc .advantages-page-hero__header-desc-subtitle {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.1;
-  color: var(--color-orange);
-  margin-bottom: 10px;
-}
-.advantages-page-hero .advantages-page-hero__header .advantages-page-hero__header-desc .advantages-page-hero__header-desc-title {
+.news-detail-page .news-detail-page__title {
   font-family: "GetVoIP Grotesque Regular", sans-serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 1.25;
   color: var(--dark-gray);
-  margin-bottom: 23px;
+  margin-bottom: 14px;
 }
-.advantages-page-hero .advantages-page-hero__header .advantages-page-hero__header-desc .advantages-page-hero__header-desc-text {
+.news-detail-page .news-detail-page__subtitle {
+  margin: 0;
+  padding: 0;
+}
+.news-detail-page .news-detail-page__subtitle p {
   font-weight: 400;
   font-size: 20px;
-  line-height: 1.1;
+  line-height: 1.25;
   color: var(--dark-gray);
   opacity: 0.8;
 }
-.advantages-page-hero .advantages-page-hero__body {
+.news-detail-page .button-back {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 250px;
   width: 100%;
-  padding: 30px 0;
+  color: var(--dark-gray);
+  text-decoration: none;
+  padding-left: 35px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 44px;
+  text-align: left;
+  height: 44px;
+  margin-bottom: 23px;
+  transition: 0.3s ease-in;
 }
-.advantages-page-hero .advantages-page-hero__body .advantages-page-hero__body-list {
+.news-detail-page .button-back:hover {
+  color: var(--color-orange);
+}
+.news-detail-page .button-back::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 21px;
+  height: 15px;
+  content: "";
+  background: url("../images/catalog/arrow_left_black.svg") no-repeat;
+  transition: 0.3s ease-in;
+}
+.news-detail-page .button-back:hover::before {
+  background: url("../images/catalog/arrow_left_orenge.svg") no-repeat;
+}
+
+.paragrahf {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22222;
+  color: var(--dark-gray);
+}
+
+.news-detail-page-about {
+  border-bottom: 1px solid rgb(227, 227, 227);
+  width: 100%;
+  padding: 46px 0 60px;
+}
+.news-detail-page-about .news-detail-page-about__title {
+  font-family: "GetVoIP Grotesque Regular", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.66667;
+  color: var(--dark-gray);
+  margin-bottom: 14px;
+}
+.news-detail-page-about .news-detail-page-about-content {
+  width: 100%;
+  display: flex;
+  column-gap: 24px;
+}
+.news-detail-page-about .news-detail-page-about-content__left,
+.news-detail-page-about .news-detail-page-about-content__right {
+  display: flex;
+  flex-direction: column;
+  row-gap: 21px;
+  width: 50%;
+}
+
+.news-detail-page-swiper {
+  width: 100%;
+  padding: 60px 0;
+}
+.news-detail-page-swiper .news-d-swiper {
+  max-width: 1160px;
+  height: 610px;
+  /* border: 1px solid red; */
+}
+.news-detail-page-swiper .news-d-swiper .swiper-wrapper {
+  height: 500px;
+  padding-bottom: 50px;
+  /* margin-bottom: 30px; */
+}
+.news-detail-page-swiper .news-d-swiper .swiper-wrapper .swiper-slide img {
+  border-radius: 30px;
+  /* width: 1130px; */
+  height: 500px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.news-detail-page-swiper .news-d-swiper .swiper-wrapper .swiper-slide .swiper-text p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22222;
+  text-align: center;
+  color: var(--dark-gray);
+  opacity: 0.8;
+}
+.news-detail-page-swiper .news-d-swiper .swiper-button-next,
+.news-detail-page-swiper .news-d-swiper .swiper-rtl .swiper-button-prev {
+  right: 0;
+  top: 99%;
+  transform: translateY(-50%);
+  background-color: #d2d2d2;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  z-index: 100;
+}
+.news-detail-page-swiper .news-d-swiper .swiper-button-prev::after {
+  position: absolute;
+  content: "";
+  width: 17px;
+  height: 16px;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url("../images/slider-btn/arr-black-left.svg");
+}
+.news-detail-page-swiper .news-d-swiper .swiper-button-prev,
+.news-detail-page-swiper .news-d-swiper .swiper-rtl .swiper-button-next {
+  left: 0;
+  top: 99%;
+  transform: translateY(-50%);
+  background-color: #d2d2d2;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  z-index: 100;
+}
+.news-detail-page-swiper .news-d-swiper .swiper-button-next::after {
+  position: absolute;
+  content: "";
+  width: 17px;
+  height: 16px;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url("../images/slider-btn/arr-black-right.svg");
+}
+.news-detail-page-swiper .news-d-swiper .swiper-pagination {
+  /* background-color: aqua; */
+  bottom: 20px;
+}
+.news-detail-page-swiper .news-d-swiper .swiper-pagination .swiper-pagination-bullet {
+  background-color: #d6d6d6;
+  height: 15px;
+  width: 15px;
+  margin: 0 15px;
+}
+.news-detail-page-swiper .news-d-swiper .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--dark-gray);
+}
+
+.about-in-cards {
+  width: 100%;
+  padding: 60px 0;
+}
+.about-in-cards .about-in-cards__content {
+  display: flex;
+  column-gap: 58px;
+}
+.about-in-cards .about-in-cards__content .about-in-cards__content-left,
+.about-in-cards .about-in-cards__content .about-in-cards__content-right {
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+}
+.about-in-cards .about-in-cards__content .low-img {
+  height: 297px;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.about-in-cards .about-in-cards__content .high-img {
+  height: 406px;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.about-in-cards .about-in-cards__content .low-text,
+.about-in-cards .about-in-cards__content .high-text {
+  padding: 0;
+  margin: 0;
+}
+.about-in-cards .about-in-cards__content .low-text p,
+.about-in-cards .about-in-cards__content .high-text p {
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22222;
+  color: var(--dark-gray);
+  opacity: 0.8;
+}
+
+.stages {
+  width: 100%;
+  padding: 90px 0;
+  background-color: #f2f2f2;
+}
+.stages .stages__list {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.advantages-page-hero .advantages-page-hero__body .advantages-page-hero__body-list .advantages-page-hero__body-item {
+.stages .stages__list .stages__item {
+  max-width: 360px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  border: 1px solid var(--5);
-  border-radius: 20px;
-  padding: 30px;
-  box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
-  min-height: 300px;
-  width: calc((100% - 90px) / 4);
-  transition: all 0.3s;
+  row-gap: 20px;
+  justify-content: flex-start;
+  padding-right: 20px;
 }
-.advantages-page-hero .advantages-page-hero__body .advantages-page-hero__body-list .advantages-page-hero__body-item .advantages-page-hero__body-item-title {
+.stages .stages__list .stages__item .stages__title {
+  padding: 0;
+  margin: 0;
   font-family: "Golos Text SemiBold", sans-serif;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.25;
   color: var(--dark-gray);
-  margin-bottom: 20px;
 }
-.advantages-page-hero .advantages-page-hero__body .advantages-page-hero__body-list .advantages-page-hero__body-item .advantages-page-hero__body-item-text {
+.stages .stages__list .stages__item .stages__desc {
+  padding: 0;
+  margin: 0;
+}
+.stages .stages__list .stages__item .stages__desc p {
+  padding: 0;
+  margin: 0;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1.22222;
-  color: var(--dark-gray);
-  margin-bottom: auto;
+  line-height: 1.11111;
+  color: rgba(43, 42, 41, 0.8);
 }
-.advantages-page-hero .advantages-page-hero__body .advantages-page-hero__body-list .advantages-page-hero__body-item .advantages-page-hero__body-item-link {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100%;
-  background-color: var(--dark-gray);
-  margin: 0;
-  padding: 0;
-  margin-left: auto;
+
+.video {
+  width: 100%;
+  padding: 60px 0;
+}
+.video .video-content_one {
   position: relative;
-  transition: all 0.3s;
+  max-width: 100%;
+  width: 100%;
+  height: 500px;
+  border-radius: 15px;
+  overflow: hidden;
 }
-.advantages-page-hero .advantages-page-hero__body .advantages-page-hero__body-list .advantages-page-hero__body-item .advantages-page-hero__body-item-link:after {
+
+.other-news {
+  width: 100%;
+  padding: 84px 0 90px 0;
+}
+.other-news .swiper-slide {
+  max-width: 430px;
+  height: 453px;
+  border-radius: 30px;
+  overflow: hidden;
+  border: 1.5px solid rgb(239, 239, 239);
+}
+.other-news .swiper-slide .news__body-cart_vertical {
+  width: 100%;
+}
+.other-news .swiper-slide .news__body-cart_vertical .img-box {
+  width: 100%;
+  height: 250px;
+}
+.other-news .swiper-slide .news__body-cart_vertical .img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.other-news .swiper-slide .news__body-cart_vertical .news__body-cart_vertical-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22222;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.other-news .swiper-slide .news__body-cart_vertical .news__body-cart_vertical-subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.35714;
+  text-transform: lowercase;
+  color: var(--ligth-gray);
+  margin-bottom: 30px;
+}
+.other-news .swiper-slide .news__body-cart_vertical .data-wrapper {
+  width: 100%;
+}
+.other-news .swiper-slide .news__body-cart_vertical .data-wrapper .news__body-cart_vertical-data {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57143;
+  color: var(--ligth-gray);
+}
+
+.running-line {
+  width: 100%;
+  padding: 72px 0 30px;
+}
+.running-line .running-line__title {
+  font-family: "GetVoIP Grotesque Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: left;
+  margin-bottom: 14px;
+}
+.running-line .running-line__subtitle {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 13px;
+}
+.running-line .running-line__subtitle p {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+}
+.running-line .running-line-content {
+  max-width: 100%;
+  /* height: 181px; */
+  overflow: hidden;
+}
+.running-line .running-line-content .running-line-content__wrapper {
+  display: flex;
+  width: 200%;
+  animation: cicles 15s linear infinite;
+}
+.running-line .running-line-content .running-line-content__wrapper .running-line-content__img-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 60px;
+}
+.running-line .running-line-content .running-line-content__wrapper .running-line-content__img-box .wrap {
+  padding: 30px 60px;
+}
+.running-line .running-line-content .running-line-content__wrapper .running-line-content__img-box img {
+  width: 200px;
+  height: 121px;
+  object-fit: cover;
+  display: block;
+  opacity: 0.5;
+}
+.running-line .running-line-content .running-line-content__wrapper:hover {
+  animation-play-state: paused;
+}
+
+@keyframes cicles {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.partnership {
+  width: 100%;
+  padding: 58px 0 122px;
+}
+.partnership .partnership-content {
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+.partnership .partnership-content .partnership-content-text {
+  max-width: 732px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.partnership .partnership-content .partnership-content-text .partnership-content-text__subtitle {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 0.8;
+  text-align: left;
+  color: var(--color-orange);
+  margin-bottom: 7px;
+}
+.partnership .partnership-content .partnership-content-text .partnership-content-text__title {
+  font-family: "GetVoIP Grotesque Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: left;
+  color: var(--dark-gray);
+  margin-bottom: 32px;
+}
+.partnership .partnership-content .partnership-content-text .partnership-content-text__list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 31px;
+  margin-bottom: 40px;
+}
+.partnership .partnership-content .partnership-content-text .partnership-content-text__list .partnership-content-text__item {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 0.9;
+  text-align: left;
+  padding-left: 35px;
+  position: relative;
+}
+.partnership .partnership-content .partnership-content-text .partnership-content-text__list .partnership-content-text__item::before {
   position: absolute;
-  width: 11px;
-  height: 13px;
   content: "";
   display: block;
-  background: url("../images/advantages/arrow_down.svg") center center/cover no-repeat;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+  background: url("../images/dealers-page/ch.svg") center center/cover no-repeat;
 }
-.advantages-page-hero .advantages-page-hero__body .advantages-page-hero__body-list .advantages-page-hero__body-item:hover {
-  border: 1px solid var(--color-orange);
+.partnership .partnership-content .partnership-content-text .partnership-content-text__desc {
+  width: 100%;
+  padding: 21px 34px;
+  background-color: var(--5);
+  border-radius: 30px;
 }
-.advantages-page-hero .advantages-page-hero__body .advantages-page-hero__body-list .advantages-page-hero__body-item:hover .advantages-page-hero__body-item-title {
+.partnership .partnership-content .partnership-content-text .partnership-content-text__desc p {
+  font-family: "TT Norms Pro Medium", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: left;
+}
+.partnership .partnership-content .partnership-content-text .partnership-content-text__desc span {
+  font-family: "TT Norms Pro Medium", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: left;
   color: var(--color-orange);
 }
-.advantages-page-hero .advantages-page-hero__body .advantages-page-hero__body-list .advantages-page-hero__body-item:hover .advantages-page-hero__body-item-link {
+.partnership .partnership-content .partnership-content-img {
+  max-width: 542px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 29px;
+}
+.partnership .partnership-content .partnership-content-img .partnership-content-img-box {
+  max-width: 542px;
+  width: 100%;
+  height: 399px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.partnership .partnership-content .partnership-content-img .compred__btn {
+  max-width: 542px;
+  width: 100%;
   background-color: var(--color-orange);
-  transform: translateY(-20px);
+  height: 50px;
+  line-height: 50px;
+  justify-content: center;
 }
 
-.advantages-page-banner {
-  margin-bottom: 0;
-}
-.advantages-page-banner .stock-banner__container {
-  margin-bottom: 0;
+.orange-bottom-border {
+  border-bottom: 60px solid var(--color-orange);
 }
 
-.advantages-page__cooperation-section {
-  padding: 36px 0 50px;
-}
-.advantages-page__cooperation-section .cooperation-section__text-title {
-  line-height: 0.7;
+.dealers__geografhy {
+  padding: 10px 0 10px;
 }
 
-.advantages-page__about-program {
-  padding: 40px 0 40px;
+.dealers__about-company {
+  padding: 176px 0 69px;
+}
+.dealers__about-company .about-company__header-title {
+  margin-bottom: 27px;
+}
+.dealers__about-company .about__header-subtitle {
+  margin-bottom: 44px;
 }
 
-.form-representation.form-representation-product-cart.advantages-page__form .form-representation__title {
+.partnership.orange-bottom-border {
+  padding: 161px 0 156px;
+}
+
+.form-representation.form-representation-product-cart.dealers__form .form-representation__title {
   margin-bottom: 10px;
 }
-.form-representation.form-representation-product-cart.advantages-page__form .form-representation__subtitle {
+.form-representation.form-representation-product-cart.dealers__form .form-representation__subtitle {
   margin-bottom: 35px;
 }
 
@@ -12017,76 +12400,154 @@ video {
   margin-bottom: 34px;
 }
 
-.production-stages-service-page {
+.stages-advantages-page__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.stages-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  column-gap: 24px;
+  padding: 50px 0 129px;
+}
+
+.stages-item:last-child {
+  padding: 50px 0 92px;
+}
+
+.advantages-page-hero {
+  width: 100%;
+  padding: 90px 0 50px;
+}
+.advantages-page-hero .advantages-page-hero__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.advantages-page-hero .advantages-page-hero__header .advantages-page-hero__header-logo {
+  max-width: 367px;
+  width: 100%;
+  height: 110px;
+}
+.advantages-page-hero .advantages-page-hero__header .advantages-page-hero__header-desc {
+  max-width: 894px;
   width: 100%;
 }
-.production-stages-service-page .production-stages-cards {
-  flex-wrap: wrap;
-  row-gap: 50px;
-}
-.production-stages-service-page .production-stages-cards .top-left-img h2 {
-  margin-top: 0;
-}
-.production-stages-service-page .production-stages-cards .production-stages-card {
-  min-height: 370px;
-}
-.production-stages-service-page .production-stages-cards .production-stages-card .production-stages-card__title {
-  max-width: 100%;
-  font-family: "Golos Text Bold", sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 2;
-  color: var(--dark-gray);
-}
-.production-stages-service-page .production-stages-cards .production-stages-card .production-stages-card__subtitle {
+.advantages-page-hero .advantages-page-hero__header .advantages-page-hero__header-desc .advantages-page-hero__header-desc-subtitle {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.1;
-  color: var(--dark-gray);
-  opacity: 0.6;
-}
-.production-stages-service-page .production-stages-card:hover {
-  border: 1px solid var(--color-orange);
-}
-.production-stages-service-page .production-stages-card:hover .production-stages-card__title {
   color: var(--color-orange);
-}
-.production-stages-service-page .production-stages-card-active {
-  border: 1px solid var(--color-orange);
-}
-.production-stages-service-page .production-stages-card-active .production-stages-card__title-active {
-  color: var(--color-orange);
-}
-
-.service-page__title {
-  font-size: 32px;
-}
-
-.service-page__banner {
-  margin-bottom: 0;
-}
-.service-page__banner .stock-banner__container {
-  margin-bottom: 0;
-}
-
-.service-page__advantages-page-hero {
-  padding: 90px 0 66px;
-}
-.service-page__advantages-page-hero .advantages-page-hero__header {
-  margin-bottom: 30px;
-}
-
-.service-page__questions-answers {
-  padding: 91px 0 115px;
-}
-.service-page__questions-answers .questions-answers__header {
-  margin-bottom: 40px;
-}
-
-.form-representation.form-representation-product-cart.service-page__form .form-representation__title {
   margin-bottom: 10px;
 }
-.form-representation.form-representation-product-cart.service-page__form .form-representation__subtitle {
+.advantages-page-hero .advantages-page-hero__header .advantages-page-hero__header-desc .advantages-page-hero__header-desc-title {
+  font-family: "GetVoIP Grotesque Regular", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.25;
+  color: var(--dark-gray);
+  margin-bottom: 23px;
+}
+.advantages-page-hero .advantages-page-hero__header .advantages-page-hero__header-desc .advantages-page-hero__header-desc-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.1;
+  color: var(--dark-gray);
+  opacity: 0.8;
+}
+.advantages-page-hero .advantages-page-hero__body {
+  width: 100%;
+  padding: 30px 0;
+}
+.advantages-page-hero .advantages-page-hero__body .advantages-page-hero__body-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.advantages-page-hero .advantages-page-hero__body .advantages-page-hero__body-list .advantages-page-hero__body-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--5);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
+  min-height: 300px;
+  width: calc((100% - 90px) / 4);
+  transition: all 0.3s;
+}
+.advantages-page-hero .advantages-page-hero__body .advantages-page-hero__body-list .advantages-page-hero__body-item .advantages-page-hero__body-item-title {
+  font-family: "Golos Text SemiBold", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  color: var(--dark-gray);
+  margin-bottom: 20px;
+}
+.advantages-page-hero .advantages-page-hero__body .advantages-page-hero__body-list .advantages-page-hero__body-item .advantages-page-hero__body-item-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22222;
+  color: var(--dark-gray);
+  margin-bottom: auto;
+}
+.advantages-page-hero .advantages-page-hero__body .advantages-page-hero__body-list .advantages-page-hero__body-item .advantages-page-hero__body-item-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: var(--dark-gray);
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  position: relative;
+  transition: all 0.3s;
+}
+.advantages-page-hero .advantages-page-hero__body .advantages-page-hero__body-list .advantages-page-hero__body-item .advantages-page-hero__body-item-link:after {
+  position: absolute;
+  width: 11px;
+  height: 13px;
+  content: "";
+  display: block;
+  background: url("../images/advantages/arrow_down.svg") center center/cover no-repeat;
+}
+.advantages-page-hero .advantages-page-hero__body .advantages-page-hero__body-list .advantages-page-hero__body-item:hover {
+  border: 1px solid var(--color-orange);
+}
+.advantages-page-hero .advantages-page-hero__body .advantages-page-hero__body-list .advantages-page-hero__body-item:hover .advantages-page-hero__body-item-title {
+  color: var(--color-orange);
+}
+.advantages-page-hero .advantages-page-hero__body .advantages-page-hero__body-list .advantages-page-hero__body-item:hover .advantages-page-hero__body-item-link {
+  background-color: var(--color-orange);
+  transform: translateY(-20px);
+}
+
+.advantages-page-banner {
+  margin-bottom: 0;
+}
+.advantages-page-banner .stock-banner__container {
+  margin-bottom: 0;
+}
+
+.advantages-page__cooperation-section {
+  padding: 36px 0 50px;
+}
+.advantages-page__cooperation-section .cooperation-section__text-title {
+  line-height: 0.7;
+}
+
+.advantages-page__about-program {
+  padding: 40px 0 40px;
+}
+
+.form-representation.form-representation-product-cart.advantages-page__form .form-representation__title {
+  margin-bottom: 10px;
+}
+.form-representation.form-representation-product-cart.advantages-page__form .form-representation__subtitle {
   margin-bottom: 35px;
 }
 
