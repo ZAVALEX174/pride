@@ -11743,6 +11743,11 @@ video {
   text-align: left;
   margin-bottom: 14px;
 }
+@media (max-width: 1280px) {
+  .running-line .running-line__title {
+    font-size: clamp(1.5rem, 1.3239rem + 0.7512vw, 2rem);
+  }
+}
 .running-line .running-line__subtitle {
   padding: 0;
   margin: 0;
@@ -11753,8 +11758,13 @@ video {
   margin: 0;
   font-size: 20px;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 1.5;
   text-align: left;
+}
+@media (max-width: 1280px) {
+  .running-line .running-line__subtitle p {
+    font-size: clamp(1.125rem, 1.081rem + 0.1878vw, 1.25rem);
+  }
 }
 .running-line .running-line-content {
   max-width: 100%;
@@ -11803,12 +11813,25 @@ video {
   display: flex;
   /* align-items: center; */
   justify-content: space-between;
+  column-gap: 20px;
+}
+@media (max-width: 1024px) {
+  .partnership .partnership-content {
+    flex-direction: column;
+    column-gap: 0;
+    row-gap: 30px;
+  }
 }
 .partnership .partnership-content .partnership-content-text {
   max-width: 732px;
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 1024px) {
+  .partnership .partnership-content .partnership-content-text {
+    max-width: 100%;
+  }
 }
 .partnership .partnership-content .partnership-content-text .partnership-content-text__subtitle {
   font-size: 20px;
@@ -11818,6 +11841,11 @@ video {
   color: var(--color-orange);
   margin-bottom: 7px;
 }
+@media (max-width: 1280px) {
+  .partnership .partnership-content .partnership-content-text .partnership-content-text__subtitle {
+    font-size: clamp(1.125rem, 1.081rem + 0.1878vw, 1.25rem);
+  }
+}
 .partnership .partnership-content .partnership-content-text .partnership-content-text__title {
   font-family: "GetVoIP Grotesque Regular", sans-serif;
   font-size: 32px;
@@ -11826,6 +11854,11 @@ video {
   text-align: left;
   color: var(--dark-gray);
   margin-bottom: 32px;
+}
+@media (max-width: 1280px) {
+  .partnership .partnership-content .partnership-content-text .partnership-content-text__title {
+    font-size: clamp(1.5rem, 1.3239rem + 0.7512vw, 2rem);
+  }
 }
 .partnership .partnership-content .partnership-content-text .partnership-content-text__list {
   width: 100%;
@@ -11841,6 +11874,11 @@ video {
   text-align: left;
   padding-left: 35px;
   position: relative;
+}
+@media (max-width: 1280px) {
+  .partnership .partnership-content .partnership-content-text .partnership-content-text__list .partnership-content-text__item {
+    font-size: clamp(1.125rem, 1.081rem + 0.1878vw, 1.25rem);
+  }
 }
 .partnership .partnership-content .partnership-content-text .partnership-content-text__list .partnership-content-text__item::before {
   position: absolute;
@@ -11858,22 +11896,37 @@ video {
   background-color: var(--5);
   border-radius: 30px;
 }
+@media (max-width: 1024px) {
+  .partnership .partnership-content .partnership-content-text .partnership-content-text__desc {
+    max-width: 600px;
+  }
+}
 .partnership .partnership-content .partnership-content-text .partnership-content-text__desc p {
   font-family: "TT Norms Pro Medium", sans-serif;
   padding: 0;
   margin: 0;
   font-size: 20px;
   font-weight: 500;
-  line-height: 22px;
+  line-height: 1.2;
   text-align: left;
+}
+@media (max-width: 1280px) {
+  .partnership .partnership-content .partnership-content-text .partnership-content-text__desc p {
+    font-size: clamp(1.125rem, 1.081rem + 0.1878vw, 1.25rem);
+  }
 }
 .partnership .partnership-content .partnership-content-text .partnership-content-text__desc span {
   font-family: "TT Norms Pro Medium", sans-serif;
   font-size: 20px;
   font-weight: 500;
-  line-height: 22px;
+  line-height: 1.2;
   text-align: left;
   color: var(--color-orange);
+}
+@media (max-width: 1280px) {
+  .partnership .partnership-content .partnership-content-text .partnership-content-text__desc span {
+    font-size: clamp(1.125rem, 1.081rem + 0.1878vw, 1.25rem);
+  }
 }
 .partnership .partnership-content .partnership-content-img {
   max-width: 542px;
@@ -11881,12 +11934,22 @@ video {
   flex-direction: column;
   row-gap: 29px;
 }
+@media (max-width: 1024px) {
+  .partnership .partnership-content .partnership-content-img {
+    max-width: 100%;
+  }
+}
 .partnership .partnership-content .partnership-content-img .partnership-content-img-box {
   max-width: 542px;
   width: 100%;
   height: 399px;
   border-radius: 20px;
   overflow: hidden;
+}
+@media (max-width: 1024px) {
+  .partnership .partnership-content .partnership-content-img .partnership-content-img-box {
+    max-width: 100%;
+  }
 }
 .partnership .partnership-content .partnership-content-img .compred__btn {
   max-width: 542px;
