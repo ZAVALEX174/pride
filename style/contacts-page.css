@@ -7,12 +7,26 @@
         font-family: 'GetVoIP Grotesque Regular', sans-serif;
         font-size: 32px;
         margin-bottom: 52px;
+
+        @media (max-width: 1280px) {
+            font-size: clamp(1.5rem, 1.3239rem + 0.7512vw, 2rem);
+        }
     }
 
     .contacts-page-contact-content {
         width: 100%;
         display: flex;
         column-gap: 79px;
+
+        @media (max-width: 1280px) {
+            column-gap: 30px;
+        }
+
+        @media (max-width: 1100px) {
+            flex-direction: column;
+            column-gap: 0;
+            row-gap: 30px;
+        }
 
         .contacts-page-contact-content-box {
             width: calc((100% - 79px) / 2);
@@ -22,9 +36,24 @@
             gap: 30px 15px;
             /* border: 1px solid red; */
 
+            @media (max-width: 1280px) {
+                width: calc((100% - 30px) / 2);
+            }
+
+            @media (max-width: 1100px) {
+                width: 100%;
+            }
+
+            @media (max-width: 768px) {
+                display: flex;
+                flex-direction: column;
+            }
+
             .contact-link-box {
                 border: 1px solid rgba(229, 229, 229, 1);
                 transition: 0.3s ease-in;
+
+
             }
 
             .contact-link {
@@ -36,12 +65,20 @@
                 text-align: left;
                 color: var(--dark-gray);
 
+                @media (max-width: 1280px) {
+                    font-size: clamp(1.125rem, 1.081rem + 0.1878vw, 1.25rem);
+                }
+
                 span {
                     font-size: 17px;
                     font-weight: 400;
                     line-height: 22px;
                     text-align: left;
                     color: var(--ligth-gray);
+
+                    @media (max-width: 1280px) {
+                        font-size: clamp(1rem, 0.978rem + 0.0939vw, 1.0625rem);
+                    }
                 }
             }
 
@@ -55,6 +92,10 @@
                 display: flex;
                 align-items: center;
                 padding: 0 20px;
+
+                @media (max-width: 768px) {
+                    padding: 30px 20px;
+                }
 
                 .contact-sales__link {
                     position: relative;
@@ -80,6 +121,10 @@
                 align-items: center;
                 padding: 0 20px;
 
+                @media (max-width: 768px) {
+                    padding: 30px 20px;
+                }
+
                 .contact-other__link {
                     position: relative;
                 }
@@ -103,6 +148,10 @@
                 display: flex;
                 align-items: center;
                 padding: 0 20px;
+
+                @media (max-width: 768px) {
+                    padding: 30px 20px;
+                }
 
                 .contact-email__link {
                     position: relative;
@@ -128,6 +177,10 @@
                 align-items: center;
                 padding: 0 20px;
 
+                @media (max-width: 768px) {
+                    padding: 30px 20px;
+                }
+
                 .contact-address__link {
                     position: relative;
                 }
@@ -148,6 +201,16 @@
 
         .contacts-page-contact-content-map {
             width: calc((100% - 79px) / 2);
+
+
+            @media (max-width: 1280px) {
+                width: calc((100% - 30px) / 2);
+            }
+
+
+            @media (max-width: 1100px) {
+                width: 100%;
+            }
 
             .content-map {
                 height: 363px;

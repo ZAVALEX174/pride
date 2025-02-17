@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelector('.breadcrumbs').classList.remove('main-overlay');
         }
     })
-})
+
 
 
 // изменение header
@@ -315,11 +315,7 @@ class HeaderManager {
 
 // Инициализация
 const headerManager = new HeaderManager();
-
-
-
-
-
+})
 
 
 
