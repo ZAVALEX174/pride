@@ -33,126 +33,6 @@
         }
       }
     }
-
-    .absolute-item {
-      position: absolute;
-      z-index: 20;
-      top: 47%;
-      left: -100%;
-      right: -100%;
-      transform: translateY(-50%);
-      height: 207px;
-      background-color: var(--dark-gray);
-      padding: 50px 0;
-
-      .absolute-item__container {
-        max-width: 1380px;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin: 0 auto;
-        display: flex;
-        /*align-items: center;*/
-        justify-content: space-between;
-        column-gap: 16px;
-
-        .absolute-item__text {
-          max-width: 552px;
-          display: flex;
-          flex-direction: column;
-          row-gap: 20px;
-          padding-right: 30px;
-
-          .absolute-item__text-title {
-            font-family: 'GetVoIP Grotesque Regular', sans-serif;
-            font-weight: 700;
-            font-size: 24px;
-            line-height: 1.20833;
-            color: var(--main-bg);
-
-            @media (max-width: 1280px) {
-              font-size: clamp(1.125rem, 0.969rem + 0.6637vw, 1.5rem);
-            }
-          }
-
-          .absolute-item__text-subtitle {
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 1.22222;
-            color: var(--main-bg);
-
-            @media (max-width: 1280px) {
-              font-size: clamp(1rem, 0.948rem + 0.2212vw, 1.125rem);
-            }
-          }
-        }
-
-        .absolute-item__form {
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          width: 100%;
-
-          .footer__callback-form {
-            width: 100%;
-
-            .footer__callback-form-input-btn {
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
-              margin-bottom: 30px;
-
-              .absolute-item__input {
-                border: none;
-                outline: none;
-                max-width: 542px;
-                width: 100%;
-                height: 60px;
-                box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
-                background: var(--main-bg);
-                border: 1.50px solid var(--5);
-                border-radius: 100px;
-                font-weight: 400;
-                font-size: 20px;
-                line-height: 1.22222;
-                color: var(--dark-gray);
-
-                @media (max-width: 1280px) {
-                  font-size: clamp(1.125rem, 1.073rem + 0.2212vw, 1.25rem);
-                }
-              }
-
-              .absolute-item__input::placeholder {
-                font-weight: 400;
-                font-size: 20px;
-                line-height: 1.22222;
-                color: var(--ligth-gray);
-
-                @media (max-width: 1280px) {
-                  font-size: clamp(1.125rem, 1.073rem + 0.2212vw, 1.25rem);
-                }
-              }
-
-              .absolute-item__btn {
-                max-width: 215px;
-                height: 60px;
-                line-height: 60px;
-                font-weight: 400;
-                font-size: 20px;
-                color: var(--main-bg);
-
-                @media (max-width: 1280px) {
-                  font-size: clamp(1.125rem, 1.073rem + 0.2212vw, 1.25rem);
-                }
-              }
-
-              .absolute-item__btn:hover {
-                background: var(--ligth-gray);
-              }
-            }
-          }
-        }
-      }
-    }
   }
 }
 
@@ -160,7 +40,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, minmax(390px, 435px));
-  gap: 367px 30px;
+  gap: 80px 30px;
 
   @media (max-width: 1280px) {
     grid-template-columns: repeat(3, minmax(300px, 1fr));
@@ -169,6 +49,7 @@
   @media (max-width: 1024px) {
     grid-template-columns: repeat(2, minmax(300px, 435px));
     justify-content: center;
+    gap: 40px;
   }
 
   @media (max-width: 670px) {
@@ -232,7 +113,6 @@
         }
       }
     }
-
   }
 
   .first-item .product-page-first-item {
@@ -261,10 +141,7 @@
       }
     }
   }
-
-
 }
-
 
 .projects-page__title {
   font-family: 'GetVoIP Grotesque Regular', sans-serif;
@@ -364,3 +241,175 @@
   }
 }
 
+.absolute-item {
+  width: 100%;
+  /* height: 207px; */
+  background-color: rgba(239, 239, 239, 1);
+  padding: 50px 0;
+  margin-bottom: 80px;
+
+  @media (max-width: 424px) {
+    background-color: transparent;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .absolute-item__container {
+    max-width: 1440px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;
+    display: flex;
+    /*align-items: center;*/
+    justify-content: space-between;
+    column-gap: 16px;
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      column-gap: 0;
+      row-gap: 30px;
+    }
+
+    @media (max-width: 424px) {
+      background-color: rgba(239, 239, 239, 1);
+      border-radius: 20px;
+      padding: 50px 25px;
+    }
+
+    .absolute-item__text {
+      max-width: 552px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      padding-right: 30px;
+
+      @media (max-width: 424px) {
+        padding-right: 0;
+        width: 100%;
+      }
+
+      .absolute-item__text-title {
+        font-family: 'GetVoIP Grotesque Regular', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.20833;
+        color: var(--dark-gray);
+
+        @media (max-width: 1280px) {
+          font-size: clamp(1.125rem, 0.969rem + 0.6637vw, 1.5rem);
+        }
+
+        @media (max-width: 424px) {
+          padding-right: 0;
+          width: 100%;
+        }
+      }
+
+      .absolute-item__text-subtitle {
+        font-family: 'Golos Text Regular', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.22222;
+        color: var(--dark-gray);
+
+        @media (max-width: 1280px) {
+          font-size: clamp(1rem, 0.948rem + 0.2212vw, 1.125rem);
+        }
+      }
+    }
+
+    .absolute-item__form {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 100%;
+
+      .footer__callback-form {
+        width: 100%;
+
+        .footer__callback-form-input-btn {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 30px;
+          column-gap: 16px;
+
+          @media (max-width: 1024px) {
+            justify-content: flex-start;
+          }
+
+          @media (max-width: 424px) {
+            column-gap: 0;
+            row-gap: 15px;
+          }
+
+          .absolute-item__input {
+            border: none;
+            outline: none;
+            max-width: 542px;
+            width: 100%;
+            height: 60px;
+            box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
+            background: var(--main-bg);
+            border: 1.5px solid var(--5);
+            border-radius: 100px;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 1.22222;
+            color: var(--dark-gray);
+
+            @media (max-width: 1280px) {
+              font-size: clamp(1.125rem, 1.073rem + 0.2212vw, 1.25rem);
+            }
+
+            @media (max-width: 424px) {
+              line-height: 50px;
+              height: 50px;
+              border-radius: 30px;
+              max-width: 270px;
+              width: 100%;
+            }
+          }
+
+          .absolute-item__input::placeholder {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 1.22222;
+            color: var(--ligth-gray);
+
+            @media (max-width: 1280px) {
+              font-size: clamp(1.125rem, 1.073rem + 0.2212vw, 1.25rem);
+            }
+          }
+
+          .absolute-item__btn {
+            max-width: 215px;
+            height: 60px;
+            line-height: 60px;
+            font-weight: 400;
+            font-size: 20px;
+            color: var(--main-bg);
+
+            @media (max-width: 1280px) {
+              font-size: clamp(1.125rem, 1.073rem + 0.2212vw, 1.25rem);
+            }
+
+            @media (max-width: 424px) {
+              max-width: 270px;
+              width: 100%;
+              line-height: 50px;
+              height: 50px;
+              border-radius: 30px;
+            }
+          }
+
+          .absolute-item__btn:hover {
+            background: var(--ligth-gray);
+          }
+        }
+      }
+    }
+  }
+}
