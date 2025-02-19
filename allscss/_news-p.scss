@@ -1,6 +1,6 @@
 .news-page__hero {
   width: 100%;
-  background-color: var(--5);
+  background-color: var(--color-orange);
   /* height: 430px; */
   padding: 33px 0 40px;
   display: flex;
@@ -8,15 +8,30 @@
   justify-content: center;
 
   .news__body-top {
-    max-width: 1180px;
+    max-width: 1340px;
+    width: 100%;
+    border: transparent;
+
+    .news__body-cart_horizontal {
+      border: none;
+    }
+
+    .news__body-top-title {
+      font-family: 'GetVoIP Grotesque Regular', sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1;
+      color: var(--main-bg);
+      margin-bottom: 25px;
+    }
 
     .news__body-cart_horizontal-img {
       /* max-width: 683px; */
-      width: 58%;
+      width: 51%;
     }
 
     .news__body-cart_vertical-textbox {
-      width: 42%;
+      width: 49%;
     }
   }
 }
@@ -172,8 +187,7 @@
           top: 50%;
           right: 0;
           transform: translateY(-50%);
-          background: url('../images/news-sec/reset.svg') center center/cover
-          no-repeat;
+          background: url('../images/news-sec/reset.svg') center center/cover no-repeat;
         }
       }
     }
@@ -223,6 +237,7 @@
             object-fit: cover;
             display: block;
           }
+
           /*}*/
 
           .news__body-cart_vertical-title {
@@ -232,6 +247,7 @@
             text-transform: uppercase;
             margin-bottom: 15px;
           }
+
           .news__body-cart_vertical-subtitle {
             font-weight: 400;
             font-size: 14px;
@@ -240,8 +256,10 @@
             color: var(--ligth-gray);
             margin-bottom: 30px;
           }
+
           .data-wrapper {
             width: 100%;
+
             .news__body-cart_vertical-data {
               font-weight: 400;
               font-size: 14px;

@@ -10629,7 +10629,7 @@ video {
 
 .news-page__hero {
   width: 100%;
-  background-color: var(--5);
+  background-color: var(--color-orange);
   /* height: 430px; */
   padding: 33px 0 40px;
   display: flex;
@@ -10637,14 +10637,27 @@ video {
   justify-content: center;
 }
 .news-page__hero .news__body-top {
-  max-width: 1180px;
+  max-width: 1340px;
+  width: 100%;
+  border: transparent;
+}
+.news-page__hero .news__body-top .news__body-cart_horizontal {
+  border: none;
+}
+.news-page__hero .news__body-top .news__body-top-title {
+  font-family: "GetVoIP Grotesque Regular", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: var(--main-bg);
+  margin-bottom: 25px;
 }
 .news-page__hero .news__body-top .news__body-cart_horizontal-img {
   /* max-width: 683px; */
-  width: 58%;
+  width: 51%;
 }
 .news-page__hero .news__body-top .news__body-cart_vertical-textbox {
-  width: 42%;
+  width: 49%;
 }
 
 .news-page__search {

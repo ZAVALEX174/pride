@@ -11086,6 +11086,11 @@ video {
   border-radius: 30px;
   overflow: hidden;
 }
+@media (max-width: 425px) {
+  .project-card-detail .project-card-detail__wrapper .project-card-detail__img-box {
+    height: 220px;
+  }
+}
 .project-card-detail .project-card-detail__wrapper .project-card-detail__text-box {
   max-width: 549px;
   width: 100%;
@@ -11224,6 +11229,28 @@ video {
 }
 .form-representation.form-representation-product-cart.projects-detail-page__form .form-representation__subtitle {
   margin-bottom: 35px;
+}
+
+.product-cart__header-link-down {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-cart__header-link-down .product-cart__header-link {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .product-cart__header-link-down .product-cart__header-link {
+    max-width: 316px;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    display: inline-flex;
+    background-color: var(--color-orange);
+    color: var(--main-bg);
+    border: none;
+    outline: none;
+  }
 }
 
 /*# sourceMappingURL=styles1.css.map */
