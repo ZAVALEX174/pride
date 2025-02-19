@@ -128,6 +128,15 @@
       padding-bottom: 50px;
       /* margin-bottom: 30px; */
 
+      @media (max-width: 1024px) {
+        padding-bottom: 100px;
+      }
+
+      @media (max-width: 425px) {
+        height: 300px;
+        padding-bottom: 0;
+      }
+
       .swiper-slide {
         img {
           border-radius: 30px;
@@ -135,6 +144,10 @@
           height: 500px;
           overflow: hidden;
           margin-bottom: 15px;
+
+          @media (max-width: 425px) {
+            height: 200px;
+          }
         }
 
         .swiper-text p {
@@ -158,6 +171,12 @@
       height: 50px;
       border-radius: 100%;
       z-index: 100;
+
+      @media (max-width: 425px) {
+        top: 97%;
+        height: 40px;
+        width: 40px;
+      }
     }
 
     .swiper-button-prev::after {
@@ -182,6 +201,12 @@
       height: 50px;
       border-radius: 100%;
       z-index: 100;
+
+      @media (max-width: 425px) {
+        top: 97%;
+        height: 40px;
+        width: 40px;
+      }
     }
 
     .swiper-button-next::after {
@@ -221,6 +246,11 @@
   .about-in-cards__content {
     display: flex;
     column-gap: 58px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      row-gap: 40px;
+    }
 
     .about-in-cards__content-left,
     .about-in-cards__content-right {
@@ -272,6 +302,11 @@
     align-items: center;
     justify-content: space-between;
 
+    @media (max-width: 768px) {
+      flex-direction: column;
+      row-gap: 80px;
+    }
+
     .stages__item {
       max-width: 360px;
       width: 100%;
@@ -280,6 +315,11 @@
       row-gap: 20px;
       justify-content: flex-start;
       padding-right: 20px;
+
+      @media (max-width: 768px) {
+        padding-right: 0;
+        max-width: 100%;
+      }
 
       .stages__title {
         padding: 0;
@@ -319,6 +359,10 @@
     height: 500px;
     border-radius: 15px;
     overflow: hidden;
+
+    @media (max-width: 425px) {
+      height: 220px;
+    }
   }
 }
 
