@@ -7,10 +7,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (mediaQuery.matches) {
         // Если разрешение меньше 637px
-        itemsPerPage = 3;
+        itemsPerPage = 4;
     } else {
         // Если разрешение больше или равно 637px, возвращаем элемент на место
-        itemsPerPage = 9;
+        itemsPerPage = 6;
     }
     // создаём переменную, которая отслеживает номер текущей страницы. Она начинается с 0,
     // что означает первую страницу
@@ -292,5 +292,4 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         })
     });
-
 })

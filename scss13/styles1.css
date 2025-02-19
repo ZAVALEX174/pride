@@ -6955,6 +6955,7 @@ label[for=user-email] {
 }
 .choice-slider .choice-slider__container {
   display: flex;
+  column-gap: 40px;
 }
 @media (max-width: 768px) {
   .choice-slider .choice-slider__container {
@@ -6996,7 +6997,7 @@ label[for=user-email] {
 }
 .choice-slider .mySwiper {
   width: calc((100% - 50px) / 2);
-  margin-right: 50px;
+  margin-right: 40px;
 }
 @media (max-width: 1220px) {
   .choice-slider .mySwiper {
@@ -7014,7 +7015,7 @@ label[for=user-email] {
 }
 .choice-slider .mySwiper2 {
   width: calc((100% - 50px) / 2);
-  margin-left: 50px;
+  margin-left: 40px;
 }
 @media (max-width: 1220px) {
   .choice-slider .mySwiper2 {
