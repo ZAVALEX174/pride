@@ -12309,12 +12309,33 @@ video {
 .service-page__banner .stock-banner__container {
   margin-bottom: 0;
 }
+@media (max-width: 425px) {
+  .service-page__banner .stock-banner__container {
+    height: 205px;
+  }
+}
+@media (max-width: 425px) {
+  .service-page__banner .stock-banner__container .stock-banner__img {
+    height: 205px;
+  }
+}
 
 .service-page__advantages-page-hero {
   padding: 90px 0 66px;
 }
+@media (max-width: 425px) {
+  .service-page__advantages-page-hero {
+    padding: 66px 0 90px;
+  }
+}
 .service-page__advantages-page-hero .advantages-page-hero__header {
   margin-bottom: 30px;
+  column-gap: 20px;
+}
+@media (max-width: 425px) {
+  .service-page__advantages-page-hero .advantages-page-hero__header {
+    margin-bottom: 0;
+  }
 }
 
 .service-page__questions-answers {

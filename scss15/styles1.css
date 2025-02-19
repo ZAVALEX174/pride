@@ -6955,6 +6955,7 @@ label[for=user-email] {
 }
 .choice-slider .choice-slider__container {
   display: flex;
+  column-gap: 40px;
 }
 @media (max-width: 768px) {
   .choice-slider .choice-slider__container {
@@ -6996,7 +6997,7 @@ label[for=user-email] {
 }
 .choice-slider .mySwiper {
   width: calc((100% - 50px) / 2);
-  margin-right: 50px;
+  margin-right: 40px;
 }
 @media (max-width: 1220px) {
   .choice-slider .mySwiper {
@@ -7014,7 +7015,7 @@ label[for=user-email] {
 }
 .choice-slider .mySwiper2 {
   width: calc((100% - 50px) / 2);
-  margin-left: 50px;
+  margin-left: 40px;
 }
 @media (max-width: 1220px) {
   .choice-slider .mySwiper2 {
@@ -10698,6 +10699,12 @@ video {
   width: 100%;
   display: flex;
 }
+@media (max-width: 899px) {
+  .conditions__container {
+    flex-direction: column;
+    row-gap: 60px;
+  }
+}
 
 .conditions-general {
   width: calc(100% - 542px);
@@ -10707,6 +10714,17 @@ video {
   flex-direction: column;
   padding-right: 70px;
   position: relative;
+}
+@media (max-width: 1280px) {
+  .conditions-general {
+    padding-right: 20px;
+  }
+}
+@media (max-width: 899px) {
+  .conditions-general {
+    padding-right: 0;
+    width: 100%;
+  }
 }
 
 .conditions-general::before {
@@ -10752,6 +10770,11 @@ video {
 .conditions-peculiarities {
   width: 542px;
 }
+@media (max-width: 899px) {
+  .conditions-peculiarities {
+    width: 100%;
+  }
+}
 
 .conditions-peculiarities__list {
   display: grid;
@@ -10759,6 +10782,15 @@ video {
   grid-auto-rows: 170px;
   column-gap: 22px;
   row-gap: 24px;
+}
+@media (max-width: 425px) {
+  .conditions-peculiarities__list {
+    display: grid;
+    grid-template-columns: 330px;
+    grid-auto-rows: 215px;
+    column-gap: 0;
+    row-gap: 30px;
+  }
 }
 
 .conditions-peculiarities__item {
@@ -10821,20 +10853,44 @@ video {
   justify-content: space-between;
   column-gap: 26px;
 }
+@media (max-width: 1024px) {
+  .cooperation-section__container {
+    flex-direction: column;
+    column-gap: 0;
+    row-gap: 26px;
+    align-items: center;
+  }
+}
 
 .cooperation-section__text {
   order: 2;
   width: calc(100% - 460px);
   padding-right: 50px;
 }
+@media (max-width: 1110px) {
+  .cooperation-section__text {
+    padding-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .cooperation-section__text {
+    max-width: 600px;
+    width: 100%;
+  }
+}
 
 .cooperation-section__text-title {
   margin-bottom: 25px;
   font-family: "GetVoIP Grotesque Regular", sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 32px;
   line-height: 1;
   color: var(--dark-gray);
+}
+@media (max-width: 1280px) {
+  .cooperation-section__text-title {
+    font-size: clamp(1.5rem, 1.3239rem + 0.7512vw, 2rem);
+  }
 }
 
 .cooperation-section__text-subtitle {
@@ -10844,6 +10900,11 @@ video {
 .cooperation-section__text-subtitle {
   font-size: 20px;
   line-height: 1.1;
+}
+@media (max-width: 1280px) {
+  .cooperation-section__text-subtitle {
+    font-size: clamp(1.125rem, 1.081rem + 0.1878vw, 1.25rem);
+  }
 }
 
 .list {
@@ -10883,10 +10944,31 @@ video {
   width: 100%;
   height: 500px;
 }
+@media (max-width: 1110px) {
+  .cooperation-section__image-box {
+    max-width: 600px;
+  }
+}
+@media (max-width: 768px) {
+  .cooperation-section__image-box {
+    height: 350px;
+  }
+}
+@media (max-width: 425px) {
+  .cooperation-section__image-box {
+    height: 235px;
+  }
+}
 
 .about-program {
   width: 100%;
   /*margin-bottom: 90px;*/
+}
+@media (max-width: 1200px) {
+  .about-program {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .about-program__container {
@@ -10899,10 +10981,30 @@ video {
   border-radius: 23px;
   overflow: hidden;
 }
+@media (max-width: 1024px) {
+  .about-program__container {
+    flex-direction: column-reverse;
+  }
+}
 
 .about-program__image-box {
   width: 50%;
   height: 600px;
+}
+@media (max-width: 1024px) {
+  .about-program__image-box {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .about-program__image-box {
+    height: 425px;
+  }
+}
+@media (max-width: 425px) {
+  .about-program__image-box {
+    height: 235px;
+  }
 }
 
 .about-program__content {
@@ -10914,6 +11016,16 @@ video {
   justify-content: center;
   padding: 41px 90px;
   position: relative;
+}
+@media (max-width: 1024px) {
+  .about-program__content {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .about-program__content {
+    padding: 41px 22px;
+  }
 }
 
 .about-program__content::before {
@@ -10928,6 +11040,16 @@ video {
   pointer-events: none;
   background: url("../images/cooperation/lion_bg_orange.svg") center center no-repeat;
 }
+@media (max-width: 1280px) {
+  .about-program__content::before {
+    width: 305px;
+    height: 299px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url("../images/cooperation/lion_bg_orange.svg") center center/cover no-repeat;
+  }
+}
 
 .about-program__title {
   font-family: "GetVoIP Grotesque Regular", sans-serif;
@@ -10937,6 +11059,11 @@ video {
   font-size: 32px;
   line-height: 1.25;
 }
+@media (max-width: 1280px) {
+  .about-program__title {
+    font-size: clamp(1.5rem, 1.3239rem + 0.7512vw, 2rem);
+  }
+}
 
 .about-program__subtitle {
   color: var(--title-color-ligth);
@@ -10944,6 +11071,11 @@ video {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.1;
+}
+@media (max-width: 1280px) {
+  .about-program__subtitle {
+    font-size: clamp(1.125rem, 1.081rem + 0.1878vw, 1.25rem);
+  }
 }
 
 .about-program__link {
@@ -10978,6 +11110,13 @@ video {
   justify-content: space-between;
   margin-bottom: 40px;
 }
+@media (max-width: 768px) {
+  .questions-answers__header {
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: flex-start;
+  }
+}
 
 .questions-answers__title {
   max-width: 720px;
@@ -10988,6 +11127,16 @@ video {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.25;
+}
+@media (max-width: 1024px) {
+  .questions-answers__title {
+    max-width: 480px;
+  }
+}
+@media (max-width: 768px) {
+  .questions-answers__title {
+    max-width: 100%;
+  }
 }
 
 .questions-answers__btn {
@@ -11004,6 +11153,12 @@ video {
   white-space: wrap;
   text-align: left;
   transition: 0.3s ease-in;
+}
+@media (max-width: 768px) {
+  .questions-answers__btn {
+    max-width: 100%;
+    color: var(--color-orange);
+  }
 }
 
 .questions-answers__btn:hover {
@@ -11022,6 +11177,11 @@ video {
   transition: 0.3s ease-in;
   background: url("../images/catalog/arr_right_black.svg") no-repeat center/cover;
 }
+@media (max-width: 768px) {
+  .questions-answers__btn::after {
+    background: url("../images/catalog/arr_right_orange.svg") no-repeat center/cover;
+  }
+}
 
 .questions-answers__btn:hover::after {
   background: url("../images/catalog/arr_right_orange.svg") no-repeat center/cover;
@@ -11032,6 +11192,13 @@ video {
   display: flex;
   column-gap: 24px;
 }
+@media (max-width: 768px) {
+  .questions-answers-tabs {
+    flex-direction: column;
+    column-gap: 0;
+    row-gap: 30px;
+  }
+}
 
 .questions-answers-tabs__list {
   display: inline-flex;
@@ -11039,6 +11206,11 @@ video {
   flex-wrap: wrap;
   row-gap: 30px;
   width: calc((100% - 24px) / 2);
+}
+@media (max-width: 768px) {
+  .questions-answers-tabs__list {
+    width: 100%;
+  }
 }
 
 .questions-answers-tabs__item {
@@ -11072,6 +11244,11 @@ video {
   font-size: 20px;
   line-height: 1.1;
   color: var(--dark-gray);
+}
+@media (max-width: 899px) {
+  .item__title {
+    padding-right: 60px;
+  }
 }
 
 .item__desc {
@@ -11227,6 +11404,14 @@ video {
   column-gap: 24px;
   padding: 50px 0 129px;
 }
+@media (max-width: 1024px) {
+  .stages-item {
+    flex-direction: column;
+    align-items: center;
+    column-gap: 0;
+    row-gap: 24px;
+  }
+}
 
 .stages-item:last-child {
   padding: 50px 0 92px;
@@ -11236,15 +11421,34 @@ video {
   width: 100%;
   padding: 90px 0 50px;
 }
+@media (max-width: 1024px) {
+  .advantages-page-hero {
+    padding: 70px 0 50px;
+  }
+}
 .advantages-page-hero .advantages-page-hero__header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 100px;
+  column-gap: 20px;
+}
+@media (max-width: 899px) {
+  .advantages-page-hero .advantages-page-hero__header {
+    flex-direction: column-reverse;
+    row-gap: 55px;
+    margin-bottom: 80px;
+  }
 }
 .advantages-page-hero .advantages-page-hero__header .advantages-page-hero__header-logo {
   max-width: 367px;
   width: 100%;
   height: 110px;
+}
+@media (max-width: 500px) {
+  .advantages-page-hero .advantages-page-hero__header .advantages-page-hero__header-logo {
+    width: 280px;
+    height: 84px;
+  }
 }
 .advantages-page-hero .advantages-page-hero__header .advantages-page-hero__header-desc {
   max-width: 894px;
@@ -11265,12 +11469,22 @@ video {
   color: var(--dark-gray);
   margin-bottom: 23px;
 }
+@media (max-width: 1280px) {
+  .advantages-page-hero .advantages-page-hero__header .advantages-page-hero__header-desc .advantages-page-hero__header-desc-title {
+    font-size: clamp(1.5rem, 1.3239rem + 0.7512vw, 2rem);
+  }
+}
 .advantages-page-hero .advantages-page-hero__header .advantages-page-hero__header-desc .advantages-page-hero__header-desc-text {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.1;
   color: var(--dark-gray);
   opacity: 0.8;
+}
+@media (max-width: 1280px) {
+  .advantages-page-hero .advantages-page-hero__header .advantages-page-hero__header-desc .advantages-page-hero__header-desc-text {
+    font-size: clamp(1.125rem, 1.037rem + 0.3756vw, 1.375rem);
+  }
 }
 .advantages-page-hero .advantages-page-hero__body {
   width: 100%;
@@ -11282,6 +11496,13 @@ video {
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 1280px) {
+  .advantages-page-hero .advantages-page-hero__body .advantages-page-hero__body-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+}
 .advantages-page-hero .advantages-page-hero__body .advantages-page-hero__body-list .advantages-page-hero__body-item {
   display: flex;
   flex-direction: column;
@@ -11292,6 +11513,11 @@ video {
   min-height: 300px;
   width: calc((100% - 90px) / 4);
   transition: all 0.3s;
+}
+@media (max-width: 1280px) {
+  .advantages-page-hero .advantages-page-hero__body .advantages-page-hero__body-list .advantages-page-hero__body-item {
+    width: 100%;
+  }
 }
 .advantages-page-hero .advantages-page-hero__body .advantages-page-hero__body-list .advantages-page-hero__body-item .advantages-page-hero__body-item-title {
   font-family: "Golos Text SemiBold", sans-serif;
@@ -11347,6 +11573,16 @@ video {
 .advantages-page-banner .stock-banner__container {
   margin-bottom: 0;
 }
+@media (max-width: 1024px) {
+  .advantages-page-banner .stock-banner__container {
+    height: 360px;
+  }
+}
+@media (max-width: 425px) {
+  .advantages-page-banner .stock-banner__container {
+    height: 205px;
+  }
+}
 
 .advantages-page__cooperation-section {
   padding: 36px 0 50px;
@@ -11357,6 +11593,12 @@ video {
 
 .advantages-page__about-program {
   padding: 40px 0 40px;
+}
+@media (max-width: 1350px) {
+  .advantages-page__about-program {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .form-representation.form-representation-product-cart.advantages-page__form .form-representation__title {
@@ -11925,6 +12167,12 @@ video {
   line-height: 1.22727;
   color: var(--dark-gray);
 }
+@media (max-width: 1280px) {
+  .item__title {
+    font-size: clamp(1.25rem, 1.206rem + 0.1878vw, 1.375rem);
+    padding-right: 50px;
+  }
+}
 
 .item__desc {
   font-weight: 300;
@@ -12061,12 +12309,33 @@ video {
 .service-page__banner .stock-banner__container {
   margin-bottom: 0;
 }
+@media (max-width: 425px) {
+  .service-page__banner .stock-banner__container {
+    height: 205px;
+  }
+}
+@media (max-width: 425px) {
+  .service-page__banner .stock-banner__container .stock-banner__img {
+    height: 205px;
+  }
+}
 
 .service-page__advantages-page-hero {
   padding: 90px 0 66px;
 }
+@media (max-width: 425px) {
+  .service-page__advantages-page-hero {
+    padding: 66px 0 90px;
+  }
+}
 .service-page__advantages-page-hero .advantages-page-hero__header {
   margin-bottom: 30px;
+  column-gap: 20px;
+}
+@media (max-width: 425px) {
+  .service-page__advantages-page-hero .advantages-page-hero__header {
+    margin-bottom: 0;
+  }
 }
 
 .service-page__questions-answers {
