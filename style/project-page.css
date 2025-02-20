@@ -2,6 +2,10 @@
   width: 100%;
   padding: 4px 0 80px;
 
+  @media (max-width: 768px) {
+    padding: 16px 0 80px;
+  }
+
   .projects-page__container {
     /*display: flex;*/
     /*flex-direction: column;*/
@@ -150,6 +154,10 @@
   line-height: 1.25;
   color: var(--dark-gray);
   margin-bottom: 0;
+
+  @media (max-width: 1280px) {
+    font-size: clamp(1.5rem, 1.2928rem + 0.884vw, 2rem);
+  }
 }
 
 .projects-page__header-filter-wrapper {
