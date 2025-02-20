@@ -121,6 +121,10 @@
         transition: 0.3s ease-in;
         height: 50px;
         line-height: 50px;
+
+        @media (max-width: 1280px) {
+          font-size: clamp(1.125rem, 1.0732rem + 0.221vw, 1.25rem);
+        }
       }
     }
   }
@@ -145,6 +149,10 @@
     line-height: 1.66667;
     color: var(--dark-gray);
     margin-bottom: 14px;
+
+    @media (max-width: 1280px) {
+      font-size: clamp(1.125rem, 0.9696rem + 0.663vw, 1.5rem);
+    }
   }
 
   .projects-detail-page-descriptions__text-box {
