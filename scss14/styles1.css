@@ -10631,6 +10631,11 @@ video {
   width: 100%;
   padding: 4px 0 80px;
 }
+@media (max-width: 768px) {
+  .projects-page {
+    padding: 16px 0 33px;
+  }
+}
 .projects-page .projects-page__container {
   /*display: flex;*/
   /*flex-direction: column;*/
@@ -10702,8 +10707,8 @@ video {
 }
 @media (max-width: 425px) {
   .project-page__body-list li .swiper-slide.our-projects-slide.gray {
-    padding: 30px 20px;
-    min-height: 385px;
+    padding: 61px 20px 30px;
+    min-height: 370px;
   }
 }
 .project-page__body-list li .swiper-slide.our-projects-slide.gray img {
@@ -10730,6 +10735,11 @@ video {
     font-size: clamp(1.5rem, 1.292rem + 0.885vw, 2rem);
   }
 }
+@media (max-width: 425px) {
+  .project-page__body-list li .swiper-slide.our-projects-slide.gray .cart__title.cart__title_otziv {
+    margin-bottom: 5px;
+  }
+}
 .project-page__body-list li .swiper-slide.our-projects-slide.gray .cart__subtitle.cart__subtitle_otziv {
   font-weight: 400;
   font-size: 20px;
@@ -10740,6 +10750,11 @@ video {
 @media (max-width: 1280px) {
   .project-page__body-list li .swiper-slide.our-projects-slide.gray .cart__subtitle.cart__subtitle_otziv {
     font-size: clamp(1rem, 0.896rem + 0.4425vw, 1.25rem);
+  }
+}
+@media (max-width: 425px) {
+  .project-page__body-list .first-item {
+    min-height: 385px;
   }
 }
 .project-page__body-list .first-item .product-page-first-item {
@@ -10766,6 +10781,11 @@ video {
     font-size: clamp(1.125rem, 1.073rem + 0.2212vw, 1.25rem);
   }
 }
+@media (max-width: 425px) {
+  .project-page__body-list .first-item .product-page-first-item .cart__btn-box.our-projects-cart__btn-box .btn.cart__btn.our-projects-cart__btn-open-modal-form {
+    max-width: 252px;
+  }
+}
 
 .projects-page__title {
   font-family: "GetVoIP Grotesque Regular", sans-serif;
@@ -10774,6 +10794,16 @@ video {
   line-height: 1.25;
   color: var(--dark-gray);
   margin-bottom: 0;
+}
+@media (max-width: 1280px) {
+  .projects-page__title {
+    font-size: clamp(1.5rem, 1.2928rem + 0.884vw, 2rem);
+  }
+}
+@media (max-width: 768px) {
+  .projects-page__title {
+    margin-bottom: 37px;
+  }
 }
 
 .projects-page__header-filter-wrapper {
@@ -10788,9 +10818,25 @@ video {
     text-align: start;
   }
 }
+@media (max-width: 1280px) {
+  .projects-page__header-filter-wrapper .catalog-categories__header-filter-wrapper-text {
+    font-size: clamp(1rem, 0.9482rem + 0.221vw, 1.125rem);
+  }
+}
 @media (max-width: 478px) {
   .projects-page__header-filter-wrapper .catalog-categories__header-filter-wrapper-text {
     margin-right: 7px;
+  }
+}
+@media (max-width: 1280px) {
+  .projects-page__header-filter-wrapper .btn.catalog-categories__header-filter-btn {
+    font-size: clamp(1rem, 0.9482rem + 0.221vw, 1.125rem);
+  }
+}
+@media (max-width: 768px) {
+  .projects-page__header-filter-wrapper .btn.catalog-categories__header-filter-btn {
+    height: auto;
+    line-height: 1;
   }
 }
 @media (max-width: 478px) {
@@ -10822,6 +10868,11 @@ video {
   line-height: 1.38889;
   color: var(--ligth-gray);
   cursor: pointer;
+}
+@media (max-width: 1280px) {
+  .filter-btn-reset {
+    font-size: clamp(1rem, 0.9482rem + 0.221vw, 1.125rem);
+  }
 }
 .filter-btn-reset svg {
   margin-left: 10px;
@@ -10873,10 +10924,11 @@ video {
 @media (max-width: 424px) {
   .absolute-item {
     background-color: transparent;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 28px;
+    padding-right: 28px;
     padding-top: 0;
     padding-bottom: 0;
+    margin-bottom: 28px;
   }
 }
 .absolute-item .absolute-item__container {
@@ -10900,7 +10952,8 @@ video {
   .absolute-item .absolute-item__container {
     background-color: rgb(239, 239, 239);
     border-radius: 20px;
-    padding: 50px 25px;
+    padding: 46px 25px 50px;
+    row-gap: 21px;
   }
 }
 .absolute-item .absolute-item__container .absolute-item__text {
@@ -10914,6 +10967,7 @@ video {
   .absolute-item .absolute-item__container .absolute-item__text {
     padding-right: 0;
     width: 100%;
+    row-gap: 5px;
   }
 }
 .absolute-item .absolute-item__container .absolute-item__text .absolute-item__text-title {
@@ -10971,6 +11025,7 @@ video {
   .absolute-item .absolute-item__container .absolute-item__form .footer__callback-form .footer__callback-form-input-btn {
     column-gap: 0;
     row-gap: 15px;
+    margin-bottom: 18px;
   }
 }
 .absolute-item .absolute-item__container .absolute-item__form .footer__callback-form .footer__callback-form-input-btn .absolute-item__input {
