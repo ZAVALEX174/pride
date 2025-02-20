@@ -8,12 +8,19 @@
   justify-content: center;
 
   .news__body-top {
-    max-width: 1340px;
+    max-width: 1360px;
     width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
     border: transparent;
 
     .news__body-cart_horizontal {
       border: none;
+
+      @media (max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+      }
     }
 
     .news__body-top-title {
@@ -28,10 +35,18 @@
     .news__body-cart_horizontal-img {
       /* max-width: 683px; */
       width: 51%;
+
+      @media (max-width: 600px) {
+        width: 100%;
+      }
     }
 
     .news__body-cart_vertical-textbox {
       width: 49%;
+
+      @media (max-width: 600px) {
+        width: 100%;
+      }
     }
   }
 }
@@ -47,10 +62,18 @@
     row-gap: 30px;
     margin-bottom: 30px;
 
+    @media (max-width: 1110px) {
+      flex-direction: column;
+    }
+
     .news-page__search-buttons-wrapper {
       display: flex;
       align-items: center;
       justify-content: space-between;
+
+      @media (max-width: 1110px) {
+        display: contents;
+      }
 
       .left-btns {
         width: 50%;
@@ -58,12 +81,32 @@
         align-items: center;
         column-gap: 15px;
 
+        @media (max-width: 1280px) {
+          width: 60%;
+        }
+
+        @media (max-width: 1110px) {
+          order: 1;
+          width: 100%;
+        }
+
+        @media (max-width: 768px) {
+          flex-wrap: wrap;
+          row-gap: 16px;
+        }
+
         .left-btns-title {
           font-weight: 400;
           font-size: 18px;
           line-height: 1.22222;
-          color: var(--color-dark);
+          color: var(--dark-gray);
           margin-right: 30px;
+
+          @media (max-width: 768px) {
+            margin-right: 0;
+            display: block;
+            width: 100%;
+          }
         }
 
         .left-btn {
@@ -91,6 +134,16 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
+
+        @media (max-width: 1280px) {
+          width: 40%;
+        }
+
+        @media (max-width: 1110px) {
+          order: 3;
+          width: 100%;
+          justify-content: flex-start;
+        }
 
         .right-btns-title {
           font-weight: 400;
@@ -127,6 +180,10 @@
     .news-page__search-header-input {
       width: 100%;
 
+      @media (max-width: 1110px) {
+        order: 2;
+      }
+
       form {
         display: grid;
         grid-template-columns: 1fr 200px;
@@ -135,6 +192,12 @@
         grid-template-areas:
           'input button'
           '. reset';
+
+        @media (max-width: 768px) {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
 
         input {
           display: flex;
@@ -150,6 +213,11 @@
           font-size: 18px;
           line-height: 1.22222;
           color: var(--dark-gray);
+
+          @media (max-width: 768px) {
+            width: 100%;
+            height: 60px;
+          }
         }
 
         input::placeholder {
@@ -163,6 +231,11 @@
           grid-area: button;
           justify-content: center;
           background-color: var(--dark-gray);
+
+          @media (max-width: 768px) {
+            max-width: 331px;
+            width: 100%;
+          }
         }
 
         .form-search-btn-reset {
@@ -176,6 +249,10 @@
           font-size: 18px;
           color: var(--ligth-gray);
           justify-content: flex-end;
+
+          @media (max-width: 768px) {
+            padding-left: 0;
+          }
         }
 
         .form-search-btn-reset::after {
@@ -197,6 +274,12 @@
     width: 100%;
     padding: 13px 0 30px;
 
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     .list-newq-cards {
       width: 100%;
       display: grid;
@@ -204,6 +287,17 @@
       /* grid-template-rows: 453px; */
       gap: 60px 24px;
       margin-bottom: 30px;
+
+      @media (max-width: 1024px) {
+        grid-template-columns: repeat(2, minmax(360px, 430px));
+      }
+
+      @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 600px;
+      }
 
       li {
         width: 100%;
