@@ -10768,23 +10768,23 @@ video {
   align-items: center;
   justify-content: space-between;
   height: 45px;
-  border: 1px solid rgb(43, 42, 41);
+  border: 1px solid var(--color-orange);
   transition: all 0.3s;
 }
 .filter-container .filter__show-content-box .filter__show-content .filter__show-content-list .filter__show-content-item__btn-svg {
-  background: url("../images/filter/close.svg") no-repeat center center/cover;
+  background: url("../images/filter/close_item_hover.svg") no-repeat center center/cover;
   width: 32px;
   height: 32px;
   cursor: pointer;
 }
 .filter-container .filter__show-content-box .filter__show-content .filter__show-content-list .filter__show-content-item:hover {
-  border-color: var(--color-orange);
+  border-color: var(--dark-gray);
   /*svg path {*/
   /*    fill: var(--color-orange);*/
   /*}*/
 }
 .filter-container .filter__show-content-box .filter__show-content .filter__show-content-list .filter__show-content-item:hover .filter__show-content-item__btn-svg {
-  background: url("../images/filter/close_orange.svg") no-repeat center center/cover;
+  background: url("../images/filter/close_item.svg") no-repeat center center/cover;
 }
 .filter-container .filter__show-content-box .filter__show-content .filter__show-content-item--counter {
   display: flex;
@@ -10840,6 +10840,9 @@ video {
   cursor: pointer;
   justify-content: center;
 }
+.filter-container .filter-form.filter-form__content .form-container .filter__submit-box .filter__submit-box__btn:hover {
+  background-color: var(--dark-gray);
+}
 
 .filter-container-hidden {
   right: -100%;
@@ -10885,6 +10888,8 @@ video {
 .widget .widget__title_down {
   position: relative;
   transition: transform 0.3s;
+  background: transparent;
+  border-color: var(--color-orange);
 }
 .widget .widget__title_down::after {
   content: "";
