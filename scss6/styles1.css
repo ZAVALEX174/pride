@@ -9337,6 +9337,7 @@ video {
   height: 60px;
   line-height: 60px;
   font-size: clamp(1rem, 0.912rem + 0.3756vw, 1.25rem);
+  position: relative;
 }
 
 /*hfcrjvbnbnm*/
@@ -10831,7 +10832,6 @@ video {
 }
 
 .breadcrumbs__links span {
-  /* margin-left: 15px; */
   font-weight: 400;
   font-size: 16px;
   line-height: 1.375;
@@ -10858,7 +10858,6 @@ video {
   margin-bottom: 0;
   font-size: clamp(1.5rem, 1.3239rem + 0.7512vw, 2rem);
   line-height: 1.01562;
-  /* color: var(--color-orange); */
   color: var(--dark-gray);
   font-family: "GetVoIP Grotesque Regular", sans-serif;
   font-weight: 700;
@@ -10891,12 +10890,6 @@ video {
 }
 @media (max-width: 636px) {
   .catalog-menu-categories__body-list {
-    /*position: relative;*/
-    /*justify-content: center;*/
-    /*grid-template-columns: minmax(316px, 500px);*/
-    /*grid-template-rows: 370px;*/
-    /*gap: 25px 0;*/
-    /*margin-bottom: 40px;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10919,7 +10912,6 @@ video {
 
 .catalog-menu-categories__body-list > .catalog-menu-categories__body-item {
   position: relative;
-  background: linear-gradient(rgba(239, 239, 239, 0.97) 0%, rgba(239, 239, 239, 0.97) 100%), url("../images/hero/bg-slider.webp") no-repeat top center/cover;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -10932,24 +10924,38 @@ video {
   box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
   border: none;
   transition: 0.1s ease-in;
+  overflow: hidden;
 }
-
-.catalog-menu-categories__body-list > .catalog-menu-categories__body-item::after {
-  pointer-events: none;
+.catalog-menu-categories__body-list > .catalog-menu-categories__body-item .catalog-menu-categories-image-slider-bg {
   position: absolute;
   top: 0;
   left: 0;
-  content: "";
   width: 100%;
   height: 100%;
-  box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
-  background-image: linear-gradient(360deg, rgba(43, 42, 41, 0.9) 46.04%, rgba(235, 99, 32, 0.9) 100%), url(../images/hero/bg-slider.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  object-fit: cover;
+}
+
+.catalog-menu-categories__body-list > .catalog-menu-categories__body-item::before,
+.catalog-menu-categories__body-list > .catalog-menu-categories__body-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+.catalog-menu-categories__body-list > .catalog-menu-categories__body-item::before {
+  background: linear-gradient(rgba(239, 239, 239, 0.97) 0%, rgba(239, 239, 239, 0.97) 100%);
+  opacity: 1;
+  z-index: 5;
+}
+
+.catalog-menu-categories__body-list > .catalog-menu-categories__body-item::after {
+  background: linear-gradient(360deg, rgba(43, 42, 41, 0.6) 36.68%, rgba(235, 99, 32, 0.6) 100%);
   opacity: 0;
-  transition: 1s;
-  border-radius: 30px;
 }
 
 .catalog-menu-categories__body-item > .other__body-cart-list,
@@ -10990,7 +10996,17 @@ video {
 .catalog-menu-categories__body-list .catalog-menu-categories__body-item-hover {
   transition: all 0.3s ease-in;
   box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
-  background: linear-gradient(360deg, rgba(43, 42, 41, 0.9) 46.04%, rgba(235, 99, 32, 0.9) 100%), url(../images/hero/bg-slider.webp) no-repeat center;
+}
+
+.catalog-menu-categories__body-list > .catalog-menu-categories__body-item.catalog-menu-categories__body-item-hover::before {
+  background: linear-gradient(rgba(239, 239, 239, 0.97) 0%, rgba(239, 239, 239, 0.97) 100%);
+  opacity: 0;
+  z-index: 5;
+}
+
+.catalog-menu-categories__body-list > .catalog-menu-categories__body-item.catalog-menu-categories__body-item-hover::after {
+  background: linear-gradient(360deg, rgba(43, 42, 41, 0.6) 36.68%, rgba(235, 99, 32, 0.6) 100%);
+  opacity: 1;
 }
 
 .catalog-menu-categories__body-item-hover > .other__body-cart-title.swiper-filter-on__body-cart-title,
@@ -11009,37 +11025,41 @@ video {
     grid-column: span 2;
   }
 }
-@media (max-width: 636px) {
-  .catalog-menu-categories__body-item_banner {
-    /*position: absolute;*/
-    /*bottom: 0;*/
-  }
-}
 
 .catalog-menu-categories__body-item_banner .catalog-page-product-baner__container {
+  position: relative;
   width: 100%;
   padding: 0;
   height: 100%;
   padding: 45.5px 90px;
-  background: url("../images/catalog/catalog-menu-banner.webp") no-repeat center center/cover;
   border-radius: 40px;
+  overflow: hidden;
 }
 @media (max-width: 1110px) {
   .catalog-menu-categories__body-item_banner .catalog-page-product-baner__container {
     padding: 30px;
   }
 }
+.catalog-menu-categories__body-item_banner .catalog-page-product-baner__container .catalog-page-product-baner__container-images {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  object-fit: cover;
+}
 
 .catalog-menu-categories__body-item_banner .catalog-page-product-baner__text {
   text-align: left;
   margin-right: 15px;
+  position: relative;
 }
 
 .catalog-menu-categories__body-item_banner .catalog-page-product-baner__subtitle {
   max-width: 400px;
   width: 100%;
   font-weight: 400;
-  /*font-size: 22px;*/
   line-height: 1.22727;
   color: #fff;
 }
@@ -11117,8 +11137,9 @@ video {
   padding: 0;
   height: 100%;
   padding: 30px;
-  background: url(../images/catalog/catalog-menu-banner.webp) no-repeat center center/cover;
   border-radius: 40px;
+  position: relative;
+  overflow: hidden;
 }
 @media (max-width: 476px) {
   .banner__mobile-box .catalog-page-product-baner__container {
@@ -11126,6 +11147,24 @@ video {
     row-gap: 30px;
     padding: 60px 30px;
   }
+}
+.banner__mobile-box .catalog-page-product-baner__container .catalog-page-product-baner__container-images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  display: block;
+}
+.banner__mobile-box .catalog-page-product-baner__container .product-baner__text.catalog-page-product-baner__text {
+  position: relative;
+  z-index: 5;
+}
+.banner__mobile-box .catalog-page-product-baner__container .btn.product-baner__btn.catalog-page-product-baner__btn {
+  position: relative;
+  z-index: 5;
 }
 
 .filter-container {

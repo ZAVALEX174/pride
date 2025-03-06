@@ -33,15 +33,6 @@ document.addEventListener('DOMContentLoaded', function () {
 // Вызов функции при загрузке страницы
   adjustElementForMobile();
 
-// Отслеживание изменения размера экрана
-//   function debounce(func, wait) {
-//     let timeout;
-//     return function (...args) {
-//       clearTimeout(timeout);
-//       timeout = setTimeout(() => func.apply(this, args), wait);
-//     };
-//   }
-
   window.addEventListener("resize", adjustElementForMobile);
 
   const itemsContainer = document.getElementById("items-container"); // Контейнер с элементами
