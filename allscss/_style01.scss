@@ -4083,19 +4083,6 @@ main {
   transition: all 0.3s ease-in;
 }
 
-/*hfcrjvbnbnm*/
-.other__body-item:hover {
-  transition: all 0.3s ease-in;
-  border-color: var(--ligth-gray);
-  box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
-  background: linear-gradient(
-                  360deg,
-                  rgba(43, 42, 41, 0.9) 46.04%,
-                  rgba(235, 99, 32, 0.9) 100%
-  ),
-  url(../images/hero/bg-slider.webp) no-repeat center;
-}
-
 .other__body-cart-title {
   font-family: 'TT Norms Pro Bold', sans-serif;
   font-weight: 700;
