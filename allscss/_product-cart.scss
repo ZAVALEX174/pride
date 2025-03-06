@@ -781,6 +781,11 @@ video {
 
 .video-container {
   position: relative;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .video-container__desc {
