@@ -7680,9 +7680,19 @@ label[for=user-email] {
   max-width: 460px;
   width: 100%;
   text-align: center;
-  background: url("../images/catalog/banner_bg.png") no-repeat center center/cover;
+  /*background: url('../images/catalog/banner_bg.png') no-repeat center center/cover;*/
   border-radius: 40px;
   padding: 38px 40px;
+  overflow: hidden;
+  position: relative;
+}
+.banner-catalog .banner-catalog__container .banner-content-box .banner-com-pred-wrapper .banner-com-pred-wrapper__content .banner-com-pred-wrapper__content-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 .banner-catalog .banner-catalog__container .banner-content-box .banner-com-pred-wrapper .banner-com-pred-wrapper__content p {
   font-family: "GetVoIP Grotesque Regular", sans-serif;
@@ -7692,6 +7702,7 @@ label[for=user-email] {
   text-align: center;
   margin-bottom: 30px;
   color: var(--main-bg);
+  z-index: 5;
 }
 .banner-catalog .banner-catalog__container .banner-content-box .banner-com-pred-wrapper .banner-com-pred-wrapper__content .banner__btn {
   max-width: 250px;
@@ -7705,6 +7716,7 @@ label[for=user-email] {
   line-height: 50px;
   font-size: 20px;
   font-weight: 500;
+  z-index: 5;
 }
 
 .catalog-categories__container, .banner-catalog__container {
