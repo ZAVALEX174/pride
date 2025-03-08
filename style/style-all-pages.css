@@ -1818,6 +1818,7 @@ main {
 
 #productBtnLink {
   display: none;
+
   @media (max-width: 1024px) {
     display: inline-flex;
     align-items: center;
@@ -1935,7 +1936,8 @@ main {
   display: block;
   overflow: hidden;
   margin-bottom: 14px;
-  height: 235px; /* пока так */
+  height: 235px;
+  /* пока так */
 }
 
 .cart-switch {
@@ -7922,7 +7924,103 @@ label[for='user-email'] {
     width: 100%;
     border-right: 1.13px solid var(--5);
 
-    .header-search-box__categories-list {
+    .search-accardion {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      summary {
+        list-style: none;
+      }
+
+      .search-accardion-categories__menu {
+        .search-accardion-categories__menu-title {
+          font-family: 'Golos Text SemiBold', sans-serif;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 1.21429;
+          color: var(--color-orange);
+        }
+
+        .search-accardion-categories__details {
+          padding: 16px 34px 16px 0;
+          border-bottom: 1.13px solid var(--5);
+
+          .search-accardion-categories__details-title {
+            position: relative;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.33333;
+            color: var(--dark-gray);
+            transition: 0.3s ease-in;
+          }
+
+          .search-accardion-categories__details-title::after {
+            position: absolute;
+            content: '';
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            width: 14px;
+            height: 14px;
+            background: url('../images/menu/shevron_gray_right.svg') no-repeat
+              center center/cover;
+            transition: 0.3s ease-in;
+          }
+
+          .search-accardion-categories__details-list {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+
+            .search-accardion-categories__details-item {
+              .search-accardion-categories__details-link {
+                position: relative;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 1.33333;
+                color: var(--dark-gray);
+                transition: 0.3s ease-in;
+              }
+
+              .search-accardion-categories__details-link:hover {
+                color: var(--color-orange);
+              }
+            }
+          }
+        }
+
+        .search-accardion-categories__details:hover
+          .search-accardion-categories__details-title {
+          color: var(--color-orange);
+          cursor: pointer;
+        }
+
+        .search-accardion-categories__details[open],
+        .search-accardion-categories__details:hover {
+          border-color: var(--color-orange);
+        }
+
+        .search-accardion-categories__details:hover
+          .search-accardion-categories__details-title::after {
+          background: url('../images/menu/shevron_orange_right2.svg') no-repeat
+            center center/cover;
+        }
+
+        .search-accardion-categories__details[open]
+          .search-accardion-categories__details-title {
+          color: var(--color-orange);
+        }
+        .search-accardion-categories__details[open]
+          .search-accardion-categories__details-title::after {
+          background: url('../images/menu/arr_down_orange.svg') no-repeat center
+            center/cover;
+        }
+      }
+    }
+
+    /* .header-search-box__categories-list {
       display: flex;
       flex-direction: column;
       row-gap: 30px;
@@ -7988,7 +8086,7 @@ label[for='user-email'] {
           }
         }
       }
-    }
+    } */
   }
 
   .header-search-box__result-container {
@@ -9774,6 +9872,7 @@ video {
     font-size: clamp(1rem, 0.9482rem + 0.221vw, 1.125rem);
     line-height: 1.1;
   }
+
   @media (max-width: 1024px) {
     margin-bottom: 35px;
   }
@@ -12202,6 +12301,7 @@ video {
 
   .project-page__body {
     position: relative;
+
     @media (max-width: 1280px) {
       display: flex;
       flex-direction: column;
@@ -12380,6 +12480,7 @@ video {
     @media (max-width: 1280px) {
       font-size: clamp(1rem, 0.9482rem + 0.221vw, 1.125rem);
     }
+
     @media (max-width: 768px) {
       height: auto;
       line-height: 1;
@@ -12969,6 +13070,7 @@ video {
   0% {
     transform: translateX(0%);
   }
+
   100% {
     transform: translateX(-50%);
   }
