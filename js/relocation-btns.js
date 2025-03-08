@@ -7,10 +7,6 @@ if (heroSliders) {
 
     for (let item of heroSlidersLiveCollections) {
         let btnBox = item.querySelector('.hero-slider__buttons');
-        // let btnBoxLiveCollection = btnBox.children;
-        // btnBox.innerHTML += `<div class="contact-us header__contact-us" id="headerContactUsBtn">
-        //         <button class="btn contact-us__btn">Связаться с нами</button>
-        //       </div>`;
         btnBox.insertAdjacentHTML("beforeEnd", `<div class="contact-us header__contact-us" id="headerContactUsBtn">
              <button class="btn contact-us__btn">Связаться с нами</button>
            </div>`)
@@ -127,7 +123,6 @@ if (watchedBeforeProductCartLinkBox) {
     watchedBeforeProductCartLinkBox.insertAdjacentHTML("afterBegin", `
  <a href="catalog-menu.html" id="watchedBeforeLink" class="btn product-cart__header-link">Каталог</a>
 `);
-
 }
 
 // Секция other

@@ -73,30 +73,6 @@ class GraphTabs {
                     this.switchTabs(e.currentTarget, currentTab);
                 }
             });
-
-            // el.addEventListener('keydown', (e) => {
-            //     let index = Array.prototype.indexOf.call(this.tabsBtns, e.currentTarget);
-            //
-            //     let dir = null;
-            //
-            //     if (e.which === 37) {
-            //         dir = index - 1;
-            //     } else if (e.which === 39) {
-            //         dir = index + 1;
-            //     } else if (e.which === 40) {
-            //         dir = 'down';
-            //     } else {
-            //         dir = null;
-            //     }
-            //
-            //     if (dir !== null) {
-            //         if (dir === 'down') {
-            //             this.tabsPanels[i].focus();
-            //         } else if (this.tabsBtns[dir]) {
-            //             this.switchTabs(this.tabsBtns[dir], e.currentTarget);
-            //         }
-            //     }
-            // });
         });
     }
 

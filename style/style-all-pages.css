@@ -899,7 +899,7 @@ main {
 .header-menu-modal2 {
   display: none;
   position: absolute;
-  width: 100%;
+  max-width: 100%;
   height: 100%;
 }
 
@@ -7788,6 +7788,10 @@ label[for='user-email'] {
 /*search.css*/
 .header-menu-modal3 {
   display: none;
+
+  .header-menu-modal__container {
+    max-width: 100%;
+  }
 }
 
 .header-menu-modal3-active {
@@ -7847,6 +7851,7 @@ label[for='user-email'] {
   height: 100%;
   position: absolute;
   top: 132px;
+  z-index: 200;
 }
 
 .header-menu-modal3 .header-menu-modal__body-top {

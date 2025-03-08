@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const itemsPerPage = 4; // Количество элементов на странице
     const resultList = document.getElementById('result-list');
@@ -23,7 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         // Обновляем информацию о текущей странице
-        // document.getElementById('page-info').textContent = `Страница ${page} из ${totalPages}`;
         updatePaginationButtons(page);
     }
 

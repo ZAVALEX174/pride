@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
         itemsPerPage = 3;
     }
 
-
     let currentPage = 0;
     const items = Array.from(newsCardsList.getElementsByTagName('li'));
 
@@ -138,6 +137,4 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         })
     })
-
-
 });

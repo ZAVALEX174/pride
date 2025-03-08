@@ -43,12 +43,7 @@ var productsSwiperBefore = new Swiper(".watched-before__product-cart-swiper", {
     },
 });
 
-
-
-
 const productsSlide = document.querySelectorAll(".products-slide");
-
-
 if (productsSlide) {
     productsSlide.forEach(el => {
         let currentCart = el;
@@ -69,10 +64,8 @@ if (productsSlide) {
                     currentCart.querySelectorAll(".image-pagination__item").forEach((el) => { el.classList.remove('image-pagination__item_active'); });
                     currentCart.querySelector(`.image-pagination__item[data-index="0"]`).classList.add('image-pagination__item_active');
                 })
-
             })
         }
-
     });
 }
 

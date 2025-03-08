@@ -24,15 +24,6 @@ widgets.forEach(widget => {
             // раскрываем виджет и добавляем класс для псевдоэлемента
             title.classList.add('widget__title_down');
             widgetHeight.style.maxHeight = widgetHeight.scrollHeight + "px";
-
-            // показ дополнительных пунктов фильтра по кнопке и увеличение высоты этого блока
-            // optionShowMoreBtn.addEventListener('click', (e) => {
-            //     e.preventDefault();
-            //     optionBtnHidden.classList.add('option__btn-visible');
-            //     optionShowMoreBtn.style.display = 'none';
-            //     let optionShowMore = optionBtnHidden.scrollHeight;
-            //     widgetHeight.style.maxHeight = widgetHeight.scrollHeight + optionShowMore + "px";
-            // })
         }
     })
 });

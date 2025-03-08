@@ -25,32 +25,6 @@ if (filterForm) {
     const horizontalInputs = document.getElementById('form-container');
     const horLabels = horizontalInputs.querySelectorAll('.option__btn');
 
-
-    // if (showMoreFilterBtn && hideFilterBtn && filterOverAutoBtn) {
-    //     showMoreFilterBtn.addEventListener('click', (e) => {
-    //         e.preventDefault();
-    //         filterHiddenSections.forEach(filterHiddenSection => filterHiddenSection.classList.remove('none'));
-    //         showMoreFilterBtn.classList.add('none');
-    //         hideFilterBtn.classList.remove('none');
-    //         filterOverAutoBtn.classList.remove('none');
-    //         filterScrollElem.classList.remove('filter-over-auto-scroll');
-    //     });
-
-    //     hideFilterBtn.addEventListener('click', (e) => {
-    //         e.preventDefault();
-    //         filterHiddenSections.forEach(filterHiddenSection => filterHiddenSection.classList.add('none'));
-    //         showMoreFilterBtn.classList.remove('none');
-    //         hideFilterBtn.classList.add('none');
-    //         filterOverAutoBtn.classList.add('none');
-    //     });
-
-    //     filterOverAutoBtn.addEventListener('click', (e) => {
-    //         e.preventDefault();
-    //         filterScrollElem.classList.add('filter-over-auto-scroll');
-    //         filterOverAutoBtn.classList.add('none');
-    //     });
-    // }
-
     const createElement = (text) => {
         let newListItem = document.createElement('li');
         newListItem.textContent = text;
@@ -80,7 +54,6 @@ if (filterForm) {
                             filterHiddenSections.forEach(el => {
                                 el.classList.remove('none');
                             });
-
 
                             // удаление по нажатию на тайтлы
                             let items = filterShowContentList.querySelectorAll('.filter__show-content-item');
@@ -271,14 +244,11 @@ if (filterForm) {
         hideFilterSecondShowBtn.addEventListener('click', (e) => {
             e.preventDefault();
             secondFilterHidden.classList.add('filter-over-auto-scroll');
-            // hideFilterSecondShowBtn.classList.add('none');
         })
 
         hideFilterSHiddenBtn.addEventListener('click', (e) => {
             e.preventDefault();
             secondFilterHidden.classList.remove('filter-over-auto-scroll');
-            // hideFilterSHiddenBtn.classList.add('none');
-            // hideFilterSecondShowBtn.classList.remove('none');
         });
 
 
