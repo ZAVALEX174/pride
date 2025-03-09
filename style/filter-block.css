@@ -573,13 +573,32 @@ input[type='number'] {
   justify-content: center;
   background-color: var(--color-orange);
   transition: 0.3s linear;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   border: none;
   outline: none;
 }
 
-.filter-show-more__btn:hover {
+.filter-show-more__btn_res {
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+  max-width: 463px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 20px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-orange);
+  transition: 0.3s linear;
+}
+
+.filter-show-more__btn_res:hover {
   background-color: var(--dark-gray);
+}
+
+.filter-show-more__btn:hover {
+  color: var(--color-orange);
 }
 
 .hide-filter__btn {

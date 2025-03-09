@@ -12,7 +12,6 @@ filterFormTitleClose.addEventListener('click', () => {
     filterBlock.classList.remove('filter-container-active');
 });
 
-
 if (filterForm) {
 
     const filterShowContentList = document.querySelector('.filter__show-content-list');
@@ -249,8 +248,5 @@ if (filterForm) {
             e.preventDefault();
             secondFilterHidden.classList.remove('filter-over-auto-scroll');
         });
-
-
     }
-
 }

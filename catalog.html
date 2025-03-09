@@ -4353,7 +4353,9 @@
               обработку персональных данных.
             </div>
           </div>
-          <div class="form-representation modals-form-representation none">
+          <div
+            class="form-representation modals-form-representation none"
+            id="modals-form-representation">
             <div class="container form-representation__container">
               <h2
                 class="form-representation__title form-representation__title--anketa">
@@ -4475,6 +4477,108 @@
               </form>
             </div>
           </div>
+
+          <div
+            class="form-representation modals-form-representation modals-form-order none">
+            <div
+              class="container form-representation__container modals-form-order__container">
+              <h2
+                class="form-representation__title form-representation__title--anketa">
+                Получить расчет стоимости
+              </h2>
+
+              <form
+                class="form-representation__form form-representation__form--anketa">
+                <div class="form-left form-left--apteka">
+                  <div class="btn anketa-close modals-form-order-close">
+                    <svg
+                      width="36"
+                      height="36"
+                      viewBox="0 0 36 36"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M33.6123 2L2.68574 33.2977"
+                        stroke="currentColor"
+                        stroke-width="3.66667"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                      <path
+                        d="M2.5 2.18652L33.7977 33.1131"
+                        stroke="currentColor"
+                        stroke-width="3.66667"
+                        stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    </svg>
+                  </div>
+
+                  <div class="anketa-grid-input">
+                    <div class="left-one">
+                      <label for="user-name">ФИО* </label>
+                      <input
+                        class="user-name"
+                        type="text"
+                        name="user-name"
+                        placeholder="Ввидите свое ФИО"
+                        required
+                        id="user-name" />
+                    </div>
+
+                    <div class="column1 left-two">
+                      <label for="user-tel">Телефон*</label>
+                      <input
+                        type="tel"
+                        name="user-tel"
+                        placeholder="Ваш номер телефона"
+                        required
+                        id="user-tel" />
+                    </div>
+
+                    <div class="column2 right-two">
+                      <label for="user-email">Почта</label>
+                      <input
+                        id="user-email"
+                        type="email"
+                        name="user-email"
+                        placeholder="Актуальная почта"
+                        required />
+                    </div>
+
+                    <div class="form-row3 right-one">
+                      <div class="column1 column1__wrap">
+                        <label for="country">Страна*</label>
+                        <select class="select" name="country" id="country">
+                          <option value="oneSelect">Выберите страну</option>
+                          <option value="Russia">Россия</option>
+                          <option value="USA">США</option>
+                          <option value="Brasil">Бразилия</option>
+                          <option value="Turkish">Турция</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-right form-right--anketa">
+                    <div class="anketa-flex-column">
+                      <div class="modals-form-order__list">
+                        <div class="modals-form-order__title">
+                          Выбранные фильтры:
+                        </div>
+                        <!-- <div class="modals-form-order__item"></div> -->
+                      </div>
+                    </div>
+                    <p class="form-representation__form--anketa-desc">
+                      Отправляя данную форму, вы соглашаетесь с политикой
+                      конфиденциальности и даёте своё согласие на обработку
+                      персональных данных.
+                    </p>
+                    <button class="btn form-representation__form-btn">
+                      Отправить
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -4509,7 +4613,7 @@
             Выбранные фильтры:
           </div>
           <div class="filter__show-content">
-            <ul class="filter__show-content-list">
+            <ul class="filter__show-content-list" id="filter-show-content-list">
               <!--                <li class="filter__show-content-item">-->
               <!--                    Глубина бурения (max), м: от 50 до 1 000-->
 
@@ -5287,15 +5391,11 @@
               </div>
             </div>
 
-            <button class="btn filter-show-more__btn">Показать</button>
+            <button class="btn filter-show-more__btn_res">Показать</button>
             <button class="btn hide-filter__btn none">Скрыть фильтр</button>
-            <button class="btn filter-over-auto__btn" id="r2">
-              Готово
-            </button>
+            <button class="btn filter-over-auto__btn" id="r2">Готово</button>
             <button class="btn ready-filter__btn none">Готово</button>
-            <button type="reset" class="btn reset__btn">
-              Сбросить всё
-            </button>
+            <button type="reset" class="btn reset__btn">Сбросить всё</button>
           </form>
         </div>
       </div>

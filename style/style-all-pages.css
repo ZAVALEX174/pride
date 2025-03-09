@@ -15611,3 +15611,33 @@ video {
     margin-bottom: 35px;
   }
 }
+
+.form-representation.modals-form-representation.modals-form-order {
+  .modals-form-order__list {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    border-bottom: 1.5px solid var(--ligth-gray);
+
+    .modals-form-order__title {
+      font-family: 'Golos Text Medium', sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 1.22222;
+      color: var(--dark-gray);
+      margin-bottom: 20px;
+    }
+
+    .modals-form-order__item {
+      margin-bottom: 15px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.125;
+      color: var(--ligth-gray);
+    }
+
+    .modals-form-order__item:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
