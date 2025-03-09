@@ -15,7 +15,6 @@ filterFormTitleClose.addEventListener('click', () => {
 
 if (filterForm) {
 
-
     const filterShowContentList = document.querySelector('.filter__show-content-list');
     const showMoreFilterBtn = document.querySelector('.filter-show-more__btn');
     const hideFilterBtn = document.querySelector('.hide-filter__btn');
