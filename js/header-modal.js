@@ -194,9 +194,10 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
 
-    // изменение header
+    // изменение header  
     class HeaderManager {
         constructor() {
+            // Получаем элементы DOM
             this.header = document.querySelector(".header");
             this.headerTop = document.querySelector(".header__top");
             this.headerMenu = document.querySelector(".header__menu");
@@ -206,95 +207,99 @@ document.addEventListener('DOMContentLoaded', () => {
             this.headerDown = document.querySelector('.header__down');
             this.headerInputSearch = document.querySelector('.search-input');
             this.headerModal = document.querySelector('.header-menu-modal');
-            this.headerLogo = document.querySelector('.header__logo'); // Добавлено
-            this.btnCloseSearch = document.querySelector('.close-modal-search-button'); //Добавлено
-            this.langue = document.querySelector('.header__lang'); //Добавлено
+            this.headerLogo = document.querySelector('.header__logo');
+            this.btnCloseSearch = document.querySelector('.close-modal-search-button');
+            this.langue = document.querySelector('.header__lang');
+
+            // Медиа-запросы
             this.desktopMediaQuery = window.matchMedia('(min-width: 901px)');
             this.mobileMediaQuery = window.matchMedia('(max-width: 900px)');
+
+            // Инициализация
             this.init();
         }
 
         init() {
             this.setupMediaQueryListeners();
             this.updateStyles();
-            this.setupSearchButton(); // Добавлено
+            this.setupSearchButton();
+            this.closeSetupSearchButton();
         }
 
         setupMediaQueryListeners() {
+            // Обработчики изменения размера экрана
             this.desktopMediaQuery.addListener(() => this.updateStyles());
             this.mobileMediaQuery.addListener(() => this.updateStyles());
         }
 
         updateStyles() {
+            // Адаптация стилей в зависимости от размера экрана
             if (this.desktopMediaQuery.matches) {
                 this.cleanupMobileHeader();
                 this.setupDesktopHeader();
+                this.showAdditionalBlocks(); // Показываем элементы при переходе на десктоп
             } else if (this.mobileMediaQuery.matches) {
                 this.cleanupDesktopHeader();
                 this.setupMobileHeader();
-                this.setupSearchButton();
-                this.closeSetupSearchButton();
             }
         }
 
         setupSearchButton() {
+            // Обработчик для кнопки поиска
             if (this.searchBtn) {
-                this.searchBtn.addEventListener('click', this.removeAdditionalBlocks);
+                this.searchBtn.addEventListener('click', () => {
+                    if (window.innerWidth <= 900) { // Проверка ширины экрана
+                        this.removeAdditionalBlocks();
+                    }
+                });
             }
         }
 
         closeSetupSearchButton() {
+            // Обработчик для кнопки закрытия поиска
             if (this.btnCloseSearch) {
                 this.btnCloseSearch.addEventListener('click', this.showAdditionalBlocks);
             }
         }
 
         removeAdditionalBlocks = () => {
-            if (this.headerLogo) {
-                this.headerLogo.style.display = "none";
-            }
-            const headerUser = document.querySelector('.header__user');
-            if (headerUser) {
-                headerUser.style.display = "none";
-            }
-            const headerFavorites = document.querySelector('.header__favorites');
-            if (headerFavorites) {
-                headerFavorites.style.display = "none";
-            }
+            // Скрытие элементов при активации поиска (только для мобильных устройств)
+            if (this.headerLogo) this.headerLogo.style.display = "none";
+            if (this.langue) this.langue.style.marginRight = "114px";
 
-            if (this.langue) {
-                this.langue.style.marginRight = "114px";
-            }
+            const headerUser = document.querySelector('.header__user');
+            const headerFavorites = document.querySelector('.header__favorites');
+
+            if (headerUser) headerUser.style.display = "none";
+            if (headerFavorites) headerFavorites.style.display = "none";
         };
 
         showAdditionalBlocks = () => {
-            if (this.headerLogo) {
-                this.headerLogo.style.display = "block";
-            }
+            // Показ скрытых элементов
+            if (this.headerLogo) this.headerLogo.style.display = "block";
+            if (this.langue) this.langue.style.marginRight = "0px";
+
             const headerUser = document.querySelector('.header__user');
-            if (headerUser) {
-                headerUser.style.display = "block";
-            }
             const headerFavorites = document.querySelector('.header__favorites');
-            if (headerFavorites) {
-                headerFavorites.style.display = "block";
-            }
-            if (this.langue) {
-                this.langue.style.marginRight = "0px";
-            }
+
+            if (headerUser) headerUser.style.display = "block";
+            if (headerFavorites) headerFavorites.style.display = "block";
         };
 
         setupDesktopHeader() {
+            // Настройка десктопной версии
             window.addEventListener('scroll', this.handleScroll);
             this.menuBtn3.addEventListener('click', this.toggleMenu);
         }
 
         cleanupDesktopHeader() {
+            // Очистка обработчиков десктопной версии
             window.removeEventListener('scroll', this.handleScroll);
             this.menuBtn3.removeEventListener('click', this.toggleMenu);
         }
 
         handleScroll = () => {
+            // Обработчик скролла
             const scrollTop = window.scrollY;
             const headerTopHeight = this.headerTop.clientHeight;
 
@@ -313,8 +318,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 this.searchInputStyle.classList.remove('header__search_menu');
                 this.menuBtn3.classList.remove('menu_menu');
                 this.header.classList.remove('header_fixed');
-                this.header.style.marginTop = 0;
-                document.body.style.marginTop = 0;
+                this.header.style.marginTop = "0";
+                document.body.style.marginTop = "0";
                 this.headerModal.style.height = `100%`;
                 this.headerDown.classList.remove('header__down_gray');
                 this.headerInputSearch.classList.remove('search-input_gray');
@@ -322,47 +327,52 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         toggleMenu = () => {
+            // Переключение меню
             this.headerMenu.classList.toggle('header__menu_hidden');
         };
 
         setupMobileHeader() {
+            // Настройка мобильной версии
             const menu1 = document.getElementById('menu');
-            const headerAddress = document.getElementById('header-address');
-            // const headerContacts = document.getElementById('header-contacts');
-            // const headerMenuDrop = document.getElementById('header-menu');
             const headerMenuDropMobile = document.getElementById('header-menu-mobile');
-            const btnOpenAndCloseMenu = document.getElementById('menu');
             const containerTopHeader = document.querySelector('.header__container-top');
 
-            menu1.classList.add('menu_menu');
-            containerTopHeader.prepend(menu1);
-            // headerMenuDropMobile.appendChild(headerContacts);
-            // headerContacts.appendChild(headerAddress);
-
-            btnOpenAndCloseMenu.addEventListener('click', this.toggleMobileMenu);
+            if (menu1 && headerMenuDropMobile && containerTopHeader) {
+                menu1.classList.add('menu_menu');
+                containerTopHeader.prepend(menu1);
+                menu1.addEventListener('click', this.toggleMobileMenu);
+            }
         }
 
         cleanupMobileHeader() {
+            // Очистка обработчиков мобильной версии
             const btnOpenAndCloseMenu = document.getElementById('menu');
-            btnOpenAndCloseMenu.removeEventListener('click', this.toggleMobileMenu);
+            if (btnOpenAndCloseMenu) {
+                btnOpenAndCloseMenu.removeEventListener('click', this.toggleMobileMenu);
+            }
         }
 
         toggleMobileMenu = () => {
-            // const headerMenuDrop = document.getElementById('header-menu');
+            // Переключение мобильного меню
             const headerMenuDropMobile = document.getElementById('header-menu-mobile');
             const btnOpenAndCloseMenu = document.getElementById('menu');
 
-            headerMenuDropMobile.classList.toggle('header__menu-mobile--open');
-            btnOpenAndCloseMenu.classList.toggle('menu-open');
-            document.querySelector('.menu__svg-desctop').classList.toggle('none');
-            document.querySelector('.menu__svg-mobile').classList.toggle('none');
-            document.body.classList.toggle('body-overflow-hidden');
-            this.header.classList.toggle('header-mobile-height');
+            if (headerMenuDropMobile && btnOpenAndCloseMenu) {
+                headerMenuDropMobile.classList.toggle('header__menu-mobile--open');
+                btnOpenAndCloseMenu.classList.toggle('menu-open');
+                document.querySelector('.menu__svg-desctop').classList.toggle('none');
+                document.querySelector('.menu__svg-mobile').classList.toggle('none');
+                document.body.classList.toggle('body-overflow-hidden');
+                this.header.classList.toggle('header-mobile-height');
+            }
         };
     }
 
     // Инициализация
     const headerManager = new HeaderManager();
+
+
+
 })
 
 
