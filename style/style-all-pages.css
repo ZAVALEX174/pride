@@ -7967,7 +7967,7 @@ label[for='user-email'] {
 
   @media (max-width: 900px) {
     flex-direction: column;
-    padding: 42px 20px 20px 20px;
+    padding: 42px 20px 120px 20px;
     height: 100vh;
     overflow-y: scroll;
   }
@@ -8515,7 +8515,7 @@ label[for='user-email'] {
       column-gap: 15px;
 
       @media (max-width: 900px) {
-        padding: 40px 0 120px;
+        padding: 40px 0 80px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
