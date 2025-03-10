@@ -2,13 +2,13 @@ const filterBlock = document.querySelector('.filter-container');
 const filterForm = document.querySelector('.form-container');
 const filterFormTitleOpen = document.querySelector('.categories__btn');
 filterFormTitleOpen.addEventListener('click', () => {
-    console.log(filterBlock);
+    // console.log(filterBlock);
     filterBlock.classList.add('filter-container-active');
 })
 const filterFormTitleClose = document.querySelector('.filter-form-title-close');
 
 filterFormTitleClose.addEventListener('click', () => {
-    console.log(filterBlock);
+    // console.log(filterBlock);
     filterBlock.classList.remove('filter-container-active');
 });
 
@@ -22,6 +22,7 @@ if (filterForm) {
     const filterHiddenSections = filterForm.querySelectorAll('.filter-hidden');
     const horizontalInputs = document.getElementById('form-container');
     const horLabels = horizontalInputs.querySelectorAll('.option__btn');
+    const getResultFromInputField = document.getElementById('r2');
 
     const createElement = (text) => {
         let newListItem = document.createElement('li');
@@ -125,10 +126,10 @@ if (filterForm) {
             });
         });
 
-        const getResultFromInputFirstField = document.getElementById('r2');
-        getResultFromInputFirstField.addEventListener('click', (e) => {
+        
+        getResultFromInputField.addEventListener('click', (e) => {
             e.preventDefault();
-            console.log(inputs[1].value);
+            // console.log(inputs[1].value);
             createElementSliderOne(inputs[0].value, inputs[1].value);
         })
     }
@@ -185,10 +186,10 @@ if (filterForm) {
                 setRangeSlider2(index, e.currentTarget.value);
             });
         });
-        const getResultFromInputSecondField = document.getElementById('r2');
-        getResultFromInputSecondField.addEventListener('click', (e) => {
+
+        getResultFromInputField.addEventListener('click', (e) => {
             e.preventDefault();
-            console.log(inputs[1].value);
+            // console.log(inputs[1].value);
             createElementSliderTwo(inputs[0].value, inputs[1].value);
         })
     }

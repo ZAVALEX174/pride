@@ -50,6 +50,10 @@ main {
   box-shadow: 0px 28px 20px 0px rgba(0, 0, 0, 0.15);
   border-top: 1px solid rgba(0, 0, 0, 0.15);
   overflow: hidden;
+
+  @media (max-width: 900px) {
+    overflow: visible;
+  }
 }
 
 .header__contacts-link-span-box {
@@ -925,7 +929,7 @@ main {
   border-bottom: 1.5px solid var(--5);
 }
 
-.header-menu-modal__close-btn {
+/* .header-menu-modal__close-btn {
   width: 40px;
   height: 40px;
   border: none;
@@ -934,13 +938,12 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease-in;
   cursor: pointer;
 }
 
 .header-menu-modal__close-btn:hover svg path {
   stroke: var(--color-orange);
-}
+} */
 
 .header-menu-modal__header-title {
   margin-bottom: 0;
@@ -2204,6 +2207,7 @@ main {
 .product-baner .product-baner__text.catalog-page-product-baner__text {
   max-width: 430px;
   margin-right: 10px;
+  position: relative;
 
   @media (max-width: 1024px) {
     max-width: 400px !important;
@@ -7852,6 +7856,10 @@ label[for='user-email'] {
   position: absolute;
   top: 132px;
   z-index: 200;
+
+  @media (max-width: 500px) {
+    top: 161px;
+  }
 }
 
 .header-menu-modal3 .header-menu-modal__body-top {
@@ -7925,10 +7933,24 @@ label[for='user-email'] {
   display: flex;
   position: relative;
 
+  @media (max-width: 900px) {
+    flex-direction: column;
+  }
+
   .header-search-box__categories-container {
     max-width: 383px;
     width: 100%;
     border-right: 1.13px solid var(--5);
+
+    @media (max-width: 1024px) {
+      max-width: 340px;
+    }
+
+    @media (max-width: 900px) {
+      max-width: 100%;
+      border-right: none;
+      margin-bottom: 30px;
+    }
 
     .search-history {
       width: 100%;
@@ -8250,6 +8272,12 @@ label[for='user-email'] {
       row-gap: 20px;
       margin-bottom: 25px;
 
+      @media (max-width: 999px) {
+        padding-left: 15px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--5);
+      }
+
       .result-header__title {
         font-family: 'Golos Text SemiBold', sans-serif;
         font-weight: 600;
@@ -8268,6 +8296,12 @@ label[for='user-email'] {
         line-height: 1.21429;
         color: var(--ligth-gray);
 
+        @media (max-width: 999px) {
+          display: flex;
+          flex-direction: column;
+          row-gap: 5px;
+        }
+
         span {
           color: var(--color-orange);
         }
@@ -8277,23 +8311,47 @@ label[for='user-email'] {
     .result-body {
       padding-left: 47px;
 
+      @media (max-width: 999px) {
+        padding-left: 15px;
+      }
+
       .result-list {
         display: flex;
         flex-direction: column;
         row-gap: 30px;
 
+        @media (max-width: 999px) {
+          row-gap: 20px;
+        }
+
         .result-item {
           width: 100%;
+
+          @media (max-width: 999px) {
+            border-bottom: 1px solid var(--5);
+            padding-bottom: 5px;
+          }
 
           .result-item-card {
             display: flex;
             align-items: center;
+
+            @media (max-width: 999px) {
+              flex-direction: column;
+              align-items: flex-start;
+            }
 
             .item-card {
               display: flex;
               align-items: center;
               column-gap: 20px;
               margin-right: 20px;
+
+              @media (max-width: 999px) {
+                margin-right: 0;
+                max-width: 100%;
+                align-items: flex-start;
+              }
 
               .item-card-img {
                 width: 90px;
@@ -8345,6 +8403,13 @@ label[for='user-email'] {
               width: 38px;
               height: 38px;
               margin-right: 15px;
+              flex-shrink: 0;
+
+              @media (max-width: 999px) {
+                margin-left: auto;
+                margin-right: 9%;
+                margin-top: -25px;
+              }
 
               .item-favorites__btn {
                 width: 100%;
@@ -8374,6 +8439,10 @@ label[for='user-email'] {
               display: flex;
               align-items: center;
               justify-content: center;
+
+              @media (max-width: 999px) {
+                margin-right: auto;
+              }
 
               a {
                 font-family: 'Golos Text Medium', sans-serif;
@@ -8449,6 +8518,12 @@ label[for='user-email'] {
   background: none;
   cursor: pointer;
 
+  @media (max-width: 900px) {
+    z-index: 5000;
+    top: -90px;
+    right: 120px;
+  }
+
   svg {
     width: 100%;
     height: 100%;
@@ -8468,6 +8543,10 @@ label[for='user-email'] {
 
   svg path {
     stroke: var(--color-orange);
+
+    @media (max-width: 1024px) {
+      stroke: #8e8e8e;
+    }
   }
 }
 
@@ -11355,6 +11434,21 @@ video {
   @media (max-width: 1110px) {
     padding: 30px;
   }
+
+  .catalog-page-product-baner__container-images {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    object-fit: cover;
+  }
+}
+
+.product-baner .catalog-page-product-baner__container {
+  position: relative;
+  overflow: hidden;
 
   .catalog-page-product-baner__container-images {
     width: 100%;

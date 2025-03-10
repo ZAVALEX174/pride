@@ -3530,6 +3530,25 @@
 
     <section class="product-baner">
         <div class="catalog-page-product-baner__container">
+            <picture class="catalog-page-product-baner__container-images">
+                <!-- Десктопная версия (ширина экрана от 768px) -->
+                <source
+                  srcset="images/catalog/catalog-menu-banner.webp 1x"
+                  type="image/webp"
+                  media="(min-width: 768px)" />
+
+                <!-- Мобильная версия (ширина экрана до 767px) -->
+                <source
+                  srcset="images/catalog/catalog-menu-banner-mob.webp"
+                  type="image/webp"
+                  media="(max-width: 767px)" />
+
+                <!-- Фолбэк для браузеров без поддержки WebP -->
+                <img
+                  src="images/catalog/catalog-menu-banner.jpg"
+                  alt="Описание изображения"
+                  loading="lazy" />
+              </picture>
             <div class="product-baner__text catalog-page-product-baner__text">
                 <h3 class="product-baner__title catalog-page-product-baner__title">
                     В наличии!

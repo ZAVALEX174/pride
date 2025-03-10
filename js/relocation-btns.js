@@ -133,3 +133,4 @@ if (otherHeaderLinkBox) {
  <a href="catalog.html" id="otherHeaderLink" class="btn other__header-link">Каталог</a>
 `);
 }
+
