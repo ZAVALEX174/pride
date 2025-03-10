@@ -393,7 +393,7 @@ main {
   @media (max-width: 768px) {
     max-width: 40px;
     margin-left: auto;
-    margin-right: 15px;
+    margin-right: 0;
   }
 }
 
@@ -408,6 +408,10 @@ main {
   line-height: 42px;
   position: absolute;
   right: 74px;
+
+  @media (max-width: 768px) {
+    right: 64px;
+  }
 }
 
 .btn-search-reset-active {
@@ -604,6 +608,7 @@ main {
     border-radius: 100%;
     border: 1px solid rgba(237, 237, 237, 1);
     margin-right: 15px;
+    margin-left: 15px;
   }
 
   span {
@@ -7815,6 +7820,10 @@ label[for='user-email'] {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 900px) {
+    max-width: 100%;
+  }
 }
 
 .header__search .search__active-input {
@@ -7826,6 +7835,11 @@ label[for='user-email'] {
   border: 1px solid var(--ligth-gray);
   height: 50px;
   line-height: 50px;
+
+  @media (max-width: 900px) {
+    max-width: 100%;
+    margin-right: 0;
+  }
 }
 
 .search-input::placeholder {
@@ -7848,12 +7862,16 @@ label[for='user-email'] {
   padding: 0;
   position: absolute;
   right: 20px;
+
+  @media (max-width: 768px) {
+    right: 10px;
+  }
 }
 
 .header-menu-modal3 {
   width: 100%;
   height: 100%;
-  position: absolute;
+  /* position: absolute; */
   top: 132px;
   z-index: 200;
 
@@ -8519,9 +8537,13 @@ label[for='user-email'] {
   cursor: pointer;
 
   @media (max-width: 900px) {
-    z-index: 5000;
-    top: -90px;
-    right: 120px;
+    z-index: 100;
+    top: -110px;
+    right: 20px;
+  }
+
+  @media (max-width: 900px) {
+    top: -116px;
   }
 
   svg {
@@ -8532,15 +8554,6 @@ label[for='user-email'] {
 }
 
 .close-modal-search-button:hover {
-  width: 17px;
-  height: 17px;
-  position: absolute;
-  top: 43px;
-  right: 80px;
-  border: none;
-  outline: none;
-  background: none;
-
   svg path {
     stroke: var(--color-orange);
 

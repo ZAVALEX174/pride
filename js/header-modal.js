@@ -193,6 +193,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 
+
     // изменение header
     class HeaderManager {
         constructor() {
@@ -200,10 +201,14 @@ document.addEventListener('DOMContentLoaded', () => {
             this.headerTop = document.querySelector(".header__top");
             this.headerMenu = document.querySelector(".header__menu");
             this.searchInputStyle = document.querySelector('.header__search');
+            this.searchBtn = document.querySelector('.search');
             this.menuBtn3 = document.querySelector('.menu');
             this.headerDown = document.querySelector('.header__down');
             this.headerInputSearch = document.querySelector('.search-input');
             this.headerModal = document.querySelector('.header-menu-modal');
+            this.headerLogo = document.querySelector('.header__logo'); // Добавлено
+            this.btnCloseSearch = document.querySelector('.close-modal-search-button'); //Добавлено
+            this.langue = document.querySelector('.header__lang'); //Добавлено
             this.desktopMediaQuery = window.matchMedia('(min-width: 901px)');
             this.mobileMediaQuery = window.matchMedia('(max-width: 900px)');
             this.init();
@@ -212,6 +217,7 @@ document.addEventListener('DOMContentLoaded', () => {
         init() {
             this.setupMediaQueryListeners();
             this.updateStyles();
+            this.setupSearchButton(); // Добавлено
         }
 
         setupMediaQueryListeners() {
@@ -226,8 +232,57 @@ document.addEventListener('DOMContentLoaded', () => {
             } else if (this.mobileMediaQuery.matches) {
                 this.cleanupDesktopHeader();
                 this.setupMobileHeader();
+                this.setupSearchButton();
+                this.closeSetupSearchButton();
             }
         }
+
+        setupSearchButton() {
+            if (this.searchBtn) {
+                this.searchBtn.addEventListener('click', this.removeAdditionalBlocks);
+            }
+        }
+
+        closeSetupSearchButton() {
+            if (this.btnCloseSearch) {
+                this.btnCloseSearch.addEventListener('click', this.showAdditionalBlocks);
+            }
+        }
+
+        removeAdditionalBlocks = () => {
+            if (this.headerLogo) {
+                this.headerLogo.style.display = "none";
+            }
+            const headerUser = document.querySelector('.header__user');
+            if (headerUser) {
+                headerUser.style.display = "none";
+            }
+            const headerFavorites = document.querySelector('.header__favorites');
+            if (headerFavorites) {
+                headerFavorites.style.display = "none";
+            }
+
+            if (this.langue) {
+                this.langue.style.marginRight = "114px";
+            }
+        };
+
+        showAdditionalBlocks = () => {
+            if (this.headerLogo) {
+                this.headerLogo.style.display = "block";
+            }
+            const headerUser = document.querySelector('.header__user');
+            if (headerUser) {
+                headerUser.style.display = "block";
+            }
+            const headerFavorites = document.querySelector('.header__favorites');
+            if (headerFavorites) {
+                headerFavorites.style.display = "block";
+            }
+            if (this.langue) {
+                this.langue.style.marginRight = "0px";
+            }
+        };
 
         setupDesktopHeader() {
             window.addEventListener('scroll', this.handleScroll);

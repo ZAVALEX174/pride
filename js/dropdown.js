@@ -7,11 +7,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const optionsList = customSelect.querySelector('.options');
 
     // Функция для открытия/закрытия списка
-    const toggleOptions = () => {
-        arrowOrange.classList.toggle('arrow-selected');
-        optionsList.style.display = optionsList.style.display === 'block' ? 'none' : 'block';
+    // const toggleOptions = () => {
+    //     arrowOrange.classList.toggle('arrow-selected');
+    //     optionsList.style.display = optionsList.style.display === 'block' ? 'none' : 'block';
+    //     closeSelectBtn.style.display = 'flex';
+    //     document.body.style.overflow= 'hidden';
+    // };
+
+    const openOptions = () => {
+        arrowOrange.classList.add('arrow-selected');
+        optionsList.style.display = 'block';
         closeSelectBtn.style.display = 'flex';
-        document.body.style.overflow= 'hidden';
+        document.body.style.overflow = 'hidden';
     };
 
     // Функция для закрытия списка
@@ -19,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         optionsList.style.display = 'none';
         arrowOrange.classList.remove('arrow-selected');
         closeSelectBtn.style.display = 'none';
-        document.body.style.overflow= '';
+        document.body.style.overflow = '';
     };
 
     // Функция для выбора варианта
@@ -36,8 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
         closeOptions();
     };
 
-    // Открытие/закрытие списка
-    selectedOption.addEventListener('click', toggleOptions);
+    // Открытие списка
+    selectedOption.addEventListener('click', openOptions);
 
     // Выбор варианта
     options.forEach(option => {
