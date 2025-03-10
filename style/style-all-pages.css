@@ -141,12 +141,18 @@ main {
   margin-right: auto;
 
   @media (max-width: 900px) {
-    text-align: left;
-    padding: 15px 20px 30px;
-    background-color: var(--5);
-    margin-right: 0;
-    padding-left: 0;
+    display: none;
   }
+}
+
+.header__address--mob {
+  display: flex;
+  text-align: left;
+  padding: 15px 20px 30px;
+  background-color: var(--5);
+  margin-right: 0;
+  padding-left: 15px;
+  padding-bottom: 80px;
 }
 
 .header__contacts {
@@ -156,13 +162,18 @@ main {
   margin-right: 10px;
 
   @media (max-width: 900px) {
-    flex-direction: column;
-    align-items: flex-start;
-    row-gap: 30px;
-    padding: 30px 20px 15px;
-    background-color: var(--5);
-    margin-right: 0;
+    display: none;
   }
+}
+
+.header__contacts--mob {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 30px;
+  padding: 30px 20px 15px;
+  background-color: var(--5);
+  margin-right: 0;
 }
 
 .header__contacts-link {

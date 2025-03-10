@@ -328,16 +328,16 @@ document.addEventListener('DOMContentLoaded', () => {
         setupMobileHeader() {
             const menu1 = document.getElementById('menu');
             const headerAddress = document.getElementById('header-address');
-            const headerContacts = document.getElementById('header-contacts');
-            const headerMenuDrop = document.getElementById('header-menu');
+            // const headerContacts = document.getElementById('header-contacts');
+            // const headerMenuDrop = document.getElementById('header-menu');
             const headerMenuDropMobile = document.getElementById('header-menu-mobile');
             const btnOpenAndCloseMenu = document.getElementById('menu');
             const containerTopHeader = document.querySelector('.header__container-top');
 
             menu1.classList.add('menu_menu');
             containerTopHeader.prepend(menu1);
-            headerMenuDropMobile.appendChild(headerContacts);
-            headerContacts.appendChild(headerAddress);
+            // headerMenuDropMobile.appendChild(headerContacts);
+            // headerContacts.appendChild(headerAddress);
 
             btnOpenAndCloseMenu.addEventListener('click', this.toggleMobileMenu);
         }
