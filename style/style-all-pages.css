@@ -6908,6 +6908,8 @@ label[for='user-email'] {
       .pagination-wrap {
         .ul-btn.pagination {
           margin-top: 0;
+          margin-left: 10px;
+          margin-right: 10px;
 
           .page-navigation__list-item {
             width: 42px;
@@ -10918,6 +10920,8 @@ video {
 
 .categories__body.catalog-categories__body .buttons-box .ul-btn.pagination {
   margin-top: 0;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .filter-navigation {
@@ -12628,6 +12632,8 @@ video {
       .pagination-wrap {
         .ul-btn.pagination {
           margin-top: 0;
+          margin-left: 10px;
+          margin-right: 10px;
         }
       }
     }
@@ -13835,6 +13841,8 @@ video {
       .pagination-wrap {
         .ul-btn.pagination {
           margin-top: 0;
+          margin-left: 10px;
+          margin-right: 10px;
         }
       }
     }
