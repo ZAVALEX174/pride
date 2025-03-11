@@ -3,6 +3,9 @@ document.addEventListener('DOMContentLoaded', function () {
   const modal = document.querySelector('.modals');
 
   const modalFormRepresentation = modal.querySelector('.modals-form-representation');
+  const modalReset = modal.querySelector('.modal-reset');
+  const modalResetBtn = modal.querySelector('.modal-reset__btn');
+  const closeModalResetBtn = modal.querySelector('.modal-reset__close');
   // const closesFormRepresentation = modalFormZakaz.querySelector('.modals-zakaz__btn');
   const openModalFormPepresentationBtn = document.querySelector('.banner__btn');
   // console.log(modalFormRepresentation, openModalFormPepresentationBtn);
@@ -10,11 +13,15 @@ document.addEventListener('DOMContentLoaded', function () {
   openModalFormPepresentationBtn.addEventListener('click', () => {
     modal.classList.add('modals_opened');
     modalFormRepresentation.classList.remove('none');
+    document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden'; // Для html
   })
 
   closeBtn = document.querySelector('.anketa-close').addEventListener('click', () => {
     modal.classList.remove('modals_opened');
     modalFormRepresentation.classList.add('none');
+    document.body.style.overflow = '';
+    document.documentElement.style.overflow = ''; // Для html
   })
 
   $(document).click(function (e) {
@@ -22,6 +29,8 @@ document.addEventListener('DOMContentLoaded', function () {
       modal.classList.remove('modals_opened');
       modalFormRepresentation.classList.add('none');
       modalFormOrder.classList.add('none');
+      document.body.style.overflow = '';
+      document.documentElement.style.overflow = ''; // Для html
       clearDiv();
     }
   });
@@ -30,11 +39,10 @@ document.addEventListener('DOMContentLoaded', function () {
   const modalFormOrder = modal.querySelector('.modals-form-order');
   console.log(openBtnFormOrder, modalFormOrder);
 
-
-
   // получение выбранных фильтров
   const filterShowContentList = document.querySelector('.filter__show-content-list');
-  const showMoreFilterBtnResault = document.querySelector('.filter-show-more__btn_res');
+  const filterResetBtn = document.querySelector('.reset__btn');
+
   const outputContainer = document.querySelector('.modals-form-order__list');
   // console.log(showMoreFilterBtnResault, 'showMoreFilterBtnResault');
   let filterShowContentListLenght = filterShowContentList.children;
@@ -74,25 +82,52 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   }
 
-  showMoreFilterBtnResault.addEventListener('click', (e) => {
-    e.preventDefault();
+  if (filterResetBtn) {
+    filterResetBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      modal.classList.add('modals_opened');
+      modalReset.classList.remove('none');
+      document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflow = 'hidden'; // Для html
+    });
+    modalResetBtn.addEventListener('click', (e) => {
+      modal.classList.remove('modals_opened');
+      modalReset.classList.add('none');
+      document.body.style.overflow = '';
+      document.documentElement.style.overflow = ''; // Для html
+    });
+    closeModalResetBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      modal.classList.remove('modals_opened');
+      modalReset.classList.add('none');
+      document.body.style.overflow = '';
+      document.documentElement.style.overflow = ''; // Для html
+    });
 
-  })
+  }
 
   if (openBtnFormOrder && modalFormOrder) {
     openBtnFormOrder.addEventListener('click', (e) => {
       modal.classList.add('modals_opened');
       modalFormOrder.classList.remove('none');
       addDataToForm();
+      document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflow = 'hidden'; // Для html
     });
 
     closeBtn = document.querySelector('.modals-form-order-close').addEventListener('click', () => {
       modal.classList.remove('modals_opened');
       modalFormOrder.classList.add('none');
+      document.body.style.overflow = '';
+      document.documentElement.style.overflow = ''; // Для html
       clearDiv();
     })
   }
 
+  modalFormOrder.addEventListener('click', (e) => {
+    // e.preventDefault();
+
+  })
 });
 
 

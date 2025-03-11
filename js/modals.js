@@ -19,11 +19,13 @@ document.addEventListener('DOMContentLoaded', function () {
     closeDownloadBtn.addEventListener('click', () => {
         modal.classList.remove('modals_opened');
         modalCatalog.classList.add('none');
+        document.body.style.overflow = ' ';
     })
 
     const openFormBtn = document.querySelectorAll('.benefits__desc-btn');
     openFormBtn.forEach(el => {
         el.addEventListener('click', (e) => {
+            document.body.style.overflow = 'hidden';
             e.preventDefault();
             modal.classList.add('modals_opened');
             modalFormZakaz.classList.remove('none');
@@ -32,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     closesModalFormZakaz.addEventListener('click', (e) => {
         e.preventDefault();
-
+        document.body.style.overflow = ' ';
         modal.classList.remove('modals_opened');
         modalFormZakaz.classList.add('none');
     })

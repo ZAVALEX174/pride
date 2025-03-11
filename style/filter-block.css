@@ -743,6 +743,7 @@ input[type='number'] {
   margin-bottom: 20px;
   border: none;
   outline: none;
+  font-family: 'Golos Text Regular', sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
@@ -753,4 +754,5 @@ input[type='number'] {
 
 .filter-form.filter-form__content .reset__btn:hover {
   color: var(--dark-gray);
+  background: var(--ligth-gray);
 }
