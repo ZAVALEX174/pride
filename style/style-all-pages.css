@@ -6909,7 +6909,7 @@ label[for='user-email'] {
         .ul-btn.pagination {
           margin-top: 0;
 
-          .li-pag-btn {
+          .page-navigation__list-item {
             width: 42px;
             height: 42px;
             margin: 0 5px;
@@ -7170,7 +7170,7 @@ label[for='user-email'] {
   width: 100%;
   font-weight: 700;
   font-size: 24px;
-  line-height: 40px;
+  line-height: 24px;
   text-align: left;
   margin: 0 auto 20px;
   color: var(--dark-gray);
@@ -7220,10 +7220,10 @@ label[for='user-email'] {
 
 .form-representation__form--anketa-desc {
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 1.2;
 }
 
 .form-representation__form.form-representation__form--anketa label,
@@ -7277,8 +7277,8 @@ label[for='user-email'] {
   grid-template-areas:
     'left-one right-one'
     'left-two right-two';
-  gap: 25px 30px;
-  margin-bottom: 25px;
+  gap: 20px 25px;
+  margin-bottom: 20px;
 
   @media (max-width: 640px) {
     grid-template-columns: repeat(1, 1fr);
@@ -7785,10 +7785,13 @@ label[for='user-email'] {
 .modals-form-representation {
   max-width: 670px;
   width: 100%;
-  padding: 60px;
-  height: auto;
+  padding: 55px;
+  height: 681px;
   background: var(--5);
   border-radius: 30px;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
 
   @media (max-width: 768px) {
     padding: 60px 22px;
@@ -7803,6 +7806,10 @@ label[for='user-email'] {
       padding: 0;
     }
   }
+}
+
+.modals-form-representation::-webkit-scrollbar {
+  display: none;
 }
 
 /*search.css*/
@@ -10881,6 +10888,13 @@ video {
     width: 40px;
     height: 40px;
   }
+
+  .page-navigation__list-link {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1;
+    color: var(--ligth-gray);
+  }
 }
 
 .pagination li.active {
@@ -12035,6 +12049,8 @@ video {
 
       .ul-btn.pagination {
         margin-top: 0;
+        margin-left: 10px;
+        margin-right: 10px;
       }
 
       .prev-btn,
@@ -12076,14 +12092,14 @@ video {
         transform: rotate(180deg);
       }
 
-      .li-pag-btn {
+      .page-navigation__list-link {
         font-weight: 400;
         font-size: 22px;
         line-height: 1.22727;
         color: var(--ligth-gray);
       }
 
-      .li-pag-btn.active {
+      .active {
         color: var(--dark-gray);
       }
     }

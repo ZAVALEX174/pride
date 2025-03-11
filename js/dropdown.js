@@ -6,15 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeSelectBtn = document.querySelector('.closes-select');
     const optionsList = customSelect.querySelector('.options');
 
-    // Функция для открытия/закрытия списка
-    // const toggleOptions = () => {
-    //     arrowOrange.classList.toggle('arrow-selected');
-    //     optionsList.style.display = optionsList.style.display === 'block' ? 'none' : 'block';
-    //     closeSelectBtn.style.display = 'flex';
-    //     document.body.style.overflow= 'hidden';
-    // };
-
-    const openOptions = () => {
+     const openOptions = () => {
         arrowOrange.classList.add('arrow-selected');
         optionsList.style.display = 'block';
         closeSelectBtn.style.display = 'flex';

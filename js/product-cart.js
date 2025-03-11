@@ -46,30 +46,30 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Кнопка полей для плеера
     const videoElements = document.querySelectorAll('.video-content');
-    videoElements.forEach(el => {
-        const video = el.querySelector('video');
-        const bplay = el.querySelector('.video-control');
-        const videoDesc = el.querySelector('.video-container__desc');
+    // videoElements.forEach(el => {
+    //     const video = el.querySelector('video');
+    //     const bplay = el.querySelector('.video-control');
+    //     const videoDesc = el.querySelector('.video-container__desc');
 
-        video.addEventListener('click', evt => {
-            if (video.paused) return;
-            video.pause();
-            videoDesc.classList.remove('video-control__hidden');
-        })
+    //     video.addEventListener('click', evt => {
+    //         if (video.paused) return;
+    //         video.pause();
+    //         videoDesc.classList.remove('video-control__hidden');
+    //     })
 
-        video.addEventListener('ended', evt => {
-            video.currentTime = 0;
-            videoDesc.classList.remove('video-control__hidden');
-        })
+    //     video.addEventListener('ended', evt => {
+    //         video.currentTime = 0;
+    //         videoDesc.classList.remove('video-control__hidden');
+    //     })
 
-        bplay.addEventListener('click', evt => {
-            if (!video.paused) return;
-            video.play().then(() => {
-                videoDesc.classList.add('video-control__hidden');
-            })
-        })
+    //     bplay.addEventListener('click', evt => {
+    //         if (!video.paused) return;
+    //         video.play().then(() => {
+    //             videoDesc.classList.add('video-control__hidden');
+    //         })
+    //     })
 
-    })
+    // })
 });
 
 // Аккардион
