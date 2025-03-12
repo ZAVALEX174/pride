@@ -7788,7 +7788,8 @@ label[for='user-email'] {
   max-width: 670px;
   width: 100%;
   padding: 55px;
-  height: 681px;
+  /* height: 681px; */
+  max-height: 100vh;
   background: var(--5);
   border-radius: 30px;
   overflow-y: auto;
@@ -7797,6 +7798,7 @@ label[for='user-email'] {
 
   @media (max-width: 768px) {
     padding: 60px 22px;
+    /* max-height: 90vh; */
   }
 
   @media (max-width: 467px) {
@@ -7804,6 +7806,7 @@ label[for='user-email'] {
   }
 
   .form-representation__container {
+    /* height: 681px; */
     @media (max-width: 768px) {
       padding: 0;
     }
