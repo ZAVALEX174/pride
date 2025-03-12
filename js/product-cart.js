@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Кнопка полей для плеера
     const videoElements = document.querySelectorAll('.video-content');
     // videoElements.forEach(el => {
-    //     const video = el.querySelector('video');
+    //     const video = el.querySelector('iframe');
     //     const bplay = el.querySelector('.video-control');
     //     const videoDesc = el.querySelector('.video-container__desc');
 
