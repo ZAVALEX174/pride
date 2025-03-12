@@ -9281,8 +9281,12 @@ label[for='user-email'] {
 .tabs__content > .content_one {
   display: flex;
   width: 100%;
-  height: auto;
+  height: 500px;
   align-items: center;
+
+  @media (max-width: 768px) {
+    height: 360px;
+  }
 }
 
 .video-content {
