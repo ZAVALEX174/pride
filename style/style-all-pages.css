@@ -10576,6 +10576,107 @@ video {
   max-width: 1188px;
 }
 
+.non-standard {
+  width: 100%;
+  padding: 50px 15px;
+
+  .non-standard__container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1166px;
+    border-radius: 30px;
+    background-color: var(--5);
+    box-shadow: 0 1px 4px 0 rgba(25, 33, 61, 0.08);
+    padding: 50px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      row-gap: 30px;
+      align-items: center;
+    }
+
+    .non-standard__bg {
+      width: 120px;
+      height: 120px;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+  }
+
+  .non-standard__text {
+    max-width: 735px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @media (max-width: 768px) {
+      align-items: center;
+    }
+
+    .non-standard__text-title {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 1.09375;
+      color: var(--dark-gray);
+      margin-bottom: 30px;
+
+      @media (max-width: 768px) {
+        font-size: 24px;
+      }
+    }
+
+    .non-standard__text-subtitle {
+      width: 100%;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.1;
+      color: var(--dark-gray);
+
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .non-standard__btn-box {
+    position: relative;
+    width: 281px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .non-standard__btn {
+      position: relative;
+      max-width: 281px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 45px;
+      line-height: 45px;
+      border-radius: 30px;
+      cursor: pointer;
+      outline: none;
+      border: none;
+      background-color: var(--color-orange);
+      transition: 0.3s ease-in;
+      color: var(--main-bg);
+    }
+
+    .non-standard__btn:hover {
+      background-color: var(--dark-gray);
+    }
+  }
+}
+
 .swiper-filter-on {
   background: url('../images/catalog/catalog_menu_bg.jpg') no-repeat center
     center/cover;
