@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     closesModalFormZakaz.addEventListener('click', (e) => {
         e.preventDefault();
-        document.body.style.overflow = ' ';
+        document.body.style.overflow = '';
         modal.classList.remove('modals_opened');
         modalFormZakaz.classList.add('none');
     })

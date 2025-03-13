@@ -2,23 +2,35 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const modal = document.querySelector('.modals');
 
-  const modalFormRepresentation = modal.querySelector('.modals-form-representation');
+  const modalFormRepresentation = document.getElementById('modal-payment');
   const modalReset = modal.querySelector('.modal-reset');
   const modalResetBtn = modal.querySelector('.modal-reset__btn');
   const closeModalResetBtn = modal.querySelector('.modal-reset__close');
+  const modalsConnection = document.getElementById('modal-contacts');
+
   // const closesFormRepresentation = modalFormZakaz.querySelector('.modals-zakaz__btn');
   const openModalFormPepresentationBtn = document.querySelector('.banner__btn');
   // console.log(modalFormRepresentation, openModalFormPepresentationBtn);
   const nonStandaetbtn = document.querySelector('.non-standard__btn');
+  const submitFormBtn = document.querySelector('.filter__submit-box__btn');
+  const cardButtons = document.querySelectorAll('.cart__btn');
+  const contactUsBtnS = document.querySelectorAll('.contact-us__btn');
+  const stockCartBtns = document.querySelectorAll('.stock-cart__text-content-desc-bid-btn');
 
-  openModalFormPepresentationBtn.addEventListener('click', () => {
-    modal.classList.add('modals_opened');
-    modalFormRepresentation.classList.remove('none');
-    document.body.style.overflow = 'hidden';
-    document.documentElement.style.overflow = 'hidden'; // Для html
-  })
 
-  if (nonStandaetbtn) {
+  const openBtnFormOrder = document.getElementById('r2');
+  const modalFormOrder = modal.querySelector('.modals-form-order');
+
+  if (openModalFormPepresentationBtn) {
+    openModalFormPepresentationBtn.addEventListener('click', () => {
+      modal.classList.add('modals_opened');
+      modalFormRepresentation.classList.remove('none');
+      document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflow = 'hidden'; // Для html
+    })
+  }
+
+  if (nonStandaetbtn && modalFormOrder) {
     nonStandaetbtn.addEventListener('click', () => {
       modal.classList.add('modals_opened');
       modalFormOrder.classList.remove('none');
@@ -28,61 +40,90 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   }
 
-  closeBtn = document.querySelector('.anketa-close').addEventListener('click', () => {
-    modal.classList.remove('modals_opened');
-    modalFormRepresentation.classList.add('none');
-    document.body.style.overflow = '';
-    document.documentElement.style.overflow = ''; // Для html
-  })
+  if (submitFormBtn && modalFormOrder) {
+    submitFormBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      modal.classList.add('modals_opened');
+      modalFormOrder.classList.remove('none');
+      addDataToForm();
+      document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflow = 'hidden'; // Для html
+    })
+  }
 
-  $(document).click(function (e) {
-    if ($(e.target).is('.modals__wrapper')) {
+  if (document.querySelector('.anketa-close')) {
+    closeBtn = document.querySelector('.anketa-close').addEventListener('click', () => {
       modal.classList.remove('modals_opened');
       modalFormRepresentation.classList.add('none');
-      modalFormOrder.classList.add('none');
       document.body.style.overflow = '';
       document.documentElement.style.overflow = ''; // Для html
-      clearDiv();
-    }
-  });
+    })
+  }
 
-  const openBtnFormOrder = document.getElementById('r2');
-  const modalFormOrder = modal.querySelector('.modals-form-order');
-  console.log(openBtnFormOrder, modalFormOrder);
+  if (modalFormOrder) {
+    $(document).click(function (e) {
+      if ($(e.target).is('.modals__wrapper')) {
+        modal.classList.remove('modals_opened');
+        modalFormRepresentation.classList.add('none');
+        modalFormOrder.classList.add('none');
+        document.body.style.overflow = '';
+        document.documentElement.style.overflow = ''; // Для html
+        clearDiv();
+      }
+    });
+  }
+
+  if (modalFormRepresentation) {
+    $(document).click(function (e) {
+      if ($(e.target).is('.modals__wrapper')) {
+        modal.classList.remove('modals_opened');
+        modalFormRepresentation.classList.add('none');
+        document.body.style.overflow = '';
+        document.documentElement.style.overflow = ''; // Для html
+        clearDiv();
+      }
+    });
+  }
+
+
+  // console.log(openBtnFormOrder, modalFormOrder);
 
   // получение выбранных фильтров
   const filterShowContentList = document.querySelector('.filter__show-content-list');
   const filterResetBtn = document.querySelector('.reset__btn');
+  if (filterShowContentList) {
 
-  const outputContainer = document.querySelector('.modals-form-order__list');
-  // console.log(showMoreFilterBtnResault, 'showMoreFilterBtnResault');
-  let filterShowContentListLenght = filterShowContentList.children;
 
-  function addDataToForm() {
-    if (filterShowContentListLenght.length > 0) {
-      // 4. Создаем фрагмент для оптимизации
-      const fragment = document.createDocumentFragment();
+    const outputContainer = document.querySelector('.modals-form-order__list');
+    // console.log(showMoreFilterBtnResault, 'showMoreFilterBtnResault');
+    let filterShowContentListLenght = filterShowContentList.children;
 
-      // 5. Перебираем элементы коллекции
-      Array.from(filterShowContentListLenght).forEach((item, index) => {
-        // 6. Создаем элемент для вывода
-        const div = document.createElement('div');
+    function addDataToForm() {
+      if (filterShowContentListLenght.length > 0) {
+        // 4. Создаем фрагмент для оптимизации
+        const fragment = document.createDocumentFragment();
 
-        // div.textContent = `${index + 1}. ${item.textContent}`;
-        div.textContent = `${item.textContent}`;
+        // 5. Перебираем элементы коллекции
+        Array.from(filterShowContentListLenght).forEach((item, index) => {
+          // 6. Создаем элемент для вывода
+          const div = document.createElement('div');
 
-        // 7. Добавляем стили
-        div.classList.add('modals-form-order__item')
+          // div.textContent = `${index + 1}. ${item.textContent}`;
+          div.textContent = `${item.textContent}`;
 
-        // 8. Добавляем в фрагмент
-        fragment.appendChild(div);
-      });
+          // 7. Добавляем стили
+          div.classList.add('modals-form-order__item')
 
-      // 9. Вставляем все элементы за одну операцию
-      outputContainer.appendChild(fragment);
+          // 8. Добавляем в фрагмент
+          fragment.appendChild(div);
+        });
 
-    } else {
-      outputContainer.innerHTML = '<div>Элементы не найдены</div>';
+        // 9. Вставляем все элементы за одну операцию
+        outputContainer.appendChild(fragment);
+
+      } else {
+        outputContainer.innerHTML = '<div>Элементы не найдены</div>';
+      }
     }
   }
 
@@ -93,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   }
 
-  if (filterResetBtn) {
+  if (filterResetBtn && modalReset) {
     filterResetBtn.addEventListener('click', (e) => {
       e.preventDefault();
       modal.classList.add('modals_opened');
@@ -101,20 +142,25 @@ document.addEventListener('DOMContentLoaded', function () {
       document.body.style.overflow = 'hidden';
       document.documentElement.style.overflow = 'hidden'; // Для html
     });
-    modalResetBtn.addEventListener('click', (e) => {
-      modal.classList.remove('modals_opened');
-      modalReset.classList.add('none');
-      document.body.style.overflow = '';
-      document.documentElement.style.overflow = ''; // Для html
-    });
-    closeModalResetBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      modal.classList.remove('modals_opened');
-      modalReset.classList.add('none');
-      document.body.style.overflow = '';
-      document.documentElement.style.overflow = ''; // Для html
-    });
 
+    if (modalResetBtn) {
+      modalResetBtn.addEventListener('click', (e) => {
+        modal.classList.remove('modals_opened');
+        modalReset.classList.add('none');
+        document.body.style.overflow = '';
+        document.documentElement.style.overflow = ''; // Для html
+      });
+    }
+
+    if (closeModalResetBtn) {
+      closeModalResetBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        modal.classList.remove('modals_opened');
+        modalReset.classList.add('none');
+        document.body.style.overflow = '';
+        document.documentElement.style.overflow = ''; // Для html
+      });
+    }
   }
 
   if (openBtnFormOrder && modalFormOrder) {
@@ -126,7 +172,7 @@ document.addEventListener('DOMContentLoaded', function () {
       document.documentElement.style.overflow = 'hidden'; // Для html
     });
 
-    closeBtn = document.querySelector('.modals-form-order-close').addEventListener('click', () => {
+    closeBtnOther = document.querySelector('.modals-form-order-close').addEventListener('click', () => {
       modal.classList.remove('modals_opened');
       modalFormOrder.classList.add('none');
       document.body.style.overflow = '';
@@ -135,10 +181,46 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   }
 
-  modalFormOrder.addEventListener('click', (e) => {
-    // e.preventDefault();
+  if (modalFormOrder) {
+    modalFormOrder.addEventListener('click', (e) => {
+      // e.preventDefault();
 
+    })
+  }
+
+  // открытие модалок на кнопках всех карточках продукта
+  cardButtons.forEach((cardBtn) => {
+    cardBtn.addEventListener('click', (e) => {
+      modal.classList.add('modals_opened');
+      modalFormRepresentation.classList.remove('none');
+      document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflow = 'hidden'; // Для html
+    });
   })
+
+  if (stockCartBtns) {
+    stockCartBtns.forEach((cardBtn) => {
+      cardBtn.addEventListener('click', (e) => {
+        modal.classList.add('modals_opened');
+        modalFormRepresentation.classList.remove('none');
+        document.body.style.overflow = 'hidden';
+        document.documentElement.style.overflow = 'hidden'; // Для html
+      });
+    })
+  }
+
+  // открытие формы связаться с нами
+  if (contactUsBtnS) {
+    contactUsBtnS.forEach((contactUsBtn) => {
+      contactUsBtn.addEventListener('click', (e) => {
+        modal.classList.add('modals_opened');
+        modalsConnection.classList.remove('none');
+        document.body.style.overflow = 'hidden';
+        document.documentElement.style.overflow = 'hidden'; // Для html
+      });
+    })
+  }
+
 });
 
 

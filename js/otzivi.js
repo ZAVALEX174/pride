@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const body = document.body;
     const modal = document.querySelector('.modals');
-    const modalFormOtzivi = modal.querySelector('.modals-form-representation-otzivi');
+    const modalFormOtzivi = document.getElementById('modal-otzivi');
 
     const openModalOtzivi = document.querySelector('.our-projects-cart__btn-open-modal-form');
     const openModalOtziviAll = document.querySelectorAll('.our-projects-cart__btn-open-modal-form');
