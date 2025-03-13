@@ -38,6 +38,18 @@ document.addEventListener('DOMContentLoaded', function () {
         modal.classList.remove('modals_opened');
         modalFormZakaz.classList.add('none');
     })
+
+
+    $(document).click(function (e) {
+        if ($(e.target).is('.modals__wrapper')) {
+            modal.classList.remove('modals_opened');
+            modalFormZakaz.classList.add('none');
+            document.body.style.overflow = '';
+            document.documentElement.style.overflow = ''; // Для html
+
+        }
+    });
+
 });
 
 

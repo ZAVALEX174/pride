@@ -3,21 +3,21 @@ const headerContactUsBtn = document.getElementById('headerContactUsBtn');
 let heroSliders = document.querySelector('.hero-swiper-wrapper');
 
 if (heroSliders) {
-    let heroSlidersLiveCollections = heroSliders.children;
+  let heroSlidersLiveCollections = heroSliders.children;
 
-    for (let item of heroSlidersLiveCollections) {
-        let btnBox = item.querySelector('.hero-slider__buttons');
-        btnBox.insertAdjacentHTML("beforeEnd", `<div class="contact-us header__contact-us" id="headerContactUsBtn">
+  for (let item of heroSlidersLiveCollections) {
+    let btnBox = item.querySelector('.hero-slider__buttons');
+    btnBox.insertAdjacentHTML("beforeEnd", `<div class="contact-us header__contact-us" id="headerContactUsBtn">
              <button class="btn contact-us__btn">Связаться с нами</button>
            </div>`)
-    }
+  }
 }
 
 // Секция work
 const workBodySwiperContentBox = document.querySelector('.work__body-swiper-content-box');
 
 if (workBodySwiperContentBox) {
-    workBodySwiperContentBox.insertAdjacentHTML("afterBegin", `<div id="workBodyItemImg" class="swiper-slide work__body-swiper-content-slider-slide work__body-item_img">
+  workBodySwiperContentBox.insertAdjacentHTML("afterBegin", `<div id="workBodyItemImg" class="swiper-slide work__body-swiper-content-slider-slide work__body-item_img">
                   <div class="work__body-item">
                     <h3 class="work__body-cart-title work__body-cart-title_img">
                       Подбор установки по характеристикам
@@ -36,7 +36,7 @@ if (workBodySwiperContentBox) {
 // Секция our-projects
 const ourProjectsSlideOtziv = document.querySelector('.our-projects-swiper-image-box');
 if (ourProjectsSlideOtziv) {
-    ourProjectsSlideOtziv.insertAdjacentHTML("afterBegin", `<div id="ourProjectsSlideOtziv" class="swiper-slide our-projects-slide our-projects-slide-otziv">
+  ourProjectsSlideOtziv.insertAdjacentHTML("afterBegin", `<div id="ourProjectsSlideOtziv" class="swiper-slide our-projects-slide our-projects-slide-otziv">
                   <div class="our-projects-slide__content">
                     <img
                       src="images/works/01.svg"
@@ -52,7 +52,7 @@ if (ourProjectsSlideOtziv) {
                     </div>
                     <div class="cart__btn-box our-projects-cart__btn-box">
                       <button
-                        class="btn cart__btn our-projects-cart__btn-open-modal-form">
+                        class="btn cart__btn_or our-projects-cart__btn-open-modal-form">
                         Написать
                       </button>
                     </div>
@@ -64,7 +64,7 @@ if (ourProjectsSlideOtziv) {
 const productBtnLinkBox = document.querySelector('.product-btn-link-box');
 
 if (productBtnLinkBox) {
-    productBtnLinkBox.insertAdjacentHTML("afterBegin", `
+  productBtnLinkBox.insertAdjacentHTML("afterBegin", `
  <a href="catalog-menu.html" class="btn product-btn-link" id="productBtnLink" >Каталог</a>
 `);
 }
@@ -73,7 +73,7 @@ if (productBtnLinkBox) {
 const categoriesBtnsBox = document.querySelector('.categories__btns-box');
 
 if (categoriesBtnsBox) {
-    categoriesBtnsBox.insertAdjacentHTML("afterBegin", `
+  categoriesBtnsBox.insertAdjacentHTML("afterBegin", `
  <a href="#" id="categoriesBtnParams" class="btn categories__btn categories__btn_selected">Подбор по параметрам<svg
                 width="25"
                 height="16"
@@ -120,7 +120,7 @@ if (categoriesBtnsBox) {
 const watchedBeforeProductCartLinkBox = document.querySelector('.watched-before__product-cart-link-box');
 
 if (watchedBeforeProductCartLinkBox) {
-    watchedBeforeProductCartLinkBox.insertAdjacentHTML("afterBegin", `
+  watchedBeforeProductCartLinkBox.insertAdjacentHTML("afterBegin", `
  <a href="catalog-menu.html" id="watchedBeforeLink" class="btn product-cart__header-link">Каталог</a>
 `);
 }
@@ -129,7 +129,7 @@ if (watchedBeforeProductCartLinkBox) {
 const otherHeaderLinkBox = document.querySelector('.other__header-link-box');
 
 if (otherHeaderLinkBox) {
-    otherHeaderLinkBox.insertAdjacentHTML("afterBegin", `
+  otherHeaderLinkBox.insertAdjacentHTML("afterBegin", `
  <a href="catalog.html" id="otherHeaderLink" class="btn other__header-link">Каталог</a>
 `);
 }

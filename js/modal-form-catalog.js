@@ -1,12 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
 
   const modal = document.querySelector('.modals');
+  const modalFormOtzivi = document.getElementById('modal-otzivi');
+  const openModalFormOtziviBtns = document.querySelectorAll('.our-projects-cart__btn-open-modal-form');
 
   const modalFormRepresentation = document.getElementById('modal-payment');
   const modalReset = modal.querySelector('.modal-reset');
   const modalResetBtn = modal.querySelector('.modal-reset__btn');
   const closeModalResetBtn = modal.querySelector('.modal-reset__close');
   const modalsConnection = document.getElementById('modal-contacts');
+  closeBtns = document.querySelectorAll('.anketa-close')
 
   // const closesFormRepresentation = modalFormZakaz.querySelector('.modals-zakaz__btn');
   const openModalFormPepresentationBtn = document.querySelector('.banner__btn');
@@ -27,6 +30,17 @@ document.addEventListener('DOMContentLoaded', function () {
       modalFormRepresentation.classList.remove('none');
       document.body.style.overflow = 'hidden';
       document.documentElement.style.overflow = 'hidden'; // Для html
+    })
+  }
+
+  if (modalFormOtzivi) {
+    openModalFormOtziviBtns.forEach((btnotzivi) => {
+      btnotzivi.addEventListener('click', (e) => {
+        modal.classList.add('modals_opened');
+        modalFormOtzivi.classList.remove('none');
+        document.body.style.overflow = 'hidden';
+        document.documentElement.style.overflow = 'hidden'; // Для html
+      });
     })
   }
 
@@ -51,14 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   }
 
-  if (document.querySelector('.anketa-close')) {
-    closeBtn = document.querySelector('.anketa-close').addEventListener('click', () => {
-      modal.classList.remove('modals_opened');
-      modalFormRepresentation.classList.add('none');
-      document.body.style.overflow = '';
-      document.documentElement.style.overflow = ''; // Для html
-    })
-  }
+
 
   if (modalFormOrder) {
     $(document).click(function (e) {
@@ -78,6 +85,8 @@ document.addEventListener('DOMContentLoaded', function () {
       if ($(e.target).is('.modals__wrapper')) {
         modal.classList.remove('modals_opened');
         modalFormRepresentation.classList.add('none');
+        modalsConnection.classList.add('none');
+        modalFormOtzivi.classList.add('none');
         document.body.style.overflow = '';
         document.documentElement.style.overflow = ''; // Для html
         clearDiv();
@@ -221,6 +230,19 @@ document.addEventListener('DOMContentLoaded', function () {
     })
   }
 
+
+  if (closeBtns) {
+    closeBtns.forEach((closeBtn) => {
+      closeBtn.addEventListener('click', () => {
+        modal.classList.remove('modals_opened');
+        modalFormRepresentation.classList.add('none');
+        modalsConnection.classList.add('none');
+        modalFormOtzivi.classList.add('none');
+        document.body.style.overflow = '';
+        document.documentElement.style.overflow = ''; // Для html
+      })
+    })
+  }
 });
 
 

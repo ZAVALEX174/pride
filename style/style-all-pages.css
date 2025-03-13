@@ -3828,7 +3828,7 @@ main {
   row-gap: 3px;
 }
 
-.our-projects-cart__btn-box > .cart__btn {
+.our-projects-cart__btn-box > .cart__btn_or {
   margin: 0;
   max-width: 188px;
   width: 100%;
