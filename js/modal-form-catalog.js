@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // const closesFormRepresentation = modalFormZakaz.querySelector('.modals-zakaz__btn');
   const openModalFormPepresentationBtn = document.querySelector('.banner__btn');
   // console.log(modalFormRepresentation, openModalFormPepresentationBtn);
+  const nonStandaetbtn = document.querySelector('.non-standard__btn');
 
   openModalFormPepresentationBtn.addEventListener('click', () => {
     modal.classList.add('modals_opened');
@@ -16,6 +17,16 @@ document.addEventListener('DOMContentLoaded', function () {
     document.body.style.overflow = 'hidden';
     document.documentElement.style.overflow = 'hidden'; // Для html
   })
+
+  if (nonStandaetbtn) {
+    nonStandaetbtn.addEventListener('click', () => {
+      modal.classList.add('modals_opened');
+      modalFormOrder.classList.remove('none');
+      addDataToForm();
+      document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflow = 'hidden'; // Для html
+    })
+  }
 
   closeBtn = document.querySelector('.anketa-close').addEventListener('click', () => {
     modal.classList.remove('modals_opened');
