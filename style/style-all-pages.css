@@ -16043,6 +16043,11 @@ video {
   overflow-y: auto;
   z-index: 1000;
 
+  @media (max-width: 480px) {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
   .filter-title {
     padding-bottom: 15px;
     font-family: 'Golos Text Medium', sans-serif;
@@ -16050,6 +16055,7 @@ video {
     font-weight: 500;
     line-height: 22px;
     text-align: left;
+    display: flex;
     /* margin-bottom: 20px;
         border-bottom: 1.5px solid var(--5); */
   }
@@ -16099,16 +16105,16 @@ video {
 
         .filter__show-content-item {
           background-color: var(--main-bg);
-          padding: 0 15px;
+          padding: 5px 15px;
           font-size: 16px;
           font-weight: 400;
-          line-height: 45px;
+          line-height: 1;
           border-radius: 15px;
           text-align: left;
           display: flex;
           align-items: center;
           justify-content: space-between;
-          height: 39px;
+          min-height: 39px;
           border: 1px solid var(--color-orange);
           transition: all 0.3s;
         }
@@ -16123,6 +16129,7 @@ video {
           width: 23px;
           height: 23px;
           cursor: pointer;
+          flex-shrink: 0;
         }
 
         .filter__show-content-item:hover {
@@ -16177,6 +16184,12 @@ video {
         background-color: var(--5);
         margin-bottom: 40px;
 
+        @media (max-width: 480px) {
+          flex-direction: column;
+          align-items: flex-start;
+          row-gap: 20px;
+        }
+
         .filter__submit-box__title {
           font-family: 'Golos Text SemiBold', sans-serif;
           font-size: 18px;
@@ -16199,6 +16212,10 @@ video {
           border: none;
           cursor: pointer;
           justify-content: center;
+
+          @media (max-width: 480px) {
+            max-width: 100%;
+          }
         }
 
         .filter__submit-box__btn:hover {
@@ -16520,6 +16537,10 @@ input[type='number'] {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 480px) {
+    width: 140px;
+  }
 
   .filters-price__text {
     font-size: 18px;
