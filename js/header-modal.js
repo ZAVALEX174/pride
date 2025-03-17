@@ -31,8 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
             headerModalOne.classList.remove('header-menu-modal-active');
             navLinkOne.classList.remove('navigation__link-active');
             headerModalThree.classList.remove('header-menu-modal3-active');
+            document.documentElement.style.overflow = "";
             document.body.style.overflow = "";
-            document.body.style.paddingRight = "";
+            document.documentElement.style.paddingRight = `0px`;
             document.querySelector('.main').classList.remove('main-overlay');
 
             if (breadcrumbsElement != null) {
@@ -44,8 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
             navLinkOne.classList.add('navigation__link-active');
             headerModalTwo.classList.remove('header-menu-modal2-active');
             headerModalThree.classList.remove('header-menu-modal3-active');
-            document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+            document.documentElement.style.overflow = "hidden";
             document.body.style.overflow = "hidden";
+            document.documentElement.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
             document.querySelector('.main').classList.add('main-overlay');
 
             if (breadcrumbsElement != null) {
@@ -66,24 +68,16 @@ document.addEventListener('DOMContentLoaded', () => {
         openModalBtnTwoLink.classList.remove('navigation__link_drd-active');
 
     });
-    // closeModalBtn.addEventListener("click", (e) => {
-    //     e.preventDefault();
-    //     navLinkOne.classList.remove('navigation__link-active');
-    //     openModalBtnOneLink.classList.remove('navigation__link_drd-active');
-    //     headerModalOne.classList.remove('header-menu-modal-active');
-    //     headerModalThree.classList.remove('header-menu-modal3-active');
-
-    //     document.body.style.overflow = "";
-    //     document.body.style.paddingRight = "";
-
-    //     document.querySelector('.main').classList.remove('main-overlay');
-    //     if (breadcrumbsElement != null) {
-    //         document.querySelector('.breadcrumbs').classList.remove('main-overlay');
-    //     }
-    // });
 
     openModalBtnTwo.addEventListener("click", (e) => {
         e.preventDefault();
+
+// получение координат кнопки меню О компании
+        const menuLinkTwo = document.querySelector('.header-menu-modal2');
+        const elementModalTwo = document.querySelector('.modal-two');
+        let xPosition = elementModalTwo.offsetLeft;
+        console.log(xPosition);
+        menuLinkTwo.style.left = `${xPosition}px`;
 
         headerModalOne.classList.remove('header-menu-modal-active');
         navLinkOne.classList.remove('navigation__link-active');
@@ -95,8 +89,9 @@ document.addEventListener('DOMContentLoaded', () => {
             openModalBtnTwoLink.classList.remove('navigation__link_drd-active');
             headerModalThree.classList.remove('header-menu-modal3-active');
 
+            document.documentElement.style.overflow = "";
             document.body.style.overflow = "";
-            document.body.style.paddingRight = "";
+            document.documentElement.style.paddingRight = `0px`;
 
             document.querySelector('.main').classList.remove('main-overlay');
             if (breadcrumbsElement != null) {
@@ -107,8 +102,9 @@ document.addEventListener('DOMContentLoaded', () => {
             headerModalTwo.classList.add('header-menu-modal2-active');
             navLinkTwo.classList.add('navigation__link-active');
             openModalBtnTwoLink.classList.add('navigation__link_drd-active');
+            document.documentElement.style.overflow = "hidden";
             document.body.style.overflow = "hidden";
-            document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+            document.documentElement.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
 
             document.querySelector('.main').classList.add('main-overlay');
             if (breadcrumbsElement != null) {
@@ -125,7 +121,6 @@ document.addEventListener('DOMContentLoaded', () => {
         headerUser.classList.remove('none');
         headerContactUs.classList.remove('none');
         headerFavorites.classList.remove('none');
-
         headerModalThree.classList.remove('header-menu-modal3-active');
     });
 
@@ -150,16 +145,17 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.header__search-form-icon').style.display = 'none';
 
         if (!headerModalThree.classList.contains('header-menu-modal3-active')) {
-            document.body.style.overflow = "hidden";
             headerModalThree.classList.add('header-menu-modal3-active');
             inputSaerch.classList.add('search__active-input');
             headerSearch.classList.add('header__search_active');
             headerLogo.classList.add('none');
             searchBtn.classList.add('search__btn_active');
+            document.documentElement.style.overflow = "hidden";
+            document.body.style.overflow = "hidden";
+            document.documentElement.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
             document.querySelector('.btn-search-reset').style.display = 'flex';
             document.querySelector('.header__search-form-icon').style.display = 'none';
         } else {
-            document.body.style.overflow = "";
             headerModalThree.classList.remove('header-menu-modal3-active');
             navLinkTwo.classList.remove('navigation__link-active');
             navLinkOne.classList.remove('navigation__link-active');
@@ -167,9 +163,12 @@ document.addEventListener('DOMContentLoaded', () => {
             openModalBtnOneLink.classList.remove('navigation__link_drd-active');
             headerModalOne.classList.remove('header-menu-modal-active');
             headerModalTwo.classList.remove('header-menu-modal2-active');
-        }
 
-        document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+
+            document.documentElement.style.overflow = "";
+            document.body.style.overflow = "";
+            document.documentElement.style.paddingRight = `0px`;
+        }
     });
 
     closeModalBtnThree.addEventListener('click', (e) => {
@@ -180,18 +179,93 @@ document.addEventListener('DOMContentLoaded', () => {
         headerSearch.classList.remove('header__search_active');
         searchBtn.classList.remove('search__btn_active');
         headerLogo.classList.remove('none');
+        document.documentElement.style.overflow = "";
         document.body.style.overflow = "";
-        document.body.style.paddingRight = "";
+        document.documentElement.style.paddingRight = `0px`;
         headerModalThree.classList.remove('header-menu-modal3-active');
         document.querySelector('.btn-search-reset').style.display = 'none';
         document.querySelector('.header__search-form-icon').style.display = 'flex';
-
 
         document.querySelector('.main').classList.remove('main-overlay');
         if (breadcrumbsElement != null) {
             document.querySelector('.breadcrumbs').classList.remove('main-overlay');
         }
+
+        document.removeEventListener('click', handleClickOutside);
     })
+
+    // закрытие по клику вне окна
+    const handleClickOutside = (event) => {
+        const isModalOneActive = headerModalOne.classList.contains('header-menu-modal-active');
+        const isModalTwoActive = headerModalTwo.classList.contains('header-menu-modal2-active');
+        const isModalThreeActive = headerModalThree.classList.contains('header-menu-modal3-active');
+
+        // Проверяем клик вне всех модалок и их триггеров
+        const isClickOutside =
+            !event.target.closest('.header-menu-modal') &&
+            !event.target.closest('.header-menu-modal2') &&
+            !event.target.closest('.header-menu-modal3') &&
+            !event.target.closest('.modal-one') &&
+            !event.target.closest('.modal-two') &&
+            !event.target.closest('.search');
+
+        if (isClickOutside) {
+            if (isModalOneActive) {
+                headerModalOne.classList.remove('header-menu-modal-active');
+                navLinkOne.classList.remove('navigation__link-active');
+                openModalBtnOneLink.classList.remove('navigation__link_drd-active');
+            }
+
+            if (isModalTwoActive) {
+                headerModalTwo.classList.remove('header-menu-modal2-active');
+                navLinkTwo.classList.remove('navigation__link-active');
+                openModalBtnTwoLink.classList.remove('navigation__link_drd-active');
+            }
+
+            if (isModalThreeActive) {
+                headerModalThree.classList.remove('header-menu-modal3-active');
+                inputSaerch.classList.remove('search__active-input');
+                headerSearch.classList.remove('header__search_active');
+                searchBtn.classList.remove('search__btn_active');
+            }
+
+            if (isModalOneActive || isModalTwoActive || isModalThreeActive) {
+                document.documentElement.style.overflow = "";
+                document.body.style.overflow = "";
+                document.documentElement.style.paddingRight = `0px`;
+                document.querySelector('.main').classList.remove('main-overlay');
+                closeModalBtnThree.style.display = 'none';
+                document.querySelector('.btn-search-reset').style.display = 'none';
+                document.querySelector('.header__search-form-icon').style.display = 'flex';
+
+                if (breadcrumbsElement) {
+                    document.querySelector('.breadcrumbs').classList.remove('main-overlay');
+                    document.documentElement.style.overflow = "";
+                    document.body.style.overflow = "";
+                    document.documentElement.style.paddingRight = `0px`;
+                }
+            }
+
+            document.documentElement.style.overflow = "";
+            document.body.style.overflow = "";
+            document.documentElement.style.paddingRight = `0px`;
+        }
+    };
+
+    // Добавляем обработчик при открытии любой модалки
+    const modals = [openModalBtnOne, openModalBtnTwo, openSearchBtn];
+    modals.forEach(modal => {
+        modal.addEventListener('click', () => {
+            document.addEventListener('click', handleClickOutside);
+        });
+    });
+
+// Удаляем обработчик при закрытии через кнопки
+    [closeModalBtnThree].forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.removeEventListener('click', handleClickOutside);
+        });
+    });
 
 
     // изменение header  
@@ -370,9 +444,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Инициализация
     const headerManager = new HeaderManager();
-
-
-
 })
 
 

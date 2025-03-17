@@ -121,7 +121,7 @@ if (filterForm) {
         inputs.forEach((el, index) => {
             el.addEventListener('change', (e) => {
                 e.preventDefault();
-                console.log(index);
+                // console.log(index);
                 setRangeSlider1(index, e.currentTarget.value);
             });
         });
@@ -219,12 +219,12 @@ if (filterForm) {
     // получаем количество пунктов в первом фильтре
     const firstFilterHidden = document.getElementById('hide-filter-first');
     let elementsfirstFilterHidden = firstFilterHidden.querySelectorAll('.option__btn');
-    console.log(elementsfirstFilterHidden.length);
+    // console.log(elementsfirstFilterHidden.length);
     const hideFilterFirstShowBtn = document.getElementById('hide-filter-first-show');
     const hideFilterFirstHiddenBtn = document.getElementById('hide-filter-first-hidden');
 
     if (elementsfirstFilterHidden.length > 5) {
-        console.log('Нас много');
+        // console.log('Нас много');
         hideFilterFirstShowBtn.classList.remove('none');
         hideFilterFirstHiddenBtn.classList.remove('none');
     }
@@ -232,12 +232,12 @@ if (filterForm) {
     // получаем количество пунктов во втором фильтре
     const secondFilterHidden = document.getElementById('hide-second-first');
     let elementssecondFilterHidden = secondFilterHidden.querySelectorAll('.option__btn');
-    console.log(elementsfirstFilterHidden.length);
+    // console.log(elementsfirstFilterHidden.length);
     const hideFilterSecondShowBtn = document.getElementById('hide-filter-second-show');
     const hideFilterSHiddenBtn = document.getElementById('hide-filter-second-hidden');
 
     if (elementssecondFilterHidden.length > 5) {
-        console.log('Нас много');
+        // console.log('Нас много');
         hideFilterSecondShowBtn.classList.remove('none');
         hideFilterSHiddenBtn.classList.remove('none');
         hideFilterSecondShowBtn.addEventListener('click', (e) => {

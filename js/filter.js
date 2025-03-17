@@ -1,7 +1,5 @@
 // аккардион
 const widgets = document.querySelectorAll('.widget.widget-height');
-// console.log(widgets);
-
 
 document.querySelector('form').addEventListener('submit', function(e) {
     e.preventDefault();
