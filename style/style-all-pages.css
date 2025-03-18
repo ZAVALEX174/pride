@@ -3852,6 +3852,8 @@ main {
         }
 
         .our-projects-cart__btn-open-modal-form {
+            transition: 0.3s ease-in;
+            background-color: var(--color-orange);
             max-width: 300px;
             width: 100%;
 
@@ -3859,6 +3861,11 @@ main {
                 max-width: 250px;
             }
         }
+        .our-projects-cart__btn-open-modal-form:hover {
+            background-color: var(--ligth-gray);
+
+        }
+
     }
 }
 
@@ -9313,6 +9320,10 @@ select {
     height: 100%;
     /*background-color: #007aff;*/
     /*z-index: 500;*/
+}
+
+.after-link-direct {
+    z-index: 10;
 }
 
 .watched-before__product-cart .products-slide:hover {
