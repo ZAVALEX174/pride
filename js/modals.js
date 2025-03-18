@@ -19,21 +19,21 @@ document.addEventListener('DOMContentLoaded', function () {
     const comPredl = document.querySelector('.other__header-btn');
 
     closeDownloadBtn.addEventListener('click', () => {
+
         modal.classList.remove('modals_opened');
         modalCatalog.classList.add('none');
         document.body.style.overflow = '';
         document.documentElement.style.overflow = ''; // Для html
-        document.documentElement.style.paddingRight = `0px`;
+        document.body.style.paddingRight = `0px`;
     })
 
     const openFormBtn = document.querySelectorAll('.benefits__desc-btn');
     openFormBtn.forEach(el => {
         el.addEventListener('click', (e) => {
             e.preventDefault();
-            document.documentElement.style.overflow = "hidden";
+            // document.documentElement.style.overflow = "hidden";
             document.body.style.overflow = "hidden";
-            document.documentElement.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
-            e.preventDefault();
+            // document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
             modal.classList.add('modals_opened');
             modalFormZakaz.classList.remove('none');
         })
@@ -42,8 +42,8 @@ document.addEventListener('DOMContentLoaded', function () {
     closesModalFormZakaz.addEventListener('click', (e) => {
         e.preventDefault();
         document.body.style.overflow = '';
-        document.documentElement.style.overflow = ''; // Для html
-        document.documentElement.style.paddingRight = `0px`;
+        // document.documentElement.style.overflow = ''; // Для html
+        document.body.style.paddingRight = `0px`;
         modal.classList.remove('modals_opened');
         modalFormZakaz.classList.add('none');
     })
@@ -54,8 +54,8 @@ document.addEventListener('DOMContentLoaded', function () {
             modal.classList.remove('modals_opened');
             modalFormZakaz.classList.add('none');
             document.body.style.overflow = '';
-            document.documentElement.style.overflow = ''; // Для html
-            document.documentElement.style.paddingRight = `0px`;
+            // document.documentElement.style.overflow = ''; // Для html
+            document.body.style.paddingRight = `0px`;
 
         }
     });

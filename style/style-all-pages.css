@@ -10583,7 +10583,7 @@ input {
 /*catalog.css*/
 .banner-catalog {
     width: 100%;
-    padding: 50px 0;
+    padding: 25px 0;
     background-color: var(--5);
 
     .banner-catalog__container {
@@ -10617,12 +10617,11 @@ input {
                     color: var(--dark-gray);
                     text-decoration: none;
                     padding-left: 35px;
-                    font-size: clamp(1.125rem, 1.081rem + 0.1878vw, 1.25rem);
+                    font-size: 16px;
                     font-weight: 400;
                     line-height: 44px;
                     text-align: left;
                     height: 44px;
-
                     transition: 0.3s ease-in;
                 }
 
@@ -10647,10 +10646,11 @@ input {
                 }
 
                 .banner-title {
+                    max-width: 520px;
                     font-family: 'GetVoIP Grotesque Regular', sans-serif;
-                    font-size: clamp(1.25rem, 1.0299rem + 0.939vw, 1.875rem);
+                    font-size: 18px;
                     font-weight: 700;
-                    line-height: 32px;
+                    line-height: 1.2;
                     text-align: left;
                     color: var(--dark-gray);
                     margin-bottom: 0;
@@ -10659,7 +10659,7 @@ input {
                         flex-direction: column;
                         align-items: center;
                         justify-content: center;
-                        margin-bottom: 40px;
+                        margin-bottom: 25px;
                     }
                 }
             }
@@ -10679,15 +10679,19 @@ input {
 
                 .banner-com-pred-wrapper__content {
                     display: flex;
-                    flex-direction: column;
                     align-items: center;
-                    max-width: 460px;
+                    max-width: 507px;
                     width: 100%;
                     text-align: center;
-                    border-radius: 40px;
-                    padding: 38px 40px;
+                    border-radius: 50px;
+                    padding: 23px 55px;
                     overflow: hidden;
                     position: relative;
+
+                    @media (max-width: 768px) {
+                        flex-direction: column;
+                        border-radius: 42px;
+                    }
 
                     .banner-com-pred-wrapper__content-img {
                         position: absolute;
@@ -10700,27 +10704,33 @@ input {
 
                     p {
                         font-family: 'GetVoIP Grotesque Regular', sans-serif;
-                        font-size: clamp(1.5rem, 1.478rem + 0.0939vw, 1.5625rem);
                         font-weight: 700;
-                        line-height: 27px;
-                        text-align: center;
-                        margin-bottom: 30px;
+                        font-size: 20px;
+                        line-height: 1.35;
+                        margin-bottom: 0;
                         color: var(--main-bg);
                         z-index: 5;
+                        text-align: left;
+
+                        @media (max-width: 768px) {
+                            text-align: center;
+                            margin-bottom: 10px;
+                        }
                     }
 
                     .banner__btn {
-                        max-width: 250px;
+                        max-width: 180px;
                         width: 100%;
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         border: 1px solid var(--main-bg);
-                        height: 50px;
-                        line-height: 50px;
+                        height: 44px;
+                        line-height: 44px;
                         font-size: 20px;
                         font-weight: 500;
                         z-index: 5;
+                        border-radius: 95px;
                     }
                 }
             }
