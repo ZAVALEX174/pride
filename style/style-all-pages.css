@@ -3861,6 +3861,7 @@ main {
                 max-width: 250px;
             }
         }
+
         .our-projects-cart__btn-open-modal-form:hover {
             background-color: var(--ligth-gray);
 
@@ -14147,6 +14148,7 @@ input {
         }
 
         .catalog-categories__body-item {
+            position: relative;
             @media (max-width: 768px) {
                 max-width: 360px;
             }
