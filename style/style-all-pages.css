@@ -11310,6 +11310,7 @@ input {
 }
 
 .catalog-categories__body-item {
+    position: relative;
     border: 1px solid #e5e5e5;
     border-radius: 30px;
     /*padding: 0px 0px 15px 0px;*/
@@ -14152,6 +14153,7 @@ input {
 
         .catalog-categories__body-item {
             position: relative;
+
             @media (max-width: 768px) {
                 max-width: 360px;
             }
