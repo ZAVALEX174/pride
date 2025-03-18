@@ -11506,6 +11506,7 @@ input {
         color: var(--dark-gray);
         justify-content: center;
         transition: 0.3s ease-in;
+        z-index: 10;
 
         @media (max-width: 768px) {
             height: 34px;

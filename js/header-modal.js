@@ -467,6 +467,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+
+    document.querySelectorAll('.cart-switch__item').forEach(item => {
+        item.addEventListener('click', function(e) {
+            const link = this.closest('.choice-slider-slide').querySelector('.after-link');
+            if (link) {
+                // Открываем ссылку в новой вкладке как при обычном клике
+                window.open(link.href, link.target || '_self');
+            }
+        });
+    });
+
     document.querySelectorAll('.other__body-item').forEach(item => {
         // Клик по основной области (кроме кнопки)
         item.addEventListener('click', function(e) {
