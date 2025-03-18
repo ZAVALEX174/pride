@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const modalFormRepresentation = modal.querySelector('.modals-form-representation');
     const closesFormRepresentation = modalFormZakaz.querySelector('.modals-zakaz__btn');
     const openModalFormPepresentationBtn = document.querySelector('.swiper-filter-on__header-link');
+    let scrollBarClient = document.documentElement.clientWidth;
+    let scrollBarAll = window.innerWidth;
 
 
     const comPredl = document.querySelector('.other__header-btn');
@@ -19,13 +21,18 @@ document.addEventListener('DOMContentLoaded', function () {
     closeDownloadBtn.addEventListener('click', () => {
         modal.classList.remove('modals_opened');
         modalCatalog.classList.add('none');
-        document.body.style.overflow = ' ';
+        document.body.style.overflow = '';
+        document.documentElement.style.overflow = ''; // Для html
+        document.documentElement.style.paddingRight = `0px`;
     })
 
     const openFormBtn = document.querySelectorAll('.benefits__desc-btn');
     openFormBtn.forEach(el => {
         el.addEventListener('click', (e) => {
-            document.body.style.overflow = 'hidden';
+            e.preventDefault();
+            document.documentElement.style.overflow = "hidden";
+            document.body.style.overflow = "hidden";
+            document.documentElement.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
             e.preventDefault();
             modal.classList.add('modals_opened');
             modalFormZakaz.classList.remove('none');
@@ -35,6 +42,8 @@ document.addEventListener('DOMContentLoaded', function () {
     closesModalFormZakaz.addEventListener('click', (e) => {
         e.preventDefault();
         document.body.style.overflow = '';
+        document.documentElement.style.overflow = ''; // Для html
+        document.documentElement.style.paddingRight = `0px`;
         modal.classList.remove('modals_opened');
         modalFormZakaz.classList.add('none');
     })
@@ -46,6 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
             modalFormZakaz.classList.add('none');
             document.body.style.overflow = '';
             document.documentElement.style.overflow = ''; // Для html
+            document.documentElement.style.paddingRight = `0px`;
 
         }
     });

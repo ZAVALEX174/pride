@@ -256,6 +256,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const modals = [openModalBtnOne, openModalBtnTwo, openSearchBtn];
     modals.forEach(modal => {
         modal.addEventListener('click', () => {
+            e.preventDefault();
             document.addEventListener('click', handleClickOutside);
         });
     });
@@ -449,6 +450,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('.cart-switch__item').forEach(item => {
         item.addEventListener('click', function(e) {
+            e.preventDefault();
             const link = this.closest('.catalog-categories__body-item').querySelector('.after-link');
             if (link) {
                 // Открываем ссылку в новой вкладке как при обычном клике
@@ -459,6 +461,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('.cart-switch__item').forEach(item => {
         item.addEventListener('click', function(e) {
+            e.preventDefault();
             const link = this.closest('.swiper-slide').querySelector('.after-link');
             if (link) {
                 // Открываем ссылку в новой вкладке как при обычном клике
@@ -470,6 +473,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('.cart-switch__item').forEach(item => {
         item.addEventListener('click', function(e) {
+            e.preventDefault();
             const link = this.closest('.choice-slider-slide').querySelector('.after-link');
             if (link) {
                 // Открываем ссылку в новой вкладке как при обычном клике
@@ -481,6 +485,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.other__body-item').forEach(item => {
         // Клик по основной области (кроме кнопки)
         item.addEventListener('click', function(e) {
+            e.preventDefault();
             // Проверяем, не кликнули ли мы по кнопке
             if(!e.target.closest('.other__body-cart-btn')) {
                 const link = this.querySelector('.after-link');
@@ -503,6 +508,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.categories__body-swiper-content-slider-slide').forEach(item => {
         // Клик по основной области (кроме кнопки)
         item.addEventListener('click', function(e) {
+            e.preventDefault();
             // Проверяем, не кликнули ли мы по кнопке
             if(!e.target.closest('.categories__body-cart-btn')) {
                 const link = this.querySelector('.after-link');
@@ -516,6 +522,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const btn = item.querySelector('.categories__body-cart-btn');
         if(btn) {
             btn.addEventListener('click', function(e) {
+                e.preventDefault();
                 e.stopPropagation(); // Останавливаем всплытие
                 window.open(this.href, this.target || '_self');
             });
@@ -525,6 +532,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.work__body-swiper-content-slider-slide').forEach(item => {
         // Клик по основной области (кроме кнопки)
         item.addEventListener('click', function(e) {
+            e.preventDefault();
             // Проверяем, не кликнули ли мы по кнопке
             if(!e.target.closest('.work__body-cart-btn')) {
                 const link = this.querySelector('.after-link');
@@ -547,6 +555,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.our-projects-slide.gray').forEach(item => {
         // Клик по основной области (кроме кнопки)
         item.addEventListener('click', function(e) {
+            e.preventDefault();
             // Проверяем, не кликнули ли мы по кнопке
             if(!e.target.closest('.our-projects-cart__btn-details') && !e.target.closest('.cart__btn_progects.our-projects-cart__btn')) {
                 const link = this.querySelector('.after-link');

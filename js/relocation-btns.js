@@ -20,13 +20,11 @@ if (workBodySwiperContentBox) {
   workBodySwiperContentBox.insertAdjacentHTML("afterBegin", `<div id="workBodyItemImg" class="swiper-slide work__body-swiper-content-slider-slide work__body-item_img">
                   <div class="work__body-item">
                     <h3 class="work__body-cart-title work__body-cart-title_img">
-                      Подбор установки по характеристикам
+                      Подбор установки
                     </h3>
-                    <a
-                      href="#"
-                      class="btn work__body-cart-btn work__body-cart-btn_hover-block">
-                      Подобрать
-                    </a>
+                    <button class="btn work__body-cart-btn work__body-cart-btn_hover-block">
+                      Заявка
+                    </button>
                   </div>
                 </div>
 <a href="catalog.html" class="work__header-link" id="workHeaderLink">Каталог</a>
