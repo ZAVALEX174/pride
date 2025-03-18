@@ -444,6 +444,114 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Инициализация
     const headerManager = new HeaderManager();
+
+
+
+    document.querySelectorAll('.cart-switch__item').forEach(item => {
+        item.addEventListener('click', function(e) {
+            const link = this.closest('.swiper-slide').querySelector('.after-link');
+            if (link) {
+                // Открываем ссылку в новой вкладке как при обычном клике
+                window.open(link.href, link.target || '_self');
+            }
+        });
+    });
+
+    document.querySelectorAll('.other__body-item').forEach(item => {
+        // Клик по основной области (кроме кнопки)
+        item.addEventListener('click', function(e) {
+            // Проверяем, не кликнули ли мы по кнопке
+            if(!e.target.closest('.other__body-cart-btn')) {
+                const link = this.querySelector('.after-link');
+                if(link && link.href !== '#') {
+                    window.open(link.href, link.target || '_self');
+                }
+            }
+        });
+
+        // Клик по кнопке "Перейти"
+        const btn = item.querySelector('.other__body-cart-btn');
+        if(btn) {
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation(); // Останавливаем всплытие
+                window.open(this.href, this.target || '_self');
+            });
+        }
+    });
+
+    document.querySelectorAll('.categories__body-swiper-content-slider-slide').forEach(item => {
+        // Клик по основной области (кроме кнопки)
+        item.addEventListener('click', function(e) {
+            // Проверяем, не кликнули ли мы по кнопке
+            if(!e.target.closest('.categories__body-cart-btn')) {
+                const link = this.querySelector('.after-link');
+                if(link && link.href !== '#') {
+                    window.open(link.href, link.target || '_self');
+                }
+            }
+        });
+
+        // Клик по кнопке "Перейти"
+        const btn = item.querySelector('.categories__body-cart-btn');
+        if(btn) {
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation(); // Останавливаем всплытие
+                window.open(this.href, this.target || '_self');
+            });
+        }
+    });
+
+    document.querySelectorAll('.work__body-swiper-content-slider-slide').forEach(item => {
+        // Клик по основной области (кроме кнопки)
+        item.addEventListener('click', function(e) {
+            // Проверяем, не кликнули ли мы по кнопке
+            if(!e.target.closest('.work__body-cart-btn')) {
+                const link = this.querySelector('.after-link');
+                if(link && link.href !== '#') {
+                    window.open(link.href, link.target || '_self');
+                }
+            }
+        });
+
+        // Клик по кнопке "Перейти"
+        const btn = item.querySelector('.work__body-cart-btn');
+        if(btn) {
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation(); // Останавливаем всплытие
+                window.open(this.href, this.target || '_self');
+            });
+        }
+    });
+
+    document.querySelectorAll('.our-projects-slide.gray').forEach(item => {
+        // Клик по основной области (кроме кнопки)
+        item.addEventListener('click', function(e) {
+            // Проверяем, не кликнули ли мы по кнопке
+            if(!e.target.closest('.our-projects-cart__btn-details') && !e.target.closest('.cart__btn_progects.our-projects-cart__btn')) {
+                const link = this.querySelector('.after-link');
+                if(link && link.href !== '#') {
+                    window.open(link.href, link.target || '_self');
+                }
+            }
+        });
+
+        // Клик по кнопке "Перейти"
+        const btn = item.querySelector('.our-projects-cart__btn-details');
+        if(btn) {
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation(); // Останавливаем всплытие
+                window.open(this.href, this.target || '_self');
+            });
+        }
+
+        const btn2 = item.querySelector('.cart__btn_progects.our-projects-cart__btn');
+        if(btn2) {
+            btn2.addEventListener('click', function(e) {
+                e.stopPropagation(); // Останавливаем всплытие
+                window.open(this.href, this.target || '_self');
+            });
+        }
+    });
 })
 
 
