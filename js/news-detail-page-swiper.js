@@ -1,5 +1,6 @@
 var swiper = new Swiper(".news-d-swiper", {
     cssMode: true,
+    centeredSlides: true,
     slidesPerView: 1.13,
     spaceBetween: 7,
     navigation: {
