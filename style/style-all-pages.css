@@ -5679,6 +5679,7 @@ label[for='user-email'] {
     line-height: 30px;
     color: var(--dark-gray);
     transition: 0.3s ease-in;
+    z-index: 10;
 
     @media (max-width: 1280px) {
         grid-area: news-read;
