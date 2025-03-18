@@ -449,6 +449,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelectorAll('.cart-switch__item').forEach(item => {
         item.addEventListener('click', function(e) {
+            const link = this.closest('.catalog-categories__body-item').querySelector('.after-link');
+            if (link) {
+                // Открываем ссылку в новой вкладке как при обычном клике
+                window.open(link.href, link.target || '_self');
+            }
+        });
+    });
+
+    document.querySelectorAll('.cart-switch__item').forEach(item => {
+        item.addEventListener('click', function(e) {
             const link = this.closest('.swiper-slide').querySelector('.after-link');
             if (link) {
                 // Открываем ссылку в новой вкладке как при обычном клике
