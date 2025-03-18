@@ -12828,6 +12828,7 @@ input {
     padding: 84px 0 90px 0;
 
     .swiper-slide {
+        position: relative;
         max-width: 430px;
         height: 453px;
         border-radius: 30px;
