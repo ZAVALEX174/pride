@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const openModalFormOtziviBtns = document.querySelectorAll('.our-projects-cart__btn-open-modal-form');
 
     const modalFormRepresentation = document.getElementById('modal-payment');
+    const modalFormApplication = document.getElementById('modal-application');
     const modalReset = modal.querySelector('.modal-reset');
     const modalResetBtn = modal.querySelector('.modal-reset__btn');
     const closeModalResetBtn = modal.querySelector('.modal-reset__close');
@@ -49,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
         openModalFormPepresentationBtn.addEventListener('click', (e) => {
             e.preventDefault();
             modal.classList.add('modals_opened');
-            modalFormRepresentation.classList.remove('none');
+            modalFormApplication.classList.remove('none');
             document.documentElement.style.overflow = "hidden";
             document.body.style.overflow = "hidden";
             document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
@@ -251,7 +252,7 @@ document.addEventListener('DOMContentLoaded', function () {
             cardBtn.addEventListener('click', (e) => {
                 e.preventDefault();
                 modal.classList.add('modals_opened');
-                modalFormRepresentation.classList.remove('none');
+                modalFormApplication.classList.remove('none');
                 document.documentElement.style.overflow = "hidden";
                 document.body.style.overflow = "hidden";
                 document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
@@ -279,6 +280,7 @@ document.addEventListener('DOMContentLoaded', function () {
             closeBtn.addEventListener('click', () => {
                 modal.classList.remove('modals_opened');
                 modalFormRepresentation.classList.add('none');
+                modalFormApplication.classList.add('none');
                 modalsConnection.classList.add('none');
                 modalFormOtzivi.classList.add('none');
                 document.body.style.overflow = '';
