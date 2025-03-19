@@ -10587,6 +10587,8 @@ input {
     background-color: var(--5);
 
     .banner-catalog__container {
+        max-width: 1161px;
+
         .banner-content-box {
             width: 100%;
             display: flex;
@@ -10940,7 +10942,7 @@ input {
 }
 
 .categories__header.catalog-categories__header {
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 
     @media (max-width: 800px) {
         flex-direction: column-reverse;
@@ -11587,7 +11589,8 @@ input {
 }
 
 .catalog-categories__container {
-    max-width: 1362px;
+    /*max-width: 1362px;*/
+    max-width: 1162px;
 }
 
 .catalog-menu__header-title {
