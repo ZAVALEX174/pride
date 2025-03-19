@@ -26,6 +26,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const workZakazBtns = document.querySelectorAll('.work__body-cart-btn_hover-block');
 
+    const openModalNonStandart = document.querySelector('.non-standard__btn');
+
     let scrollBarClient = document.documentElement.clientWidth;
     let scrollBarAll = window.innerWidth;
 
@@ -44,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     if (openModalFormPepresentationBtn) {
-        openModalFormPepresentationBtn.addEventListener('click', () => {
+        openModalFormPepresentationBtn.addEventListener('click', (e) => {
             e.preventDefault();
             modal.classList.add('modals_opened');
             modalFormRepresentation.classList.remove('none');
@@ -68,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     if (nonStandaetbtn && modalFormOrder) {
-        nonStandaetbtn.addEventListener('click', () => {
+        nonStandaetbtn.addEventListener('click', (e) => {
             e.preventDefault();
             modal.classList.add('modals_opened');
             modalFormOrder.classList.remove('none');
@@ -201,15 +203,18 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    const filterBlock = document.querySelector('.filter-container');
+
     if (openBtnFormOrder && modalFormOrder) {
         openBtnFormOrder.addEventListener('click', (e) => {
-            e.preventDefault();
-            modal.classList.add('modals_opened');
-            modalFormOrder.classList.remove('none');
-            addDataToForm();
-            document.documentElement.style.overflow = "hidden";
-            document.body.style.overflow = "hidden";
-            document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+            filterBlock.classList.remove('filter-container-active');
+            // Исправленная часть
+            let cardsList = document.querySelectorAll('.categories__body-list.catalog-categories__body-list');
+            cardsList.forEach(card => {
+                let li = document.createElement('li');
+                li.textContent = "Добавленный элемент";
+                card.prepend(li); // Добавляем к текущему элементу card
+            });
         });
 
         closeBtnOther = document.querySelector('.modals-form-order-close').addEventListener('click', () => {
@@ -281,6 +286,28 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.body.style.paddingRight = `0px`;
             })
         })
+    }
+
+    if (openModalNonStandart && modalFormOrder) {
+        openModalNonStandart.addEventListener('click', (e) => {
+            e.preventDefault();
+            modal.classList.add('modals_opened');
+            modalFormOrder.classList.remove('none');
+            addDataToForm();
+            document.documentElement.style.overflow = "hidden";
+            document.body.style.overflow = "hidden";
+            document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+        });
+
+        closeBtnOther = document.querySelector('.modals-form-order-close').addEventListener('click', () => {
+            modal.classList.remove('modals_opened');
+            modalFormOrder.classList.add('none');
+            document.body.style.overflow = '';
+            document.documentElement.style.overflow = ''; // Для html
+            document.body.style.paddingRight = `0px`;
+            clearDiv();
+        })
+
     }
 });
 

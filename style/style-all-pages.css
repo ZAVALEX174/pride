@@ -9507,11 +9507,30 @@ video {
     padding: 0;
     margin: 0;
     margin-bottom: 23px;
+
+    b {
+        font-weight: bold;
+    }
+
+    p {
+        margin-bottom: 23px;
+    }
+
+    ul {
+        padding-left: 20px;
+        list-style-type: inherit;
+
+        li {
+
+        }
+    }
 }
 
 .info-content-box__left-pg:last-child,
 .info-content-box__right-pg:last-child {
-    margin-bottom: 0;
+    p {
+        margin-bottom: 0;
+    }
 }
 
 .accordion {
@@ -10943,15 +10962,45 @@ input {
 
 .categories__header.catalog-categories__header {
     margin-bottom: 60px;
+    flex-direction: row-reverse;
 
     @media (max-width: 800px) {
-        flex-direction: column-reverse;
+        flex-direction: column;
+    }
+
+    .catalog-categories__header-btn-box {
+        border: 1px solid #ddd;
+        border-radius: 57px;
+        padding: 0 50px;
+        max-width: 372px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        @media (max-width: 425px) {
+            max-width: 400px;
+            width: 100%;
+            padding: 0 20px;
+        }
     }
 
     .categories__btn {
         background: transparent;
+        font-weight: 500;
         font-size: 18px;
-        order: 1;
+        height: 50px;
+        line-height: 50px;
+        border: none;
+        outline: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .catalog-categories__btn-count {
+        text-align: center;
+        color: var(--color-orange);
     }
 }
 
