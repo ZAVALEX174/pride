@@ -5097,12 +5097,18 @@ label[for='user-email'] {
     }
 }
 
+.form-row3 {
+    @media (max-width: 600px) {
+        margin-bottom: 36px;
+    }
+}
+
 .column1,
 .column2 {
     position: relative;
     display: flex;
     flex-direction: column;
-    max-width: 300px;
+    max-width: 100%;
     width: 100%;
 
     @media (max-width: 899px) {
@@ -5120,17 +5126,17 @@ label[for='user-email'] {
     }
 }
 
-.column1__wrap::after,
-.column2__wrap::after {
-    position: absolute;
-    content: '';
-    top: 58%;
-    right: 16px;
-    width: 19px;
-    height: 13px;
-    background: url('../images/form/arr.svg') no-repeat center/contain;
-    pointer-events: none;
-}
+/*.column1__wrap::after,*/
+/*.column2__wrap::after {*/
+/*    position: absolute;*/
+/*    content: '';*/
+/*    top: 58%;*/
+/*    right: 16px;*/
+/*    width: 19px;*/
+/*    height: 13px;*/
+/*    background: url('../images/form/arr.svg') no-repeat center/contain;*/
+/*    pointer-events: none;*/
+/*}*/
 
 .form-right {
     max-width: 440px;
@@ -10483,9 +10489,26 @@ input,
 .form-representation__form
 .form-left
 .form-row2
-.column2
+.column2,
+.form-representation-light
+.form-representation__container
+.form-representation__form
+.form-left
+.form-row3
+.column1
 input {
     color: var(--dark-gray);
+}
+
+.form-representation-light
+.form-representation__container
+.form-representation__form
+.form-left
+.form-row3
+.column1
+input {
+    border: 1px solid rgba(174, 174, 174, 1);
+    background-color: rgba(217, 217, 217, 1);
 }
 
 .form-representation-light .form-representation__container .column1 .select,

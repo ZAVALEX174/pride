@@ -255,7 +255,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Добавляем обработчик при открытии любой модалки
     const modals = [openModalBtnOne, openModalBtnTwo, openSearchBtn];
     modals.forEach(modal => {
-        modal.addEventListener('click', () => {
+        modal.addEventListener('click', (e) => {
             e.preventDefault();
             document.addEventListener('click', handleClickOutside);
         });
