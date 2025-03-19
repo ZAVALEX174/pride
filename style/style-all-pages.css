@@ -7451,7 +7451,7 @@ label[for='user-email'] {
 
 .left-one input,
 .left-two input,
-.right-two input {
+.right-two input, .right-one input {
     margin: 0;
     background: rgba(217, 217, 217, 1);
     color: var(--dark-gray);
@@ -7460,6 +7460,7 @@ label[for='user-email'] {
 }
 
 .left-one input:focus,
+.right-one input:focus,
 .left-two input:focus,
 .right-two input:focus,
 .form-left .form-row3 .column1 select:focus {
