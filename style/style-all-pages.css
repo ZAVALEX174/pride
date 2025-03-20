@@ -13974,7 +13974,7 @@ input {
 
 .dealers-list {
     width: 100%;
-    padding: 40px 50px 60px 50px;
+    padding: 40px 0 60px 0;
     box-sizing: border-box;
     border-bottom: 1px solid rgb(229, 229, 229);
     background: rgb(255, 255, 255);
@@ -13999,9 +13999,44 @@ input {
             width: 100%;
 
             .dealers-list__list {
+                display: grid;
+                column-gap: 20px;
+                row-gap: 40px;
+                grid-template-columns: repeat(4, minmax(280px, 1fr));
+                grid-template-areas: "c1 c2 c3 c4"
+                "c5 c6 c7 c8"
+                "c9 c9 c10 c10";
 
+                @media (max-width: 1280px) {
+                    grid-template-columns: repeat(6, 1fr);
+                    grid-template-areas: "c1 c1 c2 c2 c3 c3"
+                    "c4 c4 c5 c5 c6 c6"
+                    "c7 c7 c8 c8 . ."
+                    "c9 c9 c9 c10 c10 c10";
+                }
+
+                @media (max-width: 1024px) {
+                    grid-template-columns: repeat(2, 320px);
+                    justify-content: center;
+                    grid-template-areas: "c1 c2"
+                    "c3 c4"
+                    "c5 c6"
+                    "c7 c8"
+                    "c9 c9"
+                    "c10 c10";
+                }
+
+                @media (max-width: 768px) {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                }
 
                 .dealers-list__item {
+                    /*max-width: 320px;*/
+                    /*width: 100%;*/
+                    max-width: 100%;
+                    min-height: 290px;
                     border: 1px solid rgb(229, 229, 229);
                     border-radius: 15px;
                     background: rgb(254, 254, 254);
@@ -14009,6 +14044,12 @@ input {
                     flex-direction: column;
                     padding: 30px 18px;
                     transition: 0.3s ease-in;
+
+                    @media (max-width: 768px) {
+                        max-width: 660px;
+                        width: 100%;
+                        border: 1px solid var(--color-orange);
+                    }
 
                     .dealers-list__item-header {
                         padding-bottom: 19px;
@@ -14072,12 +14113,46 @@ input {
                         line-height: 22px;
                         text-align: left;
                         transition: 0.3s ease-in;
+                        overflow-wrap: break-word;
                     }
 
                     .dealers-list__item-body-link:hover {
                         color: var(--color-orange);
                     }
                 }
+
+                .dealers-list__item:nth-of-type(1) {
+                    grid-area: c1;
+                }
+
+                .dealers-list__item:nth-of-type(2) {
+                    grid-area: c2;
+                }
+
+                .dealers-list__item:nth-of-type(3) {
+                    grid-area: c3;
+                }
+
+                .dealers-list__item:nth-of-type(4) {
+                    grid-area: c4;
+                }
+
+                .dealers-list__item:nth-of-type(5) {
+                    grid-area: c5;
+                }
+
+                .dealers-list__item:nth-of-type(6) {
+                    grid-area: c6;
+                }
+
+                .dealers-list__item:nth-of-type(7) {
+                    grid-area: c7;
+                }
+
+                .dealers-list__item:nth-of-type(8) {
+                    grid-area: c8;
+                }
+
 
                 .dealers-list__item:hover {
                     border: 1px solid var(--color-orange);
@@ -14087,6 +14162,26 @@ input {
                     display: flex;
                     flex-direction: row;
                     align-items: center;
+
+                    @media (max-width: 768px) {
+                        flex-direction: column;
+                    }
+                }
+
+                .dealers-list__item.dealers-list__item_horizontal:nth-last-of-type(2) {
+                    /*max-width: 660px;*/
+                    /*width: 100%;*/
+                    max-width: 100%;
+                    min-height: 180px;
+                    grid-area: c9;
+                }
+
+                .dealers-list__item.dealers-list__item_horizontal:nth-last-of-type(1) {
+                    /*max-width: 660px;*/
+                    /*width: 100%;*/
+                    max-width: 100%;
+                    min-height: 180px;
+                    grid-area: c10;
                 }
             }
         }
