@@ -13972,6 +13972,127 @@ input {
     }
 }
 
+.dealers-list {
+    width: 100%;
+    padding: 40px 50px 60px 50px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(229, 229, 229);
+    background: rgb(255, 255, 255);
+
+    .dealers-list__container {
+
+        .dealers-list__title {
+            text-align: center;
+            color: var(--dark-gray);
+            font-family: 'GetVoIP Grotesque Regular', sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 40px;
+            margin-bottom: 50px;
+
+            @media (max-width: 1280px) {
+                font-size: clamp(1.250rem, 1.326vw + 0.939rem, 2rem);
+            }
+        }
+
+        .dealers-list__box {
+            width: 100%;
+
+            .dealers-list__list {
+
+
+                .dealers-list__item {
+                    border: 1px solid rgb(229, 229, 229);
+                    border-radius: 15px;
+                    background: rgb(254, 254, 254);
+                    display: flex;
+                    flex-direction: column;
+                    padding: 30px 18px;
+                    transition: 0.3s ease-in;
+
+                    .dealers-list__item-header {
+                        padding-bottom: 19px;
+                        border-bottom: 1px solid rgb(229, 229, 229);
+                        margin-bottom: 20px;
+
+                        .dealers-list__item-header-title {
+                            color: var(--dark-gray);
+                            font-family: 'Golos Text Medium', sans-serif;
+                            font-size: 17px;
+                            font-weight: 500;
+                            line-height: 23px;
+                            text-align: left;
+                            margin-bottom: 15px;
+                        }
+
+                        .dealers-list__item-header-subtitle {
+                            color: rgb(118, 118, 118);
+                            font-family: 'Golos Text Regular', sans-serif;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 23px;
+                            text-align: left;
+                        }
+                    }
+
+                    .dealers-list__item-body {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 30px;
+
+                        .dealers-list__item-body-call {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                        }
+
+                        .dealers-list__item-body-email {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                        }
+                    }
+
+                    .dealers-list__item-body-title {
+                        color: var(--color-orange);
+                        font-family: 'Golos Text Medium', sans-serif;
+                        font-size: 17px;
+                        font-weight: 500;
+                        line-height: 23px;
+                        text-align: left;
+                        margin-bottom: 15px;
+                    }
+
+                    .dealers-list__item-body-link {
+                        color: var(--dark-gray);
+                        font-family: 'Golos Text Regular', sans-serif;
+                        font-size: 17px;
+                        font-weight: 400;
+                        line-height: 22px;
+                        text-align: left;
+                        transition: 0.3s ease-in;
+                    }
+
+                    .dealers-list__item-body-link:hover {
+                        color: var(--color-orange);
+                    }
+                }
+
+                .dealers-list__item:hover {
+                    border: 1px solid var(--color-orange);
+                }
+
+                .dealers-list__item.dealers-list__item_horizontal .dealers-list__item-body {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
+
 /*favorites-page.css*/
 .favourite-section-body__container {
     max-width: 1188px;
