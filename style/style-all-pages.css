@@ -4771,6 +4771,13 @@ main {
     @media (max-width: 480px) {
         top: 188px;
         left: 462px;
+
+    }
+}
+
+.pointer-events-map {
+    @media (max-width: 1024px) {
+        pointer-events: none;
     }
 }
 
