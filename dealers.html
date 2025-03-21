@@ -1862,21 +1862,21 @@
         <div class="container geografhy__container">
             <div class="geografhy__body">
                 <picture>
+                    <!-- Мобильная версия (ширина экрана до 767px) -->
+                    <source
+                            srcset="images/maps/maps_mob.png"
+                            type="image/png"
+                            media="(max-width: 767px)"/>
+
                     <!-- Десктопная версия (ширина экрана от 768px) -->
                     <source
                             srcset="images/maps/maps.png"
                             type="image/png"
                             media="(min-width: 768px)"/>
 
-                    <!-- Мобильная версия (ширина экрана до 767px) -->
-<!--                    <source-->
-<!--                            srcset="images/catalog/catalog-menu-banner-mob.webp"-->
-<!--                            type="image/webp"-->
-<!--                            media="(max-width: 767px)"/>-->
-
                     <!-- Фолбэк для браузеров без поддержки WebP -->
                     <img
-                            src="images/maps/maps.png"
+                            src="images/maps/maps.png1"
                             alt="Описание изображения"
                             loading="lazy"/>
                 </picture>

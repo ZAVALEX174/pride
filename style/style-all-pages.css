@@ -4608,6 +4608,10 @@ main {
     @media (max-width: 1024px) {
         margin-bottom: 100px;
     }
+
+    @media (max-width: 768px) {
+        margin-bottom: 40px;
+    }
 }
 
 .geografhy__wrapper {
@@ -4776,7 +4780,11 @@ main {
 }
 
 .pointer-events-map {
+    cursor: pointer;
+
     @media (max-width: 1024px) {
+        cursor: inherit;
+        display: none;
         pointer-events: none;
     }
 }
@@ -4885,6 +4893,7 @@ main {
     background: var(--dark-gray);
     outline: none;
     border: none;
+    cursor: pointer;
 }
 
 .form-representation {
@@ -13976,6 +13985,37 @@ input {
 
     .form-representation__subtitle {
         margin-bottom: 35px;
+    }
+}
+
+/*.geografhy.dealers__geografhy .geografhy__body {*/
+.geografhy__body {
+    width: 100%;
+    position: relative;
+    height: auto;
+
+    picture {
+        display: block;
+        width: 100%;
+        /*height: 328px;*/
+
+        @media (max-width: 480px) {
+            height: 150px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+
+}
+
+/*.geografhy.dealers__geografhy .container.geografhy__container {*/
+.container.geografhy__container {
+    @media (max-width: 768px) {
+        padding: 0 20px;
     }
 }
 
