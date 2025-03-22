@@ -31,9 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
             headerModalOne.classList.remove('header-menu-modal-active');
             navLinkOne.classList.remove('navigation__link-active');
             headerModalThree.classList.remove('header-menu-modal3-active');
-            document.documentElement.style.overflow = "";
+            // document.documentElement.style.overflow = "";
             document.body.style.overflow = "";
-            document.documentElement.style.paddingRight = `0px`;
+            document.body.style.paddingRight = `0px`;
             document.querySelector('.main').classList.remove('main-overlay');
 
             if (breadcrumbsElement != null) {
@@ -45,9 +45,9 @@ document.addEventListener('DOMContentLoaded', () => {
             navLinkOne.classList.add('navigation__link-active');
             headerModalTwo.classList.remove('header-menu-modal2-active');
             headerModalThree.classList.remove('header-menu-modal3-active');
-            document.documentElement.style.overflow = "hidden";
+            // document.documentElement.style.overflow = "hidden";
             document.body.style.overflow = "hidden";
-            document.documentElement.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+            // document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
             document.querySelector('.main').classList.add('main-overlay');
 
             if (breadcrumbsElement != null) {
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
             openModalBtnTwoLink.classList.remove('navigation__link_drd-active');
             headerModalThree.classList.remove('header-menu-modal3-active');
 
-            document.documentElement.style.overflow = "";
+            // document.documentElement.style.overflow = "";
             document.body.style.overflow = "";
             document.documentElement.style.paddingRight = `0px`;
 
@@ -102,9 +102,9 @@ document.addEventListener('DOMContentLoaded', () => {
             headerModalTwo.classList.add('header-menu-modal2-active');
             navLinkTwo.classList.add('navigation__link-active');
             openModalBtnTwoLink.classList.add('navigation__link_drd-active');
-            document.documentElement.style.overflow = "hidden";
+            // document.documentElement.style.overflow = "hidden";
             document.body.style.overflow = "hidden";
-            document.documentElement.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+            // document.documentElement.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
 
             document.querySelector('.main').classList.add('main-overlay');
             if (breadcrumbsElement != null) {
