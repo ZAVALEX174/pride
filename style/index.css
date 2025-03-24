@@ -12,11 +12,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /*outline: 1px solid red !important;*/
 }
 
 *::before,
 *::after {
   box-sizing: inherit;
+  /*outline: 1px solid red !important;*/
 }
 
 html {

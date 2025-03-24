@@ -1916,6 +1916,10 @@ main {
     height: 90px;
     border-radius: 100%;
     z-index: 1;
+
+    @media (max-width: 1280px) {
+        left: 25%;
+    }
 }
 
 .products__body-content
@@ -2697,6 +2701,10 @@ main {
     height: 90px;
     border-radius: 100%;
     z-index: 1;
+
+    @media (max-width: 1280px) {
+        left: 25%;
+    }
 }
 
 .categories__body-swiper
@@ -2710,6 +2718,10 @@ main {
     height: 90px;
     border-radius: 100%;
     z-index: 1;
+
+    @media (max-width: 1280px) {
+        left: 25%;
+    }
 }
 
 .categories__body-swiper
@@ -3290,6 +3302,10 @@ main {
     height: 90px;
     border-radius: 100%;
     z-index: 1;
+
+    @media (max-width: 1280px) {
+        left: 25%;
+    }
 }
 
 .work__body-swiper-btn-next::before {
@@ -3302,6 +3318,10 @@ main {
     height: 90px;
     border-radius: 100%;
     z-index: 1;
+
+    @media (max-width: 1280px) {
+        left: 25%;
+    }
 }
 
 
@@ -3629,6 +3649,10 @@ main {
     height: 90px;
     border-radius: 100%;
     z-index: 1;
+
+    @media (max-width: 1280px) {
+        left: 25%;
+    }
 }
 
 .other-prev__btn:hover,
@@ -3710,6 +3734,10 @@ main {
     height: 90px;
     border-radius: 100%;
     z-index: 1;
+
+    @media (max-width: 1280px) {
+        left: 25%;
+    }
 }
 
 .other-next__btn:hover::after {
@@ -4585,11 +4613,11 @@ main {
 
 .geografhy {
     width: 100%;
-    padding: 103px 0 62px;
+    padding: 103px 0 0px;
     background-color: var(--main-bg);
 
     @media (max-width: 1024px) {
-        padding: 87px 0 70px;
+        padding: 87px 0 0px;
     }
 }
 
@@ -4606,12 +4634,12 @@ main {
     justify-content: space-between;
 
     @media (max-width: 1024px) {
-        margin-bottom: 100px;
-    }
-
-    @media (max-width: 768px) {
         margin-bottom: 40px;
     }
+
+    /*@media (max-width: 768px) {*/
+    /*    margin-bottom: 40px;*/
+    /*}*/
 }
 
 .geografhy__wrapper {
@@ -4718,65 +4746,140 @@ main {
     width: 100%;
     position: relative;
 
-    @media (max-width: 899px) {
-        overflow-x: auto;
-        height: auto;
-    }
+    /*@media (max-width: 899px) {*/
+    /*    overflow-x: auto;*/
+    /*    height: auto;*/
+    /*}*/
 
-    @media (max-width: 480px) {
-        overflow-x: auto;
-        height: 328px;
+    /*@media (max-width: 480px) {*/
+    /*    overflow-x: auto;*/
+    /*    height: 328px;*/
 
-        img {
-            width: 1005px;
-            height: 328px;
-        }
-    }
+    /*    img {*/
+    /*        width: 1005px;*/
+    /*        height: 328px;*/
+    /*    }*/
+    /*}*/
 }
 
 .msk {
     position: absolute;
-    top: 27.5%;
-    left: 45.5%;
-
-    @media (max-width: 480px) {
-        top: 71px;
-        left: 457px;
-    }
+    top: 13.7%;
+    left: 56.4%;
+    color: var(--color-orange);
+    transition: 0.3s ease-in;
 }
 
-.sev-am {
-    position: absolute;
-    top: 27%;
-    left: 11%;
-
-    @media (max-width: 480px) {
-        top: 66px;
-        left: 108px;
-    }
+.msk:hover {
+    color: var(--dark-gray);
 }
 
-.souts-am {
+.spb {
     position: absolute;
-    top: 59%;
-    left: 20%;
-
-    @media (max-width: 480px) {
-        top: 196px;
-        left: 198px;
-    }
+    top: 11%;
+    left: 52.5%;
+    color: var(--color-orange);
+    transition: 0.3s ease-in;
 }
 
-.afr {
+.spb:hover {
+    color: var(--dark-gray);
+}
+
+.torun {
     position: absolute;
-    top: 57%;
-    left: 46%;
+    top: 16.5%;
+    left: 50.7%;
+    color: var(--color-orange);
+    transition: 0.3s ease-in;
+}
 
-    @media (max-width: 480px) {
-        top: 188px;
-        left: 462px;
+.torun:hover {
+    color: var(--dark-gray);
+}
 
-    }
+.budapesht {
+    position: absolute;
+    top: 20%;
+    left: 50.5%;
+    color: var(--color-orange);
+    transition: 0.3s ease-in;
+}
+
+.budapesht:hover {
+    color: var(--dark-gray);
+}
+
+.belgrad {
+    position: absolute;
+    top: 23.5%;
+    left: 51.5%;
+    color: var(--color-orange);
+    transition: 0.3s ease-in;
+}
+
+.belgrad:hover {
+    color: var(--dark-gray);
+}
+
+.plodvid {
+    position: absolute;
+    top: 23.9%;
+    left: 52.5%;
+    color: var(--color-orange);
+    transition: 0.3s ease-in;
+}
+
+.plodvid:hover {
+    color: var(--dark-gray);
+}
+
+.tashkent {
+    position: absolute;
+    top: 25.5%;
+    left: 61.2%;
+    color: var(--color-orange);
+    transition: 0.3s ease-in;
+}
+
+.tashkent:hover {
+    color: var(--dark-gray);
+}
+
+.chad {
+    position: absolute;
+    top: 44%;
+    left: 50.1%;
+    color: var(--color-orange);
+    transition: 0.3s ease-in;
+}
+
+.chad:hover {
+    color: var(--dark-gray);
+}
+
+.nigeria {
+    position: absolute;
+    top: 47.5%;
+    left: 48.5%;
+    color: var(--color-orange);
+    transition: 0.3s ease-in;
+}
+
+.nigeria:hover {
+    color: var(--dark-gray);
+}
+
+.bolivia {
+    position: absolute;
+    top: 67%;
+    left: 33%;
+    color: var(--color-orange);
+    transition: 0.3s ease-in;
+}
+
+.bolivia:hover {
+    color: var(--dark-gray);
 }
 
 .pointer-events-map {
@@ -4797,7 +4900,7 @@ main {
     max-width: 368px;
     width: 100%;
     box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
-    background: var(--dark-gray);
+    background: #E5E5E5;
     row-gap: 30px;
     flex-direction: column;
 
@@ -10172,6 +10275,10 @@ video {
     height: 90px;
     border-radius: 100%;
     z-index: 1;
+
+    @media (max-width: 1280px) {
+        left: 25%;
+    }
 }
 
 .watched-before__product-cart
@@ -13989,7 +14096,17 @@ input {
 }
 
 /*.geografhy.dealers__geografhy .geografhy__body {*/
+
+.geografhy__maps-box {
+    background-color: #efefef;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .geografhy__body {
+    max-width: 1440px;
     width: 100%;
     position: relative;
     height: auto;
@@ -13997,11 +14114,6 @@ input {
     picture {
         display: block;
         width: 100%;
-        /*height: 328px;*/
-
-        @media (max-width: 480px) {
-            height: 150px;
-        }
 
         img {
             max-width: 100%;
@@ -14009,7 +14121,6 @@ input {
             object-fit: cover;
         }
     }
-
 }
 
 /*.geografhy.dealers__geografhy .container.geografhy__container {*/
