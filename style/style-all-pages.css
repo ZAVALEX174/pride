@@ -4913,14 +4913,15 @@ main {
 }
 
 .geografhy__modal.msk-mod {
-    top: 25%;
-    left: 50%;
+    top: 0;
+    left: 0;
+    z-index: 9999999999999999999999999999999;
 
-    @media (max-width: 768px) {
-        left: 0;
-        top: auto;
-        bottom: -70px;
-    }
+    /*@media (max-width: 768px) {*/
+    /*    left: 0;*/
+    /*    top: auto;*/
+    /*    bottom: -70px;*/
+    /*}*/
 }
 
 .icon__black {
@@ -14103,6 +14104,7 @@ input {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .geografhy__body {

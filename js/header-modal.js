@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const menuLinkTwo = document.querySelector('.header-menu-modal2');
         const elementModalTwo = document.querySelector('.modal-two');
         let xPosition = elementModalTwo.offsetLeft;
-        console.log(xPosition);
+        // console.log(xPosition);
         menuLinkTwo.style.left = `${xPosition}px`;
 
         headerModalOne.classList.remove('header-menu-modal-active');
@@ -163,7 +163,6 @@ document.addEventListener('DOMContentLoaded', () => {
             openModalBtnOneLink.classList.remove('navigation__link_drd-active');
             headerModalOne.classList.remove('header-menu-modal-active');
             headerModalTwo.classList.remove('header-menu-modal2-active');
-
 
             document.documentElement.style.overflow = "";
             document.body.style.overflow = "";
