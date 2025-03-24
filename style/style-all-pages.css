@@ -4895,14 +4895,15 @@ main {
 .geografhy__modal {
     display: none;
     position: absolute;
+    border: 1.01px solid #b9b9b9;
     border-radius: 15px;
-    padding: 26px 30px;
-    max-width: 368px;
+    padding: 30px;
+    max-width: 445px;
     width: 100%;
-    box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
-    background: #E5E5E5;
-    row-gap: 30px;
+    background-color: var(--main-bg);
+    display: flex;
     flex-direction: column;
+    /*height: 214px;*/
 
     @media (max-width: 480px) {
         max-width: 375px;
@@ -4910,94 +4911,92 @@ main {
         padding: 55px 30px 75px;
         border-radius: 15px 15px 0 0;
     }
-}
 
-.geografhy__modal.msk-mod {
-    top: 0;
-    left: 0;
-    z-index: 9999999999999999999999999999999;
+    .dealers-list__item-header {
+        max-width: 360px;
+        width: 100%;
+        padding-bottom: 26px;
+        margin-right: 20px;
+        border-bottom: 1.01px solid #e5e5e5;
 
-    /*@media (max-width: 768px) {*/
-    /*    left: 0;*/
-    /*    top: auto;*/
-    /*    bottom: -70px;*/
-    /*}*/
-}
+        .dealers-list__item-header-title {
+            font-family: 'Golos Text Medium', sans-serif;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 1.35294;
+            color: var(--dark-gray);
+            margin-bottom: 5px;
+        }
 
-.icon__black {
-    path:first-child {
-        stroke: var(--dark-gray);
+        .dealers-list__item-header-subtitle {
+            font-family: 'Golos Text Regular', sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.4375;
+            color: #767676;
+        }
     }
-}
 
-.icon__black {
-    path + path {
-        fill: var(--dark-gray);
+    .dealers-list__item-body {
+        width: 100%;
+        padding-top: 26px;
+        display: flex;
+
+        .dealers-list__item-body-title {
+            color: var(--color-orange);
+            font-family: 'Golos Text Medium', sans-serif;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 1.35294;
+        }
+
+        .dealers-list__item-body-link {
+            font-family: 'Golos Text Regular', sans-serif;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 1.29412;
+            color: var(--dark-gray);
+            transition: 0.3s ease-in;
+        }
+
+        .dealers-list__item-body-link:hover {
+            color: var(--color-orange);
+        }
+
+        .dealers-list__item-body-call {
+            width: calc((100% - 20px) / 2);
+            display: flex;
+            flex-direction: column;
+            row-gap: 5px;
+        }
+
+        .dealers-list__item-body-email {
+            width: calc((100% - 20px) / 2);
+            display: flex;
+            flex-direction: column;
+            row-gap: 5px;
+        }
     }
-}
 
-.geografhy__modal.sev-am-mod {
-    top: 21%;
-    left: 15%;
-
-    @media (max-width: 480px) {
-        left: 0;
-        top: auto;
-        bottom: -70px;
-    }
-}
-
-.geografhy__modal.souts-am-mod {
-    top: 36%;
-    left: 23%;
-
-    @media (max-width: 480px) {
-        left: 0;
-        top: auto;
-        bottom: -70px;
-    }
-}
-
-.geografhy__modal.afr-mod {
-    top: 36%;
-    left: 50%;
-
-    @media (max-width: 768px) {
-        left: 0;
-        top: auto;
-        bottom: -70px;
-    }
-}
-
-.geografhy__modal-title {
-    font-size: 20px;
-    line-height: 1.1;
-    color: var(--color-orange);
-    margin-bottom: 8px;
-}
-
-.geografhy__modal-subtitle,
-.geografhy__modal-company-addrress a {
-    font-size: 20px;
-    line-height: 1.1;
-    color: var(--title-color-ligth);
-}
-
-.geografhy__modal-title-num {
-    display: block;
-    margin-bottom: 8px;
 }
 
 .geografhy__modal > .close {
-    width: 40px;
-    height: 40px;
+    width: 27px;
+    height: 27px;
     position: absolute;
-    top: 30px;
-    right: 30px;
-    background: var(--dark-gray);
+    top: 16px;
+    right: 25px;
+    background: transparent;
     outline: none;
     border: none;
     cursor: pointer;
+    z-index: 10;
+    color: #8e8e8e;
+    transition: 0.3s ease-in;
+}
+
+.geografhy__modal > .close:hover {
+    color: var(--color-orange);
 }
 
 .form-representation {
