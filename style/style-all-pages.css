@@ -17407,7 +17407,6 @@ input[type='number'] {
     font-family: 'Golos Text Regular', sans-serif;
     font-weight: 400;
     font-size: 20px;
-    line-height: 1.5;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -17420,7 +17419,6 @@ input[type='number'] {
 
 .btn.cart__btn_progects.our-projects-cart__btn {
     background-color: var(--color-orange);
-    color: var(--main-bg);
     transition: 0.3s ease-in;
     border-radius: 20px;
     max-width: 152px;
@@ -17437,4 +17435,160 @@ input[type='number'] {
 
 .btn.cart__btn_progects.our-projects-cart__btn:hover {
     background-color: var(--ligth-gray);
+}
+
+
+/*personal-account*/
+.personal-account {
+    width: 100%;
+    display: flex;
+    min-height: 800px;
+
+    .personal-account-aside {
+        max-width: 30%;
+        width: 100%;
+        background: var(--dark-gray) url("../images/account/line_bg.png") no-repeat top 606px right 60px;
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 120px;
+
+        .personal-account-aside__content {
+            max-width: 516px;
+            width: 100%;
+            margin-left: auto;
+            border: 1px solid red;
+            height: 100%;
+
+            .personal-account-aside__information {
+                display: flex;
+                width: 100%;
+                column-gap: 20px;
+                align-items: center;
+                margin-bottom: 40px;
+
+                .personal-account-aside__information-images-box {
+                    width: 110px;
+                    height: 110px;
+                    position: relative;
+                    padding: 20px;
+
+                    .personal-account-aside__information-images {
+                        width: 78px;
+                        height: 78px;
+                        border-radius: 100%;
+                        overflow: hidden;
+                        border: 3px solid var(--color-orange);
+
+                    }
+                }
+
+                .personal-account-aside__information-images-box::before {
+                    position: absolute;
+                    content: '';
+                    width: 85px;
+                    height: 110px;
+                    top: 4px;
+                    left: 0;
+                    transform: rotate(10deg);
+                    background: url("../images/account/vector_image.svg") no-repeat center/contain;
+                }
+
+                .personal-account-aside__information-text {
+                    width: 100%;
+
+                    .personal-account-aside__information-text-name {
+                        font-family: 'Golos Text Regular', sans-serif;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 1.5;
+                        color: var(--main-bg);
+                        /*margin-bottom: 15px;*/
+                    }
+
+                    .personal-account-aside__information-text-company {
+                        font-family: 'Golos Text Regular', sans-serif;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 1.375;
+                        color: var(--ligth-gray);
+                    }
+
+                    .personal-account-aside__information-text-contacts {
+                        font-family: 'Golos Text Regular', sans-serif;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 1.6875;
+                        color: var(--main-bg);
+                    }
+                }
+            }
+
+            .personal-account-aside__slogan {
+                font-family: 'Golos Text Regular', sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 1.5;
+                color: var(--color-orange);
+                margin-bottom: 40px;
+            }
+
+            .personal-account-aside__tabs-container {
+                width: 100%;
+
+                .tab-buttons {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 30px;
+                    align-items: flex-start;
+                    margin-bottom: 40px;
+
+                    .tab-button {
+                        width: 100%;
+                        cursor: pointer;
+                        text-align: left;
+                        background: rgba(142, 142, 142, 0.15);
+                        border: none;
+                        outline: none;
+                        border-radius: 5px 0 0 5px;
+                        height: 60px;
+                        line-height: 60px;
+                        padding-left: 20px;
+                        display: flex;
+                        align-items: center;
+                        column-gap: 15px;
+                        font-weight: 500;
+                        font-size: 18px;
+                        color: var(--main-bg);
+                        transition: 0.3s ease-in;
+                    }
+
+                    .tab-button:hover {
+                        background: var(--color-orange);
+                    }
+
+                    .tab-button__active {
+                        background: var(--color-orange);
+                    }
+
+                }
+
+            }
+
+            .personal-account-aside__link {
+                display: flex;
+                width: 100%;
+                height: 43px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 1.5;
+                color: var(--main-bg);
+                transition: 0.3s ease-in;
+            }
+
+            .personal-account-aside__link:hover {
+                color: var(--color-orange);
+            }
+        }
+    }
 }
