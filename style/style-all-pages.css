@@ -4825,7 +4825,7 @@ main {
 .plodvid {
     position: absolute;
     top: 23.9%;
-    left: 52.5%;
+    left: 53%;
     color: var(--color-orange);
     transition: 0.3s ease-in;
 }
@@ -4901,9 +4901,7 @@ main {
     max-width: 445px;
     width: 100%;
     background-color: var(--main-bg);
-    display: flex;
     flex-direction: column;
-    /*height: 214px;*/
 
     @media (max-width: 480px) {
         max-width: 375px;
@@ -4941,6 +4939,7 @@ main {
         width: 100%;
         padding-top: 26px;
         display: flex;
+        column-gap: 20px;
 
         .dealers-list__item-body-title {
             color: var(--color-orange);
@@ -4957,6 +4956,18 @@ main {
             line-height: 1.29412;
             color: var(--dark-gray);
             transition: 0.3s ease-in;
+            /*overflow-wrap: break-word;*/
+            /* для поддержки старых браузеров, таких как Internet Explorer 5.5 и 6 */
+            word-wrap: break-word;
+            word-break: break-all;
+            /* для поддержки современных браузеров, таких как Chrome, Firefox и Safari */
+            overflow-wrap: break-word;
+            word-break: break-all;
+            /* для поддержки мягкого переноса слов с использованием дефисов */
+            -webkit-hyphens: auto;
+            -moz-hyphens: auto;
+            -ms-hyphens: auto;
+            hyphens: auto;
         }
 
         .dealers-list__item-body-link:hover {

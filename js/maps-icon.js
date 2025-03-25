@@ -30,7 +30,7 @@ openModalMapBtns.forEach((item) => {
             let xPosition = e.currentTarget.offsetLeft;
             modalMapMsk.classList.add('msk-mod');
             modalMapMsk.style.display = 'flex';
-            modalMapMsk.style.left = `calc(${xPosition}px + 20px `;
+            modalMapMsk.style.left = `${xPosition}px`;
             modalMapMsk.style.top = `80px `;
             item.classList.add('icon__black');
             return;
@@ -90,9 +90,9 @@ openModalMapBtns.forEach((item) => {
             let xPosition = e.currentTarget.offsetLeft;
             modalMapTashkent.classList.add('msk-mod');
             modalMapTashkent.style.display = 'flex';
-            modalMapTashkent.style.right = `0`;
+            modalMapTashkent.style.right = `5px`;
             modalMapTashkent.style.left = `auto`;
-            modalMapTashkent.style.top = `80px`;
+            modalMapTashkent.style.top = `110px`;
             item.classList.add('icon__black');
             return;
         }
