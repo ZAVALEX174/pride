@@ -13,7 +13,7 @@ const openModalMapBtns = document.querySelectorAll('.geografhy__body-icon-map');
 const closeModalMapBtns = document.querySelectorAll('.close');
 
 openModalMapBtns.forEach((item) => {
-    console.log(item);
+    // console.log(item);
     item.addEventListener('click', (e) => {
         e.preventDefault();
 
@@ -24,7 +24,7 @@ openModalMapBtns.forEach((item) => {
             openModalMapBtns.forEach(el => el.classList.remove('icon__black'));
         })
 
-        console.log(e.currentTarget);
+        // console.log(e.currentTarget);
 
         if (e.currentTarget.classList.contains('msk-i')) {
             let xPosition = e.currentTarget.offsetLeft;

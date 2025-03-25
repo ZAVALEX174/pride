@@ -16,9 +16,7 @@ var productsSwiper = new Swiper(".products-swiper", {
             spaceBetween: 20,
             centeredSlides: false,
         }
-
     },
-
 });
 
 var productsSwiperBefore = new Swiper(".watched-before__product-cart-swiper", {

@@ -113,7 +113,7 @@ if (filterForm) {
             let arr = [null, null];
             arr[i] = value;
 
-            console.log(arr[i]);
+            // console.log(arr[i]);
 
             rangeSlider1.noUiSlider.set(arr);
         };
@@ -135,7 +135,7 @@ if (filterForm) {
     }
 
     const createElementSliderOne = (fromCount, toCount) => {
-        console.log(toCount);
+        // console.log(toCount);
         let newListItem = document.createElement('li');
         newListItem.textContent = `Глубина бурения (max), м: от ${fromCount} до ${toCount}`;
         newListItem.classList.add('filter__show-content-item');
@@ -174,10 +174,10 @@ if (filterForm) {
             let arr = [null, null];
             arr[i] = value;
 
-            console.log(arr[0], arr[1]);
+            // console.log(arr[0], arr[1]);
 
             rangeSlider2.noUiSlider.set(arr);
-            console.log(arr)
+            // console.log(arr)
         };
 
         inputs.forEach((el, index) => {
@@ -195,7 +195,7 @@ if (filterForm) {
     }
 
     const createElementSliderTwo = (fromCount, toCount) => {
-        console.log(toCount);
+        // console.log(toCount);
         let newListItem = document.createElement('li');
         newListItem.textContent = `Глубина бурения (max), м: от ${fromCount} до ${toCount}`;
         newListItem.classList.add('filter__show-content-item');
