@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // const closesFormRepresentation = modalFormZakaz.querySelector('.modals-zakaz__btn');
     const openModalFormPepresentationBtn = document.querySelector('.banner__btn');
-    // console.log(modalFormRepresentation, openModalFormPepresentationBtn);
     const nonStandaetbtn = document.querySelector('.non-standard__btn');
     const submitFormBtn = document.querySelector('.filter__submit-box__btn');
     const cardButtons = document.querySelectorAll('.cart__btn');
@@ -28,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const workZakazBtns = document.querySelectorAll('.work__body-cart-btn_hover-block');
 
     const openModalNonStandart = document.querySelector('.non-standard__btn');
+
 
     let scrollBarClient = document.documentElement.clientWidth;
     let scrollBarAll = window.innerWidth;
@@ -119,12 +119,18 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.documentElement.style.overflow = ''; // Для html
                 document.body.style.paddingRight = `0px`;
                 clearDiv();
+
+                // изменения от 26_03_25
+                // удаление input при закрытии формы
+                let inputProductHidden = modalFormRepresentation.querySelector('input[type=hidden]');
+                if (inputProductHidden) {
+                    inputProductHidden.remove();
+                }
+                // изменения от 26_03_25
             }
         });
     }
 
-
-    // console.log(openBtnFormOrder, modalFormOrder);
 
     // получение выбранных фильтров
     const filterShowContentList = document.querySelector('.filter__show-content-list');
@@ -133,7 +139,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
         const outputContainer = document.querySelector('.modals-form-order__list');
-        // console.log(showMoreFilterBtnResault, 'showMoreFilterBtnResault');
         let filterShowContentListLenght = filterShowContentList.children;
 
         function addDataToForm() {
@@ -239,6 +244,13 @@ document.addEventListener('DOMContentLoaded', function () {
     cardButtons.forEach((cardBtn) => {
         cardBtn.addEventListener('click', (e) => {
             e.preventDefault();
+            // изменения от 26_03_25
+            const nameProduct = document.createElement('input');
+            nameProduct.setAttribute('type', 'hidden');
+            modalFormRepresentation.append(nameProduct);
+            nameProduct.value = cardBtn.dataset.product;
+            // изменения от 26_03_25
+
             modal.classList.add('modals_opened');
             modalFormRepresentation.classList.remove('none');
             document.documentElement.style.overflow = "hidden";
@@ -274,7 +286,6 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     }
 
-
     if (closeBtns) {
         closeBtns.forEach((closeBtn) => {
             closeBtn.addEventListener('click', () => {
@@ -286,6 +297,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.body.style.overflow = '';
                 document.documentElement.style.overflow = ''; // Для html
                 document.body.style.paddingRight = `0px`;
+
+                // изменения от 26_03_25
+                // удаление input при закрытии формы
+                let inputProductHidden = modalFormRepresentation.querySelector('input[type=hidden]');
+                if (inputProductHidden) {
+                    inputProductHidden.remove();
+                }
+                // изменения от 26_03_25
             })
         })
     }
@@ -309,8 +328,25 @@ document.addEventListener('DOMContentLoaded', function () {
             document.body.style.paddingRight = `0px`;
             clearDiv();
         })
-
     }
+
+    // изменения от 26_03_25
+    // закрытие и удаление input по кнопке формы Отправить
+    const modalFormRepresentationBtnSubmit = modalFormRepresentation.querySelector('.form-representation__form-btn');
+
+    if(modalFormRepresentationBtnSubmit) {
+        modalFormRepresentationBtnSubmit.addEventListener('click', (e) => {
+            // e.preventDefault();
+            let inputProductHidden = modalFormRepresentation.querySelector('input[type=hidden]');
+
+            if (inputProductHidden) {
+                inputProductHidden.remove();
+            }
+        })
+    }
+
+    // изменения от 26_03_25
+
 });
 
 
