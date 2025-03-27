@@ -3,10 +3,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const headerModalOne = document.querySelector(".header-menu-modal");
     const headerModalTwo = document.querySelector(".header-menu-modal2");
     const headerModalThree = document.querySelector(".header-menu-modal3");
-    const openModalBtnOne = document.querySelector(".modal-one");
+
+    //Правки k-210325 add
+    const headermenu = document.querySelector("#header-menu");
+    const openModalBtnOne = headermenu.querySelector("li[data-modalwindow='catalog']");
+    const openModalBtnTwo = headermenu.querySelector("li[data-modalwindow='about']");
+
+    //const openModalBtnOne = document.querySelector(".modal-one");  //delete
     const openModalBtnOneLink = openModalBtnOne.querySelector(".navigation__link_drd");
-    const openModalBtnTwo = document.querySelector(".modal-two");
+    // const openModalBtnTwo = document.querySelector(".modal-two"); //delete
     const openModalBtnTwoLink = openModalBtnTwo.querySelector(".navigation__link_drd");
+
+
+
     // const closeModalBtn = document.querySelector(".header-menu-modal__close-btn");
     const closeModalBtnThree = document.querySelector(".close-modal-search-button");
     const openSearchBtn = document.querySelector('.search');
@@ -17,8 +26,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const headerContactUs = document.querySelector('.header__contact-us');
     const headerFavorites = document.querySelector('.header__favorites');
     const searchBtn = document.querySelector('.search__btn');
-    const navLinkOne = document.querySelector('.modal-one .navigation__link');
-    const navLinkTwo = document.querySelector('.modal-two .navigation__link');
+
+    //Правки k-210325 add
+    const navLinkOne = openModalBtnOne.querySelector('.navigation__link');
+    //const navLinkOne = document.querySelector('.modal-one .navigation__link'); //delete
+
+    //Правки k-210325 add
+    const navLinkTwo = openModalBtnTwo.querySelector('.navigation__link');
+    //const navLinkTwo = document.querySelector('.modal-two .navigation__link'); //delete
 
     let breadcrumbsElement = document.querySelector('.breadcrumbs');
     let scrollBarClient = document.documentElement.clientWidth;
@@ -31,9 +46,9 @@ document.addEventListener('DOMContentLoaded', () => {
             headerModalOne.classList.remove('header-menu-modal-active');
             navLinkOne.classList.remove('navigation__link-active');
             headerModalThree.classList.remove('header-menu-modal3-active');
-            // document.documentElement.style.overflow = "";
+            document.documentElement.style.overflow = "";
             document.body.style.overflow = "";
-            document.body.style.paddingRight = `0px`;
+            document.documentElement.style.paddingRight = `0px`;
             document.querySelector('.main').classList.remove('main-overlay');
 
             if (breadcrumbsElement != null) {
@@ -45,9 +60,9 @@ document.addEventListener('DOMContentLoaded', () => {
             navLinkOne.classList.add('navigation__link-active');
             headerModalTwo.classList.remove('header-menu-modal2-active');
             headerModalThree.classList.remove('header-menu-modal3-active');
-            // document.documentElement.style.overflow = "hidden";
+            document.documentElement.style.overflow = "hidden";
             document.body.style.overflow = "hidden";
-            // document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+            document.documentElement.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
             document.querySelector('.main').classList.add('main-overlay');
 
             if (breadcrumbsElement != null) {
@@ -74,7 +89,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // получение координат кнопки меню О компании
         const menuLinkTwo = document.querySelector('.header-menu-modal2');
-        const elementModalTwo = document.querySelector('.modal-two');
+        //Правки k-210325 add
+        const elementModalTwo = document.querySelector("li[data-modalwindow='about']");
+        //const elementModalTwo = document.querySelector('.modal-two');//delete
         let xPosition = elementModalTwo.offsetLeft;
         // console.log(xPosition);
         menuLinkTwo.style.left = `${xPosition}px`;
@@ -89,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
             openModalBtnTwoLink.classList.remove('navigation__link_drd-active');
             headerModalThree.classList.remove('header-menu-modal3-active');
 
-            // document.documentElement.style.overflow = "";
+            document.documentElement.style.overflow = "";
             document.body.style.overflow = "";
             document.documentElement.style.paddingRight = `0px`;
 
@@ -102,9 +119,9 @@ document.addEventListener('DOMContentLoaded', () => {
             headerModalTwo.classList.add('header-menu-modal2-active');
             navLinkTwo.classList.add('navigation__link-active');
             openModalBtnTwoLink.classList.add('navigation__link_drd-active');
-            // document.documentElement.style.overflow = "hidden";
+            document.documentElement.style.overflow = "hidden";
             document.body.style.overflow = "hidden";
-            // document.documentElement.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+            document.documentElement.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
 
             document.querySelector('.main').classList.add('main-overlay');
             if (breadcrumbsElement != null) {
@@ -164,6 +181,7 @@ document.addEventListener('DOMContentLoaded', () => {
             headerModalOne.classList.remove('header-menu-modal-active');
             headerModalTwo.classList.remove('header-menu-modal2-active');
 
+
             document.documentElement.style.overflow = "";
             document.body.style.overflow = "";
             document.documentElement.style.paddingRight = `0px`;
@@ -204,8 +222,11 @@ document.addEventListener('DOMContentLoaded', () => {
             !event.target.closest('.header-menu-modal') &&
             !event.target.closest('.header-menu-modal2') &&
             !event.target.closest('.header-menu-modal3') &&
-            !event.target.closest('.modal-one') &&
-            !event.target.closest('.modal-two') &&
+            //Правки k-210325 add
+            !event.target.closest("li[data-modalwindow='catalog']") &&
+            !event.target.closest("li[data-modalwindow='about']") &&
+            //!event.target.closest('.modal-one') && //delete
+            //!event.target.closest('.modal-two') && //delete
             !event.target.closest('.search');
 
         if (isClickOutside) {
@@ -268,7 +289,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    // изменение header  
+    // изменение header
     class HeaderManager {
         constructor() {
             // Получаем элементы DOM
