@@ -1,7 +1,7 @@
-const tabs1 = new GraphTabs('tab', {
-    isChanged: (tabs) => {
-        console.log(tabs);
-    }
-});
+// const tabs1 = new GraphTabs('tab', {
+//     isChanged: (tabs) => {
+//         console.log(tabs);
+//     }
+// });
 
-tabs1.switchTabs(document.querySelector('#tab2'));
+// tabs1.switchTabs(document.querySelector('#tab2'));
