@@ -18,7 +18,6 @@ openModalMapBtns.forEach((item) => {
         e.preventDefault();
 
         modalsMap.forEach(modalMap => {
-
             modalMap.className = modalMap.className.replace(/\b(msk|spb|torun|budapesht|belgrad|plodvid|tashkent|chad|nigeria|bolivia)-mod\b/g, '');
             modalMap.style.display = 'none';
             openModalMapBtns.forEach(el => el.classList.remove('icon__black'));

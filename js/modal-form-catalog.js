@@ -247,7 +247,8 @@ document.addEventListener('DOMContentLoaded', function () {
             // изменения от 26_03_25
             const nameProduct = document.createElement('input');
             nameProduct.setAttribute('type', 'hidden');
-            modalFormRepresentation.append(nameProduct);
+            nameProduct.setAttribute('name', 'product_id');
+            modalFormRepresentation.querySelector('form').append(nameProduct);
             nameProduct.value = cardBtn.dataset.product;
             // изменения от 26_03_25
 
@@ -334,7 +335,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // закрытие и удаление input по кнопке формы Отправить
     const modalFormRepresentationBtnSubmit = modalFormRepresentation.querySelector('.form-representation__form-btn');
 
-    if(modalFormRepresentationBtnSubmit) {
+    if (modalFormRepresentationBtnSubmit) {
         modalFormRepresentationBtnSubmit.addEventListener('click', (e) => {
             // e.preventDefault();
             let inputProductHidden = modalFormRepresentation.querySelector('input[type=hidden]');

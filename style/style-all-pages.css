@@ -1743,7 +1743,7 @@ main {
     height: 15px !important;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
     @media (max-width: 600px) {
         bottom: 45px;
@@ -2282,6 +2282,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: auto;
 }
 
 .cart__btn {
@@ -2981,13 +2982,14 @@ main {
 
 .swiper-slide.categories__body-swiper-content-slider-slide
 .categories__body-item {
-    margin-top: auto;
+    /*margin-top: auto;*/
+    padding-top: 30px;
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
+    align-items: flex-start;
+    min-block-size: auto;
     text-align: left;
     position: relative;
     z-index: 5;
@@ -3066,6 +3068,7 @@ main {
 
 .swiper-slide.categories__body-swiper-content-slider-slide
 .categories__body-cart-btn {
+    margin-top: auto;
     width: 100%;
     background-color: var(--color-orange);
     display: inline-flex;
@@ -3508,9 +3511,13 @@ main {
     padding: 30px;
     box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
     display: flex;
-    align-items: flex-end;
+    /*align-items: flex-start;*/
     overflow: hidden;
     transition: 0.3s ease-in;
+}
+
+.swiper-slide.work__body-swiper-content-slider-slide.work__body-item_img {
+    align-items: flex-end;
 }
 
 .work__body-swiper-content-slider-slide::before,
@@ -3565,15 +3572,29 @@ main {
 }
 
 .work__body-item {
-    position: relative;
+    /*position: relative;*/
+    /*width: 100%;*/
+    /*!*height: 100%;*!*/
+    /*min-block-size: auto;*/
+    /*display: flex;*/
+    /*align-items: center;*/
+    /*justify-content: flex-end;*/
+    /*flex-direction: column;*/
+    /*transition: 0.3s ease-in;*/
+    /*z-index: 10;*/
+    /*padding-top: 30px;*/
+
+    /* margin-top: auto; */
+    padding-top: 30px;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
     flex-direction: column;
-    transition: 0.3s ease-in;
-    z-index: 10;
+    align-items: flex-start;
+    min-block-size: auto;
+    text-align: left;
+    position: relative;
+    z-index: 5;
 }
 
 .work__body-item_img {
@@ -3646,6 +3667,7 @@ main {
     transition: 0.3s ease-in;
     height: 45px;
     line-height: 45px;
+    margin-top: auto;
 }
 
 .work__body-cart-btn:hover {
@@ -4310,13 +4332,13 @@ main {
 
 .other__body-item {
     position: relative;
-    padding: 30px;
+    padding: 60px 30px 30px;
     width: 316px;
-    height: 370px;
+    min-height: 370px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-end;
+    /*justify-content: flex-end;*/
     border-radius: 30px;
     box-shadow: 0 0 30px 0 rgba(215, 215, 215, 0.15);
     background: linear-gradient(
@@ -4436,6 +4458,7 @@ main {
     line-height: 45px;
     position: relative;
     z-index: 100;
+    margin-top: auto;
 }
 
 .other__body-cart-btn:hover {
@@ -5639,7 +5662,7 @@ label[for='user-email'] {
 
 .news__body-cart_horizontal-img {
     width: 683px;
-    height: 350px;
+    min-height: 350px;
     position: relative;
     flex-shrink: 0;
 
@@ -5747,10 +5770,11 @@ label[for='user-email'] {
 
 /*изменения 25_03_25*/
 .swiper-slide.news__body-cart_vertical {
-    border: 1.5px solid var(--5);
+    /*border: 1.5px solid var(--5);*/
     border-radius: 30px;
     width: 430px;
-    height: auto;
+    /*height: auto;*/
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -5764,9 +5788,15 @@ label[for='user-email'] {
     }
 }
 
+.news__body .swiper-slide.news__body-cart_vertical {
+    border: 1.5px solid var(--5);
+}
+
 .swiper-slide.news__body-cart_vertical .news__body-cart_vertical-textbox {
     padding-top: 25px;
-    min-height: 203px;
+    /*min-height: 203px;*/
+    height: 100%;
+    flex-grow: 1;
 }
 
 .swiper-slide.news__body-cart_vertical .news__body-cart_vertical-subtitle {
@@ -5824,7 +5854,8 @@ label[for='user-email'] {
     padding: 27px 32px 30px 25px;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    flex-grow: 1;
+    /*height: 100%;*/
 
     @media (max-width: 1280px) {
         padding: 30px 22px;
@@ -5842,6 +5873,7 @@ label[for='user-email'] {
 
 .data-wrapper {
     display: flex;
+    margin-top: 5px;
 
     @media (max-width: 1280px) {
         display: grid;
@@ -9556,6 +9588,9 @@ select {
 .watched-before__product-cart .products-slide {
     transition: all 0.3s ease-in;
     position: relative;
+    height: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .after-link {
@@ -10160,9 +10195,11 @@ video {
     overflow: hidden;
     margin-bottom: 0;
     height: 230px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-shrink: 0;
 
     @media (max-width: 1024px) {
         height: 181px;
@@ -10207,6 +10244,7 @@ video {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    height: 100%;
 
     @media (max-width: 1024px) {
         padding: 20px 25px 15px 25px;
@@ -11658,7 +11696,7 @@ input {
     position: relative;
     border: 1px solid #e5e5e5;
     border-radius: 30px;
-    height: 493px;
+    min-height: 493px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -11686,6 +11724,7 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-shrink: 0;
 
     @media (max-width: 768px) {
         height: 178px;
@@ -11791,6 +11830,7 @@ input {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    height: 100%;
 
     @media (max-width: 768px) {
         padding: 20px 15px 8px 15px;
@@ -12069,6 +12109,7 @@ input {
     transition: 0.3s ease-in;
     height: 45px;
     line-height: 45px;
+    margin-right: auto;
 }
 
 .catalog-menu-categories__body-item > .other__body-cart-btn:hover {
@@ -12684,6 +12725,7 @@ input {
 }
 
 .news-page__search .news-page__search-body .list-newq-cards li .news__body-cart_vertical .data-wrapper {
+    margin-top: auto;
     width: 100%;
 }
 
@@ -13210,7 +13252,8 @@ input {
 .other-news .swiper-slide {
     position: relative;
     max-width: 430px;
-    height: 453px;
+    /*height: 453px;*/
+    height: auto;
     border-radius: 30px;
     overflow: hidden;
     border: 1.5px solid rgba(239, 239, 239, 1);
@@ -13226,6 +13269,9 @@ input {
 
 .other-news .swiper-slide .news__body-cart_vertical {
     width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .other-news .swiper-slide .news__body-cart_vertical .img-box {
@@ -13262,6 +13308,7 @@ input {
 }
 
 .other-news .swiper-slide .news__body-cart_vertical .data-wrapper {
+    margin-top: auto;
     width: 100%;
 }
 
@@ -14351,6 +14398,7 @@ input {
     box-sizing: border-box;
     border-bottom: 1px solid rgb(229, 229, 229);
     background: rgb(255, 255, 255);
+    box-shadow: 0px 10px 13px -3px rgba(194, 194, 194, 1);
 }
 
 .dealers-list .dealers-list__container .dealers-list__title {
@@ -16999,7 +17047,7 @@ input {
 /*изменения 25_03_25*/
 
 .contacts-page__geography {
-    padding: 108px 0 62px;
+    padding: 108px 0 0;
 }
 
 /*изменения 25_03_25*/
@@ -17940,152 +17988,171 @@ input[type='number'] {
     width: 100%;
     display: flex;
     min-height: 800px;
+}
 
-    .personal-account-aside {
-        max-width: 30%;
-        width: 100%;
-        background: var(--dark-gray) url("../images/account/line_bg.png") no-repeat top 606px right 60px;
-        height: auto;
-        padding-top: 30px;
-        padding-bottom: 120px;
+.personal-account .personal-account-aside {
+    max-width: 30%;
+    width: 100%;
+    background: var(--dark-gray) url("../images/account/line_bg.png") no-repeat top 606px right 60px;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 120px;
+}
 
-        .personal-account-aside__content {
-            max-width: 516px;
-            width: 100%;
-            margin-left: auto;
-            /*border: 1px solid red;*/
-            height: 100%;
+.personal-account .personal-account-aside .personal-account-aside__content {
+    max-width: 516px;
+    width: 100%;
+    margin-left: auto;
+    /*border: 1px solid red;*/
+    height: 100%;
+}
 
-            .personal-account-aside__information {
-                display: flex;
-                width: 100%;
-                column-gap: 20px;
-                align-items: center;
-                margin-bottom: 40px;
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__information {
+    display: flex;
+    width: 100%;
+    column-gap: 20px;
+    align-items: center;
+    margin-bottom: 40px;
+}
 
-                .personal-account-aside__information-images-box {
-                    width: 110px;
-                    height: 110px;
-                    position: relative;
-                    padding: 20px;
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__information .personal-account-aside__information-images-box {
+    width: 110px;
+    height: 110px;
+    position: relative;
+    padding: 20px;
+}
 
-                    .personal-account-aside__information-images {
-                        width: 78px;
-                        height: 78px;
-                        border-radius: 100%;
-                        overflow: hidden;
-                        border: 3px solid var(--color-orange);
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__information .personal-account-aside__information-images-box .personal-account-aside__information-images {
+    width: 78px;
+    height: 78px;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 3px solid var(--color-orange);
+}
 
-                    }
-                }
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__information .personal-account-aside__information-images-box::before {
+    position: absolute;
+    content: '';
+    width: 85px;
+    height: 110px;
+    top: 4px;
+    left: 0;
+    transform: rotate(10deg);
+    background: url("../images/account/vector_image.svg") no-repeat center/contain;
+}
 
-                .personal-account-aside__information-images-box::before {
-                    position: absolute;
-                    content: '';
-                    width: 85px;
-                    height: 110px;
-                    top: 4px;
-                    left: 0;
-                    transform: rotate(10deg);
-                    background: url("../images/account/vector_image.svg") no-repeat center/contain;
-                }
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__information .personal-account-aside__information-text {
+    width: 100%;
+}
 
-                .personal-account-aside__information-text {
-                    width: 100%;
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__information .personal-account-aside__information-text .personal-account-aside__information-text-name {
+    font-family: 'Golos Text Regular', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--main-bg);
+}
 
-                    .personal-account-aside__information-text-name {
-                        font-family: 'Golos Text Regular', sans-serif;
-                        font-weight: 400;
-                        font-size: 18px;
-                        line-height: 1.5;
-                        color: var(--main-bg);
-                        /*margin-bottom: 15px;*/
-                    }
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__information .personal-account-aside__information-text .personal-account-aside__information-text-company {
+    font-family: 'Golos Text Regular', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.375;
+    color: var(--ligth-gray);
+}
 
-                    .personal-account-aside__information-text-company {
-                        font-family: 'Golos Text Regular', sans-serif;
-                        font-weight: 400;
-                        font-size: 16px;
-                        line-height: 1.375;
-                        color: var(--ligth-gray);
-                    }
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__information .personal-account-aside__information-text .personal-account-aside__information-text-contacts {
+    font-family: 'Golos Text Regular', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6875;
+    color: var(--main-bg);
+}
 
-                    .personal-account-aside__information-text-contacts {
-                        font-family: 'Golos Text Regular', sans-serif;
-                        font-weight: 400;
-                        font-size: 16px;
-                        line-height: 1.6875;
-                        color: var(--main-bg);
-                    }
-                }
-            }
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__slogan {
+    font-family: 'Golos Text Regular', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--color-orange);
+    margin-bottom: 40px;
+}
 
-            .personal-account-aside__slogan {
-                font-family: 'Golos Text Regular', sans-serif;
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 1.5;
-                color: var(--color-orange);
-                margin-bottom: 40px;
-            }
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__tabs-container {
+    width: 100%;
+}
 
-            .personal-account-aside__tabs-container {
-                width: 100%;
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__tabs-container .tab-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
 
-                .tab-buttons {
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    row-gap: 30px;
-                    align-items: flex-start;
-                    margin-bottom: 40px;
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__tabs-container .tab-buttons .tab-button {
+    width: 100%;
+    cursor: pointer;
+    text-align: left;
+    background: rgba(142, 142, 142, 0.15);
+    border: none;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--main-bg);
+    transition: 0.3s ease-in;
+}
 
-                    .tab-button {
-                        width: 100%;
-                        cursor: pointer;
-                        text-align: left;
-                        background: rgba(142, 142, 142, 0.15);
-                        border: none;
-                        outline: none;
-                        border-radius: 5px 0 0 5px;
-                        height: 60px;
-                        line-height: 60px;
-                        padding-left: 20px;
-                        display: flex;
-                        align-items: center;
-                        column-gap: 15px;
-                        font-weight: 500;
-                        font-size: 18px;
-                        color: var(--main-bg);
-                        transition: 0.3s ease-in;
-                    }
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__tabs-container .tab-buttons .tab-button:hover {
+    background: var(--color-orange);
+}
 
-                    .tab-button:hover {
-                        background: var(--color-orange);
-                    }
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__tabs-container .tab-buttons .tab-button__active {
+    background: var(--color-orange);
+}
 
-                    .tab-button__active {
-                        background: var(--color-orange);
-                    }
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__link {
+    display: flex;
+    width: 100%;
+    height: 43px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--main-bg);
+    transition: 0.3s ease-in;
+}
 
-                }
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__link:hover {
+    color: var(--color-orange);
+}
 
-            }
+.personal-account .personal-account-content {
+    max-width: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #efefef;
+    border: 1px solid red;
+    padding: 60px 119px 65px 60px;
+}
 
-            .personal-account-aside__link {
-                display: flex;
-                width: 100%;
-                height: 43px;
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 1.5;
-                color: var(--main-bg);
-                transition: 0.3s ease-in;
-            }
+.personal-account .personal-account-content .tab-content {
+    width: 100%;
+    height: 100%;
+}
 
-            .personal-account-aside__link:hover {
-                color: var(--color-orange);
-            }
-        }
-    }
+.personal-account .personal-account-content .tab-content .personal-account-content-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(142, 142, 142, 0.3);
 }
