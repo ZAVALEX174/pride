@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const contactUsBtnS = document.querySelectorAll('.contact-us__btn');
     const stockCartBtns = document.querySelectorAll('.stock-cart__text-content-desc-bid-btn');
 
-
     const openBtnFormOrder = document.getElementById('r2');
     const modalFormOrder = modal.querySelector('.modals-form-order');
 
@@ -114,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 modal.classList.remove('modals_opened');
                 modalFormRepresentation.classList.add('none');
                 modalsConnection.classList.add('none');
-                modalFormOtzivi.classList.add('none');
+                // modalFormOtzivi.classList.add('none');
                 document.body.style.overflow = '';
                 document.documentElement.style.overflow = ''; // Для html
                 document.body.style.paddingRight = `0px`;
@@ -278,6 +277,7 @@ document.addEventListener('DOMContentLoaded', function () {
         contactUsBtnS.forEach((contactUsBtn) => {
             contactUsBtn.addEventListener('click', (e) => {
                 e.preventDefault();
+
                 modal.classList.add('modals_opened');
                 modalsConnection.classList.remove('none');
                 document.documentElement.style.overflow = "hidden";
