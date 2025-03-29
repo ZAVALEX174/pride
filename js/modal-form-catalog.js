@@ -36,9 +36,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 // console.log("должна открыться форма связи с менеждером");
                 modal.classList.add('modals_opened');
                 modalsConnection.classList.remove('none');
-                document.body.style.overflow = '';
-                document.documentElement.style.overflow = ''; // Для html
-                document.body.style.paddingRight = `0px`;
+                modalsConnection.classList.remove('none');
+                document.documentElement.style.overflow = "hidden";
+                document.body.style.overflow = "hidden";
+                document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
             })
         })
     }

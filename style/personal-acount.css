@@ -227,8 +227,14 @@
 .personal-account .personal-account-content .tab-content {
     width: 100%;
     max-width: 747px;
+    display: none;
     /*height: 100%;*/
 }
+
+.personal-account .personal-account-content .tab-content.tab-content-active {
+    display: block;
+}
+
 
 .personal-account
 .personal-account-content
