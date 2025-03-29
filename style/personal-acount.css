@@ -1,8 +1,16 @@
 /*personal-account*/
+.personal-account-main {
+    display: flex;
+    flex: 1;
+
+}
+
 .personal-account {
     width: 100%;
     display: flex;
-    min-height: 800px;
+    /*min-height: 800px;*/
+    /*min-height: 1440px;*/
+    /*min-height: 100vh;*/
 }
 
 .personal-account .personal-account-aside {
@@ -218,10 +226,11 @@
 .personal-account .personal-account-content {
     max-width: 100%;
     width: 100%;
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     background-color: #efefef;
     border: 1px solid red;
-    padding: 60px 119px 65px 60px;
+    padding: 60px 119px 170px 60px;
+
 }
 
 .personal-account .personal-account-content .tab-content {
@@ -229,6 +238,8 @@
     max-width: 747px;
     display: none;
     /*height: 100%;*/
+    margin-bottom: auto;
+
 }
 
 .personal-account .personal-account-content .tab-content.tab-content-active {
@@ -1057,6 +1068,7 @@
     justify-content: flex-start;
     align-items: center;
     column-gap: 15px;
+    cursor: pointer;
 }
 
 .tab-content .go-back-btn:hover {
