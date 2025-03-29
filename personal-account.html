@@ -2169,7 +2169,7 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-content" id="tab-btn3">
+            <div class="tab-content none" id="tab-btn3">
                 <div class="personal-account-content-header">
                     <div class="personal-account-content-header__title">
                         <h2>История заявок</h2>
@@ -2350,9 +2350,11 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="equipment-box-tab none" id="history">
+                        <div class="equipment-box-tab" id="history">
                             <div class="equipment-box-tab__history-date-box" data-history-date-box="history-date-box">
-                                <div class="equipment-box-tab__history-date-box-item" data-history-date="data-history-date">Март, 2024 г.</div>
+                                <div class="equipment-box-tab__history-date-box-item"
+                                     data-history-date="data-history-date">Март, 2024 г.
+                                </div>
                                 <ul class="equipment-box__list personal-account-content-body__equipment-list">
                                     <li class="equipment-box__item personal-account-content-body__equipment-item">
                                         <div class="equipment-box__item-date personal-account-content-body__equipment-item-date">
@@ -2460,7 +2462,9 @@
                             </div>
 
                             <div class="equipment-box-tab__history-date-box" data-history-date-box="history-date-box">
-                                <div class="equipment-box-tab__history-date-box-item" data-history-date="data-history-date">Март, 2024 г.</div>
+                                <div class="equipment-box-tab__history-date-box-item"
+                                     data-history-date="data-history-date">Март, 2024 г.
+                                </div>
                                 <ul class="equipment-box__list personal-account-content-body__equipment-list">
                                     <li class="equipment-box__item personal-account-content-body__equipment-item">
                                         <div class="equipment-box__item-date personal-account-content-body__equipment-item-date">
@@ -2583,181 +2587,63 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-content none" id="tab-btn4">
+            <div class="tab-content" id="tab-btn4">
                 <div class="personal-account-content-header">
-                    <div class="personal-account-content-header__title">
-                        <h2>Моё оборудование</h2>
-                        <div data-count="3">количество: <span>3</span></div>
+                    <div class="personal-account-content-header__title consultant-header__title">
+                        <span>PRIDE ENGINEERING COMPANY</span>
+                        <h2>Личный менеджер</h2>
+                        <div>
+                            <p>Это ваш персональный менеджер. Вы можете обратиться к нам за помощью по любым
+                                вопросам, связанным с обслуживанием вашего оборудования. Мы с радостью проконсультируем
+                                вас
+                                и поможем решить все проблемы.
+                            </p>
+                        </div>
                     </div>
-                    <button class="btn submit-application">Оставить заявку</button>
+
                 </div>
                 <div class="personal-account-content-body">
-                    <div class="series-numbers">
-                        <label class="personal-account-content-body__label none" for="input-serial-number">Серийный
-                            номер</label>
-                        <div class="personal-account-content-body__input-box none">
-                            <input type="text" placeholder="000 000 000 000" id="input-serial-number">
-                            <button class="btn personal-account-content-body__input-box-btn">Добавить</button>
+                    <div class="equipment-box equipment-box-personal-manager">
+                        <div class="personal-manager">
+                            <div class="equipment-box__personal-manager-box personal-account-content-body__equipment-personal-manager-box">
+                                <div class="personal-manager__images-box">
+                                    <picture>
+                                        <!-- Десктопная версия (ширина экрана от 768px) -->
+                                        <source
+                                                srcset="images/catalog/01.webp"
+                                                type="image/webp"
+                                                media="(min-width: 768px)"/>
+
+                                        <!-- Мобильная версия (ширина экрана до 767px) -->
+                                        <source
+                                                srcset="images/catalog/01.webp"
+                                                type="image/webp"
+                                                media="(max-width: 767px)"/>
+
+                                        <!-- Фолбэк для браузеров без поддержки WebP -->
+                                        <img
+                                                src="images/catalog/01.png"
+                                                alt="Описание изображения"
+                                                loading="lazy"/>
+                                    </picture>
+                                </div>
+                                <div class="personal-manager__text">
+                                    <div class="personal-manager__text-name">Марина</div>
+                                    <div class="personal-manager__text-post">Менеджер по вашему оборудованию</div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="personal-account-content-body__text none">
-                            У вас пока нет необходимого оборудования, но вы можете оставить заявку. Также вы можете
-                            вернуться позже и выбрать технику из раздела «Избранное», где сохраняются все товары,
-                            которые вы
-                            добавили в корзину.
-                        </div>
-                        <div class="personal-account-content-body__button-box none">
-                            <a href="#" class="btn personal-account-content-body__button-box-link"
-                               id="my-equipment-consultation">Нужна консультация</a>
-                            <a href="#" class="btn personal-account-content-body__button-box-link"
-                               id="my-equipment-favorites">Избранная техника</a>
-                        </div>
-                    </div>
-                    <div class="equipment-box">
                         <ul class="equipment-box__list personal-account-content-body__equipment-list">
                             <li class="equipment-box__item personal-account-content-body__equipment-item">
-                                <div class="equipment-box__item-content personal-account-content-body__equipment-item-content">
-                                    <div class="equipment-box__item-content-image personal-account-content-body__equipment-item-content-image">
-                                        <picture>
-                                            <!-- Десктопная версия (ширина экрана от 768px) -->
-                                            <source
-                                                    srcset="images/catalog/01.webp"
-                                                    type="image/webp"
-                                                    media="(min-width: 768px)"/>
-
-                                            <!-- Мобильная версия (ширина экрана до 767px) -->
-                                            <source
-                                                    srcset="images/catalog/01.webp"
-                                                    type="image/webp"
-                                                    media="(max-width: 767px)"/>
-
-                                            <!-- Фолбэк для браузеров без поддержки WebP -->
-                                            <img
-                                                    src="images/catalog/01.png"
-                                                    alt="Описание изображения"
-                                                    loading="lazy"/>
-                                        </picture>
-                                    </div>
-                                    <div class="equipment-box__item-content-description-box personal-account-content-body__equipment-item-content-description-box">
-                                        <div class="equipment-box__item-title">TITAN 60 Compact</div>
-                                        <div class="equipment-box__item-subtitle">Малогабаритная буровая установка</div>
-                                        <div class="equipment-box__item-series-number">Номер: <span
-                                                data-serial-number="data_serial_number">73921803030840</span></div>
-                                        <div class="equipment-box__item-date">Дата регистрации: <span
-                                                data-registration-date="registration_date"></span></div>
-                                    </div>
-                                </div>
-                                <button class="btn equipment-box__item-btn personal-account-content-body__equipment-item-btn personal-account-content-body__equipment-item-btn--open-modal">
-                                    Оставить заявку
-                                    <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8.5 1.5V16.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                              stroke-linejoin="round"/>
-                                        <path d="M1 9H16" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                              stroke-linejoin="round"/>
-                                    </svg>
-                                </button>
+                                <span>Телефон:</span>
+                                <a href="tel:+59176340030">+ 591 763 40030</a>
                             </li>
                             <li class="equipment-box__item personal-account-content-body__equipment-item">
-                                <div class="equipment-box__item-content personal-account-content-body__equipment-item-content">
-                                    <div class="equipment-box__item-content-image personal-account-content-body__equipment-item-content-image">
-                                        <picture>
-                                            <!-- Десктопная версия (ширина экрана от 768px) -->
-                                            <source
-                                                    srcset="images/catalog/01.webp"
-                                                    type="image/webp"
-                                                    media="(min-width: 768px)"/>
-
-                                            <!-- Мобильная версия (ширина экрана до 767px) -->
-                                            <source
-                                                    srcset="images/catalog/01.webp"
-                                                    type="image/webp"
-                                                    media="(max-width: 767px)"/>
-
-                                            <!-- Фолбэк для браузеров без поддержки WebP -->
-                                            <img
-                                                    src="images/catalog/01.png"
-                                                    alt="Описание изображения"
-                                                    loading="lazy"/>
-                                        </picture>
-                                    </div>
-                                    <div class="equipment-box__item-content-description-box personal-account-content-body__equipment-item-content-description-box">
-                                        <div class="equipment-box__item-title">TITAN 60 Compact</div>
-                                        <div class="equipment-box__item-subtitle">Малогабаритная буровая установка</div>
-                                        <div class="equipment-box__item-series-number">Номер: <span
-                                                data-serial-number="data_serial_number">73921803030840</span></div>
-                                        <div class="equipment-box__item-date">Дата регистрации: <span
-                                                data-registration-date="registration_date"></span></div>
-                                    </div>
-                                </div>
-                                <button class="btn equipment-box__item-btn personal-account-content-body__equipment-item-btn personal-account-content-body__equipment-item-btn--open-modal">
-                                    Оставить заявку
-                                    <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8.5 1.5V16.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                              stroke-linejoin="round"/>
-                                        <path d="M1 9H16" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                              stroke-linejoin="round"/>
-                                    </svg>
-                                </button>
-                            </li>
-                            <li class="equipment-box__item personal-account-content-body__equipment-item">
-                                <div class="equipment-box__item-content personal-account-content-body__equipment-item-content">
-                                    <div class="equipment-box__item-content-image personal-account-content-body__equipment-item-content-image">
-                                        <picture>
-                                            <!-- Десктопная версия (ширина экрана от 768px) -->
-                                            <source
-                                                    srcset="images/catalog/01.webp"
-                                                    type="image/webp"
-                                                    media="(min-width: 768px)"/>
-
-                                            <!-- Мобильная версия (ширина экрана до 767px) -->
-                                            <source
-                                                    srcset="images/catalog/01.webp"
-                                                    type="image/webp"
-                                                    media="(max-width: 767px)"/>
-
-                                            <!-- Фолбэк для браузеров без поддержки WebP -->
-                                            <img
-                                                    src="images/catalog/01.png"
-                                                    alt="Описание изображения"
-                                                    loading="lazy"/>
-                                        </picture>
-                                    </div>
-                                    <div class="equipment-box__item-content-description-box personal-account-content-body__equipment-item-content-description-box">
-                                        <div class="equipment-box__item-title">TITAN 60 Compact</div>
-                                        <div class="equipment-box__item-subtitle">Малогабаритная буровая установка</div>
-                                        <div class="equipment-box__item-series-number">Номер: <span
-                                                data-serial-number="data_serial_number">73921803030840</span></div>
-                                        <div class="equipment-box__item-date">Дата регистрации: <span
-                                                data-registration-date="registration_date"></span></div>
-                                    </div>
-                                </div>
-                                <button class="btn equipment-box__item-btn personal-account-content-body__equipment-item-btn personal-account-content-body__equipment-item-btn--open-modal">
-                                    Оставить заявку
-                                    <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8.5 1.5V16.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                              stroke-linejoin="round"/>
-                                        <path d="M1 9H16" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                              stroke-linejoin="round"/>
-                                    </svg>
-                                </button>
+                                <span>Почта:</span>
+                                <a href="mailto:jroca2366@gmail.com">jroca2366@gmail.com</a>
                             </li>
                         </ul>
-
-                        <div class="pagination-wrap">
-                            <button class="btn prev-btn">Назад</button>
-                            <ul class="ul-btn pagination">
-                                <li class="active">1</li>
-                                <li class="page-navigation__list-item">
-                                    <a href="#" class="page-navigation__list-link">2</a>
-                                </li>
-                                <li class="page-navigation__list-item">
-                                    <a href="#" class="page-navigation__list-link">3</a>
-                                </li>
-                            </ul>
-                            <button class="btn next-btn">Вперёд</button>
-                        </div>
+                        <button class="btn personal-manager-consultation-btn">Нужна консультация</button>
                     </div>
                 </div>
             </div>

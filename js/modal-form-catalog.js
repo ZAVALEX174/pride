@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 modal.classList.remove('modals_opened');
                 modalFormRepresentation.classList.add('none');
                 modalsConnection.classList.add('none');
-                // modalFormOtzivi.classList.add('none');
+                modalFormOtzivi.classList.add('none');
                 document.body.style.overflow = '';
                 document.documentElement.style.overflow = ''; // Для html
                 document.body.style.paddingRight = `0px`;

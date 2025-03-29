@@ -227,7 +227,7 @@
 .personal-account .personal-account-content .tab-content {
     width: 100%;
     max-width: 747px;
-    height: 100%;
+    /*height: 100%;*/
 }
 
 .personal-account
@@ -738,6 +738,124 @@
     line-height: 1.22222;
     color: var(--dark-gray);
     margin-bottom: 30px;
+}
+
+.personal-account-content-header__title.consultant-header__title {
+    width: 100%;
+}
+
+.personal-account-content .tab-content .personal-account-content-header .personal-account-content-header__title.consultant-header__title span {
+    font-family: 'Golos Text Medium', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5625;
+    color: var(--color-orange);
+}
+
+.personal-account-content .tab-content .personal-account-content-header .personal-account-content-header__title.consultant-header__title div p {
+    font-family: 'Golos Text Medium', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.222;
+    color: var(--dark-gray);
+    opacity: 0.8;
+}
+
+.equipment-box-personal-manager .equipment-box__list.personal-account-content-body__equipment-list {
+    border-bottom: none;
+}
+
+.equipment-box-personal-manager .personal-manager {
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.equipment-box__personal-manager-box.personal-account-content-body__equipment-personal-manager-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.personal-manager__images-box {
+    width: 78px;
+    height: 78px;
+    border-radius: 100%;
+    border: 2px solid var(--color-orange);
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.personal-manager__text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.personal-manager__text-name {
+    font-family: 'Golos Text SemiBold', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.25;
+    color: var(--dark-gray);
+}
+
+.personal-manager__text-post {
+    font-family: 'Golos Text Regular', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22222;
+    color: var(--dark-gray);
+    opacity: 0.8;
+}
+
+.equipment-box-personal-manager .equipment-box__list.personal-account-content-body__equipment-list .equipment-box__item.personal-account-content-body__equipment-item {
+    padding: 23px 20px;
+}
+
+.equipment-box-personal-manager .equipment-box__list.personal-account-content-body__equipment-list .equipment-box__item.personal-account-content-body__equipment-item span {
+    font-family: 'Golos Text Medium', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1.35294;
+    color: var(--color-orange);
+    margin-bottom: 15px;
+}
+
+.equipment-box-personal-manager .equipment-box__list.personal-account-content-body__equipment-list .equipment-box__item.personal-account-content-body__equipment-item a {
+    font-family: 'Golos Text Regular', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.29412;
+    color: var(--dark-gray);
+    transition: 0.3s ease-in;
+}
+
+.equipment-box-personal-manager .equipment-box__list.personal-account-content-body__equipment-list .equipment-box__item.personal-account-content-body__equipment-item a:hover {
+    color: var(--color-orange);
+}
+
+.personal-manager-consultation-btn {
+    font-family: 'Golos Text Regular', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: var(--main-bg);
+    border-radius: 100px;
+    width: 100%;
+    max-width: 747px;
+    height: 48px;
+    line-height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-orange);
+    transition: 0.3s ease-in;
+}
+
+.personal-manager-consultation-btn:hover {
+    background: var(--ligth-gray);
 }
 
 
