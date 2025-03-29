@@ -2,6 +2,9 @@ const container = document.querySelector('.personal-account');
 const buttons = container.querySelectorAll('.tab-button');
 const contents = container.querySelectorAll('.tab-content');
 
+let scrollBarClient = document.documentElement.clientWidth;
+let scrollBarAll = window.innerWidth;
+
 if (container && buttons && contents) {
     class TabSystem {
         constructor(container) {
@@ -95,3 +98,108 @@ if (histiryActiveBtn && histiryBtn) {
         new HistoryTabSystem('#tab-btn3 .personal-account-content-body');
     });
 }
+
+// Элементы
+const modalOverlay = document.getElementById('modalOverlayAccount');
+const modalOtbivkaOverlay = document.getElementById('modalOtbivka');
+const openBtnConsultationForm = document.getElementById('consultation-btn');
+const closeBtn = document.querySelector('.close-btn');
+const closeBtnOtbivka = document.querySelector('.close-btn-otbivka');
+const submitBtnConsultationForm = document.querySelector('.consultation-btn-form');
+
+if (modalOverlay && modalOtbivkaOverlay) {
+// Функции открытия/закрытия
+
+// открытие modalOverlay
+    function openModal() {
+        modalOverlay.style.display = 'flex';
+    }
+
+// закрытие modalOverlay по кнопке submit и рикрытие отбивки
+    function closeModal() {
+        modalOverlay.style.display = 'none';
+        openModalOtbivka();
+    }
+
+// закрыть modalOverlay по кнопке close
+    function closeModalFirst() {
+        modalOverlay.style.display = 'none';
+    }
+
+// открытие отбивки
+    function openModalOtbivka() {
+        modalOtbivkaOverlay.style.display = 'flex';
+    }
+
+// закрытие отбивки
+    function closeModalOtbivka() {
+        modalOtbivkaOverlay.style.display = 'none';
+    }
+
+// Обработчики событий
+    openBtnConsultationForm.addEventListener('click', openModal);
+    closeBtn.addEventListener('click', closeModalFirst);
+    submitBtnConsultationForm.addEventListener('click', closeModal);
+    closeBtnOtbivka.addEventListener('click', closeModalOtbivka);
+
+// Закрытие по клику на оверлей
+    modalOverlay.addEventListener('click', (e) => {
+        if (e.target === modalOverlay) {
+            modalOverlay.style.display = 'none';
+        }
+    });
+
+    modalOtbivkaOverlay.addEventListener('click', (e) => {
+        if (e.target === modalOtbivkaOverlay) {
+            modalOtbivkaOverlay.style.display = 'none';
+        }
+    });
+
+// Закрытие по ESC
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modalOverlay.style.display === 'flex') {
+            modalOverlay.style.display = 'none';
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modalOtbivkaOverlay.style.display === 'flex') {
+            modalOtbivkaOverlay.style.display = 'none';
+        }
+    });
+
+}
+
+const problemsFeedbackBtns = document.querySelectorAll('.problems-feedback-btn');
+const modalsConnection = document.getElementById('modal-contacts');
+const modal = document.querySelector('.modals');
+
+if (problemsFeedbackBtns && modalsConnection) {
+    problemsFeedbackBtns.forEach(item => {
+        item.addEventListener('click', (e) => {
+            e.preventDefault();
+            modal.classList.add('modals_opened');
+            modalsConnection.classList.remove('none');
+            modalsConnection.classList.remove('none');
+            // document.documentElement.style.overflow = "hidden";
+            document.body.style.overflow = "hidden";
+            // document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+        });
+    })
+}
+// изменения 29_03_25
+
+const modalFormZakaz = modal.querySelector('.modals-zakaz');
+const closesModalFormZakaz = modalFormZakaz.querySelector('.modals-zakaz__btn');
+
+const openFormBtn = document.querySelectorAll('.submit-application');
+openFormBtn.forEach(el => {
+    el.addEventListener('click', (e) => {
+        e.preventDefault();
+        // document.documentElement.style.overflow = "hidden";
+        document.body.style.overflow = "hidden";
+        // document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+        modal.classList.add('modals_opened');
+        modalFormZakaz.classList.remove('none');
+    })
+})

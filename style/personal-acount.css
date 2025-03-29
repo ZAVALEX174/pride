@@ -346,7 +346,6 @@
     font-size: 20px;
     line-height: 1.25;
     color: var(--dark-gray);
-    margin-bottom: 17px;
 }
 
 .tab-content .personal-account-content-body .personal-account-content-body__input-box {
@@ -354,6 +353,7 @@
     display: flex;
     column-gap: 10px;
     margin-bottom: 60px;
+    margin-top: 17px;
 }
 
 .tab-content .personal-account-content-body .personal-account-content-body__input-box input {
@@ -1083,8 +1083,46 @@
     display: none !important;
 }
 
+/*модалки*/
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
 
+.modal {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    position: relative;
+    max-width: 500px;
+    width: 90%;
+}
 
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.open-modal-btn {
+    padding: 15px 30px;
+    margin: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
 
 
 

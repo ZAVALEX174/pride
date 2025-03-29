@@ -26,6 +26,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const openModalNonStandart = document.querySelector('.non-standard__btn');
 
     // изменения 29_03_25
+    let scrollBarClient = document.documentElement.clientWidth;
+    let scrollBarAll = window.innerWidth;
+
     const openBtnsModalFormComPred = document.querySelectorAll('.compred__btn');
 
     if (openBtnsModalFormComPred && modalsConnection) {
@@ -44,10 +47,6 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     }
     // изменения 29_03_25
-
-
-    let scrollBarClient = document.documentElement.clientWidth;
-    let scrollBarAll = window.innerWidth;
 
     if (workZakazBtns) {
         workZakazBtns.forEach(btn => {
