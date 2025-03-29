@@ -867,8 +867,11 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin-bottom: 20px;
+    column-gap: 10px;
+    row-gap: 10px;
+    flex-wrap: wrap;
 }
 
 .inputs-file-box label {
@@ -884,6 +887,7 @@
     border-radius: 20px;
     padding: 14px 13px;
     background: #e5e5e5;
+    cursor: pointer;
 }
 
 .inputs-file-box label svg {

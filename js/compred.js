@@ -68,26 +68,26 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     // Инициализация модалки для страницы дилеров
-    const initDealersModal = () => {
-        const dealerButtons = document.querySelectorAll('.compred__btn');
-        const modalFormRepresentation = modal.querySelector('.modals-form-representation');
-        const closeBtn = document.querySelector('.anketa-close');
-
-        if (dealerButtons.length) {
-            dealerButtons.forEach(btn => {
-                modalManager.initModal(
-                    btn,
-                    modalFormRepresentation,
-                    closeBtn
-                );
-            });
-        }
-    };
+    // const initDealersModal = () => {
+    //     const dealerButtons = document.querySelectorAll('.compred__btn');
+    //     const modalFormRepresentation = modal.querySelector('.modals-form-representation');
+    //     const closeBtn = document.querySelector('.anketa-close');
+    //
+    //     if (dealerButtons.length) {
+    //         dealerButtons.forEach(btn => {
+    //             modalManager.initModal(
+    //                 btn,
+    //                 modalFormRepresentation,
+    //                 closeBtn
+    //             );
+    //         });
+    //     }
+    // };
 
     // Инициализация всех модалок
     const initAllModals = () => {
         initRepresentationModal();
-        initDealersModal();
+        // initDealersModal();
 
         // Здесь можно добавить инициализацию других модалок
         // initCatalogModal();

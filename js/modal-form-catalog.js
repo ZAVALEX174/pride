@@ -3,15 +3,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const modal = document.querySelector('.modals');
     const modalFormOtzivi = document.getElementById('modal-otzivi');
     const openModalFormOtziviBtns = document.querySelectorAll('.our-projects-cart__btn-open-modal-form');
-
     const modalFormRepresentation = document.getElementById('modal-payment');
     const modalFormApplication = document.getElementById('modal-application');
     const modalReset = modal.querySelector('.modal-reset');
     const modalResetBtn = modal.querySelector('.modal-reset__btn');
     const closeModalResetBtn = modal.querySelector('.modal-reset__close');
     const modalsConnection = document.getElementById('modal-contacts');
-    closeBtns = document.querySelectorAll('.anketa-close')
-
+    const closeBtns = document.querySelectorAll('.anketa-close');
     // const closesFormRepresentation = modalFormZakaz.querySelector('.modals-zakaz__btn');
     const openModalFormPepresentationBtn = document.querySelector('.banner__btn');
     const nonStandaetbtn = document.querySelector('.non-standard__btn');
@@ -26,6 +24,25 @@ document.addEventListener('DOMContentLoaded', function () {
     const workZakazBtns = document.querySelectorAll('.work__body-cart-btn_hover-block');
 
     const openModalNonStandart = document.querySelector('.non-standard__btn');
+
+    // изменения 29_03_25
+    const openBtnsModalFormComPred = document.querySelectorAll('.compred__btn');
+
+    if (openBtnsModalFormComPred && modalsConnection) {
+        openBtnsModalFormComPred.forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault();
+
+                // console.log("должна открыться форма связи с менеждером");
+                modal.classList.add('modals_opened');
+                modalsConnection.classList.remove('none');
+                document.body.style.overflow = '';
+                document.documentElement.style.overflow = ''; // Для html
+                document.body.style.paddingRight = `0px`;
+            })
+        })
+    }
+    // изменения 29_03_25
 
 
     let scrollBarClient = document.documentElement.clientWidth;
@@ -222,14 +239,16 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
 
-        closeBtnOther = document.querySelector('.modals-form-order-close').addEventListener('click', () => {
+        // изменения 29_03_25
+        const closeBtnOther = document.querySelector('.modals-form-order-close').addEventListener('click', () => {
             modal.classList.remove('modals_opened');
             modalFormOrder.classList.add('none');
             document.body.style.overflow = '';
             document.documentElement.style.overflow = ''; // Для html
             document.body.style.paddingRight = `0px`;
             clearDiv();
-        })
+        });
+        // изменения 29_03_25
     }
 
     if (modalFormOrder) {
@@ -321,14 +340,14 @@ document.addEventListener('DOMContentLoaded', function () {
             document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
         });
 
-        closeBtnOther = document.querySelector('.modals-form-order-close').addEventListener('click', () => {
+        const closeBtnOther = document.querySelector('.modals-form-order-close').addEventListener('click', () => {
             modal.classList.remove('modals_opened');
             modalFormOrder.classList.add('none');
             document.body.style.overflow = '';
             document.documentElement.style.overflow = ''; // Для html
             document.body.style.paddingRight = `0px`;
             clearDiv();
-        })
+        });
     }
 
     // изменения от 26_03_25
