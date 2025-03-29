@@ -2587,7 +2587,7 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-content" id="tab-btn4">
+            <div class="tab-content none" id="tab-btn4">
                 <div class="personal-account-content-header">
                     <div class="personal-account-content-header__title consultant-header__title">
                         <span>PRIDE ENGINEERING COMPANY</span>
@@ -2646,184 +2646,166 @@
                         <button class="btn personal-manager-consultation-btn">Нужна консультация</button>
                     </div>
                 </div>
+
             </div>
-            <div class="tab-content none" id="tab-btn5">
+            <div class="tab-content" id="tab-btn5">
                 <div class="personal-account-content-header">
-                    <div class="personal-account-content-header__title">
-                        <h2>Моё оборудование</h2>
-                        <div data-count="3">количество: <span>3</span></div>
-                    </div>
-                    <button class="btn submit-application">Оставить заявку</button>
-                </div>
-                <div class="personal-account-content-body">
-                    <div class="series-numbers">
-                        <label class="personal-account-content-body__label none" for="input-serial-number">Серийный
-                            номер</label>
-                        <div class="personal-account-content-body__input-box none">
-                            <input type="text" placeholder="000 000 000 000" id="input-serial-number">
-                            <button class="btn personal-account-content-body__input-box-btn">Добавить</button>
-                        </div>
-                        <div class="personal-account-content-body__text none">
-                            У вас пока нет необходимого оборудования, но вы можете оставить заявку. Также вы можете
-                            вернуться позже и выбрать технику из раздела «Избранное», где сохраняются все товары,
-                            которые вы
-                            добавили в корзину.
-                        </div>
-                        <div class="personal-account-content-body__button-box none">
-                            <a href="#" class="btn personal-account-content-body__button-box-link"
-                               id="my-equipment-consultation">Нужна консультация</a>
-                            <a href="#" class="btn personal-account-content-body__button-box-link"
-                               id="my-equipment-favorites">Избранная техника</a>
-                        </div>
-                    </div>
-                    <div class="equipment-box">
-                        <ul class="equipment-box__list personal-account-content-body__equipment-list">
-                            <li class="equipment-box__item personal-account-content-body__equipment-item">
-                                <div class="equipment-box__item-content personal-account-content-body__equipment-item-content">
-                                    <div class="equipment-box__item-content-image personal-account-content-body__equipment-item-content-image">
-                                        <picture>
-                                            <!-- Десктопная версия (ширина экрана от 768px) -->
-                                            <source
-                                                    srcset="images/catalog/01.webp"
-                                                    type="image/webp"
-                                                    media="(min-width: 768px)"/>
-
-                                            <!-- Мобильная версия (ширина экрана до 767px) -->
-                                            <source
-                                                    srcset="images/catalog/01.webp"
-                                                    type="image/webp"
-                                                    media="(max-width: 767px)"/>
-
-                                            <!-- Фолбэк для браузеров без поддержки WebP -->
-                                            <img
-                                                    src="images/catalog/01.png"
-                                                    alt="Описание изображения"
-                                                    loading="lazy"/>
-                                        </picture>
-                                    </div>
-                                    <div class="equipment-box__item-content-description-box personal-account-content-body__equipment-item-content-description-box">
-                                        <div class="equipment-box__item-title">TITAN 60 Compact</div>
-                                        <div class="equipment-box__item-subtitle">Малогабаритная буровая установка</div>
-                                        <div class="equipment-box__item-series-number">Номер: <span
-                                                data-serial-number="data_serial_number">73921803030840</span></div>
-                                        <div class="equipment-box__item-date">Дата регистрации: <span
-                                                data-registration-date="registration_date"></span></div>
-                                    </div>
-                                </div>
-                                <button class="btn equipment-box__item-btn personal-account-content-body__equipment-item-btn personal-account-content-body__equipment-item-btn--open-modal">
-                                    Оставить заявку
-                                    <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8.5 1.5V16.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                              stroke-linejoin="round"/>
-                                        <path d="M1 9H16" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                              stroke-linejoin="round"/>
-                                    </svg>
-                                </button>
-                            </li>
-                            <li class="equipment-box__item personal-account-content-body__equipment-item">
-                                <div class="equipment-box__item-content personal-account-content-body__equipment-item-content">
-                                    <div class="equipment-box__item-content-image personal-account-content-body__equipment-item-content-image">
-                                        <picture>
-                                            <!-- Десктопная версия (ширина экрана от 768px) -->
-                                            <source
-                                                    srcset="images/catalog/01.webp"
-                                                    type="image/webp"
-                                                    media="(min-width: 768px)"/>
-
-                                            <!-- Мобильная версия (ширина экрана до 767px) -->
-                                            <source
-                                                    srcset="images/catalog/01.webp"
-                                                    type="image/webp"
-                                                    media="(max-width: 767px)"/>
-
-                                            <!-- Фолбэк для браузеров без поддержки WebP -->
-                                            <img
-                                                    src="images/catalog/01.png"
-                                                    alt="Описание изображения"
-                                                    loading="lazy"/>
-                                        </picture>
-                                    </div>
-                                    <div class="equipment-box__item-content-description-box personal-account-content-body__equipment-item-content-description-box">
-                                        <div class="equipment-box__item-title">TITAN 60 Compact</div>
-                                        <div class="equipment-box__item-subtitle">Малогабаритная буровая установка</div>
-                                        <div class="equipment-box__item-series-number">Номер: <span
-                                                data-serial-number="data_serial_number">73921803030840</span></div>
-                                        <div class="equipment-box__item-date">Дата регистрации: <span
-                                                data-registration-date="registration_date"></span></div>
-                                    </div>
-                                </div>
-                                <button class="btn equipment-box__item-btn personal-account-content-body__equipment-item-btn personal-account-content-body__equipment-item-btn--open-modal">
-                                    Оставить заявку
-                                    <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8.5 1.5V16.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                              stroke-linejoin="round"/>
-                                        <path d="M1 9H16" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                              stroke-linejoin="round"/>
-                                    </svg>
-                                </button>
-                            </li>
-                            <li class="equipment-box__item personal-account-content-body__equipment-item">
-                                <div class="equipment-box__item-content personal-account-content-body__equipment-item-content">
-                                    <div class="equipment-box__item-content-image personal-account-content-body__equipment-item-content-image">
-                                        <picture>
-                                            <!-- Десктопная версия (ширина экрана от 768px) -->
-                                            <source
-                                                    srcset="images/catalog/01.webp"
-                                                    type="image/webp"
-                                                    media="(min-width: 768px)"/>
-
-                                            <!-- Мобильная версия (ширина экрана до 767px) -->
-                                            <source
-                                                    srcset="images/catalog/01.webp"
-                                                    type="image/webp"
-                                                    media="(max-width: 767px)"/>
-
-                                            <!-- Фолбэк для браузеров без поддержки WebP -->
-                                            <img
-                                                    src="images/catalog/01.png"
-                                                    alt="Описание изображения"
-                                                    loading="lazy"/>
-                                        </picture>
-                                    </div>
-                                    <div class="equipment-box__item-content-description-box personal-account-content-body__equipment-item-content-description-box">
-                                        <div class="equipment-box__item-title">TITAN 60 Compact</div>
-                                        <div class="equipment-box__item-subtitle">Малогабаритная буровая установка</div>
-                                        <div class="equipment-box__item-series-number">Номер: <span
-                                                data-serial-number="data_serial_number">73921803030840</span></div>
-                                        <div class="equipment-box__item-date">Дата регистрации: <span
-                                                data-registration-date="registration_date"></span></div>
-                                    </div>
-                                </div>
-                                <button class="btn equipment-box__item-btn personal-account-content-body__equipment-item-btn personal-account-content-body__equipment-item-btn--open-modal">
-                                    Оставить заявку
-                                    <svg width="17" height="18" viewBox="0 0 17 18" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8.5 1.5V16.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                              stroke-linejoin="round"/>
-                                        <path d="M1 9H16" stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                              stroke-linejoin="round"/>
-                                    </svg>
-                                </button>
-                            </li>
-                        </ul>
-
-                        <div class="pagination-wrap">
-                            <button class="btn prev-btn">Назад</button>
-                            <ul class="ul-btn pagination">
-                                <li class="active">1</li>
-                                <li class="page-navigation__list-item">
-                                    <a href="#" class="page-navigation__list-link">2</a>
-                                </li>
-                                <li class="page-navigation__list-item">
-                                    <a href="#" class="page-navigation__list-link">3</a>
-                                </li>
-                            </ul>
-                            <button class="btn next-btn">Вперёд</button>
+                    <div class="personal-account-content-header__title consultant-header__title setting-header__title">
+                        <span>PRIDE ENGINEERING COMPANY</span>
+                        <h2>Настройки личного кабинета</h2>
+                        <div>
+                            <p>
+                                После того как вы изменили данные, не забудьте сохранить их и обновить страницы. Это
+                                позволит корректно обновить информацию.
+                            </p>
                         </div>
                     </div>
                 </div>
+                <div class="personal-account-content-body personal-account-content-body__setting">
+                    <div class="inputs-file-box">
+                        <label for="input_file_1">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <rect width="20" height="20" rx="5" fill="currentColor"/>
+                                <path d="M13.7123 6.21248C13.8884 6.04484 14.1227 5.95217 14.3659 5.95401C14.609 5.95585 14.8419 6.05206 15.0154 6.22234C15.1889 6.39263 15.2895 6.62366 15.2959 6.8667C15.3024 7.10974 15.2141 7.34577 15.0498 7.52498L10.0623 13.7625C9.97657 13.8549 9.87306 13.929 9.758 13.9804C9.64293 14.0319 9.51867 14.0596 9.39264 14.062C9.26662 14.0643 9.14142 14.0412 9.02453 13.994C8.90763 13.9469 8.80145 13.8766 8.71233 13.7875L5.40483 10.48C5.31272 10.3942 5.23884 10.2907 5.1876 10.1757C5.13636 10.0607 5.10881 9.93652 5.10659 9.81064C5.10437 9.68476 5.12753 9.55972 5.17468 9.44299C5.22183 9.32625 5.29201 9.22021 5.38103 9.13119C5.47006 9.04216 5.5761 8.97198 5.69283 8.92483C5.80957 8.87768 5.93461 8.85452 6.06048 8.85674C6.18636 8.85896 6.3105 8.88652 6.4255 8.93776C6.5405 8.989 6.644 9.06287 6.72983 9.15498L9.34733 11.7712L13.6886 6.23998C13.6964 6.23036 13.7047 6.22118 13.7136 6.21248H13.7123Z"
+                                      fill="#F9F9F9"/>
+                            </svg>
+                            <div class="input-img">
+                                <img src="" alt="Аватарка">
+                            </div>
+                            Добавить
+                        </label>
+                        <input class="none" type="file" id="input_file_1">
+                        <label for="input_file_2">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <rect width="20" height="20" rx="5" fill="currentColor"/>
+                                <path d="M13.7123 6.21248C13.8884 6.04484 14.1227 5.95217 14.3659 5.95401C14.609 5.95585 14.8419 6.05206 15.0154 6.22234C15.1889 6.39263 15.2895 6.62366 15.2959 6.8667C15.3024 7.10974 15.2141 7.34577 15.0498 7.52498L10.0623 13.7625C9.97657 13.8549 9.87306 13.929 9.758 13.9804C9.64293 14.0319 9.51867 14.0596 9.39264 14.062C9.26662 14.0643 9.14142 14.0412 9.02453 13.994C8.90763 13.9469 8.80145 13.8766 8.71233 13.7875L5.40483 10.48C5.31272 10.3942 5.23884 10.2907 5.1876 10.1757C5.13636 10.0607 5.10881 9.93652 5.10659 9.81064C5.10437 9.68476 5.12753 9.55972 5.17468 9.44299C5.22183 9.32625 5.29201 9.22021 5.38103 9.13119C5.47006 9.04216 5.5761 8.97198 5.69283 8.92483C5.80957 8.87768 5.93461 8.85452 6.06048 8.85674C6.18636 8.85896 6.3105 8.88652 6.4255 8.93776C6.5405 8.989 6.644 9.06287 6.72983 9.15498L9.34733 11.7712L13.6886 6.23998C13.6964 6.23036 13.7047 6.22118 13.7136 6.21248H13.7123Z"
+                                      fill="#F9F9F9"/>
+                            </svg>
+                            <div class="input-img">
+                                <img src="" alt="Аватарка">
+                            </div>
+                            Добавить
+                        </label>
+                        <input class="none" type="file" id="input_file_2">
+                        <label for="input_file_3">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <rect width="20" height="20" rx="5" fill="currentColor"/>
+                                <path d="M13.7123 6.21248C13.8884 6.04484 14.1227 5.95217 14.3659 5.95401C14.609 5.95585 14.8419 6.05206 15.0154 6.22234C15.1889 6.39263 15.2895 6.62366 15.2959 6.8667C15.3024 7.10974 15.2141 7.34577 15.0498 7.52498L10.0623 13.7625C9.97657 13.8549 9.87306 13.929 9.758 13.9804C9.64293 14.0319 9.51867 14.0596 9.39264 14.062C9.26662 14.0643 9.14142 14.0412 9.02453 13.994C8.90763 13.9469 8.80145 13.8766 8.71233 13.7875L5.40483 10.48C5.31272 10.3942 5.23884 10.2907 5.1876 10.1757C5.13636 10.0607 5.10881 9.93652 5.10659 9.81064C5.10437 9.68476 5.12753 9.55972 5.17468 9.44299C5.22183 9.32625 5.29201 9.22021 5.38103 9.13119C5.47006 9.04216 5.5761 8.97198 5.69283 8.92483C5.80957 8.87768 5.93461 8.85452 6.06048 8.85674C6.18636 8.85896 6.3105 8.88652 6.4255 8.93776C6.5405 8.989 6.644 9.06287 6.72983 9.15498L9.34733 11.7712L13.6886 6.23998C13.6964 6.23036 13.7047 6.22118 13.7136 6.21248H13.7123Z"
+                                      fill="#F9F9F9"/>
+                            </svg>
+                            <div class="input-img">
+                                <img src="" alt="Аватарка">
+                            </div>
+                            Добавить
+                        </label>
+                        <input class="none" type="file" id="input_file_3">
+                        <label for="input_file_4">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <rect width="20" height="20" rx="5" fill="currentColor"/>
+                                <path d="M13.7123 6.21248C13.8884 6.04484 14.1227 5.95217 14.3659 5.95401C14.609 5.95585 14.8419 6.05206 15.0154 6.22234C15.1889 6.39263 15.2895 6.62366 15.2959 6.8667C15.3024 7.10974 15.2141 7.34577 15.0498 7.52498L10.0623 13.7625C9.97657 13.8549 9.87306 13.929 9.758 13.9804C9.64293 14.0319 9.51867 14.0596 9.39264 14.062C9.26662 14.0643 9.14142 14.0412 9.02453 13.994C8.90763 13.9469 8.80145 13.8766 8.71233 13.7875L5.40483 10.48C5.31272 10.3942 5.23884 10.2907 5.1876 10.1757C5.13636 10.0607 5.10881 9.93652 5.10659 9.81064C5.10437 9.68476 5.12753 9.55972 5.17468 9.44299C5.22183 9.32625 5.29201 9.22021 5.38103 9.13119C5.47006 9.04216 5.5761 8.97198 5.69283 8.92483C5.80957 8.87768 5.93461 8.85452 6.06048 8.85674C6.18636 8.85896 6.3105 8.88652 6.4255 8.93776C6.5405 8.989 6.644 9.06287 6.72983 9.15498L9.34733 11.7712L13.6886 6.23998C13.6964 6.23036 13.7047 6.22118 13.7136 6.21248H13.7123Z"
+                                      fill="#F9F9F9"/>
+                            </svg>
+                            <div class="input-img">
+                                <img src="" alt="Аватарка">
+                            </div>
+                            Добавить
+                        </label>
+                        <input class="none" type="file" id="input_file_4">
+                        <label for="input_file_5">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <rect width="20" height="20" rx="5" fill="currentColor"/>
+                                <path d="M13.7123 6.21248C13.8884 6.04484 14.1227 5.95217 14.3659 5.95401C14.609 5.95585 14.8419 6.05206 15.0154 6.22234C15.1889 6.39263 15.2895 6.62366 15.2959 6.8667C15.3024 7.10974 15.2141 7.34577 15.0498 7.52498L10.0623 13.7625C9.97657 13.8549 9.87306 13.929 9.758 13.9804C9.64293 14.0319 9.51867 14.0596 9.39264 14.062C9.26662 14.0643 9.14142 14.0412 9.02453 13.994C8.90763 13.9469 8.80145 13.8766 8.71233 13.7875L5.40483 10.48C5.31272 10.3942 5.23884 10.2907 5.1876 10.1757C5.13636 10.0607 5.10881 9.93652 5.10659 9.81064C5.10437 9.68476 5.12753 9.55972 5.17468 9.44299C5.22183 9.32625 5.29201 9.22021 5.38103 9.13119C5.47006 9.04216 5.5761 8.97198 5.69283 8.92483C5.80957 8.87768 5.93461 8.85452 6.06048 8.85674C6.18636 8.85896 6.3105 8.88652 6.4255 8.93776C6.5405 8.989 6.644 9.06287 6.72983 9.15498L9.34733 11.7712L13.6886 6.23998C13.6964 6.23036 13.7047 6.22118 13.7136 6.21248H13.7123Z"
+                                      fill="#F9F9F9"/>
+                            </svg>
+                            <div class="input-img">
+                                <img src="" alt="Аватарка">
+                            </div>
+                            Добавить
+                        </label>
+                        <input class="none" type="file" id="input_file_5">
+                    </div>
+                    <div class="setting-hint">
+                        *Выберите фотографию или загрузите свою. Затем нажмите кнопку «Сохранить» и обновите страницу.
+                    </div>
+                    <div class="equipment-box equipment-box-setting">
+                        <div class="setting-contact-title">
+                            <span>Контактные данные</span>
+                        </div>
+                        <div class="setting-contact-data-list">
+                            <div class="setting-contact-data-item">
+                                <div class="setting-contact-data-item__title">ФИО</div>
+                                <div class="setting-contact-data-item__content-box">
+                                    <div class="setting-contact-data-item__content-box-text"
+                                         data-client-name="data_client_name">Щукин Илья Елисеевич
+                                    </div>
+                                    <button class="setting-contact-data-item__content-box-btn"
+                                            id="setting-data-client-name">Изменить
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="setting-contact-data-item">
+                                <div class="setting-contact-data-item__title">Телефон</div>
+                                <div class="setting-contact-data-item__content-box">
+                                    <div class="setting-contact-data-item__content-box-text"
+                                         data-client-call="data_client_call">+7 999 999 99 99
+                                    </div>
+                                    <button class="setting-contact-data-item__content-box-btn"
+                                            id="setting-data-client-call">Изменить
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="setting-contact-data-item">
+                                <div class="setting-contact-data-item__title">Почта</div>
+                                <div class="setting-contact-data-item__content-box">
+                                    <div class="setting-contact-data-item__content-box-text"
+                                         data-client-mail="data_client_mail">mail@mail.com
+                                    </div>
+                                    <button class="setting-contact-data-item__content-box-btn"
+                                            id="setting-data-client-mail">Изменить
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="setting-contact-data-item">
+                                <div class="setting-contact-data-item__title">Наименование юридического лица</div>
+                                <div class="setting-contact-data-item__content-box">
+                                    <div class="setting-contact-data-item__content-box-text"
+                                         data-client-name="data_client_urid">ООО Компания
+                                    </div>
+                                    <button class="setting-contact-data-item__content-box-btn"
+                                            id="setting-data-client-urid">Изменить
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="setting-contact-data-item">
+                                <div class="setting-contact-data-item__title">ИНН юридического лица</div>
+                                <div class="setting-contact-data-item__content-box">
+                                    <div class="setting-contact-data-item__content-box-text"
+                                         data-client-name="data_client_inn">000000000000
+                                    </div>
+                                    <button class="setting-contact-data-item__content-box-btn"
+                                            id="setting-data-client-inn">Изменить
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn setting-contact-btn">Сохранить</button>
+                    </div>
+                </div>
+                <buttton class="go-back-btn">Выйти из аккаунта
+                    <svg width="21" height="15" viewBox="0 0 21 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 6.5C0.447715 6.5 0 6.94772 0 7.5C0 8.05228 0.447715 8.5 1 8.5V6.5ZM20.7071 8.20711C21.0976
+                        7.81658 21.0976 7.18342 20.7071 6.79289L14.3431 0.428932C13.9526 0.0384078 13.3195 0.0384078 12.9289
+                        0.428932C12.5384 0.819457 12.5384 1.45262 12.9289 1.84315L18.5858 7.5L12.9289 13.1569C12.5384 13.5474
+                        12.5384 14.1805 12.9289 14.5711C13.3195 14.9616 13.9526 14.9616 14.3431 14.5711L20.7071 8.20711ZM1
+                        8.5H20V6.5H1V8.5Z"
+                              fill="currentColor"/>
+                    </svg>
+                </buttton>
             </div>
         </div>
     </section>
