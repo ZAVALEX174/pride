@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const openModalFormOtziviBtns = document.querySelectorAll('.our-projects-cart__btn-open-modal-form');
     const modalFormRepresentation = document.getElementById('modal-payment');
     const modalFormApplication = document.getElementById('modal-application');
+    const modalFormQuestion = document.getElementById('modal-question');
     const modalReset = modal.querySelector('.modal-reset');
     const modalResetBtn = modal.querySelector('.modal-reset__btn');
     const closeModalResetBtn = modal.querySelector('.modal-reset__close');
@@ -61,7 +62,6 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     }
 
-
     if (openModalFormPepresentationBtn) {
         openModalFormPepresentationBtn.addEventListener('click', (e) => {
             e.preventDefault();
@@ -70,6 +70,20 @@ document.addEventListener('DOMContentLoaded', function () {
             document.documentElement.style.overflow = "hidden";
             document.body.style.overflow = "hidden";
             document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+        })
+    }
+
+    const questionsAnswersBtns = document.querySelectorAll('.questions-answers__btn');
+    if (questionsAnswersBtns) {
+        questionsAnswersBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                modal.classList.add('modals_opened');
+                modalFormQuestion.classList.remove('none');
+                document.documentElement.style.overflow = "hidden";
+                document.body.style.overflow = "hidden";
+                document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+            })
         })
     }
 
