@@ -1202,6 +1202,52 @@
     background: var(--ligth-gray);
 }
 
+#modalOtbivka .modal {
+    padding: 75px 60px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+
+}
+
+#modalOtbivka .modal .close-btn-otbivka {
+    position: absolute;
+    top: 75px;
+    right: 60px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    color: #A2A2A2;
+    transition: 0.3s ease-in;
+}
+
+#modalOtbivka .modal .close-btn-otbivka:hover {
+    color: var(--dark-gray);
+}
+
+#modalOtbivka .modal svg {
+    margin-bottom: 35px;
+}
+
+#modalOtbivka .modal h2 {
+    font-family: 'GetVoIP Grotesque Regular', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.6;
+    color: var(--dark-gray);
+    margin-bottom: 20px;
+}
+
+#modalOtbivka .modal div {
+    font-family: 'Golos Text Regular', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22222;
+    text-align: center;
+    color: var(--dark-gray);
+}
 
 
 
