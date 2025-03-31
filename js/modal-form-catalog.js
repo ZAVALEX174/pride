@@ -5,11 +5,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const openModalFormOtziviBtns = document.querySelectorAll('.our-projects-cart__btn-open-modal-form');
     const modalFormRepresentation = document.getElementById('modal-payment');
     const modalFormApplication = document.getElementById('modal-application');
+    const modalFormApplicationSubmitBtn = modalFormApplication.querySelector('.form-representation__form-btn');
+
     const modalFormQuestion = document.getElementById('modal-question');
     const modalReset = modal.querySelector('.modal-reset');
     const modalResetBtn = modal.querySelector('.modal-reset__btn');
     const closeModalResetBtn = modal.querySelector('.modal-reset__close');
     const modalsConnection = document.getElementById('modal-contacts');
+    const modalsConnectionFormBtn = modalsConnection.querySelector('.form-representation__form-btn');
     const closeBtns = document.querySelectorAll('.anketa-close');
     // const closesFormRepresentation = modalFormZakaz.querySelector('.modals-zakaz__btn');
     const openModalFormPepresentationBtn = document.querySelector('.banner__btn');
@@ -18,13 +21,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const cardButtons = document.querySelectorAll('.cart__btn');
     const contactUsBtnS = document.querySelectorAll('.contact-us__btn');
     const stockCartBtns = document.querySelectorAll('.stock-cart__text-content-desc-bid-btn');
-
     const openBtnFormOrder = document.getElementById('r2');
     const modalFormOrder = modal.querySelector('.modals-form-order');
-
     const workZakazBtns = document.querySelectorAll('.work__body-cart-btn_hover-block');
-
     const openModalNonStandart = document.querySelector('.non-standard__btn');
+
 
     // изменения 29_03_25
     let scrollBarClient = document.documentElement.clientWidth;
@@ -72,6 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
             document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
         })
     }
+
 
     const questionsAnswersBtns = document.querySelectorAll('.questions-answers__btn');
     if (questionsAnswersBtns) {
@@ -141,7 +143,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    if (modalFormRepresentation || modalsConnection || modalFormOtzivi || modalReviewSent || modalCostCalculation || modalApplicationSent) {
+    if (modalFormRepresentation || modalsConnection || modalFormOtzivi || modalReviewSent || modalCostCalculation || modalApplicationSent || modalParametersSent || modalFormApplication) {
         $(document).click(function (e) {
             if ($(e.target).is('.modals__wrapper')) {
                 modal.classList.remove('modals_opened');
@@ -152,6 +154,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 modalCostCalculation.classList.add('none');
                 modalApplicationSent.classList.add('none');
                 modalParametersSent.classList.add('none');
+                modalFormApplication.classList.add('none');
                 document.body.style.overflow = '';
                 document.documentElement.style.overflow = ''; // Для html
                 document.body.style.paddingRight = `0px`;
@@ -361,14 +364,14 @@ document.addEventListener('DOMContentLoaded', function () {
             document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
         });
 
-        const closeBtnOther = document.querySelector('.modals-form-order-close').addEventListener('click', () => {
-            modal.classList.remove('modals_opened');
-            modalFormOrder.classList.add('none');
-            document.body.style.overflow = '';
-            document.documentElement.style.overflow = ''; // Для html
-            document.body.style.paddingRight = `0px`;
-            clearDiv();
-        });
+        // const closeBtnOther = document.querySelector('.modals-form-order-close').addEventListener('click', () => {
+        //     modal.classList.remove('modals_opened');
+        //     modalFormOrder.classList.add('none');
+        //     document.body.style.overflow = '';
+        //     document.documentElement.style.overflow = ''; // Для html
+        //     document.body.style.paddingRight = `0px`;
+        //     clearDiv();
+        // });
     }
 
     // изменения от 26_03_25
@@ -431,6 +434,20 @@ document.addEventListener('DOMContentLoaded', function () {
     const modalCostCalculation = document.getElementById('modal-cost-calculation');
     const modalCostCalculationCloseBtn = document.getElementById('modal-cost-calculation-close-btn');
 
+    if (modalsConnectionFormBtn) {
+        modalsConnectionFormBtn.addEventListener('click', (e) => {
+            console.log('ldjfbn');
+            e.preventDefault();
+            modal.classList.add('modals_opened');
+            modalsConnection.classList.add('none');
+            modalCostCalculation.classList.remove('none');
+            // document.documentElement.style.overflow = "hidden";
+            document.body.style.overflow = "hidden";
+            document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+
+        })
+    }
+
     if (modalCostCalculationCloseBtn) {
         modalCostCalculationCloseBtn.addEventListener('click', (e) => {
             e.preventDefault();
@@ -452,7 +469,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // ==================================
 
     // открытие/закрытие отбивки для отзывов
-    const submitForm = document.querySelector('.form-representation .form-representation__form-btn');
+    const submitForm = document.querySelector('.form-representation.form-representation-product-cart .form-representation__form-btn');
     const modalApplicationSent = document.getElementById('modal-application-sent');
     if (submitForm) {
         submitForm.addEventListener('click', (e) => {
@@ -465,6 +482,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
         })
     }
+
+    modalFormApplicationSubmitBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        console.log('Запросить выполнен');
+        modal.classList.add('modals_opened');
+        modalFormApplication.classList.add('none');
+        modalApplicationSent.classList.remove('none');
+        // document.documentElement.style.overflow = "hidden";
+        document.body.style.overflow = "hidden";
+        document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+    })
+
     const modalApplicationSentCloseBtn = document.getElementById('application-sent-close-btn');
 
     if (modalApplicationSentCloseBtn) {
@@ -493,7 +522,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (submitFormModalsOrder) {
         submitFormModalsOrder.addEventListener('click', (e) => {
             e.preventDefault();
-            console.log("fmdhbkf");
+            // console.log("fmdhbkf");
             modalFormOrder.classList.add('none');
             modalParametersSent.classList.remove('none');
         })
@@ -518,6 +547,32 @@ document.addEventListener('DOMContentLoaded', function () {
 
         })
     }
+
+    const modalFormZakaz = document.querySelector('.modals-zakaz');
+    const openModalZayavkaFormSubminBtn = modalFormZakaz.querySelector('.btn.modal-form__btn.modal-zakaz__form-btn');
+    if (openModalZayavkaFormSubminBtn) {
+        openModalZayavkaFormSubminBtn.addEventListener('click', (e) => {
+            modalFormZakaz.classList.add('none');
+            modalApplicationSent.classList.remove('none');
+            // document.documentElement.style.overflow = "hidden";
+            document.body.style.overflow = "hidden";
+            document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+        })
+    }
+
+
+    const openFooterFormSubminBtn = document.querySelector('.footer__callback-form-btn');
+    console.log(openFooterFormSubminBtn);
+
+    openFooterFormSubminBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        console.log("меня нажали");
+        modal.classList.add('modals_opened');
+        document.documentElement.style.overflow = "hidden";
+        document.body.style.overflow = "hidden";
+        document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+        modalCostCalculation.classList.remove('none');
+    })
     // изменения от 31_03_25
 
 });
