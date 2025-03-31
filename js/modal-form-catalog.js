@@ -93,7 +93,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 e.preventDefault();
                 modal.classList.add('modals_opened');
                 modalFormOtzivi.classList.remove('none');
-                document.documentElement.style.overflow = "hidden";
+
+
+                // document.documentElement.style.overflow = "hidden";
                 document.body.style.overflow = "hidden";
                 document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
             });
@@ -107,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function () {
             modalFormOrder.classList.remove('none');
             addDataToForm();
             document.body.style.overflow = 'hidden';
-            document.body.style.overflow = 'hidden'; // Для html
+            // document.body.style.overflow = 'hidden'; // Для html
         })
     }
 
@@ -117,6 +119,7 @@ document.addEventListener('DOMContentLoaded', function () {
             modal.classList.add('modals_opened');
             modalFormOrder.classList.remove('none');
             addDataToForm();
+
             document.documentElement.style.overflow = "hidden";
             document.body.style.overflow = "hidden";
             document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
@@ -138,13 +141,17 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    if (modalFormRepresentation) {
+    if (modalFormRepresentation || modalsConnection || modalFormOtzivi || modalReviewSent || modalCostCalculation || modalApplicationSent) {
         $(document).click(function (e) {
             if ($(e.target).is('.modals__wrapper')) {
                 modal.classList.remove('modals_opened');
                 modalFormRepresentation.classList.add('none');
                 modalsConnection.classList.add('none');
                 modalFormOtzivi.classList.add('none');
+                modalReviewSent.classList.add('none');
+                modalCostCalculation.classList.add('none');
+                modalApplicationSent.classList.add('none');
+                modalParametersSent.classList.add('none');
                 document.body.style.overflow = '';
                 document.documentElement.style.overflow = ''; // Для html
                 document.body.style.paddingRight = `0px`;
@@ -376,10 +383,142 @@ document.addEventListener('DOMContentLoaded', function () {
             if (inputProductHidden) {
                 inputProductHidden.remove();
             }
+            modalFormRepresentation.classList.add('none');
+            modalCostCalculation.classList.remove('none');
         })
     }
 
     // изменения от 26_03_25
+
+
+    // изменения от 31_03_25
+    // открытие/закрытие отбивки для отзывов
+    const submitBtnOtzivi = document.querySelector('#modal-otzivi .form-representation__form-btn');
+    const modalReviewSent = document.getElementById('modal-review-sent');
+    if (submitBtnOtzivi) {
+        submitBtnOtzivi.addEventListener('click', (e) => {
+            e.preventDefault();
+            modal.classList.add('modals_opened');
+            modalFormOtzivi.classList.add('none');
+            modalReviewSent.classList.remove('none');
+            // document.documentElement.style.overflow = "hidden";
+            document.body.style.overflow = "hidden";
+            document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+
+        })
+    }
+    const modalReviewSentCloseBtn = document.getElementById('modal-review-sent-close-btn');
+
+    if (modalReviewSentCloseBtn) {
+        modalReviewSentCloseBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            modal.classList.remove('modals_opened');
+            modalFormRepresentation.classList.add('none');
+            modalFormApplication.classList.add('none');
+            modalsConnection.classList.add('none');
+            modalFormOtzivi.classList.add('none');
+            modalReviewSent.classList.add('none');
+            document.body.style.overflow = '';
+            document.documentElement.style.overflow = ''; // Для html
+            document.body.style.paddingRight = `0px`;
+        })
+    }
+
+
+    // ==================================
+
+    // Закрытие отбивки для компредл
+    const modalCostCalculation = document.getElementById('modal-cost-calculation');
+    const modalCostCalculationCloseBtn = document.getElementById('modal-cost-calculation-close-btn');
+
+    if (modalCostCalculationCloseBtn) {
+        modalCostCalculationCloseBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            modal.classList.remove('modals_opened');
+            modalFormRepresentation.classList.add('none');
+            modalFormApplication.classList.add('none');
+            modalsConnection.classList.add('none');
+            modalFormOtzivi.classList.add('none');
+            modalReviewSent.classList.add('none');
+            modalCostCalculation.classList.add('none');
+            document.body.style.overflow = '';
+            // document.documentElement.style.overflow = ''; // Для html
+            document.documentElement.style.overflow = ''; // Для html
+            document.body.style.paddingRight = `0px`;
+
+        })
+    }
+
+// ==================================
+
+    // открытие/закрытие отбивки для отзывов
+    const submitForm = document.querySelector('.form-representation .form-representation__form-btn');
+    const modalApplicationSent = document.getElementById('modal-application-sent');
+    if (submitForm) {
+        submitForm.addEventListener('click', (e) => {
+            e.preventDefault();
+            modal.classList.add('modals_opened');
+            modalApplicationSent.classList.remove('none');
+            // document.documentElement.style.overflow = "hidden";
+            document.body.style.overflow = "hidden";
+            document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+
+        })
+    }
+    const modalApplicationSentCloseBtn = document.getElementById('application-sent-close-btn');
+
+    if (modalApplicationSentCloseBtn) {
+        modalApplicationSentCloseBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            modal.classList.remove('modals_opened');
+            modalFormRepresentation.classList.add('none');
+            modalFormApplication.classList.add('none');
+            modalsConnection.classList.add('none');
+            modalFormOtzivi.classList.add('none');
+            modalReviewSent.classList.add('none');
+            modalApplicationSent.classList.add('none');
+            document.body.style.overflow = '';
+            document.documentElement.style.overflow = ''; // Для html
+            document.body.style.paddingRight = `0px`;
+        })
+    }
+
+    // ==================================
+
+    // Закрытие отбивки для фильтра
+    const submitFormModalsOrder = modalFormOrder.querySelector('.form-representation__form-btn');
+    const modalParametersSent = document.getElementById('modal-parameters-sent');
+    const modalParametersSentCloseBtn = document.getElementById('parameters-sent-close-btn');
+
+    if (submitFormModalsOrder) {
+        submitFormModalsOrder.addEventListener('click', (e) => {
+            e.preventDefault();
+            console.log("fmdhbkf");
+            modalFormOrder.classList.add('none');
+            modalParametersSent.classList.remove('none');
+        })
+    }
+
+
+    if (modalParametersSentCloseBtn) {
+        modalParametersSentCloseBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            modal.classList.remove('modals_opened');
+            modalFormRepresentation.classList.add('none');
+            modalFormApplication.classList.add('none');
+            modalsConnection.classList.add('none');
+            modalFormOtzivi.classList.add('none');
+            modalReviewSent.classList.add('none');
+            modalCostCalculation.classList.add('none');
+            modalParametersSent.classList.add('none');
+            document.body.style.overflow = '';
+            // document.documentElement.style.overflow = ''; // Для html
+            document.documentElement.style.overflow = ''; // Для html
+            document.body.style.paddingRight = `0px`;
+
+        })
+    }
+    // изменения от 31_03_25
 
 });
 
