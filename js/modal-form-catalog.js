@@ -562,17 +562,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     const openFooterFormSubminBtn = document.querySelector('.footer__callback-form-btn');
-    console.log(openFooterFormSubminBtn);
+    if(openFooterFormSubminBtn) {
+        openFooterFormSubminBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            console.log("меня нажали");
+            modal.classList.add('modals_opened');
+            document.documentElement.style.overflow = "hidden";
+            document.body.style.overflow = "hidden";
+            document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+            modalCostCalculation.classList.remove('none');
+        })
+    }
 
-    openFooterFormSubminBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        console.log("меня нажали");
-        modal.classList.add('modals_opened');
-        document.documentElement.style.overflow = "hidden";
-        document.body.style.overflow = "hidden";
-        document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
-        modalCostCalculation.classList.remove('none');
-    })
+
     // изменения от 31_03_25
 
 });

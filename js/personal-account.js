@@ -178,12 +178,15 @@ if (problemsFeedbackBtns && modalsConnection) {
     problemsFeedbackBtns.forEach(item => {
         item.addEventListener('click', (e) => {
             e.preventDefault();
-            modal.classList.add('modals_opened');
-            modalsConnection.classList.remove('none');
-            modalsConnection.classList.remove('none');
-            // document.documentElement.style.overflow = "hidden";
-            document.body.style.overflow = "hidden";
-            // document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+            // modal.classList.add('modals_opened');
+            // modalsConnection.classList.remove('none');
+            // modalsConnection.classList.remove('none');
+            // // document.documentElement.style.overflow = "hidden";
+            // document.body.style.overflow = "hidden";
+            // // document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+
+            // console.log("что и ты тоже к менеждеру?");
+            openManagerTabs();
         });
     })
 }
@@ -196,10 +199,59 @@ const openFormBtn = document.querySelectorAll('.submit-application');
 openFormBtn.forEach(el => {
     el.addEventListener('click', (e) => {
         e.preventDefault();
-        // document.documentElement.style.overflow = "hidden";
-        document.body.style.overflow = "hidden";
-        // document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
-        modal.classList.add('modals_opened');
-        modalFormZakaz.classList.remove('none');
+        // console.log("нужно перейти на вкладку личный менеджер!");
+        // // document.documentElement.style.overflow = "hidden";
+        // document.body.style.overflow = "hidden";
+        // // document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+        // modal.classList.add('modals_opened');
+        // modalFormZakaz.classList.remove('none');
+        openManagerTabs();
+    })
+});
+
+const myEquipmentConsultation = document.getElementById('my-equipment-consultation');
+
+myEquipmentConsultation.addEventListener('click', (e) => {
+    e.preventDefault();
+    // console.log("И мне тоже нужно перейти на вкладку личный менеджер!");
+    openManagerTabs();
+})
+
+const myEquipmentFavorites = document.getElementById('my-equipment-favorites');
+
+myEquipmentFavorites.addEventListener('click', (e) => {
+    e.preventDefault();
+    console.log("А я хочу перейти на вкладку Избранное!");
+    openFavoritesTabs();
+});
+
+const equipmentItemBtns = document.querySelectorAll('.personal-account-content-body__equipment-item-btn--open-modal');
+equipmentItemBtns.forEach(item => {
+    item.addEventListener('click', (e) => {
+        e.preventDefault();
+        // console.log('ну и мы туда же!!!');
+        openManagerTabs();
     })
 })
+
+const managerBtnTab = document.querySelector('.tab-button[data-tab-btn="tab-btn4"]');
+const managerTab = document.getElementById('tab-btn4');
+
+const favoritesBtnTab = document.querySelector('.tab-button[data-tab-btn="tab-btn2"]');
+const favoritesTab = document.getElementById('tab-btn2');
+
+function openManagerTabs() {
+    buttons.forEach(btn => btn.classList.remove('tab-button__active'));
+    contents.forEach(content => content.classList.remove('tab-content-active'));
+    managerBtnTab.classList.add('tab-button__active');
+    managerTab.classList.add('tab-content-active');
+}
+
+function openFavoritesTabs() {
+    buttons.forEach(btn => btn.classList.remove('tab-button__active'));
+    contents.forEach(content => content.classList.remove('tab-content-active'));
+    favoritesBtnTab.classList.add('tab-button__active');
+    favoritesTab.classList.add('tab-content-active');
+}
+
+// console.log(managerTab);

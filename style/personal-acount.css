@@ -1098,23 +1098,30 @@
 }
 
 .modal {
-    background: white;
-    padding: 30px;
-    border-radius: 8px;
-    position: relative;
-    max-width: 500px;
-    width: 90%;
+    border-radius: 30px;
+    padding: 60px;
+    width: 100%;
+    max-width: 669px;
+    box-shadow: 0 0 77px 0 rgba(0, 0, 0, 0.15);
+    background: var(--5);
 }
 
 .close-btn {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 60px;
+    right: 60px;
     background: none;
     border: none;
     font-size: 24px;
     cursor: pointer;
     padding: 5px;
+    z-index: 10;
+    transition: 0.3s ease-in;
+    color: #A2A2A2;
+}
+
+.close-btn:hover {
+    color: var(--dark-gray);
 }
 
 .open-modal-btn {
@@ -1124,7 +1131,76 @@
     cursor: pointer;
 }
 
+#modalOverlayAccount .modal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
 
+#modalOverlayAccount .modal h2 {
+    font-family: 'GetVoIP Grotesque Regular', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.66667;
+    color: var(--dark-gray);
+    margin-bottom: 15px;
+}
+
+#modalOverlayAccount .modal label {
+    font-family: 'Golos Text Regular', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22222;
+    color: var(--dark-gray);
+    margin-bottom: 5px;
+}
+
+#modalOverlayAccount .modal textarea {
+    font-family: 'Golos Text Regular', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22222;
+    color: var(--dark-gray);
+    border: 1px solid #aeaeae;
+    border-radius: 8px;
+    padding: 19px 16px;
+    max-width: 100%;
+    height: 140px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    background: #d9d9d9;
+    display: flex;
+    outline: none;
+    transition: 0.3s ease-in;
+    margin-bottom: 25px;
+}
+
+#modalOverlayAccount .modal textarea:focus {
+    border: 1px solid var(--color-orange);
+}
+
+#modalOverlayAccount .modal .consultation-btn-form {
+    border: 1px solid var(--color-orange);
+    background: var(--color-orange);
+    border-radius: 30px;
+    padding: 15px 31px;
+    width: 100%;
+    max-width: 549px;
+    height: 55px;
+    line-height: 55px;
+    font-family: 'Golos Text Regular', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: var(--main-bg);
+    justify-content: center;
+    transition: 0.3s ease-in;
+}
+
+#modalOverlayAccount .modal .consultation-btn-form:hover {
+    border: 1px solid var(--ligth-gray);
+    background: var(--ligth-gray);
+}
 
 
 
