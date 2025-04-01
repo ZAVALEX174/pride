@@ -1208,7 +1208,6 @@
     flex-direction: column;
     position: relative;
     align-items: center;
-
 }
 
 #modalOtbivka .modal .close-btn-otbivka {
@@ -1254,7 +1253,10 @@
 
 
 
-
+.modal-overlay1 {
+    display: flex !important;
+    flex-direction: column;
+}
 
 
 
