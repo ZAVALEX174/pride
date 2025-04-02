@@ -1248,18 +1248,284 @@
     color: var(--dark-gray);
 }
 
-
-
-
-
-
+/*auth block*/
 .modal-overlay1 {
     display: flex !important;
     flex-direction: column;
 }
 
+.auth .modal-auth {
+    position: relative;
+    padding: 60px 60px;
+    overflow-y: auto;
+    height: 674px;
+    margin: 0 auto;
+    -ms-overflow-style: none; /* IE/Edge */
+    scrollbar-width: none; /* Firefox */
+}
 
+.auth .modal-auth::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
 
+.auth .modal-auth .close-btn {
+    cursor: pointer;
+    color: #A2A2A2;
+    transition: 0.3s ease-in;
+    top: 60px;
+    right: 60px;
+}
 
+.auth .modal-auth .close-btn:hover {
+    color: var(--dark-gray);
+}
 
+.auth .modal-auth .sign-title {
+    font-family: 'GetVoIP Grotesque Regular', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.66667;
+    color: var(--dark-gray);
+    margin-bottom: 15px;
+}
 
+.auth .modal-auth .sign-subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22222;
+    color: var(--dark-gray);
+    margin-bottom: 0;
+}
+
+.auth .modal-auth .auth-tabs-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.auth .modal-auth .auth-tabs-box .signin-btn, .auth .modal-auth .auth-tabs-box .signup-btn {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 50%;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid var(--ligth-gray);
+    /*margin-bottom: 10px;*/
+    text-align: center;
+    justify-content: center;
+    padding: 14px 0;
+    font-family: 'Golos Text Medium', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22222;
+    color: var(--ligth-gray);
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.auth .modal-auth .auth-tabs-box .signin-btn:hover, .auth .modal-auth .auth-tabs-box .signup-btn:hover {
+    border-bottom: 2px solid var(--dark-gray);
+    color: var(--dark-gray);
+}
+
+.sign-active {
+    display: flex;
+    color: var(--color-orange) !important;
+    border-bottom: 2px solid var(--color-orange) !important;
+}
+
+.signup-tab-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.signup-tab-content .signup-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.signup-tab-content .signup-form .signup-form-user-name-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+.signup-tab-content .signup-form .signup-form-user-password {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 15px;
+}
+
+.signup-form-user-name-label, .signup-form-user-surname-label {
+    width: 100%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.label-all .signup-form-label-password, .signup-form-label-repeat-password {
+    width: 100%;
+}
+
+.input-all {
+    width: 100%;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    background: #d9d9d9;
+    border: 1px solid #aeaeae;
+    border-radius: 8px;
+    padding: 12px 16px;
+    height: 50px;
+    margin-top: 5px;
+    font-family: 'Golos Text Regular', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22222;
+    color: var(--dark-gray);
+    outline: none;
+}
+
+.input-all:focus {
+    border: 1px solid var(--color-orange) !important;
+}
+
+.signup-form-input-login-span, .signup-form-input-password-span {
+    display: block;
+    font-family: 'Golos Text Regular', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.125;
+    color: var(--dark-gray);
+    opacity: 0.6;
+    margin-top: 5px;
+}
+
+.signup-form-input-password-span {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.auth .modal-auth .auth-btn-form {
+    background: var(--color-orange);
+    height: 50px;
+    line-height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth .modal-auth .auth-btn-form:hover {
+    background: var(--ligth-gray);
+}
+
+.label-all {
+    font-family: 'Golos Text Regular', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22222;
+    color: var(--dark-gray);
+}
+
+.auth .modal-auth .signin-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 15px;
+}
+
+.auth .modal-auth .signin-form .signin-form-label-password {
+    margin-bottom: 25px;
+}
+
+.auth .modal-auth .signin-form .checkbox-box {
+    width: 100%;
+    position: relative;
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.auth .modal-auth .signin-form .checkbox-box label {
+    font-family: 'Golos Text Regular', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.125;
+    color: var(--dark-gray);
+    cursor: pointer;
+}
+
+.auth .modal-auth .signin-form .checkbox-box label .custom-checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.auth .modal-auth .signin-form .checkbox-box label .custom-checkbox svg {
+    color: #8E8E8E;
+    cursor: pointer;
+}
+
+#signin-form-checkbox-remember-me {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.signin-form .checkbox-box {
+    padding-left: 50px;
+}
+
+#signin-form-checkbox-remember-me:checked + .custom-checkbox svg {
+    color: var(--color-orange);
+}
+
+.auth-btn-not-password {
+    width: 100%;
+    height: 43px;
+    line-height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    font-family: 'Golos Text Regular', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--dark-gray);
+    transition: 0.3s ease-in;
+}
+
+.auth-btn-not-password svg {
+    margin-left: 15px;
+    color: #2B2A29;
+    opacity: 0.8;
+    transition: 0.3s ease-in;
+}
+
+.auth-btn-not-password:hover {
+    opacity: 1;
+    color: var(--color-orange);
+}
+
+.auth-btn-not-password:hover svg {
+    opacity: 1;
+    color: var(--color-orange);
+}
+
+.sign-tab-content {
+    display: none;
+}
+
+.sign-tab-active {
+    display: flex;
+}
