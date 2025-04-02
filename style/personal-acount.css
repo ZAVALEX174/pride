@@ -1529,3 +1529,53 @@
 .sign-tab-active {
     display: flex;
 }
+
+#modalOverlayAuthOtbivka .modal {
+    padding: 75px 60px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#modalOverlayAuthOtbivka .modal svg {
+    margin-bottom: 35px;
+}
+
+#modalOverlayAuthOtbivka .modal h2 {
+    font-family: 'GetVoIP Grotesque Regular', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.6;
+    color: var(--dark-gray);
+    margin-bottom: 20px;
+}
+
+#modalOverlayAuthOtbivka .modal div {
+    font-family: 'Golos Text Regular', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22222;
+    text-align: center;
+    color: var(--dark-gray);
+    margin-bottom: 30px;
+}
+
+#modalOverlayAuthOtbivka .modal #modalOverlayAuthGo {
+    outline: none;
+    border: 1px solid var(--color-orange);
+    border-radius: 30px;
+    padding: 15px 31px;
+    width: 320px;
+    height: 50px;
+    line-height: 50px;
+    background: var(--color-orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Golos Text Regular', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: var(--main-bg);
+}
