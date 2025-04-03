@@ -5,17 +5,20 @@ document.addEventListener('DOMContentLoaded', () => {
     let videoContent = document.querySelectorAll('.video-content');
     let content = document.querySelector('.content');
 
-    if (quantityVideo == 1) {
-        content.classList.add('content_one');
-        videoContent.forEach(video => {
-            video.classList.add('video-content_one');
-        })
-    } else {
-        content.classList.remove('content_one');
-        videoContent.forEach(video => {
-            video.classList.remove('video-content_one');
-        })
+    if (videoContent && content) {
+        if (quantityVideo == 1) {
+            content.classList.add('content_one');
+            videoContent.forEach(video => {
+                video.classList.add('video-content_one');
+            })
+        } else {
+            content.classList.remove('content_one');
+            videoContent.forEach(video => {
+                video.classList.remove('video-content_one');
+            })
+        }
     }
+
 
     // переключение табов
     const tabs = document.querySelector('.product-cart-description-tabs');

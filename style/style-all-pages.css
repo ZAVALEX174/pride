@@ -10516,12 +10516,15 @@ a {
 }
 
 .product-cart-description-tabs__item {
-    width: calc(100% / 3);
+    /*width: calc(100% / 3);*/
+    width: 100%;
+    max-width: 590px;
+
 }
 
 @media (max-width: 500px) {
     .product-cart-description-tabs__item {
-        width: 200px;
+        /*max-width: 200px;*/
     }
 }
 
