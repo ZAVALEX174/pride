@@ -1702,3 +1702,106 @@
     color: var(--main-bg);
     background: var(--color-orange);
 }
+
+#modalOutAccountOtbivka .modal {
+    padding: 75px 60px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#modalOutAccountOtbivka .modal .close-btn-otbivka-out-account {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+#modalOutAccountOtbivka .modal .close-btn-otbivka-out-account svg {
+    color: #8E8E8E;
+    transition: 0.3s ease-in;
+}
+
+#modalOutAccountOtbivka .modal .close-btn-otbivka-out-account:hover svg {
+    color: var(--dark-gray);
+}
+
+#modalOutAccountOtbivka .modal svg {
+    margin-bottom: 34px;
+}
+
+#modalOutAccountOtbivka .modal h2 {
+    font-family: 'GetVoIP Grotesque Regular', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.6;
+    color: var(--dark-gray);
+    margin-bottom: 20px;
+}
+
+#modalOutAccountOtbivka .modal div {
+    font-family: "Golos Text Regular", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22222;
+    text-align: center;
+    color: var(--dark-gray);
+    margin-bottom: 34px;
+}
+
+#modalOutAccountOtbivka .modal .out-account-box__btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    column-gap: 15px;
+}
+
+#modalOutAccountOtbivka .modal .out-account-box__btns .out-account-link {
+    background: #d1d1d1;
+    border-radius: 100px;
+    width: 100%;
+    max-width: 340px;
+    height: 48px;
+    line-height: 48px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Golos Text Regular", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: var(--dark-gray);
+    transition: 0.3s ease-in;
+}
+
+#modalOutAccountOtbivka .modal .out-account-box__btns .out-account-link:hover {
+    background: var(--color-orange);
+    color: var(--main-bg);
+}
+
+#modalOutAccountOtbivka .modal .out-account-box__btns .out-account-btn {
+    background: #d1d1d1;
+    border-radius: 30px;
+    max-width: 194px;
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Golos Text Regular", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: var(--dark-gray);
+    transition: 0.3s ease-in;
+}
+
+#modalOutAccountOtbivka .modal .out-account-box__btns .out-account-btn:hover {
+    background: var(--color-orange);
+    color: var(--main-bg);
+}

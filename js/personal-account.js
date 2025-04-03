@@ -192,7 +192,6 @@ if (modalOverlay && modalOtbivkaOverlay) {
             modalCancelRequestOtbivka.style.display = 'none';
         }
     });
-
 }
 
 const problemsFeedbackBtns = document.querySelectorAll('.problems-feedback-btn');
@@ -207,9 +206,6 @@ if (problemsFeedbackBtns && modalsConnection) {
     problemsFeedbackBtns.forEach(item => {
         item.addEventListener('click', (e) => {
             e.preventDefault();
-            // // document.documentElement.style.overflow = "hidden";
-            // document.body.style.overflow = "hidden";
-            // // document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
             openManagerTabs();
         });
     })
@@ -220,10 +216,6 @@ if (problemsCancelBtns && modalCancelRequestOtbivka) {
     problemsCancelBtns.forEach(item => {
         item.addEventListener('click', (e) => {
             e.preventDefault();
-            // // document.documentElement.style.overflow = "hidden";
-            // document.body.style.overflow = "hidden";
-            // // document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
-
             openModalOtbivkaProblems();
         });
     })
@@ -233,9 +225,6 @@ if (problemsFeedbackOtbivkaBtns && modalsConnection) {
     problemsFeedbackOtbivkaBtns.forEach(item => {
         item.addEventListener('click', (e) => {
             e.preventDefault();
-            // // document.documentElement.style.overflow = "hidden";
-            // document.body.style.overflow = "hidden";
-            // // document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
             closeModalOtbivkaProblems();
             openManagerTabs();
         });
@@ -259,12 +248,6 @@ const openFormBtn = document.querySelectorAll('.submit-application');
 openFormBtn.forEach(el => {
     el.addEventListener('click', (e) => {
         e.preventDefault();
-        // console.log("нужно перейти на вкладку личный менеджер!");
-        // // document.documentElement.style.overflow = "hidden";
-        // document.body.style.overflow = "hidden";
-        // // document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
-        // modal.classList.add('modals_opened');
-        // modalFormZakaz.classList.remove('none');
         openManagerTabs();
     })
 });
@@ -313,8 +296,6 @@ function openFavoritesTabs() {
     favoritesBtnTab.classList.add('tab-button__active');
     favoritesTab.classList.add('tab-content-active');
 }
-
-// console.log(managerTab);
 
 // изменение данных пользователя в личном кабинете
 const arrayClientData = [];
@@ -392,17 +373,55 @@ saveSettingContactBtn.addEventListener('click', (e) => {
 
     inputClientInn.textContent = arrayClientData[4];
     dataClientInnInput.classList.add('none');
-
-    // console.log('Элементов в массиве:', arrayClientData.length);
-    // console.log('массиве:', arrayClientData);
 })
 
 
+// Выйти из аккаунта
+const goBackBtn = document.querySelector('.go-back-btn');
+const closeGoBackBtn = document.querySelector('.close-btn-otbivka-out-account');
+const outGoBackBtn = document.querySelector('.out-account-btn');
+const modalOverlayOutAccount = document.getElementById('modalOutAccountOtbivka');
 
 
+if (modalOverlayOutAccount) {
+    // закрытие modalOverlay по кнопке submit и рикрытие отбивки
+    function closeModalOutAccount() {
+        modalOverlayOutAccount.style.display = 'none';
+        // openModalOtbivka();
+    }
 
+    function openModalOutAccount() {
+        modalOverlayOutAccount.style.display = 'flex';
+    }
 
+    goBackBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        console.log('чтобы выйти, нужно включить модалку НОВУЮ');
+        openModalOutAccount();
+    })
 
+    closeGoBackBtn.addEventListener('click', (e) => {
+        closeModalOutAccount();
+    })
+
+    outGoBackBtn.addEventListener('click', (e) => {
+        closeModalOutAccount();
+    })
+
+// Закрытие по ESC
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modalOverlayOutAccount.style.display === 'flex') {
+            modalOverlayOutAccount.style.display = 'none';
+        }
+    });
+
+// Закрытие по клику на оверлей
+    modalOverlayOutAccount.addEventListener('click', (e) => {
+        if (e.target === modalOverlayOutAccount) {
+            modalOverlayOutAccount.style.display = 'none';
+        }
+    });
+}
 
 
 
