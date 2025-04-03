@@ -1579,3 +1579,108 @@
     text-align: center;
     color: var(--main-bg);
 }
+
+.modal-overlay#modalCancelRequestOtbivka .modal {
+    width: 100%;
+    position: relative;
+    padding: 55px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.modal-overlay#modalCancelRequestOtbivka .modal .close-btn-otbivka-problems {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+.modal-overlay#modalCancelRequestOtbivka .modal .close-btn-otbivka-problems svg {
+    color: #8E8E8E;
+    transition: 0.3s ease-in;
+}
+
+.modal-overlay#modalCancelRequestOtbivka .modal .close-btn-otbivka-problems:hover svg {
+    color: var(--dark-gray);
+}
+
+.modal-overlay#modalCancelRequestOtbivka .modal svg {
+    margin-bottom: 34px;
+}
+
+.modal-overlay#modalCancelRequestOtbivka .modal h2 {
+    font-family: 'GetVoIP Grotesque Regular', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.6;
+    color: var(--dark-gray);
+    margin-bottom: 20px;
+}
+
+.modal-overlay#modalCancelRequestOtbivka .modal div {
+    font-family: 'Golos Text Regular', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22222;
+    text-align: center;
+    color: var(--dark-gray);
+    margin-bottom: 34px;
+}
+
+.modal-overlay#modalCancelRequestOtbivka .modal .problem-box__btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    column-gap: 15px;
+}
+
+.modal-overlay#modalCancelRequestOtbivka .modal .problem-box__btns .problems-feedback-btn-otbivka {
+    border-radius: 100px;
+    width: 100%;
+    max-width: 340px;
+    height: 48px;
+    line-height: 48px;
+    background: #d1d1d1;
+    font-family: 'Golos Text Regular', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: var(--dark-gray);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.modal-overlay#modalCancelRequestOtbivka .modal .problem-box__btns .problems-feedback-btn-otbivka:hover {
+    color: var(--main-bg);
+    background: var(--color-orange);
+}
+
+.modal-overlay#modalCancelRequestOtbivka .modal .problem-box__btns .problems-cancel-btn--submit {
+    border-radius: 30px;
+    width: 100%;
+    max-width: 194px;
+    height: 48px;
+    line-height: 48px;
+    background: #d1d1d1;
+    font-family: 'Golos Text Regular', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: var(--dark-gray);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.modal-overlay#modalCancelRequestOtbivka .modal .problem-box__btns .problems-cancel-btn--submit:hover {
+    color: var(--main-bg);
+    background: var(--color-orange);
+}

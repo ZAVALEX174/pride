@@ -105,7 +105,9 @@ const modalOtbivkaOverlay = document.getElementById('modalOtbivka');
 const openBtnConsultationForm = document.getElementById('consultation-btn');
 const closeBtn = document.querySelector('.close-btn');
 const closeBtnOtbivka = document.querySelector('.close-btn-otbivka');
+const closeBtnOtbivkaProblems = document.querySelector('.close-btn-otbivka-problems');
 const submitBtnConsultationForm = document.querySelector('.consultation-btn-form');
+const modalCancelRequestOtbivka = document.getElementById('modalCancelRequestOtbivka');
 
 if (modalOverlay && modalOtbivkaOverlay) {
 // Функции открытия/закрытия
@@ -131,6 +133,16 @@ if (modalOverlay && modalOtbivkaOverlay) {
         modalOtbivkaOverlay.style.display = 'flex';
     }
 
+// открытие отбивки Отменить заявку
+    function openModalOtbivkaProblems() {
+        modalCancelRequestOtbivka.style.display = 'flex';
+    }
+
+    // закрыть отбивки Отменить заявку
+    function closeModalOtbivkaProblems() {
+        modalCancelRequestOtbivka.style.display = 'none';
+    }
+
 // закрытие отбивки
     function closeModalOtbivka() {
         modalOtbivkaOverlay.style.display = 'none';
@@ -141,6 +153,7 @@ if (modalOverlay && modalOtbivkaOverlay) {
     closeBtn.addEventListener('click', closeModalFirst);
     submitBtnConsultationForm.addEventListener('click', closeModal);
     closeBtnOtbivka.addEventListener('click', closeModalOtbivka);
+    closeBtnOtbivkaProblems.addEventListener('click', closeModalOtbivkaProblems);
 
 // Закрытие по клику на оверлей
     modalOverlay.addEventListener('click', (e) => {
@@ -152,6 +165,12 @@ if (modalOverlay && modalOtbivkaOverlay) {
     modalOtbivkaOverlay.addEventListener('click', (e) => {
         if (e.target === modalOtbivkaOverlay) {
             modalOtbivkaOverlay.style.display = 'none';
+        }
+    });
+
+    modalCancelRequestOtbivka.addEventListener('click', (e) => {
+        if (e.target === modalCancelRequestOtbivka) {
+            modalCancelRequestOtbivka.style.display = 'none';
         }
     });
 
@@ -168,28 +187,69 @@ if (modalOverlay && modalOtbivkaOverlay) {
         }
     });
 
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modalCancelRequestOtbivka.style.display === 'flex') {
+            modalCancelRequestOtbivka.style.display = 'none';
+        }
+    });
+
 }
 
 const problemsFeedbackBtns = document.querySelectorAll('.problems-feedback-btn');
+const problemsFeedbackOtbivkaBtns = document.querySelectorAll('.problems-feedback-btn-otbivka');
+const problemsCancelBtns = document.querySelectorAll('.problems-cancel-btn');
 const modalsConnection = document.getElementById('modal-contacts');
+
 const modal = document.querySelector('.modals');
+const submitModalProblemsBtn = document.querySelector('.problems-cancel-btn--submit');
 
 if (problemsFeedbackBtns && modalsConnection) {
     problemsFeedbackBtns.forEach(item => {
         item.addEventListener('click', (e) => {
             e.preventDefault();
-            // modal.classList.add('modals_opened');
-            // modalsConnection.classList.remove('none');
-            // modalsConnection.classList.remove('none');
             // // document.documentElement.style.overflow = "hidden";
             // document.body.style.overflow = "hidden";
             // // document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
-
-            // console.log("что и ты тоже к менеждеру?");
             openManagerTabs();
         });
     })
 }
+
+// открытие окна отбивки "проблемы"
+if (problemsCancelBtns && modalCancelRequestOtbivka) {
+    problemsCancelBtns.forEach(item => {
+        item.addEventListener('click', (e) => {
+            e.preventDefault();
+            // // document.documentElement.style.overflow = "hidden";
+            // document.body.style.overflow = "hidden";
+            // // document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+
+            openModalOtbivkaProblems();
+        });
+    })
+}
+
+if (problemsFeedbackOtbivkaBtns && modalsConnection) {
+    problemsFeedbackOtbivkaBtns.forEach(item => {
+        item.addEventListener('click', (e) => {
+            e.preventDefault();
+            // // document.documentElement.style.overflow = "hidden";
+            // document.body.style.overflow = "hidden";
+            // // document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+            closeModalOtbivkaProblems();
+            openManagerTabs();
+        });
+    })
+}
+
+// открытие и отправка заявки на отмену
+if (submitModalProblemsBtn) {
+    submitModalProblemsBtn.addEventListener('click', (e) => {
+        // e.preventDefault();
+        closeModalOtbivkaProblems();
+    })
+}
+
 // изменения 29_03_25
 
 const modalFormZakaz = modal.querySelector('.modals-zakaz');
