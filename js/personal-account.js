@@ -315,3 +315,116 @@ function openFavoritesTabs() {
 }
 
 // console.log(managerTab);
+
+// изменение данных пользователя в личном кабинете
+const arrayClientData = [];
+const saveSettingContactBtn = document.querySelector('.setting-contact-btn');
+const inputUserName = document.querySelector('[data-client-name="data_client_name"]');
+const inputClientCall = document.querySelector('[data-client-call="data_client_call"]');
+const inputClientMail = document.querySelector('[data-client-mail="data_client_mail"]');
+const inputClientUrid = document.querySelector('[data-client-name="data_client_urid"]');
+const inputClientInn = document.querySelector('[data-client-name="data_client_inn"]');
+
+const inputUserNameBtn = document.getElementById('setting-data-client-name');
+const inputClientCallBtn = document.getElementById('setting-data-client-call');
+const inputClientMailBtn = document.getElementById('setting-data-client-mail');
+const inputClientUridBtn = document.getElementById('setting-data-client-urid');
+const inputClientInnBtn = document.getElementById('setting-data-client-inn');
+
+
+let dataClientNameInput = document.getElementById('data-client-name-input');
+let dataClientCallInput = document.getElementById('data-client-call-input');
+let dataClientMailInput = document.getElementById('data-client-mail-input');
+let dataClientUridInput = document.getElementById('data-client-urid-input');
+let dataClientInnInput = document.getElementById('data-client-inn-input');
+
+inputUserNameBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    document.getElementById('data-client-name-input').placeholder = inputUserName.textContent;
+    dataClientNameInput.classList.remove('none');
+})
+
+inputClientCallBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    document.getElementById('data-client-call-input').placeholder = inputClientCall.textContent;
+    dataClientCallInput.classList.remove('none');
+})
+
+inputClientMailBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    document.getElementById('data-client-mail-input').placeholder = inputClientMail.textContent;
+    dataClientMailInput.classList.remove('none');
+})
+
+inputClientUridBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    document.getElementById('data-client-urid-input').placeholder = inputClientUrid.textContent;
+    dataClientUridInput.classList.remove('none');
+})
+
+inputClientInnBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    document.getElementById('data-client-inn-input').placeholder = inputClientInn.textContent;
+    dataClientInnInput.classList.remove('none');
+})
+
+saveSettingContactBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    // 1. Добавляем элементы в массив правильно
+    arrayClientData.splice(0, 1, dataClientNameInput.value);
+    arrayClientData.splice(1, 1, dataClientCallInput.value);
+    arrayClientData.splice(2, 1, dataClientMailInput.value);
+    arrayClientData.splice(3, 1, dataClientUridInput.value);
+    arrayClientData.splice(4, 1, dataClientInnInput.value);
+
+    // 2. Обновляем отображение
+    inputUserName.textContent = arrayClientData[0];
+    dataClientNameInput.classList.add('none');
+
+    inputClientCall.textContent = arrayClientData[1];
+    dataClientCallInput.classList.add('none');
+
+    inputClientMail.textContent = arrayClientData[2];
+    dataClientMailInput.classList.add('none');
+
+    inputClientUrid.textContent = arrayClientData[3];
+    dataClientUridInput.classList.add('none');
+
+    inputClientInn.textContent = arrayClientData[4];
+    dataClientInnInput.classList.add('none');
+
+    // console.log('Элементов в массиве:', arrayClientData.length);
+    // console.log('массиве:', arrayClientData);
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
