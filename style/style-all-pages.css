@@ -10823,8 +10823,8 @@ video {
     list-style-type: inherit;
 }
 
-.info-content-box__left-pg:last-child p,
-.info-content-box__right-pg:last-child p {
+.info-content-box__left-pg p:last-child,
+.info-content-box__right-pg p:last-child {
     margin-bottom: 0;
 }
 

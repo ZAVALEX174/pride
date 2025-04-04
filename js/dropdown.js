@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const closeSelectBtn = document.querySelector('.closes-select');
     const optionsList = customSelect.querySelector('.options');
 
-     const openOptions = () => {
+    const openOptions = () => {
         arrowOrange.classList.add('arrow-selected');
         optionsList.style.display = 'block';
         closeSelectBtn.style.display = 'flex';
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // Открытие списка
-    selectedOption.addEventListener('click', openOptions);
+    // selectedOption.addEventListener('click', openOptions);
 
     // Выбор варианта
     options.forEach(option => {
