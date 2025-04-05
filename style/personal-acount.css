@@ -1805,3 +1805,222 @@
     background: var(--color-orange);
     color: var(--main-bg);
 }
+
+.personal-account-aside__application-form {
+    padding-left: 85px;
+    padding-top: 35px;
+}
+
+.personal-account-aside__application-form-link {
+    transition: 0.3s ease-in;
+    color: #FEFEFE;
+    font-family: "Golos Text Regular", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.22727;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.personal-account-aside__application-form-link svg {
+    color: #FEFEFE;
+    margin-right: 15px;
+    transition: 0.3s ease-in;
+}
+
+.personal-account-aside__application-form-link:hover {
+
+    color: var(--color-orange);
+}
+
+.personal-account-aside__application-form-link:hover svg {
+
+    color: var(--color-orange);
+}
+
+.personal-account-content__application-form {
+    width: 100%;
+    background: #efefef;
+    padding: 60px 117px 180px 60px;
+}
+
+.personal-account-content__application-form .equipment-box__item {
+    width: 100%;
+    padding: 35px 30px;
+    border-radius: 20px;
+    background: var(--main-bg);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+}
+
+.personal-account-content__application-form .equipment-box__item .equipment-box__item-content {
+    display: flex;
+    column-gap: 15px;
+}
+
+.personal-account-content__application-form .equipment-box__item .equipment-box__item-content .equipment-box__item-content-image {
+    width: 100%;
+    max-width: 176px;
+    height: 112px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.personal-account-content__application-form .equipment-box__item .equipment-box__item-content .equipment-box__item-content-description-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.personal-account-content__application-form .equipment-box__item .equipment-box__item-content .equipment-box__item-content-description-box .equipment-box__item-title {
+    font-family: 'Golos Text SemiBold', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.25;
+    color: var(--dark-gray);
+}
+
+.personal-account-content__application-form .equipment-box__item .equipment-box__item-content .equipment-box__item-content-description-box .equipment-box__item-subtitle {
+    font-family: 'Golos Text Regular', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22222;
+    color: var(--dark-gray);
+    opacity: 0.7;
+    margin-bottom: 20px;
+}
+
+.personal-account-content__application-form .equipment-box__item .equipment-box__item-content .equipment-box__item-content-description-box .equipment-box__item-series-number {
+    font-family: 'Golos Text Regular', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22222;
+    color: var(--dark-gray);
+}
+
+.personal-account-content__application-form .equipment-box__item .equipment-box__item-content .equipment-box__item-content-description-box .equipment-box__item-series-number span {
+    font-family: 'Golos Text Regular', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22222;
+    color: var(--dark-gray);
+}
+
+.personal-account-content__application-form .equipment-box__item .equipment-box__item-content .equipment-box__item-content-description-box .equipment-box__item-date {
+    font-family: 'Golos Text Regular', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22222;
+    color: var(--dark-gray);
+}
+
+.personal-account-content__application-form .equipment-box__item .equipment-box__item-content .equipment-box__item-content-description-box .equipment-box__item-date span {
+    font-family: 'Golos Text Regular', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22222;
+    color: var(--dark-gray);
+}
+
+.personal-account-content__application-form-product-information {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-bottom: 35px;
+    border-top: 1px solid #c3c3c3;
+    border-bottom: 1px solid #c3c3c3;
+}
+
+.personal-account-content__application-form-product-information .application-date {
+    width: 100%;
+    font-family: "Golos Text Medium", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22222;
+    color: var(--dark-gray);
+    margin-bottom: 35px;
+}
+
+.personal-account-content__application-form-product-information .application-date span {
+    margin-left: 10px;
+    width: 100%;
+    font-family: "Golos Text Regular", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22222;
+    color: var(--dark-gray);
+}
+
+.personal-account-content__application-form-product-information .equipment-registration-address {
+    width: 100%;
+    font-family: "Golos Text Medium", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22222;
+    color: var(--dark-gray);
+}
+
+.personal-account-content__application-form-product-information .equipment-registration-address span {
+    width: 100%;
+    font-family: "Golos Text Regular", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22222;
+    color: var(--dark-gray);
+    margin-top: 5px;
+    display: block;
+}
+
+.personal-account-content__application-form__header {
+    width: 100%;
+    display: flex;
+    padding-bottom: 30px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid #c3c3c3;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.personal-account-content__application-form__header-text-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 490px;
+}
+
+.personal-account-content__application-form__header-text-subtitle {
+    font-family: 'Golos Text Medium', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5625;
+    color: var(--color-orange);
+}
+
+.personal-account-content__application-form__header-text-title {
+    font-family: 'GetVoIP Grotesque Regular', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.20833;
+    color: var(--dark-gray);
+    margin-bottom: 0;
+}
+
+.personal-account-content__application-form__header-btns-box .personal-account-content__application-form__header-btn {
+    width: 100%;
+    border-radius: 100px;
+    max-width: 230px;
+    height: 48px;
+    line-height: 48px;
+    background-color: var(--color-orange);
+    transition: 0.3s ease-in;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: var(--main-bg);
+}
+
+.personal-account-content__application-form__header-btns-box .personal-account-content__application-form__header-btn:hover {
+    background-color: var(--ligth-gray);
+    color: var(--main-bg);
+}

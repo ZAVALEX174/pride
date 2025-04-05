@@ -114,4 +114,13 @@ document.addEventListener('DOMContentLoaded', () => {
         closeBtnModalOverlayAuthOtbivka.addEventListener('click', closeModalOtbivka);
     }
 
+    const modalNotPasswordBtn = document.querySelector('.auth-btn-not-password');
+    if(modalNotPasswordBtn) {
+        modalNotPasswordBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            closeModal();
+
+        });
+    }
+
 });
