@@ -2912,7 +2912,7 @@
                             <label for="form-files-inputs-id">
                                 <input id="form-files-inputs-id" type="url" placeholder="https://">
                             </label>
-                            <label for="form-files-inputs-file">
+                            <label class="file-btn" for="form-files-inputs-file">
                                 <input id="form-files-inputs-file" type="file">
                                 Прекрепить файлы
                                 <svg width="19" height="21" viewBox="0 0 19 21" fill="none"
@@ -2925,11 +2925,17 @@
                         </div>
                         <div class="form-files-radio-box">
                             <label for="form-files-radio-box-guarantees">
-                                <input id="form-files-radio-box-guarantees" name="guarantees" type="radio">
+                                <input id="form-files-radio-box-guarantees" checked name="guarantees" type="radio">
+                                <div class="radio-new-bg" aria-hidden="true">
+                                    <div class="radio-new-item"></div>
+                                </div>
                                 Обращение по гарантии
                             </label>
                             <label for="form-files-radio-box-notguarantees">
                                 <input id="form-files-radio-box-notguarantees" name="guarantees" type="radio">
+                                <div class="radio-new-bg" aria-hidden="true">
+                                    <div class="radio-new-item"></div>
+                                </div>
                                 Негарантийное обращение
                             </label>
                         </div>

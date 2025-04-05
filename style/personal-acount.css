@@ -2102,6 +2102,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 35px;
 }
 
 #form-files-inputs-file {
@@ -2109,4 +2110,157 @@
     height: 0;
     visibility: hidden;
     z-index: -1;
+}
+
+.form-files-inputs-box label {
+    max-width: 50%;
+    width: 100%;
+}
+
+.form-files-inputs-box label:nth-of-type(1) {
+    margin-right: 8px;
+}
+
+#form-files-inputs-id {
+    width: 100%;
+    font-family: "Golos Text Regular", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.375;
+    color: #4f4f4f;
+    border: 1px solid #aeaeae;
+    border-radius: 8px;
+    padding: 19px 16px;
+    height: 47px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    background: #d9d9d9;
+    outline: none;
+}
+
+#form-files-inputs-id:focus {
+    color: var(--dark-gray);
+    backdrop-filter: none;
+    border: 1px solid var(--color-orange);
+}
+
+.file-btn {
+    width: 100%;
+    font-family: "Golos Text Regular", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 47px;
+    color: #4f4f4f;
+    border: 1px solid #aeaeae;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 47px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    background: #d9d9d9;
+    outline: none;
+    cursor: pointer;
+}
+
+.file-btn:hover {
+    border: 1px solid var(--color-orange);
+}
+
+.file-btn svg {
+    margin-left: 10px;
+}
+
+.form-files-radio-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 40px;
+}
+
+.form-files-radio-box label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 15px;
+    font-family: "Golos Text Regular", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.22222;
+    color: var(--dark-gray);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.form-files-radio-box label:hover {
+    color: var(--color-orange);
+}
+
+.form-btns {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-btns .application-form-product-form-form-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    padding: 18px 56px;
+    height: 48px;
+    line-height: 48px;
+    background-color: var(--color-orange);
+    transition: 0.3s ease-in;
+    font-family: "Golos Text Regular", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: var(--main-bg);
+}
+
+.form-btns .application-form-product-form-form-btn:hover {
+    background-color: var(--ligth-gray);
+}
+
+.radio-new-bg {
+    position: relative;
+    width: 54px;
+    height: 24px;
+    background-color: var(--ligth-gray);
+    border-radius: 50px;
+    transition: 0.3s ease-in;
+}
+
+.radio-new-item {
+    position: absolute;
+    width: 16.8px;
+    height: 16.8px;
+    border-radius: 100%;
+    background-color: var(--main-bg);
+    top: 50%;
+    left: 4.8px;
+    top: 3.8px;
+    transition: transform 0.5s;
+    /*transform: translateY(-50%);*/
+}
+
+.form-files-radio-box input {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    z-index: -1;
+}
+
+.form-files-radio-box input:checked + .radio-new-bg > .radio-new-item {
+    left: auto;
+    transform: translateX(200%);
+    transition: transform 0.5s;
+}
+
+.form-files-radio-box input:checked + .radio-new-bg {
+    background-color: var(--color-orange);
 }
