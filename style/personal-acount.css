@@ -2,7 +2,7 @@
 .personal-account-main {
     display: flex;
     flex: 1;
-
+    min-height: 105vh;
 }
 
 .personal-account {
@@ -30,10 +30,7 @@
     height: 100%;
 }
 
-.personal-account
-.personal-account-aside
-.personal-account-aside__content
-.personal-account-aside__information {
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__information {
     display: flex;
     width: 100%;
     column-gap: 20px;
@@ -41,23 +38,14 @@
     margin-bottom: 40px;
 }
 
-.personal-account
-.personal-account-aside
-.personal-account-aside__content
-.personal-account-aside__information
-.personal-account-aside__information-images-box {
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__information .personal-account-aside__information-images-box {
     width: 110px;
     height: 110px;
     position: relative;
     padding: 20px;
 }
 
-.personal-account
-.personal-account-aside
-.personal-account-aside__content
-.personal-account-aside__information
-.personal-account-aside__information-images-box
-.personal-account-aside__information-images {
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__information .personal-account-aside__information-images-box .personal-account-aside__information-images {
     width: 78px;
     height: 78px;
     border-radius: 100%;
@@ -65,11 +53,7 @@
     border: 3px solid var(--color-orange);
 }
 
-.personal-account
-.personal-account-aside
-.personal-account-aside__content
-.personal-account-aside__information
-.personal-account-aside__information-images-box::before {
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__information .personal-account-aside__information-images-box::before {
     position: absolute;
     content: '';
     width: 85px;
@@ -80,20 +64,11 @@
     background: url('../images/account/vector_image.svg') no-repeat center/contain;
 }
 
-.personal-account
-.personal-account-aside
-.personal-account-aside__content
-.personal-account-aside__information
-.personal-account-aside__information-text {
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__information .personal-account-aside__information-text {
     width: 100%;
 }
 
-.personal-account
-.personal-account-aside
-.personal-account-aside__content
-.personal-account-aside__information
-.personal-account-aside__information-text
-.personal-account-aside__information-text-name {
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__information .personal-account-aside__information-text .personal-account-aside__information-text-name {
     font-family: 'Golos Text Regular', sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -101,12 +76,7 @@
     color: var(--main-bg);
 }
 
-.personal-account
-.personal-account-aside
-.personal-account-aside__content
-.personal-account-aside__information
-.personal-account-aside__information-text
-.personal-account-aside__information-text-company {
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__information .personal-account-aside__information-text .personal-account-aside__information-text-company {
     font-family: 'Golos Text Regular', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -114,12 +84,7 @@
     color: var(--ligth-gray);
 }
 
-.personal-account
-.personal-account-aside
-.personal-account-aside__content
-.personal-account-aside__information
-.personal-account-aside__information-text
-.personal-account-aside__information-text-contacts {
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__information .personal-account-aside__information-text .personal-account-aside__information-text-contacts {
     font-family: 'Golos Text Regular', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -127,10 +92,7 @@
     color: var(--main-bg);
 }
 
-.personal-account
-.personal-account-aside
-.personal-account-aside__content
-.personal-account-aside__slogan {
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__slogan {
     font-family: 'Golos Text Regular', sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -139,18 +101,11 @@
     margin-bottom: 40px;
 }
 
-.personal-account
-.personal-account-aside
-.personal-account-aside__content
-.personal-account-aside__tabs-container {
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__tabs-container {
     width: 100%;
 }
 
-.personal-account
-.personal-account-aside
-.personal-account-aside__content
-.personal-account-aside__tabs-container
-.tab-buttons {
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__tabs-container .tab-buttons {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -159,12 +114,7 @@
     margin-bottom: 40px;
 }
 
-.personal-account
-.personal-account-aside
-.personal-account-aside__content
-.personal-account-aside__tabs-container
-.tab-buttons
-.tab-button {
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__tabs-container .tab-buttons .tab-button {
     width: 100%;
     cursor: pointer;
     text-align: left;
@@ -184,28 +134,15 @@
     transition: 0.3s ease-in;
 }
 
-.personal-account
-.personal-account-aside
-.personal-account-aside__content
-.personal-account-aside__tabs-container
-.tab-buttons
-.tab-button:hover {
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__tabs-container .tab-buttons .tab-button:hover {
     background: var(--color-orange);
 }
 
-.personal-account
-.personal-account-aside
-.personal-account-aside__content
-.personal-account-aside__tabs-container
-.tab-buttons
-.tab-button__active {
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__tabs-container .tab-buttons .tab-button__active {
     background: var(--color-orange);
 }
 
-.personal-account
-.personal-account-aside
-.personal-account-aside__content
-.personal-account-aside__link {
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__link {
     display: flex;
     width: 100%;
     height: 43px;
@@ -216,10 +153,7 @@
     transition: 0.3s ease-in;
 }
 
-.personal-account
-.personal-account-aside
-.personal-account-aside__content
-.personal-account-aside__link:hover {
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__link:hover {
     color: var(--color-orange);
 }
 
@@ -247,10 +181,7 @@
 }
 
 
-.personal-account
-.personal-account-content
-.tab-content
-.personal-account-content-header {
+.personal-account .personal-account-content .tab-content .personal-account-content-header {
     width: 100%;
     display: flex;
     align-items: center;
@@ -259,10 +190,7 @@
     border-bottom: 1px solid rgba(142, 142, 142, 0.3);
 }
 
-.personal-account
-.personal-account-content
-.tab-content
-.personal-account-content-header h2 {
+.personal-account .personal-account-content .tab-content .personal-account-content-header h2 {
     font-family: 'GetVoIP Grotesque Regular', sans-serif;
     font-weight: 700;
     font-size: 24px;
@@ -271,10 +199,7 @@
     margin-bottom: 20px;
 }
 
-.personal-account
-.personal-account-content
-.tab-content
-.personal-account-content-header .footnote {
+.personal-account .personal-account-content .tab-content .personal-account-content-header .footnote {
     font-family: 'Golos Text Regular', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -284,10 +209,7 @@
     display: inline-flex;
 }
 
-.personal-account
-.personal-account-content
-.tab-content
-.personal-account-content-header div {
+.personal-account .personal-account-content .tab-content .personal-account-content-header div {
     font-family: 'Golos Text Regular', sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -295,10 +217,7 @@
     color: var(--dark-gray);
 }
 
-.personal-account
-.personal-account-content
-.tab-content
-.personal-account-content-header span {
+.personal-account .personal-account-content .tab-content .personal-account-content-header span {
     font-family: 'Golos Text Regular', sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -306,10 +225,7 @@
     color: var(--dark-gray);
 }
 
-.personal-account
-.personal-account-content
-.tab-content
-.personal-account-content-header .submit-application {
+.personal-account .personal-account-content .tab-content .personal-account-content-header .submit-application {
     max-width: 260px;
     width: 100%;
     height: 48px;
@@ -324,10 +240,7 @@
     text-align: center;
 }
 
-.personal-account
-.personal-account-content
-.tab-content
-.personal-account-content-header .submit-application:hover {
+.personal-account .personal-account-content .tab-content .personal-account-content-header .submit-application:hover {
     background-color: var(--ligth-gray);
 }
 
@@ -930,6 +843,7 @@
     height: 78px;
     border-radius: 100%;
     border: 2px solid #cdcdcd;
+    overflow: hidden;
 }
 
 .inputs-file-box label:hover .input-img {
@@ -938,6 +852,27 @@
     border-radius: 100%;
     border: 2px solid var(--color-orange);
 }
+
+/* стили для выбранного аватара */
+
+.inputs-file-box label.label-select {
+    border: 2px solid var(--color-orange);
+    background: rgba(235, 99, 32, 0.1);
+}
+
+.inputs-file-box label.label-select svg {
+    color: #eb6320;
+    opacity: 1;
+}
+
+.inputs-file-box label.label-select .input-img {
+    width: 78px;
+    height: 78px;
+    border-radius: 100%;
+    border: 2px solid var(--color-orange);
+}
+
+/* стили для выбранного аватара*/
 
 .setting-hint {
     width: 100%;
@@ -1278,8 +1213,10 @@
     overflow-y: auto;
     height: 674px;
     margin: 0 auto;
-    -ms-overflow-style: none; /* IE/Edge */
-    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    /* IE/Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 .auth .modal-auth::-webkit-scrollbar {
@@ -1323,7 +1260,8 @@
     margin-bottom: 10px;
 }
 
-.auth .modal-auth .auth-tabs-box .signin-btn, .auth .modal-auth .auth-tabs-box .signup-btn {
+.auth .modal-auth .auth-tabs-box .signin-btn,
+.auth .modal-auth .auth-tabs-box .signup-btn {
     display: flex;
     align-items: center;
     width: 100%;
@@ -1345,7 +1283,8 @@
     transition: 0.3s ease-in;
 }
 
-.auth .modal-auth .auth-tabs-box .signin-btn:hover, .auth .modal-auth .auth-tabs-box .signup-btn:hover {
+.auth .modal-auth .auth-tabs-box .signin-btn:hover,
+.auth .modal-auth .auth-tabs-box .signup-btn:hover {
     border-bottom: 2px solid var(--dark-gray);
     color: var(--dark-gray);
 }
@@ -1385,14 +1324,16 @@
     column-gap: 15px;
 }
 
-.signup-form-user-name-label, .signup-form-user-surname-label {
+.signup-form-user-name-label,
+.signup-form-user-surname-label {
     width: 100%;
     max-width: 50%;
     display: flex;
     flex-direction: column;
 }
 
-.label-all .signup-form-label-password, .signup-form-label-repeat-password {
+.label-all .signup-form-label-password,
+.signup-form-label-repeat-password {
     width: 100%;
 }
 
@@ -1417,7 +1358,8 @@
     border: 1px solid var(--color-orange) !important;
 }
 
-.signup-form-input-login-span, .signup-form-input-password-span {
+.signup-form-input-login-span,
+.signup-form-input-password-span {
     display: block;
     font-family: 'Golos Text Regular', sans-serif;
     font-weight: 400;
@@ -1504,7 +1446,7 @@
     padding-left: 50px;
 }
 
-#signin-form-checkbox-remember-me:checked + .custom-checkbox svg {
+#signin-form-checkbox-remember-me:checked+.custom-checkbox svg {
     color: var(--color-orange);
 }
 
@@ -1843,7 +1785,7 @@
 .personal-account-content__application-form {
     width: 100%;
     background: #efefef;
-    padding: 60px 117px 180px 60px;
+    padding: 60px 117px 60px 60px;
 }
 
 .personal-account-content__application-form .equipment-box__item {
@@ -2088,7 +2030,7 @@
     margin-bottom: 15px;
 }
 
-.personal-account-content__application-form-product-form form .form-files > span {
+.personal-account-content__application-form-product-form form .form-files>span {
     font-family: "Golos Text Regular", sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -2255,12 +2197,12 @@
     z-index: -1;
 }
 
-.form-files-radio-box input:checked + .radio-new-bg > .radio-new-item {
+.form-files-radio-box input:checked+.radio-new-bg>.radio-new-item {
     left: auto;
     transform: translateX(200%);
     transition: transform 0.5s;
 }
 
-.form-files-radio-box input:checked + .radio-new-bg {
+.form-files-radio-box input:checked+.radio-new-bg {
     background-color: var(--color-orange);
 }

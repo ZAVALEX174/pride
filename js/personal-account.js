@@ -424,6 +424,26 @@ if (modalOverlayOutAccount) {
 }
 
 
+document.querySelectorAll('.inputs-file-box input[type="file"]').forEach(input => {
+    input.addEventListener('change', function(e) {
+      const file = e.target.files[0];
+      const label = this.previousElementSibling; // Получаем соответствующий label
+      const img = label.querySelector('.input-img img'); // Находим img внутри label
+      
+      if (file && img) {
+        const reader = new FileReader();
+        
+        reader.onload = function(e) {
+          img.src = e.target.result;
+          img.style.display = 'block'; // Показываем изображение
+        //   label.classList.add('label-select'); // Добавляем класс для стилей
+        };
+        
+        reader.readAsDataURL(file);
+      }
+    });
+  });
+
 
 
 
