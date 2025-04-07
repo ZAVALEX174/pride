@@ -584,4 +584,21 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     }
     // изменения от 07_04_25
+
+    // изменения от 07_04_25
+
+
+    const aboutProgramLinkBtn = document.querySelector('.about-program__link');
+    if (aboutProgramLinkBtn) {
+
+        aboutProgramLinkBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            modal.classList.add('modals_opened');
+            modalsConnection.classList.remove('none');
+            // document.documentElement.style.overflow = "hidden";
+            document.body.style.overflow = "hidden";
+            // document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+        })
+    }
+    // изменения от 07_04_25
 });
