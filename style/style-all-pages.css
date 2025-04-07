@@ -1,5 +1,4 @@
 
-
 main {
     flex: 1;
 }
@@ -17289,6 +17288,35 @@ form
     background: url('../images/cooperation/checkbox.svg') no-repeat center/cover;
 }
 
+/*изменения 07_04_25*/
+.cooperation-section__text-btn {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+    line-height: 45px;
+    height: 45px;
+    transition: 0.3s ease-in;
+    font-size: clamp(1rem, 0.912rem + 0.3756vw, 1.25rem);
+    background-color: var(--color-orange);
+    color: var(--main-bg);
+}
+
+.cooperation-section__text-btn:hover {
+    background-color: var(--ligth-gray);
+    color: var(--main-bg);
+}
+
+@media (max-width: 768px) {
+    .cooperation-section__text-btn:hover {
+        background-color: var(--color-orange);
+        color: var(--main-bg);
+    }
+}
+
+/*изменения 07_04_25*/
+
 .cooperation-section__image-box {
     max-width: 772px;
     border-radius: 15px;
@@ -17756,12 +17784,14 @@ form
     flex-direction: column;
 }
 
+
+/*изменения 07_04_25*/
 .stages-item {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     column-gap: 24px;
-    padding: 50px 0 129px;
+    padding: 50px 0 50px;
 }
 
 @media (max-width: 1024px) {
@@ -17774,9 +17804,10 @@ form
 }
 
 .stages-item:last-child {
-    padding: 50px 0 92px;
+    padding: 50px 0 50px;
 }
 
+/*изменения 07_04_25*/
 /*изменения 25_03_25*/
 .advantages-page-hero {
     width: 100%;
