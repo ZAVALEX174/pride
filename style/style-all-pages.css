@@ -14313,20 +14313,19 @@ li
 .news-detail-page__image {
     width: 100%;
     object-fit: cover;
-    height: 500px;
+    height: 450px;
     margin-bottom: 53px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .news-detail-page__image {
         height: 350px;
     }
 }
 
-
 @media (max-width: 425px) {
     .news-detail-page__image {
-        height: 220px;
+        height: 205px;
     }
 }
 
@@ -17045,6 +17044,22 @@ form
     margin-bottom: 64px;
 }
 
+.cooperation-banner .stock-banner__container {
+    height: 450px;
+}
+
+@media (max-width: 1024px) {
+    .cooperation-banner .stock-banner__container {
+        height: 360px;
+    }
+}
+
+@media (max-width: 426px) {
+    .cooperation-banner .stock-banner__container {
+        height: 205px;
+    }
+}
+
 .conditions {
     width: 100%;
     margin-bottom: 64px;
@@ -17301,6 +17316,8 @@ form
     font-size: clamp(1rem, 0.912rem + 0.3756vw, 1.25rem);
     background-color: var(--color-orange);
     color: var(--main-bg);
+    font-family: "Golos Text Regular", sans-serif;
+    font-weight: 400;
 }
 
 .cooperation-section__text-btn:hover {
@@ -17909,6 +17926,34 @@ form
     }
 }
 
+.service-page__advantages-page-hero__header-desc-btn {
+    margin-top: 20px;
+    max-width: 350px;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    background-color: var(--color-orange);
+    color: var(--main-bg);
+    transition: 0.3s ease-in;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Golos Text Regular", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.service-page__advantages-page-hero__header-desc-btn:hover {
+    background-color: var(--ligth-gray);
+    color: var(--main-bg);
+}
+
+@media (max-width: 768px) {
+    .service-page__advantages-page-hero__header-desc-btn:hover {
+        background-color: var(--color-orange);
+    }
+}
+
 .advantages-page-hero .advantages-page-hero__body {
     width: 100%;
     padding: 30px 0;
@@ -18047,6 +18092,7 @@ form
 
 .advantages-page-banner .stock-banner__container {
     margin-bottom: 0;
+    height: 450px;
 }
 
 @media (max-width: 1024px) {
@@ -18101,8 +18147,14 @@ form
 /*about-us-page.css*/
 .about-us-page-hero {
     width: 100%;
-    height: 500px;
+    height: 450px;
     /*background: url('../images/about-program/aubg.webp') center center/cover no-repeat;*/
+}
+
+@media (max-width: 1024px) {
+    .about-us-page-hero {
+        height: 360px;
+    }
 }
 
 .about-us-page-hero picture {
@@ -19037,12 +19089,20 @@ p {
 /*изменения 25_03_25*/
 .service-page__banner {
     margin-bottom: 0;
+
 }
 
 .service-page__banner .stock-banner__container {
     margin-bottom: 0;
+    height: 450px;
 }
 
+@media (max-width: 1024px) {
+    .service-page__banner .stock-banner__container {
+        margin-bottom: 0;
+        height: 360px;
+    }
+}
 
 @media (max-width: 425px) {
     .service-page__banner .stock-banner__container .stock-banner__img {

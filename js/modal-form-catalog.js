@@ -581,5 +581,34 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
+    const advantageOpenModalBtns = document.querySelectorAll('.cooperation-section__text-btn');
+    if (advantageOpenModalBtns) {
+        advantageOpenModalBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                if (modal && modalApplicationSent) {
+                    modal.classList.add('modals_opened');
+                    modalsConnection.classList.remove('none');
+                    // document.documentElement.style.overflow = "hidden";
+                    document.body.style.overflow = "hidden";
+                    document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+                }
+            })
+        })
+    }
+
+    const servicesOpenModalBtn = document.getElementById('service-page-advantages-btn');
+    if (servicesOpenModalBtn) {
+
+        servicesOpenModalBtn.addEventListener('click', (e) => {
+            if (modal && modalApplicationSent) {
+                modal.classList.add('modals_opened');
+                modalsConnection.classList.remove('none');
+                // document.documentElement.style.overflow = "hidden";
+                document.body.style.overflow = "hidden";
+                document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+            }
+        })
+
+    }
     // изменения от 07_04_25
 });
