@@ -590,7 +590,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     modalsConnection.classList.remove('none');
                     // document.documentElement.style.overflow = "hidden";
                     document.body.style.overflow = "hidden";
-                    document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+                    // document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
                 }
             })
         })
@@ -605,7 +605,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 modalsConnection.classList.remove('none');
                 // document.documentElement.style.overflow = "hidden";
                 document.body.style.overflow = "hidden";
-                document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+                // document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
             }
         })
 
