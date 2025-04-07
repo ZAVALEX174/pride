@@ -14313,13 +14313,13 @@ li
 .news-detail-page__image {
     width: 100%;
     object-fit: cover;
-    height: 450px;
+    height: 250px;
     margin-bottom: 53px;
 }
 
 @media (max-width: 1024px) {
     .news-detail-page__image {
-        height: 350px;
+        height: 270px;
     }
 }
 
@@ -17045,12 +17045,12 @@ form
 }
 
 .cooperation-banner .stock-banner__container {
-    height: 450px;
+    height: 350px;
 }
 
 @media (max-width: 1024px) {
     .cooperation-banner .stock-banner__container {
-        height: 360px;
+        height: 270px;
     }
 }
 
@@ -18092,12 +18092,12 @@ form
 
 .advantages-page-banner .stock-banner__container {
     margin-bottom: 0;
-    height: 450px;
+    height: 350px;
 }
 
 @media (max-width: 1024px) {
     .advantages-page-banner .stock-banner__container {
-        height: 360px;
+        height: 270px;
     }
 }
 
@@ -18147,13 +18147,13 @@ form
 /*about-us-page.css*/
 .about-us-page-hero {
     width: 100%;
-    height: 450px;
+    height: 350px;
     /*background: url('../images/about-program/aubg.webp') center center/cover no-repeat;*/
 }
 
 @media (max-width: 1024px) {
     .about-us-page-hero {
-        height: 360px;
+        height: 270px;
     }
 }
 
@@ -19094,13 +19094,13 @@ p {
 
 .service-page__banner .stock-banner__container {
     margin-bottom: 0;
-    height: 450px;
+    height: 350px;
 }
 
 @media (max-width: 1024px) {
     .service-page__banner .stock-banner__container {
         margin-bottom: 0;
-        height: 360px;
+        height: 270px;
     }
 }
 
