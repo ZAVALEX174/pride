@@ -507,28 +507,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // изменения от 31_03_25
 
-    // изменения от 07_04_25
-    const cooperationSectionTextBtns = document.querySelectorAll('.cooperation-section__text-btn');
-    const cooperationSectionDealersBtn = document.querySelector('.about-program__link');
-
-    if (cooperationSectionTextBtns) {
-        cooperationSectionTextBtns.forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                e.preventDefault();
-                // console.log("Меня нажали");
-            })
-        })
-    }
-
-    if (cooperationSectionDealersBtn) {
-        cooperationSectionDealersBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            // console.log("Меня нажали? я кнопка О дилерской программе");
-        })
-    }
-
-    // изменения от 07_04_25
-
 // изменения от 07_04_25
 // для modalFormOtzivi
     const modalReviewSent = document.getElementById('modal-review-sent');
@@ -585,13 +563,11 @@ document.addEventListener('DOMContentLoaded', function () {
     if (advantageOpenModalBtns) {
         advantageOpenModalBtns.forEach(btn => {
             btn.addEventListener('click', (e) => {
-                if (modal && modalApplicationSent) {
-                    modal.classList.add('modals_opened');
-                    modalsConnection.classList.remove('none');
-                    // document.documentElement.style.overflow = "hidden";
-                    document.body.style.overflow = "hidden";
-                    // document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
-                }
+                modal.classList.add('modals_opened');
+                modalsConnection.classList.remove('none');
+                // document.documentElement.style.overflow = "hidden";
+                document.body.style.overflow = "hidden";
+                // document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
             })
         })
     }
@@ -600,15 +576,12 @@ document.addEventListener('DOMContentLoaded', function () {
     if (servicesOpenModalBtn) {
 
         servicesOpenModalBtn.addEventListener('click', (e) => {
-            if (modal && modalApplicationSent) {
-                modal.classList.add('modals_opened');
-                modalsConnection.classList.remove('none');
-                // document.documentElement.style.overflow = "hidden";
-                document.body.style.overflow = "hidden";
-                // document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
-            }
+            modal.classList.add('modals_opened');
+            modalsConnection.classList.remove('none');
+            // document.documentElement.style.overflow = "hidden";
+            document.body.style.overflow = "hidden";
+            // document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
         })
-
     }
     // изменения от 07_04_25
 });
