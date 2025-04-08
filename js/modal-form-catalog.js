@@ -507,70 +507,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // изменения от 31_03_25
 
-// изменения от 07_04_25
-// для modalFormOtzivi
-    const modalReviewSent = document.getElementById('modal-review-sent');
-
-    function openModalReviewSent() {
-        modal.classList.add('modals_opened');
-        modalReviewSent.classList.remove('none');
-        // document.documentElement.style.overflow = "hidden";
-        document.body.style.overflow = "hidden";
-        document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
-    }
-
-
-// для modalFormRepresentation, modalsConnection, openFooterFormInput, openAbsoluteItemFormInput
-    const openFooterFormInput = document.querySelector('.footer__callback-form-input');
-    const openAbsoluteItemFormInput = document.getElementById('absolute-item-title');
-
-    function openModalCostCalculation() {
-        // if (modal && modalCostCalculation) {
-        modal.classList.add('modals_opened');
-        // modalsConnection.classList.add('none');
-        modalCostCalculation.classList.remove('none');
-        // document.documentElement.style.overflow = "hidden";
-        document.body.style.overflow = "hidden";
-        document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
-        // }
-    }
-
-// для modals-zakaz, всех форм на страницах,
-
-    function openModalApplicationSent() {
-        if (modal && modalApplicationSent) {
-            modal.classList.add('modals_opened');
-            modalApplicationSent.classList.remove('none');
-            // document.documentElement.style.overflow = "hidden";
-            document.body.style.overflow = "hidden";
-            document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
-        }
-    }
-
-// для modalFormOrder,
-
-    function openModalParametersSent() {
-        if (modal && modalParametersSent) {
-            modal.classList.add('modals_opened');
-            modalParametersSent.classList.remove('none');
-            // document.documentElement.style.overflow = "hidden";
-            document.body.style.overflow = "hidden";
-            document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
-        }
-    }
-
-    const advantageOpenModalBtns = document.querySelectorAll('.cooperation-section__text-btn');
-    if (advantageOpenModalBtns) {
-        advantageOpenModalBtns.forEach(btn => {
-            btn.addEventListener('click', (e) => {
-                modal.classList.add('modals_opened');
-                modalsConnection.classList.remove('none');
-                // document.documentElement.style.overflow = "hidden";
-                document.body.style.overflow = "hidden";
-                // document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
-            })
-        })
-    }
 
     const servicesOpenModalBtn = document.getElementById('service-page-advantages-btn');
     if (servicesOpenModalBtn) {
@@ -586,7 +522,18 @@ document.addEventListener('DOMContentLoaded', function () {
     // изменения от 07_04_25
 
     // изменения от 07_04_25
-
+    const advantageOpenModalBtns = document.querySelectorAll('.cooperation-section__text-btn');
+    if (advantageOpenModalBtns) {
+        advantageOpenModalBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                modal.classList.add('modals_opened');
+                modalsConnection.classList.remove('none');
+                // document.documentElement.style.overflow = "hidden";
+                document.body.style.overflow = "hidden";
+                // document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+            })
+        })
+    }
 
     const aboutProgramLinkBtn = document.querySelector('.about-program__link');
     if (aboutProgramLinkBtn) {
@@ -602,3 +549,64 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     // изменения от 07_04_25
 });
+
+// изменения от 07_04_25
+const modal = document.querySelector('.modals');
+const modalReviewSent = document.getElementById('modal-review-sent');
+const modalCostCalculation = document.getElementById('modal-cost-calculation');
+const modalApplicationSent = document.getElementById('modal-application-sent');
+const modalParametersSent = document.getElementById('modal-parameters-sent');
+let scrollBarClient = document.documentElement.clientWidth;
+let scrollBarAll = window.innerWidth;
+
+// для modalFormOtzivi
+
+
+function openModalReviewSent() {
+    modal.classList.add('modals_opened');
+    modalReviewSent.classList.remove('none');
+    // document.documentElement.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
+    document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+}
+
+
+// для modalFormRepresentation, modalsConnection, openFooterFormInput, openAbsoluteItemFormInput
+const openFooterFormInput = document.querySelector('.footer__callback-form-input');
+const openAbsoluteItemFormInput = document.getElementById('absolute-item-title');
+
+function openModalCostCalculation() {
+    if (modal && modalCostCalculation) {
+        modal.classList.add('modals_opened');
+        // modalsConnection.classList.add('none');
+        modalCostCalculation.classList.remove('none');
+        // document.documentElement.style.overflow = "hidden";
+        document.body.style.overflow = "hidden";
+        document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+    }
+}
+
+// для modals-zakaz, всех форм на страницах,
+
+function openModalApplicationSent() {
+    if (modal && modalApplicationSent) {
+        modal.classList.add('modals_opened');
+        modalApplicationSent.classList.remove('none');
+        // document.documentElement.style.overflow = "hidden";
+        document.body.style.overflow = "hidden";
+        document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+    }
+}
+
+// для modalFormOrder,
+
+function openModalParametersSent() {
+    if (modal && modalParametersSent) {
+        modal.classList.add('modals_opened');
+        modalParametersSent.classList.remove('none');
+        // document.documentElement.style.overflow = "hidden";
+        document.body.style.overflow = "hidden";
+        document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+    }
+}
+
