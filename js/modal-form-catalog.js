@@ -525,14 +525,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const openAbsoluteItemFormInput = document.getElementById('absolute-item-title');
 
     function openModalCostCalculation() {
-        if (modal && modalCostCalculation) {
-            modal.classList.add('modals_opened');
-            // modalsConnection.classList.add('none');
-            modalCostCalculation.classList.remove('none');
-            // document.documentElement.style.overflow = "hidden";
-            document.body.style.overflow = "hidden";
-            document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
-        }
+        // if (modal && modalCostCalculation) {
+        modal.classList.add('modals_opened');
+        // modalsConnection.classList.add('none');
+        modalCostCalculation.classList.remove('none');
+        // document.documentElement.style.overflow = "hidden";
+        document.body.style.overflow = "hidden";
+        document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+        // }
     }
 
 // для modals-zakaz, всех форм на страницах,
