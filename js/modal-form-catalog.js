@@ -508,12 +508,13 @@ document.addEventListener('DOMContentLoaded', function () {
     // изменения от 31_03_25
 
 
+    const modalsSubmitYourApplication = document.getElementById('modal-submit-your-application');
     const servicesOpenModalBtn = document.getElementById('service-page-advantages-btn');
     if (servicesOpenModalBtn) {
 
         servicesOpenModalBtn.addEventListener('click', (e) => {
             modal.classList.add('modals_opened');
-            modalsConnection.classList.remove('none');
+            modalsSubmitYourApplication.classList.remove('none');
             // document.documentElement.style.overflow = "hidden";
             document.body.style.overflow = "hidden";
             // document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
