@@ -17858,7 +17858,7 @@ video {
 .filter-container {
     background-color: var(--main-bg);
     position: fixed;
-    transition: 2s ease-in-out;
+    transition: 0.5s ease-in-out;
     top: 0;
     right: -100%;
     bottom: 0;
@@ -18352,7 +18352,7 @@ input[type='number'] {
 
 .filters-range-one,
 .filters-range-two {
-    margin-bottom: 70px;
+    margin-bottom: 35px;
 }
 
 .filters-price__inputs {
@@ -18937,5 +18937,5 @@ input[type='number'] {
 /*измекнение от 09_04_25*/
 
 .bx-filter-parameters-box {
-    margin-bottom: 70px;
+    margin-bottom: 35px;
 }
