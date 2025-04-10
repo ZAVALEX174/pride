@@ -18507,7 +18507,7 @@ input[type='number'] {
 }
 
 .filter-scroll {
-    height: 490px;
+    /*height: 490px;*/
 }
 
 .filter-over-auto-scroll {
@@ -18517,7 +18517,7 @@ input[type='number'] {
 .filter-over-auto__btn {
     background-color: var(--color-orange);
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 30px;
     border: none;
     outline: none;
@@ -18639,7 +18639,7 @@ input[type='number'] {
     outline: none;
     font-family: 'Golos Text Regular', sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -18935,3 +18935,7 @@ input[type='number'] {
 /*}*/
 
 /*измекнение от 09_04_25*/
+
+.bx-filter-parameters-box {
+    margin-bottom: 70px;
+}
