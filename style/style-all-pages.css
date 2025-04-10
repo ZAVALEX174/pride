@@ -18669,3 +18669,269 @@ input[type='number'] {
 .btn.cart__btn_progects.our-projects-cart__btn:hover {
     background-color: var(--ligth-gray);
 }
+
+/*===========================================================*/
+
+/*измекнение от 09_04_25*/
+.file-list {
+    margin: 0;
+    padding: 0;
+    border: 1px solid rgba(174, 174, 174, 1);
+    border-radius: 8px;
+    /*box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);*/
+    /*display: flex;*/
+    display: none;
+    flex-direction: column;
+    position: relative;
+    background-color: var(--5);
+    margin-bottom: 10px;
+}
+
+.file-item {
+    outline: none;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    color: rgba(79, 79, 79, 1);
+}
+
+/*.delete-btn {*/
+/*    background: transparent;*/
+/*    border: none;*/
+/*    padding: 10px;*/
+/*    cursor: pointer;*/
+/*    margin-left: 10px;*/
+
+/*    position: relative;*/
+/*    z-index: 1;*/
+/*}*/
+
+/*.delete-btn svg {*/
+/*    width: 18px;*/
+/*    height: 18px;*/
+/*    color: #2B2A29;*/
+/*    position: relative;*/
+/*    z-index: 0;*/
+/*}*/
+
+/*.delete-btn:hover svg {*/
+/*    color: var(--color-orange);*/
+/*}*/
+
+.warning {
+    width: 100%;
+    border: 1px solid var(--color-orange);
+    color: #ff4444;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: none;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+.file-item > div {
+    width: 100%;
+    /*border: 1px solid rgba(174, 174, 174, 1);*/
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 47px;
+    line-height: 47px;
+    color: var(--dark-gray);
+    font-family: "Golos Text Regular", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#fileList {
+    /*margin-bottom: 10px;*/
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row + .row {
+    margin-top: 25px;
+}
+
+.row--upload {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.row-label {
+    margin-right: 55px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.upload, .button {
+    width: 350px;
+}
+
+.upload {
+    width: 100%;
+    position: relative;
+    border: 1px solid rgba(174, 174, 174, 1);
+    border-radius: 8px;
+    height: 47px;
+}
+
+.upload:hover {
+    border: 1px solid var(--color-orange);
+}
+
+.upload:focus {
+    border: 1px solid var(--color-orange);
+}
+
+.upload:active {
+    wborder: 1px solid var(--color-orange);
+}
+
+.upload__counter {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.upload__indicator {
+    overflow: hidden;
+    display: block;
+    width: 0;
+    border: none;
+    border-radius: 16px;
+    height: 28px;
+    background-color: #FF8630;
+}
+
+.upload__indicator::-webkit-progress-bar {
+    border: none;
+    background-color: #FF8630;
+    border-radius: 16px;
+}
+
+.upload__indicator::-webkit-progress-value {
+    background-color: #FF8630;
+    border-radius: 16px;
+}
+
+.upload__indicator::-moz-progress-bar {
+    border: none;
+    background-color: #FF8630;
+    border-radius: 16px;
+}
+
+.success-message {
+    height: 22px;
+    margin-top: 15px;
+}
+
+/*.container {*/
+/*    max-width: 500px;*/
+/*    margin: 20px;*/
+/*}*/
+
+.progress-text {
+    margin: 0;
+    color: var(--dark-gray);
+    font-family: 'Golos Text Regular', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    line-height: 47px;
+    height: 47px;
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.delete-all-btn {
+    display: inline-flex;
+    outline: none;
+    max-width: 200px;
+    align-items: center;
+    justify-content: center;
+    background: #d1d1d1;
+    border: 1px solid transparent;
+    padding: 8px 15px;
+    border-radius: 100px;
+    cursor: pointer;
+    margin: 20px 0 10px 20px;
+    font-family: "Golos Text Regular", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 137%;
+    text-align: center;
+    color: var(--dark-gray);
+
+    transition: 0.3s ease-in;
+}
+
+.delete-all-btn:hover {
+    background: var(--color-orange);
+    color: var(--main-bg);
+}
+
+.file-item {
+    max-width: 100%;
+}
+
+.file-item .file-name {
+    max-width: 100%;
+    margin-right: 0;
+}
+
+#progressContainer {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    border: 1px solid var(--color-orange);
+    border-radius: 8px;
+}
+
+.delete-item-file {
+    width: 18px;
+    height: 18px;
+    border: none;
+    background-color: transparent;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    color: var(--color-orange);
+}
+
+.delete-item-file svg {
+    color: #2B2A29;
+    transition: 0.3s ease-in;
+}
+
+.delete-item-file:hover svg {
+    color: var(--color-orange);
+}
+
+/*.input-file {*/
+/*    display: block !important;*/
+/*    opacity: 1;*/
+/*    background-color: red;*/
+/*    visibility: visible;*/
+/*    width: 100px;*/
+/*    height: 100%;*/
+/*    position: relative;*/
+/*    z-index: 999999999999;*/
+/*}*/
+
+/*измекнение от 09_04_25*/
