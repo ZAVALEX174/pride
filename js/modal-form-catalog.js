@@ -26,6 +26,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const workZakazBtns = document.querySelectorAll('.work__body-cart-btn_hover-block');
     const openModalNonStandart = document.querySelector('.non-standard__btn');
 
+    const comPredl = document.querySelector('.kom-pred__btn');
+
 
     // изменения 29_03_25
     let scrollBarClient = document.documentElement.clientWidth;
@@ -102,6 +104,17 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
             });
         })
+    }
+
+    if (comPredl && modalFormRepresentation) {
+        comPredl.addEventListener('click', (e) => {
+            e.preventDefault();
+            modal.classList.add('modals_opened');
+            modalFormRepresentation.classList.remove('none');
+            // document.documentElement.style.overflow = "hidden";
+            document.body.style.overflow = "hidden";
+            // document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+        });
     }
 
     if (nonStandaetbtn && modalFormOrder) {
