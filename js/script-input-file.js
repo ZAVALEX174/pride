@@ -41,7 +41,7 @@ fileInput.addEventListener('change', function (e) {
 
     if (duplicateFiles.length > 0) {
         const duplicateNames = duplicateFiles.map(f => `• ${f.name}`).join('\n');
-        alert(`Дубликаты:\n${duplicateNames}`);
+        // alert(`Дубликаты:\n${duplicateNames}`);
         fileInput.files = currentFiles.files; // Восстанавливаем предыдущие файлы
         return;
     }
