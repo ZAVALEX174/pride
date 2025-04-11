@@ -2,7 +2,7 @@
 .personal-account-main {
     display: flex;
     flex: 1;
-    min-height: 105vh;
+    /*min-height: 105vh;*/
 }
 
 .personal-account {
@@ -20,6 +20,7 @@
     height: auto;
     padding-top: 30px;
     padding-bottom: 120px;
+    padding-left: 10px;
 }
 
 .personal-account .personal-account-aside .personal-account-aside__content {
@@ -1446,7 +1447,7 @@
     padding-left: 50px;
 }
 
-#signin-form-checkbox-remember-me:checked+.custom-checkbox svg {
+#signin-form-checkbox-remember-me:checked + .custom-checkbox svg {
     color: var(--color-orange);
 }
 
@@ -1753,6 +1754,12 @@
     padding-top: 35px;
 }
 
+@media (max-width: 1280px) {
+    .personal-account-aside__application-form {
+        padding-left: 20px;
+    }
+}
+
 .personal-account-aside__application-form-link {
     transition: 0.3s ease-in;
     color: #FEFEFE;
@@ -1922,6 +1929,7 @@
     border-bottom: 1px solid #c3c3c3;
     align-items: center;
     justify-content: space-between;
+    gap: 15px;
 }
 
 .personal-account-content__application-form__header-text-box {
@@ -2030,7 +2038,7 @@
     margin-bottom: 15px;
 }
 
-.personal-account-content__application-form-product-form form .form-files>span {
+.personal-account-content__application-form-product-form form .form-files > span {
     font-family: "Golos Text Regular", sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -2175,6 +2183,7 @@
     background-color: var(--ligth-gray);
     border-radius: 50px;
     transition: 0.3s ease-in;
+    flex-shrink: 0;
 }
 
 .radio-new-item {
@@ -2197,12 +2206,12 @@
     z-index: -1;
 }
 
-.form-files-radio-box input:checked+.radio-new-bg>.radio-new-item {
+.form-files-radio-box input:checked + .radio-new-bg > .radio-new-item {
     left: auto;
     transform: translateX(200%);
     transition: transform 0.5s;
 }
 
-.form-files-radio-box input:checked+.radio-new-bg {
+.form-files-radio-box input:checked + .radio-new-bg {
     background-color: var(--color-orange);
 }

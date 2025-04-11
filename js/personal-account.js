@@ -2,9 +2,6 @@ const container = document.querySelector('.personal-account');
 const buttons = container.querySelectorAll('.tab-button');
 const contents = container.querySelectorAll('.tab-content');
 
-let scrollBarClient = document.documentElement.clientWidth;
-let scrollBarAll = window.innerWidth;
-
 if (container && buttons && contents) {
     class TabSystem {
         constructor(container) {
@@ -199,7 +196,7 @@ const problemsFeedbackOtbivkaBtns = document.querySelectorAll('.problems-feedbac
 const problemsCancelBtns = document.querySelectorAll('.problems-cancel-btn');
 const modalsConnection = document.getElementById('modal-contacts');
 
-const modal = document.querySelector('.modals');
+const modals = document.querySelector('.modals');
 const submitModalProblemsBtn = document.querySelector('.problems-cancel-btn--submit');
 
 if (problemsFeedbackBtns && modalsConnection) {
@@ -425,24 +422,24 @@ if (modalOverlayOutAccount) {
 
 
 document.querySelectorAll('.inputs-file-box input[type="file"]').forEach(input => {
-    input.addEventListener('change', function(e) {
-      const file = e.target.files[0];
-      const label = this.previousElementSibling; // Получаем соответствующий label
-      const img = label.querySelector('.input-img img'); // Находим img внутри label
-      
-      if (file && img) {
-        const reader = new FileReader();
-        
-        reader.onload = function(e) {
-          img.src = e.target.result;
-          img.style.display = 'block'; // Показываем изображение
-        //   label.classList.add('label-select'); // Добавляем класс для стилей
-        };
-        
-        reader.readAsDataURL(file);
-      }
+    input.addEventListener('change', function (e) {
+        const file = e.target.files[0];
+        const label = this.previousElementSibling; // Получаем соответствующий label
+        const img = label.querySelector('.input-img img'); // Находим img внутри label
+
+        if (file && img) {
+            const reader = new FileReader();
+
+            reader.onload = function (e) {
+                img.src = e.target.result;
+                img.style.display = 'block'; // Показываем изображение
+                //   label.classList.add('label-select'); // Добавляем класс для стилей
+            };
+
+            reader.readAsDataURL(file);
+        }
     });
-  });
+});
 
 
 

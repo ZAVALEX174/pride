@@ -55,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const openModalAuthBtn = document.querySelector('.header__user-btn');
     const closeModalAuthBtn = document.getElementById('close-modal-auth');
     const signinSubmitBtn = document.getElementById('signin-submit');
+    const signUpSubmitBtn = document.getElementById('signup-submit');
     const modalOverlayAuthOtbivka = document.getElementById('modalOverlayAuthOtbivka');
     const closeBtnModalOverlayAuthOtbivka = document.getElementById('modalCloseAuthOtbivka-close-btn');
 
@@ -110,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Обработчики событий
         openModalAuthBtn.addEventListener('click', openModal);
         closeModalAuthBtn.addEventListener('click', closeModal);
-        signinSubmitBtn.addEventListener('click', openModalOtbivka);
+        signUpSubmitBtn.addEventListener('click', openModalOtbivka);
         closeBtnModalOverlayAuthOtbivka.addEventListener('click', closeModalOtbivka);
     }
 
