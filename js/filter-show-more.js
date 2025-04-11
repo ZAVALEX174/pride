@@ -40,7 +40,7 @@ if (filterForm) {
     if (horLabels) {
         horLabels.forEach(label => {
             const checks = label.querySelector('.checkbox-real');
-            checks.checked = false;
+            // checks.checked = false;
             // console.log(checks.checked);
             if (checks) {
                 label.addEventListener('change', (e) => {

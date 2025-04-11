@@ -1580,6 +1580,8 @@ main {
     }
 }
 
+/*изменения от 11_04_25*/
+
 .hero-slider__btn {
     font-size: 20px;
     max-width: 270px;
@@ -1594,6 +1596,7 @@ main {
     display: inline-flex;
     justify-content: center;
     transition: 0.3s ease-in;
+    padding: 0 15px;
 }
 
 @media (max-width: 1280px) {
@@ -1604,12 +1607,21 @@ main {
     }
 }
 
-@media (max-width: 600px) {
-    .hero-slider__btn {
-        max-width: 135px;
-        padding: 0;
+@media (max-width: 1024px) {
+    .hero-slider__buttons {
+        flex-wrap: wrap;
     }
 }
+
+
+/*@media (max-width: 600px) {*/
+/*    .hero-slider__btn {*/
+/*        max-width: 135px;*/
+/*        padding: 0;*/
+/*    }*/
+/*}*/
+
+/*изменения от 11_04_25*/
 
 .hero-slider__btn:hover {
     background-color: var(--ligth-gray);
@@ -18940,3 +18952,4 @@ input[type='number'] {
 .bx-filter-parameters-box {
     margin-bottom: 35px;
 }
+
