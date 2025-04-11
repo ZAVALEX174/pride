@@ -242,37 +242,57 @@ const modalFormZakaz = modal.querySelector('.modals-zakaz');
 const closesModalFormZakaz = modalFormZakaz.querySelector('.modals-zakaz__btn');
 
 const openFormBtn = document.querySelectorAll('.submit-application');
-openFormBtn.forEach(el => {
-    el.addEventListener('click', (e) => {
-        e.preventDefault();
-        openManagerTabs();
-    })
-});
+
+if (openFormBtn) {
+    openFormBtn.forEach(el => {
+        el.addEventListener('click', (e) => {
+            e.preventDefault();
+            openManagerTabs();
+        })
+    });
+}
+
 
 const myEquipmentConsultation = document.getElementById('my-equipment-consultation');
+const helpConsultation = document.getElementById('help-conultation');
 
-myEquipmentConsultation.addEventListener('click', (e) => {
-    e.preventDefault();
-    // console.log("И мне тоже нужно перейти на вкладку личный менеджер!");
-    openManagerTabs();
-})
+if (myEquipmentConsultation) {
+    myEquipmentConsultation.addEventListener('click', (e) => {
+        e.preventDefault();
+        // console.log("И мне тоже нужно перейти на вкладку личный менеджер!");
+        openManagerTabs();
+    })
+}
+
+if (helpConsultation) {
+    helpConsultation.addEventListener('click', (e) => {
+        e.preventDefault();
+        // console.log("И мне тоже нужно перейти на вкладку личный менеджер!");
+        openManagerTabs();
+    })
+}
 
 const myEquipmentFavorites = document.getElementById('my-equipment-favorites');
 
-myEquipmentFavorites.addEventListener('click', (e) => {
-    e.preventDefault();
-    console.log("А я хочу перейти на вкладку Избранное!");
-    openFavoritesTabs();
-});
+if (myEquipmentFavorites) {
+    myEquipmentFavorites.addEventListener('click', (e) => {
+        e.preventDefault();
+        console.log("А я хочу перейти на вкладку Избранное!");
+        openFavoritesTabs();
+    });
+}
 
 const equipmentItemBtns = document.querySelectorAll('.personal-account-content-body__equipment-item-btn--open-modal');
-equipmentItemBtns.forEach(item => {
-    item.addEventListener('click', (e) => {
-        e.preventDefault();
-        // console.log('ну и мы туда же!!!');
-        openManagerTabs();
+
+if (equipmentItemBtns) {
+    equipmentItemBtns.forEach(item => {
+        item.addEventListener('click', (e) => {
+            e.preventDefault();
+            // console.log('ну и мы туда же!!!');
+            openManagerTabs();
+        })
     })
-})
+}
 
 const managerBtnTab = document.querySelector('.tab-button[data-tab-btn="tab-btn4"]');
 const managerTab = document.getElementById('tab-btn4');
@@ -316,29 +336,40 @@ let dataClientMailInput = document.getElementById('data-client-mail-input');
 let dataClientUridInput = document.getElementById('data-client-urid-input');
 let dataClientInnInput = document.getElementById('data-client-inn-input');
 
-inputUserNameBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    document.getElementById('data-client-name-input').placeholder = inputUserName.textContent;
-    dataClientNameInput.classList.remove('none');
-})
 
-inputClientCallBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    document.getElementById('data-client-call-input').placeholder = inputClientCall.textContent;
-    dataClientCallInput.classList.remove('none');
-})
+if (inputUserNameBtn && dataClientNameInput) {
+    inputUserNameBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.getElementById('data-client-name-input').placeholder = inputUserName.textContent;
+        dataClientNameInput.classList.remove('none');
+    })
+}
 
-inputClientMailBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    document.getElementById('data-client-mail-input').placeholder = inputClientMail.textContent;
-    dataClientMailInput.classList.remove('none');
-})
 
-inputClientUridBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    document.getElementById('data-client-urid-input').placeholder = inputClientUrid.textContent;
-    dataClientUridInput.classList.remove('none');
-})
+if (inputClientCallBtn && dataClientCallInput) {
+    inputClientCallBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.getElementById('data-client-call-input').placeholder = inputClientCall.textContent;
+        dataClientCallInput.classList.remove('none');
+    })
+}
+
+if (inputClientMailBtn && dataClientMailInput) {
+    inputClientMailBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.getElementById('data-client-mail-input').placeholder = inputClientMail.textContent;
+        dataClientMailInput.classList.remove('none');
+    })
+}
+
+
+if (inputClientUridBtn && dataClientUridInput) {
+    inputClientUridBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        document.getElementById('data-client-urid-input').placeholder = inputClientUrid.textContent;
+        dataClientUridInput.classList.remove('none');
+    })
+}
 
 inputClientInnBtn.addEventListener('click', (e) => {
     e.preventDefault();
@@ -346,32 +377,34 @@ inputClientInnBtn.addEventListener('click', (e) => {
     dataClientInnInput.classList.remove('none');
 })
 
-saveSettingContactBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    // 1. Добавляем элементы в массив правильно
-    arrayClientData.splice(0, 1, dataClientNameInput.value);
-    arrayClientData.splice(1, 1, dataClientCallInput.value);
-    arrayClientData.splice(2, 1, dataClientMailInput.value);
-    arrayClientData.splice(3, 1, dataClientUridInput.value);
-    arrayClientData.splice(4, 1, dataClientInnInput.value);
 
-    // 2. Обновляем отображение
-    inputUserName.textContent = arrayClientData[0];
-    dataClientNameInput.classList.add('none');
+if (saveSettingContactBtn) {
+    saveSettingContactBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        // 1. Добавляем элементы в массив правильно
+        arrayClientData.splice(0, 1, dataClientNameInput.value);
+        arrayClientData.splice(1, 1, dataClientCallInput.value);
+        arrayClientData.splice(2, 1, dataClientMailInput.value);
+        arrayClientData.splice(3, 1, dataClientUridInput.value);
+        arrayClientData.splice(4, 1, dataClientInnInput.value);
 
-    inputClientCall.textContent = arrayClientData[1];
-    dataClientCallInput.classList.add('none');
+        // 2. Обновляем отображение
+        inputUserName.textContent = arrayClientData[0];
+        dataClientNameInput.classList.add('none');
 
-    inputClientMail.textContent = arrayClientData[2];
-    dataClientMailInput.classList.add('none');
+        inputClientCall.textContent = arrayClientData[1];
+        dataClientCallInput.classList.add('none');
 
-    inputClientUrid.textContent = arrayClientData[3];
-    dataClientUridInput.classList.add('none');
+        inputClientMail.textContent = arrayClientData[2];
+        dataClientMailInput.classList.add('none');
 
-    inputClientInn.textContent = arrayClientData[4];
-    dataClientInnInput.classList.add('none');
-})
+        inputClientUrid.textContent = arrayClientData[3];
+        dataClientUridInput.classList.add('none');
 
+        inputClientInn.textContent = arrayClientData[4];
+        dataClientInnInput.classList.add('none');
+    })
+}
 
 // Выйти из аккаунта
 const goBackBtn = document.querySelector('.go-back-btn');
@@ -420,26 +453,30 @@ if (modalOverlayOutAccount) {
     });
 }
 
+const inputsFileBoxImg = document.querySelectorAll('.inputs-file-box input[type="file"]');
 
-document.querySelectorAll('.inputs-file-box input[type="file"]').forEach(input => {
-    input.addEventListener('change', function (e) {
-        const file = e.target.files[0];
-        const label = this.previousElementSibling; // Получаем соответствующий label
-        const img = label.querySelector('.input-img img'); // Находим img внутри label
+if (inputsFileBoxImg) {
+    inputsFileBoxImg.forEach(input => {
+        input.addEventListener('change', function (e) {
+            const file = e.target.files[0];
+            const label = this.previousElementSibling; // Получаем соответствующий label
+            const img = label.querySelector('.input-img img'); // Находим img внутри label
 
-        if (file && img) {
-            const reader = new FileReader();
+            if (file && img) {
+                const reader = new FileReader();
 
-            reader.onload = function (e) {
-                img.src = e.target.result;
-                img.style.display = 'block'; // Показываем изображение
-                //   label.classList.add('label-select'); // Добавляем класс для стилей
-            };
+                reader.onload = function (e) {
+                    img.src = e.target.result;
+                    img.style.display = 'block'; // Показываем изображение
+                    //   label.classList.add('label-select'); // Добавляем класс для стилей
+                };
 
-            reader.readAsDataURL(file);
-        }
+                reader.readAsDataURL(file);
+            }
+        });
     });
-});
+}
+
 
 
 
