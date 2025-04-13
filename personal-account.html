@@ -2435,7 +2435,9 @@
                 </div>
             </div>
             <div class="personal-account-content__application-form-product-form">
-                <form action="">
+                <form action="" method="post"
+                      id="uploadForm"
+                      enctype="multipart/form-data">
                     <div class="form-text">
                         <label for="form-textarea-problem">
                             Опишите проблему:
@@ -2453,7 +2455,7 @@
                                 <input id="form-files-inputs-id" type="url" placeholder="https://">
                             </label>
                             <label class="file-btn" for="form-files-inputs-file">
-                                <input id="form-files-inputs-file" type="file">
+                                <input id="form-files-inputs-file" type="file" multiple>
                                 Прекрепить файлы
                                 <svg width="19" height="21" viewBox="0 0 19 21" fill="none"
                                      xmlns="http://www.w3.org/2000/svg">
@@ -2464,6 +2466,37 @@
                                 </svg>
                             </label>
                         </div>
+                        <div class="file-list">
+                            <div id="progressContainer" class="hidden">
+                                <div id="progressText" class="progress-text">Загрузка файлов 0%</div>
+                            </div>
+                            <button id="deleteAllBtn" class="delete-all-btn hidden" type="button"
+                                    onclick="deleteAllFiles()">
+                                <!--                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"-->
+                                <!--                                 xmlns="http://www.w3.org/2000/svg">-->
+                                <!--                                <g clip-path="url(#clip0_2181_45441)">-->
+                                <!--                                    <path d="M14.7863 7.07153L13.5006 17.3572H4.50056L3.21484 7.07153"-->
+                                <!--                                          stroke="currentColor"-->
+                                <!--                                          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>-->
+                                <!--                                    <path d="M1.28613 4.5H16.7147" stroke="currentColor" stroke-width="1.5"-->
+                                <!--                                          stroke-linecap="round"-->
+                                <!--                                          stroke-linejoin="round"/>-->
+                                <!--                                    <path d="M5.73438 4.12719V1.9029C5.73438 1.56191 5.86983 1.23488 6.11095 0.993764C6.35207 0.752646 6.6791 0.617188 7.02009 0.617188H10.8772C11.2182 0.617188 11.5453 0.752646 11.7864 0.993764C12.0275 1.23488 12.1629 1.56191 12.1629 1.9029V4.47433"-->
+                                <!--                                          stroke="currentColor" stroke-width="1.5" stroke-linecap="round"-->
+                                <!--                                          stroke-linejoin="round"/>-->
+                                <!--                                </g>-->
+                                <!--                                <defs>-->
+                                <!--                                    <clipPath id="clip0_2181_45441">-->
+                                <!--                                        <rect width="18" height="18" fill="white"/>-->
+                                <!--                                    </clipPath>-->
+                                <!--                                </defs>-->
+                                <!--                            </svg>-->
+                                Удалить все файлы
+                            </button>
+                            <div id="fileList"></div>
+
+                        </div>
+                        <div class="warning">Максимум 3 файла!</div>
                         <div class="form-files-radio-box">
                             <label for="form-files-radio-box-guarantees">
                                 <input id="form-files-radio-box-guarantees" checked name="guarantees" type="radio">
@@ -4536,6 +4569,7 @@
 <script src="js/dropdown.js"></script>
 <script src="js/modals.js"></script>
 <script src="js/modal-form-catalog.js"></script>
+<script src="js/script-input-file-personal-account.js"></script>
 <script src="js/header-modal.js"></script>
 <script src="js/jquery-3.7.1.min.js"></script>
 <script src="js/personal-account.js"></script>
