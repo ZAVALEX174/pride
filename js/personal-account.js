@@ -194,6 +194,7 @@ if (modalOverlay && modalOtbivkaOverlay) {
 const problemsFeedbackBtns = document.querySelectorAll('.problems-feedback-btn');
 const problemsFeedbackOtbivkaBtns = document.querySelectorAll('.problems-feedback-btn-otbivka');
 const problemsCancelBtns = document.querySelectorAll('.problems-cancel-btn');
+const problemsCancelBtnRoutManager = document.querySelectorAll('.personal-account-content__application-form__header-btn');
 const modalsConnection = document.getElementById('modal-contacts');
 
 const modals = document.querySelector('.modals');
@@ -207,6 +208,13 @@ if (problemsFeedbackBtns && modalsConnection) {
         });
     })
 }
+
+// if (problemsCancelBtnRoutManager) {
+//     problemsCancelBtnRoutManager.addEventListener('click', (e) => {
+//         e.preventDefault();
+//         openManagerTabs();
+//     });
+// }
 
 // открытие окна отбивки "проблемы"
 if (problemsCancelBtns && modalCancelRequestOtbivka) {
