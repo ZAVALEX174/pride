@@ -25,7 +25,7 @@ const dubleSwiperTwo = document.querySelector('.mySwiper2');
 if (dubleSwiperOne && dubleSwiperTwo) {
 
     var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1.574,
+        slidesPerView: 1.5,
         centeredSlides: true,
         speed: 5000,
         direction: "vertical",
@@ -94,7 +94,7 @@ if (dubleSwiperOne && dubleSwiperTwo) {
                 },
             },
             769: {
-                slidesPerView: 1.574,
+                slidesPerView: 1.5,
                 spaceBetween: 40,
                 speed: 5000,
                 direction: "vertical",

@@ -7854,8 +7854,9 @@ label[for='user-email'] {
 @media (max-width: 768px) {
     .choice-slider .choice-slider__body {
         margin-left: 0;
-        height: 392px;
+        min-height: 392px;
         max-width: 100%;
+        height: auto;
     }
 }
 
@@ -7923,6 +7924,7 @@ label[for='user-email'] {
 @media (max-width: 768px) {
     .choice-slider .mySwiper2 .swiper-slide {
         margin-bottom: 0;
+        min-height: 392px;
     }
 }
 
