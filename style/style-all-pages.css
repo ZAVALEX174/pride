@@ -12297,9 +12297,9 @@ video {
     height: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1180px) {
     .catalog-categories__body-item .cart__wrapper-text {
-        padding: 20px 15px 8px 15px;
+        padding: 20px 10px 8px 10px;
     }
 }
 
