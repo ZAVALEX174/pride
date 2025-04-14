@@ -366,6 +366,25 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     }
 
+    function closeModals() {
+        modal.classList.remove('modals_opened');
+        modalFormRepresentation.classList.add('none');
+        modalFormApplication.classList.add('none');
+        modalsConnection.classList.add('none');
+        modalFormOtzivi.classList.add('none');
+        document.body.style.overflow = '';
+        document.documentElement.style.overflow = ''; // Для html
+        document.body.style.paddingRight = `0px`;
+
+        // изменения от 26_03_25
+        // удаление input при закрытии формы
+        let inputProductHidden = modalFormRepresentation.querySelector('input[type=hidden]');
+        if (inputProductHidden) {
+            inputProductHidden.remove();
+        }
+        // изменения от 26_03_25
+    }
+
     if (openModalNonStandart && modalFormOrder) {
         openModalNonStandart.addEventListener('click', (e) => {
             e.preventDefault();
