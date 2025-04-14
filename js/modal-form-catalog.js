@@ -510,7 +510,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (openModalZayavkaFormSubminBtn) {
         openModalZayavkaFormSubminBtn.addEventListener('click', (e) => {
             modalFormZakaz.classList.add('none');
-            modalApplicationSent.classList.remove('none');
+            // modalApplicationSent.classList.remove('none');
             // document.documentElement.style.overflow = "hidden";
             document.body.style.overflow = "hidden";
             document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
