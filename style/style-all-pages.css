@@ -18955,3 +18955,96 @@ input[type='number'] {
     margin-bottom: 35px;
 }
 
+.not-found-error {
+    padding: 120px 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.not-found-error .not-found-content-box {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+    align-items: center;
+}
+
+.not-found-error .not-found-content-box > h1 {
+    font-family: 'GetVoIP Grotesque Regular', sans-serif;
+    font-weight: 700;
+    font-size: 200px;
+    text-align: center;
+    color: #e6e6e6;
+    margin-bottom: 34px;
+}
+
+.not-found-error .not-found-content-box .not-found-content-box__title {
+    font-family: 'Golos Text Medium', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--dark-gray);
+    margin-bottom: 15px;
+}
+
+.not-found-error .not-found-content-box .not-found-content-box__subtitle {
+    font-family: 'Golos Text Regular', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 139%;
+    text-align: center;
+    color: var(--dark-gray);
+    margin-bottom: 40px;
+}
+
+.not-found-error .not-found-content-box .not-found-content-box__btn {
+    font-family: 'Golos Text Regular', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: var(--main-bg);
+    display: inline-flex;
+    border-radius: 100px;
+    padding: 0 56px;
+    width: 276px;
+    height: 48px;
+    line-height: 48px;
+    background-color: var(--color-orange);
+    transition: 0.3s ease-in;
+}
+
+.not-found-error .not-found-content-box .not-found-content-box__btn:hover {
+    background-color: var(--ligth-gray);
+}
+
+@media (max-width: 768px) {
+
+    .not-found-error {
+        height: 100vh;
+    }
+
+    .not-found-error .not-found-content-box > h1 {
+        font-size: 150px;
+    }
+}
+
+@media (max-width: 425px) {
+    .not-found-error .not-found-content-box > h1 {
+        font-size: 100px;
+        margin-bottom: 15px;
+    }
+
+    .not-found-error .not-found-content-box .not-found-content-box__title {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .not-found-error .not-found-content-box .not-found-content-box__subtitle {
+        font-size: 16px;
+        line-height: 137%;
+        margin-bottom: 36px;
+    }
+}
