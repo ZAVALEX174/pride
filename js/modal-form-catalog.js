@@ -346,43 +346,9 @@ document.addEventListener('DOMContentLoaded', function () {
     if (closeBtns) {
         closeBtns.forEach((closeBtn) => {
             closeBtn.addEventListener('click', () => {
-                modal.classList.remove('modals_opened');
-                modalFormRepresentation.classList.add('none');
-                modalFormApplication.classList.add('none');
-                modalsConnection.classList.add('none');
-                modalFormOtzivi.classList.add('none');
-                document.body.style.overflow = '';
-                document.documentElement.style.overflow = ''; // Для html
-                document.body.style.paddingRight = `0px`;
-
-                // изменения от 26_03_25
-                // удаление input при закрытии формы
-                let inputProductHidden = modalFormRepresentation.querySelector('input[type=hidden]');
-                if (inputProductHidden) {
-                    inputProductHidden.remove();
-                }
-                // изменения от 26_03_25
+                closeModals();
             })
         })
-    }
-
-    function closeModals() {
-        modal.classList.remove('modals_opened');
-        modalFormRepresentation.classList.add('none');
-        modalFormApplication.classList.add('none');
-        modalsConnection.classList.add('none');
-        modalFormOtzivi.classList.add('none');
-        document.body.style.overflow = '';
-        document.documentElement.style.overflow = ''; // Для html
-        document.body.style.paddingRight = `0px`;
-
-        // изменения от 26_03_25
-        // удаление input при закрытии формы
-        let inputProductHidden = modalFormRepresentation.querySelector('input[type=hidden]');
-        if (inputProductHidden) {
-            inputProductHidden.remove();
-        }
-        // изменения от 26_03_25
     }
 
     if (openModalNonStandart && modalFormOrder) {
@@ -643,3 +609,27 @@ function openModalParametersSent() {
     }
 }
 
+
+function closeModals() {
+    const modalFormRepresentation = document.getElementById('modal-payment');
+    const modalFormApplication = document.getElementById('modal-application');
+    const modalFormOtzivi = document.getElementById('modal-otzivi');
+    const modalsConnection = document.getElementById('modal-contacts');
+    document.body.style.overflow = '';
+    document.documentElement.style.overflow = ''; // Для html
+    document.body.style.paddingRight = `0px`;
+    modal.classList.remove('modals_opened');
+    modalFormRepresentation.classList.add('none');
+    modalFormApplication.classList.add('none');
+    modalsConnection.classList.add('none');
+    modalFormOtzivi.classList.add('none');
+
+
+    // изменения от 26_03_25
+    // удаление input при закрытии формы
+    let inputProductHidden = modalFormRepresentation.querySelector('input[type=hidden]');
+    if (inputProductHidden) {
+        inputProductHidden.remove();
+    }
+    // изменения от 26_03_25
+}
