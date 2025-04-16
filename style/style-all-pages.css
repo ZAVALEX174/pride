@@ -12525,6 +12525,7 @@ video {
     background-position: center center;
     width: 100%;
     min-height: 370px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     text-align: left;
