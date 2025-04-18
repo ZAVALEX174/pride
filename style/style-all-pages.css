@@ -6806,7 +6806,7 @@ label[for='user-email'] {
 @media (max-width: 768px) {
     .footer__nav-box .nav-box__left::after {
         position: absolute;
-        content: '';
+        /* content: ''; */
         bottom: -35px;
         left: 0;
         right: -14px;
@@ -19048,5 +19048,35 @@ input[type='number'] {
         font-size: 16px;
         line-height: 137%;
         margin-bottom: 36px;
+    }
+}
+
+.nav-box__left:nth-child(1) {
+    position: relative;
+}
+
+.nav-box__left:nth-child(2) {
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .nav-box__left:nth-child(1)::after {
+        position: absolute;
+        content: '';
+        bottom: -35px;
+        left: 0;
+        right: -14px;
+        height: 1.5px;
+        background-color: #dcdcdc;
+    }
+
+    .nav-box__left:nth-child(2)::after {
+        position: absolute;
+        content: '';
+        bottom: -35px;
+        left: 0;
+        left: -14px;
+        height: 1.5px;
+        background-color: #dcdcdc;
     }
 }
