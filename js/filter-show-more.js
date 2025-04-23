@@ -22,7 +22,9 @@ if (filterForm) {
     const filterHiddenSections = filterForm.querySelectorAll('.filter-hidden');
     const horizontalInputs = document.getElementById('form-container');
     const horLabels = horizontalInputs.querySelectorAll('.option__btn');
+    // изменения 23_04_25
     // const getResultFromInputField = document.getElementById('r2');
+    // изменения 23_04_25
 
     const createElement = (text) => {
         let newListItem = document.createElement('li');
@@ -126,12 +128,13 @@ if (filterForm) {
             });
         });
 
-        
+        // изменения 23_04_25
         // getResultFromInputField.addEventListener('click', (e) => {
         //     e.preventDefault();
         //     // console.log(inputs[1].value);
         //     createElementSliderOne(inputs[0].value, inputs[1].value);
         // })
+        // изменения 23_04_25
     }
 
     const createElementSliderOne = (fromCount, toCount) => {
@@ -187,11 +190,13 @@ if (filterForm) {
             });
         });
 
+        // изменения 23_04_25
         // getResultFromInputField.addEventListener('click', (e) => {
         //     e.preventDefault();
         //     // console.log(inputs[1].value);
         //     createElementSliderTwo(inputs[0].value, inputs[1].value);
         // })
+        // изменения 23_04_25
     }
 
     const createElementSliderTwo = (fromCount, toCount) => {
