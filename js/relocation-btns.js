@@ -18,16 +18,21 @@ if (heroSliders && contactUsBtnValue) {
 }
 
 // Секция work
-const workBodySwiperContentBox = document.querySelector('.work__body-swiper-content-box');
-const workBodyItemImgSlide = document.querySelector('.work__body-item_img');
-const workBodyItemImgSlideTitle = document.querySelector('.work__body-cart-title_img').textContent;
-const workBodyItemImgSlideBtnValue = document.querySelector('.work__body-cart-btn.work__body-cart-btn_hover-block').textContent;
-const workHeaderLinkValue = document.querySelector('.work__header-link').textContent;
-// console.log(workHeaderLinkValue);
+// изменения от 23_04_25
+
+const work = document.querySelector('.work');
+if (work) {
+  // изменения от 23_04_25
+  const workBodySwiperContentBox = document.querySelector('.work__body-swiper-content-box');
+  const workBodyItemImgSlide = document.querySelector('.work__body-item_img');
+  const workBodyItemImgSlideTitle = document.querySelector('.work__body-cart-title_img').textContent;
+  const workBodyItemImgSlideBtnValue = document.querySelector('.work__body-cart-btn.work__body-cart-btn_hover-block').textContent;
+  const workHeaderLinkValue = document.querySelector('.work__header-link').textContent;
+  // console.log(workHeaderLinkValue);
 
 
-if (workBodySwiperContentBox && workBodyItemImgSlide && workBodyItemImgSlideTitle && workBodyItemImgSlideBtnValue && workHeaderLinkValue) {
-  workBodySwiperContentBox.insertAdjacentHTML("afterBegin", `<div id="workBodyItemImg" class="swiper-slide work__body-swiper-content-slider-slide work__body-item_img">
+  if (workBodySwiperContentBox && workBodyItemImgSlide && workBodyItemImgSlideTitle && workBodyItemImgSlideBtnValue && workHeaderLinkValue) {
+    workBodySwiperContentBox.insertAdjacentHTML("afterBegin", `<div id="workBodyItemImg" class="swiper-slide work__body-swiper-content-slider-slide work__body-item_img">
                   <div class="work__body-item">
                     <h3 class="work__body-cart-title work__body-cart-title_img">
                       ${workBodyItemImgSlideTitle}
@@ -39,8 +44,10 @@ if (workBodySwiperContentBox && workBodyItemImgSlide && workBodyItemImgSlideTitl
                 </div>
 <a href="catalog.html" class="work__header-link" id="workHeaderLink">${workHeaderLinkValue}</a>
 `);
+  }
+  // изменения от 23_04_25
 }
-
+// изменения от 23_04_25
 // Секция our-projects
 const ourProjectsSlideOtziv = document.querySelector('.our-projects-swiper-image-box');
 const ourProjectsSlideOtzivBox = document.querySelector('.swiper-slide.our-projects-slide.our-projects-slide-otziv');
@@ -93,9 +100,7 @@ const categoriesBtnsBoxBtnValue = document.querySelector('.categories__link').te
 const categoriesBtnsBoxBtnHref = document.querySelector('.categories__link').href;
 const mobileFilterBtnValue = document.querySelector('.catalog-categories__header-btn-box');
 
-
-console.log(mobileFilterBtnValue);
-
+// console.log(mobileFilterBtnValue);
 
 if (categoriesBtnsBox && categoriesBtnsBoxBtnValue && categoriesBtnsBoxBtnHref) {
   categoriesBtnsBox.insertAdjacentHTML("afterBegin", `<a href="${categoriesBtnsBoxBtnHref}" id="categoriesBtnCatalog" class="btn categories__link">${categoriesBtnsBoxBtnValue}</a>
@@ -109,7 +114,7 @@ const watchedBeforeProductCartLinkValue = document.querySelector('.product-cart_
 const watchedBeforeProductCartLinkHref = document.querySelector('.product-cart__header-link').href;
 // console.log(watchedBeforeProductCartLinkHref);
 
-if (watchedBeforeProductCartLinkBox && watchedBeforeProductCartLinkValue &&watchedBeforeProductCartLinkHref) {
+if (watchedBeforeProductCartLinkBox && watchedBeforeProductCartLinkValue && watchedBeforeProductCartLinkHref) {
   watchedBeforeProductCartLinkBox.insertAdjacentHTML("afterBegin", `
  <a href="${watchedBeforeProductCartLinkHref}" id="watchedBeforeLink" class="btn product-cart__header-link">${watchedBeforeProductCartLinkValue}</a>
 `);

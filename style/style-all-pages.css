@@ -3649,6 +3649,10 @@ main {
     z-index: 5;
 }
 
+.work__body-swiper-content-box .work__body-item {
+    align-items: center;
+}
+
 @media (max-width: 768px) {
     .work__body-item_img {
         display: none;
