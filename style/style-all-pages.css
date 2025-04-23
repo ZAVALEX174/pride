@@ -3460,6 +3460,19 @@ main {
         width: 100%;
         max-width: 315px;
         justify-content: center;
+        margin: 0 auto 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* испр */
+    .work__header-link {
+        /* display: none; */
+        display: flex;
+        width: 100%;
+        max-width: 315px;
+        justify-content: center;
         margin: 0 auto;
     }
 }
@@ -4443,12 +4456,24 @@ main {
         /* display: none; */
         max-width: 280px;
         width: 100%;
-        margin: 0 auto;
+        margin: 0 auto 0 20px;
     }
 
     .other__container .swiper-btn-box {
         display: none;
     }
+}
+
+@media (max-width: 768px) {
+
+    /* испр */
+    .other__header-link {
+        /* display: none; */
+        max-width: 280px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
 }
 
 /*изменения 25_03_25*/
@@ -10748,6 +10773,20 @@ video {
         max-width: 335px;
         align-items: center;
         justify-content: center;
+        margin: 0 auto 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* испр */
+    .product-cart__header-link {
+        /* display: none; */
+        display: inline-flex;
+        max-width: 335px;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
     }
 }
 
