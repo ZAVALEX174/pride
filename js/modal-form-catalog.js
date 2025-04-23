@@ -68,6 +68,9 @@ document.addEventListener('DOMContentLoaded', function () {
     if (openModalFormPepresentationBtn) {
         openModalFormPepresentationBtn.addEventListener('click', (e) => {
             e.preventDefault();
+            //added 23.04.25 --start            
+            document.getElementById('modal-application').querySelector('[name="category_id"]').value = e.target.dataset.category;
+            //added 23.04.25 --end
             modal.classList.add('modals_opened');
             document.getElementById('modal-application').classList.remove('none');
             document.documentElement.style.overflow = "hidden";
