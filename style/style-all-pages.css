@@ -4441,6 +4441,9 @@ main {
     /* испр */
     .other__header-link {
         /* display: none; */
+        max-width: 280px;
+        width: 100%;
+        margin: 0 auto;
     }
 
     .other__container .swiper-btn-box {

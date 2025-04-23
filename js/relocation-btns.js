@@ -258,9 +258,10 @@ if (watchedBeforeBody) {
 
 // Секция other
 const otherBody = document.querySelector('.other__body');
-if (otherBody) {
+const otherHeaderLinkBoxBtn = document.querySelector('.other__header-link');
+if (otherBody && otherHeaderLinkBoxBtn) {
   // const otherBody = document.querySelector('.other__header-link-box');
-  const otherHeaderLinkBoxBtn = document.querySelector('.other__header-link');
+  
    // Сохраняем оригинального родителя кнопки
    const originalParentOtherHeader = otherHeaderLinkBoxBtn.parentNode;
    let isMoved = false; // Флаг для отслеживания состояния 
