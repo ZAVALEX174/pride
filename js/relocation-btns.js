@@ -218,7 +218,7 @@ if (categoriesBody) {
 const watchedBeforeBody = document.querySelector('.watched-before__body-content');
 
 if (watchedBeforeBody) {
-  const watchedBeforeProductCartLinkBox = document.querySelector('.watched-before__product-cart-link-box');
+  // const watchedBeforeProductCartLinkBox = document.querySelector('.watched-before__product-cart-link-box');
   const watchedBeforeProductBtn = document.querySelector('.product-cart__header-link'); 
     // Сохраняем оригинального родителя кнопки
     const originalParentWatchedBeforeProduct = watchedBeforeProductBtn.parentNode;
@@ -228,7 +228,7 @@ if (watchedBeforeBody) {
         const screenWidth = window.innerWidth;  
         if (screenWidth < 1024 && !isMoved) {
             // Перемещаем кнопку только если она еще не перемещена
-            watchedBeforeProductCartLinkBox.appendChild(watchedBeforeProductBtn);
+            watchedBeforeBody.appendChild(watchedBeforeProductBtn);
             isMoved = true;
         } else if (screenWidth >= 1024 && isMoved) {
             // Возвращаем на место при увеличении экрана
