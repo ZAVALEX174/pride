@@ -10782,7 +10782,7 @@ video {
     /* испр */
     .product-cart__header-link {
         /* display: none; */
-        display: inline-flex;
+        display: flex;
         max-width: 335px;
         align-items: center;
         justify-content: center;
