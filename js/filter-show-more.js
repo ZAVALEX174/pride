@@ -22,7 +22,7 @@ if (filterForm) {
     const filterHiddenSections = filterForm.querySelectorAll('.filter-hidden');
     const horizontalInputs = document.getElementById('form-container');
     const horLabels = horizontalInputs.querySelectorAll('.option__btn');
-    const getResultFromInputField = document.getElementById('r2');
+    // const getResultFromInputField = document.getElementById('r2');
 
     const createElement = (text) => {
         let newListItem = document.createElement('li');
@@ -127,11 +127,11 @@ if (filterForm) {
         });
 
         
-        getResultFromInputField.addEventListener('click', (e) => {
-            e.preventDefault();
-            // console.log(inputs[1].value);
-            createElementSliderOne(inputs[0].value, inputs[1].value);
-        })
+        // getResultFromInputField.addEventListener('click', (e) => {
+        //     e.preventDefault();
+        //     // console.log(inputs[1].value);
+        //     createElementSliderOne(inputs[0].value, inputs[1].value);
+        // })
     }
 
     const createElementSliderOne = (fromCount, toCount) => {
@@ -187,11 +187,11 @@ if (filterForm) {
             });
         });
 
-        getResultFromInputField.addEventListener('click', (e) => {
-            e.preventDefault();
-            // console.log(inputs[1].value);
-            createElementSliderTwo(inputs[0].value, inputs[1].value);
-        })
+        // getResultFromInputField.addEventListener('click', (e) => {
+        //     e.preventDefault();
+        //     // console.log(inputs[1].value);
+        //     createElementSliderTwo(inputs[0].value, inputs[1].value);
+        // })
     }
 
     const createElementSliderTwo = (fromCount, toCount) => {
