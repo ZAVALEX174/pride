@@ -19074,9 +19074,20 @@ input[type='number'] {
         position: absolute;
         content: '';
         bottom: -35px;
+        right: 0;
         left: 0;
         left: -14px;
         height: 1.5px;
         background-color: #dcdcdc;
+    }
+
+    .products-variant-box__right-item {
+        width: 100%;
+    }
+
+    .products-variant-box__right:nth-child(2) {
+        max-width: 100%;
+        width: 100%;
+
     }
 }
