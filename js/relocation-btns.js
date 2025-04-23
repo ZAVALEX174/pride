@@ -219,16 +219,13 @@ const watchedBeforeBody = document.querySelector('.watched-before__body-content'
 
 if (watchedBeforeBody) {
   const watchedBeforeProductCartLinkBox = document.querySelector('.watched-before__product-cart-link-box');
-  const watchedBeforeProductBtn = document.querySelector('.product-cart__header-link');
- 
+  const watchedBeforeProductBtn = document.querySelector('.product-cart__header-link'); 
     // Сохраняем оригинального родителя кнопки
     const originalParentWatchedBeforeProduct = watchedBeforeProductBtn.parentNode;
-    let isMoved = false; // Флаг для отслеживания состояния
-  
+    let isMoved = false; // Флаг для отслеживания состояния  
     // Функция для проверки и перемещения кнопки
     const checkScreenSize = () => {
-        const screenWidth = window.innerWidth;
-  
+        const screenWidth = window.innerWidth;  
         if (screenWidth < 1024 && !isMoved) {
             // Перемещаем кнопку только если она еще не перемещена
             watchedBeforeProductCartLinkBox.appendChild(watchedBeforeProductBtn);
@@ -261,21 +258,18 @@ if (watchedBeforeBody) {
 
 // Секция other
 const otherBody = document.querySelector('.other__body');
-
 if (otherBody) {
-  const otherHeaderLinkBox = document.querySelector('.other__header-link-box');
+  // const otherBody = document.querySelector('.other__header-link-box');
   const otherHeaderLinkBoxBtn = document.querySelector('.other__header-link');
    // Сохраняем оригинального родителя кнопки
    const originalParentOtherHeader = otherHeaderLinkBoxBtn.parentNode;
-   let isMoved = false; // Флаг для отслеживания состояния
- 
+   let isMoved = false; // Флаг для отслеживания состояния 
    // Функция для проверки и перемещения кнопки
    const checkScreenSize = () => {
-       const screenWidth = window.innerWidth;
- 
+       const screenWidth = window.innerWidth; 
        if (screenWidth < 1024 && !isMoved) {
            // Перемещаем кнопку только если она еще не перемещена
-           otherHeaderLinkBox.appendChild(otherHeaderLinkBoxBtn);
+           otherBody.appendChild(otherHeaderLinkBoxBtn);
            isMoved = true;
        } else if (screenWidth >= 1024 && isMoved) {
            // Возвращаем на место при увеличении экрана

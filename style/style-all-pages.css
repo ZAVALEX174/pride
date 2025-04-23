@@ -12230,6 +12230,7 @@ video {
 
 @media (max-width: 768px) {
     .catalog-categories__body-item {
+        min-height: 392px;
         height: auto;
     }
 }
