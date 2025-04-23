@@ -27,11 +27,12 @@ if (work) {
   const workBodyItemImgSlide = document.querySelector('.work__body-item_img');
   const workBodyItemImgSlideTitle = document.querySelector('.work__body-cart-title_img').textContent;
   const workBodyItemImgSlideBtnValue = document.querySelector('.work__body-cart-btn.work__body-cart-btn_hover-block').textContent;
-  const workHeaderLinkValue = document.querySelector('.work__header-link').textContent;
+  const workHeaderBtn = document.querySelector('.work__header-link');
+  
   // console.log(workHeaderLinkValue);
 
 
-  if (workBodySwiperContentBox && workBodyItemImgSlide && workBodyItemImgSlideTitle && workBodyItemImgSlideBtnValue && workHeaderLinkValue) {
+  if (workBodySwiperContentBox && workBodyItemImgSlide && workBodyItemImgSlideTitle && workBodyItemImgSlideBtnValue) {
     workBodySwiperContentBox.insertAdjacentHTML("afterBegin", `<div id="workBodyItemImg" class="swiper-slide work__body-swiper-content-slider-slide work__body-item_img">
                   <div class="work__body-item">
                     <h3 class="work__body-cart-title work__body-cart-title_img">
@@ -42,24 +43,66 @@ if (work) {
                     </button>
                   </div>
                 </div>
-<a href="catalog.html" class="work__header-link" id="workHeaderLink">${workHeaderLinkValue}</a>
 `);
   }
-  // изменения от 23_04_25
+
+
+
+  // Сохраняем оригинального родителя кнопки
+  const originalParenWorkHeadert = workHeaderBtn.parentNode;
+  let isMoved = false; // Флаг для отслеживания состояния
+
+  // Функция для проверки и перемещения кнопки
+  const checkScreenSize = () => {
+      const screenWidth = window.innerWidth;
+
+      if (screenWidth < 1024 && !isMoved) {
+          // Перемещаем кнопку только если она еще не перемещена
+          workBodySwiperContentBox.appendChild(workHeaderBtn);
+          isMoved = true;
+      } else if (screenWidth >= 1024 && isMoved) {
+          // Возвращаем на место при увеличении экрана
+          originalParenWorkHeadert.appendChild(workHeaderBtn);
+          isMoved = false;
+      }
+  };
+
+  // Дебаунсинг для оптимизации обработки resize
+  const debounce = (func, wait = 100) => {
+      let timeout;
+      return (...args) => {
+          clearTimeout(timeout);
+          timeout = setTimeout(() => func.apply(this, args), wait);
+      };
+  };
+
+  // Вызываем при загрузке
+  checkScreenSize();
+
+  // Добавляем обработчик с дебаунсингом
+  window.addEventListener('resize', debounce(checkScreenSize));
+
+  // Дополнительная проверка при изменении ориентации устройства
+  window.addEventListener('orientationchange', debounce(checkScreenSize));
+
 }
 // изменения от 23_04_25
 // Секция our-projects
-const ourProjectsSlideOtziv = document.querySelector('.our-projects-swiper-image-box');
-const ourProjectsSlideOtzivBox = document.querySelector('.swiper-slide.our-projects-slide.our-projects-slide-otziv');
-const ourProjectsSlideOtzivBoxImgSrc = ourProjectsSlideOtzivBox.querySelector('img').src;
-const ourProjectsSlideOtzivBoxImgAlt = ourProjectsSlideOtzivBox.querySelector('img').alt;
-const ourProjectsSlideOtzivBoxTitle = ourProjectsSlideOtzivBox.querySelector('.cart__title.cart__title_otziv').textContent;
-const ourProjectsSlideOtzivBoxSubtitle = ourProjectsSlideOtzivBox.querySelector('.cart__subtitle.cart__subtitle_otziv').textContent;
-const ourProjectsSlideOtzivBoxBtnValue = ourProjectsSlideOtzivBox.querySelector('.cart__btn_or.our-projects-cart__btn-open-modal-form').textContent;
+// изменения от 23_04_25
+const ourProjectsBody = document.querySelector('.our-projects__body');
 
-// console.log(ourProjectsSlideOtzivBoxBtnValue);
-if (ourProjectsSlideOtziv && ourProjectsSlideOtzivBox && ourProjectsSlideOtzivBoxImgSrc && ourProjectsSlideOtzivBoxImgAlt && ourProjectsSlideOtzivBoxTitle && ourProjectsSlideOtzivBoxSubtitle && ourProjectsSlideOtzivBoxBtnValue) {
-  ourProjectsSlideOtziv.insertAdjacentHTML("afterBegin", `<div id="ourProjectsSlideOtziv" class="swiper-slide our-projects-slide our-projects-slide-otziv">
+if (ourProjectsBody) {
+  const ourProjectsSlideOtziv = document.querySelector('.our-projects-swiper-image-box');
+  const ourProjectsSlideOtzivBox = document.querySelector('.swiper-slide.our-projects-slide.our-projects-slide-otziv');
+  const ourProjectsSlideOtzivBoxImgSrc = ourProjectsSlideOtzivBox.querySelector('img').src;
+  const ourProjectsSlideOtzivBoxImgAlt = ourProjectsSlideOtzivBox.querySelector('img').alt;
+  const ourProjectsSlideOtzivBoxTitle = ourProjectsSlideOtzivBox.querySelector('.cart__title.cart__title_otziv').textContent;
+  const ourProjectsSlideOtzivBoxSubtitle = ourProjectsSlideOtzivBox.querySelector('.cart__subtitle.cart__subtitle_otziv').textContent;
+  const ourProjectsSlideOtzivBoxBtnValue = ourProjectsSlideOtzivBox.querySelector('.cart__btn_or.our-projects-cart__btn-open-modal-form').textContent;
+
+  // console.log(ourProjectsSlideOtzivBoxBtnValue);
+  if (ourProjectsSlideOtziv && ourProjectsSlideOtzivBox && ourProjectsSlideOtzivBoxImgSrc && ourProjectsSlideOtzivBoxImgAlt && ourProjectsSlideOtzivBoxTitle && ourProjectsSlideOtzivBoxSubtitle && ourProjectsSlideOtzivBoxBtnValue) {
+    ourProjectsSlideOtziv.insertAdjacentHTML("afterBegin", `<div id="ourProjectsSlideOtziv" class="swiper-slide our-projects-slide our-projects-slide-otziv">
                   <div class="our-projects-slide__content">
                     <img
                       src="${ourProjectsSlideOtzivBoxImgSrc}"
@@ -79,57 +122,183 @@ if (ourProjectsSlideOtziv && ourProjectsSlideOtzivBox && ourProjectsSlideOtzivBo
                     </div>
                   </div>
                 </div>`);
+  }
 }
-
+// изменения от 23_04_25
 // Секция products
-const productBtnLinkBox = document.querySelector('.product-btn-link-box');
-const productBtnLinkBoxBtnValue = document.querySelector('.product-btn-link').textContent;
-const productBtnLinkBoxBtnHref = document.querySelector('.product-btn-link').href;
-// console.log(productBtnLinkBoxBtnHref);
+const productBody = document.querySelector('.products__body');
+if (productBody) {
+  const productBtnLinkBox = document.querySelector('.product-btn-link-box');
+  const productBtn = document.querySelector('.product-btn-link'); 
 
+  // Сохраняем оригинального родителя кнопки
+  const originalParent = productBtn.parentNode;
+  let isMoved = false; // Флаг для отслеживания состояния
 
-if (productBtnLinkBox && productBtnLinkBoxBtnValue && productBtnLinkBoxBtnHref) {
-  productBtnLinkBox.insertAdjacentHTML("afterBegin", `
- <a href="${productBtnLinkBoxBtnHref}" class="btn product-btn-link" id="productBtnLink" >${productBtnLinkBoxBtnValue}</a>
-`);
+  // Функция для проверки и перемещения кнопки
+  const checkScreenSize = () => {
+      const screenWidth = window.innerWidth;
+
+      if (screenWidth < 1024 && !isMoved) {
+          // Перемещаем кнопку только если она еще не перемещена
+          productBtnLinkBox.appendChild(productBtn);
+          isMoved = true;
+      } else if (screenWidth >= 1024 && isMoved) {
+          // Возвращаем на место при увеличении экрана
+          originalParent.appendChild(productBtn);
+          isMoved = false;
+      }
+  };
+
+  // Дебаунсинг для оптимизации обработки resize
+  const debounce = (func, wait = 100) => {
+      let timeout;
+      return (...args) => {
+          clearTimeout(timeout);
+          timeout = setTimeout(() => func.apply(this, args), wait);
+      };
+  };
+
+  // Вызываем при загрузке
+  checkScreenSize();
+
+  // Добавляем обработчик с дебаунсингом
+  window.addEventListener('resize', debounce(checkScreenSize));
+
+  // Дополнительная проверка при изменении ориентации устройства
+  window.addEventListener('orientationchange', debounce(checkScreenSize));
 }
 
 // Секция categories
-const categoriesBtnsBox = document.querySelector('.categories__btns-box');
-const categoriesBtnsBoxBtnValue = document.querySelector('.categories__link').textContent;
-const categoriesBtnsBoxBtnHref = document.querySelector('.categories__link').href;
-const mobileFilterBtnValue = document.querySelector('.catalog-categories__header-btn-box');
+const categoriesBody = document.querySelector('.categories__body-swiper');
 
-// console.log(mobileFilterBtnValue);
+if (categoriesBody) {
+  const categoriesBtnsBox = document.querySelector('.categories__btns-box');
+  const categoriesBtn = document.querySelector('.categories .categories__link');
 
-if (categoriesBtnsBox && categoriesBtnsBoxBtnValue && categoriesBtnsBoxBtnHref) {
-  categoriesBtnsBox.insertAdjacentHTML("afterBegin", `<a href="${categoriesBtnsBoxBtnHref}" id="categoriesBtnCatalog" class="btn categories__link">${categoriesBtnsBoxBtnValue}</a>
-`);
+   // Сохраняем оригинального родителя кнопки
+   const originalParentCategories = categoriesBtn.parentNode;
+   let isMoved = false; // Флаг для отслеживания состояния
+ 
+   // Функция для проверки и перемещения кнопки
+   const checkScreenSize = () => {
+       const screenWidth = window.innerWidth;
+ 
+       if (screenWidth < 1024 && !isMoved) {
+           // Перемещаем кнопку только если она еще не перемещена
+           categoriesBtnsBox.appendChild(categoriesBtn);
+           isMoved = true;
+       } else if (screenWidth >= 1024 && isMoved) {
+           // Возвращаем на место при увеличении экрана
+           originalParentCategories.appendChild(categoriesBtn);
+           isMoved = false;
+       }
+   };
+ 
+   // Дебаунсинг для оптимизации обработки resize
+   const debounce = (func, wait = 100) => {
+       let timeout;
+       return (...args) => {
+           clearTimeout(timeout);
+           timeout = setTimeout(() => func.apply(this, args), wait);
+       };
+   };
+ 
+   // Вызываем при загрузке
+   checkScreenSize();
+ 
+   // Добавляем обработчик с дебаунсингом
+   window.addEventListener('resize', debounce(checkScreenSize));
+ 
+   // Дополнительная проверка при изменении ориентации устройства
+   window.addEventListener('orientationchange', debounce(checkScreenSize));
 }
 
-
 // Секция watched-before
-const watchedBeforeProductCartLinkBox = document.querySelector('.watched-before__product-cart-link-box');
-const watchedBeforeProductCartLinkValue = document.querySelector('.product-cart__header-link').textContent;
-const watchedBeforeProductCartLinkHref = document.querySelector('.product-cart__header-link').href;
-// console.log(watchedBeforeProductCartLinkHref);
+const watchedBeforeBody = document.querySelector('.watched-before__body-content');
 
-if (watchedBeforeProductCartLinkBox && watchedBeforeProductCartLinkValue && watchedBeforeProductCartLinkHref) {
-  watchedBeforeProductCartLinkBox.insertAdjacentHTML("afterBegin", `
- <a href="${watchedBeforeProductCartLinkHref}" id="watchedBeforeLink" class="btn product-cart__header-link">${watchedBeforeProductCartLinkValue}</a>
-`);
+if (watchedBeforeBody) {
+  const watchedBeforeProductCartLinkBox = document.querySelector('.watched-before__product-cart-link-box');
+  const watchedBeforeProductBtn = document.querySelector('.product-cart__header-link');
+ 
+    // Сохраняем оригинального родителя кнопки
+    const originalParentWatchedBeforeProduct = watchedBeforeProductBtn.parentNode;
+    let isMoved = false; // Флаг для отслеживания состояния
+  
+    // Функция для проверки и перемещения кнопки
+    const checkScreenSize = () => {
+        const screenWidth = window.innerWidth;
+  
+        if (screenWidth < 1024 && !isMoved) {
+            // Перемещаем кнопку только если она еще не перемещена
+            watchedBeforeProductCartLinkBox.appendChild(watchedBeforeProductBtn);
+            isMoved = true;
+        } else if (screenWidth >= 1024 && isMoved) {
+            // Возвращаем на место при увеличении экрана
+            originalParentWatchedBeforeProduct.appendChild(watchedBeforeProductBtn);
+            isMoved = false;
+        }
+    };
+  
+    // Дебаунсинг для оптимизации обработки resize
+    const debounce = (func, wait = 100) => {
+        let timeout;
+        return (...args) => {
+            clearTimeout(timeout);
+            timeout = setTimeout(() => func.apply(this, args), wait);
+        };
+    };
+  
+    // Вызываем при загрузке
+    checkScreenSize();
+  
+    // Добавляем обработчик с дебаунсингом
+    window.addEventListener('resize', debounce(checkScreenSize));
+  
+    // Дополнительная проверка при изменении ориентации устройства
+    window.addEventListener('orientationchange', debounce(checkScreenSize));
 }
 
 // Секция other
-const otherHeaderLinkBox = document.querySelector('.other__header-link-box');
-const otherHeaderLinkBoxBtnValue = document.querySelector('.other__header-link').textContent;
-const otherHeaderLinkBoxBtnHref = document.querySelector('.other__header-link').href;
-// console.log(otherHeaderLinkBoxBtnHref);
+const otherBody = document.querySelector('.other__body');
 
-
-if (otherHeaderLinkBox && otherHeaderLinkBoxBtnValue && otherHeaderLinkBoxBtnHref) {
-  otherHeaderLinkBox.insertAdjacentHTML("afterBegin", `
- <a href="${otherHeaderLinkBoxBtnHref}" id="otherHeaderLink" class="btn other__header-link">${otherHeaderLinkBoxBtnValue}</a>
-`);
+if (otherBody) {
+  const otherHeaderLinkBox = document.querySelector('.other__header-link-box');
+  const otherHeaderLinkBoxBtn = document.querySelector('.other__header-link');
+   // Сохраняем оригинального родителя кнопки
+   const originalParentOtherHeader = otherHeaderLinkBoxBtn.parentNode;
+   let isMoved = false; // Флаг для отслеживания состояния
+ 
+   // Функция для проверки и перемещения кнопки
+   const checkScreenSize = () => {
+       const screenWidth = window.innerWidth;
+ 
+       if (screenWidth < 1024 && !isMoved) {
+           // Перемещаем кнопку только если она еще не перемещена
+           otherHeaderLinkBox.appendChild(otherHeaderLinkBoxBtn);
+           isMoved = true;
+       } else if (screenWidth >= 1024 && isMoved) {
+           // Возвращаем на место при увеличении экрана
+           originalParentOtherHeader.appendChild(otherHeaderLinkBoxBtn);
+           isMoved = false;
+       }
+   };
+ 
+   // Дебаунсинг для оптимизации обработки resize
+   const debounce = (func, wait = 100) => {
+       let timeout;
+       return (...args) => {
+           clearTimeout(timeout);
+           timeout = setTimeout(() => func.apply(this, args), wait);
+       };
+   };
+ 
+   // Вызываем при загрузке
+   checkScreenSize();
+ 
+   // Добавляем обработчик с дебаунсингом
+   window.addEventListener('resize', debounce(checkScreenSize));
+ 
+   // Дополнительная проверка при изменении ориентации устройства
+   window.addEventListener('orientationchange', debounce(checkScreenSize));
 }
-
