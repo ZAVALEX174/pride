@@ -1541,7 +1541,8 @@
     color: var(--main-bg);
 }
 
-.modal-overlay#modalCancelRequestOtbivka .modal {
+.modal-overlay#modalCancelRequestOtbivka .modal,
+.modal-overlay#modalApplicationOtbivka .modal {
     width: 100%;
     position: relative;
     padding: 55px 60px;
@@ -1551,7 +1552,8 @@
 
 }
 
-.modal-overlay#modalCancelRequestOtbivka .modal .close-btn-otbivka-problems {
+.modal-overlay#modalCancelRequestOtbivka .modal .close-btn-otbivka-problems,
+.modal-overlay#modalApplicationOtbivka .modal .close-btn-otbivka-problems {
     position: absolute;
     top: 50px;
     right: 50px;
@@ -1562,20 +1564,24 @@
     transition: 0.3s ease-in;
 }
 
-.modal-overlay#modalCancelRequestOtbivka .modal .close-btn-otbivka-problems svg {
+.modal-overlay#modalCancelRequestOtbivka .modal .close-btn-otbivka-problems svg,
+.modal-overlay#modalApplicationOtbivka .modal .close-btn-otbivka-problems svg {
     color: #8E8E8E;
     transition: 0.3s ease-in;
 }
 
-.modal-overlay#modalCancelRequestOtbivka .modal .close-btn-otbivka-problems:hover svg {
+.modal-overlay#modalCancelRequestOtbivka .modal .close-btn-otbivka-problems:hover svg,
+.modal-overlay#modalApplicationOtbivka .modal .close-btn-otbivka-problems:hover svg {
     color: var(--dark-gray);
 }
 
-.modal-overlay#modalCancelRequestOtbivka .modal svg {
+.modal-overlay#modalCancelRequestOtbivka .modal svg,
+.modal-overlay#modalApplicationOtbivka .modal svg {
     margin-bottom: 34px;
 }
 
-.modal-overlay#modalCancelRequestOtbivka .modal h2 {
+.modal-overlay#modalCancelRequestOtbivka .modal h2,
+.modal-overlay#modalApplicationOtbivka .modal h2 {
     font-family: 'GetVoIP Grotesque Regular', sans-serif;
     font-weight: 700;
     font-size: 25px;
@@ -1584,7 +1590,8 @@
     margin-bottom: 20px;
 }
 
-.modal-overlay#modalCancelRequestOtbivka .modal div {
+.modal-overlay#modalCancelRequestOtbivka .modal div,
+.modal-overlay#modalApplicationOtbivka .modal div {
     font-family: 'Golos Text Regular', sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -1594,7 +1601,8 @@
     margin-bottom: 34px;
 }
 
-.modal-overlay#modalCancelRequestOtbivka .modal .problem-box__btns {
+.modal-overlay#modalCancelRequestOtbivka .modal .problem-box__btns,
+.modal-overlay#modalApplicationOtbivka .modal .problem-box__btns {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1602,7 +1610,8 @@
     column-gap: 15px;
 }
 
-.modal-overlay#modalCancelRequestOtbivka .modal .problem-box__btns .problems-feedback-btn-otbivka {
+.modal-overlay#modalCancelRequestOtbivka .modal .problem-box__btns .problems-feedback-btn-otbivka,
+.modal-overlay#modalApplicationOtbivka .modal .problem-box__btns .problems-feedback-btn-otbivka {
     border-radius: 100px;
     width: 100%;
     max-width: 340px;
@@ -1619,12 +1628,14 @@
     justify-content: center;
 }
 
-.modal-overlay#modalCancelRequestOtbivka .modal .problem-box__btns .problems-feedback-btn-otbivka:hover {
+.modal-overlay#modalCancelRequestOtbivka .modal .problem-box__btns .problems-feedback-btn-otbivka:hover,
+.modal-overlay#modalApplicationOtbivka .modal .problem-box__btns .problems-feedback-btn-otbivka:hover {
     color: var(--main-bg);
     background: var(--color-orange);
 }
 
-.modal-overlay#modalCancelRequestOtbivka .modal .problem-box__btns .problems-cancel-btn--submit {
+.modal-overlay#modalCancelRequestOtbivka .modal .problem-box__btns .problems-cancel-btn--submit,
+.modal-overlay#modalApplicationOtbivka .modal .problem-box__btns .problems-cancel-btn--submit {
     border-radius: 30px;
     width: 100%;
     max-width: 194px;
@@ -1641,7 +1652,8 @@
     justify-content: center;
 }
 
-.modal-overlay#modalCancelRequestOtbivka .modal .problem-box__btns .problems-cancel-btn--submit:hover {
+.modal-overlay#modalCancelRequestOtbivka .modal .problem-box__btns .problems-cancel-btn--submit:hover,
+.modal-overlay#modalApplicationOtbivka .modal .problem-box__btns .problems-cancel-btn--submit:hover {
     color: var(--main-bg);
     background: var(--color-orange);
 }

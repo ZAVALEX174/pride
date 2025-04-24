@@ -100,24 +100,27 @@ if (histiryActiveBtn && histiryBtn) {
 const modalOverlay = document.getElementById('modalOverlayAccount');
 const modalOtbivkaOverlay = document.getElementById('modalOtbivka');
 const openBtnConsultationForm = document.getElementById('consultation-btn');
+const btnFormApplication = document.querySelector('.application-form-product-form-form-btn');
 const closeBtn = document.querySelector('.close-btn');
 const closeBtnOtbivka = document.querySelector('.close-btn-otbivka');
-const closeBtnOtbivkaProblems = document.querySelector('.close-btn-otbivka-problems');
+const closeBtnsOtbivkaProblems = document.querySelectorAll('.close-btn-otbivka-problems');
 const submitBtnConsultationForm = document.querySelector('.consultation-btn-form');
 const modalCancelRequestOtbivka = document.getElementById('modalCancelRequestOtbivka');
+const modalFormApplicationOtbivka = document.getElementById('modalApplicationOtbivka');
 
 if (modalOverlay && modalOtbivkaOverlay) {
 // Функции открытия/закрытия
+
 
 // открытие modalOverlay
     function openModal() {
         modalOverlay.style.display = 'flex';
     }
 
-// закрытие modalOverlay по кнопке submit и рикрытие отбивки
+// закрытие modalOverlay по кнопке submit
     function closeModal() {
         modalOverlay.style.display = 'none';
-        openModalOtbivka();
+        // openModalOtbivka();
     }
 
 // закрыть modalOverlay по кнопке close
@@ -125,7 +128,7 @@ if (modalOverlay && modalOtbivkaOverlay) {
         modalOverlay.style.display = 'none';
     }
 
-// открытие отбивки
+// открытие отбивки Заявка успешно принята! для формы modalOverlay (id="modalOverlayAccount")
     function openModalOtbivka() {
         modalOtbivkaOverlay.style.display = 'flex';
     }
@@ -135,9 +138,10 @@ if (modalOverlay && modalOtbivkaOverlay) {
         modalCancelRequestOtbivka.style.display = 'flex';
     }
 
-    // закрыть отбивки Отменить заявку
+    // закрыть отбивки Отменить заявку и отбивки modalFormApplicationOtbivka
     function closeModalOtbivkaProblems() {
         modalCancelRequestOtbivka.style.display = 'none';
+        modalFormApplicationOtbivka.style.display = 'none';
     }
 
 // закрытие отбивки
@@ -150,9 +154,27 @@ if (modalOverlay && modalOtbivkaOverlay) {
     closeBtn.addEventListener('click', closeModalFirst);
     submitBtnConsultationForm.addEventListener('click', closeModal);
     closeBtnOtbivka.addEventListener('click', closeModalOtbivka);
-    closeBtnOtbivkaProblems.addEventListener('click', closeModalOtbivkaProblems);
+    closeBtnsOtbivkaProblems.forEach(btn => {
+        btn.addEventListener('click', closeModalOtbivkaProblems);
+
+    })
+    btnFormApplication.addEventListener('click', (e) => {
+        e.preventDefault();
+        openFormApplicationOtbivka();
+    });
+
+    function openFormApplicationOtbivka() {
+        modalFormApplicationOtbivka.style.display = 'flex';
+    }
+
 
 // Закрытие по клику на оверлей
+    modalFormApplicationOtbivka.addEventListener('click', (e) => {
+        if (e.target === modalFormApplicationOtbivka) {
+            modalFormApplicationOtbivka.style.display = 'none';
+        }
+    });
+
     modalOverlay.addEventListener('click', (e) => {
         if (e.target === modalOverlay) {
             modalOverlay.style.display = 'none';
@@ -172,6 +194,12 @@ if (modalOverlay && modalOtbivkaOverlay) {
     });
 
 // Закрытие по ESC
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modalFormApplicationOtbivka.style.display === 'flex') {
+            modalFormApplicationOtbivka.style.display = 'none';
+        }
+    });
+
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && modalOverlay.style.display === 'flex') {
             modalOverlay.style.display = 'none';
@@ -198,7 +226,7 @@ const problemsCancelBtnRoutManager = document.querySelectorAll('.personal-accoun
 const modalsConnection = document.getElementById('modal-contacts');
 
 const modals = document.querySelector('.modals');
-const submitModalProblemsBtn = document.querySelector('.problems-cancel-btn--submit');
+const submitModalProblemsBtns = document.querySelectorAll('.problems-cancel-btn--submit');
 
 if (problemsFeedbackBtns && modalsConnection) {
     problemsFeedbackBtns.forEach(item => {
@@ -237,10 +265,12 @@ if (problemsFeedbackOtbivkaBtns && modalsConnection) {
 }
 
 // открытие и отправка заявки на отмену
-if (submitModalProblemsBtn) {
-    submitModalProblemsBtn.addEventListener('click', (e) => {
-        // e.preventDefault();
-        closeModalOtbivkaProblems();
+if (submitModalProblemsBtns) {
+    submitModalProblemsBtns.forEach(item => {
+        item.addEventListener('click', (e) => {
+            // e.preventDefault();
+            closeModalOtbivkaProblems();
+        })
     })
 }
 

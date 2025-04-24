@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const inputSaerch = document.querySelector('.search .search-input');
     const headerSearch = document.querySelector('.search.header__search');
     const headerLogo = document.querySelector('.header__logo');
-    const headerUser = document.querySelector('.header__user');
+    // const headerUser = document.querySelector('.header__user');
     const headerContactUs = document.querySelector('.header__contact-us');
     const headerFavorites = document.querySelector('.header__favorites');
     const searchBtn = document.querySelector('.search__btn');
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.btn-search-reset').style.display = 'none';
         document.querySelector('.header__search-form-icon').style.display = 'flex';
         headerLogo.classList.remove('none');
-        headerUser.classList.remove('none');
+        // headerUser.classList.remove('none');
         headerContactUs.classList.remove('none');
         headerFavorites.classList.remove('none');
         navLinkTwo.classList.remove('navigation__link-active');
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.btn-search-reset').style.display = 'none';
         document.querySelector('.header__search-form-icon').style.display = 'flex';
         headerLogo.classList.remove('none');
-        headerUser.classList.remove('none');
+        // headerUser.classList.remove('none');
         headerContactUs.classList.remove('none');
         headerFavorites.classList.remove('none');
         headerModalThree.classList.remove('header-menu-modal3-active');
@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
         inputSaerch.classList.remove('search__active-input');
         headerSearch.classList.remove('header__search_active');
         headerLogo.classList.remove('none');
-        headerUser.classList.remove('none');
+        // headerUser.classList.remove('none');
         headerContactUs.classList.remove('none');
         headerFavorites.classList.remove('none');
         searchBtn.classList.remove('search__btn_active');
@@ -362,10 +362,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (this.headerLogo) this.headerLogo.style.display = "none";
             if (this.langue) this.langue.style.marginRight = "114px";
 
-            const headerUser = document.querySelector('.header__user');
+            // const headerUser = document.querySelector('.header__user');
             const headerFavorites = document.querySelector('.header__favorites');
 
-            if (headerUser) headerUser.style.display = "none";
+            // if (headerUser) headerUser.style.display = "none";
             if (headerFavorites) headerFavorites.style.display = "none";
         };
 
@@ -374,10 +374,10 @@ document.addEventListener('DOMContentLoaded', () => {
             if (this.headerLogo) this.headerLogo.style.display = "block";
             if (this.langue) this.langue.style.marginRight = "0px";
 
-            const headerUser = document.querySelector('.header__user');
+            // const headerUser = document.querySelector('.header__user');
             const headerFavorites = document.querySelector('.header__favorites');
 
-            if (headerUser) headerUser.style.display = "block";
+            // if (headerUser) headerUser.style.display = "block";
             if (headerFavorites) headerFavorites.style.display = "block";
         };
 
