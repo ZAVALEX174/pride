@@ -38,6 +38,9 @@ if (container && buttons && contents) {
             const targetTabId = activeBtn.dataset.tabBtn; // Правильное обращение к data-tab-btn
             const targetTab = document.getElementById(targetTabId);
 
+            document.querySelector('.personal-account-content__application-form').classList.add('none');
+            document.querySelector('.personal-account-content').classList.remove('none');
+
             if (targetTab) {
                 targetTab.classList.add('tab-content-active');
                 localStorage.setItem('activeTab', targetTabId);
@@ -233,6 +236,8 @@ if (problemsFeedbackBtns && modalsConnection) {
         item.addEventListener('click', (e) => {
             e.preventDefault();
             openManagerTabs();
+            document.querySelector('.personal-account-content__application-form').classList.add('none');
+            document.querySelector('.personal-account-content').classList.remove('none');
         });
     })
 }
@@ -260,6 +265,8 @@ if (problemsFeedbackOtbivkaBtns && modalsConnection) {
             e.preventDefault();
             closeModalOtbivkaProblems();
             openManagerTabs();
+            document.querySelector('.personal-account-content__application-form').classList.add('none');
+            document.querySelector('.personal-account-content').classList.remove('none');
         });
     })
 }
@@ -284,8 +291,10 @@ const openFormBtn = document.querySelectorAll('.submit-application');
 if (openFormBtn) {
     openFormBtn.forEach(el => {
         el.addEventListener('click', (e) => {
-            e.preventDefault();
-            openManagerTabs();
+            // e.preventDefault();
+            // openManagerTabs();
+            document.querySelector('.personal-account-content__application-form').classList.remove('none');
+            document.querySelector('.personal-account-content').classList.add('none');
         })
     });
 }
@@ -299,6 +308,8 @@ if (myEquipmentConsultation) {
         e.preventDefault();
         // console.log("И мне тоже нужно перейти на вкладку личный менеджер!");
         openManagerTabs();
+        document.querySelector('.personal-account-content__application-form').classList.add('none');
+        document.querySelector('.personal-account-content').classList.remove('none');
     })
 }
 
@@ -307,6 +318,9 @@ if (helpConsultation) {
         e.preventDefault();
         // console.log("И мне тоже нужно перейти на вкладку личный менеджер!");
         openManagerTabs();
+        document.querySelector('.personal-account-content__application-form').classList.add('none');
+        document.querySelector('.personal-account-content').classList.remove('none');
+
     })
 }
 
@@ -317,6 +331,8 @@ if (myEquipmentFavorites) {
         e.preventDefault();
         console.log("А я хочу перейти на вкладку Избранное!");
         openFavoritesTabs();
+        document.querySelector('.personal-account-content__application-form').classList.add('none');
+        document.querySelector('.personal-account-content').classList.remove('none');
     });
 }
 
@@ -327,7 +343,9 @@ if (equipmentItemBtns) {
         item.addEventListener('click', (e) => {
             e.preventDefault();
             // console.log('ну и мы туда же!!!');
-            openManagerTabs();
+            // openManagerTabs();
+            document.querySelector('.personal-account-content__application-form').classList.remove('none');
+            document.querySelector('.personal-account-content').classList.add('none');
         })
     })
 }
@@ -493,48 +511,186 @@ if (modalOverlayOutAccount) {
 
 const inputsFileBoxImg = document.querySelectorAll('.inputs-file-box input[type="file"]');
 
-if (inputsFileBoxImg) {
-    inputsFileBoxImg.forEach(input => {
-        input.addEventListener('change', function (e) {
+//
+// if (inputsFileBoxImg) {
+//     inputsFileBoxImg.forEach(input => {
+//         input.addEventListener('change', function (e) {
+//             const file = e.target.files[0];
+//             const label = this.previousElementSibling; // Получаем соответствующий label
+//             const img = label.querySelector('.input-img img'); // Находим img внутри label
+//
+//             if (file && img) {
+//                 const reader = new FileReader();
+//
+//                 reader.onload = function (e) {
+//                     img.src = e.target.result;
+//                     img.style.display = 'block'; // Показываем изображение
+//                     //   label.classList.add('label-select'); // Добавляем класс для стилей
+//                 };
+//
+//                 reader.readAsDataURL(file);
+//             }
+//         });
+//     });
+// }
+//
+
+
+
+
+
+// if (inputsFileBoxImg) {
+//     inputsFileBoxImg.forEach(input => {
+//         input.addEventListener('change', function(e) {
+//             const file = e.target.files[0];
+//             const avatarBox = this.closest('.avatar-box'); // Находим родительский контейнер
+//             const previewImg = avatarBox.querySelector('.input-img img'); // Ищем изображение внутри текущего блока
+//             const mainAvatarImg = document.querySelector('.personal-account-aside__information-images img');
+//
+//             if (file && previewImg && mainAvatarImg) {
+//                 const reader = new FileReader();
+//
+//                 reader.onload = function(e) {
+//                     // Обновляем превью в текущем блоке
+//                     previewImg.src = e.target.result;
+//                     previewImg.style.display = 'block';
+//
+//
+//                     const avatarCheckInputs = document.querySelectorAll('.avatar-check');
+//
+//                     avatarCheckInputs.forEach(inputCheck => {
+//                         inputCheck.addEventListener('change', (e) => {
+//                             e.preventDefault();
+//                             const avatarBoxs = document.querySelectorAll('.avatar-box');
+//                             avatarBoxs.forEach(avatarBox => {
+//                                 avatarBox.classList.remove('label-select');
+//                             })
+//                             console.log(e.target.parentElement);
+//                             e.target.parentElement.classList.add('label-select');
+//
+//                             // Обновляем основное изображение
+//                             mainAvatarImg.src = e.target.result;
+//                         })
+//                     })
+//
+//                 };
+//
+//                 reader.readAsDataURL(file);
+//             }
+//         });
+//     });
+//
+// }
+
+
+
+
+
+// inputsAvatarImg.forEach(inputImg => {
+//     if(inputImg.checked) {
+//         console.log(inputImg);
+//     }
+// })
+//
+
+
+
+// if (inputsFileBoxImg) {
+//     // Обработчик для загрузки изображений
+//     inputsFileBoxImg.forEach(input => {
+//         input.addEventListener('change', function(e) {
+//             const file = e.target.files[0];
+//             const avatarBox = this.closest('.avatar-box');
+//             const previewImg = avatarBox.querySelector('.input-img img');
+//
+//             if (file && previewImg) {
+//                 const reader = new FileReader();
+//
+//                 reader.onload = function(e) {
+//                     // Обновляем превью только в текущем блоке
+//                     previewImg.src = e.target.result;
+//                     previewImg.style.display = 'block';
+//
+//                     // Сохраняем данные изображения в атрибуте
+//                     avatarBox.dataset.image = e.target.result;
+//                 };
+//
+//                 reader.readAsDataURL(file);
+//             }
+//         });
+//     });
+//
+//     // Отдельный обработчик для выбора основного аватара
+//     document.querySelectorAll('.avatar-check').forEach(checkInput => {
+//         checkInput.addEventListener('change', function(e) {
+//             const mainAvatarImg = document.querySelector('.personal-account-aside__information-images img');
+//             const selectedAvatarBox = this.closest('.avatar-box');
+//
+//             // Обновляем основное изображение
+//             if (selectedAvatarBox.dataset.image) {
+//                 mainAvatarImg.src = selectedAvatarBox.dataset.image;
+//             }
+//
+//             // Обновляем стили выбора
+//             document.querySelectorAll('.avatar-box').forEach(box => {
+//                 box.classList.remove('label-select');
+//             });
+//             selectedAvatarBox.classList.add('label-select');
+//         });
+//     });
+// }
+//
+//
+//
+//
+
+
+
+
+// Исправленный код
+document.addEventListener("DOMContentLoaded", function() {
+    // Находим ВСЕ блоки с аватарами
+    const avatarBoxes = document.querySelectorAll('.avatar-box');
+
+    // Обработчик для загрузки изображений
+    avatarBoxes.forEach(box => {
+        const input = box.querySelector('input[type="file"]');
+        const previewImg = box.querySelector('.input-img img');
+        const radioBtn = box.querySelector('.avatar-check');
+
+        input.addEventListener('change', function(e) {
             const file = e.target.files[0];
-            const label = this.previousElementSibling; // Получаем соответствующий label
-            const img = label.querySelector('.input-img img'); // Находим img внутри label
 
-            if (file && img) {
+            if (file) {
                 const reader = new FileReader();
+                reader.onload = function(e) {
+                    // Обновляем превью ТОЛЬКО в текущем блоке
+                    previewImg.src = e.target.result;
+                    previewImg.style.display = 'block';
 
-                reader.onload = function (e) {
-                    img.src = e.target.result;
-                    img.style.display = 'block'; // Показываем изображение
-                    //   label.classList.add('label-select'); // Добавляем класс для стилей
+                    // Активируем радио-кнопку ТЕКУЩЕГО блока
+                    radioBtn.disabled = false;
+                    box.dataset.hasImage = true;
                 };
-
                 reader.readAsDataURL(file);
             }
         });
     });
-}
 
+    // Обработчик для выбора основного аватара
+    document.querySelectorAll('.avatar-check').forEach(radio => {
+        radio.addEventListener('change', function() {
+            if (!this.disabled) {
+                // Находим изображение в ВЫБРАННОМ блоке
+                const selectedImg = this.closest('.avatar-box')
+                    .querySelector('.input-img img').src;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                // Обновляем основное изображение
+                document.querySelector('.personal-account-aside__information-images img').src = selectedImg;
+            }
+        });
+    });
+});
 
 
 

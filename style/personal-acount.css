@@ -805,7 +805,7 @@
     flex-wrap: wrap;
 }
 
-.inputs-file-box label {
+.inputs-file-box .avatar-box {
     width: 140px;
     height: 140px;
     display: flex;
@@ -821,7 +821,7 @@
     cursor: pointer;
 }
 
-.inputs-file-box label svg {
+.inputs-file-box .avatar-box svg {
     top: 14px;
     right: 10px;
     position: absolute;
@@ -829,17 +829,17 @@
     opacity: 0.5;
 }
 
-.inputs-file-box label:hover {
+.inputs-file-box .avatar-box:hover {
     border: 2px solid var(--color-orange);
     background: rgba(235, 99, 32, 0.1);
 }
 
-.inputs-file-box label:hover svg {
+.inputs-file-box .avatar-box:hover svg {
     color: #eb6320;
     opacity: 1;
 }
 
-.inputs-file-box label .input-img {
+.inputs-file-box .avatar-box .input-img {
     width: 78px;
     height: 78px;
     border-radius: 100%;
@@ -847,7 +847,7 @@
     overflow: hidden;
 }
 
-.inputs-file-box label:hover .input-img {
+.inputs-file-box .avatar-box:hover .input-img {
     width: 78px;
     height: 78px;
     border-radius: 100%;
@@ -856,17 +856,17 @@
 
 /* стили для выбранного аватара */
 
-.inputs-file-box label.label-select {
+.inputs-file-box .avatar-box.label-select {
     border: 2px solid var(--color-orange);
     background: rgba(235, 99, 32, 0.1);
 }
 
-.inputs-file-box label.label-select svg {
+.inputs-file-box .avatar-box.label-select svg {
     color: #eb6320;
     opacity: 1;
 }
 
-.inputs-file-box label.label-select .input-img {
+.inputs-file-box .avatar-box.label-select .input-img {
     width: 78px;
     height: 78px;
     border-radius: 100%;
@@ -2226,4 +2226,16 @@
 
 .form-files-radio-box input:checked + .radio-new-bg {
     background-color: var(--color-orange);
+}
+
+.avatar-check {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #623a26;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    z-index: 500;
+    /*opacity: 0;*/
 }
