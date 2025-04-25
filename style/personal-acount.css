@@ -7,7 +7,7 @@
 
 @media (max-width: 900px) {
     .personal-account-main {
-        margin-top: 134px;
+        margin-top: 130px;
     }
 }
 
@@ -29,6 +29,12 @@
     padding-left: 10px;
 }
 
+@media (max-width: 1024px) {
+    .personal-account .personal-account-aside {
+        flex-shrink: 0;
+    }
+}
+
 .personal-account .personal-account-aside .personal-account-aside__content {
     max-width: 516px;
     width: 100%;
@@ -43,6 +49,13 @@
     column-gap: 20px;
     align-items: center;
     margin-bottom: 40px;
+}
+
+@media (max-width: 1024px) {
+    .personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__information {
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
 }
 
 .personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__information .personal-account-aside__information-images-box {
@@ -130,7 +143,7 @@
     outline: none;
     border-radius: 5px 0 0 5px;
     height: 60px;
-    line-height: 60px;
+    /*line-height: 60px;*/
     padding-left: 20px;
     display: flex;
     align-items: center;
@@ -139,6 +152,12 @@
     font-size: 18px;
     color: var(--main-bg);
     transition: 0.3s ease-in;
+}
+
+@media (max-width: 900px) {
+    .personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__tabs-container .tab-buttons .tab-button {
+        padding-left: 10px;
+    }
 }
 
 .personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__tabs-container .tab-buttons .tab-button:hover {
@@ -165,13 +184,21 @@
 }
 
 .personal-account .personal-account-content {
-    max-width: 100%;
+    /*max-width: 100%;*/
+    max-width: calc(100% - 30%);
     width: 100%;
     /*min-height: 100vh;*/
     background-color: #efefef;
     /*border: 1px solid red;*/
     padding: 60px 119px 170px 60px;
 
+}
+
+@media (max-width: 1024px) {
+    .personal-account .personal-account-content {
+        padding: 60px 25px 170px 25px;
+
+    }
 }
 
 .personal-account .personal-account-content .tab-content {
@@ -195,6 +222,13 @@
     justify-content: space-between;
     padding-bottom: 30px;
     border-bottom: 1px solid rgba(142, 142, 142, 0.3);
+}
+
+@media (max-width: 768px) {
+    .personal-account .personal-account-content .tab-content .personal-account-content-header {
+        gap: 15px;
+        flex-direction: column;
+    }
 }
 
 .personal-account .personal-account-content .tab-content .personal-account-content-header h2 {
@@ -339,6 +373,13 @@
     column-gap: 20px;
 }
 
+@media (max-width: 768px) {
+    .tab-content .personal-account-content-body .personal-account-content-body__button-box {
+       flex-direction: column;
+        row-gap: 20px;
+    }
+}
+
 .tab-content .personal-account-content-body .personal-account-content-body__button-box .personal-account-content-body__button-box-link {
     width: 100%;
     max-width: 363px;
@@ -384,6 +425,13 @@
     display: flex;
     column-gap: 15px;
     margin-bottom: 26px;
+}
+
+@media (max-width: 768px) {
+    .tab-content .personal-account-content-body .equipment-box__item .equipment-box__item-content {
+        flex-direction: column;
+        row-gap: 15px;
+    }
 }
 
 .tab-content .personal-account-content-body .equipment-box__item .equipment-box__item-content .equipment-box__item-content-image {
@@ -487,6 +535,13 @@
 .equipment-box .equipment-box__favorites-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 1024px) {
+    .equipment-box .equipment-box__favorites-list {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
 }
 
 .personal-account-content-body .personal-account-content-body__tabs-box {
@@ -610,6 +665,13 @@
     column-gap: 20px;
 }
 
+@media (max-width: 768px) {
+    .problem-box .problem-box__btns {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+
 .problem-box .problem-box__btns .problems-feedback-btn {
     max-width: 437px;
     width: 100%;
@@ -628,6 +690,12 @@
     text-align: center;
     outline: none;
     border: none;
+}
+
+@media (max-width: 1024px) {
+    .problem-box .problem-box__btns .problems-feedback-btn {
+        padding: 0 10px;
+    }
 }
 
 .problem-box .problem-box__btns .problems-feedback-btn:hover {
@@ -653,6 +721,12 @@
     text-align: center;
     outline: none;
     border: none;
+}
+
+@media (max-width: 1024px) {
+    .problem-box .problem-box__btns .problems-cancel-btn {
+        padding: 0 10px;
+    }
 }
 
 .problem-box .problem-box__btns .problems-cancel-btn:hover {
@@ -1814,6 +1888,14 @@
     padding: 60px 200px 60px 60px;
 }
 
+@media (max-width: 1024px) {
+    .personal-account-content__application-form {
+        width: 100%;
+        background: #efefef;
+        padding: 60px 20px 60px 20px;
+    }
+}
+
 .personal-account-content__application-form .equipment-box__item {
     width: 100%;
     padding: 35px 30px;
@@ -1827,6 +1909,13 @@
 .personal-account-content__application-form .equipment-box__item .equipment-box__item-content {
     display: flex;
     column-gap: 15px;
+}
+
+@media (max-width: 768px) {
+    .personal-account-content__application-form .equipment-box__item .equipment-box__item-content {
+        flex-direction: column;
+        row-gap: 15px;
+    }
 }
 
 .personal-account-content__application-form .equipment-box__item .equipment-box__item-content .equipment-box__item-content-image {
@@ -1949,6 +2038,12 @@
     align-items: center;
     justify-content: space-between;
     gap: 15px;
+}
+
+@media (max-width: 768px) {
+    .personal-account-content__application-form__header {
+        flex-direction: column;
+    }
 }
 
 .personal-account-content__application-form__header-text-box {
@@ -2074,6 +2169,13 @@
     margin-bottom: 35px;
 }
 
+@media (max-width: 768px) {
+    .personal-account-content__application-form-product-form form .form-files .form-files-inputs-box {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
 #form-files-inputs-file {
     width: 0;
     height: 0;
@@ -2088,6 +2190,13 @@
 
 .form-files-inputs-box label:nth-of-type(1) {
     margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+    .form-files-inputs-box label:nth-of-type(1), .form-files-inputs-box label {
+        margin-right: 0;
+        max-width: 100%;
+    }
 }
 
 #form-files-inputs-id {
@@ -2146,6 +2255,14 @@
     align-items: center;
     justify-content: flex-start;
     column-gap: 40px;
+}
+
+@media (max-width: 768px) {
+    .form-files-radio-box {
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: flex-start;
+    }
 }
 
 .form-files-radio-box label {
