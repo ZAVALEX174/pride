@@ -224,7 +224,7 @@
 
 .personal-account .personal-account-content .tab-content {
     width: 100%;
-    max-width: 747px;
+    /* max-width: 747px; */
     display: none;
     /*height: 100%;*/
     margin-bottom: auto;
