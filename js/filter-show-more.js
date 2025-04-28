@@ -126,27 +126,30 @@ if (filterForm) {
             });
         });
 
-        
-        getResultFromInputField.addEventListener('click', (e) => {
-            e.preventDefault();
-            // console.log(inputs[1].value);
-            createElementSliderOne(inputs[0].value, inputs[1].value);
-        })
+        // изменения 27_04_25
+        // getResultFromInputField.addEventListener('click', (e) => {
+        //     e.preventDefault();
+        //     // console.log(inputs[1].value);
+        //     createElementSliderOne(inputs[0].value, inputs[1].value);
+        // })
+        // изменения 27_04_25
     }
 
-    const createElementSliderOne = (fromCount, toCount) => {
-        // console.log(toCount);
-        let newListItem = document.createElement('li');
-        newListItem.textContent = `Глубина бурения (max), м: от ${fromCount} до ${toCount}`;
-        newListItem.classList.add('filter__show-content-item');
-
-        let divEl = document.createElement('div');
-        divEl.classList.add('filter__show-content-item__btn-svg');
-        newListItem.appendChild(divEl);
-
-        filterShowContentList.appendChild(newListItem);
-        return newListItem;
-    };
+     // изменения 27_04_25
+    // const createElementSliderOne = (fromCount, toCount) => {
+    //     // console.log(toCount);
+    //     let newListItem = document.createElement('li');
+    //     newListItem.textContent = `Глубина бурения (max), м: от ${fromCount} до ${toCount}`;
+    //     newListItem.classList.add('filter__show-content-item');
+    //
+    //     let divEl = document.createElement('div');
+    //     divEl.classList.add('filter__show-content-item__btn-svg');
+    //     newListItem.appendChild(divEl);
+    //
+    //     filterShowContentList.appendChild(newListItem);
+    //     return newListItem;
+    // };
+     // изменения 27_04_25
 
     if (rangeSlider2) {
         noUiSlider.create(rangeSlider2, {
@@ -187,26 +190,30 @@ if (filterForm) {
             });
         });
 
-        getResultFromInputField.addEventListener('click', (e) => {
-            e.preventDefault();
-            // console.log(inputs[1].value);
-            createElementSliderTwo(inputs[0].value, inputs[1].value);
-        })
+        // изменения 27_04_25
+        // getResultFromInputField.addEventListener('click', (e) => {
+        //     e.preventDefault();
+        //     // console.log(inputs[1].value);
+        //     createElementSliderTwo(inputs[0].value, inputs[1].value);
+        // })
+        // изменения 27_04_25
     }
 
-    const createElementSliderTwo = (fromCount, toCount) => {
-        // console.log(toCount);
-        let newListItem = document.createElement('li');
-        newListItem.textContent = `Глубина бурения (max), м: от ${fromCount} до ${toCount}`;
-        newListItem.classList.add('filter__show-content-item');
-
-        let divEl = document.createElement('div');
-        divEl.classList.add('filter__show-content-item__btn-svg');
-        newListItem.appendChild(divEl);
-
-        filterShowContentList.appendChild(newListItem);
-        return newListItem;
-    };
+ // изменения 27_04_25
+    // const createElementSliderTwo = (fromCount, toCount) => {
+    //     // console.log(toCount);
+    //     let newListItem = document.createElement('li');
+    //     newListItem.textContent = `Глубина бурения (max), м: от ${fromCount} до ${toCount}`;
+    //     newListItem.classList.add('filter__show-content-item');
+    //
+    //     let divEl = document.createElement('div');
+    //     divEl.classList.add('filter__show-content-item__btn-svg');
+    //     newListItem.appendChild(divEl);
+    //
+    //     filterShowContentList.appendChild(newListItem);
+    //     return newListItem;
+    // };
+ // изменения 27_04_25
 
     const resetBtn = document.querySelector('.reset__btn');
     resetBtn.addEventListener('click', (e) => {
