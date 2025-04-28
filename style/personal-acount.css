@@ -26,10 +26,10 @@
     height: auto;
     padding-top: 30px;
     padding-bottom: 120px;
-    padding-left: calc((100% - 1270px) / 2);
+    padding-left: calc((100% - 1390px) / 2);
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
     .personal-account .personal-account-aside {
         padding-left: 10px;
     }
@@ -199,11 +199,11 @@
     background-color: #efefef;
     /*border: 1px solid red;*/
     padding: 60px 0 170px 60px;
-    padding-right: calc((100% - 1270px) / 2);
+    padding-right: calc((100% - 1390px) / 2);
 
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1400px) {
     .personal-account .personal-account-content {
         padding-right: 10px;
         padding-left: 20px;
