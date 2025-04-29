@@ -405,6 +405,8 @@ if (inputUserNameBtn && dataClientNameInput) {
         e.preventDefault();
         document.getElementById('data-client-name-input').placeholder = inputUserName.textContent;
         dataClientNameInput.classList.remove('none');
+
+
     })
 }
 
@@ -449,19 +451,28 @@ if (saveSettingContactBtn) {
         arrayClientData.splice(1, 1, dataClientCallInput.value);
         arrayClientData.splice(2, 1, dataClientMailInput.value);
         arrayClientData.splice(3, 1, dataClientUridInput.value);
-        arrayClientData.splice(4, 1, dataClientInnInput.value);
+        arrayClientData.splice(4, 1, dataClientInnInput.value);        
 
         // 2. Обновляем отображение
         inputUserName.textContent = arrayClientData[0];
+        // добавление данных из карточки клиента
+        const clientNameVisible = document.querySelector('.personal-account-aside__information-text-name');
+        clientNameVisible.textContent = arrayClientData[0];
         dataClientNameInput.classList.add('none');
 
         inputClientCall.textContent = arrayClientData[1];
+        // добавление данных из карточки клиента
+        const clientCallVisible = document.querySelector('.personal-account-aside__information-text-contacts');
+        clientCallVisible.textContent = arrayClientData[1];
         dataClientCallInput.classList.add('none');
 
         inputClientMail.textContent = arrayClientData[2];
         dataClientMailInput.classList.add('none');
 
         inputClientUrid.textContent = arrayClientData[3];
+        // добавление данных из карточки клиента
+        const clientUridVisible = document.querySelector('.personal-account-aside__information-text-company');
+        clientUridVisible.textContent = arrayClientData[3];
         dataClientUridInput.classList.add('none');
 
         inputClientInn.textContent = arrayClientData[4];
@@ -606,3 +617,9 @@ if(startTabContentBox) {
     // временно для показа работы функции
     seriesNumbernBtn.addEventListener('click', dataOutput);
 }
+
+
+
+
+// console.log(userNameVisibleValue);
+
