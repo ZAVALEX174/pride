@@ -268,7 +268,7 @@ if (problemsFeedbackOtbivkaBtns && modalsConnection) {
             document.querySelector('.personal-account-content__application-form').classList.add('none');
             document.querySelector('.personal-account-content').classList.remove('none');
             document.querySelector('.personal-account-aside__content').classList.remove('none');
-            document.querySelector('.personal-account-aside__application-form-link').classList.add('none');
+            document.querySelector('.personal-account-aside__application-form').classList.add('none');
         });
     })
 }
@@ -298,7 +298,7 @@ if (openFormBtn) {
             document.querySelector('.personal-account-content__application-form').classList.remove('none');
             document.querySelector('.personal-account-content').classList.add('none');
             document.querySelector('.personal-account-aside__content').classList.add('none');
-            document.querySelector('.personal-account-aside__application-form-link').classList.remove('none');
+            document.querySelector('.personal-account-aside__application-form').classList.remove('none');
         })
     });
 }
@@ -352,7 +352,7 @@ if (equipmentItemBtns) {
             document.querySelector('.personal-account-content__application-form').classList.remove('none');
             document.querySelector('.personal-account-content').classList.add('none');
             document.querySelector('.personal-account-aside__content').classList.add('none');
-            document.querySelector('.personal-account-aside__application-form-link').classList.remove('none');
+            document.querySelector('.personal-account-aside__application-form').classList.remove('none');
         })
     })
 }
@@ -518,141 +518,6 @@ if (modalOverlayOutAccount) {
 
 const inputsFileBoxImg = document.querySelectorAll('.inputs-file-box input[type="file"]');
 
-//
-// if (inputsFileBoxImg) {
-//     inputsFileBoxImg.forEach(input => {
-//         input.addEventListener('change', function (e) {
-//             const file = e.target.files[0];
-//             const label = this.previousElementSibling; // Получаем соответствующий label
-//             const img = label.querySelector('.input-img img'); // Находим img внутри label
-//
-//             if (file && img) {
-//                 const reader = new FileReader();
-//
-//                 reader.onload = function (e) {
-//                     img.src = e.target.result;
-//                     img.style.display = 'block'; // Показываем изображение
-//                     //   label.classList.add('label-select'); // Добавляем класс для стилей
-//                 };
-//
-//                 reader.readAsDataURL(file);
-//             }
-//         });
-//     });
-// }
-//
-
-
-
-
-
-// if (inputsFileBoxImg) {
-//     inputsFileBoxImg.forEach(input => {
-//         input.addEventListener('change', function(e) {
-//             const file = e.target.files[0];
-//             const avatarBox = this.closest('.avatar-box'); // Находим родительский контейнер
-//             const previewImg = avatarBox.querySelector('.input-img img'); // Ищем изображение внутри текущего блока
-//             const mainAvatarImg = document.querySelector('.personal-account-aside__information-images img');
-//
-//             if (file && previewImg && mainAvatarImg) {
-//                 const reader = new FileReader();
-//
-//                 reader.onload = function(e) {
-//                     // Обновляем превью в текущем блоке
-//                     previewImg.src = e.target.result;
-//                     previewImg.style.display = 'block';
-//
-//
-//                     const avatarCheckInputs = document.querySelectorAll('.avatar-check');
-//
-//                     avatarCheckInputs.forEach(inputCheck => {
-//                         inputCheck.addEventListener('change', (e) => {
-//                             e.preventDefault();
-//                             const avatarBoxs = document.querySelectorAll('.avatar-box');
-//                             avatarBoxs.forEach(avatarBox => {
-//                                 avatarBox.classList.remove('label-select');
-//                             })
-//                             console.log(e.target.parentElement);
-//                             e.target.parentElement.classList.add('label-select');
-//
-//                             // Обновляем основное изображение
-//                             mainAvatarImg.src = e.target.result;
-//                         })
-//                     })
-//
-//                 };
-//
-//                 reader.readAsDataURL(file);
-//             }
-//         });
-//     });
-//
-// }
-
-
-
-
-
-// inputsAvatarImg.forEach(inputImg => {
-//     if(inputImg.checked) {
-//         console.log(inputImg);
-//     }
-// })
-//
-
-
-
-// if (inputsFileBoxImg) {
-//     // Обработчик для загрузки изображений
-//     inputsFileBoxImg.forEach(input => {
-//         input.addEventListener('change', function(e) {
-//             const file = e.target.files[0];
-//             const avatarBox = this.closest('.avatar-box');
-//             const previewImg = avatarBox.querySelector('.input-img img');
-//
-//             if (file && previewImg) {
-//                 const reader = new FileReader();
-//
-//                 reader.onload = function(e) {
-//                     // Обновляем превью только в текущем блоке
-//                     previewImg.src = e.target.result;
-//                     previewImg.style.display = 'block';
-//
-//                     // Сохраняем данные изображения в атрибуте
-//                     avatarBox.dataset.image = e.target.result;
-//                 };
-//
-//                 reader.readAsDataURL(file);
-//             }
-//         });
-//     });
-//
-//     // Отдельный обработчик для выбора основного аватара
-//     document.querySelectorAll('.avatar-check').forEach(checkInput => {
-//         checkInput.addEventListener('change', function(e) {
-//             const mainAvatarImg = document.querySelector('.personal-account-aside__information-images img');
-//             const selectedAvatarBox = this.closest('.avatar-box');
-//
-//             // Обновляем основное изображение
-//             if (selectedAvatarBox.dataset.image) {
-//                 mainAvatarImg.src = selectedAvatarBox.dataset.image;
-//             }
-//
-//             // Обновляем стили выбора
-//             document.querySelectorAll('.avatar-box').forEach(box => {
-//                 box.classList.remove('label-select');
-//             });
-//             selectedAvatarBox.classList.add('label-select');
-//         });
-//     });
-// }
-//
-//
-//
-//
-
-
-
 
 // Исправленный код
 document.addEventListener("DOMContentLoaded", function() {
@@ -699,6 +564,21 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+//  кнопка Вернуться назад
+function goBackPersonalAccount() {
+    document.querySelector('.personal-account-content__application-form').classList.add('none');
+    document.querySelector('.personal-account-content').classList.remove('none');
+    document.querySelector('.personal-account-aside__content').classList.remove('none');
+    document.querySelector('.personal-account-aside__application-form').classList.add('none');
+}
 
+const goBackPersonalAccountBtn = document.querySelector('.personal-account-aside__application-form-link');
+console.log(goBackPersonalAccountBtn);
 
+if(goBackPersonalAccountBtn) {    
+    goBackPersonalAccountBtn.addEventListener('click', ()=>{
+        openManagerTabs();//должен возврвщаться на ту вкладку с которой зашел или страницу, пота сделал так(нужно будет Вам переделать)
+        goBackPersonalAccount();
+    });
+}
 

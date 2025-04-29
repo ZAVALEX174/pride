@@ -20,14 +20,14 @@
 }
 
 .personal-account .personal-account-aside {
-    /* max-width: 38%; */
-    max-width: 310px;
-    width: 100%;
+    max-width: 38%;
+    /* width: 100%; */
     background: var(--dark-gray) url('../images/account/line_bg.png') no-repeat top 606px right 60px;
     height: auto;
     padding-top: 30px;
     padding-bottom: 120px;
     padding-left: calc((100% - 1390px) / 2);
+    display: flex;
 }
 
 @media (max-width: 1400px) {
@@ -37,19 +37,19 @@
 }
 
 @media (max-width: 1024px) {
-    .personal-account .personal-account-aside {
-        flex-shrink: 0;
-    }
+    .personal-account .personal-account-aside {}
 }
 
 
 
 .personal-account .personal-account-aside .personal-account-aside__content {
-    max-width: 516px;
-    width: 100%;
+    /* max-width: 516px; */
+    width: 310px;
+    /* width: 100%; */
     margin-left: auto;
     /*border: 1px solid red;*/
     height: 100%;
+    flex-shrink: 0;
 }
 
 .personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__information {
@@ -193,7 +193,7 @@
 }
 
 .personal-account .personal-account-content {
-    /*max-width: 100%;*/
+    max-width: 100%;
     /* max-width: calc(100% - 38%); */
     width: 100%;
     /*min-height: 100vh;*/
@@ -221,9 +221,6 @@
     }
 }
 
-
-
-
 .personal-account .personal-account-content .tab-content {
     width: 100%;
     max-width: 747px;
@@ -236,7 +233,6 @@
 .personal-account .personal-account-content .tab-content.tab-content-active {
     display: block;
 }
-
 
 .personal-account .personal-account-content .tab-content .personal-account-content-header {
     width: 100%;
@@ -1876,11 +1872,12 @@
 .personal-account-aside__application-form {
     padding-left: 15px;
     padding-top: 35px;
+    width: 310px;
 }
 
 @media (max-width: 1280px) {
     .personal-account-aside__application-form {
-        padding-left: 20px;
+        /* padding-left: 20px; */
     }
 }
 
