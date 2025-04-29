@@ -582,3 +582,27 @@ if(goBackPersonalAccountBtn) {
     });
 }
 
+
+// вывод контента  на стартовой странице
+const startTabContentBox = document.getElementById('tab-btn1');
+console.log(startTabContentBox);
+
+if(startTabContentBox) {
+    const submitApplicationBtn = startTabContentBox.querySelector('.submit-application');
+    const seriesNumbernBtn = startTabContentBox.querySelector('.personal-account-content-body__input-box-btn');
+    const getCount = startTabContentBox.querySelector('[data-count]');
+    const equipmentBox = startTabContentBox.querySelector('.equipment-box');
+    const seriesNumbersBox = startTabContentBox.querySelector('.series-numbers');
+    // console.log(equipmentBox);
+
+    // функция для вывода блока с оборудованием на страницу
+    function dataOutput() {
+        seriesNumbersBox.classList.add('none');
+        submitApplicationBtn.classList.remove('none');
+        getCount.classList.remove('none');
+        equipmentBox.classList.remove('none');
+    }
+
+    // временно для показа работы функции
+    seriesNumbernBtn.addEventListener('click', dataOutput);
+}
