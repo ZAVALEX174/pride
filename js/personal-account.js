@@ -267,6 +267,8 @@ if (problemsFeedbackOtbivkaBtns && modalsConnection) {
             openManagerTabs();
             document.querySelector('.personal-account-content__application-form').classList.add('none');
             document.querySelector('.personal-account-content').classList.remove('none');
+            document.querySelector('.personal-account-aside__content').classList.remove('none');
+            document.querySelector('.personal-account-aside__application-form-link').classList.add('none');
         });
     })
 }
@@ -295,6 +297,8 @@ if (openFormBtn) {
             // openManagerTabs();
             document.querySelector('.personal-account-content__application-form').classList.remove('none');
             document.querySelector('.personal-account-content').classList.add('none');
+            document.querySelector('.personal-account-aside__content').classList.add('none');
+            document.querySelector('.personal-account-aside__application-form-link').classList.remove('none');
         })
     });
 }
@@ -310,6 +314,7 @@ if (myEquipmentConsultation) {
         openManagerTabs();
         document.querySelector('.personal-account-content__application-form').classList.add('none');
         document.querySelector('.personal-account-content').classList.remove('none');
+        document.querySelector('.personal-account-aside__content').classList.remove('none');
     })
 }
 
@@ -346,6 +351,8 @@ if (equipmentItemBtns) {
             // openManagerTabs();
             document.querySelector('.personal-account-content__application-form').classList.remove('none');
             document.querySelector('.personal-account-content').classList.add('none');
+            document.querySelector('.personal-account-aside__content').classList.add('none');
+            document.querySelector('.personal-account-aside__application-form-link').classList.remove('none');
         })
     })
 }
