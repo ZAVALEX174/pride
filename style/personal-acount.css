@@ -20,7 +20,8 @@
 }
 
 .personal-account .personal-account-aside {
-    max-width: 38%;
+    /* max-width: 38%; */
+    max-width: 310px;
     width: 100%;
     background: var(--dark-gray) url('../images/account/line_bg.png') no-repeat top 606px right 60px;
     height: auto;
@@ -193,17 +194,17 @@
 
 .personal-account .personal-account-content {
     /*max-width: 100%;*/
-    max-width: calc(100% - 38%);
+    /* max-width: calc(100% - 38%); */
     width: 100%;
     /*min-height: 100vh;*/
     background-color: #efefef;
     /*border: 1px solid red;*/
-    padding: 60px 0 170px 60px;
+    padding: 60px 0 170px 140px;
     padding-right: calc((100% - 1390px) / 2);
 
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1280px) {
     .personal-account .personal-account-content {
         padding-right: 10px;
         padding-left: 20px;
@@ -215,7 +216,8 @@
     .personal-account .personal-account-content {
         /* padding: 60px 25px 170px 25px; */
         /* padding-right: 25px; */
-
+        /* padding-right: 10px;
+        padding-left: 20px; */
     }
 }
 
@@ -224,7 +226,7 @@
 
 .personal-account .personal-account-content .tab-content {
     width: 100%;
-    /* max-width: 747px; */
+    max-width: 747px;
     display: none;
     /*height: 100%;*/
     margin-bottom: auto;
@@ -243,6 +245,7 @@
     justify-content: space-between;
     padding-bottom: 30px;
     border-bottom: 1px solid rgba(142, 142, 142, 0.3);
+    column-gap: 15px;
 }
 
 @media (max-width: 768px) {
@@ -1871,7 +1874,7 @@
 }
 
 .personal-account-aside__application-form {
-    padding-left: 85px;
+    padding-left: 15px;
     padding-top: 35px;
 }
 
@@ -1913,13 +1916,13 @@
 .personal-account-content__application-form {
     width: 100%;
     background: #efefef;
-    padding: 60px 0 60px 60px;
+    padding: 60px 0 60px 140px;
     padding-right: calc((100% - 1270px) / 2);
 }
 
 @media (max-width: 1300px) {
     .personal-account-content__application-form {
-        padding: 60px 20px 60px 20px;
+        padding: 60px 20px 60px 60px;
     }
 }
 
@@ -1927,11 +1930,12 @@
     .personal-account-content__application-form {
         width: 100%;
         background: #efefef;
-
+        padding-left: 20px;
     }
 }
 
 .personal-account-content__application-form .equipment-box__item {
+    max-width: 747px;
     width: 100%;
     padding: 35px 30px;
     border-radius: 20px;
@@ -2017,6 +2021,7 @@
 }
 
 .personal-account-content__application-form-product-information {
+    max-width: 747px;
     padding-top: 35px;
     padding-bottom: 35px;
     margin-bottom: 35px;
@@ -2066,6 +2071,7 @@
 
 .personal-account-content__application-form__header {
     width: 100%;
+    max-width: 747px;
     display: flex;
     padding-bottom: 30px;
     margin-bottom: 35px;
@@ -2130,6 +2136,7 @@
 }
 
 .personal-account-content__application-form-product-form form {
+    max-width: 747px;
     width: 100%;
     display: flex;
     flex-direction: column;
