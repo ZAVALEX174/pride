@@ -19,6 +19,15 @@
     /*min-height: 100vh;*/
 }
 
+/* изменения от 19-05-25 */
+@media (max-width: 600px) {
+    .personal-account {
+        flex-direction: column;
+    }
+}
+
+/* изменения от 19-05-25 */
+
 .personal-account .personal-account-aside {
     max-width: 38%;
     /* width: 100%; */
@@ -36,11 +45,21 @@
     }
 }
 
-@media (max-width: 1024px) {
-    .personal-account .personal-account-aside {}
+/* изменения от 19-05-25 */
+@media (max-width: 600px) {
+    .personal-account .personal-account-aside {
+        /* position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -100%; */
+        max-width: 100%;
+        padding-right: 10px;
+        padding-bottom: 0;
+        padding-top: 60px;
+    }
 }
 
-
+/* изменения от 19-05-25 */
 
 .personal-account .personal-account-aside .personal-account-aside__content {
     /* max-width: 516px; */
@@ -51,6 +70,28 @@
     height: 100%;
     flex-shrink: 0;
 }
+
+@media (max-width: 960px) {
+    .personal-account .personal-account-aside .personal-account-aside__content {
+        width: 100%;
+    }
+}
+
+/* изменения от 19-05-25 */
+@media (max-width: 600px) {
+    .personal-account .personal-account-aside .personal-account-aside__content {
+        width: 100%;
+        display: grid;
+        grid-template-columns: minmax(150px, 180px) 1fr;
+        /* grid-template-rows: repeat(3, 1fr); */
+        grid-template-areas: "avatar btns"
+            "link link";
+        column-gap: 15px;
+        row-gap: 5px;
+    }
+}
+
+/* изменения от 19-05-25 */
 
 .personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__information {
     display: flex;
@@ -66,6 +107,18 @@
         row-gap: 20px;
     }
 }
+
+/* изменения от 19-05-25 */
+@media (max-width: 600px) {
+    .personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__information {
+        /* grid-area: avatar; */
+        align-items: flex-start;
+        align-content: flex-start;
+        margin: 0;
+    }
+}
+
+/* изменения от 19-05-25 */
 
 .personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__information .personal-account-aside__information-images-box {
     width: 110px;
@@ -96,6 +149,15 @@
 .personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__information .personal-account-aside__information-text {
     width: 100%;
 }
+
+/* изменения от 19-05-25 */
+@media (max-width: 600px) {
+    .personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__information .personal-account-aside__information-text {
+        grid-area: avatar-text;
+    }
+}
+
+/* изменения от 19-05-25 */
 
 .personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__information .personal-account-aside__information-text .personal-account-aside__information-text-name {
     font-family: 'Golos Text Regular', sans-serif;
@@ -130,8 +192,24 @@
     margin-bottom: 40px;
 }
 
+/* изменения 19-05-25 */
+@media (max-width: 600px) {
+    .personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__slogan {
+        display: none;
+    }
+}
+
+/* изменения 19-05-25 */
+
 .personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__tabs-container {
     width: 100%;
+}
+
+/* изменения от 19-05-25 */
+@media (max-width: 600px) {
+    .personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__tabs-container {
+        grid-area: btns;
+    }
 }
 
 .personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__tabs-container .tab-buttons {
@@ -163,11 +241,45 @@
     transition: 0.3s ease-in;
 }
 
+/* изменения 19-05-25 */
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__tabs-container .tab-buttons .tab-button svg {
+    flex-shrink: 0;
+}
+
+
 @media (max-width: 900px) {
     .personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__tabs-container .tab-buttons .tab-button {
         padding-left: 10px;
     }
 }
+
+
+@media (max-width: 600px) {
+    .personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__tabs-container .tab-buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 15px;
+        row-gap: 15px;
+        margin-bottom: 0;
+        justify-content: flex-end;
+    }
+
+    .personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__tabs-container .tab-buttons .tab-button span {
+        display: none;
+    }
+
+    .personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__tabs-container .tab-buttons .tab-button {
+        max-width: 50px;
+        height: 50px;
+        border-radius: 5px;
+        padding: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* изменения 19-05-25 */
 
 .personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__tabs-container .tab-buttons .tab-button:hover {
     background: var(--color-orange);
@@ -177,7 +289,9 @@
     background: var(--color-orange);
 }
 
-.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__link {
+
+/* изменения 19-05-25 */
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__link-box a {
     display: flex;
     width: 100%;
     height: 43px;
@@ -186,11 +300,31 @@
     line-height: 1.5;
     color: var(--main-bg);
     transition: 0.3s ease-in;
+    align-items: center;
 }
 
-.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__link:hover {
+@media (max-width: 600px) {
+    .personal-account-aside__link-box {
+        grid-area: link;
+        display: flex;
+    }
+
+    .personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__link-box a {
+        display: inline-flex;
+        max-width: max-content;
+        margin-right: 20px;
+    }
+
+    .personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__link-box a:last-child {
+        margin-right: 0;
+    }
+}
+
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__link-box a:hover {
     color: var(--color-orange);
 }
+
+/* изменения 19-05-25 */
 
 .personal-account .personal-account-content {
     max-width: 100%;
