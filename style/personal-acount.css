@@ -1462,6 +1462,12 @@
     /* Firefox */
 }
 
+@media (max-width: 768px) {
+    .auth .modal-auth {
+        padding: 40px 25px;
+    }
+}
+
 .auth .modal-auth::-webkit-scrollbar {
     width: 0;
     height: 0;
@@ -1473,6 +1479,13 @@
     transition: 0.3s ease-in;
     top: 60px;
     right: 60px;
+}
+
+@media (max-width: 768px) {
+    .auth .modal-auth .close-btn {
+        right: 10px;
+        top: 10px;
+    }
 }
 
 .auth .modal-auth .close-btn:hover {
@@ -1488,12 +1501,24 @@
     margin-bottom: 15px;
 }
 
+@media (max-width: 768px) {
+    .auth .modal-auth .sign-title {
+        font-size: 20px;
+    }
+}
+
 .auth .modal-auth .sign-subtitle {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.22222;
     color: var(--dark-gray);
     margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .auth .modal-auth .sign-subtitle {
+        font-size: 16px;
+    }
 }
 
 .auth .modal-auth .auth-tabs-box {
@@ -1560,11 +1585,24 @@
     column-gap: 15px;
 }
 
+@media (max-width: 768px) {
+    .signup-tab-content .signup-form .signup-form-user-name-box {
+        flex-direction: column;
+    }
+}
+
 .signup-tab-content .signup-form .signup-form-user-password {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 15px;
+}
+
+@media (max-width: 768px) {
+    .signup-tab-content .signup-form .signup-form-user-password {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .signup-form-user-name-label,
@@ -1573,6 +1611,13 @@
     max-width: 50%;
     display: flex;
     flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .signup-form-user-name-label,
+    .signup-form-user-surname-label {
+        max-width: 100%;
+    }
 }
 
 .label-all .signup-form-label-password,
@@ -1689,7 +1734,7 @@
     padding-left: 50px;
 }
 
-#signin-form-checkbox-remember-me:checked+.custom-checkbox svg {
+#signin-form-checkbox-remember-me:checked + .custom-checkbox svg {
     color: var(--color-orange);
 }
 
@@ -1706,6 +1751,12 @@
     font-size: 18px;
     color: var(--dark-gray);
     transition: 0.3s ease-in;
+}
+
+@media (max-width: 768px) {
+    .auth-btn-not-password {
+        font-size: 16px;
+    }
 }
 
 .auth-btn-not-password svg {
@@ -2325,7 +2376,7 @@
     margin-bottom: 15px;
 }
 
-.personal-account-content__application-form-product-form form .form-files>span {
+.personal-account-content__application-form-product-form form .form-files > span {
     font-family: "Golos Text Regular", sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -2517,13 +2568,13 @@
     z-index: -1;
 }
 
-.form-files-radio-box input:checked+.radio-new-bg>.radio-new-item {
+.form-files-radio-box input:checked + .radio-new-bg > .radio-new-item {
     left: auto;
     transform: translateX(200%);
     transition: transform 0.5s;
 }
 
-.form-files-radio-box input:checked+.radio-new-bg {
+.form-files-radio-box input:checked + .radio-new-bg {
     background-color: var(--color-orange);
 }
 
