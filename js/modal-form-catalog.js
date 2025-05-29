@@ -340,19 +340,21 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // открытие формы связаться с нами
-    if (contactUsBtnS) {
-        contactUsBtnS.forEach((contactUsBtn) => {
-            contactUsBtn.addEventListener('click', (e) => {
-                e.preventDefault();                
-                modal.classList.add('modals_opened');
-                document.getElementById(modalContactsFormId).classList.remove('none');
-                document.documentElement.style.overflow = "hidden";
-                document.body.style.overflow = "hidden";
-                document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
-                
-            });
-        })
-    }
+    // изменение от 29-05-25
+    // if (contactUsBtnS) {
+    //     contactUsBtnS.forEach((contactUsBtn) => {
+    //         contactUsBtn.addEventListener('click', (e) => {
+    //             e.preventDefault();
+    //             modal.classList.add('modals_opened');
+    //             document.getElementById(modalContactsFormId).classList.remove('none');
+    //             document.documentElement.style.overflow = "hidden";
+    //             document.body.style.overflow = "hidden";
+    //             document.body.style.paddingRight = `${scrollBarAll - scrollBarClient}px`;
+    //
+    //         });
+    //     })
+    // }
+    // // изменение от 29-05-25
 
     if (closeBtns) {
         closeBtns.forEach((closeBtn) => {
