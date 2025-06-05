@@ -484,6 +484,8 @@ function openFavoritesTabs() {
 // Объект для хранения данных пользователя
 const clientData = {
   name: '',
+  surname: '',
+  patronymic: '',
   call: '',
   mail: '',
   urid: '',
