@@ -242,13 +242,6 @@ if (problemsFeedbackBtns && modalsConnection) {
   })
 }
 
-// if (problemsCancelBtnRoutManager) {
-//     problemsCancelBtnRoutManager.addEventListener('click', (e) => {
-//         e.preventDefault();
-//         openManagerTabs();
-//     });
-// }
-
 // открытие окна отбивки "проблемы"
 if (problemsCancelBtns && modalCancelRequestOtbivka) {
   problemsCancelBtns.forEach(item => {
@@ -310,7 +303,6 @@ const helpConsultation = document.getElementById('help-conultation');
 if (myEquipmentConsultation) {
   myEquipmentConsultation.addEventListener('click', (e) => {
     e.preventDefault();
-    // console.log("И мне тоже нужно перейти на вкладку личный менеджер!");
     openManagerTabs();
     document.querySelector('.personal-account-content__application-form').classList.add('none');
     document.querySelector('.personal-account-content').classList.remove('none');
@@ -347,7 +339,6 @@ if (equipmentItemBtns) {
   equipmentItemBtns.forEach(item => {
     item.addEventListener('click', (e) => {
       e.preventDefault();
-      // console.log('ну и мы туда же!!!');
       // openManagerTabs();
       document.querySelector('.personal-account-content__application-form').classList.remove('none');
       document.querySelector('.personal-account-content').classList.add('none');
@@ -376,109 +367,6 @@ function openFavoritesTabs() {
   favoritesBtnTab.classList.add('tab-button__active');
   favoritesTab.classList.add('tab-content-active');
 }
-
-// // изменение данных пользователя в личном кабинете
-// const arrayClientData = [];
-// const saveSettingContactBtn = document.querySelector('.setting-contact-btn');
-// const inputUserName = document.querySelector('[data-client-name="data_client_name"]');
-// const inputClientCall = document.querySelector('[data-client-call="data_client_call"]');
-// const inputClientMail = document.querySelector('[data-client-mail="data_client_mail"]');
-// const inputClientUrid = document.querySelector('[data-client-name="data_client_urid"]');
-// const inputClientInn = document.querySelector('[data-client-name="data_client_inn"]');
-//
-// const inputUserNameBtn = document.getElementById('setting-data-client-name');
-// const inputClientCallBtn = document.getElementById('setting-data-client-call');
-// const inputClientMailBtn = document.getElementById('setting-data-client-mail');
-// const inputClientUridBtn = document.getElementById('setting-data-client-urid');
-// const inputClientInnBtn = document.getElementById('setting-data-client-inn');
-//
-//
-// let dataClientNameInput = document.getElementById('data-client-name-input');
-// let dataClientCallInput = document.getElementById('data-client-call-input');
-// let dataClientMailInput = document.getElementById('data-client-mail-input');
-// let dataClientUridInput = document.getElementById('data-client-urid-input');
-// let dataClientInnInput = document.getElementById('data-client-inn-input');
-//
-//
-// if (inputUserNameBtn && dataClientNameInput) {
-//     inputUserNameBtn.addEventListener('click', (e) => {
-//         e.preventDefault();
-//         document.getElementById('data-client-name-input').placeholder = inputUserName.textContent;
-//         dataClientNameInput.classList.remove('none');
-//
-//
-//     })
-// }
-//
-//
-// if (inputClientCallBtn && dataClientCallInput) {
-//     inputClientCallBtn.addEventListener('click', (e) => {
-//         e.preventDefault();
-//         document.getElementById('data-client-call-input').placeholder = inputClientCall.textContent;
-//         dataClientCallInput.classList.remove('none');
-//     })
-// }
-//
-// if (inputClientMailBtn && dataClientMailInput) {
-//     inputClientMailBtn.addEventListener('click', (e) => {
-//         e.preventDefault();
-//         document.getElementById('data-client-mail-input').placeholder = inputClientMail.textContent;
-//         dataClientMailInput.classList.remove('none');
-//     })
-// }
-//
-//
-// if (inputClientUridBtn && dataClientUridInput) {
-//     inputClientUridBtn.addEventListener('click', (e) => {
-//         e.preventDefault();
-//         document.getElementById('data-client-urid-input').placeholder = inputClientUrid.textContent;
-//         dataClientUridInput.classList.remove('none');
-//     })
-// }
-//
-// inputClientInnBtn.addEventListener('click', (e) => {
-//     e.preventDefault();
-//     document.getElementById('data-client-inn-input').placeholder = inputClientInn.textContent;
-//     dataClientInnInput.classList.remove('none');
-// })
-//
-//
-// if (saveSettingContactBtn) {
-//     saveSettingContactBtn.addEventListener('click', (e) => {
-//         e.preventDefault();
-//         // 1. Добавляем элементы в массив правильно
-//         arrayClientData.splice(0, 1, dataClientNameInput.value);
-//         arrayClientData.splice(1, 1, dataClientCallInput.value);
-//         arrayClientData.splice(2, 1, dataClientMailInput.value);
-//         arrayClientData.splice(3, 1, dataClientUridInput.value);
-//         arrayClientData.splice(4, 1, dataClientInnInput.value);
-//
-//         // 2. Обновляем отображение
-//         inputUserName.textContent = arrayClientData[0];
-//         // добавление данных из карточки клиента
-//         const clientNameVisible = document.querySelector('.personal-account-aside__information-text-name');
-//         clientNameVisible.textContent = arrayClientData[0];
-//         dataClientNameInput.classList.add('none');
-//
-//         inputClientCall.textContent = arrayClientData[1];
-//         // добавление данных из карточки клиента
-//         const clientCallVisible = document.querySelector('.personal-account-aside__information-text-contacts');
-//         clientCallVisible.textContent = arrayClientData[1];
-//         dataClientCallInput.classList.add('none');
-//
-//         inputClientMail.textContent = arrayClientData[2];
-//         dataClientMailInput.classList.add('none');
-//
-//         inputClientUrid.textContent = arrayClientData[3];
-//         // добавление данных из карточки клиента
-//         const clientUridVisible = document.querySelector('.personal-account-aside__information-text-company');
-//         clientUridVisible.textContent = arrayClientData[3];
-//         dataClientUridInput.classList.add('none');
-//
-//         inputClientInn.textContent = arrayClientData[4];
-//         dataClientInnInput.classList.add('none');
-//     })
-// }
 
 // переделка 05-06-25
 // Объект для хранения данных пользователя
@@ -565,37 +453,139 @@ fields.forEach(field => {
   }
 });
 
-// Обработчик сохранения
+// изменения от 060625
+// Обработчик сохранения с AJAX-отправкой
 const saveSettingContactBtn = document.querySelector('.setting-contact-btn');
 if (saveSettingContactBtn) {
-  saveSettingContactBtn.addEventListener('click', e => {
+  saveSettingContactBtn.addEventListener('click', async (e) => {
     e.preventDefault();
+
+    // Показываем индикатор загрузки
+    saveSettingContactBtn.disabled = true;
+    saveSettingContactBtn.textContent = 'Сохранение...';
+
+    // Собираем данные для отправки
+    const formData = {};
+    let hasChanges = false;
 
     fields.forEach(field => {
       if (field.input) {
-        // Сохранение значения
         const value = field.input.value.trim();
-        if (value) {
-          clientData[field.id] = value;
+        const currentValue = field.display.textContent.trim();
 
-          // Обновление основного отображения
+        if (value && value !== currentValue) {
+          formData[field.id] = value;
+          hasChanges = true;
+
+          // Локальное обновление
           field.display.textContent = value;
-
-          // Обновление дополнительного отображения
           if (field.additionalDisplay) {
             field.additionalDisplay.textContent = value;
           }
         }
 
-        // Скрытие поля ввода
         field.input.classList.add('none');
         field.input.value = '';
       }
     });
+
+    // Если есть изменения - отправляем на сервер
+    if (hasChanges) {
+      try {
+        const response = await fetch('/api/update-profile', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'X-CSRF-Token': getCSRFToken() // Функция для получения CSRF-токена
+          },
+          body: JSON.stringify(formData)
+        });
+
+        if (!response.ok) {
+          throw new Error('Ошибка сервера');
+        }
+
+        const result = await response.json();
+        showNotification('Данные успешно сохранены!', 'success');
+
+      } catch (error) {
+        console.error('Ошибка:', error);
+        showNotification('Ошибка сохранения: ' + error.message, 'error');
+        // Можно добавить откат изменений
+      }
+    } else {
+      showNotification('Нет изменений для сохранения', 'info');
+    }
+
+    // Восстанавливаем кнопку
+    saveSettingContactBtn.disabled = false;
+    saveSettingContactBtn.textContent = 'Сохранить изменения';
   });
 }
-// переделка 05-06-25
 
+// Вспомогательные функции
+function getCSRFToken() {
+  return document.querySelector('meta[name="csrf-token"]')?.content || '';
+}
+
+function showNotification(message, type = 'info') {
+  const notification = document.createElement('div');
+  notification.className = `notification notification-${type}`;
+  notification.textContent = message;
+  document.body.appendChild(notification);
+
+  setTimeout(() => notification.classList.add('show'), 10);
+  setTimeout(() => {
+    notification.classList.remove('show');
+    setTimeout(() => notification.remove(), 300);
+  }, 3000);
+}
+
+// Функция для показа уведомлений
+function showNotification(message, type = 'info') {
+  const notification = document.createElement('div');
+  notification.className = `notification notification-${type}`;
+  notification.textContent = message;
+
+  document.body.appendChild(notification);
+
+  setTimeout(() => {
+    notification.classList.add('show');
+  }, 10);
+
+  setTimeout(() => {
+    notification.classList.remove('show');
+    setTimeout(() => document.body.removeChild(notification), 300);
+  }, 3000);
+}
+
+// Добавляем базовые стили для уведомлений
+const style = document.createElement('style');
+style.textContent = `
+  .notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 25px;
+    border-radius: 5px;
+    color: white;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .notification.show {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .notification-success { background: #4CAF50; }
+  .notification-error { background: #F44336; }
+  .notification-info { background: #2196F3; }
+`;
+document.head.appendChild(style);
+// изменения от 060625
 
 // Выйти из аккаунта
 const goBackBtn = document.querySelector('.go-back-btn');
@@ -736,5 +726,4 @@ if (startTabContentBox) {
 }
 
 
-// console.log(userNameVisibleValue);
 
