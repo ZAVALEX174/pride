@@ -1096,7 +1096,7 @@
 }
 
 .inputs-file-box .avatar-box:hover svg {
-  color: #eb6320;
+  /*color: #eb6320;*/
   opacity: 1;
 }
 
@@ -2467,6 +2467,18 @@
   border: 1px solid var(--color-orange);
 }
 
+.avatar-check {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #623a26;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  z-index: 500;
+  opacity: 0;
+}
+
 .file-btn {
   width: 100%;
   font-family: "Golos Text Regular", sans-serif;
@@ -2597,14 +2609,18 @@
   background-color: var(--color-orange);
 }
 
-.avatar-check {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: #623a26;
-  position: absolute;
-  top: 15px;
-  right: 10px;
-  z-index: 500;
-  opacity: 0;
+.inputs-file-box .avatar-check:checked + svg {
+  color: var(--color-orange);
+  opacity: 1;
+}
+
+.inputs-file-box .avatar-box .avatar-check:checked + svg + .input-img {
+  border: 2px solid var(--color-orange);
+  background-color: white;
+}
+
+.avatar-box.ava-check {
+  border: 2px solid var(--color-orange);
+  background: rgba(235, 99, 32, 0.1);
+
 }

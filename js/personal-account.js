@@ -675,6 +675,16 @@ document.addEventListener("DOMContentLoaded", function () {
         const selectedImg = this.closest('.avatar-box')
           .querySelector('.input-img img').src;
 
+        // ИЗМЕНЕНИЯ ОТ 09-06-25 СОСТОЯНИЕ ВЫБРАННОГО АВАТАРА
+
+        const allAvararCheck = document.querySelectorAll('.avatar-box');
+        allAvararCheck.forEach(el => {
+          el.classList.remove('ava-check');
+        })
+
+        const avaCheck = this.closest('.avatar-box').classList.add('ava-check');
+        // ИЗМЕНЕНИЯ ОТ 09-06-25 СОСТОЯНИЕ ВЫБРАННОГО АВАТАРА
+
         // Обновляем основное изображение
         document.querySelector('.personal-account-aside__information-images img').src = selectedImg;
       }
