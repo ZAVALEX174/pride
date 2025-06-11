@@ -111,7 +111,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // Обработчики событий
         openModalAuthBtn.addEventListener('click', openModal);
         closeModalAuthBtn.addEventListener('click', closeModal);
-        signUpSubmitBtn.addEventListener('click', openModalOtbivka);
+        // изменения от 11-06-25
+            // signUpSubmitBtn.addEventListener('click', openModalOtbivka);
+        // изменения от 11-06-25
         closeBtnModalOverlayAuthOtbivka.addEventListener('click', closeModalOtbivka);
     }
 

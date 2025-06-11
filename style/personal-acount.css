@@ -85,7 +85,7 @@
     grid-template-columns: minmax(150px, 180px) 1fr;
     /* grid-template-rows: repeat(3, 1fr); */
     grid-template-areas: "avatar btns"
-            "link link";
+      "link link";
     column-gap: 15px;
     row-gap: 5px;
   }
@@ -159,8 +159,7 @@
 
 /* изменения от 19-05-25 */
 
-.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__information .personal-account-aside__information-text
-.personal-account-aside__information-text-name {
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__information .personal-account-aside__information-text .personal-account-aside__information-text-name {
   font-family: 'Golos Text Regular', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -168,8 +167,7 @@
   color: var(--main-bg);
 }
 
-.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__information .personal-account-aside__information-text
-.personal-account-aside__information-text-surname {
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__information .personal-account-aside__information-text .personal-account-aside__information-text-surname {
   font-family: 'Golos Text Regular', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -177,8 +175,7 @@
   color: var(--main-bg);
 }
 
-.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__information .personal-account-aside__information-text
-.personal-account-aside__information-text-patronymic {
+.personal-account .personal-account-aside .personal-account-aside__content .personal-account-aside__information .personal-account-aside__information-text .personal-account-aside__information-text-patronymic {
   font-family: 'Golos Text Regular', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -1284,6 +1281,8 @@
   align-items: center;
   column-gap: 15px;
   cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 .tab-content .go-back-btn:hover {
@@ -1633,6 +1632,7 @@
 }
 
 @media (max-width: 768px) {
+
   .signup-form-user-name-label,
   .signup-form-user-surname-label {
     max-width: 100%;
@@ -1753,7 +1753,7 @@
   padding-left: 50px;
 }
 
-#signin-form-checkbox-remember-me:checked + .custom-checkbox svg {
+#signin-form-checkbox-remember-me:checked+.custom-checkbox svg {
   color: var(--color-orange);
 }
 
@@ -2395,7 +2395,7 @@
   margin-bottom: 15px;
 }
 
-.personal-account-content__application-form-product-form form .form-files > span {
+.personal-account-content__application-form-product-form form .form-files>span {
   font-family: "Golos Text Regular", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -2599,22 +2599,22 @@
   z-index: -1;
 }
 
-.form-files-radio-box input:checked + .radio-new-bg > .radio-new-item {
+.form-files-radio-box input:checked+.radio-new-bg>.radio-new-item {
   left: auto;
   transform: translateX(200%);
   transition: transform 0.5s;
 }
 
-.form-files-radio-box input:checked + .radio-new-bg {
+.form-files-radio-box input:checked+.radio-new-bg {
   background-color: var(--color-orange);
 }
 
-.inputs-file-box .avatar-check:checked + svg {
+.inputs-file-box .avatar-check:checked+svg {
   color: var(--color-orange);
   opacity: 1;
 }
 
-.inputs-file-box .avatar-box .avatar-check:checked + svg + .input-img {
+.inputs-file-box .avatar-box .avatar-check:checked+svg+.input-img {
   border: 2px solid var(--color-orange);
   background-color: white;
 }
