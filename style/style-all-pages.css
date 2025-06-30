@@ -19259,3 +19259,20 @@ input[type='number'] {
     border-color: rgba(174, 174, 174, 1);
     outline: rgba(174, 174, 174, 1);
 }
+
+
+/* изменения от 30-06-25 */
+
+.projects-detail-page-swiper .after-link,
+.projects-page .after-link,
+.our-projects .after-link {
+    background-image: linear-gradient(180deg, rgba(249, 248, 246, 0.1) 50%, rgba(0, 0, 0, 0.4) 55%, rgba(96, 96, 95, 1) 100%);
+}
+
+.projects-detail-page-swiper .cart__address,
+.projects-page .cart__address,
+.our-projects .cart__address {
+    text-shadow: 0 0 2px #f0f0ec, 2px 2px 5px #fdfdfb, 5px 5px 10px #f8f8f4;
+}
+
+/* изменения от 30-06-25 */
