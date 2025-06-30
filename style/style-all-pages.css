@@ -19272,7 +19272,7 @@ input[type='number'] {
 .projects-detail-page-swiper .cart__address,
 .projects-page .cart__address,
 .our-projects .cart__address {
-    text-shadow: 0 0 2px #f0f0ec, 2px 2px 5px #fdfdfb, 5px 5px 10px #f8f8f4;
+    text-shadow: 0px 0px 5px #790606;
 }
 
 /* изменения от 30-06-25 */
